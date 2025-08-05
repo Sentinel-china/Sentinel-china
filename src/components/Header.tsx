@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-          <img src="/favicon.ico" alt="sentinel-logo" className="h-8 w-auto"/>
+          <img src="/logo.png" alt="sentinel-logo" className="h-8 w-auto"/>
           </Link>
 
           {/* Desktop Navigation */}
