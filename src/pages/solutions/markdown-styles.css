@@ -1,0 +1,97 @@
+/* Markdown 内容样式 */
+.markdown-content {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.markdown-content h1 {
+  @apply text-3xl font-bold text-white mt-10 mb-8 border-b border-gray-700 pb-4;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold text-white mt-10 mb-6 border-b border-gray-700 pb-3;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-semibold text-yellow-400 mt-8 mb-4;
+}
+
+.markdown-content p {
+  @apply text-gray-300 leading-relaxed mb-6;
+}
+
+.markdown-content li {
+  @apply flex items-start text-gray-300 mb-3;
+}
+
+.markdown-content li::before {
+  @apply w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0;
+  content: '';
+}
+
+.markdown-content strong {
+  @apply text-yellow-400 font-semibold;
+}
+
+.markdown-content ul {
+  @apply space-y-2 mb-6;
+}
+
+.markdown-content ol {
+  @apply space-y-2 mb-6;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-yellow-400 pl-4 py-2 my-6 bg-gray-800/50;
+}
+
+.markdown-content code {
+  @apply bg-gray-800 text-yellow-400 px-2 py-1 rounded text-sm;
+}
+
+.markdown-content pre {
+  @apply bg-gray-800 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse my-6;
+}
+
+.markdown-content th,
+.markdown-content td {
+  @apply border border-gray-600 px-4 py-2 text-left;
+}
+
+.markdown-content th {
+  @apply bg-gray-800 font-semibold text-yellow-400;
+}
+
+.markdown-content td {
+  @apply text-gray-300;
+}
+
+.markdown-content a {
+  @apply text-yellow-400 hover:text-yellow-300 underline;
+}
+
+.markdown-content img {
+  @apply max-w-full h-auto rounded-lg my-6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .markdown-content h1 {
+    @apply text-2xl;
+  }
+  
+  .markdown-content h2 {
+    @apply text-xl;
+  }
+  
+  .markdown-content h3 {
+    @apply text-lg;
+  }
+} 
