@@ -1,6 +1,6 @@
 # Favicon 完整指南
 
-## 📱 什么是Favicon？
+## 📱 .......什么是Favicon？
 
 Favicon（favorite icon）是网站的小图标，在多个地方显示：
 
