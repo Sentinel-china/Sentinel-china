@@ -4,6 +4,7 @@
  */
 import { Link } from 'react-router'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react'
+// ... existing code ...
 
 export default function Footer() {
   return (
@@ -14,15 +15,15 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img
-                src="/favicon.ico"
+                src="/logo.png"
                 alt="TechCorp Logo"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
-              <span className="font-bold text-xl text-white">TechCorp</span>
+              <span className="font-bold text-xl text-white">Sentinel</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Committed to providing professional technical solutions for enterprises,
-              driving digital transformation and creating business value.
+              Innovation makes good products, 
+              Focus makes better services
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
@@ -42,7 +43,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold">Quick Links</h3>
             <div className="space-y-2">
               <Link to="/products" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                Products & Services
+                Products
               </Link>
               <Link to="/solutions" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                 Solutions
@@ -73,15 +74,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">400-123-4567</span>
+                <span className="text-gray-400 text-sm">022-83726917</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">contact@techcorp.com</span>
+                <span className="text-gray-400 text-sm">export.sentinel@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">Beijing Chaoyang Technology Park</span>
+                <span className="text-gray-400 text-sm">Tianjin Xiqing Technology Park</span>
               </div>
             </div>
           </div>

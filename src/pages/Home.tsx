@@ -10,16 +10,16 @@ export default function HomePage() {
   // Banner轮播图数据
   const bannerImages = [
     {
-      src: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/29ffd6fc-bab8-4572-aa93-70488e1033b6.jpg",
-      alt: "Technology Office Environment"
+      src: "/banner1.png",
+      alt: "Industrial Sensors"
     },
     {
-      src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
-      alt: "Modern Business Team"
+      src: "/banner2.png",
+      alt: "IO-Link"
     },
     {
-      src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop",
-      alt: "Digital Innovation"
+      src: "/banner3.png",
+      alt: "IO Moduel"
     }
   ]
 
@@ -58,8 +58,9 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Driving Enterprise
-                  <span className="text-yellow-400 block">Digital Transformation</span>
+                  Industral Sensors
+                  <span className="text-yellow-400 block">IO-Link</span>
+                  <span className="text-yellow-400 block">I/O Moduel</span>
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed">
                   Professional technical teams and cutting-edge solutions to create greater business value
@@ -76,7 +77,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   to="/products"
-                  className="inline-flex items-center px-6 py-3 border border-gray-600 text-white font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-colors duration-200"
+                  className="inline-flex items-center px-6 py-3 border border-gray-600 text-yellow font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-colors duration-200"
                 >
                   More Products
                 </Link>
@@ -144,10 +145,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Choose
-              <span className="text-yellow-400"> TechCorp</span>
+              <span className="text-yellow-400"> Sentinel</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              We are committed to providing customers with the most professional technical services and solutions
+              Innovation makes good products, Focus makes better services
             </p>
           </div>
           
@@ -156,10 +157,9 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Shield className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Secure & Reliable</h3>
+              <h3 className="text-xl font-semibold mb-4">About US</h3>
               <p className="text-gray-300 leading-relaxed">
-                Enterprise-grade security guarantees to ensure your data and business security,
-                with internationally certified security systems.
+                Tianjin Sentinel Electronics Co., Ltd(here in after to be referred to as SENTINEL)is an innovative Scientific and technological enterprise integrating R&D, production, and sales.SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc.
               </p>
             </div>
 
@@ -167,11 +167,10 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Zap className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Efficient Innovation</h3>
+              <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
               <p className="text-gray-300 leading-relaxed">
-                Using the latest technology stack to provide high-performance solutions,
-                rapidly responding to market demands and helping enterprises maintain competitive advantages.
-              </p>
+                SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry,the metallurgical industry, etc.            
+                </p>
             </div>
 
             <div className="group p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300">
@@ -180,8 +179,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-4">Professional Team</h3>
               <p className="text-gray-300 leading-relaxed">
-                Senior technical expert team with rich industry experience,
-                providing 7x24 professional technical support services.
+                As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service. 
               </p>
             </div>
           </div>
@@ -227,7 +225,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-4xl text-white font-bold mb-6">
             Ready to Start Your
             <span className="text-yellow-400"> Digital Journey</span>?
           </h2>
