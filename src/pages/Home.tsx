@@ -145,7 +145,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Choose
-              <span className="text-yellow-400"> Sentinel</span>
+              <span className="text-yellow-400"> SENTINEL</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Innovation makes good products, Focus makes better services
@@ -194,15 +194,15 @@ export default function HomePage() {
               <div className="flex items-center justify-center mb-4">
                 <Award className="text-yellow-400 mr-2" size={32} />
               </div>
-              <div className="text-4xl font-bold text-yellow-400">500+</div>
-              <div className="text-gray-300">Successful Projects</div>
+              <div className="text-4xl font-bold text-yellow-400">5YR</div>
+              <div className="text-gray-300">Warranty</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Users className="text-yellow-400 mr-2" size={32} />
               </div>
-              <div className="text-4xl font-bold text-yellow-400">200+</div>
-              <div className="text-gray-300">Partner Clients</div>
+              <div className="text-4xl font-bold text-yellow-400">24Hrs</div>
+              <div className="text-gray-300">Customer Service</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">

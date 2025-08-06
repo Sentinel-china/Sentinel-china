@@ -22,8 +22,8 @@ async function copyPublicFiles() {
     
     const files = await readdir(publicDir)
     for (const file of files) {
-      // 只复制logo相关的文件
-      if (file.startsWith('logo') || file.endsWith('.ico') || file.endsWith('.png') || file.endsWith('.svg')) {
+      // 复制所有图片文件
+      if (file.startsWith('logo') || file.endsWith('.ico') || file.endsWith('.png') || file.endsWith('.svg') || file.endsWith('.jpg') || file.endsWith('.jpeg')) {
         const sourcePath = join(publicDir, file)
         const destPath = join(distDir, file)
         await copyFile(sourcePath, destPath)
