@@ -4,6 +4,7 @@
  */
 import { Link } from 'react-router'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react'
+// ... existing code ...
 
 export default function Footer() {
   return (
@@ -14,9 +15,9 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img
-                src="/favicon.ico"
+                src="/logo.png"
                 alt="TechCorp Logo"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
               <span className="font-bold text-xl text-white">TechCorp</span>
             </div>

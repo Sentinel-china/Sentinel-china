@@ -3,11 +3,40 @@ import { rimraf } from 'rimraf'
 import stylePlugin from 'esbuild-style-plugin'
 import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
+import { copyFile, mkdir, readdir } from 'fs/promises'
+import { join } from 'path'
 
 const args = process.argv.slice(2)
 const isProd = args[0] === '--production'
 
 await rimraf('dist')
+
+// 复制public目录中的静态文件到dist目录
+async function copyPublicFiles() {
+  const publicDir = 'public'
+  const distDir = 'dist'
+  
+  try {
+    // 确保dist目录存在
+    await mkdir(distDir, { recursive: true })
+    
+    const files = await readdir(publicDir)
+    for (const file of files) {
+      // 只复制logo相关的文件
+      if (file.startsWith('logo') || file.endsWith('.ico') || file.endsWith('.png') || file.endsWith('.svg')) {
+        const sourcePath = join(publicDir, file)
+        const destPath = join(distDir, file)
+        await copyFile(sourcePath, destPath)
+        console.log(`Copied: ${file}`)
+      }
+    }
+  } catch (error) {
+    console.error('Error copying public files:', error)
+  }
+}
+
+// 复制静态文件
+await copyPublicFiles()
 
 /**
  * @type {esbuild.BuildOptions}
@@ -43,7 +72,12 @@ if (isProd) {
 } else {
   const ctx = await esbuild.context(esbuildOpts)
   await ctx.watch()
-  const { hosts, port } = await ctx.serve()
+  const { hosts, port } = await ctx.serve({
+    servedir: 'dist',
+    onRequest: (args) => {
+      console.log(`${args.method}: ${args.path}`)
+    }
+  })
   console.log(`Running on:`)
   hosts.forEach((host) => {
     console.log(`http://${host}:${port}`)

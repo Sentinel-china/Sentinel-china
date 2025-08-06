@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Menu, X } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
+// ... existing code ...
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,7 +26,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="sentinel-logo" className="h-8 w-auto"/>
+          <img src="/logo.png" alt="sentinel-logo" className="h-12 w-auto"/>
           </Link>
 
           {/* Desktop Navigation */}
