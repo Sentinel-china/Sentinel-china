@@ -76,7 +76,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   to="/products"
-                  className="inline-flex items-center px-6 py-3 border border-gray-600 text-white font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-colors duration-200"
+                  className="inline-flex items-center px-6 py-3 border border-gray-600 text-yellow font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-colors duration-200"
                 >
                   More Products
                 </Link>
@@ -227,7 +227,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-4xl text-white font-bold mb-6">
             Ready to Start Your
             <span className="text-yellow-400"> Digital Journey</span>?
           </h2>
