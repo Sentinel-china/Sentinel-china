@@ -16,7 +16,8 @@ import IOLink from './pages/products/IOLink'
 import Connectivity from './pages/products/Connectivity'
 import NewPage1 from './pages/products/NewPage1'
 import NewPage2 from './pages/products/NewPage2'
-import SolutionDetail from './pages/solutions/SolutionDetail'
+import SolutionsDetail from './pages/markdown-config/SolutionsDetail'
+import ProductDetail from './pages/markdown-config/ProductDetail'
 
 export default function App() {
   return (
@@ -35,7 +36,8 @@ export default function App() {
             <Route path="/products/new-page2" element={<NewPage2 />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/solutions" element={<SolutionsPage />} />
-            <Route path="/solutions/:solutionId" element={<SolutionDetail />} />
+            <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
+            <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

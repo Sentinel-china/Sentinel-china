@@ -13,12 +13,12 @@ declare module '*.jpeg' {
   export default src
 }
 
-declare module '*.svg' {
+declare module '*.gif' {
   const src: string
   export default src
 }
 
-declare module '*.gif' {
+declare module '*.svg' {
   const src: string
   export default src
 }
@@ -26,4 +26,9 @@ declare module '*.gif' {
 declare module '*.ico' {
   const src: string
   export default src
+}
+
+declare module '*.md?raw' {
+  const content: string
+  export default content
 } 

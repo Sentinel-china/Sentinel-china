@@ -24,16 +24,53 @@ async function copyPublicFiles() {
       if (file !== 'index.html') {
         const sourcePath = join(publicDir, file)
         const destPath = join(distDir, file)
-        await copyFile(sourcePath, destPath)
+        
+        // 检查是否是目录
+        const fs = await import('fs/promises')
+        const stat = await fs.stat(sourcePath)
+        
+        if (stat.isDirectory()) {
+          // 如果是目录，递归复制
+          await copyDirectory(sourcePath, destPath)
+        } else {
+          // 如果是文件，直接复制
+          await fs.copyFile(sourcePath, destPath)
+        }
         console.log(`Copied: ${file}`)
       }
     }
   } catch (error) {
     console.error('Error copying public files:', error)
+    // 如果递归复制失败，尝试直接复制所有文件
+    try {
+      const { execSync } = await import('child_process')
+      execSync(`xcopy "${publicDir}\\*" "${distDir}\\" /E /I /Y /EXCLUDE:index.html`, { stdio: 'inherit' })
+      console.log('Fallback: Used xcopy to copy files')
+    } catch (fallbackError) {
+      console.error('Fallback copy also failed:', fallbackError)
+    }
   }
 }
 
-// 复制静态文件
+// 递归复制目录
+async function copyDirectory(src, dest) {
+  const fs = await import('fs/promises')
+  await fs.mkdir(dest, { recursive: true })
+  const entries = await fs.readdir(src, { withFileTypes: true })
+  
+  for (const entry of entries) {
+    const srcPath = join(src, entry.name)
+    const destPath = join(dest, entry.name)
+    
+    if (entry.isDirectory()) {
+      await copyDirectory(srcPath, destPath)
+    } else {
+      await fs.copyFile(srcPath, destPath)
+    }
+  }
+}
+
+// 先复制public文件
 await copyPublicFiles()
 
 /**
@@ -46,7 +83,7 @@ const esbuildOpts = {
   entryNames: '[name]',
   write: true,
   bundle: true,
-  format: 'iife',
+  format: 'iife', // 改回iife格式
   sourcemap: isProd ? false : 'linked',
   minify: isProd,
   treeShaking: true,
