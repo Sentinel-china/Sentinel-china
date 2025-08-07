@@ -12,7 +12,7 @@ export default function ProductsPage() {
       title: "企业级数据平台",
       description: "一站式数据管理平台，提供数据采集、存储、处理和分析的完整解决方案。",
       features: ["实时数据处理", "可视化分析", "数据安全保障", "API集成"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/474e050d-e958-4060-b0fc-282963347c69.jpg",
+      image: "/product-sensor.png",
       link: "/products/data-platform"
     },
     {
@@ -20,7 +20,7 @@ export default function ProductsPage() {
       title: "云计算服务",
       description: "灵活可扩展的云基础设施服务，支持企业快速部署和管理应用程序。",
       features: ["弹性扩展", "高可用性", "成本优化", "多云管理"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d2f01969-593b-4489-8017-ddc38d07a4bf.jpg",
+      image: "/product-IO Module.png",
       link: "/products/cloud-service"
     },
     {
@@ -28,7 +28,7 @@ export default function ProductsPage() {
       title: "移动应用开发",
       description: "专业的移动应用开发服务，支持iOS、Android等多平台应用开发。",
       features: ["跨平台开发", "用户体验优化", "性能优化", "持续维护"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg",
+      image: "/product-IO-Link.png",
       link: "/products/mobile-development"
     },
     {
@@ -36,7 +36,7 @@ export default function ProductsPage() {
       title: "商业智能分析",
       description: "强大的商业智能工具，帮助企业从数据中获取有价值的商业洞察。",
       features: ["智能报表", "预测分析", "决策支持", "实时监控"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/2ff0493e-7d7d-4081-8f24-48e59e130899.jpg",
+      image: "/product-connectivity.png",
       link: "/products/business-intelligence"
     },
     {

@@ -7,28 +7,22 @@ import { Target, Eye, Award, Users, Clock, MapPin } from 'lucide-react'
 export default function AboutPage() {
   const certifications = [
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/3cf2acfe-9363-4cd5-ab5d-6938a0526ba0.jpg"
+      image: "/zhengshu1.jpg"
     },
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/7a0dee88-8b76-4051-a2f2-065e5b5804b8.jpg"
+      image: "/zhengshu2.jpg"
     },
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d9aac45d-9a89-4b6d-b0a0-1995b5b5b616.jpg"
+      image: "/zhengshu3.jpg"
     },
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/1dc67d2b-8d3f-47b9-b497-f8c10cff3a3d.jpg"
+      image: "/zhengshu4.jpg"
     },
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/3cf2acfe-9363-4cd5-ab5d-6938a0526ba0.jpg"
+      image: "/zhengshu5.jpg"
     },
     {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/7a0dee88-8b76-4051-a2f2-065e5b5804b8.jpg"
-    },
-    {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d9aac45d-9a89-4b6d-b0a0-1995b5b5b616.jpg"
-    },
-    {
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/1dc67d2b-8d3f-47b9-b497-f8c10cff3a3d.jpg"
+      image: "/zhengshu6.jpg"
     }
   ]
 
@@ -84,11 +78,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             About
-            <span className="text-yellow-400"> TechCorp</span>
+            <span className="text-yellow-400">Sentinel</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We are a professional technology company focused on enterprise digital transformation,
-            committed to providing customers with innovative technology solutions and excellent service experiences.
+            Tianjin Sentinel Electronics Co., Ltd is an innovative Scientific and technological enterprise integrating R&D, production, and sales.
           </p>
         </div>
       </section>
@@ -99,18 +92,14 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">
-                Professional Technology,
+                Professional quality,
                 <span className="text-yellow-400">Trustworthy</span>
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Since our establishment in 2018, we have always adhered to the concept of technological innovation and customer first,
-                providing professional digital solutions for various industries. We have an experienced technical team
-                with deep professional strength in software development, system integration, data analysis, cloud computing and other fields.
+                SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc. These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
               </p>
               <p className="text-gray-300 leading-relaxed">
-                We understand that each enterprise's needs are unique, so we focus on providing customized solutions
-                to help customers achieve business goals and enhance competitive advantages. Through continuous technological innovation and excellent service,
-                we have become a trusted technology partner for many enterprises.
+                 As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service.
               </p>
             </div>
             <div className="relative">
@@ -136,8 +125,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-bold">Our Mission</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Through innovative technology solutions, help enterprises achieve digital transformation,
-                improve business efficiency, create greater business value, and promote industry development progress.
+                Pioneer industrial sensors and IO-LINK modules via relentless R&D. Deliver precise, reliable solutions to drive seamless automation, efficiency, and sustainable industrial growth.
               </p>
             </div>
 
@@ -147,8 +135,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                To become a leading enterprise digital service provider in China,
-                winning customer trust and industry recognition with professional technical strength and excellent service quality.
+                Become the global benchmark in industrial sensing and IO-LINK tech. Connect industrial ecosystems with innovative solutions, shaping a smarter, more interconnected manufacturing world.
               </p>
             </div>
           </div>
@@ -157,7 +144,7 @@ export default function AboutPage() {
 
       {/* Certification Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Our
@@ -176,7 +163,7 @@ export default function AboutPage() {
                     <img
                       src={cert.image}
                       alt={`Certification ${index + 1}`}
-                      className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
+                      className="w-45 h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
                     />
                   </div>
                 </div>

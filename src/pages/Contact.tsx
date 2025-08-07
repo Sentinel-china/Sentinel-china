@@ -34,19 +34,19 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      content: "400-123-4567",
+      content: "022-83726917",
       description: "Weekdays 9:00-18:00"
     },
     {
       icon: Mail,
       title: "Email",
-      content: "contact@techcorp.com",
+      content: "export.sentinel@gmail.com",
       description: "Reply within 24 hours"
     },
     {
       icon: MapPin,
       title: "Address",
-      content: "Beijing Chaoyang Technology Park",
+      content: "Tianjin Xiqing Technology Park",
       description: "Welcome to visit by appointment"
     },
     {
@@ -70,7 +70,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             We look forward to cooperating with you. Please contact us through the following methods,
-            and our professional team will provide you with the highest quality services and solutions.
+            and our professional team will provide you with the highest quality products and solutions.
           </p>
         </div>
       </section>
@@ -119,24 +119,24 @@ export default function ContactPage() {
                   <div className="flex items-start space-x-3">
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
-                      <p className="font-semibold">Beijing Headquarters</p>
-                      <p className="text-gray-300">15th Floor, Building A, Innovation Tower, Beijing Chaoyang Technology Park</p>
+                      <p className="font-semibold">Tianjin Headquarters</p>
+                      <p className="text-gray-300">K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
-                      <p className="font-semibold">Shanghai Branch</p>
-                      <p className="text-gray-300">Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
+                      <p className="font-semibold">...</p>
+                      <p className="text-gray-300">......</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
-                      <p className="font-semibold">Shenzhen Branch</p>
-                      <p className="text-gray-300">Nanshan Technology Park South, Shenzhen</p>
+                      <p className="font-semibold">...</p>
+                      <p className="text-gray-300">......</p>
                     </div>
                   </div>
                 </div>
@@ -153,8 +153,8 @@ export default function ContactPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-white font-semibold">Beijing Chaoyang Technology Park</p>
-                    <p className="text-gray-300 text-sm">Metro Line 10 Technology Park Station Exit B</p>
+                    <p className="text-white font-semibold">Tianjin Xiqing Technology Park</p>
+                    <p className="text-gray-300 text-sm">High-tech Zone Metro Station</p>
                   </div>
                 </div>
               </div>
