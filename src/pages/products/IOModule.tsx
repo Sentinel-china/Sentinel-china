@@ -56,23 +56,23 @@ export default function CloudServiceDetail() {
   const features = [
     {
       icon: Server,
-      title: "弹性计算",
-      description: "按需分配计算资源，支持自动扩缩容，确保业务高峰期的稳定运行"
+      title: "Wide protocol support",
+      description: "Compatible with multiple protocols and adaptable to various systems."
     },
     {
       icon: Shield,
-      title: "安全可靠",
-      description: "多层安全防护机制，数据加密传输，99.99%的服务可用性保障"
+      title: "Flexible installation",
+      description: "On-site installation & Cabinet installation, suitable for different scenarios."
     },
     {
       icon: Zap,
-      title: "高性能",
-      description: "全球分布式架构，CDN加速，确保极速的访问体验"
+      title: "Top reliability",
+      description: "High-quality, stable performance for industrial communication needs."
     },
     {
       icon: BarChart3,
-      title: "智能监控",
-      description: "实时监控系统状态，智能预警，自动故障恢复"
+      title: "Technical Update",
+      description: "Upgrades traditional point-to-point links, making industrial setups smarter."
     }
   ]
 
@@ -91,20 +91,20 @@ export default function CloudServiceDetail() {
 
   const downloads = [
     {
-      title: "产品白皮书",
-      description: "详细的产品技术规格和实施方案",
+      title: "Sensors Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=300&h=200&fit=crop",
       link: "https://example.com/whitepaper.pdf"
     },
     {
-      title: "用户手册",
-      description: "完整的产品使用指南和最佳实践",
+      title: "I/O Module Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
       link: "https://example.com/manual.pdf"
     },
     {
-      title: "SDK开发包",
-      description: "API文档和开发工具包下载",
+      title: "IO-Link Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
       link: "https://example.com/sdk.zip"
     }
@@ -112,27 +112,27 @@ export default function CloudServiceDetail() {
 
   const cases = [
     {
-      company: "某知名电商平台",
-      industry: "电子商务",
-      challenge: "业务快速增长，传统服务器无法应对流量高峰",
-      solution: "采用弹性云计算服务，实现自动扩缩容",
-      result: "节省成本40%，系统稳定性提升至99.99%",
+      company: "PROFINET",
+      industry: "Communication Protocol",
+      challenge: "PROFINET is an open industrial Ethernet communication protocol, designed to collect and transmit data in industrial systems, and can realize real-time data transmission and reception. It is a real-time industrial Ethernet. Since profinet is based on Ethernet, it can have star, tree, bus and other topological structures of Ethernet.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "Financial Technology Company",
-      industry: "FinTech",
-      challenge: "Extremely high data security requirements, need to meet compliance requirements",
-      solution: "Deployed secure cloud environment with multi-layer encryption protection",
-      result: "Passed financial regulatory certification, business efficiency improved by 60%",
+      company: "CC-Link IE Field Basic",
+      industry: "Communication Protocol",
+      challenge: "CC-Link IE Field Basic is a new member of the CC-Link IE protocol and was officially released in August 2016. This protocol is a bus network based on standard 100Mbps Ethernet, which is designed to provide a low-cost control network for small-scale systems that do not require high-speed control. SENTINEL Electronics is also the first manufacturer to independently develop the protocol’s high-protection-level remote I/O modules.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某制造业集团",
-      industry: "智能制造",
-      challenge: "多地工厂数据互通，需要统一管理平台",
-      solution: "构建混合云架构，实现数据统一管理",
-      result: "管理效率提升50%，运维成本降低30%",
+      company: "EtherCAT",
+      industry: "Communication Protocol",
+      challenge: "EtherCAT is an open-architecture fieldbus system based on Ethernet. EtherCAT sets a new standard for the system’s real-time performance and topology flexibility. At the same time, it also meets or even reduces the cost of fieldbus use. SENTINEL can provide users with EtherCAT protocol bus products with IP20 and IP67 protection class.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -207,27 +207,29 @@ export default function CloudServiceDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    云计算<span className="text-yellow-400">服务</span>
+                    I/O<span className="text-yellow-400"> Modules</span>
                   </h1>
-                  <p className="text-gray-400">Enterprise Cloud Computing Solutions</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                基于先进的云原生技术，为企业提供灵活、安全、高效的云计算基础设施服务。
-                支持弹性扩展，确保业务连续性，助力企业数字化转型。
+               As a professional Fieldbus module manufacturer, SENTINEL provides factory automation with Fieldbus modules that support various protocols such as Profibus-DP, Profinet, ModbusTCP, EtherCAT, CC-LINK, CC-LINK IE Field Basic.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费试用
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的云计算技术，为您的业务保驾护航</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Products
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品参数
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                下载中心
+                Downloads
               </button>
             </div>
           </div>
@@ -303,32 +305,30 @@ export default function CloudServiceDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术原理</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的云计算服务基于分布式计算架构，通过虚拟化技术将物理服务器资源抽象化，
-                      形成资源池，为用户提供按需分配的计算、存储和网络资源。
+                      The products are mainly divided into two categories, one is a high protection level (IP67) series that can be used for on-site installation; the other is a compact single independent product series that can be installed in the cabinet.
                     </p>
                     <p>
-                      采用微服务架构和容器化技术，确保应用的快速部署和弹性扩展。
-                      结合AI智能调度算法，实现资源的最优配置和自动化运维。
+                      As an upgrade to the traditional point-to-point connection, the Fieldbus module is now widely used in industrial fields. 
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Monitor className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监控</span>
+                        <span>Wide protocol support</span>
                       </div>
                       <div className="flex items-center">
                         <Database className="text-yellow-400 mr-2" size={20} />
-                        <span>数据备份</span>
+                        <span>Flexible installation</span>
                       </div>
                       <div className="flex items-center">
                         <Cpu className="text-yellow-400 mr-2" size={20} />
-                        <span>弹性计算</span>
+                        <span>Top reliability</span>
                       </div>
                       <div className="flex items-center">
                         <Shield className="text-yellow-400 mr-2" size={20} />
-                        <span>安全防护</span>
+                        <span>Technical Update</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +347,7 @@ export default function CloudServiceDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放产品演示视频</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +355,16 @@ export default function CloudServiceDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">产品技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格项目
+                          Project
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          参数详情
+                          Parameter
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +388,7 @@ export default function CloudServiceDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +412,7 @@ export default function CloudServiceDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +429,9 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product<span className="text-yellow-400"> type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证云计算的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -451,18 +451,17 @@ export default function CloudServiceDetail() {
                 </div>
                 
                 <div className="p-6">
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                      <p className="text-gray-300 text-sm">{case_.challenge}</p> 
+                    </div>
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
-                  </div>
-                  
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm">{case_.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
@@ -477,9 +476,9 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              相关<span className="text-yellow-400">产品</span>
+              Related<span className="text-yellow-400"> Articles</span>
             </h2>
-            <p className="text-xl text-gray-300">与云计算服务相辅相成的其他产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -543,20 +542,20 @@ export default function CloudServiceDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">云计算</span>之旅？
+              Get your <span className="text-yellow-400">preferential </span>price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的云计算解决方案
+              Our professional team will provide you with personalized solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center text-gray-300">
                 <Phone size={20} className="mr-2 text-yellow-400" />
-                400-123-4567
+                +86 15022168478
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                cloud@company.com
+                export.sentinel@gmail.com
               </div>
             </div>
             
@@ -565,7 +564,7 @@ export default function CloudServiceDetail() {
                 立即咨询
               </button> */}
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                联系我们
+                Contact us
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>
