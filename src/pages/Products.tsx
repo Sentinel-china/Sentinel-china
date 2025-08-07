@@ -9,51 +9,35 @@ export default function ProductsPage() {
   const products = [
     {
       icon: Database,
-      title: "企业级数据平台",
-      description: "一站式数据管理平台，提供数据采集、存储、处理和分析的完整解决方案。",
-      features: ["实时数据处理", "可视化分析", "数据安全保障", "API集成"],
-      image: "/product-sensor.png",
-      link: "/products/data-platform"
+      title: "SENSOR",
+      description: "As a detection device, Sensors can sense the measured information, and can transform the sensed information into electrical signals or other required forms, so as to meet the requirements of information transmission, processing, storage, display, Records and controls, etc.",
+      features: ["Temperature sensor", "Pressure sensor", "Thermal Flow sensor", "Vortex Flow sensor"],
+      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/474e050d-e958-4060-b0fc-282963347c69.jpg",
+      link: "/products/sensor"
     },
     {
       icon: Cloud,
-      title: "云计算服务",
-      description: "灵活可扩展的云基础设施服务，支持企业快速部署和管理应用程序。",
-      features: ["弹性扩展", "高可用性", "成本优化", "多云管理"],
-      image: "/product-IO Module.png",
-      link: "/products/cloud-service"
+      title: "I/O Module",
+      description: "As an upgrade to the traditional point-to-point connection, the Fieldbus module is now widely used in industrial fields. As a professional Fieldbus module manufacturer, SENTINEL provides factory automation with Fieldbus modules that support various protocols.",
+      features: ["PROFINET", "CC-Link IE Field Basic", "EtherCAT"],
+      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d2f01969-593b-4489-8017-ddc38d07a4bf.jpg",
+      link: "/products/io-module"
     },
     {
       icon: Smartphone,
-      title: "移动应用开发",
-      description: "专业的移动应用开发服务，支持iOS、Android等多平台应用开发。",
-      features: ["跨平台开发", "用户体验优化", "性能优化", "持续维护"],
-      image: "/product-IO-Link.png",
-      link: "/products/mobile-development"
+      title: "IO-Link",
+      description: "IO-Link is the worlds first standardized IO technology for communication with sensors and actuators. Point-to-point communication is based on the well-established 3-wire sensor and actuator connection without additional requirements on cable materials.",
+      features: ["IO-Link Master", "IO-Link Hubs", "IO-Link Converter"],
+      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg",
+      link: "/products/io-link"
     },
     {
       icon: BarChart3,
-      title: "商业智能分析",
-      description: "强大的商业智能工具，帮助企业从数据中获取有价值的商业洞察。",
-      features: ["智能报表", "预测分析", "决策支持", "实时监控"],
-      image: "/product-connectivity.png",
-      link: "/products/business-intelligence"
-    },
-    {
-      icon: Lock,
-      title: "信息安全服务",
-      description: "全方位的信息安全解决方案，保护企业数据和系统安全。",
-      features: ["安全评估", "风险管控", "应急响应", "合规咨询"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/5ab15d0d-e868-427f-b801-5508d9829f2f.jpg",
-      link: "/products/security-service"
-    },
-    {
-      icon: Cog,
-      title: "System Integration Services",
-      description: "Professional system integration and operation services ensuring stable and efficient operation of enterprise IT systems.",
-      features: ["System Integration", "Performance Optimization", "Operation Support", "Technology Upgrade"],
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d1af20c3-c441-4862-9238-16a001d77e53.jpg",
-      link: "/products/system-integration"
+      title: "CONNECTIVITY",
+      description: "The connectivity system is an indispensable product for connecting field devices and control devices.Such as 7/8” POWER CABLE、JUNCTION BOXES、INDUSTRIAL ETHERNET CABLE、CORDSETS.The connectivity products make customer wiring systems low-cost and more efficient.",
+      features: ["7/8” POWER CABLE", "JUNCTION BOXES", "INDUSTRIAL ETHERNET CABLE", "CORDSETS"],
+      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/2ff0493e-7d7d-4081-8f24-48e59e130899.jpg",
+      link: "/products/connectivity"
     }
   ]
 
@@ -63,12 +47,11 @@ export default function ProductsPage() {
       <section className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            产品与
-            <span className="text-yellow-400">服务</span>
+            
+            <span className="text-yellow-400">PRODUCTS</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            我们提供全方位的技术产品和专业服务，助力企业实现数字化转型升级，
-            提升业务效率和竞争优势。
+           We provide a full range of technical products and professional services to help factory automation transformation and upgrade, improve business efficiency and competitive advantage.
           </p>
         </div>
       </section>
@@ -106,7 +89,7 @@ export default function ProductsPage() {
                       </p>
                       
                       <div className="space-y-2">
-                        <h4 className="text-sm font-semibold text-yellow-400 mb-3">核心特性</h4>
+                        <h4 className="text-sm font-semibold text-yellow-400 mb-3">Classification</h4>
                         <div className="grid grid-cols-2 gap-2">
                           {product.features.map((feature, featureIndex) => (
                             <div key={featureIndex} className="flex items-center text-sm text-gray-300">
@@ -130,11 +113,11 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              服务
-              <span className="text-yellow-400">流程</span>
+              Service
+              <span className="text-yellow-400">process</span>
             </h2>
             <p className="text-xl text-gray-300">
-              标准化的服务流程，确保项目质量和交付效率
+              Standardized service processes to ensure product quality and delivery efficiency
             </p>
           </div>
 
@@ -143,32 +126,32 @@ export default function ProductsPage() {
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <span className="text-2xl font-bold text-yellow-400">1</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">需求分析</h3>
-              <p className="text-gray-300 text-sm">深入了解客户需求，制定详细的项目方案</p>
+              <h3 className="text-lg font-semibold mb-2">Needs analysis</h3>
+              <p className="text-gray-300 text-sm">Deeply understand customer needs and formulate detailed product plans</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <span className="text-2xl font-bold text-yellow-400">2</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">方案设计</h3>
-              <p className="text-gray-300 text-sm">设计最优的技术架构和实施方案</p>
+              <h3 className="text-lg font-semibold mb-2">Selection&customization</h3>
+              <p className="text-gray-300 text-sm">Match products and customize solutions</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <span className="text-2xl font-bold text-yellow-400">3</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">开发实施</h3>
-              <p className="text-gray-300 text-sm">专业团队按计划执行开发和部署</p>
+              <h3 className="text-lg font-semibold mb-2">Delivery</h3>
+              <p className="text-gray-300 text-sm">Shipped on schedule</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <span className="text-2xl font-bold text-yellow-400">4</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">交付运维</h3>
-              <p className="text-gray-300 text-sm">项目交付并提供持续的技术支持</p>
+              <h3 className="text-lg font-semibold mb-2">After-sales</h3>
+              <p className="text-gray-300 text-sm">Provide excellent after-sales service</p>
             </div>
           </div>
         </div>
