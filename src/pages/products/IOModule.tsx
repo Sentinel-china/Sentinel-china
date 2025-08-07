@@ -141,32 +141,38 @@ export default function CloudServiceDetail() {
     {
       title: "云数据库服务",
       description: "高性能、高可用的数据库解决方案",
-      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=300&h=200&fit=crop",
+      link: "/products/io-module01"
     },
     {
       title: "容器编排平台",
       description: "Kubernetes 原生容器管理平台",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      link: "/products/io-module02"
     },
     {
       title: "CDN 加速服务",
       description: "全球内容分发网络，提升访问速度",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      link: "/products/io-module03"
     },
     {
       title: "云安全防护",
       description: "多层次安全防护，保障数据安全",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+      link: "/products/io-module04"
     },
     {
       title: "大数据分析平台",
       description: "实时数据处理和分析解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      link: "/products/io-module05"
     },
     {
       title: "AI 机器学习平台",
       description: "企业级人工智能开发平台",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+      link: "/products/io-module06"
     }
   ]
 
@@ -505,17 +511,23 @@ export default function CloudServiceDetail() {
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                    />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-sm">{product.description}</p>
+                  <Link to={product.link} className="block">
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h4 className="text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
+                        <p className="text-gray-200 text-sm">{product.description}</p>
+                      </div>
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="text-yellow-400" size={20} />
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>

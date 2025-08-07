@@ -8,7 +8,7 @@ import { Link } from 'react-router'
 export default function SolutionsPage() {
   const solutions = [
     {
-      id: "smart-city",
+      id: "solutions01",
       icon: Building2,
       title: "Smart City Solutions",
       description: "Building intelligent city management platforms to improve urban governance efficiency and residents' quality of life.",
@@ -27,7 +27,7 @@ export default function SolutionsPage() {
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/6ab63c35-f446-428e-bcdf-052e08cbbe82.jpg"
     },
     {
-      id: "new-retail",
+      id: "solutions02",
       icon: ShoppingCart,
       title: "New Retail Digital Platform",
       description: "Omni-channel retail management system integrating online and offline resources to improve retail business efficiency.",
@@ -46,7 +46,7 @@ export default function SolutionsPage() {
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/8224106a-a7d3-48e1-ae54-3597b225d1ae.jpg"
     },
     {
-      id: "smart-healthcare",
+      id: "solutions03",
       icon: Heart,
       title: "Smart Healthcare Solutions",
       description: "Medical information management system improving medical service quality and patient experience.",
@@ -65,7 +65,7 @@ export default function SolutionsPage() {
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/a7b245d5-2bec-43c4-be53-81112e8b2eb6.jpg"
     },
     {
-      id: "smart-education",
+      id: "solutions04",
       icon: GraduationCap,
       title: "Smart Education Platform",
       description: "Modern education management system promoting teaching innovation and learning effectiveness improvement.",
@@ -84,7 +84,7 @@ export default function SolutionsPage() {
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/14e6e88a-07a6-44a5-b221-323b77d43fc8.jpg"
     },
     {
-      id: "smart-manufacturing",
+      id: "solutions05",
       icon: Factory,
       title: "Industry 4.0 Smart Manufacturing",
       description: "Smart manufacturing solutions achieving digitalization and intelligent upgrade of production processes.",
@@ -103,7 +103,7 @@ export default function SolutionsPage() {
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/b898b1b0-fbb8-4b0e-93e6-0929a9459bda.jpg"
     },
     {
-      id: "fintech",
+      id: "solutions06",
       icon: Banknote,
       title: "Financial Technology Solutions",
       description: "Digital transformation solutions for the financial industry, improving financial service efficiency and security.",
