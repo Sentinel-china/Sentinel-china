@@ -19,7 +19,7 @@ export default function HomePage() {
     },
     {
       src: "/banner3.png",
-      alt: "IO Moduel"
+      alt: "IO Module"
     }
   ]
 
@@ -60,7 +60,7 @@ export default function HomePage() {
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   Industral Sensors
                   <span className="text-yellow-400 block">IO-Link</span>
-                  <span className="text-yellow-400 block">I/O Moduel</span>
+                  <span className="text-yellow-400 block">I/O Module</span>
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed">
                   Professional technical teams and cutting-edge solutions to create greater business value
@@ -145,7 +145,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Choose
-              <span className="text-yellow-400"> Sentinel</span>
+              <span className="text-yellow-400"> SENTINEL</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Innovation makes good products, Focus makes better services

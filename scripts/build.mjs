@@ -11,19 +11,17 @@ const isProd = args[0] === '--production'
 
 await rimraf('dist')
 
-// 复制public目录中的静态文件到dist目录
+// 复制 public 目录中的所有静态文件到 dist 目录（除了 index.html）
 async function copyPublicFiles() {
   const publicDir = 'public'
   const distDir = 'dist'
   
   try {
-    // 确保dist目录存在
     await mkdir(distDir, { recursive: true })
-    
     const files = await readdir(publicDir)
     for (const file of files) {
-      // 只复制logo相关的文件
-      if (file.startsWith('logo') || file.endsWith('.ico') || file.endsWith('.png') || file.endsWith('.svg')) {
+      // 跳过 index.html，复制其它所有文件
+      if (file !== 'index.html') {
         const sourcePath = join(publicDir, file)
         const destPath = join(distDir, file)
         await copyFile(sourcePath, destPath)
