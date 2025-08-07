@@ -194,15 +194,15 @@ export default function HomePage() {
               <div className="flex items-center justify-center mb-4">
                 <Award className="text-yellow-400 mr-2" size={32} />
               </div>
-              <div className="text-4xl font-bold text-yellow-400">500+</div>
-              <div className="text-gray-300">Successful Projects</div>
+              <div className="text-4xl font-bold text-yellow-400">5YR</div>
+              <div className="text-gray-300">Warranty</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Users className="text-yellow-400 mr-2" size={32} />
               </div>
-              <div className="text-4xl font-bold text-yellow-400">200+</div>
-              <div className="text-gray-300">Partner Clients</div>
+              <div className="text-4xl font-bold text-yellow-400">24Hrs</div>
+              <div className="text-gray-300">Customer Service</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
