@@ -19,7 +19,7 @@ export default function Footer() {
                 alt="TechCorp Logo"
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-xl text-white">Sentinel</span>
+              <span className="font-bold text-xl text-white"></span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Innovation makes good products, 
@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 TechCorp. All rights reserved.
+            © 2024 SENTINEL. All rights reserved.
           </p>
         </div>
       </div>
