@@ -10,7 +10,12 @@ import ProductsPage from './pages/Products'
 import AboutPage from './pages/About'
 import SolutionsPage from './pages/Solutions'
 import ContactPage from './pages/Contact'
-import CloudServiceDetail from './pages/products/CloudServiceDetail'
+import IOModule from './pages/products/IOModule'
+import Sensor from './pages/products/Sensor'
+import IOLink from './pages/products/IOLink'
+import Connectivity from './pages/products/Connectivity'
+import NewPage1 from './pages/products/NewPage1'
+import NewPage2 from './pages/products/NewPage2'
 import SolutionDetail from './pages/solutions/SolutionDetail'
 
 export default function App() {
@@ -22,7 +27,12 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
-            <Route path="/products/cloud-service" element={<CloudServiceDetail />} />
+            <Route path="/products/io-module" element={<IOModule />} />
+            <Route path="/products/sensor" element={<Sensor />} />
+            <Route path="/products/io-link" element={<IOLink />} />
+            <Route path="/products/connectivity" element={<Connectivity />} />
+            <Route path="/products/new-page1" element={<NewPage1 />} />
+            <Route path="/products/new-page2" element={<NewPage2 />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/solutions/:solutionId" element={<SolutionDetail />} />
