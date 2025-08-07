@@ -19,7 +19,7 @@ export default function HomePage() {
     },
     {
       src: "/banner3.png",
-      alt: "IO Moduel"
+      alt: "IO Module"
     }
   ]
 
@@ -60,7 +60,7 @@ export default function HomePage() {
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   Industral Sensors
                   <span className="text-yellow-400 block">IO-Link</span>
-                  <span className="text-yellow-400 block">I/O Moduel</span>
+                  <span className="text-yellow-400 block">I/O Module</span>
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed">
                   Professional technical teams and cutting-edge solutions to create greater business value
