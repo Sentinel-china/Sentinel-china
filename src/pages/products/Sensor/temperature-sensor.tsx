@@ -56,23 +56,23 @@ export default function TemperatureSensorDetail() {
   const features = [
     {
       icon: Thermometer,
-      title: "高精度测量",
-      description: "±0.1°C精度，确保温度测量的准确性和可靠性"
+      title: "High precision measurement",
+      description: "± 0.1°C accuracy, ensuring accuracy and reliability in temperature measurement"
     },
     {
       icon: Code,
-      title: "快速响应",
-      description: "毫秒级响应时间，实时监测温度变化"
+      title: "Quick response",
+      description: "Millisecond response time to monitor temperature changes in real time"
     },
     {
       icon: Zap,
-      title: "宽温度范围",
-      description: "-40°C to +125°C，适用于各种工业环境"
+      title: "Wide temperature range",
+      description: "-50°C to +100°C for a wide range of industrial environments"
     },
     {
       icon: Users,
-      title: "长期稳定性",
-      description: "优异的长期稳定性，减少校准频率"
+      title: "Long-term stability",
+      description: "Excellent long-term stability with reduced calibration frequency"
     }
   ]
 
@@ -214,20 +214,22 @@ export default function TemperatureSensorDetail() {
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度温度传感器，提供±0.1°C的测量精度，适用于各种工业环境。
-                采用先进的热敏电阻技术，确保快速响应和长期稳定性。
+                SENTINEL temperature sensors and transmitters are temperature detection devices that convert physical temperature into electrical or other types of output signals to meet the monitoring needs of industrial automation systems.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                 onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020791984.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                 <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+               Core<span className="text-yellow-400">Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的温度传感技术，为您的工业应用提供可靠的温度监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Products
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                 Downloads
               </button>
             </div>
           </div>
@@ -303,32 +305,30 @@ export default function TemperatureSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的温度传感器采用先进的热敏电阻技术，结合精密电子电路设计，
-                      实现高精度、快速响应的温度测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
+                      In industrial production, temperature switch is a reliable and practical equipment temperature detection device. Sentinel’s integrated intelligent temperature switch integrates measurement and display, which can provide a simple programming solution.
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP67防护设计，适用于各种恶劣工业环境。
+                      Compact temperature switch, specially designed for bearing internal temperature measurement, compact in appearance, customizable in probe length, with a temperature measurement range of 100°C, analog output, and outgoing wires and connectors.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Thermometer className="text-yellow-400 mr-2" size={20} />
-                        <span>高精度测量</span>
+                        <span>High precision measurement</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>快速响应</span>
+                        <span>Quick response</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>宽温度范围</span>
+                        <span>Wide temperature range</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>长期稳定性</span>
+                        <span>Long-term stability</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +347,7 @@ export default function TemperatureSensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放技术演示</p>
+                  <p className="text-gray-400 text-center mt-4">CLICK</p>
                 </div>
               </div>
             )}
@@ -355,16 +355,16 @@ export default function TemperatureSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +388,7 @@ export default function TemperatureSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +412,7 @@ export default function TemperatureSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +429,9 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product<span className="text-yellow-400">Type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证温度传感器的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -459,17 +459,17 @@ export default function TemperatureSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm">{case_.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
@@ -484,9 +484,9 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              相关<span className="text-yellow-400">产品</span>
+              Related<span className="text-yellow-400">Articles</span>
             </h2>
-            <p className="text-xl text-gray-300">与温度传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -550,26 +550,23 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">温度监测</span>项目？
+              Get your<span className="text-yellow-400">preferential</span>price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的温度传感器解决方案
+              Our professional team will provide you with personalized solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-gray-300">
-                <Phone size={20} className="mr-2 text-yellow-400" />
-                400-123-4567
-              </div>
+              
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                sensor@company.com
+                export.sentinel@gmail.com
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                联系我们
+                Contact us
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

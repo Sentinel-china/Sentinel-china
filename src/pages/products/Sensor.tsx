@@ -69,8 +69,8 @@ export default function SensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/474e050d-e958-4060-b0fc-282963347c69.jpg"
-                alt="传感器产品"
+                src="banner1.png"
+                alt="Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -83,27 +83,29 @@ export default function SensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    企业级<span className="text-yellow-400">数据平台</span>
+                     Industrial<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Enterprise Data Platform</p>
+                  <p className="text-gray-400">industrial Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                一站式数据管理平台，提供数据采集、存储、处理和分析的完整解决方案。
-                支持多种数据源接入，实现数据的统一管理和智能分析。
+                As a detection device, Sensors can sense the measured information, and can transform the sensed information into electrical signals or other required forms, so as to meet the requirements of information transmission, processing, storage, display, Records and controls, etc.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                 onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020781551.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费试用
-                </button>
+                 <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -115,10 +117,10 @@ export default function SensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              传感器<span className="text-yellow-400">产品系列</span>
+              Sensor <span className="text-yellow-400">Product Series</span>
             </h2>
             <p className="text-xl text-gray-300">
-              专业的工业传感器解决方案，为您的自动化系统提供可靠的数据采集
+              Professional industrial sensor solutions for reliable data acquisition for your automation systems
             </p>
           </div>
 

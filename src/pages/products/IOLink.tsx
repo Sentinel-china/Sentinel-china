@@ -437,15 +437,15 @@ export default function MobileDevelopmentDetail() {
                 key={index} 
                 className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
                 onClick={() => {
-                  // 根据不同的案例跳转到不同的页面
+                  // hwc add
                   switch(case_.company) {
-                    case '某电商平台':
+                    case 'IO-LINK MASTER':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020713978.html'; 
                       break;
-                    case '某金融机构':
+                    case 'IO-LINK Hubs':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020778941.html'; 
                       break;
-                    case '某教育机构':
+                    case 'IO-LINK CONNECTIVER':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020758615.html'; 
                       break;
                     default:
