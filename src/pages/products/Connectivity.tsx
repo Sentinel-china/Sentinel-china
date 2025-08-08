@@ -56,23 +56,23 @@ export default function BusinessIntelligenceDetail() {
   const features = [
     {
       icon: BarChart3,
-      title: "智能报表",
-      description: "自动生成多维度分析报表，支持自定义仪表板和实时数据展示"
+      title: "Custom & standard options",
+      description: "Offers both to meet various needs"
     },
     {
       icon: TrendingUp,
-      title: "预测分析",
-      description: "基于机器学习的预测模型，帮助企业做出数据驱动的决策"
+      title: "Fits harsh environments",
+      description: "Works stably in tough industrial settings"
     },
     {
       icon: Brain,
-      title: "决策支持",
-      description: "智能推荐系统，为企业提供最优的业务决策建议"
+      title: "Diverse products",
+      description: "Includes connectors, cables and more"
     },
     {
       icon: Monitor,
-      title: "实时监控",
-      description: "实时监控关键业务指标，及时发现异常和机会"
+      title: "Cost-saving & efficient",
+      description: "Optimizes wiring for lower cost and higher efficiency"
     }
   ]
 
@@ -91,20 +91,20 @@ export default function BusinessIntelligenceDetail() {
 
   const downloads = [
     {
-      title: "BI平台白皮书",
-      description: "详细的商业智能平台技术架构和实施方案",
+      title: "Sensors Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
       link: "https://example.com/bi-platform-whitepaper.pdf"
     },
     {
-      title: "分析模型库",
-      description: "预置的分析模型和算法库",
+      title: "I/O Module Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
       link: "https://example.com/analytics-models.pdf"
     },
     {
-      title: "可视化模板",
-      description: "丰富的可视化模板和组件库",
+      title: "IO-Link Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
       link: "https://example.com/visualization-templates.zip"
     }
@@ -112,27 +112,27 @@ export default function BusinessIntelligenceDetail() {
 
   const cases = [
     {
-      company: "某零售连锁企业",
-      industry: "零售业",
-      challenge: "多门店销售数据分散，无法统一分析客户行为和销售趋势",
-      solution: "构建统一BI平台，整合线上线下数据，建立客户画像",
-      result: "销售额提升25%，客户留存率提升40%",
+      company: "CONNECTIVITY",
+      industry: "JUNCTION BOXES",
+      challenge: "M12 and M8 standard interfaces can be provided, as well as 4-channel and 8-channel interface channels. Each channel can be divided into single-signal output and dual-signal output.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某制造企业",
-      industry: "制造业",
-      challenge: "生产数据孤岛，无法实现智能制造决策和预测性维护",
-      solution: "建立工业BI平台，实现生产全流程数字化分析和预测",
-      result: "生产效率提升30%，设备故障率降低50%",
+      company: "CONNECTIVITY",
+      industry: "CORDSETS",
+      challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8” standard connection sizes.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某金融机构",
-      industry: "金融业",
-      challenge: "需要实时监控风险，分析客户信用和投资组合表现",
-      solution: "部署实时BI系统，建立风险预警和投资分析模型",
-      result: "风险识别准确率提升至95%，投资收益提升20%",
+      company: "CONNECTIVITY",
+      industry: "7/8” POWER CABLE",
+      challenge: "he power connector used is 7/8” standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -193,8 +193,8 @@ export default function BusinessIntelligenceDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/2ff0493e-7d7d-4081-8f24-48e59e130899.jpg"
-                alt="商业智能分析"
+                src="/banner4.png"
+                alt="CONNECTIVITY"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -207,27 +207,29 @@ export default function BusinessIntelligenceDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    商业智能<span className="text-yellow-400">分析</span>
+                    <span className="text-yellow-400">CONNECTIVITY</span>
                   </h1>
-                  <p className="text-gray-400">Business Intelligence Analytics</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                强大的商业智能工具，帮助企业从数据中获取有价值的商业洞察。
-                支持智能报表、预测分析和决策支持，助力企业数据驱动决策。
+                SENTINEL offers a wide variety of products are available, including male-female connectors, pre-cast connectors, junction boxes, as well as cables, and accessories. we can provide standard products and customized products to customer needs.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020715352.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费试用
-                </button>
+               <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core <span className="text-yellow-400">Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的商业智能技术，为您的业务决策提供数据支撑</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Products
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,32 +305,30 @@ export default function BusinessIntelligenceDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的商业智能平台采用现代化的数据架构，支持多源数据集成和实时处理。
-                      通过数据仓库和数据湖技术，实现海量数据的高效存储和分析。
+                      The connectivity system is an indispensable product for connecting field devices and control devices.
                     </p>
                     <p>
-                      内置机器学习算法和预测模型，支持智能分析和决策支持。
-                      提供丰富的可视化组件，让复杂的数据分析结果变得直观易懂。
+                      The connectivity products make customer wiring systems low-cost and more efficient.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <BarChart3 className="text-yellow-400 mr-2" size={20} />
-                        <span>智能报表</span>
+                        <span>7/8” POWER CABLE</span>
                       </div>
                       <div className="flex items-center">
                         <TrendingUp className="text-yellow-400 mr-2" size={20} />
-                        <span>预测分析</span>
+                        <span>INDUSTRIAL ETHERNET CABLE</span>
                       </div>
                       <div className="flex items-center">
                         <Brain className="text-yellow-400 mr-2" size={20} />
-                        <span>决策支持</span>
+                        <span>FIELD-WIREABLE CONNECTORS</span>
                       </div>
                       <div className="flex items-center">
                         <Monitor className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监控</span>
+                        <span>JUNCTION BOXES</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +347,7 @@ export default function BusinessIntelligenceDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放平台演示视频</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +355,16 @@ export default function BusinessIntelligenceDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          Project
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          Parameter
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +388,7 @@ export default function BusinessIntelligenceDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +412,7 @@ export default function BusinessIntelligenceDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +429,9 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product <span className="text-yellow-400">Type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证商业智能的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -475,17 +475,17 @@ export default function BusinessIntelligenceDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm">{case_.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
@@ -500,9 +500,9 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              相关<span className="text-yellow-400">产品</span>
+              Related <span className="text-yellow-400">Articles</span>
             </h2>
-            <p className="text-xl text-gray-300">与商业智能相辅相成的其他产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -566,26 +566,23 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">商业智能</span>之旅？
+              Get your <span className="text-yellow-400">preferential </span>price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的商业智能解决方案
+              Our professional team will provide you with personalized solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-gray-300">
-                <Phone size={20} className="mr-2 text-yellow-400" />
-                400-123-4567
-              </div>
+              
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                bi@company.com
+                export.sentinel@gmail.com
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                联系我们
+                Contact us
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>
