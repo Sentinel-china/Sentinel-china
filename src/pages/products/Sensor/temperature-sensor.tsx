@@ -1,12 +1,12 @@
 /**
- * 压力传感器详情页面
- * 展示压力传感器的详细信息、技术优势和解决方案
+ * 温度传感器详情页面
+ * 展示温度传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Gauge, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Thermometer, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
-export default function PressureSensorDetail() {
+export default function TemperatureSensorDetail() {
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -55,92 +55,92 @@ export default function PressureSensorDetail() {
 
   const features = [
     {
-      icon: Gauge,
+      icon: Thermometer,
       title: "高精度测量",
-      description: "0.1%FS精度，确保压力测量的准确性和可靠性"
+      description: "±0.1°C精度，确保温度测量的准确性和可靠性"
     },
     {
       icon: Code,
-      title: "防爆设计",
-      description: "ATEX认证，适用于危险环境的安全监测"
+      title: "快速响应",
+      description: "毫秒级响应时间，实时监测温度变化"
     },
     {
       icon: Zap,
-      title: "宽压力范围",
-      description: "0-1000bar，支持多种压力测量需求"
+      title: "宽温度范围",
+      description: "-40°C to +125°C，适用于各种工业环境"
     },
     {
       icon: Users,
-      title: "IP67防护",
-      description: "优异的防护等级，适应恶劣工业环境"
+      title: "长期稳定性",
+      description: "优异的长期稳定性，减少校准频率"
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "0-1000bar" },
-    { spec: "精度", value: "0.1%FS" },
-    { spec: "响应时间", value: "<50ms" },
+    { spec: "测量范围", value: "-40°C to +125°C" },
+    { spec: "精度", value: "±0.1°C" },
+    { spec: "响应时间", value: "<100ms" },
     { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
     { spec: "防护等级", value: "IP67" },
     { spec: "工作电压", value: "12-24VDC" },
-    { spec: "长期稳定性", value: "±0.05%FS/年" },
-    { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-20°C to +85°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX、SIL2" }
+    { spec: "长期稳定性", value: "±0.05°C/年" },
+    { spec: "温度系数", value: "±0.01%/°C" },
+    { spec: "环境温度", value: "-20°C to +70°C" },
+    { spec: "认证标准", value: "CE、RoHS、ATEX" }
   ]
 
   const downloads = [
     {
       title: "技术手册",
-      description: "压力传感器详细技术规格和使用指南",
+      description: "温度传感器详细技术规格和使用指南",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/pressure-sensor-manual.pdf"
+      link: "https://example.com/temperature-sensor-manual.pdf"
     },
     {
       title: "安装指南",
-      description: "压力传感器安装和调试指南",
+      description: "温度传感器安装和调试指南",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/pressure-sensor-installation.pdf"
+      link: "https://example.com/temperature-sensor-installation.pdf"
     },
     {
       title: "应用案例",
-      description: "压力传感器在不同行业的应用案例",
+      description: "温度传感器在不同行业的应用案例",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/pressure-sensor-cases.pdf"
+      link: "https://example.com/temperature-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某石油化工企业",
-      industry: "石油化工",
-      challenge: "需要监测高压管道压力，确保生产安全和设备稳定运行",
-      solution: "采用防爆型压力传感器，实现高压环境下的安全监测",
-      result: "安全事故降低95%，设备效率提升12%",
+      company: "某化工企业",
+      industry: "化工行业",
+      challenge: "需要高精度温度监测，确保化学反应过程的稳定性",
+      solution: "采用高精度温度传感器，实现±0.1°C的测量精度",
+      result: "产品质量提升15%，能耗降低8%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某水处理厂",
-      industry: "水处理",
-      challenge: "需要监测水处理系统的压力变化，确保供水质量",
-      solution: "安装多点压力监测系统，实时监控水压变化",
-      result: "供水质量提升25%，能耗降低15%",
+      company: "某食品加工厂",
+      industry: "食品加工",
+      challenge: "需要监测食品加工过程中的温度变化，确保食品安全",
+      solution: "安装多点温度监测系统，实时监控加工温度",
+      result: "食品安全事故降低90%，生产效率提升20%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某汽车制造厂",
-      industry: "汽车制造",
-      challenge: "需要监测液压系统的压力，确保生产线稳定运行",
-      solution: "采用高精度压力传感器，实现液压系统的精确控制",
-      result: "生产效率提升18%，产品质量提升20%",
+      company: "某钢铁厂",
+      industry: "钢铁制造",
+      challenge: "需要监测高温环境下的温度变化，确保设备安全",
+      solution: "采用耐高温温度传感器，实现高温环境下的稳定监测",
+      result: "设备故障率降低25%，维护成本降低30%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
 
   const relatedProducts = [
     {
-      title: "温度传感器",
-      description: "高精度温度测量解决方案",
+      title: "压力传感器",
+      description: "高精度压力测量解决方案",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
@@ -194,7 +194,7 @@ export default function PressureSensorDetail() {
             <div className="relative">
               <img
                 src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="压力传感器"
+                alt="温度传感器"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,19 +203,19 @@ export default function PressureSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Gauge className="text-yellow-400" size={32} />
+                  <Thermometer className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    压力<span className="text-yellow-400">传感器</span>
+                    Temperature<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Pressure Sensor</p>
+                  <p className="text-gray-400">Temperature Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度压力传感器，提供0.1%FS的测量精度，适用于各种工业环境。
-                采用先进的压阻技术，确保快速响应和长期稳定性。
+                高精度温度传感器，提供±0.1°C的测量精度，适用于各种工业环境。
+                采用先进的热敏电阻技术，确保快速响应和长期稳定性。
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -241,7 +241,7 @@ export default function PressureSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               核心<span className="text-yellow-400">优势</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的压力传感技术，为您的工业应用提供可靠的压力监测</p>
+            <p className="text-xl text-gray-300">专业的温度传感技术，为您的工业应用提供可靠的温度监测</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,8 +306,8 @@ export default function PressureSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">技术架构</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的压力传感器采用先进的压阻技术，结合精密电子电路设计，
-                      实现高精度、快速响应的压力测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
+                      我们的温度传感器采用先进的热敏电阻技术，结合精密电子电路设计，
+                      实现高精度、快速响应的温度测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
                     </p>
                     <p>
                       内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
@@ -315,20 +315,20 @@ export default function PressureSensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Gauge className="text-yellow-400 mr-2" size={20} />
+                        <Thermometer className="text-yellow-400 mr-2" size={20} />
                         <span>高精度测量</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>防爆设计</span>
+                        <span>快速响应</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>宽压力范围</span>
+                        <span>宽温度范围</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>IP67防护</span>
+                        <span>长期稳定性</span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export default function PressureSensorDetail() {
                   <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="压力传感器技术演示"
+                      alt="温度传感器技术演示"
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -431,7 +431,7 @@ export default function PressureSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               客户<span className="text-yellow-400">案例</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证压力传感器的价值</p>
+            <p className="text-xl text-gray-300">真实的成功案例，见证温度传感器的价值</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -486,7 +486,7 @@ export default function PressureSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               相关<span className="text-yellow-400">产品</span>
             </h2>
-            <p className="text-xl text-gray-300">与压力传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300">与温度传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
@@ -550,10 +550,10 @@ export default function PressureSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">压力监测</span>项目？
+              准备开始您的<span className="text-yellow-400">温度监测</span>项目？
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的压力传感器解决方案
+              我们的专业团队将为您提供个性化的温度传感器解决方案
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

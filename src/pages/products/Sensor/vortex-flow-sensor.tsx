@@ -1,12 +1,12 @@
 /**
- * 振动传感器详情页面
- * 展示振动传感器的详细信息、技术优势和解决方案
+ * 涡街流量传感器详情页面
+ * 展示涡街流量传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Vibrate, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Droplet, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
-export default function VibrationSensorDetail() {
+export default function VortexFlowSensorDetail() {
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -55,84 +55,84 @@ export default function VibrationSensorDetail() {
 
   const features = [
     {
-      icon: Vibrate,
-      title: "高精度检测",
-      description: "采用先进的MEMS技术，提供高精度振动检测，频率范围0.1Hz-10kHz"
+      icon: Droplet,
+      title: "多种测量原理",
+      description: "热式、涡街、超声波、电磁等多种流量计技术"
     },
     {
       icon: Code,
-      title: "实时监测",
-      description: "支持实时振动监测，可检测设备异常振动，预防设备故障"
+      title: "高精度测量",
+      description: "±0.5%精度，确保流量测量的准确性和可靠性"
     },
     {
       icon: Zap,
-      title: "智能算法",
-      description: "内置智能算法，自动识别振动模式，提供准确的故障诊断"
+      title: "宽流量范围",
+      description: "支持液体和气体流量测量，适应不同介质"
     },
     {
       icon: Users,
-      title: "工业级防护",
-      description: "IP67防护等级，适用于恶劣工业环境，抗冲击、抗振动"
+      title: "智能诊断",
+      description: "内置自诊断功能，实时监测设备状态"
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "0.1Hz - 10kHz" },
-    { spec: "精度", value: "±0.1% FS" },
+    { spec: "测量原理", value: "热式、涡街、超声波、电磁" },
+    { spec: "精度", value: "±0.5%FS" },
     { spec: "响应时间", value: "<100ms" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
+    { spec: "输出信号", value: "4-20mA、0-10V、RS485、脉冲" },
     { spec: "防护等级", value: "IP67" },
-    { spec: "工作电压", value: "3.3V DC" },
-    { spec: "长期稳定性", value: "±0.05%FS/年" },
-    { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-40°C to +85°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX" }
+    { spec: "工作电压", value: "12-24VDC" },
+    { spec: "介质温度", value: "-40°C to +150°C" },
+    { spec: "压力等级", value: "PN16、PN25、PN40" },
+    { spec: "口径范围", value: "DN15-DN600" },
+    { spec: "认证标准", value: "CE、RoHS、ATEX、SIL2" }
   ]
 
   const downloads = [
     {
       title: "技术手册",
-      description: "振动传感器详细技术规格和使用指南",
+      description: "流量传感器详细技术规格和使用指南",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/vibration-sensor-manual.pdf"
+      link: "https://example.com/flow-sensor-manual.pdf"
     },
     {
       title: "安装指南",
-      description: "振动传感器安装和调试指南",
+      description: "流量传感器安装和调试指南",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/vibration-sensor-installation.pdf"
+      link: "https://example.com/flow-sensor-installation.pdf"
     },
     {
       title: "应用案例",
-      description: "振动传感器在不同行业的应用案例",
+      description: "流量传感器在不同行业的应用案例",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/vibration-sensor-cases.pdf"
+      link: "https://example.com/flow-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某风力发电场",
-      industry: "风力发电",
-      challenge: "需要监测风力发电机组的振动状态，预防齿轮箱故障",
-      solution: "安装振动传感器，实时监测设备振动状态",
-      result: "故障预测准确率95%，维护成本降低30%",
+      company: "某自来水公司",
+      industry: "水务行业",
+      challenge: "需要精确监测供水管网流量，确保供水计量准确",
+      solution: "采用电磁流量计，实现高精度流量测量和远程监控",
+      result: "计量准确率提升98%，漏损率降低30%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
       company: "某化工厂",
       industry: "化工行业",
-      challenge: "需要监测工业泵的运行状态，及时发现轴承磨损问题",
-      solution: "在泵设备上安装振动传感器，实时监测运行状态",
-      result: "设备故障率降低50%，维护计划优化",
+      challenge: "需要监测各种化学介质的流量，确保生产过程稳定",
+      solution: "采用耐腐蚀流量传感器，实现多种化学介质的精确测量",
+      result: "生产效率提升20%，产品质量提升15%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某制造企业",
-      industry: "制造业",
-      challenge: "需要优化电机运行参数，降低能耗",
-      solution: "提供电机振动监测系统，通过振动数据分析优化运行参数",
-      result: "能耗降低12%，设备寿命延长",
+      company: "某食品饮料厂",
+      industry: "食品饮料",
+      challenge: "需要监测饮料生产线的流量，确保产品配比准确",
+      solution: "采用卫生级流量传感器，实现食品级流量监测",
+      result: "产品一致性提升25%，生产效率提升18%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -146,22 +146,22 @@ export default function VibrationSensorDetail() {
     {
       title: "压力传感器",
       description: "高精度压力测量解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
-    },
-    {
-      title: "液位传感器",
-      description: "精确的液位监测设备",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
     },
     {
-      title: "气体传感器",
-      description: "工业气体浓度监测",
+      title: "振动传感器",
+      description: "工业设备振动监测",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
       title: "电流传感器",
       description: "非接触式电流测量",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+    },
+    {
+      title: "安全传感器",
+      description: "工业安全监测设备",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
       title: "IO模块",
@@ -194,7 +194,7 @@ export default function VibrationSensorDetail() {
             <div className="relative">
               <img
                 src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="振动传感器"
+                alt="流量传感器"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,19 +203,19 @@ export default function VibrationSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Vibrate className="text-yellow-400" size={32} />
+                  <Droplet className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    振动<span className="text-yellow-400">传感器</span>
+                    vortex flow<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Vibration Sensor</p>
+                  <p className="text-gray-400">vortex flow Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度振动传感器，采用先进的MEMS技术，提供0.1Hz-10kHz频率范围的振动检测。
-                内置智能算法，自动识别振动模式，为设备故障预测提供可靠数据。
+                高精度流量传感器，提供±0.5%的测量精度，适用于液体和气体流量测量。
+                支持多种测量原理，满足不同应用场景的需求。
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -241,7 +241,7 @@ export default function VibrationSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               核心<span className="text-yellow-400">优势</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的振动传感技术，为您的工业设备提供可靠的振动监测</p>
+            <p className="text-xl text-gray-300">专业的流量传感技术，为您的工业应用提供可靠的流量监测</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,29 +306,29 @@ export default function VibrationSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">技术架构</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的振动传感器采用先进的MEMS技术，结合精密电子电路设计，
-                      实现高精度、快速响应的振动测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
+                      我们的流量传感器采用多种先进技术，包括热式、涡街、超声波和电磁等测量原理，
+                      根据不同的应用场景选择最适合的测量技术，确保测量精度和可靠性。
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
+                      内置智能诊断功能，实时监测设备状态，支持多种输出信号格式。
                       采用IP67防护设计，适用于各种恶劣工业环境。
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Vibrate className="text-yellow-400 mr-2" size={20} />
-                        <span>高精度检测</span>
+                        <Droplet className="text-yellow-400 mr-2" size={20} />
+                        <span>多种测量原理</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监测</span>
+                        <span>高精度测量</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>智能算法</span>
+                        <span>宽流量范围</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>工业级防护</span>
+                        <span>智能诊断</span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export default function VibrationSensorDetail() {
                   <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="振动传感器技术演示"
+                      alt="流量传感器技术演示"
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -431,7 +431,7 @@ export default function VibrationSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               客户<span className="text-yellow-400">案例</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证振动传感器的价值</p>
+            <p className="text-xl text-gray-300">真实的成功案例，见证流量传感器的价值</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -451,27 +451,27 @@ export default function VibrationSensorDetail() {
                     <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
                     <h3 className="text-lg font-bold">{case_.company}</h3>
                   </div>
-                                     {/* 添加点击提示 */}
-                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                     <ArrowRight className="text-yellow-400" size={20} />
-                   </div>
-                 </div>
-                 
-                 <div className="p-6">
-                   <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
-                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
-                   </div>
-                   
-                   <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
-                     <p className="text-gray-300 text-sm">{case_.solution}</p>
-                   </div>
-                   
-                   <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
-                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
-                   </div>
+                  {/* 添加点击提示 */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ArrowRight className="text-yellow-400" size={20} />
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <p className="text-gray-300 text-sm">{case_.solution}</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -483,27 +483,27 @@ export default function VibrationSensorDetail() {
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-                         <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               相关<span className="text-yellow-400">产品</span>
-             </h2>
-            <p className="text-xl text-gray-300">与振动传感器相辅相成的其他传感器产品</p>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              相关<span className="text-yellow-400">产品</span>
+            </h2>
+            <p className="text-xl text-gray-300">与流量传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
             {/* Left Arrow */}
-                         <button
-               onClick={scrollLeft}
-               className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-             >
-               <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
-             </button>
+            <button
+              onClick={scrollLeft}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+            >
+              <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
+            </button>
 
-             {/* Right Arrow */}
-             <button
-               onClick={scrollRight}
-               className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-             >
-               <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
+            {/* Right Arrow */}
+            <button
+              onClick={scrollRight}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+            >
+              <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
             </button>
 
             <div 
@@ -514,11 +514,11 @@ export default function VibrationSensorDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <div className="relative">
-                                         <img
-                       src={product.image}
-                       alt={product.title}
-                       className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                     />
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
+                    />
                     <div className="absolute bottom-4 left-4 right-4">
                       <h4 className="text-lg font-bold text-white mb-1">{product.title}</h4>
                       <p className="text-gray-200 text-sm">{product.description}</p>
@@ -534,9 +534,9 @@ export default function VibrationSensorDetail() {
                 {Array.from({ length: totalSlides }, (_, index) => (
                   <div
                     key={index}
-                                         className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                       index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
-                     }`}
+                    className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                      index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
+                    }`}
                   />
                 ))}
               </div>
@@ -548,30 +548,30 @@ export default function VibrationSensorDetail() {
       {/* Contact CTA */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
-                     <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
-             <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">振动监测</span>项目？
-             </h2>
-             <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的振动传感器解决方案
-             </p>
-             
-             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-               <div className="flex items-center text-gray-300">
-                 <Phone size={20} className="mr-2 text-yellow-400" />
-                 400-123-4567
-               </div>
-               <div className="flex items-center text-gray-300">
-                 <Mail size={20} className="mr-2 text-yellow-400" />
-                 sensor@company.com
-               </div>
-             </div>
-             
-             <div className="flex flex-wrap gap-4 justify-center mt-8">
-               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 联系我们
-                 <ArrowRight size={20} className="ml-2" />
-               </Link>
+          <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">
+              准备开始您的<span className="text-yellow-400">流量监测</span>项目？
+            </h2>
+            <p className="text-xl text-gray-300 mb-8">
+              我们的专业团队将为您提供个性化的流量传感器解决方案
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex items-center text-gray-300">
+                <Phone size={20} className="mr-2 text-yellow-400" />
+                400-123-4567
+              </div>
+              <div className="flex items-center text-gray-300">
+                <Mail size={20} className="mr-2 text-yellow-400" />
+                sensor@company.com
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-4 justify-center mt-8">
+              <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
+                联系我们
+                <ArrowRight size={20} className="ml-2" />
+              </Link>
             </div>
           </div>
         </div>

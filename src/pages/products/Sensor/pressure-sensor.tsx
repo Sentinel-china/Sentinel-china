@@ -1,12 +1,12 @@
 /**
- * 液位传感器详情页面
- * 展示液位传感器的详细信息、技术优势和解决方案
+ * 压力传感器详情页面
+ * 展示压力传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Waves, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Vibrate, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
-export default function LevelSensorDetail() {
+export default function PressureSensorDetail() {
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -55,34 +55,34 @@ export default function LevelSensorDetail() {
 
   const features = [
     {
-      icon: Waves,
+      icon: Vibrate,
       title: "高精度检测",
-      description: "采用超声波和雷达技术，提供高精度液位检测，测量范围0-20米"
+      description: "采用先进的MEMS技术，提供高精度振动检测，频率范围0.1Hz-10kHz"
     },
     {
       icon: Code,
-      title: "连续监测",
-      description: "支持连续液位监测，实时显示液位变化，提供报警功能"
+      title: "实时监测",
+      description: "支持实时振动监测，可检测设备异常振动，预防设备故障"
     },
     {
       icon: Zap,
-      title: "快速响应",
-      description: "响应时间小于1秒，适合快速变化的液位监测应用"
+      title: "智能算法",
+      description: "内置智能算法，自动识别振动模式，提供准确的故障诊断"
     },
     {
       icon: Users,
-      title: "防腐蚀设计",
-      description: "316L不锈钢材质，适用于各种腐蚀性液体，防护等级IP68"
+      title: "工业级防护",
+      description: "IP67防护等级，适用于恶劣工业环境，抗冲击、抗振动"
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "0-20米" },
+    { spec: "测量范围", value: "0.1Hz - 10kHz" },
     { spec: "精度", value: "±0.1% FS" },
-    { spec: "响应时间", value: "<1秒" },
+    { spec: "响应时间", value: "<100ms" },
     { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP68" },
-    { spec: "工作电压", value: "24V DC" },
+    { spec: "防护等级", value: "IP67" },
+    { spec: "工作电压", value: "3.3V DC" },
     { spec: "长期稳定性", value: "±0.05%FS/年" },
     { spec: "温度系数", value: "±0.02%/°C" },
     { spec: "环境温度", value: "-40°C to +85°C" },
@@ -92,47 +92,47 @@ export default function LevelSensorDetail() {
   const downloads = [
     {
       title: "技术手册",
-      description: "液位传感器详细技术规格和使用指南",
+      description: "振动传感器详细技术规格和使用指南",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/level-sensor-manual.pdf"
+      link: "https://example.com/vibration-sensor-manual.pdf"
     },
     {
       title: "安装指南",
-      description: "液位传感器安装和调试指南",
+      description: "振动传感器安装和调试指南",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/level-sensor-installation.pdf"
+      link: "https://example.com/vibration-sensor-installation.pdf"
     },
     {
       title: "应用案例",
-      description: "液位传感器在不同行业的应用案例",
+      description: "振动传感器在不同行业的应用案例",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/level-sensor-cases.pdf"
+      link: "https://example.com/vibration-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某化工企业",
-      industry: "化工行业",
-      challenge: "需要监测储罐液位，确保安全生产和精确库存管理",
-      solution: "安装液位传感器，实现24小时连续监测",
-      result: "监测精度提升至99.9%，安全事故降低80%",
+      company: "某风力发电场",
+      industry: "风力发电",
+      challenge: "需要监测风力发电机组的振动状态，预防齿轮箱故障",
+      solution: "安装振动传感器，实时监测设备振动状态",
+      result: "故障预测准确率95%，维护成本降低30%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某水处理厂",
-      industry: "水处理",
-      challenge: "需要精确控制各处理池的液位，优化处理流程",
-      solution: "安装液位传感器，精确控制处理池液位",
-      result: "处理效率提升25%，能耗降低15%",
+      company: "某化工厂",
+      industry: "化工行业",
+      challenge: "需要监测工业泵的运行状态，及时发现轴承磨损问题",
+      solution: "在泵设备上安装振动传感器，实时监测运行状态",
+      result: "设备故障率降低50%，维护计划优化",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某石油储运企业",
-      industry: "石油储运",
-      challenge: "需要精确管理油罐液位，减少损耗",
-      solution: "提供油罐液位管理系统，实现精确监控",
-      result: "库存管理精度提升，损耗率降低50%",
+      company: "某制造企业",
+      industry: "制造业",
+      challenge: "需要优化电机运行参数，降低能耗",
+      solution: "提供电机振动监测系统，通过振动数据分析优化运行参数",
+      result: "能耗降低12%，设备寿命延长",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -149,8 +149,8 @@ export default function LevelSensorDetail() {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
-      title: "振动传感器",
-      description: "工业设备振动监测",
+      title: "液位传感器",
+      description: "精确的液位监测设备",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
     },
     {
@@ -194,7 +194,7 @@ export default function LevelSensorDetail() {
             <div className="relative">
               <img
                 src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="液位传感器"
+                alt="振动传感器"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,19 +203,19 @@ export default function LevelSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Waves className="text-yellow-400" size={32} />
+                  <Vibrate className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    液位<span className="text-yellow-400">传感器</span>
+                    pressure<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Level Sensor</p>
+                  <p className="text-gray-400">pressure Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度液位传感器，采用超声波和雷达技术，提供0-20米测量范围的液位检测。
-                内置智能校准算法，自动补偿环境因素影响，确保测量精度。
+                高精度振动传感器，采用先进的MEMS技术，提供0.1Hz-10kHz频率范围的振动检测。
+                内置智能算法，自动识别振动模式，为设备故障预测提供可靠数据。
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -241,7 +241,7 @@ export default function LevelSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               核心<span className="text-yellow-400">优势</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的液位传感技术，为您的工业液体存储和处理提供可靠的液位监测</p>
+            <p className="text-xl text-gray-300">专业的振动传感技术，为您的工业设备提供可靠的振动监测</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,29 +306,29 @@ export default function LevelSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">技术架构</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的液位传感器采用超声波和雷达技术，结合精密电子电路设计，
-                      实现高精度、快速响应的液位测量。传感器采用316L不锈钢外壳，具备优异的耐腐蚀性能。
+                      我们的振动传感器采用先进的MEMS技术，结合精密电子电路设计，
+                      实现高精度、快速响应的振动测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
                     </p>
                     <p>
                       内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP68防护设计，适用于各种恶劣工业环境。
+                      采用IP67防护设计，适用于各种恶劣工业环境。
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Waves className="text-yellow-400 mr-2" size={20} />
+                        <Vibrate className="text-yellow-400 mr-2" size={20} />
                         <span>高精度检测</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>连续监测</span>
+                        <span>实时监测</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>快速响应</span>
+                        <span>智能算法</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>防腐蚀设计</span>
+                        <span>工业级防护</span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export default function LevelSensorDetail() {
                   <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="液位传感器技术演示"
+                      alt="振动传感器技术演示"
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -431,7 +431,7 @@ export default function LevelSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               客户<span className="text-yellow-400">案例</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证液位传感器的价值</p>
+            <p className="text-xl text-gray-300">真实的成功案例，见证振动传感器的价值</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -448,10 +448,10 @@ export default function LevelSensorDetail() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                                         <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
-                     <h3 className="text-lg font-bold">{case_.company}</h3>
-                   </div>
-                   {/* 添加点击提示 */}
+                    <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
+                    <h3 className="text-lg font-bold">{case_.company}</h3>
+                  </div>
+                                     {/* 添加点击提示 */}
                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                      <ArrowRight className="text-yellow-400" size={20} />
                    </div>
@@ -486,7 +486,7 @@ export default function LevelSensorDetail() {
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
                相关<span className="text-yellow-400">产品</span>
              </h2>
-            <p className="text-xl text-gray-300">与液位传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300">与振动传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
@@ -550,10 +550,10 @@ export default function LevelSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">液位监测</span>项目？
+               准备开始您的<span className="text-yellow-400">振动监测</span>项目？
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的液位传感器解决方案
+               我们的专业团队将为您提供个性化的振动传感器解决方案
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

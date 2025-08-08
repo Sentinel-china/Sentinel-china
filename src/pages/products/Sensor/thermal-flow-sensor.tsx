@@ -1,12 +1,12 @@
 /**
- * 流量传感器详情页面
- * 展示流量传感器的详细信息、技术优势和解决方案
+ * 热式流量传感器详情页面
+ * 展示热式流量传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Droplet, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Gauge, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
-export default function FlowSensorDetail() {
+export default function ThermalFlowSensorDetail() {
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -55,84 +55,84 @@ export default function FlowSensorDetail() {
 
   const features = [
     {
-      icon: Droplet,
-      title: "多种测量原理",
-      description: "热式、涡街、超声波、电磁等多种流量计技术"
+      icon: Gauge,
+      title: "高精度测量",
+      description: "0.1%FS精度，确保压力测量的准确性和可靠性"
     },
     {
       icon: Code,
-      title: "高精度测量",
-      description: "±0.5%精度，确保流量测量的准确性和可靠性"
+      title: "防爆设计",
+      description: "ATEX认证，适用于危险环境的安全监测"
     },
     {
       icon: Zap,
-      title: "宽流量范围",
-      description: "支持液体和气体流量测量，适应不同介质"
+      title: "宽压力范围",
+      description: "0-1000bar，支持多种压力测量需求"
     },
     {
       icon: Users,
-      title: "智能诊断",
-      description: "内置自诊断功能，实时监测设备状态"
+      title: "IP67防护",
+      description: "优异的防护等级，适应恶劣工业环境"
     }
   ]
 
   const productSpecs = [
-    { spec: "测量原理", value: "热式、涡街、超声波、电磁" },
-    { spec: "精度", value: "±0.5%FS" },
-    { spec: "响应时间", value: "<100ms" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485、脉冲" },
+    { spec: "测量范围", value: "0-1000bar" },
+    { spec: "精度", value: "0.1%FS" },
+    { spec: "响应时间", value: "<50ms" },
+    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
     { spec: "防护等级", value: "IP67" },
     { spec: "工作电压", value: "12-24VDC" },
-    { spec: "介质温度", value: "-40°C to +150°C" },
-    { spec: "压力等级", value: "PN16、PN25、PN40" },
-    { spec: "口径范围", value: "DN15-DN600" },
+    { spec: "长期稳定性", value: "±0.05%FS/年" },
+    { spec: "温度系数", value: "±0.02%/°C" },
+    { spec: "环境温度", value: "-20°C to +85°C" },
     { spec: "认证标准", value: "CE、RoHS、ATEX、SIL2" }
   ]
 
   const downloads = [
     {
       title: "技术手册",
-      description: "流量传感器详细技术规格和使用指南",
+      description: "压力传感器详细技术规格和使用指南",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-manual.pdf"
+      link: "https://example.com/pressure-sensor-manual.pdf"
     },
     {
       title: "安装指南",
-      description: "流量传感器安装和调试指南",
+      description: "压力传感器安装和调试指南",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-installation.pdf"
+      link: "https://example.com/pressure-sensor-installation.pdf"
     },
     {
       title: "应用案例",
-      description: "流量传感器在不同行业的应用案例",
+      description: "压力传感器在不同行业的应用案例",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-cases.pdf"
+      link: "https://example.com/pressure-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某自来水公司",
-      industry: "水务行业",
-      challenge: "需要精确监测供水管网流量，确保供水计量准确",
-      solution: "采用电磁流量计，实现高精度流量测量和远程监控",
-      result: "计量准确率提升98%，漏损率降低30%",
+      company: "某石油化工企业",
+      industry: "石油化工",
+      challenge: "需要监测高压管道压力，确保生产安全和设备稳定运行",
+      solution: "采用防爆型压力传感器，实现高压环境下的安全监测",
+      result: "安全事故降低95%，设备效率提升12%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某化工厂",
-      industry: "化工行业",
-      challenge: "需要监测各种化学介质的流量，确保生产过程稳定",
-      solution: "采用耐腐蚀流量传感器，实现多种化学介质的精确测量",
-      result: "生产效率提升20%，产品质量提升15%",
+      company: "某水处理厂",
+      industry: "水处理",
+      challenge: "需要监测水处理系统的压力变化，确保供水质量",
+      solution: "安装多点压力监测系统，实时监控水压变化",
+      result: "供水质量提升25%，能耗降低15%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某食品饮料厂",
-      industry: "食品饮料",
-      challenge: "需要监测饮料生产线的流量，确保产品配比准确",
-      solution: "采用卫生级流量传感器，实现食品级流量监测",
-      result: "产品一致性提升25%，生产效率提升18%",
+      company: "某汽车制造厂",
+      industry: "汽车制造",
+      challenge: "需要监测液压系统的压力，确保生产线稳定运行",
+      solution: "采用高精度压力传感器，实现液压系统的精确控制",
+      result: "生产效率提升18%，产品质量提升20%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -144,8 +144,8 @@ export default function FlowSensorDetail() {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
-      title: "压力传感器",
-      description: "高精度压力测量解决方案",
+      title: "流量传感器",
+      description: "精确的流量监测设备",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
     },
     {
@@ -194,7 +194,7 @@ export default function FlowSensorDetail() {
             <div className="relative">
               <img
                 src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="流量传感器"
+                alt="压力传感器"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,19 +203,19 @@ export default function FlowSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Droplet className="text-yellow-400" size={32} />
+                  <Gauge className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    流量<span className="text-yellow-400">传感器</span>
+                    Thermal flow<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Flow Sensor</p>
+                  <p className="text-gray-400">Thermal flow Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度流量传感器，提供±0.5%的测量精度，适用于液体和气体流量测量。
-                支持多种测量原理，满足不同应用场景的需求。
+                高精度压力传感器，提供0.1%FS的测量精度，适用于各种工业环境。
+                采用先进的压阻技术，确保快速响应和长期稳定性。
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -241,7 +241,7 @@ export default function FlowSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               核心<span className="text-yellow-400">优势</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的流量传感技术，为您的工业应用提供可靠的流量监测</p>
+            <p className="text-xl text-gray-300">专业的压力传感技术，为您的工业应用提供可靠的压力监测</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,29 +306,29 @@ export default function FlowSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">技术架构</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的流量传感器采用多种先进技术，包括热式、涡街、超声波和电磁等测量原理，
-                      根据不同的应用场景选择最适合的测量技术，确保测量精度和可靠性。
+                      我们的压力传感器采用先进的压阻技术，结合精密电子电路设计，
+                      实现高精度、快速响应的压力测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
                     </p>
                     <p>
-                      内置智能诊断功能，实时监测设备状态，支持多种输出信号格式。
+                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
                       采用IP67防护设计，适用于各种恶劣工业环境。
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Droplet className="text-yellow-400 mr-2" size={20} />
-                        <span>多种测量原理</span>
-                      </div>
-                      <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Gauge className="text-yellow-400 mr-2" size={20} />
                         <span>高精度测量</span>
                       </div>
                       <div className="flex items-center">
+                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <span>防爆设计</span>
+                      </div>
+                      <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>宽流量范围</span>
+                        <span>宽压力范围</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>智能诊断</span>
+                        <span>IP67防护</span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export default function FlowSensorDetail() {
                   <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="流量传感器技术演示"
+                      alt="压力传感器技术演示"
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -431,7 +431,7 @@ export default function FlowSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               客户<span className="text-yellow-400">案例</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证流量传感器的价值</p>
+            <p className="text-xl text-gray-300">真实的成功案例，见证压力传感器的价值</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -486,7 +486,7 @@ export default function FlowSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               相关<span className="text-yellow-400">产品</span>
             </h2>
-            <p className="text-xl text-gray-300">与流量传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300">与压力传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
@@ -550,10 +550,10 @@ export default function FlowSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">流量监测</span>项目？
+              准备开始您的<span className="text-yellow-400">压力监测</span>项目？
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的流量传感器解决方案
+              我们的专业团队将为您提供个性化的压力传感器解决方案
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
