@@ -3,7 +3,7 @@
  * 包含公司信息、快速链接和联系方式
  */
 import { Link } from 'react-router'
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-react'
 // ... existing code ...
 
 export default function Footer() {
@@ -26,14 +26,8 @@ export default function Footer() {
               Focus makes better services
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Github size={20} />
+              <a href="https://www.youtube.com/channel/UCShc5ytP9ZU4Ze6RBl6iDXw" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                <Youtube size={25} />
               </a>
             </div>
           </div>
@@ -59,22 +53,43 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold">Core Services</h3>
-            <div className="space-y-2">
-              <p className="text-gray-400 text-sm">Software Development</p>
-              <p className="text-gray-400 text-sm">System Integration</p>
-              <p className="text-gray-400 text-sm">Data Analytics</p>
-              <p className="text-gray-400 text-sm">Cloud Computing</p>
-            </div>
+            <h3 className="text-white font-semibold">Products</h3>
+                          <div className="space-y-2">
+                <Link to="/products/sensor" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  Sensors
+                </Link>
+                <Link to="/products/io-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  I/O Modules
+                </Link>
+                <Link to="/products/io-link" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  IO-Link
+                </Link>
+                <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  Connectivity
+                </Link>
+              </div>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold">Contact</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 relative group">
                 <Phone size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">+86 15022168478</span>
+                <span className="text-gray-400 text-sm cursor-pointer">WhatsApp</span>
+                {/* QR Code Popup */}
+                <div className="absolute bottom-full left-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                  <div className="bg-white p-2 rounded-lg shadow-lg border border-gray-200">
+                    <img 
+                      src="/whatsapp-qr.png" // TODO: change to the actual QR code
+                      alt="WhatsApp QR Code" 
+                      className="w-32 h-32 object-cover"
+                    />
+                    <div className="text-center mt-1">
+                      <p className="text-xs text-gray-600">Scan to contact</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-yellow-400" />
@@ -90,7 +105,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SENTINEL. All rights reserved.
+            © 2008 - {new Date().getFullYear()} SENTINEL. All rights reserved.
           </p>
         </div>
       </div>
