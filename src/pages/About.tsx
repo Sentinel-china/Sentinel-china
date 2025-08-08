@@ -28,44 +28,44 @@ export default function AboutPage() {
 
   const milestones = [
     { 
-      year: "2018", 
-      title: "Company Founded", 
-      description: "TechCorp officially established, focusing on enterprise technology services",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/3cf2acfe-9363-4cd5-ab5d-6938a0526ba0.jpg"
+      year: "2008", 
+      title: "", 
+      description: "Tianjin Sentinel was established in Tianjin Hi-Tech Zone in 2008.The company initially focused onthe research and development and manufacturing of sensors and fieldbus equipment to meet the needs of industrial applications.",
+      image: "/time1.png"
+    },
+    { 
+      year: "2010", 
+      title: "", 
+      description: "In 2010,the company successfully developed and mass-produced inductive proximity switches,solidifying its position in the industrial sensor field.In 2011,it expanded  production facilities to support future business growth.",
+      image: "/time2.png"
+    },
+    { 
+      year: "2013", 
+      title: "", 
+      description: "In 2013,the company developed and mass-produced flow,temperature,and pressure sensors,expanding its product line.",
+      image: "/time3.png"
+    },
+    { 
+      year: "2015", 
+      title: "", 
+      description: "In 2015,the company further entered the field of fieldbus and industrial Ethernet by launching remote I/O modules.The application of this technology significantly enhanced the intelligence level of factory automation.",
+      image: "/time4.png"
     },
     { 
       year: "2019", 
-      title: "Business Expansion", 
-      description: "Served over 50 clients and established professional teams",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/7a0dee88-8b76-4051-a2f2-065e5b5804b8.jpg"
-    },
-    { 
-      year: "2020", 
-      title: "Technology Upgrade", 
-      description: "Launched cloud computing and big data solutions",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d9aac45d-9a89-4b6d-b0a0-1995b5b5b616.jpg"
-    },
-    { 
-      year: "2021", 
-      title: "Market Expansion", 
-      description: "Business covered 20 cities with 98% customer satisfaction",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/1dc67d2b-8d3f-47b9-b497-f8c10cff3a3d.jpg"
-    },
-    { 
-      year: "2022", 
-      title: "Innovation Breakthrough", 
-      description: "Released AI intelligent analysis platform, gaining industry recognition",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/3cf2acfe-9363-4cd5-ab5d-6938a0526ba0.jpg"
+      title: "", 
+      description: "In 2019,the company made a significant break through in IO-Link technology by successfully launch IO-Link Master and Device products,achieving standardized data transmission and digital management from field sensors to the central control system.",
+      image: "/time5.png"
     },
     { 
       year: "2023", 
-      title: "Continued Growth", 
-      description: "Served over 200 clients, becoming an industry leader",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/7a0dee88-8b76-4051-a2f2-065e5b5804b8.jpg"
+      title: "", 
+      description: "In 2023,the company further enhanced IO-Link technology by launching sensor products with IO-Link functionality,making them more efficient in industrial auto mation and equipment management.In the future,the company will continue to innovatein sensor and IO technologies,driving the development of Industry4.0 and smart manufacturing.",
+      image: "/time6.png"
     },
     { 
       year: "2024", 
-      title: "Future Planning", 
+      title: "", 
       description: "Continue to deepen technological innovation and help more enterprises with digital transformation",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d9aac45d-9a89-4b6d-b0a0-1995b5b5b616.jpg"
     }

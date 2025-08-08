@@ -1,12 +1,12 @@
 /**
- * 气体传感器详情页面
- * 展示气体传感器的详细信息、技术优势和解决方案
+ * 液位传感器详情页面
+ * 展示液位传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Wind, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Waves, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
-export default function GasSensorDetail() {
+export default function LiquidLevelSensorDetail() {
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -55,84 +55,84 @@ export default function GasSensorDetail() {
 
   const features = [
     {
-      icon: Wind,
-      title: "多气体检测",
-      description: "支持CO、CO2、CH4、H2S等多种气体检测，检测精度达到ppm级别"
+      icon: Waves,
+      title: "高精度检测",
+      description: "采用超声波和雷达技术，提供高精度液位检测，测量范围0-20米"
     },
     {
       icon: Code,
-      title: "实时监测",
-      description: "支持24小时连续气体监测，实时显示气体浓度，提供报警功能"
+      title: "连续监测",
+      description: "支持连续液位监测，实时显示液位变化，提供报警功能"
     },
     {
       icon: Zap,
       title: "快速响应",
-      description: "响应时间小于30秒，适合快速检测气体泄漏和浓度变化"
+      description: "响应时间小于1秒，适合快速变化的液位监测应用"
     },
     {
       icon: Users,
-      title: "防爆设计",
-      description: "符合ATEX防爆标准，适用于易燃易爆环境，防护等级IP65"
+      title: "防腐蚀设计",
+      description: "316L不锈钢材质，适用于各种腐蚀性液体，防护等级IP68"
     }
   ]
 
   const productSpecs = [
-    { spec: "检测气体", value: "CO、CO2、CH4、H2S等" },
-    { spec: "检测精度", value: "±1% FS" },
-    { spec: "响应时间", value: "<30秒" },
+    { spec: "测量范围", value: "0-20米" },
+    { spec: "精度", value: "±0.1% FS" },
+    { spec: "响应时间", value: "<1秒" },
     { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP65" },
-    { spec: "工作电压", value: "12-24V DC" },
+    { spec: "防护等级", value: "IP68" },
+    { spec: "工作电压", value: "24V DC" },
     { spec: "长期稳定性", value: "±0.05%FS/年" },
     { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-20°C to +60°C" },
+    { spec: "环境温度", value: "-40°C to +85°C" },
     { spec: "认证标准", value: "CE、RoHS、ATEX" }
   ]
 
   const downloads = [
     {
       title: "技术手册",
-      description: "气体传感器详细技术规格和使用指南",
+      description: "液位传感器详细技术规格和使用指南",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-manual.pdf"
+      link: "https://example.com/level-sensor-manual.pdf"
     },
     {
       title: "安装指南",
-      description: "气体传感器安装和调试指南",
+      description: "液位传感器安装和调试指南",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-installation.pdf"
+      link: "https://example.com/level-sensor-installation.pdf"
     },
     {
       title: "应用案例",
-      description: "气体传感器在不同行业的应用案例",
+      description: "液位传感器在不同行业的应用案例",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-cases.pdf"
+      link: "https://example.com/level-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某大型煤矿",
-      industry: "煤矿行业",
-      challenge: "需要监测瓦斯浓度，确保矿工安全",
-      solution: "安装瓦斯监测系统，实时监测CH4浓度",
-      result: "安全事故降低90%，监测精度提升至99.5%",
+      company: "某化工企业",
+      industry: "化工行业",
+      challenge: "需要监测储罐液位，确保安全生产和精确库存管理",
+      solution: "安装液位传感器，实现24小时连续监测",
+      result: "监测精度提升至99.9%，安全事故降低80%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某化工企业",
-      industry: "化工行业",
-      challenge: "需要监测有毒气体，保障员工安全",
-      solution: "安装有毒气体传感器，监测H2S、CO等有害气体",
-      result: "安全事故零发生，员工安全意识提升",
+      company: "某水处理厂",
+      industry: "水处理",
+      challenge: "需要精确控制各处理池的液位，优化处理流程",
+      solution: "安装液位传感器，精确控制处理池液位",
+      result: "处理效率提升25%，能耗降低15%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某办公楼",
-      industry: "建筑行业",
-      challenge: "需要优化室内空气质量，提升员工健康",
-      solution: "提供CO2浓度监测系统，优化通风系统",
-      result: "空气质量改善40%，员工健康投诉减少",
+      company: "某石油储运企业",
+      industry: "石油储运",
+      challenge: "需要精确管理油罐液位，减少损耗",
+      solution: "提供油罐液位管理系统，实现精确监控",
+      result: "库存管理精度提升，损耗率降低50%",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -154,8 +154,8 @@ export default function GasSensorDetail() {
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
     },
     {
-      title: "液位传感器",
-      description: "精确的液位监测设备",
+      title: "气体传感器",
+      description: "工业气体浓度监测",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
     },
     {
@@ -194,7 +194,7 @@ export default function GasSensorDetail() {
             <div className="relative">
               <img
                 src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="气体传感器"
+                alt="液位传感器"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,19 +203,19 @@ export default function GasSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Wind className="text-yellow-400" size={32} />
+                  <Waves className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    气体<span className="text-yellow-400">传感器</span>
+                    liquid level<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Gas Sensor</p>
+                  <p className="text-gray-400">liquid level Sensor</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度气体传感器，支持CO、CO2、CH4、H2S等多种气体检测，检测精度达到ppm级别。
-                符合ATEX防爆标准，适用于各种危险环境的安全监测。
+                高精度液位传感器，采用超声波和雷达技术，提供0-20米测量范围的液位检测。
+                内置智能校准算法，自动补偿环境因素影响，确保测量精度。
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -241,7 +241,7 @@ export default function GasSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               核心<span className="text-yellow-400">优势</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的气体传感技术，为您的工业安全和环境监测提供可靠的气体浓度监测</p>
+            <p className="text-xl text-gray-300">专业的液位传感技术，为您的工业液体存储和处理提供可靠的液位监测</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,21 +306,21 @@ export default function GasSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">技术架构</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的气体传感器采用先进的电化学和半导体技术，结合精密电子电路设计，
-                      实现高精度、快速响应的气体浓度测量。传感器采用铝合金外壳，具备优异的防护性能。
+                      我们的液位传感器采用超声波和雷达技术，结合精密电子电路设计，
+                      实现高精度、快速响应的液位测量。传感器采用316L不锈钢外壳，具备优异的耐腐蚀性能。
                     </p>
                     <p>
                       内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP65防护设计，适用于各种恶劣工业环境。
+                      采用IP68防护设计，适用于各种恶劣工业环境。
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Wind className="text-yellow-400 mr-2" size={20} />
-                        <span>多气体检测</span>
+                        <Waves className="text-yellow-400 mr-2" size={20} />
+                        <span>高精度检测</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监测</span>
+                        <span>连续监测</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
@@ -328,7 +328,7 @@ export default function GasSensorDetail() {
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>防爆设计</span>
+                        <span>防腐蚀设计</span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export default function GasSensorDetail() {
                   <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="气体传感器技术演示"
+                      alt="液位传感器技术演示"
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -431,7 +431,7 @@ export default function GasSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               客户<span className="text-yellow-400">案例</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证气体传感器的价值</p>
+            <p className="text-xl text-gray-300">真实的成功案例，见证液位传感器的价值</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -486,7 +486,7 @@ export default function GasSensorDetail() {
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
                相关<span className="text-yellow-400">产品</span>
              </h2>
-            <p className="text-xl text-gray-300">与气体传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300">与液位传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
@@ -550,10 +550,10 @@ export default function GasSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">气体监测</span>项目？
+               准备开始您的<span className="text-yellow-400">液位监测</span>项目？
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的气体传感器解决方案
+               我们的专业团队将为您提供个性化的液位传感器解决方案
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
