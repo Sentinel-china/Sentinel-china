@@ -436,17 +436,40 @@ export default function BusinessIntelligenceDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300">
+              <div 
+                key={index} 
+                className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
+                onClick={() => {
+                  // 根据不同的案例跳转到不同的页面
+                  switch(case_.company) {
+                    case '某零售连锁企业':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020734156.html'; 
+                      break;
+                    case '某制造企业':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020749591.html'; 
+                      break;
+                    case '某金融机构':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020718250.html'; 
+                      break;
+                    default:
+                      break;
+                  }
+                }}
+              >
                 <div className="relative h-48">
                   <img
                     src={case_.image}
                     alt={case_.company}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
                     <h3 className="text-lg font-bold">{case_.company}</h3>
+                  </div>
+                  {/* 添加点击提示 */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ArrowRight className="text-yellow-400" size={20} />
                   </div>
                 </div>
                 
