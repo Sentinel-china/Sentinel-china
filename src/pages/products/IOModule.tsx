@@ -199,8 +199,8 @@ export default function CloudServiceDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d2f01969-593b-4489-8017-ddc38d07a4bf.jpg"
-                alt="云计算服务"
+                src="banner3.png"
+                alt="I/O Module"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -322,19 +322,15 @@ export default function CloudServiceDetail() {
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Monitor className="text-yellow-400 mr-2" size={20} />
-                        <span>Wide protocol support</span>
+                        <span>PROFINET</span>
                       </div>
                       <div className="flex items-center">
                         <Database className="text-yellow-400 mr-2" size={20} />
-                        <span>Flexible installation</span>
+                        <span>CC-Link IE Field Basic</span>
                       </div>
                       <div className="flex items-center">
                         <Cpu className="text-yellow-400 mr-2" size={20} />
-                        <span>Top reliability</span>
-                      </div>
-                      <div className="flex items-center">
-                        <Shield className="text-yellow-400 mr-2" size={20} />
-                        <span>Technical Update</span>
+                        <span>EtherCAT</span>
                       </div>
                     </div>
                   </div>
@@ -561,10 +557,7 @@ export default function CloudServiceDetail() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-gray-300">
-                <Phone size={20} className="mr-2 text-yellow-400" />
-                +86 15022168478
-              </div>
+             
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
                 export.sentinel@gmail.com

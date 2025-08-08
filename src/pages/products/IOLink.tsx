@@ -56,23 +56,23 @@ export default function MobileDevelopmentDetail() {
   const features = [
     {
       icon: Smartphone,
-      title: "跨平台开发",
-      description: "支持iOS、Android双平台，一套代码多端运行，降低开发成本"
+      title: "Standardized & compatible",
+      description: "No special cables needed, works with existing setups"
     },
     {
       icon: Code,
-      title: "原生性能",
-      description: "采用原生技术栈，确保应用性能和用户体验达到最佳状态"
+      title: "Cost-effective upgrade",
+      description: "Evolves existing tech, no system replacement, cuts complexity"
     },
     {
       icon: Zap,
-      title: "快速迭代",
-      description: "敏捷开发流程，支持快速原型设计和持续迭代优化"
+      title: "Comprehensive ecosystem",
+      description: "Multi-protocol masters + diverse slaves, full-link coverage"
     },
     {
       icon: Users,
-      title: "用户体验",
-      description: "专注用户体验设计，打造直观易用的移动应用界面"
+      title: "Efficient & reliable",
+      description: "Low-cost transmission, boosting efficiency while reducing costs"
     }
   ]
 
@@ -91,20 +91,20 @@ export default function MobileDevelopmentDetail() {
 
   const downloads = [
     {
-      title: "开发指南",
-      description: "完整的移动应用开发技术指南",
+      title: "Sensors Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
       link: "https://example.com/mobile-dev-guide.pdf"
     },
     {
-      title: "UI设计规范",
-      description: "移动应用UI设计规范和组件库",
+      title: "I/O Module Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
       link: "https://example.com/ui-design-spec.pdf"
     },
     {
-      title: "示例项目",
-      description: "完整的示例项目源码和文档",
+      title: "IO-Link Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
       link: "https://example.com/sample-project.zip"
     }
@@ -112,27 +112,27 @@ export default function MobileDevelopmentDetail() {
 
   const cases = [
     {
-      company: "某电商平台",
-      industry: "电子商务",
-      challenge: "需要快速开发移动端应用，支持多平台用户访问",
-      solution: "采用React Native跨平台开发，实现一套代码双端运行",
-      result: "开发周期缩短40%，用户满意度提升35%",
+      company: "Master",
+      industry: "IO-Link",
+      challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某金融机构",
-      industry: "金融科技",
-      challenge: "需要高安全性的移动银行应用，支持多种支付方式",
-      solution: "原生开发结合安全SDK，实现多重安全防护",
-      result: "用户活跃度提升50%，交易安全性达到99.99%",
+      company: "Hubs",
+      industry: "IO-Link",
+      challenge: "As a communication interface independent of the field bus, the sensors, actuators and I/O supporting the IO-Link protocol are IO-Link slave devices, which greatly improves the reliability of the devices.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某教育机构",
-      industry: "在线教育",
-      challenge: "需要开发在线学习应用，支持视频播放和互动功能",
-      solution: "采用Flutter框架，集成视频播放和实时通讯功能",
-      result: "学习效率提升30%，用户留存率提升45%",
+      company: "Converter",
+      industry: "IO-Link",
+      challenge: "The IO-Link Converter (CIOL-2AI-SC) is designed to convert two channels of 4-20mA/0-20mA analog signals into IO-Link communication format. It supports IO-Link V1.1 protocol with an M12 A-coded 4-pin Class A interface. Compatible with 2-wire, 3-wire, and 4-wire sensor connections, it features status LED indicators and is ideal for industrial signal acquisition applications.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -193,8 +193,8 @@ export default function MobileDevelopmentDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="移动应用开发"
+                src="/banner2.png"
+                alt="IO-Link"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -207,27 +207,29 @@ export default function MobileDevelopmentDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    移动应用<span className="text-yellow-400">开发</span>
+                    IO-<span className="text-yellow-400">Link</span>
                   </h1>
-                  <p className="text-gray-400">Mobile Application Development</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                专业的移动应用开发服务，支持iOS、Android等多平台应用开发。
-                采用先进的技术栈，确保应用性能和用户体验达到最佳状态。
+                As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers,brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020756396.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+               <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core <span className="text-yellow-400">Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的移动开发技术，为您的业务提供最佳移动解决方案</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Products
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,33 +305,28 @@ export default function MobileDevelopmentDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的移动应用开发采用现代化的技术架构，支持原生开发和跨平台开发两种模式。
-                      原生开发确保最佳性能和用户体验，跨平台开发降低开发成本和时间。
+                      IO-Link is the worlds first standardized IO technology for communication with sensors and actuators.
                     </p>
                     <p>
-                      采用敏捷开发流程，支持快速原型设计和持续迭代。结合用户体验设计原则，
-                      打造直观易用的移动应用界面，提升用户满意度和留存率。
+                     IO-Link is not a fieldbus, but a further development of the existing sensor and actuator connection technology.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Smartphone className="text-yellow-400 mr-2" size={20} />
-                        <span>跨平台开发</span>
+                        <span>IO-Link Master</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>原生性能</span>
+                        <span>IO-Link Hubs</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>快速迭代</span>
+                        <span>IO-Link Converter </span>
                       </div>
-                      <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>用户体验</span>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -347,7 +344,7 @@ export default function MobileDevelopmentDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放开发流程演示</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +352,16 @@ export default function MobileDevelopmentDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +385,7 @@ export default function MobileDevelopmentDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +409,7 @@ export default function MobileDevelopmentDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +426,9 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product <span className="text-yellow-400">Type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证移动开发的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -452,17 +449,17 @@ export default function MobileDevelopmentDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm">{case_.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
@@ -477,9 +474,9 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              相关<span className="text-yellow-400">服务</span>
+              Related <span className="text-yellow-400">Articles</span>
             </h2>
-            <p className="text-xl text-gray-300">与移动开发相辅相成的其他服务</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -543,26 +540,23 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">移动应用</span>开发？
+              Get your <span className="text-yellow-400">preferential </span>price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的移动应用开发解决方案
+              Our professional team will provide you with personalized solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-gray-300">
-                <Phone size={20} className="mr-2 text-yellow-400" />
-                400-123-4567
-              </div>
+              
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                mobile@company.com
+                export.sentinel@gmail.com
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                联系我们
+                Contact us
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>
