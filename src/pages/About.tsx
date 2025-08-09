@@ -3,6 +3,8 @@
  * Displays company introduction, team information, corporate culture and development history
  */
 import { Target, Eye, Award, Users, Clock, MapPin } from 'lucide-react'
+import { Timeline, TimelineItemData } from '../components/timeline/Timeline'
+import { ImageModal, useImageModal } from '../components/ui/image-modal'
 
 export default function AboutPage() {
   const certifications = [
@@ -26,48 +28,73 @@ export default function AboutPage() {
     }
   ]
 
-  const milestones = [
-    { 
-      year: "2008", 
-      title: "", 
-      description: "Tianjin Sentinel was established in Tianjin Hi-Tech Zone in 2008.The company initially focused onthe research and development and manufacturing of sensors and fieldbus equipment to meet the needs of industrial applications.",
-      image: "/time1.png"
+  // 提取所有认证证书图片用于模态框
+  const certificationImages = certifications.map(cert => cert.image)
+  const certImageModal = useImageModal(certificationImages)
+
+  const timelineItems: TimelineItemData[] = [
+    {
+      side: "right",
+      tone: "gold",
+      year: 2008,
+      title: "2008 Company Establishment",
+      content: "Tianjin Sentinel was established in Tianjin Hi-Tech Zone in 2008. The company initially focused on the research and development and manufacturing of sensors and fieldbus equipment to meet the needs of industrial applications.",
+      iconSrc: "/time1.png",
+      images: ["/time1.png"]
     },
-    { 
-      year: "2010", 
-      title: "", 
-      description: "In 2010,the company successfully developed and mass-produced inductive proximity switches,solidifying its position in the industrial sensor field.In 2011,it expanded  production facilities to support future business growth.",
-      image: "/time2.png"
+    {
+      side: "left",
+      tone: "blue",
+      year: 2010,
+      title: "2010 Product Development & Expansion",
+      content: "In 2010, the company successfully developed and mass-produced inductive proximity switches, solidifying its position in the industrial sensor field. In 2011, it expanded production facilities to support future business growth.",
+      iconSrc: "/time2.png",
+      images: ["/time2.png"]
     },
-    { 
-      year: "2013", 
-      title: "", 
-      description: "In 2013,the company developed and mass-produced flow,temperature,and pressure sensors,expanding its product line.",
-      image: "/time3.png"
+    {
+      side: "right",
+      tone: "green",
+      year: 2013,
+      title: "Sensor Innovation",
+      content: "In 2013, the company developed and mass-produced flow, temperature, and pressure sensors, expanding its product line.",
+      iconSrc: "/time3.png",
+      images: ["/time3.png"]
     },
-    { 
-      year: "2015", 
-      title: "", 
-      description: "In 2015,the company further entered the field of fieldbus and industrial Ethernet by launching remote I/O modules.The application of this technology significantly enhanced the intelligence level of factory automation.",
-      image: "/time4.png"
+    {
+      side: "left",
+      tone: "red",
+      year: 2015,
+      title: "Factory Intelligence Enhancement",
+      content: "In 2015, the company further entered the field of fieldbus and industrial Ethernet by launching remote I/O modules. The application of this technology significantly enhanced the intelligence level of factory automation.",
+      iconSrc: "/time4.png",
+      images: ["/time4.png"]
     },
-    { 
-      year: "2019", 
-      title: "", 
-      description: "In 2019,the company made a significant break through in IO-Link technology by successfully launch IO-Link Master and Device products,achieving standardized data transmission and digital management from field sensors to the central control system.",
-      image: "/time5.png"
+    {
+      side: "right",
+      tone: "purple",
+      year: 2019,
+      title: "IO-Link Technology Breakthrough",
+      content: "In 2019, the company made a significant breakthrough in IO-Link technology by successfully launching IO-Link Master and Device products, achieving standardized data transmission and digital management from field sensors to the central control system.",
+      iconSrc: "/time5.png",
+      images: ["/time5.png"]
     },
-    { 
-      year: "2023", 
-      title: "", 
-      description: "In 2023,the company further enhanced IO-Link technology by launching sensor products with IO-Link functionality,making them more efficient in industrial auto mation and equipment management.In the future,the company will continue to innovatein sensor and IO technologies,driving the development of Industry4.0 and smart manufacturing.",
-      image: "/time6.png"
+    {
+      side: "left",
+      tone: "orange",
+      year: 2023,
+      title: "2023 Future Vision",
+      content: "In 2023, the company further enhanced IO-Link technology by launching sensor products with IO-Link functionality, making them more efficient in industrial automation and equipment management. In the future, the company will continue to innovate in sensor and IO technologies, driving the development of Industry 4.0 and smart manufacturing.",
+      iconSrc: "/time6.png",
+      images: ["/time6.png"]
     },
-    { 
-      year: "2024", 
-      title: "", 
-      description: "Continue to deepen technological innovation and help more enterprises with digital transformation",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/d9aac45d-9a89-4b6d-b0a0-1995b5b5b616.jpg"
+    {
+      side: "right",
+      tone: "gold",
+      year: "2025 ～",
+      title: "New Era of Intelligence",
+      content: "In this rapidly changing era, industrial automation and artificial intelligence are working hand in hand, driving the manufacturing industry into a new era of intelligence. Our mission is to bring intelligent solutions to every machine and production line, transforming factories from mere mechanical operations into a smart brain that adjusts, optimizes, and innovates in real time. We believe the intelligent future has arrived, and we are standing at the heart of this transformation, moving forward with the industry towards a new, efficient, and sustainable future.",
+      iconSrc: "/banner2.png",
+      images: ["/banner2.png"]
     }
   ]
 
@@ -78,7 +105,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             About
-            <span className="text-yellow-400">Sentinel</span>
+            <span className="text-yellow-400"> SENTINEL</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Tianjin Sentinel Electronics Co., Ltd is an innovative Scientific and technological enterprise integrating R&D, production, and sales.
@@ -148,7 +175,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Our
-              <span className="text-yellow-400">Certifications</span>
+              <span className="text-yellow-400"> Certifications</span>
             </h2>
             <p className="text-xl text-gray-300">
               Professional certifications and achievements
@@ -159,12 +186,28 @@ export default function AboutPage() {
             <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide">
               {certifications.map((cert, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
+                  <div className="relative group">
                     <img
                       src={cert.image}
                       alt={`Certification ${index + 1}`}
-                      className="w-45 h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
+                      className="w-45 h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-all duration-300 cursor-pointer hover:scale-105"
+                      onClick={() => certImageModal.openModal(index)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          certImageModal.openModal(index);
+                        }
+                      }}
                     />
+                    
+                    {/* 悬停提示 */}
+                    <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none rounded-2xl">
+                      <div className="text-white text-sm font-medium bg-black/60 px-3 py-2 rounded-lg">
+                        Click to Zoom
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -208,50 +251,29 @@ export default function AboutPage() {
       </section>
 
       {/* Development Timeline */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Development
-              <span className="text-yellow-400">History</span>
-            </h2>
-            <p className="text-xl text-gray-300">
-              Witness our growth journey
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-yellow-400/30"></div>
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
-                      <div className="text-2xl font-bold text-yellow-400 mb-2">{milestone.year}</div>
-                      <h3 className="text-lg font-semibold mb-2">{milestone.title}</h3>
-                      <p className="text-gray-300 text-sm">{milestone.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-gray-950"></div>
-                  
-                  {/* Image positioned on alternating sides */}
-                  <div className={`absolute ${index % 2 === 0 ? 'left-0 -translate-x-1/2' : 'right-0 translate-x-1/2'} top-1/2 transform -translate-y-1/2`}>
-                    <div className="w-24 h-24 rounded-lg overflow-hidden border-2 border-gray-700">
-                      <img
-                        src={milestone.image}
-                        alt={milestone.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="py-20 bg-gray-900/50">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Development
+            <span className="text-yellow-400"> History</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          Witness our growth journey
+          </p>
         </div>
+
+        <Timeline items={timelineItems} />
       </section>
+
+      {/* 认证证书图片放大模态框 */}
+      <ImageModal
+        isOpen={certImageModal.isOpen}
+        onClose={certImageModal.closeModal}
+        currentImage={certImageModal.currentImage}
+        images={certificationImages}
+        currentIndex={certImageModal.currentIndex}
+        onImageChange={certImageModal.changeImage}
+      />
     </div>
   )
 }

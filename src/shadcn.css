@@ -116,3 +116,51 @@ html > body * {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
+
+/* Hexagon timeline styles */
+.hexagon-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  border: 3px solid;
+  transition: all 0.3s ease;
+}
+
+.hexagon-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hexagon-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile hexagon styles */
+.hexagon-container-mobile {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.hexagon-container-mobile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hexagon-inner-mobile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
