@@ -1,91 +1,67 @@
-# New Retail Digital Platform
+## Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement
 
-## 概述
+In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety. A dairy plant client encountered a series of tricky problems when monitoring the liquid level in a milk tank.
 
-新零售数字化平台是一个整合线上线下资源的全渠道零售管理系统，旨在提升零售业务效率和客户体验。
+Initially, they planned to use a **standard ultrasonic level sensor**, **but in actual operation, they found that the large amount of foam generated during milk stirring or filling severely interfered with the ultrasonic signal, resulting in highly unstable measurements**.
 
-## 核心功能
+When they tried a **differential pressure level sensor**, **a new problem arose—difficulty in cleaning**. Dairy production has extremely high hygiene requirements, and each tank cleaning must be thorough and residue-free. The **complex structure of the differential pressure sensor makes it difficult to dismantle and clean**, which became a new pain point.
 
-### 1. 全渠道销售管理
-- **线上商城**: 多平台电商系统集成
-- **线下门店**: 智能POS系统和库存管理
-- **移动端**: 移动购物应用和微信小程序
-- **社交电商**: 社交媒体营销和销售
+After multiple failed attempts, the customer switched to a **float-type level sensor**. However, new troubles followed. The float probe rod was fixed to the top of the tank, and when the tank lid needed to be opened for manual stirring or inspection, the rod became an obstacle—hindering operation and posing safety hazards.
 
-### 2. 智能库存管理
-- **实时库存**: 多仓库库存实时同步
-- **智能补货**: 基于销售数据的自动补货
-- **库存预警**: 低库存自动预警系统
-- **供应链管理**: 供应商管理和采购流程
+The combination of these issues forced the customer to seek a more professional solution. When they approached SENTINEL Electronics, we decided to help them rethink the path of liquid level measurement and jointly provided a **solution to address foam interference and space constraints in dairy tanks**.
 
-### 3. 客户关系管理
-- **会员系统**: 积分、等级、权益管理
-- **个性化推荐**: 基于AI的商品推荐
-- **客户画像**: 深度客户行为分析
-- **营销自动化**: 精准营销和促销活动
+---
 
-### 4. 数据分析平台
-- **销售分析**: 多维度销售数据统计
-- **客户分析**: 客户行为和偏好分析
-- **商品分析**: 商品表现和趋势分析
-- **运营分析**: 运营效率和效果评估
+## Ingenious Design: An Innovative “Bottom-Up” Approach
 
-## 技术架构
+Upon receiving the customer’s request, our technical team immediately organized an in-depth discussion and on-site evaluation. Faced with the multiple constraints above, we realized that traditional level sensor installation methods could no longer meet this working condition.
 
-### 前端技术
-- **React.js**: 现代化的前端框架
-- **TypeScript**: 类型安全的JavaScript
-- **Tailwind CSS**: 实用优先的CSS框架
-- **响应式设计**: 适配各种设备屏幕
+Since the tank’s top space was limited, the cleaning requirements were strict, and foam interference needed to be avoided, why not consider starting from the bottom of the tank?
 
-### 后端技术
-- **Node.js**: 高性能的JavaScript运行时
-- **Express.js**: 轻量级的Web应用框架
-- **MongoDB**: 灵活的文档数据库
-- **Redis**: 高性能的内存数据库
+![SENTINEL Split-Type Sensor Diagram](http://image.sentinel-china.com/202506131507102.png)
 
-### 云服务
-- **AWS/Azure**: 云基础设施服务
-- **Docker**: 容器化部署
-- **Kubernetes**: 容器编排管理
-- **CI/CD**: 持续集成和部署
+SENTINEL’s split-type level sensor has a key advantage—its probe supports bidirectional measurement. This means that, unlike traditional sensors that measure from top to bottom, we can accurately measure from the bottom up. This feature opened new possibilities for installation.
 
-## 实施效果
+![SENTINEL Split-Type Sensor Probe](http://image.sentinel-china.com/202506131508628.png)
 
-### 业务效率提升
-- 订单处理效率提升50%
-- 库存周转率提升30%
-- 客户满意度提升40%
+However, implementation was not easy. The space at the bottom of the customer’s tank was extremely limited, making it impossible to install a conventional integrated level sensor. We quickly proposed a **split-type** custom solution: insert the split probe from the top of the tank, but mount it at the bottom, with the electronics module connected to the probe via cable and flexibly installed outside the equipment.
 
-### 运营成本降低
-- 人工成本降低25%
-- 库存成本降低20%
-- 营销成本降低15%
+This structure met the need for bottom-up measurement, perfectly avoided interference from the limited top space, and made maintenance and cleaning easier. All parts could be disassembled independently and sanitized separately, greatly improving hygiene management convenience and efficiency.
 
-### 收入增长
-- 线上销售额增长60%
-- 客户复购率提升35%
-- 客单价提升20%
+---
 
-## 成功案例
+## Cost Reduction & Efficiency Gain: Not Just Level, but Temperature Too
 
-### 案例一：某连锁超市数字化转型
-- **门店数量**: 500家连锁门店
-- **实施时间**: 12个月
-- **投资金额**: 1.8亿元
-- **效果**: 销售额增长45%，运营成本降低30%
+In addition to liquid level measurement, we equipped the customer with a probe module that also has temperature monitoring capabilities. By integrating a high-precision temperature sensor into the probe, the customer could monitor the milk tank temperature in real time without installing an additional temperature probe.
 
-### 案例二：某服装品牌全渠道建设
-- **品牌规模**: 全国200家直营店
-- **线上平台**: 天猫、京东、微信小程序
-- **实施效果**: 全渠道销售额增长80%，客户体验显著提升
+This integration not only reduced costs but also simplified system wiring and maintenance. For the customer, this seemingly small change brought huge value—they no longer needed to purchase a separate temperature monitoring system or worry about cleaning extra sensors, making on-site operations simpler and more efficient.
 
-## 联系我们
+![Temperature Monitoring Integration](http://image.sentinel-china.com/202506131508773.png)
 
-如果您对新零售数字化平台感兴趣，欢迎联系我们：
+---
 
-- **电话**: 400-888-8888
-- **邮箱**: newretail@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦
+## Creating Value: More than Just a Sensor—It’s Capability
 
-我们将为您提供专业的咨询服务和定制化解决方案。
+Through this case, we not only solved the customer’s immediate problem but also demonstrated our comprehensive capabilities in product customization, technical implementation, and customer responsiveness. From product design and structural innovation to project delivery, **the entire process took just one month**.
+
+We proved through action that we are not just a sensor supplier—we are a **solutions partner for optimizing on-site processes**.
+
+This cooperation allowed the customer to truly realize that “a sensor is not a universal part, but a tool tailored to match on-site conditions.” Our technical team continues to create real value for the era of smart manufacturing through one customized solution after another.
+
+---
+
+## Conclusion: Customer-Centric Innovation Never Stops
+
+Progress in industrial sensing technology is not only about improved accuracy but also about deep understanding of on-site challenges and effective responses. This milk tank liquid level monitoring case is a perfect example of a small scenario with big challenges.
+
+Our split-type level sensor, through structural innovation and deep application integration, has overcome monitoring bottlenecks for the customer while also adding valuable technical assets to our portfolio.
+
+---
+
+### Customer Support and Service
+
+For more information about SENTINEL products, please contact our sales team or call **+86-22-83726972**. You can also visit our official website at [www.sentinel-china.com](http://www.sentinel-china.com), which provides comprehensive product information, selection manuals, CAD and Eplan files, as well as configuration files and tutorials—ensuring easy access to all necessary resources.
+
+We have a professional technical team ready to provide customized customer support and efficient after-sales service, ensuring maximum protection of every customer’s interests.
+
+![SENTINEL Official QR Code](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)

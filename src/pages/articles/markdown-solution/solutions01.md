@@ -1,87 +1,77 @@
-## 新品亮相 ，定义更灵活的IO-Link接入方式
-![](http://image.sentinel-china.com/202508011042916.png)
-面对工业现场日益多样化的信号接入需求，Sentinel正式推出五款IO-Link模拟量转换器新品，涵盖电压、电流、温度三类典型信号输入输出类型。这些产品均基于IO-Link V1.1标准设计，采用统一的M12 A码接口，具备小巧、精确、按需部署的特点，完美匹配“每一个信号点都值得被精准接入”的现场理念。
+# Application of IO-Link Smart Sensors in Hydraulic Systems
 
-这不是对多通道子站的替代，而是对其的有力补充。新系列通过“一对一”式的模块化设计，让每一个模拟量或温度信号都可以以最合适的方式独立接入IO-Link网络，真正实现灵活、精益、经济的部署策略。
+In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability. The efficient operation of a hydraulic system is not automatic—in real-world applications, it demands strict monitoring of parameters such as system pressure, flow, temperature, and liquid level. Even minor fluctuations in these physical variables can seriously affect system stability and production efficiency.
 
-## 为什么选择一对一式IO-Link转换器？
+How can we achieve precise, real-time, intelligent monitoring of hydraulic systems to ensure the reliable operation of critical equipment? This has long been a focal topic in industrial automation.
 
-在传统方案中，如果现场只有一个传感器或一个模拟信号需要接入，往往不得不采购整块多通道子站设备，这不仅造成资源浪费，也增加了成本与设备管理难度。
+---
 
-Sentinel此次发布的新品转换器则恰恰提供了另一种选择：
+## Basic Structure and Monitoring Requirements of Hydraulic Systems
 
-- **每一个信号对应一个转换器，按需部署**
-    
-- **无需配整站，只为一个通道而投入**
-    
-- **支持多种信号类型，组合灵活、适配广泛**
-    
-- **统一接口、即插即用、调试简便**
+![Hydraulic System Structure](http://image.sentinel-china.com/202507111005719.png)
 
-以简胜繁，以小胜大，让IO-Link接入变得更“刚刚好”。
+A hydraulic system consists of key components such as power elements (hydraulic pumps), actuators (hydraulic cylinders, hydraulic motors), control elements (hydraulic valves), and auxiliary elements (oil tanks, filters, coolers). These components work together to achieve energy transmission and motion control. Specifically:
 
-## 五款产品一览：信号覆盖更全面，场景适配更自由
+- **Hydraulic pumps** convert mechanical energy into hydraulic energy  
+- **Actuators** use hydraulic energy to perform mechanical actions  
+- **Control elements** precisely regulate the direction, pressure, and flow of hydraulic oil  
+- **Auxiliary elements** maintain oil cleanliness and appropriate temperature  
 
-### CIOL-1AO-SC：单通道电流输出，控制执行设备的轻便之选
-![](http://image.sentinel-china.com/202508011220015.png)
+To ensure reliable system operation, the core physical quantities that require real-time monitoring include:
 
-专为控制类场合而设计，CIOL-1AO-SC提供4-20mA或0-20mA的模拟量输出，适用于驱动比例阀、变频器等现场执行设备。三线制输出，最大负载500Ω，具备高达0.1% F.S.的输出精度，适合高精度控制场合。
+- **Pressure** – ensures load stability  
+- **Flow** – guarantees system efficiency  
+- **Temperature** – prevents oil overheating  
+- **Liquid level** – avoids pump dry-running  
 
-如果现场只需控制一个阀门，这款产品便是理想选择——无需配置整个输出子站，节省成本与空间。
+Only by accurately monitoring these parameters can anomalies be detected early, enabling proactive maintenance.
 
-### CIOL-2AI-SC：双通道电流输入，兼顾密度与灵活部署
-![](http://image.sentinel-china.com/202508011220814.png)
-尽管是双通道设计，但CIOL-2AI-SC依然支持分散部署场景下的独立使用。例如两个传感器分别位于设备两端，可通过两台设备分别就近布设，提升安装便利性。
+---
 
-支持4-20mA/0-20mA模拟量输入，最大输入电流22mA，数据精度达0.5% F.S.，提供标准M12 A码接口，可为传感器提供最多200mA电源。
+## Complete IO-Link Smart Sensor Solution
 
-### CIOL-2VI-SC：电压输入场景的灵活拼搭利器
-![](http://image.sentinel-china.com/202508011222195.png)
+Traditional hydraulic monitoring often faces problems such as a wide variety of sensors, complex management, high parameter-setting and on-site maintenance costs, and a lack of real-time data feedback—making fault prediction difficult. IO-Link smart sensor technology was developed to address these challenges.
 
-适用于0-10V模拟电压传感器接入，如电位计、压力传感器等，CIOL-2VI-SC具备双通道输入能力，最大输入电压11V，支持mV级别的数据分辨，保障信号的精准传输。
+We have launched four IO-Link smart sensor series for monitoring pressure, temperature, liquid level, and flow in hydraulic systems:
 
-其输出字节结构、LED指示、连接方式与CIOL-2AI-SC高度一致，使得用户在不同信号类型部署时，亦可实现统一规范、快速替换。
+![SEH Series Pressure Sensors](http://image.sentinel-china.com/202412311445443.png)  
+**SEH Series Pressure Sensors** – Wide measurement range, high accuracy, multiple output modes, ideal for high-pressure hydraulic systems such as construction machinery and hydraulic power units.
 
-### CIOL-2VO-SC：电压控制信号输出的高效桥梁
-![](http://image.sentinel-china.com/202508011221183.png)
-用于控制类设备中常见的0-10V电压控制接口，CIOL-2VO-SC具备双通道输出能力，最小负载阻抗4.7KΩ，0.1% F.S.精度，输出过程参数以mV为单位呈现，满足大部分工业控制器件的需求。
+![TBH Series Temperature Sensors](http://image.sentinel-china.com/202412311445965.png)  
+**TBH Series Temperature Sensors** – Stable and precise temperature measurement with strong anti-interference capability, suitable for critical thermal points such as hydraulic oil tanks and gearboxes.
 
-对于多台设备分别需要电压控制的场景，每个控制点配一个CIOL-2VO-SC，就像部署一条条“数字神经”，让控制信号有序传输至执行末端。
+![LTH Series Liquid Level/Temperature Sensors](http://image.sentinel-china.com/202412311457484.png)  
+**LTH Series Liquid Level/Temperature 2-in-1 Sensors** – Integrates liquid level and temperature detection into one device, reducing installation complexity, ideal for space-limited systems.
 
-### CIOL-PT12-SC：温度信号的专属通道，RTD接入再无障碍
-![](http://image.sentinel-china.com/202508011222738.png)
+![FMV Series Flow Sensors](http://image.sentinel-china.com/202412311444690.png)  
+**FMV Series Flow Sensors** – Fast response, strong resistance to contamination and bubble interference, ensuring stable hydraulic system operation.
 
-CIOL-PT12-SC专为Pt100类RTD温度传感器设计，支持2/3/4线制输入方式，测量范围覆盖-200℃至600℃，输入精度达±0.5℃。其输入数据以0.1℃为单位传输，确保温度监测的高分辨率。
+All series support the IO-Link protocol, enabling remote parameter adjustment, data acquisition, real-time monitoring, and device diagnostics.
 
-非常适合只需监测一个温度点的应用场景，如单轴温控、实验平台、局部工艺点位等，避免使用多通道模块时的资源冗余。
+---
 
-五款产品统一IO-Link接口、统一安装形式、统一调试方式，便于工程师快速部署与标准化管理，也方便与现有IO-Link主站系统无缝集成。
+## Core Advantages of IO-Link Technology
 
-## 为不同部署场景而生
+As an internationally standardized communication protocol, IO-Link significantly enhances the intelligence of hydraulic systems:
 
-在设备密度不高的场合，或者传感器分布较为分散的应用中，“一个传感器一块子站”显然并不经济。而使用这些一对一的转换器，就能更有针对性地按需组合，打造精益型IO-Link接入架构。
+- **Remote parameter setting** – Debugging and maintenance without disassembly  
+- **Automatic device recognition and replacement** – System auto-loads parameters after sensor replacement for easier maintenance  
+- **Real-time monitoring and data tracking** – Continuous status insight to improve fault prediction  
+- **Simplified wiring** – Unified interface standards reduce installation costs  
+- **High scalability** – Easy integration with PLCs, industrial networks, and smart platforms, helping enterprises transition to Industry 4.0  
 
-例如：
+---
 
-- 小型设备只需一个温度点采集，可直接搭配CIOL‑PT12‑SC；
-    
-- 控制系统需要一个模拟输出点，可使用CIOL‑1AO‑SC简化部署；
-    
-- 分布式模拟输入信号较多但密度不高，CIOL‑2AI‑SC组合使用既省资源又保性能。
-    
+## Conclusion: From Smart Sensing to a New Era of Intelligent Hydraulic Monitoring
 
-这种自由组合、独立部署的模式，使得IO-Link系统建设更加贴近现场实际、降低总体成本，也为后续系统扩展留下了充分弹性。
+Hydraulic systems are the driving force of industrial production, and precise monitoring is essential. With IO-Link smart sensing technology, we can not only monitor hydraulic system conditions with high accuracy but also lay a solid foundation for intelligent manufacturing.
 
-## 结语：IO-Link接入的新维度，从这五款产品开始
+---
 
-森特奈此次发布的五款IO-Link转换器，不仅是对传统接入方式的有力补充，更是以“小模块、大作用”的方式拓展了IO-Link在工业自动化中的边界。
+### Customer Support and Service
 
-它们让信号接入不再依赖整站方案，而是可以“一个信号、一个模块”，精准控制成本，高效适配场景。随着工业数字化进程不断加深，这样按需而行、组合灵活的模块化产品，将成为智能工厂部署中不可或缺的一环。
+For more information about SENTINEL products, please contact our sales team or call **+86-22-83726972**. You can also visit our official website at [www.sentinel-china.com](http://www.sentinel-china.com), which provides comprehensive product information, selection manuals, CAD and Eplan files, as well as configuration files and tutorials to ensure easy access to required resources.
 
-### 客户支持与服务
+We have a professional technical team ready to provide customized customer support and efficient after-sales service, ensuring maximum protection of every customer’s interests.
 
-如您想要了解森特奈产品的更多信息，请联系销售人员或致电公司 022-83726972。或您可登录森特奈的官网 www.sentinel-china.com 。官网提供了全面的产品信息、选型手册、CAD 和 Eplan 文件，以及配置文件和教程，确保用户能够轻松获取所需信息。
-
-我们拥有专业的技术团队，随时准备提供定制化的客户支持和高效的售后服务，确保每一位用户的利益得到最大化的保障。
-
-![](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)
+![SENTINEL Official QR Code](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)

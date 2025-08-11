@@ -1,91 +1,67 @@
-# Smart Healthcare Solutions
+##IO-Link Smart Sensors in Wind Turbine Hydraulic Systems
 
-## 概述
+In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.  
+To meet the dual demands for high reliability and efficiency, modern medium-to-large wind turbines widely adopt hydraulic systems, supporting core functions such as blade pitch adjustment, braking, and yaw control. These systems act as the “nervous center” of turbine operation.
 
-智慧医疗解决方案旨在通过先进的信息技术手段，构建智能化医疗信息管理系统，提升医疗服务质量，改善患者就医体验。
+In actual operation, hydraulic systems face multiple challenges, including high pressure, frequent starts and stops, and extreme weather.  
+How to monitor key parameters in real time and control them precisely has become a core issue in ensuring the stable operation of wind power systems. SENTINEL’s intelligent sensor products based on IO-Link technology are providing strong support for the intelligent upgrade of wind turbine hydraulic systems.
 
-## 核心功能
+---
 
-### 1. 电子病历系统
-- **患者信息管理**: 完整的患者电子档案
-- **病历记录**: 结构化的病历录入和管理
-- **影像管理**: 医学影像存储和调阅
-- **检验报告**: 实验室检查结果管理
+## Multi-Dimensional Sensors Build the “Perceptive Brain” of Hydraulic Systems
+![Multi-dimensional sensors in wind turbine hydraulic systems](http://image.sentinel-china.com/202507181159019.png)
 
-### 2. 智能诊断辅助
-- **AI诊断**: 基于机器学习的疾病诊断辅助
-- **影像识别**: 医学影像智能分析
-- **病理分析**: 病理切片智能识别
-- **药物推荐**: 基于患者情况的用药建议
+The efficiency and safety of hydraulic systems depend on accurate sensing of multiple parameters and closed-loop feedback. Different types of sensors play complementary roles:
 
-### 3. 远程医疗服务
-- **在线问诊**: 医生在线咨询平台
-- **远程会诊**: 多学科专家远程会诊
-- **健康监测**: 可穿戴设备健康数据监测
-- **慢病管理**: 慢性疾病长期管理
+- **Pressure sensors** are the “gatekeepers” of safe operation, providing real-time pressure feedback to ensure that pitch and braking systems operate within set ranges, preventing equipment damage or control failure due to overpressure or underpressure.  
+- **Temperature sensors** monitor hydraulic oil temperature, helping to detect oil degradation or overheating risks, thus avoiding seal aging or lubrication failure that could lead to leaks or malfunctions.  
+- **Flow sensors** monitor hydraulic fluid flow status. Changes in flow rate can indirectly indicate dynamic issues such as pipeline blockages or valve sticking.
 
-### 4. 医院管理平台
-- **预约挂号**: 智能预约和排队系统
-- **药品管理**: 药品库存和处方管理
-- **财务管理**: 医疗费用和医保结算
-- **人员管理**: 医护人员排班和绩效
+---
 
-## 技术架构
+## IO-Link Leads the New Era of Smart Sensing
+![IO-Link smart sensor advantages in wind power applications](http://image.sentinel-china.com/202507181139982.png)
 
-### 前端技术
-- **React.js**: 现代化的前端框架
-- **TypeScript**: 类型安全的JavaScript
-- **Tailwind CSS**: 实用优先的CSS框架
-- **响应式设计**: 适配各种设备屏幕
+SENTINEL sensor products are designed specifically for wind power hydraulic applications, offering significant advantages in technical performance and system integration:
 
-### 后端技术
-- **Node.js**: 高性能的JavaScript运行时
-- **Express.js**: 轻量级的Web应用框架
-- **MongoDB**: 灵活的文档数据库
-- **Redis**: 高性能的内存数据库
+- Pressure sensors support working pressures up to 600 bar, with excellent dynamic response and resistance to mechanical vibration—ideal for the high-vibration environment inside wind turbine nacelles.  
+- Pressure and temperature sensors are integrated with IO-Link functionality, enabling faster data transmission, simpler wiring, and smarter diagnostics. The IO-Link protocol supports automatic device recognition, remote parameter setting, and self-diagnosis, serving as a vital bridge for the digital transformation of sensors.  
+- With an IP67 protection rating, these sensors can handle harsh outdoor environments such as oil exposure, high humidity, and challenging installation conditions, ensuring higher reliability.
 
-### 云服务
-- **AWS/Azure**: 云基础设施服务
-- **Docker**: 容器化部署
-- **Kubernetes**: 容器编排管理
-- **CI/CD**: 持续集成和部署
+Combined with online condition monitoring, SENTINEL sensors support real-time health analysis.  
+When paired with edge computing or cloud-based AI algorithms, they can detect early failure signs such as friction or leakage, enabling proactive maintenance.
 
-## 实施效果
+---
 
-### 医疗质量提升
-- 诊断准确率提升25%
-- 医疗差错减少40%
-- 患者满意度提升35%
+## Industry Case | Wind Turbine OEM in Eastern China
+![Case study of SENTINEL sensors in Chinese wind turbine project](http://image.sentinel-china.com/202507181343901.png)
 
-### 运营效率改善
-- 就诊等待时间缩短50%
-- 医生工作效率提升30%
-- 医院运营成本降低20%
+A wind turbine manufacturer in Eastern China adopted SENTINEL’s IO-Link smart sensor solution in its next-generation onshore wind turbines to optimize pitch and yaw hydraulic control systems.
 
-### 患者体验优化
-- 预约挂号时间缩短70%
-- 重复检查减少60%
-- 医疗费用透明度提升
+During deployment, the engineering team found that in some wind farms, pitch systems frequently shut down in summer due to high oil temperatures. By introducing SENTINEL’s pressure and temperature sensors, the system achieved dynamic dual-parameter monitoring.  
+When oil temperature exceeded 60°C, the system automatically triggered an alert and activated the cooling unit, significantly reducing unplanned downtime.
 
-## 成功案例
+In addition, feedback from displacement sensors enabled the turbine’s main control system to establish a complete closed-loop pitch control logic, maintaining stable pitch during changing wind speeds and improving overall power generation efficiency.
 
-### 案例一：某三甲医院智慧化改造
-- **医院规模**: 2000张床位，年门诊量200万人次
-- **实施时间**: 24个月
-- **投资金额**: 3.2亿元
-- **效果**: 患者满意度提升40%，运营效率提升35%
+**The project lead stated:**  
+> “SENTINEL’s IO-Link smart sensors not only improved system response speed and data accuracy but also significantly simplified control cabinet wiring, making maintenance and system expansion much more convenient.”
 
-### 案例二：某区域医疗中心建设
-- **覆盖范围**: 5个县区，50家医疗机构
-- **服务人口**: 200万居民
-- **实施效果**: 基层医疗水平显著提升，患者转诊率降低30%
+---
 
-## 联系我们
+## Looking Ahead: Hydraulic Systems Moving Toward Smart Maintenance
 
-如果您对智慧医疗解决方案感兴趣，欢迎联系我们：
+As the wind power industry develops toward higher capacity, larger scale, and greater intelligence, hydraulic sensing technology is also evolving. From single-point collection to system-wide integration, and from manual inspection to remote diagnostics, sensors are becoming the “perceptive core” of intelligent wind turbine operation.
 
-- **电话**: 400-888-8888
-- **邮箱**: healthcare@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦
+SENTINEL will continue to focus on wind power applications, aiming for higher integration, stronger self-diagnosis capabilities, and higher protection levels with its IO-Link smart sensor solutions.  
+In the future, wind turbine hydraulic systems will not only “see” but also “detect accurately and respond quickly,” fully supporting the intelligent transformation of renewable energy equipment.
 
-我们将为您提供专业的咨询服务和定制化解决方案。
+---
+
+### Customer Support and Service
+
+For more information about SENTINEL products, please contact our sales team or call **+86-22-83726972**.  
+You can also visit our official website at [www.sentinel-china.com](http://www.sentinel-china.com), which provides complete product information, selection manuals, CAD and Eplan files, as well as configuration files and tutorials—ensuring users can easily access the resources they need.
+
+We have a professional technical team ready to provide customized customer support and efficient after-sales service to ensure maximum value for every user.
+
+![SENTINEL official QR code for product and support access](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)
