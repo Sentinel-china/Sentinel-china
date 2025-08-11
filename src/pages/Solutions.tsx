@@ -130,7 +130,7 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             Industry
-            <span className="text-yellow-400">Solutions</span>
+            <span className="text-yellow-400"> SOLUTIONS</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Targeting the characteristics and needs of different industries, we provide customized technology solutions

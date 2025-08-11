@@ -5,7 +5,7 @@
 
 import { useEffect } from 'react'
 import { useLocation } from 'react-router'
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare } from 'lucide-react'
+import { Mail, MapPin, Clock, MessageSquare } from 'lucide-react'
 
 export default function ContactPage() {
   const location = useLocation()
@@ -32,10 +32,11 @@ export default function ContactPage() {
 
   const contactInfo = [
     {
-      icon: Phone,
-      title: "Phone",
-      content: "022-83726917",
-      description: "Weekdays 9:00-18:00"
+      icon: MessageSquare,
+      title: "WhatsApp",
+      content: "Scan QR code to add customer service",
+      description: "Scan to add, 24/7 online support",
+      qrSrc: "/whatsapp-qr.png",
     },
     {
       icon: Mail,
@@ -66,7 +67,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             Contact
-            <span className="text-yellow-400"> Us</span>
+            <span className="text-yellow-400"> US</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             We look forward to cooperating with you. Please contact us through the following methods,
@@ -80,12 +81,27 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 text-center hover:border-yellow-400/50 transition-all duration-300">
+              <div key={index} className="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 text-center hover:border-yellow-400/50 transition-all duration-300 group relative">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <info.icon className="text-yellow-400" size={32} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{info.title}</h3>
-                <p className="text-yellow-400 font-medium mb-1">{info.content}</p>
+                <h3 className="text-lg font-semibold mb-3">{info.title}</h3>
+                {info.qrSrc ? (
+                  <div className="relative">
+                    <p className="text-yellow-400 font-medium mb-1">{info.content}</p>
+                    {/* 悬浮显示的二维码 */}
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 bg-white p-3 rounded-lg shadow-xl border-2 border-yellow-400">
+                      <img
+                        src={info.qrSrc}
+                        alt={`${info.title} QR Code`}
+                        className="w-32 h-32 object-contain"
+                      />
+                      <p className="text-gray-800 text-xs mt-2 text-center font-medium">Scan to add WhatsApp</p>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-yellow-400 font-medium mb-1">{info.content}</p>
+                )}
                 <p className="text-gray-400 text-sm">{info.description}</p>
               </div>
             ))}
@@ -124,21 +140,21 @@ export default function ContactPage() {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
                       <p className="font-semibold">...</p>
                       <p className="text-gray-300">......</p>
                     </div>
-                  </div>
+                  </div> */}
                   
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
                       <p className="font-semibold">...</p>
                       <p className="text-gray-300">......</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
