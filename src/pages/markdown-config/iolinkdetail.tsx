@@ -1,71 +1,71 @@
 /**
- * 产品案例详情页面组件
- * 动态加载产品案例markdown文档并应用统一样式
+ * IO-Link产品案例详情页面组件
+ * 动态加载IO-Link产品案例markdown文档并应用统一样式
  */
 import { useParams, Link } from 'react-router'
-import { ArrowLeft, Database, Cpu, Zap, Shield, BarChart3, Monitor } from 'lucide-react'
+import { ArrowLeft, Smartphone, Code, Zap, Shield, BarChart3, Monitor } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './markdown-styles.css'
 
-// 导入产品案例markdown文件
-import ioModule01Content from '../articles/markdown-cases/io-module01.md?raw'
-import ioModule02Content from '../articles/markdown-cases/io-module02.md?raw'
-import ioModule03Content from '../articles/markdown-cases/io-module03.md?raw'
-import ioModule04Content from '../articles/markdown-cases/io-module04.md?raw'
-import ioModule05Content from '../articles/markdown-cases/io-module05.md?raw'
-import ioModule06Content from '../articles/markdown-cases/io-module06.md?raw'
+// 导入IO-Link产品案例markdown文件
+import ioLink01Content from '../articles/markdown-cases/io-link01.md?raw'
+import ioLink02Content from '../articles/markdown-cases/io-link02.md?raw'
+import ioLink03Content from '../articles/markdown-cases/io-link03.md?raw'
+import ioLink04Content from '../articles/markdown-cases/io-link04.md?raw'
+import ioLink05Content from '../articles/markdown-cases/io-link05.md?raw'
+import ioLink06Content from '../articles/markdown-cases/io-link06.md?raw'
 
-// 产品案例配置映射
-const productConfig = {
-  'io-module01': {
-    icon: Database,
-    title: "Input/Output Adaptive Bus I/O Module",
-    description: "Input-output adaptive bus I/O module with auto-detection wiring capabilities",
+// IO-Link产品案例配置映射
+const ioLinkConfig = {
+  'io-link01': {
+    icon: Smartphone,
+    title: "Differences Between Digital Signals, Analog Signals, and IO-Link",
+    description: "Comprehensive comparison of signal types in industrial automation - from basic digital to intelligent IO-Link communication",
     image: "http://image.sentinel-china.com/202508111442770.png"
   },
-  'io-module02': {
-    icon: Cpu,
-    title: "IO Module on TBR Tire Conveyor Lines",
-    description: "IO module applications on TBR tire conveyor lines, simplifying wiring and improving efficiency",
+  'io-link02': {
+    icon: Code,
+    title: "What is IO-Link",
+    description: "Introduction to IO-Link protocol - open communication standard for sensors and actuators with 35+ million global nodes",
     image: "http://image.sentinel-china.com/202508111459837.png"
   },
-  'io-module03': {
+  'io-link03': {
     icon: Zap,
-    title: "From Fieldbus to Industrial Ethernet",
-    description: "Technical evolution from fieldbus to industrial Ethernet",
+    title: "Summary of IO-Link Devices Series",
+    description: "SENTINEL's comprehensive IO-Link substation portfolio - IP20 and IP67 series for diverse industrial applications",
     image: "http://image.sentinel-china.com/202508111511234.png"
   },
-  'io-module04': {
+  'io-link04': {
     icon: Shield,
-    title: "Distributed Remote IO: Application Experience in the Pharmaceutical Packaging Industry",
-    description: "Application experience of distributed remote IO in pharmaceutical packaging industry",
+    title: "IO-Link Remote RTD Module: Smart solution for industrial temperature control",
+    description: "High-precision temperature monitoring with IO-Link RTD modules - 8-channel Pt100/Pt1000 support with ±0.5°C accuracy",
     image: "http://image.sentinel-china.com/202508111524012.png"
   },
-  'io-module05': {
+  'io-link05': {
     icon: BarChart3,
-    title: "SENTINEL Products Empower the Powder Metallurgy Industry",
-    description: "SENTINEL products empowering the powder metallurgy industry",
+    title: "New IO-Link Substation Modules: Adaptive and Expandable",
+    description: "Intelligent adaptive IO-Link modules with automatic I/O switching and expandable architecture for flexible automation",
     image: "http://image.sentinel-china.com/202508111528078.png"
   },
-  'io-module06': {
+  'io-link06': {
     icon: Monitor,
-    title: "AI Machine Learning Platform",
-    description: "Enterprise-level artificial intelligence development platform",
+    title: "The Use of Negative Pressure Sensors in Distillation Equipment",
+    description: "Food and pharmaceutical-grade negative pressure sensors with IO-Link integration for precise vacuum control",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }
 
 // markdown内容映射
 const markdownContentMap = {
-  'io-module01': ioModule01Content,
-  'io-module02': ioModule02Content,
-  'io-module03': ioModule03Content,
-  'io-module04': ioModule04Content,
-  'io-module05': ioModule05Content,
-  'io-module06': ioModule06Content
+  'io-link01': ioLink01Content,
+  'io-link02': ioLink02Content,
+  'io-link03': ioLink03Content,
+  'io-link04': ioLink04Content,
+  'io-link05': ioLink05Content,
+  'io-link06': ioLink06Content
 }
 
-export default function ProductDetail() {
+export default function IOLinkDetail() {
   const { productId } = useParams<{ productId: string }>()
   const [product, setProduct] = useState<any>(null)
   const [markdownContent, setMarkdownContent] = useState<string>('')
@@ -73,8 +73,8 @@ export default function ProductDetail() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (productId && productConfig[productId as keyof typeof productConfig]) {
-      setProduct(productConfig[productId as keyof typeof productConfig])
+    if (productId && ioLinkConfig[productId as keyof typeof ioLinkConfig]) {
+      setProduct(ioLinkConfig[productId as keyof typeof ioLinkConfig])
       
       // 直接加载markdown内容
       loadMarkdownContent(productId)
@@ -86,7 +86,7 @@ export default function ProductDetail() {
       setLoading(true)
       setError(null)
       
-      console.log('尝试加载产品markdown文件:', id)
+      console.log('尝试加载IO-Link产品markdown文件:', id)
       
       // 从markdown内容映射中获取内容
       const content = markdownContentMap[id as keyof typeof markdownContentMap]
@@ -98,43 +98,43 @@ export default function ProductDetail() {
       } else {
         console.log('未找到markdown文件:', id)
         // 如果文件不存在，显示默认内容
-        setMarkdownContent(`# ${productConfig[id as keyof typeof productConfig]?.title || '产品详情'}
+        setMarkdownContent(`# ${ioLinkConfig[id as keyof typeof ioLinkConfig]?.title || 'IO-Link产品详情'}
 
 ## 概述
 
-该产品的详细文档正在准备中，请稍后再来查看。
+该IO-Link产品的详细文档正在准备中，请稍后再来查看。
 
 ## 功能特点
 
-- 专业的产品设计
-- 先进的技术架构
-- 完善的实施服务
-- 持续的运维支持
+- 标准化的IO-Link通信
+- 工业级可靠性
+- 易于集成
+- 完善的诊断功能
 
 ## 联系我们
 
-如果您对该产品感兴趣，欢迎联系我们：
+如果您对该IO-Link产品感兴趣，欢迎联系我们：
 
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦
+- **电话**: 022-83726972
+- **邮箱**: export.sentinel@gmail.com
+- **地址**: 天津市
 
-我们将为您提供专业的咨询服务和定制化解决方案。`)
+我们将为您提供专业的IO-Link技术咨询和定制化解决方案。`)
       }
     } catch (err) {
       console.error('加载markdown文件失败:', err)
       setError('文档加载失败，请稍后重试')
       setMarkdownContent(`# 文档加载失败
 
-抱歉，文档加载出现错误，请稍后重试。
+抱歉，IO-Link产品文档加载出现错误，请稍后重试。
 
 ## 联系我们
 
-如果您对该产品感兴趣，欢迎联系我们：
+如果您对该IO-Link产品感兴趣，欢迎联系我们：
 
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦`)
+- **电话**: 022-83726972
+- **邮箱**: export.sentinel@gmail.com
+- **地址**: 天津市`)
     } finally {
       setLoading(false)
     }
@@ -144,9 +144,9 @@ export default function ProductDetail() {
     return (
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-400 mb-4">产品未找到</h1>
-          <Link to="/products" className="text-yellow-400 hover:text-yellow-300">
-            返回产品页面
+          <h1 className="text-2xl font-bold text-red-400 mb-4">IO-Link产品未找到</h1>
+          <Link to="/products/io-link" className="text-yellow-400 hover:text-yellow-300">
+            返回IO-Link产品页面
           </Link>
         </div>
       </div>
@@ -161,11 +161,11 @@ export default function ProductDetail() {
       <section className="px-4 sm:px-6 lg:px-8 py-8">
         <div className="max-w-7xl mx-auto">
           <Link 
-            to="/products/io-module" 
+            to="/products/io-link" 
             className="inline-flex items-center text-yellow-400 hover:text-yellow-300 mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            返回产品页面
+            返回IO-Link产品页面
           </Link>
           
           <div className="flex items-center mb-8">

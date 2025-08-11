@@ -1,169 +1,43 @@
-# CDN 加速服务
+## From Fieldbus to Industrial Ethernet
 
-## 概述
+## Fieldbus
 
-CDN加速服务是全球内容分发网络解决方案，通过在全球部署边缘节点，将内容缓存到离用户最近的服务器，大幅提升网站访问速度和用户体验。支持静态资源、动态内容、视频流媒体等多种内容类型的加速分发。
+![Fieldbus Overview](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704103738772.png)
 
-## 核心特性
+In the era of Industry 4.0 intelligence, the booming development of various communication technologies has brought many possibilities for enterprises to achieve intelligence and automation. Especially in the intelligent manufacturing industry, it is necessary to access different equipment and systems through various communication methods on the workshop floor, and collect and upload massive data. At present, in the field of industrial control, the most widely used technologies in the workshop floor are industrial Ethernet technology and industrial fieldbus technology, which provide strong support for factories to achieve automation.
 
-### 全球加速
-- **全球节点**: 覆盖200+国家和地区，1000+边缘节点
-- **智能路由**: 基于地理位置和网络状况的智能路由
-- **就近访问**: 用户访问最近的边缘节点，减少延迟
-- **负载均衡**: 自动负载均衡，避免单点故障
+Fieldbus refers to a digital, serial, multi-point communication data bus between field devices installed in manufacturing or process areas and controllers in the control room. It is an industrial data bus and is a bottom-up data communication network in the automation field. Simply put, fieldbus replaces the transmission of traditional 4-20mA analog signals and ordinary switch signals and is connected to a fully digital, bi-directional, and multi-station communication system for intelligent field devices and automation systems.
 
-### 内容分发
-- **静态资源**: 图片、CSS、JS等静态文件加速
-- **动态内容**: API接口、动态页面内容加速
-- **视频流媒体**: 直播、点播视频内容加速
-- **大文件下载**: 软件包、文档等大文件加速
+![Fieldbus Diagram](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704103816397.png)
 
-### 安全防护
-- **DDoS防护**: 多层DDoS攻击防护机制
-- **CC防护**: 智能CC攻击检测和防护
-- **WAF防护**: Web应用防火墙，防护SQL注入等攻击
-- **HTTPS加速**: 全链路HTTPS加密传输
+Constrained by the technology level at that time, products from various manufacturers were self-contained systems. These fieldbus had their own characteristics and specific application ranges. However, due to the wide variety and different communication protocols, the standardization of fieldbus posed certain difficulties. People started to seek new industrial communication solutions, and Ethernet technology appeared on the horizon.
 
-### 智能优化
-- **图片优化**: 自动图片压缩和格式转换
-- **代码压缩**: CSS、JS代码自动压缩
-- **Gzip压缩**: 传输内容自动压缩
-- **缓存优化**: 智能缓存策略，提升命中率
+---
 
-## 技术架构
+## Industrial Ethernet
 
-### 边缘节点
-- **缓存服务器**: 高性能缓存服务器，支持SSD存储
-- **负载均衡器**: 智能负载均衡，分发用户请求
-- **安全防护**: 内置安全防护模块
-- **监控系统**: 实时监控节点状态和性能
+Ethernet was originally designed for office automation and did not consider the needs of industrial environments. It cannot meet the requirements of the industrial field in material selection, product strength, applicability, real-time performance, interoperability, reliability, anti-interference, and intrinsic safety. Therefore, industrial Ethernet, which is different from commercial Ethernet, is used in industrial field control applications. Industrial Ethernet refers to the relevant components and technologies of Ethernet applied in industrial automation control and process control in industrial environments. It adopts TCP/IP protocol and is compatible with IEEE 802.3 standard, and communication technology of its own unique protocol is added at the application layer.
 
-### 中心节点
-- **源站服务器**: 内容源站，存储原始内容
-- **调度中心**: 智能调度系统，分配用户到最优节点
-- **监控中心**: 全局监控和告警系统
-- **管理平台**: 统一的管理和配置平台
+![Industrial Ethernet](https://www.sentinel-china.com/vancheerfile/Images/2023/7/2023070410390475.png)
 
-### 网络优化
-- **BGP优化**: 多线BGP接入，优化网络路径
-- **TCP优化**: TCP协议优化，提升传输效率
-- **HTTP/2支持**: 支持HTTP/2协议，提升并发性能
-- **QUIC支持**: 支持QUIC协议，减少连接延迟
+---
 
-## 支持功能
+## SENTINEL Remote I/O Products
 
-### 内容类型
-- **静态文件**: HTML、CSS、JavaScript、图片、字体
-- **动态内容**: API接口、动态页面、数据库内容
-- **视频内容**: 直播流、点播视频、短视频
-- **大文件**: 软件包、文档、压缩包
+SENTINEL is one of the few manufacturers in China that independently researches and develops industrial fieldbus products. With years of accumulated technology and production expertise, a professional R&D team and technical support personnel, we have transitioned from fieldbus products to the current industrial Ethernet I/O modules and IO-Link series products. We are fully aware of the difficulties involved in developing a new product, but we have always persisted and grounded ourselves in research and development.
 
-### 缓存策略
-- **时间缓存**: 基于时间的缓存策略
-- **版本缓存**: 基于文件版本的缓存策略
-- **自定义缓存**: 支持自定义缓存规则
-- **缓存预热**: 主动预热热点内容
+Our products are widely used in the fields of new energy, intelligent manufacturing, etc. Through technical research and development and innovation, we have formed products based on industrial Ethernet and IO-Link distributed I/O modules, fluid process monitoring sensors, cable connectors, and so on. SENTINEL has always adhered to customer needs-oriented and has been recognized by the industry with the long-standing tolerance, trust, and support of its customers.
 
-### 安全功能
-- **访问控制**: IP白名单、黑名单控制
-- **防盗链**: 防止恶意盗链和资源滥用
-- **Token验证**: 基于Token的访问验证
-- **HTTPS强制**: 强制HTTPS访问
+![SENTINEL Product](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704103949084.png)
 
-## 技术规格
+IP67 series modules, with a high-strength glass fiber reinforced plastic shell and metal connectors, are completely sealed and protected against impact and vibration. They ensure reliable and stable operation even in harsh environments. With two 7/8" power interfaces, two Ethernet interfaces with built-in switches, and eight M12 I/O interfaces, these modules provide 16 digital inputs/outputs with a single point output current of 0.5A for sensor and actuator installation close to the field. They meet the requirements for on-site installation applications.
 
-| 规格项目 | 参数详情 |
-|---------|---------|
-| 全球节点 | 200+国家和地区，1000+边缘节点 |
-| 带宽容量 | 100Tbps+ 总带宽 |
-| 缓存容量 | 10PB+ 总缓存容量 |
-| 加速效果 | 平均加速比3-10倍 |
-| 可用性 | 99.99% SLA保障 |
-| 安全防护 | DDoS防护、WAF、CC防护 |
+![IP67 Module](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704113349351.png)
 
-## 应用场景
+In 2021, our company launched the IP20 series compact module. This series of products is more cost-effective, with a compact metal casing structure that can not only be installed in a control cabinet but also used in integrated small distributed control boxes. Similarly, it comes with a built-in switch and two RJ45 network ports for convenient wiring. It also has 32-point digital input/output, which can be configured as NPN or PNP, and input/output signals can be sent to the field network.
 
-### 网站加速
-- **电商网站**: 商品图片、页面内容加速
-- **新闻网站**: 文章内容、图片资源加速
-- **企业官网**: 公司介绍、产品展示加速
-- **个人博客**: 文章内容、主题资源加速
+![IP20 Module](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704104032163.png)
 
-### 视频加速
-- **在线教育**: 课程视频、直播课堂加速
-- **娱乐平台**: 电影、电视剧、综艺节目加速
-- **游戏直播**: 游戏直播、赛事直播加速
-- **企业培训**: 培训视频、会议直播加速
+In addition, we are also working hard to research and develop analog I/O modules, and we will soon meet with you all!
 
-### 应用加速
-- **移动应用**: APP资源、API接口加速
-- **游戏应用**: 游戏资源、更新包加速
-- **软件下载**: 软件安装包、更新文件加速
-- **文档分享**: 文档、PDF、PPT等文件加速
-
-### 直播加速
-- **电商直播**: 商品直播、带货直播加速
-- **教育直播**: 在线课堂、培训直播加速
-- **娱乐直播**: 才艺展示、互动直播加速
-- **企业直播**: 产品发布会、会议直播加速
-
-## 客户案例
-
-### 某知名电商平台
-**挑战**: 商品图片加载缓慢，影响用户购买体验
-**解决方案**: 采用CDN加速服务，优化图片加载速度
-**成果**: 页面加载速度提升70%，转化率提升15%
-
-### 在线教育平台
-**挑战**: 课程视频播放卡顿，影响学习效果
-**解决方案**: 部署CDN视频加速，优化视频播放体验
-**成果**: 视频播放流畅度提升80%，用户满意度提升25%
-
-### 新闻媒体网站
-**挑战**: 突发新闻访问量激增，服务器压力大
-**解决方案**: 使用CDN加速，分散访问压力
-**成果**: 支持百万级并发访问，系统稳定性提升至99.99%
-
-## 定价方案
-
-### 基础版
-- **适用场景**: 小型网站、个人博客
-- **流量限制**: 100GB/月
-- **节点数量**: 50+节点
-- **价格**: ¥99/月
-
-### 标准版
-- **适用场景**: 中型网站、企业官网
-- **流量限制**: 1TB/月
-- **节点数量**: 200+节点
-- **价格**: ¥999/月
-
-### 企业版
-- **适用场景**: 大型网站、高流量应用
-- **流量限制**: 10TB+/月
-- **节点数量**: 1000+节点
-- **价格**: 定制报价
-
-## 技术支持
-
-### 服务内容
-- **技术咨询**: CDN架构设计和优化建议
-- **部署服务**: CDN节点部署和配置
-- **监控服务**: 7×24小时监控和告警
-- **故障处理**: 快速响应和问题解决
-
-### 增值服务
-- **性能优化**: 网站性能优化和加速
-- **安全加固**: 安全防护配置和优化
-- **数据分析**: 访问数据分析和报告
-- **培训服务**: CDN技术培训和使用指导
-
-## 联系我们
-
-如果您对CDN加速服务感兴趣，欢迎联系我们：
-
-- **电话**: 400-888-8888
-- **邮箱**: cdn@company.com
-- **地址**: 北京市朝阳区科技园区创新大厦
-
-我们将为您提供专业的内容分发解决方案和定制化服务。
+For many years, we have always adhered to the principle of "customer first", constantly innovating to meet the needs of customers. Our professional after-sales team solves all worries for customers, and SENTINEL is willing to become your trustworthy partner.

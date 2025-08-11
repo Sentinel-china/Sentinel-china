@@ -1,163 +1,57 @@
-# 云安全防护
+##  Distributed Remote IO: Application Experience in the Pharmaceutical Packaging Industry
 
-## 概述
+I am the Electrical Manager of a domestic pharmaceutical company. The company is a comprehensive drug production enterprise specializing in large infusion, ampoule injection, eye drops, nutrition infusion, and other products. It possesses multiple advanced technology production lines, such as the soft bag large infusion production line, ampoule production line, and packaging production line.
 
-云安全防护是企业级云安全解决方案，提供多层次、全方位的安全防护体系。通过先进的安全技术和智能防护算法，为企业云环境提供全面的安全保护，确保业务连续性和数据安全。
+At the invitation of [company/contact], today I would like to discuss my experience using the **SENTINEL remote IO module**.
 
-## 核心特性
+---
 
-### 网络安全防护
-- **DDoS防护**: 多层DDoS攻击防护，支持T级防护能力
-- **CC攻击防护**: 智能CC攻击检测和防护机制
-- **WAF防护**: Web应用防火墙，防护SQL注入、XSS等攻击
-- **网络隔离**: 细粒度网络隔离和访问控制
+# Industrial Manufacturing and Product Selection
 
-### 主机安全防护
-- **入侵检测**: 实时入侵检测和威胁识别
-- **漏洞扫描**: 定期漏洞扫描和风险评估
-- **恶意软件防护**: 病毒、木马等恶意软件防护
-- **系统加固**: 操作系统安全加固和配置优化
+In this construction project, we needed to centrally monitor multiple conveyor equipment and their operating status.  
+After comparing products from several domestic companies, contacting their technical support, and trying their products, I ultimately gave the highest evaluation to **SENTINEL**.  
 
-### 数据安全保护
-- **数据加密**: 传输和存储全程加密保护
-- **密钥管理**: 安全的密钥管理和分发机制
-- **数据备份**: 多重数据备份和灾难恢复
-- **访问控制**: 细粒度的数据访问权限控制
+Their product is **easy to install and wire** in terms of hardware structure design, and the software is also very easy to use.  
+This has greatly saved me time and resources in subsequent projects.
 
-### 安全监控审计
-- **实时监控**: 7×24小时安全事件监控
-- **日志审计**: 完整的操作日志记录和审计
-- **威胁情报**: 全球威胁情报共享和分析
-- **安全报告**: 定期安全评估和风险报告
+![SENTINEL Remote IO](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621163910023.png)
 
-## 技术架构
+In terms of product selection, we ultimately used the **Mitsubishi FX5U series PLC**, in conjunction with SENTINEL's **CC-Link IE Field Basic protocol CMBC series distributed modules**.  
+This choice undoubtedly **significantly improved my work efficiency**.
 
-### 防护层
-- **边界防护**: 网络边界安全防护设备
-- **应用防护**: 应用层安全防护和监控
-- **数据防护**: 数据层加密和访问控制
-- **主机防护**: 主机级安全防护和监控
+![CMBC Distributed Modules](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621163940366.png)
 
-### 检测层
-- **威胁检测**: 多维度威胁检测和分析
-- **行为分析**: 用户行为分析和异常检测
-- **漏洞扫描**: 自动化漏洞扫描和评估
-- **安全评估**: 定期安全评估和渗透测试
+---
 
-### 响应层
-- **事件响应**: 安全事件快速响应和处理
-- **威胁处置**: 威胁自动处置和隔离
-- **恢复机制**: 系统快速恢复和业务连续性
-- **取证分析**: 安全事件取证和分析
+# Application Experience and Effectiveness
 
-## 安全功能
+I use this module for **distributed site layout**, directly accessing on-site equipment status signals and sensors.  
+During debugging and use, I found that signal collection and control output are **very smooth**, and communication with PLC systems via **TCP/IP network** greatly reduces the amount of wiring needed for central control.  
 
-### 网络防护
-- **防火墙**: 下一代防火墙，支持深度包检测
-- **IPS/IDS**: 入侵防护/检测系统
-- **VPN**: 安全VPN接入和远程办公
-- **负载均衡**: 安全负载均衡和流量分发
+This approach **speeds up construction progress** and **saves cable and labor costs**.
 
-### 应用防护
-- **WAF**: Web应用防火墙
-- **API安全**: API接口安全防护和监控
-- **容器安全**: 容器环境安全防护
-- **微服务安全**: 微服务架构安全防护
+![Site Layout Example](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621164029069.png)
 
-### 数据防护
-- **数据库安全**: 数据库访问控制和审计
-- **文件加密**: 文件级加密和权限管理
-- **备份加密**: 备份数据加密和存储
-- **传输加密**: 数据传输加密和完整性校验
+---
 
-## 技术规格
+# Communication and Service Experience
 
-| 规格项目 | 参数详情 |
-|---------|---------|
-| DDoS防护 | 支持T级防护，防护类型100+ |
-| WAF防护 | 防护规则10000+，误报率<0.1% |
-| 检测能力 | 威胁检测准确率>99% |
-| 响应时间 | 安全事件响应时间<5分钟 |
-| 可用性 | 99.99% SLA保障 |
-| 合规认证 | ISO27001、SOC2、PCI DSS |
+Choosing **SENTINEL** was also due to their **excellent communication and response speed**.  
+During the contact process, I felt the strong capability of SENTINEL's R&D team and technical after-sales team.  
 
-## 应用场景
+For example, through communication with technical staff, I gained a better understanding of the **product characteristics** of the CMBC series modules.  
+During the product usage process, any issues I encountered were quickly addressed by the team with detailed answers.  
 
-### 企业云环境
-- **私有云**: 企业私有云环境安全防护
-- **混合云**: 混合云架构安全统一管理
-- **公有云**: 公有云资源安全防护
-- **边缘计算**: 边缘节点安全防护
+The **technical documentation** they provided was thorough and easy to navigate.  
+I believe that choosing SENTINEL means choosing **reliable technical support and after-sales service**.
 
-### 行业应用
-- **金融行业**: 满足金融监管安全要求
-- **医疗行业**: 医疗数据安全保护
-- **教育行业**: 教育信息化安全防护
-- **政府机构**: 政务系统安全防护
+---
 
-### 业务场景
-- **电商平台**: 电商业务安全防护
-- **在线支付**: 支付系统安全保护
-- **企业办公**: 远程办公安全防护
-- **数据存储**: 数据存储安全保护
+# Summary and Suggestions
 
-## 客户案例
+Through communication and cooperation with the SENTINEL team, I am **very satisfied** with their products and services.  
+The product performance is stable and reliable, the team is professional, and the service is considerate.  
 
-### 某知名银行
-**挑战**: 需要满足严格的金融监管要求，确保系统安全
-**解决方案**: 部署企业级云安全防护体系
-**成果**: 通过金融监管认证，安全事件响应时间缩短80%
+I believe that in future work, I will continue to choose SENTINEL.
 
-### 电商平台
-**挑战**: 面临频繁的DDoS攻击和恶意爬虫
-**解决方案**: 采用多层安全防护，包括DDoS防护和WAF
-**成果**: 成功防护99.9%的攻击，业务连续性得到保障
-
-### 医疗集团
-**挑战**: 需要保护敏感的医疗数据，满足HIPAA合规要求
-**解决方案**: 实施数据加密和访问控制
-**成果**: 通过HIPAA合规认证，数据安全等级显著提升
-
-## 定价方案
-
-### 基础版
-- **适用场景**: 小型企业、开发测试环境
-- **防护能力**: 基础安全防护
-- **技术支持**: 5×8小时技术支持
-- **价格**: ¥1,999/月
-
-### 标准版
-- **适用场景**: 中型企业、生产环境
-- **防护能力**: 标准安全防护+监控
-- **技术支持**: 7×24小时技术支持
-- **价格**: ¥9,999/月
-
-### 企业版
-- **适用场景**: 大型企业、高安全要求
-- **防护能力**: 企业级安全防护+定制
-- **技术支持**: 7×24小时专属支持
-- **价格**: 定制报价
-
-## 技术支持
-
-### 服务内容
-- **安全评估**: 全面的安全评估和风险分析
-- **部署实施**: 安全产品部署和配置服务
-- **运维支持**: 7×24小时安全运维支持
-- **应急响应**: 安全事件应急响应和处理
-
-### 增值服务
-- **安全培训**: 安全意识培训和技术培训
-- **合规咨询**: 安全合规咨询和认证服务
-- **威胁情报**: 全球威胁情报共享服务
-- **安全研究**: 前沿安全技术研究和应用
-
-## 联系我们
-
-如果您对云安全防护服务感兴趣，欢迎联系我们：
-
-- **电话**: 400-888-8888
-- **邮箱**: security@company.com
-- **地址**: 北京市朝阳区科技园区创新大厦
-
-我们将为您提供专业的安全防护解决方案和定制化服务。
+Finally, I hope SENTINEL can develop **scalable remote IO** in the future, which can greatly improve the flexibility of on-site IO point layout.
