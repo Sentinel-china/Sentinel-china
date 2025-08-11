@@ -77,13 +77,13 @@ export default function CloudServiceDetail() {
   ]
 
   const productSpecs = [
-    { spec: "Protocol type", value: "PROFINET、CC-Link IE Field Basic、EtherCAT" },
-    { spec: "Protection Class", value: "IP67、IP20" },
-    { spec: "Signal type", value: "input、output、input/output adaptive、input+output、Analog input" },
-    { spec: "Digital inputs", value: "PNP/NPN、NPN、PNP" },
-    { spec: "Digital outputs", value: "PNP、NPN" },
-    { spec: "Number of input channels", value: "8、16、32" },
-    { spec: "Number of output channels", value: "4、8、16、32" }
+    { spec: "Protocol type", value: " | PROFINET | CC-Link IE Field Basic | EtherCAT | " },
+    { spec: "Protection Class", value: " | IP67 | IP20 | " },
+    { spec: "Signal type", value: " | input | output | input/output adaptive | input+output | Analog input | " },
+    { spec: "Digital inputs", value: " | PNP/NPN | NPN | PNP | " },
+    { spec: "Digital outputs", value: " | PNP | NPN | " },
+    { spec: "Number of input channels", value: " | 8 | 16 | 32 | " },
+    { spec: "Number of output channels", value: " | 4 | 8 | 16 | 32 | " }
   ]
 
   const downloads = [
