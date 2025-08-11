@@ -77,16 +77,13 @@ export default function CloudServiceDetail() {
   ]
 
   const productSpecs = [
-    { spec: "处理器类型", value: "Intel Xeon Gold 6248" },
-    { spec: "CPU核心", value: "2.5GHz，20核心40线程" },
-    { spec: "内存容量", value: "64GB DDR4 ECC" },
-    { spec: "存储类型", value: "NVMe SSD" },
-    { spec: "网络带宽", value: "10Gbps 专线" },
-    { spec: "虚拟化技术", value: "VMware vSphere 7.0" },
-    { spec: "操作系统支持", value: "Windows Server / Linux / Unix" },
-    { spec: "安全认证", value: "ISO27001 / SOC2 Type II" },
-    { spec: "SLA保障", value: "99.99% 服务可用性" },
-    { spec: "技术支持", value: "7×24小时专家服务" }
+    { spec: "Protocol type", value: "PROFINET、CC-Link IE Field Basic、EtherCAT" },
+    { spec: "Protection Class", value: "IP67、IP20" },
+    { spec: "Signal type", value: "input、output、input/output adaptive、input+output、Analog input" },
+    { spec: "Digital inputs", value: "PNP/NPN、NPN、PNP" },
+    { spec: "Digital outputs", value: "PNP、NPN" },
+    { spec: "Number of input channels", value: "8、16、32" },
+    { spec: "Number of output channels", value: "4、8、16、32" }
   ]
 
   const downloads = [
