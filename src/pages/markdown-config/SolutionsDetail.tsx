@@ -21,38 +21,38 @@ import solutions06Content from '../articles/markdown-solution/solutions06.md?raw
 const solutionConfig = {
   'solutions01': {
     icon: Building2,
-    title: "Smart City Solutions",
-    description: "Building intelligent city management platforms to improve urban governance efficiency and residents' quality of life.",
+    title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
+    description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/6ab63c35-f446-428e-bcdf-052e08cbbe82.jpg"
   },
   'solutions02': {
     icon: ShoppingCart,
-    title: "New Retail Digital Platform",
-    description: "Omni-channel retail management system integrating online and offline resources to improve retail business efficiency.",
+    title: "Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement",
+    description: "In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/8224106a-a7d3-48e1-ae54-3597b225d1ae.jpg"
   },
   'solutions03': {
     icon: Heart,
-    title: "Smart Healthcare Solutions",
-    description: "Medical information management system improving medical service quality and patient experience.",
+    title: "IO-Link Smart Sensors in Wind Turbine Hydraulic Systems",
+    description: "In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/a7b245d5-2bec-43c4-be53-81112e8b2eb6.jpg"
   },
   'solutions04': {
     icon: GraduationCap,
-    title: "Smart Education Platform",
-    description: "Modern education management system promoting teaching innovation and learning effectiveness improvement.",
+    title: "Hot-Plug Mechanism Enables Rapid Modular Pallet Switching in Bus Welding Lines",
+    description: "With the continuous advancement of smart manufacturing and Industry 4.0, coach welding lines are moving toward a new stage of higher automation, stronger flexibility, and deeper informatization.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/14e6e88a-07a6-44a5-b221-323b77d43fc8.jpg"
   },
   'solutions05': {
     icon: Factory,
-    title: "Industry 4.0 Smart Manufacturing",
-    description: "Smart manufacturing solutions achieving digitalization and intelligent upgrade of production processes.",
+    title: "Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges",
+    description: "In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/b898b1b0-fbb8-4b0e-93e6-0929a9459bda.jpg"
   },
   'solutions06': {
     icon: Banknote,
-    title: "Financial Technology Solutions",
-    description: "Digital transformation solutions for the financial industry, improving financial service efficiency and security.",
+    title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
+    description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/da0e3a1a-11f1-43ac-abb5-cfabc4ee1c46.jpg"
   }
 }
