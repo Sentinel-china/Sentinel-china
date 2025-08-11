@@ -51,23 +51,49 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Products */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold">Products</h3>
-                          <div className="space-y-2">
-                <Link to="/products/sensor" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+            <div className="space-y-2">
+              {/* Sensors with dropdown */}
+              <div className="relative group">
+                <Link to="/products/sensor" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
                   Sensors
                 </Link>
-                <Link to="/products/io-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                  I/O Modules
-                </Link>
-                <Link to="/products/io-link" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                  IO-Link
-                </Link>
-                <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                  Connectivity
-                </Link>
+                {/* Dropdown menu */}
+                <div className="absolute left-0 top-full mt-1 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="p-3 space-y-2">
+                    <Link to="/products/sensor/temperature-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Temperature Sensors
+                    </Link>
+                    <Link to="/products/sensor/thermal-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Thermal Flow Sensors
+                    </Link>
+                    <Link to="/products/sensor/vortex-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Vortex Flow Sensors
+                    </Link>
+                    <Link to="/products/sensor/pressure-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Pressure Sensors
+                    </Link>
+                    <Link to="/products/sensor/liquid-level-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Liquid Level Sensors
+                    </Link>
+                    <Link to="/products/sensor/inductive-proximity-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
+                      Inductive Proximity Sensors
+                    </Link>
+                  </div>
+                </div>
               </div>
+              <Link to="/products/io-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
+                I/O Modules
+              </Link>
+              <Link to="/products/io-link" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
+                IO-Link
+              </Link>
+              <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
+                Connectivity
+              </Link>
+            </div>
           </div>
 
           {/* Contact Info */}

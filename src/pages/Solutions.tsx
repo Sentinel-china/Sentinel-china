@@ -2,14 +2,12 @@
  * Solutions page component
  * Displays customized solutions for different industries
  */
-import { Building2, ShoppingCart, Heart, GraduationCap, Factory, Banknote } from 'lucide-react'
 import { Link } from 'react-router'
 
 export default function SolutionsPage() {
   const solutions = [
     {
       id: "solutions01",
-      icon: Building2,
       title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
       description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
       keyFeatures: [
@@ -28,7 +26,6 @@ export default function SolutionsPage() {
     },
     {
       id: "solutions02",
-      icon: ShoppingCart,
       title: "Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement",
       description: "In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety.",
       keyFeatures: [
@@ -47,7 +44,6 @@ export default function SolutionsPage() {
     },
     {
       id: "solutions03",
-      icon: Heart,
       title: "IO-Link Smart Sensors in Wind Turbine Hydraulic Systems",
       description: "In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.",
       keyFeatures: [
@@ -66,7 +62,6 @@ export default function SolutionsPage() {
     },
     {
       id: "solutions04",
-      icon: GraduationCap,
       title: "Hot-Plug Mechanism Enables Rapid Modular Pallet Switching in Bus Welding Lines",
       description: "With the continuous advancement of smart manufacturing and Industry 4.0, coach welding lines are moving toward a new stage of higher automation, stronger flexibility, and deeper informatization.",
       keyFeatures: [
@@ -85,7 +80,6 @@ export default function SolutionsPage() {
     },
     {
       id: "solutions05",
-      icon: Factory,
       title: "Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges",
       description: "In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.",
       keyFeatures: [
@@ -104,7 +98,6 @@ export default function SolutionsPage() {
     },
     {
       id: "solutions06",
-      icon: Banknote,
       title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
       description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
       keyFeatures: [
@@ -145,10 +138,7 @@ export default function SolutionsPage() {
           {solutions.map((solution, index) => (
             <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
               <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center">
-                    <solution.icon className="text-yellow-400" size={32} />
-                  </div>
+                <div>
                   <Link 
                     to={`/solutions/${solution.id}`}
                     className="text-3xl font-bold hover:text-yellow-400 transition-colors cursor-pointer"
@@ -189,11 +179,11 @@ export default function SolutionsPage() {
               </div>
 
               <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <div className="relative rounded-2xl overflow-hidden">
+                <div className="relative rounded-2xl overflow-hidden shadow-[0_10px_20px_rgba(0,0,0,0.3),0_5px_10px_rgba(0,0,0,0.2),0_2px_5px_rgba(0,0,0,0.15)] hover:shadow-[0_15px_30px_rgba(0,0,0,0.35),0_8px_15px_rgba(0,0,0,0.25),0_4px_8px_rgba(0,0,0,0.2)] transition-shadow duration-300">
                   <img
                     src={solution.image}
                     alt={solution.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>

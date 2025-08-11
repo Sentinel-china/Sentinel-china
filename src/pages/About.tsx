@@ -93,8 +93,8 @@ export default function AboutPage() {
       year: "2025 ～",
       title: "New Era of Intelligence",
       content: "In this rapidly changing era, industrial automation and artificial intelligence are working hand in hand, driving the manufacturing industry into a new era of intelligence. Our mission is to bring intelligent solutions to every machine and production line, transforming factories from mere mechanical operations into a smart brain that adjusts, optimizes, and innovates in real time. We believe the intelligent future has arrived, and we are standing at the heart of this transformation, moving forward with the industry towards a new, efficient, and sustainable future.",
-      iconSrc: "/banner2.png",
-      images: ["/banner2.png"]
+      iconSrc: "/time7.png",
+      images: ["/time7.png"]
     }
   ]
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">
                 Professional quality,
-                <span className="text-yellow-400">Trustworthy</span>
+                <span className="text-yellow-400"> Trustworthy</span>
               </h2>
               <p className="text-gray-300 leading-relaxed">
                 SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc. These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 

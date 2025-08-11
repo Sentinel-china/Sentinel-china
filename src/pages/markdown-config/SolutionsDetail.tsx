@@ -3,7 +3,7 @@
  * 动态加载markdown文档并应用统一样式
  */
 import { useParams, Link } from 'react-router'
-import { ArrowLeft, Building2, ShoppingCart, Heart, GraduationCap, Factory, Banknote } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './markdown-styles.css'
 
@@ -20,37 +20,31 @@ import solutions06Content from '../articles/markdown-solution/solutions06.md?raw
 // 解决方案配置映射
 const solutionConfig = {
   'solutions01': {
-    icon: Building2,
     title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
     description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/6ab63c35-f446-428e-bcdf-052e08cbbe82.jpg"
   },
   'solutions02': {
-    icon: ShoppingCart,
     title: "Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement",
     description: "In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/8224106a-a7d3-48e1-ae54-3597b225d1ae.jpg"
   },
   'solutions03': {
-    icon: Heart,
     title: "IO-Link Smart Sensors in Wind Turbine Hydraulic Systems",
     description: "In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/a7b245d5-2bec-43c4-be53-81112e8b2eb6.jpg"
   },
   'solutions04': {
-    icon: GraduationCap,
     title: "Hot-Plug Mechanism Enables Rapid Modular Pallet Switching in Bus Welding Lines",
     description: "With the continuous advancement of smart manufacturing and Industry 4.0, coach welding lines are moving toward a new stage of higher automation, stronger flexibility, and deeper informatization.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/14e6e88a-07a6-44a5-b221-323b77d43fc8.jpg"
   },
   'solutions05': {
-    icon: Factory,
     title: "Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges",
     description: "In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/b898b1b0-fbb8-4b0e-93e6-0929a9459bda.jpg"
   },
   'solutions06': {
-    icon: Banknote,
     title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
     description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
     image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/da0e3a1a-11f1-43ac-abb5-cfabc4ee1c46.jpg"
@@ -88,55 +82,55 @@ export default function SolutionsDetail() {
       setLoading(true)
       setError(null)
       
-      console.log('尝试加载markdown文件:', id)
+      console.log('Trying to load markdown file:', id)
       
       // 从markdown内容映射中获取内容
       const content = markdownContentMap[id as keyof typeof markdownContentMap]
       
       if (content) {
-        console.log('加载的markdown内容长度:', content.length)
-        console.log('内容预览:', content.substring(0, 200) + '...')
+        console.log('Loaded markdown content length:', content.length)
+        console.log('Content preview:', content.substring(0, 200) + '...')
         setMarkdownContent(content)
       } else {
-        console.log('未找到markdown文件:', id)
+        console.log('Markdown file not found:', id)
         // 如果文件不存在，显示默认内容
-        setMarkdownContent(`# ${solutionConfig[id as keyof typeof solutionConfig]?.title || '解决方案详情'}
+        setMarkdownContent(`# ${solutionConfig[id as keyof typeof solutionConfig]?.title || 'Solution Details'}
 
-## 概述
+## Overview
 
-该解决方案的详细文档正在准备中，请稍后再来查看。
+The detailed documentation for this solution is being prepared, please check back later.
 
-## 功能特点
+## Key Features
 
-- 专业的解决方案设计
-- 先进的技术架构
-- 完善的实施服务
-- 持续的运维支持
+- Professional solution design
+- Advanced technology architecture
+- Comprehensive implementation services
+- Continuous operational support
 
-## 联系我们
+## Contact Us
 
-如果您对该解决方案感兴趣，欢迎联系我们：
+If you are interested in this solution, please contact us:
 
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦
+- **Phone**: 400-888-8888
+- **Email**: info@example.com
+- **Address**: Innovation Building, Science Park, Chaoyang District, Beijing
 
-我们将为您提供专业的咨询服务和定制化解决方案。`)
+We will provide professional consulting services and customized solutions for you.`)
       }
     } catch (err) {
-      console.error('加载markdown文件失败:', err)
-      setError('文档加载失败，请稍后重试')
-      setMarkdownContent(`# 文档加载失败
+      console.error('Failed to load markdown file:', err)
+      setError('Document loading failed, please try again later')
+      setMarkdownContent(`# Document Loading Failed
 
-抱歉，文档加载出现错误，请稍后重试。
+Sorry, an error occurred while loading the document, please try again later.
 
-## 联系我们
+## Contact Us
 
-如果您对该解决方案感兴趣，欢迎联系我们：
+If you are interested in this solution, please contact us:
 
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦`)
+- **Phone**: 400-888-8888
+- **Email**: info@example.com
+- **Address**: Innovation Building, Science Park, Chaoyang District, Beijing`)
     } finally {
       setLoading(false)
     }
@@ -146,16 +140,14 @@ export default function SolutionsDetail() {
     return (
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-400 mb-4">解决方案未找到</h1>
+          <h1 className="text-2xl font-bold text-red-400 mb-4">Solution Not Found</h1>
           <Link to="/solutions" className="text-yellow-400 hover:text-yellow-300">
-            返回解决方案页面
+            Back to Solutions Page
           </Link>
         </div>
       </div>
     )
   }
-
-  const IconComponent = solution.icon
 
   return (
     <div className="min-h-screen pt-16">
@@ -167,17 +159,12 @@ export default function SolutionsDetail() {
             className="inline-flex items-center text-yellow-400 hover:text-yellow-300 mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            返回解决方案
+            Back to Solutions
           </Link>
           
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center">
-              <IconComponent className="text-yellow-400" size={32} />
-            </div>
-            <div>
-              <h1 className="text-3xl lg:text-4xl font-bold">{solution.title}</h1>
-              <p className="text-lg text-gray-300 mt-2">{solution.description}</p>
-            </div>
+          <div className="mb-8">
+            <h1 className="text-3xl lg:text-4xl font-bold mb-4">{solution.title}</h1>
+            <p className="text-lg text-gray-300">{solution.description}</p>
           </div>
         </div>
       </section>
@@ -188,7 +175,7 @@ export default function SolutionsDetail() {
           {loading ? (
             <div className="text-center py-20">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400 mx-auto mb-4"></div>
-              <p className="text-gray-300">加载中...</p>
+              <p className="text-gray-300">Loading...</p>
             </div>
           ) : error ? (
             <div className="text-center py-20">
@@ -202,7 +189,7 @@ export default function SolutionsDetail() {
                 onClick={() => loadMarkdownContent(solutionId!)}
                 className="text-yellow-400 hover:text-yellow-300 underline"
               >
-                重试
+                Retry
               </button>
             </div>
           ) : (

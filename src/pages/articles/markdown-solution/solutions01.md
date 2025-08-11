@@ -1,4 +1,4 @@
-# Application of IO-Link Smart Sensors in Hydraulic Systems
+<!-- # Application of IO-Link Smart Sensors in Hydraulic Systems -->
 
 In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability. The efficient operation of a hydraulic system is not automatic—in real-world applications, it demands strict monitoring of parameters such as system pressure, flow, temperature, and liquid level. Even minor fluctuations in these physical variables can seriously affect system stability and production efficiency.
 

@@ -83,9 +83,9 @@ export default function SensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                     Industrial<span className="text-yellow-400">Sensor</span>
+                     Industrial<span className="text-yellow-400"> Sensors</span>
                   </h1>
-                  <p className="text-gray-400">industrial Sensor</p>
+                  <p className="text-gray-400">industrial Sensors</p>
                 </div>
               </div>
               
@@ -117,7 +117,7 @@ export default function SensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Sensor <span className="text-yellow-400">Product Series</span>
+              Sensor <span className="text-yellow-400">Products</span>
             </h2>
             <p className="text-xl text-gray-300">
               Professional industrial sensor solutions for reliable data acquisition for your automation systems
