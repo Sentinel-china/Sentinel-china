@@ -224,13 +224,12 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-gray-900 to-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl text-white font-bold mb-6">
-            Ready to Start Your
-            <span className="text-yellow-400"> Digital Journey</span>?
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold mb-6 whitespace-nowrap">
+            Contact our professional team<span className="text-yellow-400"> for customized solutions</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Contact our professional team for customized solutions
+          We are committed to providing you with the best service and support.
           </p>
           <Link
             to="/contact#send-message"

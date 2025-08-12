@@ -15,7 +15,7 @@ export default function SensorDetail() {
       title: "Temperature sensor",
       description: "High-precision temperature monitor for industrial",
       features: ["-40°C to +125°C", "±0.1°C精度", "快速响应", "长期稳定性"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-temp.png",
       color: "from-red-500/20 to-orange-500/20"
     },
     {
@@ -23,7 +23,7 @@ export default function SensorDetail() {
       title: " Thermal flow sensor",
       description: "Flow and temperature detection in one device",
       features: ["0-1000bar", "高精度测量", "防爆设计", "IP67防护"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-flow.png",
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
@@ -31,7 +31,7 @@ export default function SensorDetail() {
       title: "vortex flow sensor",
       description: "Reliable flow measurement for liquids and gases",
       features: ["热式流量计", "涡街流量计", "超声波流量计", "电磁流量计"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-vortex.png",
       color: "from-green-500/20 to-emerald-500/20"
     },
     {
@@ -39,7 +39,7 @@ export default function SensorDetail() {
       title: "pressure sensor",
       description: "Precise pressure sensing for automation systems",
       features: ["加速度传感器", "速度传感器", "位移传感器", "无线传输"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-pressure.png",
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
@@ -47,7 +47,7 @@ export default function SensorDetail() {
       title: "liquid level sensor",
       description: "Safe and accurate fluid level detection",
       features: ["霍尔效应", "磁通门技术", "高精度测量", "隔离设计"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-level.png",
       color: "from-yellow-500/20 to-amber-500/20"
     },
     {
@@ -55,7 +55,7 @@ export default function SensorDetail() {
       title: " inductive proximity sensor",
       description: "Detects metal objects without physical contact",
       features: ["安全光栅", "急停按钮", "安全门开关", "双手控制"],
-      image: "/banner1.png",
+      image: "https://image.sentinel-china.com/2025-08-11-inductive.png",
       color: "from-indigo-500/20 to-blue-500/20"
     }
   ]
@@ -83,9 +83,9 @@ export default function SensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                     Industrial<span className="text-yellow-400">Sensor</span>
+                     Industrial<span className="text-yellow-400"> Sensors</span>
                   </h1>
-                  <p className="text-gray-400">industrial Sensor</p>
+                  <p className="text-gray-400">industrial Sensors</p>
                 </div>
               </div>
               
@@ -117,7 +117,7 @@ export default function SensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Sensor <span className="text-yellow-400">Product Series</span>
+              Sensor <span className="text-yellow-400">Products</span>
             </h2>
             <p className="text-xl text-gray-300">
               Professional industrial sensor solutions for reliable data acquisition for your automation systems

@@ -360,9 +360,9 @@ function TimelineCard({
 /**
  * MediaStrip
  * 水平滚动图片条，支持多张图片
- * 小屏(<640px): 220px × 128px
- * ≥640px(sm): 260px × 150px
- * 长宽比约 1.72-1.73 (接近16:9)
+ * 小屏(<640px): 200px × 200px (正方形)
+ * ≥640px(sm): 240px × 240px (正方形)
+ * 长宽比 1:1 (正方形)
  */
 function MediaStrip({ 
   images, 
@@ -388,7 +388,7 @@ function MediaStrip({
       {images.map((src, idx) => (
         <div
           key={idx}
-          className="relative group shrink-0 w-[220px] h-[128px] sm:w-[260px] sm:h-[150px] rounded-xl overflow-hidden ring-1 ring-white/10 snap-start"
+          className="relative group shrink-0 w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] rounded-xl overflow-hidden ring-1 ring-white/10 snap-start"
         >
           <img 
             src={src} 
