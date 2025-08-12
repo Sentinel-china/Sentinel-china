@@ -139,35 +139,41 @@ export default function BusinessIntelligenceDetail() {
 
   const relatedProducts = [
     {
-      title: "数据挖掘平台",
-      description: "深度数据挖掘和分析解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
-    },
-    {
-      title: "预测分析引擎",
-      description: "基于AI的预测分析和建模平台",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
-    },
-    {
-      title: "实时数据流",
-      description: "实时数据处理和分析引擎",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
-    },
-    {
-      title: "可视化平台",
-      description: "专业的数据可视化展示平台",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
-    },
-    {
-      title: "报表系统",
-      description: "企业级报表生成和管理系统",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
-    },
-    {
-      title: "决策支持系统",
-      description: "智能决策支持和推荐系统",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508121550233.png",
+      link: "/products/connectivity/connectivity01"
     }
+    // {
+    //   title: "Cordsets",
+    //   description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
+    //   image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+    //   link: "/products/connectivity/connectivity02"
+    // },
+    // {
+    //   title: "7/8\" Power Cable",
+    //   description: "Standard 7/8\" power connector for SENTINEL bus module products",
+    //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+    //   link: "/products/connectivity/connectivity03"
+    // },
+    // {
+    //   title: "Industrial Ethernet Cable",
+    //   description: "High-performance industrial Ethernet connectivity solutions",
+    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+    //   link: "/products/connectivity/connectivity04"
+    // },
+    // {
+    //   title: "Field-Wireable Connectors",
+    //   description: "Flexible field installation connector solutions",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/connectivity/connectivity05"
+    // },
+    // {
+    //   title: "Custom Connectivity Solutions",
+    //   description: "Tailored connectivity solutions for specific applications",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/connectivity/connectivity06"
+    // }
   ]
 
   // 计算可滚动的产品数量
@@ -499,64 +505,80 @@ export default function BusinessIntelligenceDetail() {
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
               Related <span className="text-yellow-400">Articles</span>
             </h2>
-            <p className="text-xl text-gray-300"></p>
+            <p className="text-lg sm:text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
-            {/* Left Arrow */}
-            <button
-              onClick={scrollLeft}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-            >
-              <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
-            </button>
+            {/* Left Arrow - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <button
+                onClick={scrollLeft}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+              >
+                <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={20} />
+              </button>
+            )}
 
-            {/* Right Arrow */}
-            <button
-              onClick={scrollRight}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-            >
-              <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
-            </button>
+            {/* Right Arrow - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <button
+                onClick={scrollRight}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+              >
+                <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={20} />
+              </button>
+            )}
 
             <div 
               ref={scrollContainerRef}
-              className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide px-16"
+              className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
+                relatedProducts.length === 1 
+                  ? 'justify-center' 
+                  : 'overflow-x-auto scrollbar-hide'
+              }`}
               onScroll={handleScroll}
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                    />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-sm">{product.description}</p>
+                  <Link to={product.link} className="block">
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
+                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                      </div>
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="text-yellow-400" size={20} />
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
             
-            {/* Scroll indicator */}
-            <div className="flex justify-center mt-6">
-              <div className="flex space-x-2">
-                {Array.from({ length: totalSlides }, (_, index) => (
-                  <div
-                    key={index}
-                    className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                      index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
-                    }`}
-                  />
-                ))}
+            {/* Scroll indicator - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <div className="flex justify-center mt-4 sm:mt-6">
+                <div className="flex space-x-1 sm:space-x-2">
+                  {Array.from({ length: totalSlides }, (_, index) => (
+                    <div
+                      key={index}
+                      className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-colors duration-300 ${
+                        index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
