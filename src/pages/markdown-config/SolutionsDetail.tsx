@@ -260,25 +260,68 @@ function renderMarkdown(markdown: string): string {
         return ''
       }
       
-      // 处理列表项
+      // 处理列表项 - 改进版本
       const lines = trimmedBlock.split('\n').filter(line => line.trim() !== '')
-      const listItems = lines.filter(line => line.trim().match(/^[\-\*] (.*$)/))
-      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. (.*$)/))
       
-      if (listItems.length > 0) {
-        // 无序列表
-        const items = listItems.map(line => {
-          const match = line.trim().match(/^[\-\*] (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
-        }).join('')
-        return `<ul class="space-y-2 my-4">${items}</ul>`
-      } else if (orderedListItems.length > 0) {
-        // 有序列表
-        const items = orderedListItems.map(line => {
-          const match = line.trim().match(/^\d+\. (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
-        }).join('')
-        return `<ol class="space-y-2 my-4">${items}</ol>`
+      // 检查是否包含列表项
+      const hasListItems = lines.some(line => line.trim().match(/^[\-\*] (.*$)/))
+      const hasOrderedItems = lines.some(line => line.trim().match(/^\d+\. (.*$)/))
+      
+      if (hasListItems || hasOrderedItems) {
+        let result = ''
+        let currentList = ''
+        let currentListType = ''
+        let inList = false
+        let listCounter = 1
+        
+        for (const line of lines) {
+          const trimmedLine = line.trim()
+          const listMatch = trimmedLine.match(/^[\-\*] (.*$)/)
+          const orderedMatch = trimmedLine.match(/^\d+\. (.*$)/)
+          
+          if (listMatch) {
+            // 无序列表项
+            if (!inList || currentListType !== 'ul') {
+              if (inList) {
+                result += currentList + '</' + (currentListType === 'ol' ? 'ol' : 'ul') + '>'
+              }
+              currentList = '<ul class="space-y-2 my-4">'
+              currentListType = 'ul'
+              inList = true
+            }
+            currentList += `<li>${listMatch[1]}</li>`
+          } else if (orderedMatch) {
+            // 有序列表项
+            if (!inList || currentListType !== 'ol') {
+              if (inList) {
+                result += currentList + '</' + (currentListType === 'ol' ? 'ol' : 'ul') + '>'
+              }
+              currentList = '<ol class="space-y-2 my-4">'
+              currentListType = 'ol'
+              inList = true
+              listCounter = 1
+            }
+            currentList += `<li value="${listCounter}">${orderedMatch[1]}</li>`
+            listCounter++
+          } else {
+            // 非列表项，结束当前列表
+            if (inList) {
+              result += currentList + '</' + (currentListType === 'ol' ? 'ol' : 'ul') + '>'
+              inList = false
+            }
+            // 处理普通文本
+            if (trimmedLine) {
+              result += `<p>${trimmedLine}</p>`
+            }
+          }
+        }
+        
+        // 结束最后的列表
+        if (inList) {
+          result += currentList + '</' + (currentListType === 'ol' ? 'ol' : 'ul') + '>'
+        }
+        
+        return result
       }
       
       // 处理连续的段落文本
