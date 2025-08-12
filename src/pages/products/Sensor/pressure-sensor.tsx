@@ -483,64 +483,74 @@ export default function PressureSensorDetail() {
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-                         <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               相关<span className="text-yellow-400">产品</span>
-             </h2>
-            <p className="text-xl text-gray-300">与振动传感器相辅相成的其他传感器产品</p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+              相关<span className="text-yellow-400">产品</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-300">与压力传感器相辅相成的其他传感器产品</p>
           </div>
 
           <div className="relative">
-            {/* Left Arrow */}
-                         <button
-               onClick={scrollLeft}
-               className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-             >
-               <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
-             </button>
+            {/* Left Arrow - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <button
+                onClick={scrollLeft}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+              >
+                <ChevronLeft className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={20} />
+              </button>
+            )}
 
-             {/* Right Arrow */}
-             <button
-               onClick={scrollRight}
-               className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
-             >
-               <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={24} />
-            </button>
+            {/* Right Arrow - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <button
+                onClick={scrollRight}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
+              >
+                <ChevronRight className="text-gray-300 group-hover:text-yellow-400 transition-colors" size={20} />
+              </button>
+            )}
 
             <div 
               ref={scrollContainerRef}
-              className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide px-16"
+              className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
+                relatedProducts.length === 1 
+                  ? 'justify-center' 
+                  : 'overflow-x-auto scrollbar-hide'
+              }`}
               onScroll={handleScroll}
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <div className="relative">
-                                         <img
-                       src={product.image}
-                       alt={product.title}
-                       className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                     />
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
+                    />
                     <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-sm">{product.description}</p>
+                      <h4 className="text-base sm:text-lg font-bold text-white mb-1">{product.title}</h4>
+                      <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
             
-            {/* Scroll indicator */}
-            <div className="flex justify-center mt-6">
-              <div className="flex space-x-2">
-                {Array.from({ length: totalSlides }, (_, index) => (
-                  <div
-                    key={index}
-                                         className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                       index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
-                     }`}
-                  />
-                ))}
+            {/* Scroll indicator - 只在有多个产品时显示 */}
+            {relatedProducts.length > 1 && (
+              <div className="flex justify-center mt-4 sm:mt-6">
+                <div className="flex space-x-1 sm:space-x-2">
+                  {Array.from({ length: totalSlides }, (_, index) => (
+                    <div
+                      key={index}
+                      className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-colors duration-300 ${
+                        index === currentSlide ? 'bg-yellow-400' : 'bg-gray-600'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>

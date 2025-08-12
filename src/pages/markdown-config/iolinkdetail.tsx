@@ -254,21 +254,21 @@ function renderMarkdown(markdown: string): string {
       
       // 处理列表项
       const lines = trimmedBlock.split('\n').filter(line => line.trim() !== '')
-      const listItems = lines.filter(line => line.trim().match(/^[\-\*] (.*$)/))
-      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. (.*$)/))
+      const listItems = lines.filter(line => line.trim().match(/^[\-\*] /))
+      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. /))
       
       if (listItems.length > 0) {
         // 无序列表
         const items = listItems.map(line => {
-          const match = line.trim().match(/^[\-\*] (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
+          const content = line.trim().replace(/^[\-\*] /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
         }).join('')
         return `<ul class="space-y-2 my-4">${items}</ul>`
       } else if (orderedListItems.length > 0) {
         // 有序列表
         const items = orderedListItems.map(line => {
-          const match = line.trim().match(/^\d+\. (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
+          const content = line.trim().replace(/^\d+\. /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
         }).join('')
         return `<ol class="space-y-2 my-4">${items}</ol>`
       }
