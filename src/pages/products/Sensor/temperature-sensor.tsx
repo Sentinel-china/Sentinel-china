@@ -56,37 +56,35 @@ export default function TemperatureSensorDetail() {
   const features = [
     {
       icon: Thermometer,
-      title: "High precision measurement",
-      description: "± 0.1°C accuracy, ensuring accuracy and reliability in temperature measurement"
+      title: "High precision & stability",
+      description: "Based on Pt1000 technology, the accuracy can reach ±1℃."
     },
     {
       icon: Code,
-      title: "Quick response",
-      description: "Millisecond response time to monitor temperature changes in real time"
+      title: "IO-Link",
+      description: "Implement remote configuration and real - time monitoring through the IO - Link interface"
     },
     {
       icon: Zap,
-      title: "Wide temperature range",
-      description: "-50°C to +100°C for a wide range of industrial environments"
+      title: "Customization",
+      description: "The length of the probe rod can be customized according to customer requirements."
     },
     {
       icon: Users,
-      title: "Long-term stability",
-      description: "Excellent long-term stability with reduced calibration frequency"
+      title: "Multiple output methods",
+      description: "It has two independent digital outputs and one analog output."
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "-40°C to +125°C" },
-    { spec: "精度", value: "±0.1°C" },
-    { spec: "响应时间", value: "<100ms" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP67" },
-    { spec: "工作电压", value: "12-24VDC" },
-    { spec: "长期稳定性", value: "±0.05°C/年" },
-    { spec: "温度系数", value: "±0.01%/°C" },
-    { spec: "环境温度", value: "-20°C to +70°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX" }
+    { spec: "Type", value: " | Temperature sensor | Temperature transmitter" },
+    { spec: "Process connection", value: " | G1/2 external thread | G1/4 external thread | M18x1.5 internal thread | Split electronic compartment |" },
+    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) | analogue current;IO-Link | " },
+    { spec: "Probe material", value: " | 304 Stainless steel | 316 Stainless steel |" },
+    { spec: "Electrical connection", value: " | M12x1 connector | 2m cable |" },
+    { spec: "Communication Interface", value: " | IO-Link |" },
+    { spec: "Protection Class", value: " | IP67 | " },
+    { spec: "Interface", value: " | Standard 4-pin A-code M12 interface |" }
   ]
 
   const downloads = [
@@ -112,27 +110,27 @@ export default function TemperatureSensorDetail() {
 
   const cases = [
     {
-      company: "某化工企业",
-      industry: "化工行业",
-      challenge: "需要高精度温度监测，确保化学反应过程的稳定性",
-      solution: "采用高精度温度传感器，实现±0.1°C的测量精度",
-      result: "产品质量提升15%，能耗降低8%",
+      company: "Sensor",
+      industry: "Temperature",
+      challenge: "SENTINEL's temperature sensor is a device used to measure liquid temperature, widely applied in industries such as industrial automation, food and beverage, machine tools, and metallurgy.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某食品加工厂",
-      industry: "食品加工",
-      challenge: "需要监测食品加工过程中的温度变化，确保食品安全",
-      solution: "安装多点温度监测系统，实时监控加工温度",
-      result: "食品安全事故降低90%，生产效率提升20%",
+      company: "Transmitter",
+      industry: "Sensor",
+      challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某钢铁厂",
-      industry: "钢铁制造",
-      challenge: "需要监测高温环境下的温度变化，确保设备安全",
-      solution: "采用耐高温温度传感器，实现高温环境下的稳定监测",
-      result: "设备故障率降低25%，维护成本降低30%",
+      company: "Split-type",
+      industry: "Temperature sensor",
+      challenge: "The detection probe can be flexibly installed in positions with a narrow space and harsh environment.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -316,7 +314,7 @@ export default function TemperatureSensorDetail() {
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Thermometer className="text-yellow-400 mr-2" size={20} />
-                        <span>High precision measurement</span>
+                        <span>High precision & stability</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
@@ -347,7 +345,7 @@ export default function TemperatureSensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">CLICK</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}

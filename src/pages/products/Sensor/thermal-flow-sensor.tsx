@@ -209,25 +209,27 @@ export default function ThermalFlowSensorDetail() {
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
                     Thermal flow<span className="text-yellow-400">Sensor</span>
                   </h1>
-                  <p className="text-gray-400">Thermal flow Sensor</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度压力传感器，提供0.1%FS的测量精度，适用于各种工业环境。
-                采用先进的压阻技术，确保快速响应和长期稳定性。
+                In the field of factory and process automation, it is necessary to monitor critical deviations in the flow rate of liquid media. It is commonly used to monitor the circulation of liquids such as coolant, the idling of pumps, etc.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020778958.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function ThermalFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的压力传感技术，为您的工业应用提供可靠的压力监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Product
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,15 +305,13 @@ export default function ThermalFlowSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的压力传感器采用先进的压阻技术，结合精密电子电路设计，
-                      实现高精度、快速响应的压力测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
+                      Based on the thermal conductivity principle, Sentinel’s flow sensor can reliably monitor the flow limit value, and also monitor and alarm the temperature of the medium.
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP67防护设计，适用于各种恶劣工业环境。
+                      Insertion measurement,reliable monitoring of liquids,such aswater and oil in pipelines
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
@@ -355,7 +355,7 @@ export default function ThermalFlowSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
@@ -388,7 +388,7 @@ export default function ThermalFlowSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +412,7 @@ export default function ThermalFlowSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
