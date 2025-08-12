@@ -1,5 +1,3 @@
-## The Use of Negative Pressure Sensors in Distillation Equipment
-
 ## Negative Pressure Distillation Equipment in the Food and Pharmaceutical Industry
 
 In modern **food** and **pharmaceutical** production, **negative pressure distillation equipment** is a key tool for processing heat-sensitive, highly volatile, or high-purity materials.  

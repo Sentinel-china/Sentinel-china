@@ -209,16 +209,23 @@ If you are interested in this solution, please contact us:
 // 简化的markdown渲染函数
 function renderMarkdown(markdown: string): string {
   return markdown
+    // 移除HTML注释
+    .replace(/<!--[\s\S]*?-->/g, '')
+    
     // 图片渲染 - 必须在其他替换之前
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="max-w-full h-auto rounded-lg shadow-lg my-4" />')
     
-    // 标题渲染
+    // 分隔线处理
+    .replace(/^---$/gim, '<hr class="border-gray-600 my-8" />')
+    
+    // 标题渲染 - 必须在列表处理之前
+    .replace(/^#### (.*$)/gim, '<h4>$1</h4>')
     .replace(/^### (.*$)/gim, '<h3>$1</h3>')
     .replace(/^## (.*$)/gim, '<h2>$1</h2>')
     .replace(/^# (.*$)/gim, '<h1>$1</h1>')
     
-    // 列表渲染
-    .replace(/^\- (.*$)/gim, '<li>$1</li>')
+    // 引用块处理
+    .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
     
     // 粗体文本
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -232,17 +239,69 @@ function renderMarkdown(markdown: string): string {
     // 行内代码
     .replace(/`([^`]+)`/g, '<code class="bg-gray-800 px-1 py-0.5 rounded text-sm">$1</code>')
     
-    // 链接
+    // 链接 - 改进版本，处理特殊格式
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-yellow-400 hover:text-yellow-300 underline" target="_blank" rel="noopener noreferrer">$1</a>')
     
-    // 段落处理
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/^(?!<[h|p|li|ul|ol|img|pre|a])(.*$)/gim, '<p>$1</p>')
+    // 处理强制换行（两个空格结尾）
+    .replace(/  \n/g, '<br>')
     
-    // 清理空标签
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p><\/p>/g, '')
+    // 段落处理 - 改进版本
+    .split(/\n\s*\n/)
+    .map(block => {
+      const trimmedBlock = block.trim()
+      
+      // 如果块是标题、图片、分隔线等，直接返回
+      if (trimmedBlock.match(/^<(h[1-6]|img|hr|pre|blockquote)/)) {
+        return block
+      }
+      
+      // 如果块是空行，跳过
+      if (trimmedBlock === '') {
+        return ''
+      }
+      
+      // 处理列表项
+      const lines = trimmedBlock.split('\n').filter(line => line.trim() !== '')
+      const listItems = lines.filter(line => line.trim().match(/^[\-\*] (.*$)/))
+      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. (.*$)/))
+      
+      if (listItems.length > 0) {
+        // 无序列表
+        const items = listItems.map(line => {
+          const match = line.trim().match(/^[\-\*] (.*$)/)
+          return match ? `<li>${match[1]}</li>` : ''
+        }).join('')
+        return `<ul class="space-y-2 my-4">${items}</ul>`
+      } else if (orderedListItems.length > 0) {
+        // 有序列表
+        const items = orderedListItems.map(line => {
+          const match = line.trim().match(/^\d+\. (.*$)/)
+          return match ? `<li>${match[1]}</li>` : ''
+        }).join('')
+        return `<ol class="space-y-2 my-4">${items}</ol>`
+      }
+      
+      // 处理连续的段落文本
+      if (lines.length > 1) {
+        // 如果有多个非空行，每行作为一个段落
+        return lines.map(line => `<p>${line.trim()}</p>`).join('')
+      }
+      
+      // 其他情况包装在p标签中
+      return `<p>${trimmedBlock}</p>`
+    })
+    .join('')
     
-    // 包装列表项
-    .replace(/(<li>.*<\/li>)/gim, '<ul class="list-disc list-inside space-y-2 my-4">$1</ul>')
+    // 清理空标签和多余的p标签
+    .replace(/<p><\/p>/g, '')
+    .replace(/<p>(<h[1-6]|img|hr|pre|blockquote|ul|ol)/g, '$1')
+    .replace(/(<\/h[1-6]|<\/img>|<\/hr>|<\/pre>|<\/blockquote>|<\/ul>|<\/ol>)<\/p>/g, '$1')
+    
+    // 处理图片后的文本
+    .replace(/(<\/img>)\s*([^<]+)/g, '$1<p>$2</p>')
+    
+    // 清理多余的空白和空行
+    .replace(/\n\s*\n/g, '\n')
+    .replace(/>\s+</g, '><')
+    .trim()
 } 

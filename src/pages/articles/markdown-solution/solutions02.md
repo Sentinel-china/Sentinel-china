@@ -1,5 +1,3 @@
-## Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement
-
 In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety. A dairy plant client encountered a series of tricky problems when monitoring the liquid level in a milk tank.
 
 Initially, they planned to use a **standard ultrasonic level sensor**, **but in actual operation, they found that the large amount of foam generated during milk stirring or filling severely interfered with the ultrasonic signal, resulting in highly unstable measurements**.

@@ -1,5 +1,3 @@
-## Summary of IO-Link Devices Series
-
 Tianjin SENTINEL Electronics Co., Ltd. was established in 2008, initially focusing on **R&D and manufacturing of sensors and fieldbus devices**.  
 In 2019, embracing the trend of intelligent manufacturing, the company launched its **IO-Link product line**, opening a new chapter in smart connectivity technology.
 

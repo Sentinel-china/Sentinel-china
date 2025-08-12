@@ -1,5 +1,3 @@
-##Hot-Plug Mechanism Enables Rapid Modular Pallet Switching in Bus Welding Lines
-
 With the continuous advancement of smart manufacturing and Industry 4.0, **coach welding lines** are moving toward a new stage of higher automation, stronger flexibility, and deeper informatization.  
 Compared with passenger car manufacturing, coach production involves large structural parts, low-volume and multi-variety batches, and frequent model changes, placing higher demands on production line flexibility and control system scalability.
 
