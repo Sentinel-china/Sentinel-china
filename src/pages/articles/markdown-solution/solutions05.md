@@ -57,13 +57,12 @@ Its simple structure and stable performance make it ideal for cooling and lubric
 
 ## Solution Selection Recommendations
 
-1. **Status Monitoring Needs**  
+1.**Status Monitoring Needs**  
    For real-time detection of fluid flow presence (e.g., in cooling or lubrication systems), the thermal dispersion-based flow switch is recommended for its cost-effectiveness and easy installation.
 
-2. **Accurate Measurement Needs**  
+2.**Accurate Measurement Needs**  
    For high-precision flow and temperature measurement, especially in industrial pure water or mold temperature control applications, the compact vortex flow sensor is recommended for its adaptability and intelligent communication capabilities that meet Industry 4.0 requirements.
-
-3. **Hybrid Scenarios**  
+3.**Hybrid Scenarios**  
    For complex industrial systems requiring a comprehensive solution:  
    - Use the flow switch for status monitoring.  
    - Use the vortex flow sensor for high-precision measurement and data logging.
