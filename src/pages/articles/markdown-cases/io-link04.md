@@ -1,5 +1,3 @@
-## IO-Link Remote RTD Module: Smart solution for industrial temperature control
-
 In **industrial automation** and **process control**, temperature monitoring is key to ensuring product quality and production efficiency.  
 **RTD (Resistance Temperature Detector)** sensors measure temperature by detecting resistance changes, offering high accuracy and stability.  
 

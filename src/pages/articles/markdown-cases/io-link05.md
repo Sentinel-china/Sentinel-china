@@ -1,5 +1,3 @@
-##  New IO-Link Substation Modules: Adaptive and Expandable
-
 The rapid progress of **industrial automation** is pushing companies toward more **efficient** and **flexible** production models, driving demand for **modular** and **scalable** devices.  
 To meet these needs, SENTINEL introduces two new **IO-Link substation modules**:
 

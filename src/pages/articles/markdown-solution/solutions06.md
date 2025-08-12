@@ -1,5 +1,3 @@
-##SENTINEL Distributed I/O Modules in the Application on Photovoltaic Monocrystalline Silicon Production Lines
-
 With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing. China plays an essential role in this transformation, being the largest producer of photovoltaic products worldwide and the forefront of technological innovation and market application. Thanks to its strong manufacturing capability and substantial government support, China's photovoltaic industry is developing in depth, driving global technological progress and the widespread application of photovoltaic technology.
 
 ---

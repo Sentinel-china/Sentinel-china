@@ -1,10 +1,12 @@
-## From Fieldbus to Industrial Ethernet
+
+
+In the era of Industry 4.0 intelligence, the booming development of various communication technologies has brought many possibilities for enterprises to achieve intelligence and automation. Especially in the intelligent manufacturing industry, it is necessary to access different equipment and systems through various communication methods on the workshop floor, and collect and upload massive data. At present, in the field of industrial control, the most widely used technologies in the workshop floor are industrial Ethernet technology and industrial fieldbus technology, which provide strong support for factories to achieve automation.
+
+---
 
 ## Fieldbus
 
 ![Fieldbus Overview](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704103738772.png)
-
-In the era of Industry 4.0 intelligence, the booming development of various communication technologies has brought many possibilities for enterprises to achieve intelligence and automation. Especially in the intelligent manufacturing industry, it is necessary to access different equipment and systems through various communication methods on the workshop floor, and collect and upload massive data. At present, in the field of industrial control, the most widely used technologies in the workshop floor are industrial Ethernet technology and industrial fieldbus technology, which provide strong support for factories to achieve automation.
 
 Fieldbus refers to a digital, serial, multi-point communication data bus between field devices installed in manufacturing or process areas and controllers in the control room. It is an industrial data bus and is a bottom-up data communication network in the automation field. Simply put, fieldbus replaces the transmission of traditional 4-20mA analog signals and ordinary switch signals and is connected to a fully digital, bi-directional, and multi-station communication system for intelligent field devices and automation systems.
 
@@ -30,9 +32,13 @@ Our products are widely used in the fields of new energy, intelligent manufactur
 
 ![SENTINEL Product](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704103949084.png)
 
+### IP67 Series Modules
+
 IP67 series modules, with a high-strength glass fiber reinforced plastic shell and metal connectors, are completely sealed and protected against impact and vibration. They ensure reliable and stable operation even in harsh environments. With two 7/8" power interfaces, two Ethernet interfaces with built-in switches, and eight M12 I/O interfaces, these modules provide 16 digital inputs/outputs with a single point output current of 0.5A for sensor and actuator installation close to the field. They meet the requirements for on-site installation applications.
 
 ![IP67 Module](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230704113349351.png)
+
+### IP20 Series Compact Modules
 
 In 2021, our company launched the IP20 series compact module. This series of products is more cost-effective, with a compact metal casing structure that can not only be installed in a control cabinet but also used in integrated small distributed control boxes. Similarly, it comes with a built-in switch and two RJ45 network ports for convenient wiring. It also has 32-point digital input/output, which can be configured as NPN or PNP, and input/output signals can be sent to the field network.
 
@@ -40,4 +46,18 @@ In 2021, our company launched the IP20 series compact module. This series of pro
 
 In addition, we are also working hard to research and develop analog I/O modules, and we will soon meet with you all!
 
-For many years, we have always adhered to the principle of "customer first", constantly innovating to meet the needs of customers. Our professional after-sales team solves all worries for customers, and SENTINEL is willing to become your trustworthy partner.
+---
+
+## Conclusion
+
+For many years, we have always adhered to the principle of **"customer first"**, constantly innovating to meet the needs of customers. Our professional after-sales team solves all worries for customers, and SENTINEL is willing to become your trustworthy partner.
+
+---
+
+### Customer Support and Services
+
+For more information about SENTINEL products, please contact our sales team or call **+86-22-83726972**. You can also visit our official website at [www.sentinel-china.com](http://www.sentinel-china.com), which provides comprehensive product information, selection manuals, CAD and Eplan files, as well as configuration files and tutorials to ensure easy access to required resources.
+
+We have a professional technical team ready to provide customized customer support and efficient after-sales service, ensuring maximum protection of every customer's interests.
+
+![SENTINEL Official QR Code](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)

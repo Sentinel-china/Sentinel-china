@@ -20,7 +20,7 @@ A hydraulic system consists of key components such as power elements (hydraulic 
 To ensure reliable system operation, the core physical quantities that require real-time monitoring include:
 
 - **Pressure** – ensures load stability  
-- **Flow** – guarantees system efficiency  
+- **Flow** – guarantees system efficiency
 - **Temperature** – prevents oil overheating  
 - **Liquid level** – avoids pump dry-running  
 

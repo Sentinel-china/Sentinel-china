@@ -1,5 +1,3 @@
-## What is IO-Link
-
 ![IO-Link Overview](http://image.sentinel-china.com/202411062158254.jpg)
 
 IO-Link is an **open communication protocol** specifically designed for sensors and actuators.  

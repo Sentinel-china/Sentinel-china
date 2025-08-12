@@ -1,5 +1,3 @@
-##Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges in Various Industrial Scenarios
-
 In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.  
 To address different flow monitoring needs, Tianjin SENTINEL Electronics Co., Ltd. has launched two flow monitoring solutions: **compact vortex flow sensors** and **thermal dispersion principle-based flow switches**.  
 This article analyzes the advantages of these two flow sensors from the perspectives of technical features and application scenarios to help users choose the most suitable solution.

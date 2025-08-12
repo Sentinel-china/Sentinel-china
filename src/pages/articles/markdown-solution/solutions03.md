@@ -1,5 +1,3 @@
-##IO-Link Smart Sensors in Wind Turbine Hydraulic Systems
-
 In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.  
 To meet the dual demands for high reliability and efficiency, modern medium-to-large wind turbines widely adopt hydraulic systems, supporting core functions such as blade pitch adjustment, braking, and yaw control. These systems act as the “nervous center” of turbine operation.
 
