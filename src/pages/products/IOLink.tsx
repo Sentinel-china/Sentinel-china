@@ -139,34 +139,40 @@ export default function MobileDevelopmentDetail() {
 
   const relatedProducts = [
     {
-      title: "Web应用开发",
-      description: "响应式Web应用开发服务",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111605823.png",
+      link: "/products/io-link/io-link01"
     },
     {
-      title: "小程序开发",
-      description: "微信、支付宝小程序开发",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111615434.png",
+      link: "/products/io-link/io-link02"
     },
     {
-      title: "UI/UX设计",
-      description: "专业的用户界面和体验设计",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111618966.png",
+      link: "/products/io-link/io-link03"
     },
     {
-      title: "后端开发",
-      description: "移动应用后端API开发服务",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111624189.png",
+      link: "/products/io-link/io-link04"
     },
     {
-      title: "云服务集成",
-      description: "移动应用云服务集成方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111629411.png",
+      link: "/products/io-link/io-link05"
     },
     {
-      title: "应用维护",
-      description: "移动应用持续维护和更新服务",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111633019.png",
+      link: "/products/io-link/io-link06"
     }
   ]
 
@@ -526,17 +532,23 @@ export default function MobileDevelopmentDetail() {
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                    />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-sm">{product.description}</p>
+                  <Link to={product.link} className="block">
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-64 h-48 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h4 className="text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
+                        <p className="text-gray-200 text-sm">{product.description}</p>
+                      </div>
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="text-yellow-400" size={20} />
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>

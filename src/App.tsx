@@ -18,6 +18,7 @@ import NewPage1 from './pages/products/NewPage1'
 import NewPage2 from './pages/products/NewPage2'
 import SolutionsDetail from './pages/markdown-config/SolutionsDetail'
 import ProductDetail from './pages/markdown-config/ProductDetail'
+import IOLinkDetail from './pages/markdown-config/iolinkdetail'
 // 导入传感器详情页面
 import TemperatureSensor from './pages/products/Sensor/temperature-sensor'
 import ThermalFlowSensor from './pages/products/Sensor/thermal-flow-sensor'
@@ -51,6 +52,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
+            <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>

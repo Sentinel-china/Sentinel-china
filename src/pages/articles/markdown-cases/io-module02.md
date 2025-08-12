@@ -1,169 +1,56 @@
-# 容器编排平台
+## IO Module on TBR Tire Conveyor Lines
 
-## 概述
+The production process of tires involves multiple stages such as raw material processing, forming, vulcanization, and quality inspection. Each stage requires a highly precise control system. Traditional wiring methods have issues such as complex wiring, difficult installation and maintenance, and poor system scalability. To overcome these challenges, bus module products provide customers with more efficient solutions by simplifying wiring, improving system reliability and flexibility, and significantly enhancing the overall efficiency of tire conveyor lines.
 
-容器编排平台是基于Kubernetes原生技术构建的企业级容器管理平台。提供完整的容器化应用生命周期管理，支持微服务架构部署，为企业数字化转型提供强大的技术支撑。
+---
 
-## 核心特性
+## Advantages of Bus Modules
 
-### 自动化部署
-- **一键部署**: 支持应用一键部署到多个环境
-- **滚动更新**: 零停机时间的应用更新机制
-- **自动扩缩容**: 基于负载自动调整容器数量
-- **蓝绿部署**: 支持蓝绿部署策略，降低发布风险
+![Advantages of Bus Modules](http://image.sentinel-china.com/202406201033383.png)
 
-### 资源管理
-- **智能调度**: 基于资源使用情况智能分配节点
-- **资源限制**: 精确控制CPU、内存等资源使用
-- **负载均衡**: 自动负载均衡，提升应用性能
-- **存储管理**: 支持多种存储类型，灵活配置
+### Suitable for Conveyor Lines: Time and Effort Saving
 
-### 监控运维
-- **实时监控**: 容器和应用级别的实时监控
-- **日志管理**: 集中化日志收集和分析
-- **告警系统**: 智能告警机制，及时发现问题
-- **故障恢复**: 自动故障检测和恢复机制
+#### Challenges of Traditional Wiring Methods
+In traditional wiring methods, each sensor, actuator, and controller needs separate wiring, which not only increases the complexity of installation and maintenance but also easily causes wiring errors, leading to system failures and downtime. Additionally, traditional wiring methods have poor scalability, and when production demands change, the cost and time for adding or re-wiring are high and time-consuming.
 
-### 安全防护
-- **镜像安全**: 镜像漏洞扫描和安全检测
-- **网络隔离**: 细粒度的网络策略控制
-- **访问控制**: RBAC权限管理，确保安全访问
-- **密钥管理**: 安全的密钥和证书管理
+#### Solutions of Bus Modules
+Bus modules connect all devices through a unified communication bus, significantly simplifying the wiring process. The main advantages are as follows:
 
-## 技术架构
+1. **Simplified wiring**: Only one communication line is needed to connect multiple devices, reducing the number and complexity of wires.  
+2. **Quick installation**: Modular design and standardized interfaces make the installation process faster, significantly reducing installation time.  
+3. **Flexible expansion**: When the production line needs to expand or adjust, only adding or adjusting the bus module is required without re-wiring, reducing expansion costs and time.
 
-### 控制平面
-- **API Server**: 提供RESTful API接口
-- **etcd**: 分布式键值存储，保存集群状态
-- **Scheduler**: 资源调度器，分配Pod到节点
-- **Controller Manager**: 控制器管理器，维护集群状态
+---
 
-### 数据平面
-- **Kubelet**: 节点代理，管理容器生命周期
-- **Kube-proxy**: 网络代理，实现服务发现
-- **Container Runtime**: 容器运行时，支持Docker/containerd
-- **CNI**: 容器网络接口，支持多种网络方案
+## SENTINEL Bus Modules
 
-### 扩展组件
-- **Ingress Controller**: 入口控制器，管理外部访问
-- **Storage Class**: 存储类，动态存储供应
-- **Metrics Server**: 指标服务器，提供资源监控
-- **Dashboard**: Web界面，可视化集群管理
+### EL Series
+The EL series modules are highly adaptable to the field and simplify the installation process, making them particularly suitable for applications that require high installation flexibility.
 
-## 支持功能
+![EL Series](http://image.sentinel-china.com/202406191009590.png)
 
-### 应用管理
-- **Deployment**: 无状态应用部署
-- **StatefulSet**: 有状态应用部署
-- **DaemonSet**: 守护进程部署
-- **Job/CronJob**: 批处理任务管理
+### CM Series
+The CM series modules are cost-effective and save connector costs, meeting the needs of projects that are cost-sensitive and allow for the application environment.
 
-### 网络管理
-- **Service**: 服务发现和负载均衡
-- **Ingress**: 外部访问入口管理
-- **Network Policy**: 网络策略控制
-- **Service Mesh**: 服务网格支持
+![CM Series](http://image.sentinel-china.com/202406191010215.png)
 
-### 存储管理
-- **PersistentVolume**: 持久化存储卷
-- **StorageClass**: 动态存储供应
-- **ConfigMap**: 配置管理
-- **Secret**: 密钥管理
+### Product Quality Monitoring
+Our bus modules undergo strict quality control and testing. Each product is rigorously tested for electromagnetic compatibility (such as surge immunity tests, electrical fast transient burst immunity tests, etc.) during the design phase. Additionally, the company has established a product aging laboratory where each product undergoes continuous power-on aging tests. **The first batch of bus products has undergone 4 years of aging and still operates stably**.
 
-## 技术规格
+Each product also undergoes **at least 24 hours** of aging testing before leaving the factory to ensure stable operation in various harsh industrial environments. The modules have high interference resistance and strong error detection functions, effectively reducing system failures and downtime, ensuring continuous operation of the production line.
 
-| 规格项目 | 参数详情 |
-|---------|---------|
-| 集群规模 | 支持1000+节点，10000+容器 |
-| 容器类型 | Docker, containerd, CRI-O |
-| 网络方案 | Calico, Flannel, Weave Net |
-| 存储方案 | NFS, Ceph, AWS EBS, Azure Disk |
-| 监控方案 | Prometheus + Grafana |
-| 日志方案 | ELK Stack, Fluentd |
+---
 
-## 应用场景
+## Application Cases
+In a large TBR tire manufacturing enterprise, our CC-Link IE Field Basic protocol bus modules were successfully applied to its conveyor line system. By replacing the original traditional solutions with bus modules, the company’s **wiring time was reduced by 40%**, maintenance efficiency improved, and system scalability significantly enhanced.
 
-### 微服务架构
-- **服务拆分**: 将单体应用拆分为微服务
-- **服务治理**: 统一的服务注册和发现
-- **配置管理**: 集中化的配置管理
-- **链路追踪**: 分布式链路追踪和监控
+![Application Case](http://image.sentinel-china.com/202406191025747.png)
 
-### 持续集成/持续部署
-- **CI/CD流水线**: 自动化构建和部署
-- **多环境管理**: 开发、测试、生产环境管理
-- **版本控制**: 应用版本管理和回滚
-- **质量保证**: 自动化测试和质量检查
+---
 
-### 大数据处理
-- **批处理作业**: 大规模数据处理任务
-- **流式处理**: 实时数据处理和分析
-- **机器学习**: 模型训练和推理服务
-- **数据仓库**: 数据存储和分析平台
+## Customer Support and Services
+In addition to ensuring product quality, our company also focuses on providing technical support and customized solutions for customers. We have an **independent R&D team**, so we are very efficient and flexible in after-sales technical support, able to help customers cope with various problems in complex industrial sites. Moreover, we have rich industry experience and can provide customized solutions to help enterprises quickly respond to various challenges during production, maintaining efficient and stable production.
 
-### 边缘计算
-- **边缘节点**: 分布式边缘节点管理
-- **本地计算**: 就近数据处理和计算
-- **网络优化**: 减少网络延迟和带宽消耗
-- **离线运行**: 支持离线环境运行
+For more information, please contact our sales staff or call the company at **022-83726972**. You can also visit SENTINEL’s official website: [www.sentinel-china.com](http://www.sentinel-china.com). The official website provides comprehensive product information, selection manuals, CAD and Eplan files, as well as configuration files and tutorials to ensure that users can easily obtain the required information.
 
-## 客户案例
-
-### 某互联网公司
-**挑战**: 传统部署方式无法应对业务快速增长
-**解决方案**: 采用容器编排平台，实现自动化部署和弹性扩缩容
-**成果**: 部署效率提升80%，运维成本降低50%
-
-### 制造业企业
-**挑战**: 多地工厂系统需要统一管理和部署
-**解决方案**: 构建跨地域的容器编排集群
-**成果**: 系统部署时间从数天缩短到数小时
-
-### 金融科技公司
-**挑战**: 需要满足严格的合规要求，确保系统安全
-**解决方案**: 部署企业级容器编排平台，实现安全隔离和审计
-**成果**: 通过金融监管认证，系统稳定性提升至99.99%
-
-## 定价方案
-
-### 基础版
-- **适用场景**: 小型团队、开发测试环境
-- **节点数量**: 最多10个节点
-- **技术支持**: 社区支持
-- **价格**: 免费
-
-### 标准版
-- **适用场景**: 中型企业、生产环境
-- **节点数量**: 最多100个节点
-- **技术支持**: 5×8小时技术支持
-- **价格**: ¥9,999/月
-
-### 企业版
-- **适用场景**: 大型企业、高可用要求
-- **节点数量**: 无限制
-- **技术支持**: 7×24小时专属支持
-- **价格**: 定制报价
-
-## 技术支持
-
-### 服务内容
-- **架构设计**: 容器化架构设计和优化
-- **部署实施**: 平台部署和配置服务
-- **培训服务**: 容器技术和平台使用培训
-- **运维支持**: 7×24小时运维支持
-
-### 最佳实践
-- **安全加固**: 容器安全最佳实践指导
-- **性能优化**: 集群性能调优和优化
-- **故障排查**: 常见问题诊断和解决
-- **升级服务**: 平台版本升级和迁移
-
-## 联系我们
-
-如果您对容器编排平台感兴趣，欢迎联系我们：
-
-- **电话**: 400-888-8888
-- **邮箱**: kubernetes@company.com
-- **地址**: 北京市朝阳区科技园区创新大厦
-
-我们将为您提供专业的容器化解决方案和定制化服务。
+We have a professional technical team ready to provide customized customer support and efficient after-sales service at any time, ensuring that every user’s interests are maximized.
