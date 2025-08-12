@@ -191,8 +191,8 @@ export default function TemperatureSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="温度传感器"
+                src="https://image.sentinel-china.com/2025-08-11-temp.png"
+                alt="temperature sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -333,19 +333,17 @@ export default function TemperatureSensorDetail() {
                 </div>
                 
                 <div className="relative">
-                  <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="温度传感器技术演示"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <button className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-300 transition-colors">
-                        <Play className="text-black ml-1" size={24} />
-                      </button>
-                    </div>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
+                    <iframe
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      title="Temperature Sensor Technology Demonstration"
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4"></p>
+                  <p className="text-gray-400 text-center mt-4">Temperature Sensor Technology Overview</p>
                 </div>
               </div>
             )}

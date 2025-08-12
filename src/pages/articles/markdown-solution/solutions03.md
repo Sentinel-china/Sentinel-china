@@ -4,7 +4,7 @@ To meet the dual demands for high reliability and efficiency, modern medium-to-l
 In actual operation, hydraulic systems face multiple challenges, including high pressure, frequent starts and stops, and extreme weather.  
 How to monitor key parameters in real time and control them precisely has become a core issue in ensuring the stable operation of wind power systems. SENTINEL’s intelligent sensor products based on IO-Link technology are providing strong support for the intelligent upgrade of wind turbine hydraulic systems.
 
----
+
 
 ## Multi-Dimensional Sensors Build the “Perceptive Brain” of Hydraulic Systems
 ![Multi-dimensional sensors in wind turbine hydraulic systems](http://image.sentinel-china.com/202507181159019.png)
@@ -15,7 +15,7 @@ The efficiency and safety of hydraulic systems depend on accurate sensing of mul
 - **Temperature sensors** monitor hydraulic oil temperature, helping to detect oil degradation or overheating risks, thus avoiding seal aging or lubrication failure that could lead to leaks or malfunctions.  
 - **Flow sensors** monitor hydraulic fluid flow status. Changes in flow rate can indirectly indicate dynamic issues such as pipeline blockages or valve sticking.
 
----
+
 
 ## IO-Link Leads the New Era of Smart Sensing
 ![IO-Link smart sensor advantages in wind power applications](http://image.sentinel-china.com/202507181139982.png)
@@ -29,7 +29,7 @@ SENTINEL sensor products are designed specifically for wind power hydraulic appl
 Combined with online condition monitoring, SENTINEL sensors support real-time health analysis.  
 When paired with edge computing or cloud-based AI algorithms, they can detect early failure signs such as friction or leakage, enabling proactive maintenance.
 
----
+
 
 ## Industry Case | Wind Turbine OEM in Eastern China
 ![Case study of SENTINEL sensors in Chinese wind turbine project](http://image.sentinel-china.com/202507181343901.png)
@@ -44,7 +44,7 @@ In addition, feedback from displacement sensors enabled the turbine’s main con
 **The project lead stated:**  
 > “SENTINEL’s IO-Link smart sensors not only improved system response speed and data accuracy but also significantly simplified control cabinet wiring, making maintenance and system expansion much more convenient.”
 
----
+
 
 ## Looking Ahead: Hydraulic Systems Moving Toward Smart Maintenance
 
@@ -53,7 +53,7 @@ As the wind power industry develops toward higher capacity, larger scale, and gr
 SENTINEL will continue to focus on wind power applications, aiming for higher integration, stronger self-diagnosis capabilities, and higher protection levels with its IO-Link smart sensor solutions.  
 In the future, wind turbine hydraulic systems will not only “see” but also “detect accurately and respond quickly,” fully supporting the intelligent transformation of renewable energy equipment.
 
----
+
 
 ### Customer Support and Service
 

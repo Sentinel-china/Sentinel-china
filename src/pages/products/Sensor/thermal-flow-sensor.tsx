@@ -2,7 +2,7 @@
  * 热式流量传感器详情页面
  * 展示热式流量传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Gauge, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Activity, Thermometer, Settings, Shield, Layers, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,22 +55,22 @@ export default function ThermalFlowSensorDetail() {
 
   const features = [
     {
-      icon: Gauge,
+      icon: Thermometer,
       title: "Thermal conductivity principle",
-      description: "Precisely monitor liquids such as water and oil in the pipeline"
+      description: "Precisely monitor liquids such as water in the pipeline"
     },
     {
-      icon: Code,
+      icon: Settings,
       title: "Insertion measurement",
       description: "The switch point setting is simple and the installation is quick."
     },
     {
-      icon: Zap,
+      icon: Shield,
       title: "Solid and durable",
       description: "High-strength plastic or stainless steel housing"
     },
     {
-      icon: Users,
+      icon: Layers,
       title: "Multiple interface sizes",
       description: "Meet the needs of liquid flow monitoring in factory and process automation"
     }
@@ -93,47 +93,50 @@ export default function ThermalFlowSensorDetail() {
     {
       title: "技术手册",
       description: "压力传感器详细技术规格和使用指南",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://example.com/pressure-sensor-manual.pdf"
     },
     {
       title: "安装指南",
       description: "压力传感器安装和调试指南",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://example.com/pressure-sensor-installation.pdf"
     },
     {
       title: "应用案例",
       description: "压力传感器在不同行业的应用案例",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://example.com/pressure-sensor-cases.pdf"
     }
   ]
 
   const cases = [
     {
-      company: " Flow Sensor",
-      industry: "PLSX",
+      company: "PLSX",
+      industry: "flow sensor",
       challenge: "Monitor the flow of liquid medium, based on the principle of thermal conductivity.PBT shell, 304 stainless steel probe.Flexible selection of switch points.Potentiometer adjustment.M12x1 connector.LED strip instructions.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-12-plsx.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020778958.html"
     },
     {
-      company: "Flow Sensor",
-      industry: "PLSU",
+      company: "PLSU",
+      industry: "flow sensor",
       challenge: "Based on the thermal conductivity principle.All stainless steel shell.The measuring medium is liquid.M18x1.5 internal thread.3-wire PNP normally open output.Switching point adjustable via potentiometer.M12 Connector outlet.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.harryrou.wiki/2025-08-12-plsu.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020778959.html"
     },
     {
-      company: "Flow Sensor",
-      industry: "PLSN",
+      company: "PLSN",
+      industry: "flow sensor",
       challenge: "Flow monitoring of liquid.Built-in temperature alarm.304 stainless steel shell and probe.The value is displayed by digital tube.Protection class IP67.Optional bluetooth function.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-12-plsn.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020778960.html"
     }
   ]
 
@@ -193,8 +196,8 @@ export default function ThermalFlowSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="压力传感器"
+                src="https://image.sentinel-china.com/2025-08-11-flow.png"
+                alt="thermal flow sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -203,7 +206,7 @@ export default function ThermalFlowSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Gauge className="text-yellow-400" size={32} />
+                  <Activity className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
@@ -315,19 +318,19 @@ export default function ThermalFlowSensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Gauge className="text-yellow-400 mr-2" size={20} />
+                        <Thermometer className="text-yellow-400 mr-2" size={20} />
                         <span>Thermal conductivity principle</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Settings className="text-yellow-400 mr-2" size={20} />
                         <span>Insertion measurement</span>
                       </div>
                       <div className="flex items-center">
-                        <Zap className="text-yellow-400 mr-2" size={20} />
+                        <Shield className="text-yellow-400 mr-2" size={20} />
                         <span>Solid and durable</span>
                       </div>
                       <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
+                        <Layers className="text-yellow-400 mr-2" size={20} />
                         <span>Multiple interface sizes</span>
                       </div>
                     </div>
@@ -335,19 +338,17 @@ export default function ThermalFlowSensorDetail() {
                 </div>
                 
                 <div className="relative">
-                  <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="压力传感器技术演示"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <button className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-300 transition-colors">
-                        <Play className="text-black ml-1" size={24} />
-                      </button>
-                    </div>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
+                    <iframe
+                      src="https://www.youtube.com/embed/CCSmkLdDVY4?si=EDVTUGTuoRniBZfP"
+                      title="Thermal Flow Sensor Technology Demonstration"
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4"></p>
+                  <p className="text-gray-400 text-center mt-4">Thermal Flow Sensor Technology Overview</p>
                 </div>
               </div>
             )}
@@ -436,9 +437,12 @@ export default function ThermalFlowSensorDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -451,7 +455,7 @@ export default function ThermalFlowSensorDetail() {
                     <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
                     <h3 className="text-lg font-bold">{case_.company}</h3>
                   </div>
-                  {/* 添加点击提示 */}
+                  {/* 点击提示图标 */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <ArrowRight className="text-yellow-400" size={20} />
                   </div>
@@ -459,21 +463,16 @@ export default function ThermalFlowSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Product Features</h4>
                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
                   </div>
                   
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
-                    <p className="text-gray-300 text-sm">{case_.solution}</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
-                    <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
+                  <div className="flex items-center justify-between mt-4">
+                    <span className="text-yellow-400 text-sm font-medium">View Details</span>
+                    <ArrowRight className="text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={16} />
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -514,24 +513,41 @@ export default function ThermalFlowSensorDetail() {
 
             <div 
               ref={scrollContainerRef}
-              className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
+              className={`flex flex-wrap gap-[60px] p-2.5 ${
                 relatedProducts.length === 1 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
               onScroll={handleScroll}
+              style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', padding: '10px' }}
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
+                  <div className="relative w-[300px] overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    {/* 产品图片 */}
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
+                      className="w-full block"
+                      style={{ display: 'block' }}
                     />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-base sm:text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    {/* 覆盖文本层（无链接避免类型错误） */}
+                    <div
+                      className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 font-bold text-base"
+                      style={{
+                        position: 'absolute',
+                        bottom: '0',
+                        left: '0',
+                        width: '100%',
+                        background: 'rgba(0, 0, 0, 0.6)',
+                        color: 'white',
+                        textAlign: 'center',
+                        padding: '10px 0',
+                        fontWeight: 'bold',
+                        fontSize: '16px'
+                      }}
+                    >
+                      Download
                     </div>
                   </div>
                 </div>

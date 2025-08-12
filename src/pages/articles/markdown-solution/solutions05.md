@@ -2,7 +2,7 @@ In the field of industrial automation, accurate flow measurement and real-time m
 To address different flow monitoring needs, Tianjin SENTINEL Electronics Co., Ltd. has launched two flow monitoring solutions: **compact vortex flow sensors** and **thermal dispersion principle-based flow switches**.  
 This article analyzes the advantages of these two flow sensors from the perspectives of technical features and application scenarios to help users choose the most suitable solution.
 
----
+
 
 ## Solution 1: High-Precision Flow Measurement with Vortex Flow Sensors
 
@@ -28,7 +28,7 @@ This design does not rely on fluid conductivity, making it highly advantageous f
 - **Industrial Pure Water Monitoring**: Particularly suitable for low-conductivity fluids such as industrial pure water, solving instability issues found with electromagnetic flow meters in this scenario.  
 - **Flow and Temperature Management in Mold Temperature Controllers**: Real-time monitoring of medium flow and temperature optimizes pump speed and valve control, ensuring uniform mold temperature and improving product quality.
 
----
+
 
 ## Solution 2: Real-Time Water Flow Monitoring with Flow Switches
 
@@ -53,7 +53,7 @@ Its simple structure and stable performance make it ideal for cooling and lubric
 - **Cooling Water Flow Monitoring**: Ensures the flow status of multiple pipelines in large cooling systems, preventing equipment damage due to cooling failure.  
 - **Basic Flow Status Monitoring**: Economical and efficient for monitoring water or oil flow in industrial equipment.
 
----
+
 
 ## Solution Selection Recommendations
 
@@ -67,7 +67,7 @@ Its simple structure and stable performance make it ideal for cooling and lubric
    - Use the flow switch for status monitoring.  
    - Use the vortex flow sensor for high-precision measurement and data logging.
 
----
+
 
 ## Conclusion
 
@@ -75,7 +75,7 @@ Vortex flow sensors and flow switches are core devices in industrial automation 
 With their high accuracy, intelligence, and reliability, they provide comprehensive solutions for industrial processes.  
 Leveraging extensive industry experience and customized support, Tianjin SENTINEL Electronics Co., Ltd. helps customers achieve higher production efficiency and better resource utilization in complex industrial scenarios.
 
----
+
 
 ### Customer Support and Service
 

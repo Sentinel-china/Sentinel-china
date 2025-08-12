@@ -6,8 +6,6 @@ To meet these needs, SENTINEL introduces two new **IO-Link substation modules**:
 
 Both come in **A-type** and **B-type** interface versions to suit diverse industrial applications.
 
----
-
 ## Input/Output Adaptive IO-Link Substation Module
 
 ![Input/Output Adaptive IO-Link Substation Module](http://image.sentinel-china.com/202411221200399.png)
@@ -29,8 +27,6 @@ Process data length is fixed at **2 bytes input** + **2 bytes output** for stabl
 - **Environmental Adaptability**  
   - Operating temperature: **-20°C to +55°C**  
   - **IP67** protection rating.
-
----
 
 ## Input/Output Adaptive Expandable IO-Link Substation Module
 
@@ -57,16 +53,12 @@ Users can **upgrade production lines** or **add devices** without redesigning th
 
 ![Modular Expansion](http://image.sentinel-china.com/202411221201716.png)
 
----
-
 ## Conclusion
 
 With **intelligent adaptation**, **flexible expansion**, and **multi-interface support**, these modules simplify **field deployment** and **maintenance**, helping enterprises stay competitive in **digital transformation**.
 
 **Applications:**  
 Automotive manufacturing, logistics, food processing, and other sectors requiring smart, efficient automation.
-
----
 
 ## Customer Support & Services
 

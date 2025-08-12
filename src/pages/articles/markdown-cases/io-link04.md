@@ -3,8 +3,6 @@ In **industrial automation** and **process control**, temperature monitoring is 
 
 To meet customer demands for precise temperature monitoring and remote management, **SENTINEL** has launched a **new IO-Link remote RTD input module**, overcoming the limitations of traditional collection methods and enabling more convenient, reliable temperature control in diverse environments.
 
----
-
 ## What is RTD Input
 
 ![RTD Input Diagram](http://image.sentinel-china.com/202411011146221.png)
@@ -18,8 +16,6 @@ Platinum RTDs offer an excellent linear relationship between temperature and res
 - Industrial production
 - Automated process control
 - Equipment condition monitoring
-
----
 
 ## Customer Pain Points — Challenges of Bridge Circuit Collection
 
@@ -35,8 +31,6 @@ Traditional **bridge circuit** collection has notable drawbacks:
   Every cable change or wiring adjustment may require recalibration, leading to increased downtime and cost.
 
 **SENTINEL's IO-Link remote RTD module** directly addresses these issues, offering simpler installation and improved measurement stability.
-
----
 
 ## SENTINEL IO-Link Remote RTD Input Module
 
@@ -62,8 +56,6 @@ Traditional **bridge circuit** collection has notable drawbacks:
 - **Status Indicators**  
   Power, communication, and signal lights for quick troubleshooting.
 
----
-
 ## Conclusion
 
 The **SENTINEL IO-Link remote RTD input module** delivers:
@@ -72,8 +64,6 @@ The **SENTINEL IO-Link remote RTD input module** delivers:
 - **Simplified installation and maintenance**
 
 It is an ideal choice for **industrial temperature control** under Industry 4.0, providing accurate, stable, and intelligent data acquisition.
-
----
 
 ## Customer Support & Service
 
