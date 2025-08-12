@@ -56,37 +56,33 @@ export default function PressureSensorDetail() {
   const features = [
     {
       icon: Vibrate,
-      title: "高精度检测",
-      description: "采用先进的MEMS技术，提供高精度振动检测，频率范围0.1Hz-10kHz"
+      title: "Multiple specifications",
+      description: "Multiple connection sizes to meet the installation requirements of different industrial scenarios."
     },
     {
       icon: Code,
-      title: "实时监测",
-      description: "支持实时振动监测，可检测设备异常振动，预防设备故障"
+      title: "IO-Link",
+      description: "Supports IO-Link technology, enabling high-precision data transmission with strong anti-interference capabilities."
     },
     {
       icon: Zap,
-      title: "智能算法",
-      description: "内置智能算法，自动识别振动模式，提供准确的故障诊断"
+      title: "Rich in functions",
+      description: "Diverse function settings can meet various needs in actual production."
     },
     {
       icon: Users,
-      title: "工业级防护",
-      description: "IP67防护等级，适用于恶劣工业环境，抗冲击、抗振动"
+      title: "Industrial-grade protection",
+      description: "IP67 protection level, suitable for harsh industrial environments, resistant to impact and vibration"
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "0.1Hz - 10kHz" },
-    { spec: "精度", value: "±0.1% FS" },
-    { spec: "响应时间", value: "<100ms" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP67" },
-    { spec: "工作电压", value: "3.3V DC" },
-    { spec: "长期稳定性", value: "±0.05%FS/年" },
-    { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-40°C to +85°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX" }
+    { spec: "Products type", value: " | Pressure sensor | Pressure transmitter |" },
+    { spec: "Process connection", value: " | G1/4 external thread | Tri-Clamp 50.5mm | G1/2 front flush | " },
+    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) |" },
+    { spec: "Pressure range", value: " | -1...600 bar | " },
+    { spec: "Special function", value: " | Bluetooth | N/A | " },
+    { spec: "Communication Interface", value: " | IO-Link | " }
   ]
 
   const downloads = [
@@ -112,27 +108,27 @@ export default function PressureSensorDetail() {
 
   const cases = [
     {
-      company: "某风力发电场",
-      industry: "风力发电",
-      challenge: "需要监测风力发电机组的振动状态，预防齿轮箱故障",
-      solution: "安装振动传感器，实时监测设备振动状态",
-      result: "故障预测准确率95%，维护成本降低30%",
+      company: "sensor",
+      industry: "Pressure ",
+      challenge: "The pressure sensors of SENTINEL are devices used to measure liquid pressure. They are widely used in fields such as industrial automation, food and beverage processing, metallurgy, machine tools, and hydraulic systems.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某化工厂",
-      industry: "化工行业",
-      challenge: "需要监测工业泵的运行状态，及时发现轴承磨损问题",
-      solution: "在泵设备上安装振动传感器，实时监测运行状态",
-      result: "设备故障率降低50%，维护计划优化",
+      company: "transmitter",
+      industry: "Pressure",
+      challenge: "Digital circuit compensation.Strong anti-interference ability and high stability.Can measure gauge pressure and absolute pressure.The liquid contact diaphragm is made of 316Lstainless steel.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某制造企业",
-      industry: "制造业",
-      challenge: "需要优化电机运行参数，降低能耗",
-      solution: "提供电机振动监测系统，通过振动数据分析优化运行参数",
-      result: "能耗降低12%，设备寿命延长",
+      company: "SEH series",
+      industry: "Pressure sensor",
+      challenge: "Upper part of the housing can be rotated 300°toensure the best installation direction.High-brightness dual-color large size digitaldisplay,support mirroring.parameters can be set via IO-Link.The starting and ending points of the analog signalcan be set.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -207,27 +203,29 @@ export default function PressureSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    pressure<span className="text-yellow-400">Sensor</span>
+                    Pressure<span className="text-yellow-400"> Sensor</span>
                   </h1>
-                  <p className="text-gray-400">pressure Sensor</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度振动传感器，采用先进的MEMS技术，提供0.1Hz-10kHz频率范围的振动检测。
-                内置智能算法，自动识别振动模式，为设备故障预测提供可靠数据。
+                SENTINEL’s compact pressure sensors and pressure transmitters have: a variety of different connection sizes and output signals, as well as a wide pressure range, rich function settings and flexible installation methods, which can meet the various needs of actual production.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() =>window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +237,9 @@ export default function PressureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的振动传感技术，为您的工业设备提供可靠的振动监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +270,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Product
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +280,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +290,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,32 +301,30 @@ export default function PressureSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的振动传感器采用先进的MEMS技术，结合精密电子电路设计，
-                      实现高精度、快速响应的振动测量。传感器采用不锈钢外壳，具备优异的耐腐蚀性能。
+                      Pressure is one of the most frequently measured parameters in industry, whether it is a press, a cooling circuit or a storage tank, there is a need to monitor and measure pressure parameters.
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP67防护设计，适用于各种恶劣工业环境。
+                      The pressure sensors of SENTINEL are equipped with IO-Link function. Thanks to the IO-Link technology, these sensors can directly convert the millivolt signals of pressure into digital signals, achieving high-precision data transmission and strong anti-interference capabilities.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Vibrate className="text-yellow-400 mr-2" size={20} />
-                        <span>高精度检测</span>
+                        <span>Multiple specifications</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监测</span>
+                        <span>IO-Link</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>智能算法</span>
+                        <span>Rich in functions</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>工业级防护</span>
+                        <span>Industrial-grade protection</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +343,7 @@ export default function PressureSensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放技术演示</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +351,16 @@ export default function PressureSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +384,7 @@ export default function PressureSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +408,7 @@ export default function PressureSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +425,9 @@ export default function PressureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product<span className="text-yellow-400"> Type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证振动传感器的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -459,17 +455,17 @@ export default function PressureSensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                      <p className="text-gray-300 text-sm">{case_.challenge}</p>
                    </div>
                    
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
                    <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                    </div>
                 </div>
@@ -484,9 +480,9 @@ export default function PressureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               相关<span className="text-yellow-400">产品</span>
+               Related<span className="text-yellow-400"> Articles</span>
              </h2>
-            <p className="text-xl text-gray-300">与振动传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -550,26 +546,25 @@ export default function PressureSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">振动监测</span>项目？
+               Get your<span className="text-yellow-400"> preferential</span> price
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的振动传感器解决方案
+               Our professional team will provide you with personalized solutions.
+
+
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-               <div className="flex items-center text-gray-300">
-                 <Phone size={20} className="mr-2 text-yellow-400" />
-                 400-123-4567
-               </div>
+               
                <div className="flex items-center text-gray-300">
                  <Mail size={20} className="mr-2 text-yellow-400" />
-                 sensor@company.com
+                 export.sentinel@gmail.com
                </div>
              </div>
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 联系我们
+                 Contact us
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>

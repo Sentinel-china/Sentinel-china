@@ -209,25 +209,27 @@ export default function InductiveProximitySensorDetail() {
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
                    inductive proximity<span className="text-yellow-400"> Sensor</span>
                   </h1>
-                  <p className="text-gray-400">inductive proximity Sensor</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度气体传感器，支持CO、CO2、CH4、H2S等多种气体检测，检测精度达到ppm级别。
-                符合ATEX防爆标准，适用于各种危险环境的安全监测。
+                Inductive proximity switch is a kind of detection element. Through different physical principles, it makes non-contact induction on ferromagnetic metal objects, so as to detect whether the detected object reaches the effective induction range of the sensor, and output a certain form of signal. 
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +241,9 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的气体传感技术，为您的工业安全和环境监测提供可靠的气体浓度监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +274,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Product
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +284,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +294,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,15 +305,13 @@ export default function InductiveProximitySensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的气体传感器采用先进的电化学和半导体技术，结合精密电子电路设计，
-                      实现高精度、快速响应的气体浓度测量。传感器采用铝合金外壳，具备优异的防护性能。
+                      SENTINEL can provide inductive proximity switches with various shapes and sizes to meet the diversified needs of customers.
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP65防护设计，适用于各种恶劣工业环境。
+                       This kind of sensor has relatively low cost, and common machinery and equipment are mostly made of metal materials, so it is widely used in the field of equipment manufacturing, such as detecting distance, detecting structure in place, detecting the presence of objects, etc.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
@@ -347,7 +347,7 @@ export default function InductiveProximitySensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放技术演示</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +355,16 @@ export default function InductiveProximitySensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +388,7 @@ export default function InductiveProximitySensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +412,7 @@ export default function InductiveProximitySensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -459,17 +459,17 @@ export default function InductiveProximitySensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                      <p className="text-gray-300 text-sm">{case_.challenge}</p>
                    </div>
                    
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
                    <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                    </div>
                 </div>
@@ -484,9 +484,9 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               相关<span className="text-yellow-400">产品</span>
+               Related<span className="text-yellow-400"> Articles</span>
              </h2>
-            <p className="text-xl text-gray-300">与气体传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -550,26 +550,23 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">气体监测</span>项目？
+               Get your<span className="text-yellow-400"> preferential</span> price
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的气体传感器解决方案
+               Our professional team will provide you with personalized solutions.
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-               <div className="flex items-center text-gray-300">
-                 <Phone size={20} className="mr-2 text-yellow-400" />
-                 400-123-4567
-               </div>
+               
                <div className="flex items-center text-gray-300">
                  <Mail size={20} className="mr-2 text-yellow-400" />
-                 sensor@company.com
+                 export.sentinel@gmail.com
                </div>
              </div>
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 联系我们
+                 Contact us
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>

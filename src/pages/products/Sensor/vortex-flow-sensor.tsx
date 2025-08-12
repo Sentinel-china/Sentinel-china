@@ -56,37 +56,34 @@ export default function VortexFlowSensorDetail() {
   const features = [
     {
       icon: Droplet,
-      title: "多种测量原理",
-      description: "热式、涡街、超声波、电磁等多种流量计技术"
+      title: "Principle and function",
+      description: "Adopting the von Kármán vortex street principle, it supports the output and dual display of both flow rate and temperature signals."
     },
     {
       icon: Code,
-      title: "高精度测量",
-      description: "±0.5%精度，确保流量测量的准确性和可靠性"
+      title: "IO-Link",
+      description: "There are various output methods, and it is compatible with IO-Link function."
     },
     {
       icon: Zap,
-      title: "宽流量范围",
-      description: "支持液体和气体流量测量，适应不同介质"
+      title: "Flexible signals",
+      description: "The switch signal supports various types such as NPN/PNP/push - pull."
     },
     {
       icon: Users,
-      title: "智能诊断",
-      description: "内置自诊断功能，实时监测设备状态"
+      title: "Data record",
+      description: "The cumulative traffic recording function is convenient for statistical analysis."
     }
   ]
 
   const productSpecs = [
-    { spec: "测量原理", value: "热式、涡街、超声波、电磁" },
-    { spec: "精度", value: "±0.5%FS" },
-    { spec: "响应时间", value: "<100ms" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485、脉冲" },
-    { spec: "防护等级", value: "IP67" },
-    { spec: "工作电压", value: "12-24VDC" },
-    { spec: "介质温度", value: "-40°C to +150°C" },
-    { spec: "压力等级", value: "PN16、PN25、PN40" },
-    { spec: "口径范围", value: "DN15-DN600" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX、SIL2" }
+    { spec: "Output function", value: " | Two 4-20mA outputs | Two-way switching IO-Link | Two 0-10V outputs |" },
+    { spec: "Range", value: " | 2-16L/min | 5-40L/min | 10-100L/min | " },
+    { spec: "Interface thread", value: " | RC3/4 | RC1 | G1 | G1/2 | G3/8 | NPT1 | RC1/2 | RC3/8 | NPT3/8 | NPT3/4 | NPT1/2 | G3/4 |" },
+    { spec: "Electrical connection", value: " | M12x1 connector | 2m PVC cable | " },
+    { spec: "Communication Interface", value: " | IO-Link | " },
+    { spec: "Temperature range", value: " | 0-100℃ | " },
+    { spec: "Working principle", value: " | von Kármán |" }
   ]
 
   const downloads = [
@@ -112,27 +109,27 @@ export default function VortexFlowSensorDetail() {
 
   const cases = [
     {
-      company: "某自来水公司",
-      industry: "水务行业",
-      challenge: "需要精确监测供水管网流量，确保供水计量准确",
-      solution: "采用电磁流量计，实现高精度流量测量和远程监控",
-      result: "计量准确率提升98%，漏损率降低30%",
+      company: "Mold temperature controllers (MTCs)",
+      industry: "Vortex flow sensor",
+      challenge: "Real-time monitoring of medium flow rate and temperature ensures precise and stable mold temperature control, enhancing both production efficiency and product quality.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某化工厂",
-      industry: "化工行业",
-      challenge: "需要监测各种化学介质的流量，确保生产过程稳定",
-      solution: "采用耐腐蚀流量传感器，实现多种化学介质的精确测量",
-      result: "生产效率提升20%，产品质量提升15%",
+      company: "Industrial pure water monitoring",
+      industry: "Vortex flow sensor",
+      challenge: "Its independence from fluid conductivity allows for stable and accurate flow measurement of low-conductivity industrial pure water, addressing the instability issues of electromagnetic flowmeters in such applications.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某食品饮料厂",
-      industry: "食品饮料",
-      challenge: "需要监测饮料生产线的流量，确保产品配比准确",
-      solution: "采用卫生级流量传感器，实现食品级流量监测",
-      result: "产品一致性提升25%，生产效率提升18%",
+      company: "Cooling systems",
+      industry: "Vortex flow sensor",
+      challenge: "The sensor monitors coolant flow conditions to prevent equipment damage due to cooling failure, ensuring safe and reliable system operation.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -207,27 +204,29 @@ export default function VortexFlowSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    vortex flow<span className="text-yellow-400">Sensor</span>
+                    vortex flow<span className="text-yellow-400"> Sensor</span>
                   </h1>
-                  <p className="text-gray-400">vortex flow Sensor</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度流量传感器，提供±0.5%的测量精度，适用于液体和气体流量测量。
-                支持多种测量原理，满足不同应用场景的需求。
+                In the field of modern industrial automation, accurate flow measurement is crucial for ensuring the efficiency and quality of the production process. Vortex flow sensors play an indispensable role in many application scenarios due to their high precision, stability, and reliability.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +238,9 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的流量传感技术，为您的工业应用提供可靠的流量监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +271,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Product
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +281,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +291,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,32 +302,30 @@ export default function VortexFlowSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的流量传感器采用多种先进技术，包括热式、涡街、超声波和电磁等测量原理，
-                      根据不同的应用场景选择最适合的测量技术，确保测量精度和可靠性。
+                      Von Kaman vortex principle.Flow,temperature dual switching signal output,dual display. High-resolution lPS display.Four viewing directions can be switched.Cumulative flow recording function.Analog or switch output,compatible with lO-Link protocol.
                     </p>
                     <p>
-                      内置智能诊断功能，实时监测设备状态，支持多种输出信号格式。
-                      采用IP67防护设计，适用于各种恶劣工业环境。
+                      Switching signal NONC,NPN/PNP/push-pull optional.Units can be selected,simple button menu operation.Various thread specifications,suitable for different installation requirements.Compact size,takes up little space.Standard 4-pin M12 electrical interface.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Droplet className="text-yellow-400 mr-2" size={20} />
-                        <span>多种测量原理</span>
+                        <span>Principle and function</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>高精度测量</span>
+                        <span>IO-Link</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>宽流量范围</span>
+                        <span>Flexible signals</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>智能诊断</span>
+                        <span>Data record</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +344,7 @@ export default function VortexFlowSensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放技术演示</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +352,16 @@ export default function VortexFlowSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +385,7 @@ export default function VortexFlowSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +409,7 @@ export default function VortexFlowSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +426,9 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Application<span className="text-yellow-400"> Scenarios</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证流量传感器的价值</p>
+            <p className="text-xl text-gray-300">Vortex flow sensors are widely used in industrial pure water monitoring, flow and temperature management in mold temperature machines, cooling water monitoring, the food and beverage industry, etc.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -459,17 +456,17 @@ export default function VortexFlowSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm">{case_.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                     <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
@@ -484,9 +481,9 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              相关<span className="text-yellow-400">产品</span>
+              Related<span className="text-yellow-400"> Articles</span>
             </h2>
-            <p className="text-xl text-gray-300">与流量传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -550,26 +547,23 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              准备开始您的<span className="text-yellow-400">流量监测</span>项目？
+              Get your <span className="text-yellow-400">preferential</span> price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              我们的专业团队将为您提供个性化的流量传感器解决方案
+              Our professional team will provide you with personalized solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-gray-300">
-                <Phone size={20} className="mr-2 text-yellow-400" />
-                400-123-4567
-              </div>
+              
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                sensor@company.com
+                export.sentinel@gmail.com
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                联系我们
+                Contact us
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

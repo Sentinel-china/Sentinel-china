@@ -119,7 +119,7 @@ export default function TemperatureSensorDetail() {
     },
     {
       company: "Transmitter",
-      industry: "Sensor",
+      industry: "Temperature",
       challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
       solution: "",
       result: "",
@@ -205,7 +205,7 @@ export default function TemperatureSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    Temperature<span className="text-yellow-400">Sensor</span>
+                    Temperature<span className="text-yellow-400"> Sensor</span>
                   </h1>
                   <p className="text-gray-400">Temperature Sensor</p>
                 </div>
@@ -239,7 +239,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               Core<span className="text-yellow-400">Advantages</span>
+               Core<span className="text-yellow-400"> Advantages</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -427,7 +427,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400">Type</span>
+              Product<span className="text-yellow-400"> Type</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -482,7 +482,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Related<span className="text-yellow-400">Articles</span>
+              Related<span className="text-yellow-400"> Articles</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -548,7 +548,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your<span className="text-yellow-400">preferential</span>price
+              Get your<span className="text-yellow-400"> preferential</span> price
             </h2>
             <p className="text-xl text-gray-300 mb-8">
               Our professional team will provide you with personalized solutions.
