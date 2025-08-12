@@ -56,37 +56,32 @@ export default function LiquidLevelSensorDetail() {
   const features = [
     {
       icon: Waves,
-      title: "高精度检测",
-      description: "采用超声波和雷达技术，提供高精度液位检测，测量范围0-20米"
+      title: "Double parameter monitoring",
+      description: "Integrated liquid level and temperature dual monitoring."
     },
     {
       icon: Code,
-      title: "连续监测",
-      description: "支持连续液位监测，实时显示液位变化，提供报警功能"
+      title: "IO-Link",
+      description: "Supports the IO-Link protocol, making it easy to connect to various industrial control systems."
     },
     {
       icon: Zap,
-      title: "快速响应",
-      description: "响应时间小于1秒，适合快速变化的液位监测应用"
+      title: "Multiple output modes",
+      description: "It includes analog, digital signals, etc., and supports NPN/PNP/push - pull as well as normally open/normally closed."
     },
     {
       icon: Users,
-      title: "防腐蚀设计",
-      description: "316L不锈钢材质，适用于各种腐蚀性液体，防护等级IP68"
+      title: "Safe and convenient",
+      description: "Parameter locking function to prevent misoperation."
     }
   ]
 
   const productSpecs = [
-    { spec: "测量范围", value: "0-20米" },
-    { spec: "精度", value: "±0.1% FS" },
-    { spec: "响应时间", value: "<1秒" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP68" },
-    { spec: "工作电压", value: "24V DC" },
-    { spec: "长期稳定性", value: "±0.05%FS/年" },
-    { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-40°C to +85°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX" }
+    { spec: "Process connection", value: " | G1/2 external thread | G1/4 external thread | M18x1.5 internal thread | Split electronic compartment | " },
+    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) | analogue current;IO-Link | " },
+    { spec: "Probe material", value: " | 304 Stainless steel | 316 Stainless steel | " },
+    { spec: "Electrical connection", value: " | M12x1 connector | 2m cable | " },
+    { spec: "Probe length", value: " | 250mm | 500mm | (Customizable) | " }
   ]
 
   const downloads = [
@@ -112,27 +107,27 @@ export default function LiquidLevelSensorDetail() {
 
   const cases = [
     {
-      company: "某化工企业",
-      industry: "化工行业",
-      challenge: "需要监测储罐液位，确保安全生产和精确库存管理",
-      solution: "安装液位传感器，实现24小时连续监测",
-      result: "监测精度提升至99.9%，安全事故降低80%",
+      company: "In beer production",
+      industry: "liquid level Sensor",
+      challenge: "liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety.With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某水处理厂",
-      industry: "水处理",
-      challenge: "需要精确控制各处理池的液位，优化处理流程",
-      solution: "安装液位传感器，精确控制处理池液位",
-      result: "处理效率提升25%，能耗降低15%",
+      company: "Emulsion production enterprise",
+      industry: "liquid level Sensor",
+      challenge: "Since the emulsion has a certain viscosity, and some products have hygiene requirements for the contact materials, the enterprise has selected the liquid level sensor made of SENTINEL's food - grade materials. The sensor can accurately monitor the liquid level in the tank, and can also monitor the temperature of the emulsion, which is convenient for the enterprise to control the production process.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某石油储运企业",
-      industry: "石油储运",
-      challenge: "需要精确管理油罐液位，减少损耗",
-      solution: "提供油罐液位管理系统，实现精确监控",
-      result: "库存管理精度提升，损耗率降低50%",
+      company: "Beverage production enterprises",
+      industry: "liquid level Sensor",
+      challenge: "Food and beverage production enterprises need to strictly control the liquid level of storage tanks during the storage of raw materials such as fruit juice and syrup. The enterprise selects SENTINEL's food - grade 304 stainless - steel liquid - level sensor. At the same time, the sensor can issue low - liquid - level warnings in a timely manner to avoid production line stoppages caused by the depletion of raw materials, and also prevent raw material spills when the liquid level is high, which can cause waste and pollution. It provides strong support for the continuity and safety of food and beverage production.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -207,27 +202,29 @@ export default function LiquidLevelSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    liquid level<span className="text-yellow-400">Sensor</span>
+                    liquid level<span className="text-yellow-400"> Sensor</span>
                   </h1>
-                  <p className="text-gray-400">liquid level Sensor</p>
+                  <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                高精度液位传感器，采用超声波和雷达技术，提供0-20米测量范围的液位检测。
-                内置智能校准算法，自动补偿环境因素影响，确保测量精度。
+                The SENTINEL liquid level sensor is a critical device designed for detecting and measuring the height of liquids, providing real-time monitoring of level changes in containers or tanks. It is widely used in industrial automation, environmental protection, chemical energy, oil storage and transportation, food processing, and medical equipment, helping enterprises enhance safety, automation, and management efficiency.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={() => setActiveTab('description')}
+                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724378.html'}
                   className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  更多产品信息
+                  More
                 </button>
-                <button className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                  免费咨询
-                </button>
+                <Link
+                  to="/contact"
+                  className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
+>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
@@ -239,9 +236,9 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              核心<span className="text-yellow-400">优势</span>
+              Core<span className="text-yellow-400"> Advantages</span>
             </h2>
-            <p className="text-xl text-gray-300">专业的液位传感技术，为您的工业液体存储和处理提供可靠的液位监测</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -272,7 +269,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                产品描述
+                Product
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -282,7 +279,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                技术规格
+                Parameters
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -292,7 +289,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                资源下载
+                Downloads
               </button>
             </div>
           </div>
@@ -303,32 +300,30 @@ export default function LiquidLevelSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">技术架构</h3>
+                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-300">
                     <p>
-                      我们的液位传感器采用超声波和雷达技术，结合精密电子电路设计，
-                      实现高精度、快速响应的液位测量。传感器采用316L不锈钢外壳，具备优异的耐腐蚀性能。
+                      IO-Link Smart liquid level/Temperature Sensor.4-digit large digital tube display, mirroring, semi-transparent design.The display panel adopts an integrated molded housing.
                     </p>
                     <p>
-                      内置信号调理电路，支持多种输出信号格式，包括4-20mA、0-10V和RS485数字信号。
-                      采用IP68防护设计，适用于各种恶劣工业环境。
+                      Standard 4-pin A-code M12 interface.Simple key operation,with key lock funcition.The upper part of the housing can be rotated 300°.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Waves className="text-yellow-400 mr-2" size={20} />
-                        <span>高精度检测</span>
+                        <span>Double parameter monitoring</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>连续监测</span>
+                        <span>IO-Link</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>快速响应</span>
+                        <span>Multiple output modes</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>防腐蚀设计</span>
+                        <span>Safe and convenient</span>
                       </div>
                     </div>
                   </div>
@@ -347,7 +342,7 @@ export default function LiquidLevelSensorDetail() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">点击播放技术演示</p>
+                  <p className="text-gray-400 text-center mt-4"></p>
                 </div>
               </div>
             )}
@@ -355,16 +350,16 @@ export default function LiquidLevelSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">技术规格</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          技术项目
+                          PROJECT
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          规格详情
+                          PARAMETER
                         </th>
                       </tr>
                     </thead>
@@ -388,7 +383,7 @@ export default function LiquidLevelSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">资源下载</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">Downloads</h3>
                 <div className="grid md:grid-cols-3 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -412,7 +407,7 @@ export default function LiquidLevelSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          立即下载
+                          Download Immediately
                         </a>
                       </div>
                     </div>
@@ -429,9 +424,9 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Application<span className="text-yellow-400"> Scenarios</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证液位传感器的价值</p>
+            <p className="text-xl text-gray-300">SENTINEL's level sensors are widely applied in food and beverage, emulsion, pharmaceutical, chemical, and water treatment industries, enabling precise level monitoring in various liquid tanks, reactors, and pipeline systems.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -459,17 +454,17 @@ export default function LiquidLevelSensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
                      <p className="text-gray-300 text-sm">{case_.challenge}</p>
                    </div>
                    
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">解决方案</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
                    <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">成果</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
                      <p className="text-gray-300 text-sm font-semibold">{case_.result}</p>
                    </div>
                 </div>
@@ -484,9 +479,9 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               相关<span className="text-yellow-400">产品</span>
+               Related<span className="text-yellow-400"> Articles</span>
              </h2>
-            <p className="text-xl text-gray-300">与液位传感器相辅相成的其他传感器产品</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="relative">
@@ -550,26 +545,23 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               准备开始您的<span className="text-yellow-400">液位监测</span>项目？
+               Get your<span className="text-yellow-400"> preferential</span> price
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               我们的专业团队将为您提供个性化的液位传感器解决方案
+               Our professional team will provide you with personalized solutions.
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-               <div className="flex items-center text-gray-300">
-                 <Phone size={20} className="mr-2 text-yellow-400" />
-                 400-123-4567
-               </div>
+              
                <div className="flex items-center text-gray-300">
                  <Mail size={20} className="mr-2 text-yellow-400" />
-                 sensor@company.com
+                 export.sentinel@gmail.com
                </div>
              </div>
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 联系我们
+                 Contact us
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>
