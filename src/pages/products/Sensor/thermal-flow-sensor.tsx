@@ -144,32 +144,38 @@ export default function ThermalFlowSensorDetail() {
     {
       title: "温度传感器",
       description: "高精度温度测量解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature01"
     },
     {
       title: "流量传感器",
       description: "精确的流量监测设备",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature02"
     },
     {
       title: "振动传感器",
       description: "工业设备振动监测",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature03"
     },
     {
       title: "电流传感器",
       description: "非接触式电流测量",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature04"
     },
     {
       title: "安全传感器",
       description: "工业安全监测设备",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature05"
     },
     {
       title: "IO模块",
       description: "工业自动化IO模块",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature06"
     }
   ]
 
@@ -492,7 +498,7 @@ export default function ThermalFlowSensorDetail() {
 
           <div className="relative">
             {/* Left Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {relatedProducts.length > 3 && (
               <button
                 onClick={scrollLeft}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -502,7 +508,7 @@ export default function ThermalFlowSensorDetail() {
             )}
 
             {/* Right Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {relatedProducts.length > 3 && (
               <button
                 onClick={scrollRight}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -513,49 +519,38 @@ export default function ThermalFlowSensorDetail() {
 
             <div 
               ref={scrollContainerRef}
-              className={`flex flex-wrap gap-[60px] p-2.5 ${
-                relatedProducts.length === 1 
+              className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
+                relatedProducts.length <= 3 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
               onScroll={handleScroll}
-              style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', padding: '10px' }}
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative w-[300px] overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                    {/* 产品图片 */}
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full block"
-                      style={{ display: 'block' }}
-                    />
-                    {/* 覆盖文本层（无链接避免类型错误） */}
-                    <div
-                      className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 font-bold text-base"
-                      style={{
-                        position: 'absolute',
-                        bottom: '0',
-                        left: '0',
-                        width: '100%',
-                        background: 'rgba(0, 0, 0, 0.6)',
-                        color: 'white',
-                        textAlign: 'center',
-                        padding: '10px 0',
-                        fontWeight: 'bold',
-                        fontSize: '16px'
-                      }}
-                    >
-                      Download
+                  <Link to={product.link} className="block">
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
+                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                      </div>
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="text-yellow-400" size={20} />
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
             
             {/* Scroll indicator - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {relatedProducts.length > 3 && (
               <div className="flex justify-center mt-4 sm:mt-6">
                 <div className="flex space-x-1 sm:space-x-2">
                   {Array.from({ length: totalSlides }, (_, index) => (
