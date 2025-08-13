@@ -21,6 +21,7 @@ import ProductDetail from './pages/markdown-config/ProductDetail'
 import IOLinkDetail from './pages/markdown-config/iolinkdetail'
 import ConnectivityDetail from './pages/markdown-config/ConnectivityDetail'
 import TemperatureDetail from './pages/markdown-config/TemperatureDetail'
+import ThermalDetail from './pages/markdown-config/ThermalDetail'
 // 导入传感器详情页面
 import TemperatureSensor from './pages/products/Sensor/temperature-sensor'
 import ThermalFlowSensor from './pages/products/Sensor/thermal-flow-sensor'
@@ -56,6 +57,7 @@ export default function App() {
             <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
             <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
             <Route path="/products/connectivity/:productId" element={<ConnectivityDetail />} />
+            <Route path="/products/thermal/:productId" element={<ThermalDetail />} />
             <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />

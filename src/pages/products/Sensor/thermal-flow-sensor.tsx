@@ -142,40 +142,40 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "温度传感器",
-      description: "高精度温度测量解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature01"
+      title: "Thermal Flow Sensor Technology",
+      description: "Learn about thermal conductivity principles and flow monitoring technology",
+      image: "http://image.sentinel-china.com/202508111332828.png",
+      link: "/products/thermal/thermal01"
     },
     {
-      title: "流量传感器",
-      description: "精确的流量监测设备",
+      title: "Insertion Flow Measurement",
+      description: "Advanced insertion measurement techniques for reliable liquid flow monitoring",
+      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      link: "/products/thermal/thermal02"
+    },
+    {
+      title: "Industrial Flow Sensor Applications",
+      description: "Comprehensive applications of thermal flow sensors in factory automation",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      link: "/products/thermal/thermal03"
+    },
+    {
+      title: "Flow Sensor Installation Guide",
+      description: "Professional installation and setup guide for thermal flow sensors",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature02"
+      link: "/products/thermal/thermal04"
     },
     {
-      title: "振动传感器",
-      description: "工业设备振动监测",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature03"
-    },
-    {
-      title: "电流传感器",
-      description: "非接触式电流测量",
+      title: "Flow Monitoring Solutions",
+      description: "Complete flow monitoring solutions for various industrial applications",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature04"
+      link: "/products/thermal/thermal05"
     },
     {
-      title: "安全传感器",
-      description: "工业安全监测设备",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature05"
-    },
-    {
-      title: "IO模块",
-      description: "工业自动化IO模块",
+      title: "Advanced Flow Sensor Technology",
+      description: "Latest advancements in thermal flow sensor technology and innovation",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/markdown-config/temperature06"
+      link: "/products/thermal/thermal06"
     }
   ]
 
