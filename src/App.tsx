@@ -20,6 +20,7 @@ import SolutionsDetail from './pages/markdown-config/SolutionsDetail'
 import ProductDetail from './pages/markdown-config/ProductDetail'
 import IOLinkDetail from './pages/markdown-config/iolinkdetail'
 import ConnectivityDetail from './pages/markdown-config/ConnectivityDetail'
+import PressureDetail from './pages/markdown-config/PressureDetail'
 import VortexDetail from './pages/markdown-config/VortexDetail'
 import TemperatureDetail from './pages/markdown-config/TemperatureDetail'
 import ThermalDetail from './pages/markdown-config/ThermalDetail'
@@ -58,6 +59,7 @@ export default function App() {
             <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
             <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
             <Route path="/products/connectivity/:productId" element={<ConnectivityDetail />} />
+            <Route path="/products/pressure/:productId" element={<PressureDetail />} />
             <Route path="/products/vortex/:productId" element={<VortexDetail />} />
             <Route path="/products/thermal/:productId" element={<ThermalDetail />} />
             <Route path="/markdown-config/:id" element={<TemperatureDetail />} />

@@ -1,0 +1,299 @@
+/**
+ * Pressure产品案例详情页面组件
+ * 动态加载Pressure产品案例markdown文档并应用统一样式
+ */
+import { useParams, Link } from 'react-router'
+import { ArrowLeft } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import './markdown-styles.css'
+
+// 导入Pressure产品案例markdown文件
+import pressure01Content from '../articles/markdown-cases/pressure01.md?raw'
+import pressure02Content from '../articles/markdown-cases/pressure02.md?raw'
+import pressure03Content from '../articles/markdown-cases/pressure03.md?raw'
+import pressure04Content from '../articles/markdown-cases/pressure04.md?raw'
+import pressure05Content from '../articles/markdown-cases/pressure05.md?raw'
+import pressure06Content from '../articles/markdown-cases/pressure06.md?raw'
+
+// Pressure产品案例配置映射
+const pressureConfig = {
+  'pressure01': {
+    title: "Pressure Sensor Basics",
+    description: "Learn about the fundamentals of pressure sensors and their applications in industrial automation.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+  },
+  'pressure02': {
+    title: "Pressure Transmitter Technology",
+    description: "Advanced pressure transmitter solutions with digital compensation and high stability.",
+    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
+  },
+  'pressure03': {
+    title: "SEH Series Features",
+    description: "SEH series pressure sensors with flexible installation and advanced display features.",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
+  },
+  'pressure04': {
+    title: "Installation & Maintenance",
+    description: "Comprehensive guide for pressure sensor installation, debugging and maintenance.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+  },
+  'pressure05': {
+    title: "Application Cases",
+    description: "Real-world applications of pressure sensors in various industrial scenarios.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+  },
+  'pressure06': {
+    title: "Selection Guide & Trends",
+    description: "Pressure sensor selection guidelines and future technology trends.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+  }
+}
+
+// markdown内容映射
+const markdownContentMap = {
+  'pressure01': pressure01Content,
+  'pressure02': pressure02Content,
+  'pressure03': pressure03Content,
+  'pressure04': pressure04Content,
+  'pressure05': pressure05Content,
+  'pressure06': pressure06Content
+}
+
+// 简化的markdown渲染函数
+function renderMarkdown(markdown: string): string {
+  return markdown
+    // 移除HTML注释
+    .replace(/<!--[\s\S]*?-->/g, '')
+    
+    // 图片渲染 - 必须在其他替换之前
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="max-w-full h-auto rounded-lg shadow-lg my-4" />')
+    
+    // 分隔线处理
+    .replace(/^---$/gim, '<hr class="border-gray-600 my-8" />')
+    
+    // 标题渲染 - 必须在列表处理之前
+    .replace(/^#### (.*$)/gim, '<h4>$1</h4>')
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    
+    // 引用块处理
+    .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
+    
+    // 粗体文本
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    
+    // 斜体文本
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    
+    // 代码块
+    .replace(/```([\s\S]*?)```/g, '<pre class="bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>')
+    
+    // 行内代码
+    .replace(/`([^`]+)`/g, '<code class="bg-gray-800 px-1 py-0.5 rounded text-sm">$1</code>')
+    
+    // 链接 - 改进版本，处理特殊格式
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-yellow-400 hover:text-yellow-300 underline" target="_blank" rel="noopener noreferrer">$1</a>')
+    
+    // 处理强制换行（两个空格结尾）
+    .replace(/  \n/g, '<br>')
+    
+    // 段落处理 - 改进版本
+    .split(/\n\s*\n/)
+    .map(block => {
+      const trimmedBlock = block.trim()
+      
+      // 如果块是标题、图片、分隔线等，直接返回
+      if (trimmedBlock.match(/^<(h[1-6]|img|hr|pre|blockquote)/)) {
+        return block
+      }
+      
+      // 如果块是空行，跳过
+      if (trimmedBlock === '') {
+        return ''
+      }
+      
+      // 处理列表项
+      const lines = trimmedBlock.split('\n').filter(line => line.trim() !== '')
+      const listItems = lines.filter(line => line.trim().match(/^[\-\*] /))
+      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. /))
+      
+      if (listItems.length > 0) {
+        // 无序列表
+        const items = listItems.map(line => {
+          const content = line.trim().replace(/^[\-\*] /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
+        }).join('')
+        return `<ul class="space-y-2 my-4">${items}</ul>`
+      } else if (orderedListItems.length > 0) {
+        // 有序列表
+        const items = orderedListItems.map(line => {
+          const content = line.trim().replace(/^\d+\. /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
+        }).join('')
+        return `<ol class="space-y-2 my-4">${items}</ol>`
+      }
+      
+      // 处理连续的段落文本
+      if (lines.length > 1) {
+        // 如果有多个非空行，每行作为一个段落
+        return lines.map(line => `<p>${line.trim()}</p>`).join('')
+      }
+      
+      // 其他情况包装在p标签中
+      return `<p>${trimmedBlock}</p>`
+    })
+    .join('')
+    
+    // 清理空标签和多余的p标签
+    .replace(/<p><\/p>/g, '')
+    .replace(/<p>(<h[1-6]|img|hr|pre|blockquote|ul|ol)/g, '$1')
+    .replace(/(<\/h[1-6]|<\/img>|<\/hr>|<\/pre>|<\/blockquote>|<\/ul>|<\/ol>)<\/p>/g, '$1')
+    
+    // 处理图片后的文本
+    .replace(/(<\/img>)\s*([^<]+)/g, '$1<p>$2</p>')
+    
+    // 清理多余的空白和空行
+    .replace(/\n\s*\n/g, '\n')
+    .replace(/>\s+</g, '><')
+    .trim()
+}
+
+export default function PressureDetail() {
+  const { productId } = useParams<{ productId: string }>()
+  const [product, setProduct] = useState<any>(null)
+  const [markdownContent, setMarkdownContent] = useState<string>('')
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (productId && pressureConfig[productId as keyof typeof pressureConfig]) {
+      setProduct(pressureConfig[productId as keyof typeof pressureConfig])
+      
+      // 直接加载markdown内容
+      loadMarkdownContent(productId)
+    }
+  }, [productId])
+
+  const loadMarkdownContent = async (id: string) => {
+    try {
+      setLoading(true)
+      setError(null)
+      
+      console.log('尝试加载Pressure产品markdown文件:', id)
+      
+      // 从markdown内容映射中获取内容
+      const content = markdownContentMap[id as keyof typeof markdownContentMap]
+      
+      if (content) {
+        console.log('加载的markdown内容长度:', content.length)
+        console.log('内容预览:', content.substring(0, 200) + '...')
+        setMarkdownContent(content)
+      } else {
+        console.log('未找到markdown文件:', id)
+        // 如果文件不存在，显示默认内容
+        const defaultContent = `# ${pressureConfig[id as keyof typeof pressureConfig]?.title || 'Pressure产品详情'}
+
+## 概述
+
+该Pressure产品的详细文档正在准备中，请稍后再来查看。
+
+## 产品特点
+
+- 高精度压力测量
+- 多种输出信号
+- 工业级防护
+- IO-Link通信
+
+## 技术规格
+
+- 测量范围：-1...600 bar
+- 精度：±0.5% FS
+- 防护等级：IP67
+- 工作温度：-40°C ~ +85°C
+
+## 应用领域
+
+- 液压系统
+- 气动系统
+- 工业管道
+- 储罐监测`
+        
+        setMarkdownContent(defaultContent)
+      }
+    } catch (err) {
+      console.error('加载markdown文件失败:', err)
+      setError('加载文档失败，请稍后重试')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  if (!product) {
+    return (
+      <div className="min-h-screen pt-16 bg-gray-900">
+        <div className="max-w-4xl mx-auto px-4 py-16">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-white mb-4">产品未找到</h1>
+            <p className="text-gray-300 mb-8">抱歉，您访问的产品不存在。</p>
+            <Link 
+              to="/products/sensor/pressure-sensor" 
+              className="inline-flex items-center text-yellow-400 hover:text-yellow-300"
+            >
+              <ArrowLeft size={20} className="mr-2" />
+              返回Pressure Sensor产品页面
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen pt-16">
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto">
+          <Link 
+            to="/products/sensor/pressure-sensor" 
+            className="inline-flex items-center text-yellow-400 hover:text-yellow-300 mb-6 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Pressure Sensor Products
+          </Link>
+          
+          <div className="mb-8">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-2 text-white">
+              {product.title}
+            </h1>
+            <p className="text-xl text-gray-400">{product.description}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Content */}
+      <section className="px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="max-w-4xl mx-auto">
+          {loading ? (
+            <div className="text-center py-16">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400 mx-auto mb-4"></div>
+              <p className="text-gray-400">Loading...</p>
+            </div>
+          ) : error ? (
+            <div className="bg-red-900/20 border border-red-500/20 rounded-lg p-6">
+              <h2 className="text-xl font-bold text-red-400 mb-4">Loading Failed</h2>
+              <p className="text-gray-300">{error}</p>
+            </div>
+          ) : (
+            <div className="prose prose-invert prose-yellow max-w-none">
+              <div 
+                className="markdown-content"
+                dangerouslySetInnerHTML={{ __html: renderMarkdown(markdownContent) }}
+              />
+            </div>
+          )}
+        </div>
+      </section>
+    </div>
+  )
+}
