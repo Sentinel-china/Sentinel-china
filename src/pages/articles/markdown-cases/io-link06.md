@@ -11,8 +11,6 @@ Example: In **natural fragrance** extraction, negative pressure distillation pre
 
 ![Negative Pressure Distillation Equipment](http://image.sentinel-china.com/202410242248851.png)
 
----
-
 ### Operating Principle of Negative Pressure Distillation
 
 Negative pressure distillation lowers system pressure, enabling liquids to **evaporate below their normal boiling point**.
@@ -22,8 +20,6 @@ Negative pressure distillation lowers system pressure, enabling liquids to **eva
 2. **Heating the material** – Liquids evaporate at a reduced temperature.  
 3. **Steam condensation** – Evaporated gas is cooled in a condenser and converted back to liquid.  
 4. **Product collection** – Condensed liquid is collected, yielding **high-purity separation**.
-
----
 
 ## Pressure Sensors — The Core of Negative Pressure Distillation
 
@@ -41,8 +37,6 @@ By connecting to a control system, pressure sensors:
 - Maintain pressure within the target range
 - Reduce maintenance costs
 - Extend equipment lifespan
-
----
 
 ## SENTINEL Food- and Pharmaceutical-Grade Negative Pressure Sensors
 
@@ -62,14 +56,10 @@ By connecting to a control system, pressure sensors:
 - Enables **smart monitoring** and **predictive maintenance**
 - Faster response and higher accuracy than traditional sensors
 
----
-
 ## Conclusion
 
 Negative pressure distillation is essential in **food** and **pharmaceutical** production, and **precise pressure control** is critical.  
 SENTINEL’s negative pressure sensors combine **accuracy**, **hygienic design**, and **smart functionality**, offering a **cost-effective** and **reliable** solution to improve efficiency and maintain high product quality.
-
----
 
 ### Customer Support & Services
 

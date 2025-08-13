@@ -4,8 +4,6 @@ In 2019, embracing the trend of intelligent manufacturing, the company launched 
 After **five years** of continuous R&D and technical accumulation, SENTINEL’s IO-Link substation devices have reached a high level of maturity.  
 This article introduces several representative products and showcases their **applications** and **advantages** in industrial automation.
 
----
-
 ## Background & Advantages of IO-Link Technology
 
 IO-Link is an **open standard point-to-point communication protocol** that enables:
@@ -20,8 +18,6 @@ Core advantages:
 - Supports **predictive maintenance**
 - Reduces unexpected downtime
 
----
-
 ## Maturity & Diversified Selection of Substation Devices
 
 SENTINEL offers **IP20** and **IP67** series to meet different industrial needs, excelling in:
@@ -30,8 +26,6 @@ SENTINEL offers **IP20** and **IP67** series to meet different industrial needs,
 - Installation flexibility
 
 ![SENTINEL IO-Link Product Range](http://image.sentinel-china.com/202410171358445.png)
-
----
 
 ### IP20 Series — High-Density I/O Integration
 
@@ -48,8 +42,6 @@ Features:
 **Applications:**  
 Ideal for **electronic manufacturing** or **precision assembly** industries where high I/O density improves efficiency and reduces wiring complexity.
 
----
-
 ### IP67 Series — Harsh Environment Adaptability
 
 Built for outdoor or challenging industrial environments.  
@@ -63,8 +55,6 @@ Configurations:
 
 ![M8 Series](http://image.sentinel-china.com/202410100151708.png)  
 Suitable for **multi-point control** in **space-limited** setups.
-
----
 
 #### M12 Specification — Powerful & Flexible
 Configurations:
@@ -86,15 +76,11 @@ Configurations:
 - **M8**: Compact automation systems  
 - **M12**: Large-scale machinery, logistics handling, high-current outputs, or precise signal monitoring
 
----
-
 ## Technical Advantages of SENTINEL IO-Link Substations
 
 - **Multiple types** for diverse automation needs
 - **Modular design** for easy installation & expansion
 - **High environmental adaptability**, especially in IP67 series
-
----
 
 ## Conclusion
 
@@ -103,8 +89,6 @@ Since 2019, SENTINEL’s IO-Link substation devices have evolved into **mature, 
 - IP67: Rugged adaptability with flexible configurations
 
 The company will continue to innovate and **deliver flexible, intelligent IO-Link solutions** to meet evolving industrial demands.
-
----
 
 ### Customer Support & Service
 

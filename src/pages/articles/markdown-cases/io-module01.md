@@ -4,7 +4,7 @@ As industrial automation systems continue to evolve toward modularity and flexib
 
 ![ELPN-16SAP-L001 Module](http://image.sentinel-china.com/202504110930209.png)
 
----
+
 
 ## Simplified Deployment: Input-Output Adaptive Mechanism
 
@@ -16,13 +16,13 @@ The module offers **16 PNP-type channels**, each rated for 0.5A output current (
 
 Input channels operate in **PNP high-level active mode**, with an input resistance of about 3kΩ and an input delay of 3ms—ensuring stable signal response in the field. All input and output channels use **optical isolation** to enhance electrical safety and prevent interference from affecting the control system.
 
----
+
 
 ## Network Interface and Control Logic for Mainstream Automation Platforms
 
 The module uses the **PROFINET** communication protocol, equipped with dual 100Base-TX Ethernet ports supporting auto-negotiation and auto-crossover, with a maximum transmission rate of 100 Mbit/s. Standard **M12 D-code** connectors facilitate field wiring, while **LINK** and **ACT** LED indicators provide intuitive network status feedback for easier maintenance and troubleshooting.
 
----
+
 
 ## Strong Environmental Adaptability and Flexible Installation
 
@@ -30,19 +30,19 @@ Designed to operate in **-20°C to 55°C** industrial temperature ranges, the mo
 
 A particularly noteworthy feature: when an output is active, the corresponding input channel receives a feedback signal, allowing users to confirm output status without additional wiring—simplifying feedback logic design.
 
----
+
 
 ## Focus on Functional Essentials to Improve System Integration Efficiency
 
 The ELPN-16SAP-L001 does not compete through raw performance stacking but rather through improvements in **ease of use, configuration efficiency, and installation simplicity**. Its input-output adaptive concept reflects a deep understanding of real engineering needs. This makes it well-suited for assembly lines, logistics conveyors, process control, and other scenarios—especially those requiring rapid deployment or mixed signal types in automated environments.
 
----
+
 
 ## Conclusion
 
 The ELPN-16SAP-L001 focuses on the **"adaptive"** design concept, offering a more convenient I/O solution for industrial sites. By automatically detecting input and output signals, combined with stable communication performance and robust electrical protection, the module boosts deployment efficiency while ensuring operational reliability. For applications prioritizing installation flexibility, signal compatibility, and long-term maintenance cost control, this module offers a **sustainable and practical choice**.
 
----
+
 
 ### Customer Support & Services
 

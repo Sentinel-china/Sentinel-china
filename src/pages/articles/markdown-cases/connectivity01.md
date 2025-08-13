@@ -5,8 +5,6 @@ Connectors are not just passive components—they are the **lifelines** of equip
 
 This guide introduces **common connector types** in industrial automation, their **features**, **applications**, and how to **select the right connectors and cables**.
 
----
-
 ## 1. Connectors for Sensors and Actuators
 
 Sensors and actuators are the *“eyes”* and *“arms”* of the production line. Reliable connections are critical.
@@ -26,8 +24,6 @@ Sensors and actuators are the *“eyes”* and *“arms”* of the production li
 - **Cable:** 22–24 AWG (shielded for EMI protection)
 - **Use:** Factory automation, robotics, process control
 - **Advantage:** Handles signal + power in harsh conditions
-
----
 
 ## 2. Communication Connectors
 
@@ -57,8 +53,6 @@ Data transmission is critical for **fieldbus** and **industrial Ethernet** syste
 - **Use:** Industrial control, data centers
 - **Advantage:** Universally compatible, ruggedized options available
 
----
-
 ## 3. Power Connectors
 
 Reliable power delivery is **critical** for automation.
@@ -79,8 +73,6 @@ Reliable power delivery is **critical** for automation.
 - **Use:** Servo drives, automation power systems
 - **Advantage:** High power in limited space
 
----
-
 ## 4. Pre-Cast vs. Field-Installed Connectors
 
 ### **Pre-Cast**
@@ -96,8 +88,6 @@ Reliable power delivery is **critical** for automation.
 - **Cons:** Requires skilled installation
 - **Best for:** Frequent wiring changes or testing setups
 
----
-
 ## Choosing the Right Connector
 
 Selection depends on:
@@ -106,8 +96,6 @@ Selection depends on:
 - **Function:** Power, signal, data
 - **Flexibility Needs:** Fixed vs. frequent rewiring
 - **Cable Specs:** Gauge, shielding, insulation
-
----
 
 ## Conclusion
 
@@ -119,8 +107,6 @@ The right choice ensures:
 - **Reduced maintenance costs**
 
 As automation advances, connector technology continues to evolve, supporting **smart manufacturing** and **efficient production**.
-
----
 
 ### Customer Support & Service
 

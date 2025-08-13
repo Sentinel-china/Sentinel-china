@@ -2,7 +2,7 @@
 
 The production process of tires involves multiple stages such as raw material processing, forming, vulcanization, and quality inspection. Each stage requires a highly precise control system. Traditional wiring methods have issues such as complex wiring, difficult installation and maintenance, and poor system scalability. To overcome these challenges, bus module products provide customers with more efficient solutions by simplifying wiring, improving system reliability and flexibility, and significantly enhancing the overall efficiency of tire conveyor lines.
 
----
+
 
 ## Advantages of Bus Modules
 
@@ -22,7 +22,7 @@ Bus modules connect all devices through a unified communication bus, significant
 - **Quick installation** – Modular design and standardized interfaces make the installation process faster, significantly reducing installation time  
 - **Flexible expansion** – When the production line needs to expand or adjust, only adding or adjusting the bus module is required without re-wiring, reducing expansion costs and time
 
----
+
 
 ## SENTINEL Bus Modules
 
@@ -44,7 +44,7 @@ Our bus modules undergo strict quality control and testing. Each product is rigo
 
 Each product also undergoes **at least 24 hours** of aging testing before leaving the factory to ensure stable operation in various harsh industrial environments. The modules have high interference resistance and strong error detection functions, effectively reducing system failures and downtime, ensuring continuous operation of the production line.
 
----
+
 
 ## Application Cases
 
@@ -52,7 +52,7 @@ In a large TBR tire manufacturing enterprise, our CC-Link IE Field Basic protoco
 
 ![Application Case](http://image.sentinel-china.com/202406191025747.png)
 
----
+
 
 ## Customer Support and Services
 

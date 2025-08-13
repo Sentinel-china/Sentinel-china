@@ -9,8 +9,6 @@ With its **standardized, modular architecture**, IO-Link plays a vital role in b
 By **September 2023**, the number of IO-Link device nodes worldwide exceeded **35 million** (Sensor Expert Network data), and the number continues to grow.  
 As a cornerstone of **digital factories**, IO-Link reduces hardware and installation costs, lowers maintenance efforts, and minimizes system complexity — bringing **significant economic benefits** to equipment manufacturers and end-users.
 
----
-
 ## The Value of IO-Link to Users
 
 ### Standardized Interface for Seamless Brand Interchangeability
@@ -18,26 +16,18 @@ As a cornerstone of **digital factories**, IO-Link reduces hardware and installa
 IO-Link is a **fully open** protocol, allowing devices from different manufacturers to follow the same standard.  
 This ensures **seamless replacement** between brands, simplifying integration and providing users with **greater flexibility** and **lower maintenance costs**.
 
----
-
 ### Remote Configuration & Parameter Storage
 In process control, sensor calibration and parameter settings often require **frequent adjustments**.  
 IO-Link supports **remote parameter configuration**, and when a device is replaced, the **master station automatically restores original settings** — eliminating manual reconfiguration, reducing downtime, and streamlining maintenance.
-
----
 
 ### Cost Savings: High-Cost-Performance Wiring
 ![IO-Link Wiring Cost Advantage](http://image.sentinel-china.com/202411081117694.jpg)  
 Compared to traditional IP67 bus or Ethernet I/O modules, **IO-Link solutions are ~30% cheaper**.  
 They use **standard sensor cables** without special shielding, and with IO-Link splitters, an **8-channel master** can connect up to **256 I/O points**, greatly improving wiring cost-efficiency.
 
----
-
 ### Digital Output — No Extra A/D Conversion
 Traditional analog sensors require **analog-to-digital conversion** before PLC processing.  
 IO-Link outputs **digital signals directly**, removing the need for analog input modules, simplifying architecture, and improving data **accuracy and stability**.
-
----
 
 ### Miniaturization & Cross-Brand Compatibility
 While other bus/Ethernet devices support digital output, they often require **larger couplers** and **higher costs**.  
@@ -46,8 +36,6 @@ IO-Link supports **miniaturized sensor designs** and **brand interchangeability*
 - Linear displacement sensors
 - Laser distance meters
 - Electromagnetic flowmeters
-
----
 
 ## SENTINEL's Comprehensive IO-Link Master Protocols
 
@@ -60,8 +48,6 @@ Integrating IO-Link masters with PROFINET allows **fast sensor access**, **stand
 ### EtherCAT
 Renowned for **high-speed, real-time** performance, EtherCAT is ideal for **motion control** and **precision manufacturing**.  
 Integrating IO-Link masters ensures **synchronized data** and **real-time responses** in demanding applications.
-
----
 
 ## Customer Support & Services
 

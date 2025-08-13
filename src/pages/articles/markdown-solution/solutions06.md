@@ -1,6 +1,6 @@
 With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing. China plays an essential role in this transformation, being the largest producer of photovoltaic products worldwide and the forefront of technological innovation and market application. Thanks to its strong manufacturing capability and substantial government support, China's photovoltaic industry is developing in depth, driving global technological progress and the widespread application of photovoltaic technology.
 
----
+
 
 ## Important Link in the Photovoltaic Industry Chain: Monocrystalline Silicon Production
 
@@ -10,7 +10,7 @@ The production process of monocrystalline silicon includes ingot casting (pullin
 
 ![Monocrystalline Silicon Production](https://image.sentinel-china.com/2024-03-14-%E5%86%85%E9%A1%B5.jpg)
 
----
+
 
 ## SENTINEL Solutions
 
@@ -20,7 +20,7 @@ A domestic photovoltaic component equipment manufacturer adopted the EL series r
 
 ![EL Series Remote I/O Modules](http://image.sentinel-china.com/202403150857655.jpg)
 
----
+
 
 ### Solution 2: CM Series Remote I/O Modules
 
@@ -28,14 +28,14 @@ In another project, considering the need for cost control, the customer requeste
 
 ![CM Series Remote I/O Modules](http://image.sentinel-china.com/202403150858578.jpg)
 
----
+
 
 These two series of products have their respective advantages ([for detailed product information, please refer to past articles](https://www.sentinel-china.com/eInformation/1056.html)):
 
 - The **EL series** modules are particularly suitable for applications that require high installation flexibility and streamlined installation processes, thanks to their high field adaptability.
 - The **CM series** modules are characterized by their cost-effectiveness and the savings on connector costs, meeting the needs of cost-sensitive projects where the application environment allows.
 
----
+
 
 ## Our Positioning and Customer Value
 
@@ -43,7 +43,7 @@ Tianjin SENTINEL Electronics Co., Ltd. is dedicated to providing reliable automa
 
 As a provider of technology services in the field of industrial automation, we look forward to collaborating with industry partners to jointly promote the technological progress and sustainable development of the photovoltaic industry, creating more value for customers and society.
 
----
+
 
 For more information about our products, please contact our sales personnel or call the company at **022-83726972**. You can also visit SENTINEL's official website at [www.sentinel-china.com](http://www.sentinel-china.com).
 

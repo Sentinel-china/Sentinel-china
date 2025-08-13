@@ -2,8 +2,6 @@ I am the Electrical Manager of a domestic pharmaceutical company. The company is
 
 At the invitation of [company/contact], today I would like to discuss my experience using the **SENTINEL remote IO module**.
 
----
-
 ## Industrial Manufacturing and Product Selection
 
 In this construction project, we needed to centrally monitor multiple conveyor equipment and their operating status. After comparing products from several domestic companies, contacting their technical support, and trying their products, I ultimately gave the highest evaluation to **SENTINEL**.
@@ -16,8 +14,6 @@ In terms of product selection, we ultimately used the **Mitsubishi FX5U series P
 
 ![CMBC Distributed Modules](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621163940366.png)
 
----
-
 ## Application Experience and Effectiveness
 
 I use this module for **distributed site layout**, directly accessing on-site equipment status signals and sensors. During debugging and use, I found that signal collection and control output are **very smooth**, and communication with PLC systems via **TCP/IP network** greatly reduces the amount of wiring needed for central control.
@@ -25,8 +21,6 @@ I use this module for **distributed site layout**, directly accessing on-site eq
 This approach **speeds up construction progress** and **saves cable and labor costs**.
 
 ![Site Layout Example](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621164029069.png)
-
----
 
 ## Communication and Service Experience
 
@@ -36,8 +30,6 @@ For example, through communication with technical staff, I gained a better under
 
 The **technical documentation** they provided was thorough and easy to navigate. I believe that choosing SENTINEL means choosing **reliable technical support and after-sales service**.
 
----
-
 ## Summary and Suggestions
 
 Through communication and cooperation with the SENTINEL team, I am **very satisfied** with their products and services. The product performance is stable and reliable, the team is professional, and the service is considerate.
@@ -45,8 +37,6 @@ Through communication and cooperation with the SENTINEL team, I am **very satisf
 I believe that in future work, I will continue to choose SENTINEL.
 
 Finally, I hope SENTINEL can develop **scalable remote IO** in the future, which can greatly improve the flexibility of on-site IO point layout.
-
----
 
 ### Customer Support and Services
 

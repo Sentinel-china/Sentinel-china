@@ -2,8 +2,6 @@ In the world of industrial automation, signals are the language of communication
 Different types of signals determine what kind of information a control system can receive, thereby influencing how equipment responds, production efficiency, and overall system intelligence.  
 From the early **digital signals** to more refined **analog signals**, and now to **IO-Link**, which integrates data acquisition, diagnostics, and communication — the evolution of signals is not just a technical upgrade, but a necessary step toward intelligent manufacturing.
 
----
-
 ## Digital Signal: The "Basic Language" of Automation
 
 ![Digital signal in automation system](http://image.sentinel-china.com/202505152300533.png)
@@ -19,8 +17,6 @@ Examples include:
 
 **Key advantages:** Fast response, simple control, and low cost, making them the starting point of all automation systems.
 
----
-
 ## Analog Signal: Giving Signals "Temperature and Depth"
 
 ![Analog signal measuring temperature or pressure](http://image.sentinel-china.com/202505152300338.png)
@@ -35,8 +31,6 @@ Unlike digital signals, they vary within a **continuous range**, allowing precis
 - Liquid level detection
 
 **Key advantage:** Captures subtle changes, ideal for **process control**, **quality inspection**, and **energy analysis**.
-
----
 
 ## IO-Link: The Smart Protocol that Lets Sensors "Speak"
 
@@ -58,8 +52,6 @@ While traditional sensors are like “mute devices” outputting only basic sign
 - Fault alerts
 - Potential for AI-driven diagnostics
 
----
-
 ## Practical Value in Smart Manufacturing
 
 In modern smart factories:
@@ -73,8 +65,6 @@ In modern smart factories:
 - Lower maintenance costs
 - **Parameter storage** enables quick sensor replacement or reconfiguration without manual reset — critical for **multi-variety, small-batch production**.
 
----
-
 ## Conclusion
 
 From **digital** to **analog** to **IO-Link**, the evolution of industrial signals reflects automation’s march toward intelligence.  
@@ -86,8 +76,6 @@ Looking ahead, with the integration of **IIoT**, **edge computing**, and **AI**,
 - A **predictive maintenance enabler**
 
 It will help devices **sense → express → respond**, supporting the shift to smarter, more adaptive manufacturing.
-
----
 
 ## Customer Support & Services
 

@@ -6,7 +6,7 @@ With the expansion of production scale and the improvement of control precision,
 
 Against this technical backdrop, SENTINEL’s IO-Link product series—featuring high-flexibility wiring capabilities and a stable, reliable hot-swapping mechanism—has become an important enabler for the intelligent upgrade of coach welding operations.
 
----
+
 
 ## Increasing Welding Complexity Brings I/O Wiring Challenges
 
@@ -18,7 +18,7 @@ Covering an area of over 3,680㎡, it includes 24 industrial robots spanning arc
 In such a production environment, I/O points are not only numerous but also widely distributed along the entire line. Traditional centralized I/O wiring faces challenges such as complex cabling, difficult debugging, and high maintenance costs.  
 SENTINEL’s IO-Link solution, with a master station and distributed substation architecture, effectively solves the problem of redundant wiring and difficult device integration—boosting overall line deployment efficiency and response speed.
 
----
+
 
 ## IO-Link Flexible Wiring for Ultra-Long Conveyor Systems
 
@@ -30,7 +30,7 @@ SENTINEL’s IO-Link substation modules can be deployed at each conveyor section
 The master station centrally manages data and device status from all substations, enabling true “local access, centralized diagnostics.”  
 Additionally, SENTINEL products offer IP67 protection, making them suitable for harsh environments with welding dust, high temperatures, and oil contamination. They are also compatible with mainstream PLC platforms and industrial Ethernet, enabling rapid integration into existing automation architectures and improving both deployment efficiency and maintainability.
 
----
+
 
 ## Hot-Swap Mechanism for Fast Pallet Module Switching
 
@@ -45,7 +45,7 @@ Each pallet is pre-integrated with a substation and sensors; simply connect via 
 This “plug-and-play” capability offers significant convenience for building modular units and accelerating line changeover responses.  
 In complex process scenarios such as “automatic jig storage systems” and “flexible robotic welding systems,” SENTINEL’s hot-swap feature ensures the system maintains a high degree of adaptability even during uninterrupted operation.
 
----
+
 
 ## Conclusion
 
@@ -58,7 +58,7 @@ Faced with the reality of “customization, multiple models, small batches, and 
 
 Looking ahead, SENTINEL will continue to focus on industrial communication and field connection technologies, providing more advanced and reliable technical support for coach manufacturers in their pursuit of high-quality, intelligent development.
 
----
+
 
 ### Customer Support and Service
 

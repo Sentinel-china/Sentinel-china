@@ -332,19 +332,17 @@ export default function VortexFlowSensorDetail() {
                 </div>
                 
                 <div className="relative">
-                  <div className="bg-gray-800 rounded-lg p-6 aspect-video flex items-center justify-center relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                      alt="流量传感器技术演示"
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <button className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-300 transition-colors">
-                        <Play className="text-black ml-1" size={24} />
-                      </button>
-                    </div>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
+                    <iframe
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      title="Vortex Flow Sensor Technology Demonstration"
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4"></p>
+                  <p className="text-gray-400 text-center mt-4">Vortex Flow Sensor Technology Overview</p>
                 </div>
               </div>
             )}
