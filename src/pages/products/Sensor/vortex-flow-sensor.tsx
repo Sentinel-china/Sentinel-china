@@ -136,41 +136,41 @@ export default function VortexFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Vortex Flow Sensor Technology",
-      description: "Learn about vortex flow sensor principles, applications, and selection criteria",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/vortex/vortex01"
     },
     {
-      title: "Flow Measurement Applications",
-      description: "Explore various applications of vortex flow sensors in different industrial sectors",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111358563.png",
       link: "/products/vortex/vortex02"
     },
     {
-      title: "Installation and Maintenance",
-      description: "Comprehensive guide for proper installation and maintenance of vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131504988.png",
       link: "/products/vortex/vortex03"
     },
     {
-      title: "Technical Specifications",
-      description: "Detailed technical specifications and performance parameters of vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
-    },
-    {
-      title: "Troubleshooting Guide",
-      description: "Common issues and solutions for vortex flow sensor operation",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/products/vortex/vortex05"
-    },
-    {
-      title: "Advanced Features",
-      description: "Advanced features and capabilities of modern vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/vortex/vortex06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/vortex/vortex05"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/vortex/vortex06"
+    // }
   ]
 
   // 计算可滚动的产品数量

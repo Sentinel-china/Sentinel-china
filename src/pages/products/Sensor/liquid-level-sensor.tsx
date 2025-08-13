@@ -134,41 +134,41 @@ export default function LiquidLevelSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Liquid Level Sensor Technology",
-      description: "Learn about liquid level sensor technology, features, and applications in industrial automation.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111338007.png",
       link: "/markdown-config/liquid/liquid01"
     },
     {
-      title: "Sensor Selection Guide",
-      description: "Comprehensive guide for selecting the right liquid level sensor for your application.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131514061.png",
       link: "/markdown-config/liquid/liquid02"
     },
     {
-      title: "Beer Production Application",
-      description: "Liquid level sensors in beer production - fermentation, storage, and filling processes.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
-    },
-    {
-      title: "Emulsion Production Case",
-      description: "Liquid level monitoring in emulsion production with temperature compensation.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid04"
-    },
-    {
-      title: "Beverage Industry Solution",
-      description: "Liquid level control in beverage production for juice, syrup, and raw material storage.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid05"
-    },
-    {
-      title: "Water Treatment Application",
-      description: "Liquid level sensors in water treatment plants and industrial water systems.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid04"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid05"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid06"
+    // }
   ]
 
   // 计算可滚动的产品数量

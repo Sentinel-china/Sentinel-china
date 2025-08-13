@@ -135,41 +135,41 @@ export default function PressureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Pressure Sensor Basics",
-      description: "Learn about the fundamentals of pressure sensors and their applications in industrial automation.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111633019.png",
       link: "/products/pressure/pressure01"
     },
     {
-      title: "Pressure Transmitter Technology",
-      description: "Advanced pressure transmitter solutions with digital compensation and high stability.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/pressure/pressure02"
     },
     {
-      title: "SEH Series Features",
-      description: "SEH series pressure sensors with flexible installation and advanced display features.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/pressure/pressure03"
-    },
-    {
-      title: "Installation & Maintenance",
-      description: "Comprehensive guide for pressure sensor installation, debugging and maintenance.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-      link: "/products/pressure/pressure04"
-    },
-    {
-      title: "Application Cases",
-      description: "Real-world applications of pressure sensors in various industrial scenarios.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/products/pressure/pressure05"
-    },
-    {
-      title: "Selection Guide & Trends",
-      description: "Pressure sensor selection guidelines and future technology trends.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/pressure/pressure06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+    //   link: "/products/pressure/pressure04"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/pressure/pressure05"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/pressure/pressure06"
+    // }
   ]
 
   // 计算可滚动的产品数量

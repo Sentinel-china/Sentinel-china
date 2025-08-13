@@ -142,41 +142,41 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Thermal Flow Sensor Technology",
-      description: "Learn about thermal conductivity principles and flow monitoring technology",
-      image: "http://image.sentinel-china.com/202508111332828.png",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131427956.png",
       link: "/products/thermal/thermal01"
     },
     {
-      title: "Insertion Flow Measurement",
-      description: "Advanced insertion measurement techniques for reliable liquid flow monitoring",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131431026.png",
       link: "/products/thermal/thermal02"
     },
     {
-      title: "Industrial Flow Sensor Applications",
-      description: "Comprehensive applications of thermal flow sensors in factory automation",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/thermal/thermal03"
     },
     {
-      title: "Flow Sensor Installation Guide",
-      description: "Professional installation and setup guide for thermal flow sensors",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
-    },
-    {
-      title: "Flow Monitoring Solutions",
-      description: "Complete flow monitoring solutions for various industrial applications",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/products/thermal/thermal05"
-    },
-    {
-      title: "Advanced Flow Sensor Technology",
-      description: "Latest advancements in thermal flow sensor technology and innovation",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/thermal/thermal06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/thermal/thermal05"
+    // },
+    // {
+    //   title: "",
+    //   description: "Latest advancements in thermal flow sensor technology and innovation",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/thermal/thermal06"
+    // }
   ]
 
   // 计算可滚动的产品数量

@@ -18,23 +18,23 @@ import vortex06Content from '../articles/markdown-cases/vortex06.md?raw'
 // 涡街流量传感器产品案例配置映射
 const vortexConfig = {
   'vortex01': {
-    title: "Vortex Flow Sensor Technology",
-    description: "Learn about vortex flow sensor principles, applications, and selection criteria for accurate flow measurement in industrial environments.",
+    title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
+    description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
   },
   'vortex02': {
-    title: "Flow Measurement Applications",
-    description: "Explore various applications of vortex flow sensors in different industrial sectors",
+    title: "Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges in Various Industrial Scenarios",
+    description: "In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'vortex03': {
-    title: "Installation and Maintenance",
-    description: "Comprehensive guide for proper installation and maintenance of vortex flow sensors",
+    title: "Vortex flow sensor on mold temperature controller",
+    description: "Explore how vortex flow sensors enhance mold temperature controllers in plastic and die-casting industries, enabling precise flow and temperature control for better quality and efficiency.",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'vortex04': {
-    title: "Technical Specifications",
-    description: "Detailed technical specifications and performance parameters of vortex flow sensors",
+    title: "SENTINEL One-piece Temperature Flowmeter: A User's Personal Experience",
+    description: "First-hand feedback from a field engineer on using SENTINEL’s integrated temperature and flow meter in an industrial silicon project, highlighting service quality and technical support.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'vortex05': {

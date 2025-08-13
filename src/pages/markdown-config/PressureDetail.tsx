@@ -18,18 +18,18 @@ import pressure06Content from '../articles/markdown-cases/pressure06.md?raw'
 // Pressure产品案例配置映射
 const pressureConfig = {
   'pressure01': {
-    title: "Pressure Sensor Basics",
-    description: "Learn about the fundamentals of pressure sensors and their applications in industrial automation.",
+    title: "The Use of Negative Pressure Sensors in Distillation Equipment",
+    description: "Food and pharmaceutical-grade negative pressure sensors with IO-Link integration for precise vacuum control",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
   },
   'pressure02': {
-    title: "Pressure Transmitter Technology",
-    description: "Advanced pressure transmitter solutions with digital compensation and high stability.",
+    title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
+    description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'pressure03': {
-    title: "SEH Series Features",
-    description: "SEH series pressure sensors with flexible installation and advanced display features.",
+    title: "SENTINEL Products Empower the Powder Metallurgy Industry",
+    description: "SENTINEL products empowering the powder metallurgy industry",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'pressure04': {

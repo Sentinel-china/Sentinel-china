@@ -18,23 +18,23 @@ import thermal06Content from '../articles/markdown-cases/thermal06.md?raw'
 // Thermal Flow Sensor产品案例配置映射
 const thermalConfig = {
   'thermal01': {
-    title: "Thermal Flow Sensor Technology",
-    description: "Learn about thermal conductivity principles and flow monitoring technology for liquid media in industrial applications.",
+    title: "PLSU Series Flow Sensors",
+    description: "SENTINEL’s new flow sensor uses thermal dispersion and stainless steel housing, ideal for harsh industrial environments, with LED display and multi-output support for fluid monitoring.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
   },
   'thermal02': {
-    title: "Insertion Flow Measurement",
-    description: "Advanced insertion measurement techniques for reliable liquid flow monitoring in pipelines",
+    title: "What is a Thermal Conductivity Flow Sensor",
+    description: "Comprehensive guide to SENTINEL's thermal conductivity flow sensors, covering principles, installation, and PLS series features for smart industrial flow monitoring.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'thermal03': {
-    title: "Industrial Flow Sensor Applications",
-    description: "Comprehensive applications of thermal flow sensors in factory and process automation",
+    title: "SENTINEL Products Empower the Powder Metallurgy Industry",
+    description: "SENTINEL products empowering the powder metallurgy industry",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'thermal04': {
-    title: "Flow Sensor Installation Guide",
-    description: "Professional installation and setup guide for thermal flow sensors",
+    title: "SENTINEL One-piece Temperature Flowmeter: A User's Personal Experience",
+    description: "First-hand feedback from a field engineer on using SENTINEL’s integrated temperature and flow meter in an industrial silicon project, highlighting service quality and technical support.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'thermal05': {

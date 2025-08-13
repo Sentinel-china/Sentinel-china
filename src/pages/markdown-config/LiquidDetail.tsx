@@ -18,18 +18,18 @@ import liquid06Content from '../articles/markdown-cases/liquid06.md?raw'
 // 液位传感器产品案例配置映射
 const liquidConfig = {
   'liquid01': {
-    title: "Liquid Level Sensor Technology",
-    description: "Learn about liquid level sensor technology, features, and applications in industrial automation.",
+    title: "Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement",
+    description: "In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
   },
   'liquid02': {
-    title: "Sensor Selection Guide",
-    description: "Comprehensive guide for selecting the right liquid level sensor for your application.",
+    title: "Float-Type Dual Display Sensor for Level and Temperature Measurement",
+    description: "SENTINEL’s Level/Temperature Integrated Float-Type Sensor with IO-Link delivers precise level and temperature monitoring for hydraulic systems and diverse industrial applications.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'liquid03': {
-    title: "Beer Production Application",
-    description: "Liquid level sensors in beer production - fermentation, storage, and filling processes.",
+    title: "Application of IO-Link Smart Sensors in Hydraulic Systems",
+    description: "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'liquid04': {
