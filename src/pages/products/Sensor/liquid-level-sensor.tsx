@@ -134,41 +134,41 @@ export default function LiquidLevelSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Liquid Level Sensor Technology",
-      description: "Learn about liquid level sensor technology, features, and applications in industrial automation.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111338007.png",
       link: "/markdown-config/liquid/liquid01"
     },
     {
-      title: "Sensor Selection Guide",
-      description: "Comprehensive guide for selecting the right liquid level sensor for your application.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131514061.png",
       link: "/markdown-config/liquid/liquid02"
     },
     {
-      title: "Beer Production Application",
-      description: "Liquid level sensors in beer production - fermentation, storage, and filling processes.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
-    },
-    {
-      title: "Emulsion Production Case",
-      description: "Liquid level monitoring in emulsion production with temperature compensation.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid04"
-    },
-    {
-      title: "Beverage Industry Solution",
-      description: "Liquid level control in beverage production for juice, syrup, and raw material storage.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid05"
-    },
-    {
-      title: "Water Treatment Application",
-      description: "Liquid level sensors in water treatment plants and industrial water systems.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/markdown-config/liquid/liquid06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid04"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid05"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/markdown-config/liquid/liquid06"
+    // }
   ]
 
   // 计算可滚动的产品数量
@@ -507,8 +507,8 @@ export default function LiquidLevelSensorDetail() {
           </div>
 
           <div className="relative">
-            {/* Left Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Left Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollLeft}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -517,8 +517,8 @@ export default function LiquidLevelSensorDetail() {
               </button>
             )}
 
-            {/* Right Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Right Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollRight}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -530,7 +530,7 @@ export default function LiquidLevelSensorDetail() {
             <div 
               ref={scrollContainerRef}
               className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
-                relatedProducts.length === 1 
+                relatedProducts.length <= calculateVisibleProducts() 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
@@ -559,8 +559,8 @@ export default function LiquidLevelSensorDetail() {
                ))}
             </div>
             
-            {/* Scroll indicator - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Scroll indicator - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <div className="flex justify-center mt-4 sm:mt-6">
                 <div className="flex space-x-1 sm:space-x-2">
                   {Array.from({ length: totalSlides }, (_, index) => (

@@ -23,14 +23,14 @@ const temperatureConfig = {
     image: "http://image.sentinel-china.com/202508111332828.png"
   },
   'temperature02': {
-    title: "Temperature Sensor Type 2",
-    description: "Industrial grade temperature sensor with excellent stability and accuracy.",
-    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
+    title: "How IO-Link temperature sensors work",
+    description: "IO-Link Integrated Smart Industrial Temperature Monitoring Solution",
+    image: "http://image.sentinel-china.com/202508131023283.png"
   },
   'temperature03': {
-    title: "Temperature Sensor Type 3",
-    description: "Advanced temperature monitoring solution for harsh environments.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
+    title: "SENTINEL Products Empower the Powder Metallurgy Industry",
+    description: "SENTINEL products empowering the powder metallurgy industry",
+    image: "http://image.sentinel-china.com/202508111528078.png"
   },
   'temperature04': {
     title: "Temperature Sensor Type 4",

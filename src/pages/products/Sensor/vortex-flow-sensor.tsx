@@ -136,41 +136,41 @@ export default function VortexFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Vortex Flow Sensor Technology",
-      description: "Learn about vortex flow sensor principles, applications, and selection criteria",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/vortex/vortex01"
     },
     {
-      title: "Flow Measurement Applications",
-      description: "Explore various applications of vortex flow sensors in different industrial sectors",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111358563.png",
       link: "/products/vortex/vortex02"
     },
     {
-      title: "Installation and Maintenance",
-      description: "Comprehensive guide for proper installation and maintenance of vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131504988.png",
       link: "/products/vortex/vortex03"
     },
     {
-      title: "Technical Specifications",
-      description: "Detailed technical specifications and performance parameters of vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
-    },
-    {
-      title: "Troubleshooting Guide",
-      description: "Common issues and solutions for vortex flow sensor operation",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/products/vortex/vortex05"
-    },
-    {
-      title: "Advanced Features",
-      description: "Advanced features and capabilities of modern vortex flow sensors",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/vortex/vortex06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/vortex/vortex05"
+    // },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/vortex/vortex06"
+    // }
   ]
 
   // 计算可滚动的产品数量
@@ -509,8 +509,8 @@ export default function VortexFlowSensorDetail() {
           </div>
 
           <div className="relative">
-            {/* Left Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Left Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollLeft}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -519,8 +519,8 @@ export default function VortexFlowSensorDetail() {
               </button>
             )}
 
-            {/* Right Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Right Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollRight}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -532,7 +532,7 @@ export default function VortexFlowSensorDetail() {
             <div 
               ref={scrollContainerRef}
               className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
-                relatedProducts.length === 1 
+                relatedProducts.length <= calculateVisibleProducts() 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
@@ -561,8 +561,8 @@ export default function VortexFlowSensorDetail() {
               ))}
             </div>
             
-            {/* Scroll indicator - 只在有多个产品时显示 */}
-            {relatedProducts.length > 1 && (
+            {/* Scroll indicator - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <div className="flex justify-center mt-4 sm:mt-6">
                 <div className="flex space-x-1 sm:space-x-2">
                   {Array.from({ length: totalSlides }, (_, index) => (

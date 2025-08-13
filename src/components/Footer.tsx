@@ -4,9 +4,386 @@
  */
 import { Link } from 'react-router'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-react'
-// ... existing code ...
+import { useEffect } from 'react'
 
 export default function Footer() {
+  useEffect(() => {
+    // 添加CSS样式
+    const style = document.createElement('style')
+    style.textContent = `
+      #floating-form-btn {
+        position: fixed;
+        bottom: 130px;
+        right: 20px;
+        background-color: #000;
+        color: #FFD700;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        transition: all 0.3s ease;
+      }
+
+      #floating-form-btn:hover {
+        background-color: #FFD700;
+        color: #000;
+      }
+
+      /* 弹窗样式 */
+      #cookieConsentBanner {
+        display: none;
+        position: fixed;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #333;
+        color: #fff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        max-width: 600px;
+        z-index: 9999;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        font-family: system-ui, sans-serif;
+        transition: transform 0.5s ease, bottom 0.5s ease;
+      }
+
+      #cookieConsentBanner a {
+        color: #FFD700;
+        text-decoration: underline;
+      }
+
+      #cookieConsentBanner .buttons {
+        margin-top: 15px;
+        text-align: right;
+      }
+
+      #cookieConsentBanner button {
+        background-color: #FFD700;
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        margin-left: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      #cookieConsentBanner button.reject {
+        background-color: #777;
+      }
+
+      #showCookieButton {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #FFD700;
+        color: black;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 9998;
+        display: none;
+      }
+    `
+    document.head.appendChild(style)
+
+    // 添加HTML结构
+    const floatingBtn = document.createElement('div')
+    floatingBtn.id = 'floating-form-btn'
+    floatingBtn.innerHTML = 'contact us'
+    document.body.appendChild(floatingBtn)
+
+    const floatingBox = document.createElement('div')
+    floatingBox.id = 'floating-form-box'
+    floatingBox.style.cssText = `
+      position: fixed;
+      bottom: 70px;
+      right: 70px;
+      width: 280px;
+      height: 520px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 9998;
+      overflow: hidden;
+    `
+    floatingBox.innerHTML = `
+      <div style="text-align: right; padding: 8px; background: #f5f5f5; border-bottom: 1px solid #ddd;">
+        <div style="float: left; font-weight: bold; font-size: 15px; color: #333;">Contact Us</div>
+        <button onclick="document.getElementById('floating-form-box').style.display='none'" style="
+          background: none;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+          color: #333;
+        ">
+          ✕
+        </button>
+      </div>
+      <iframe id="leadForm"
+        width="100%"
+        height="500px"
+        style="border:none; background:white;"
+        frameBorder="0">
+      </iframe>
+    `
+    document.body.appendChild(floatingBox)
+
+    // 添加Cookie横幅HTML结构
+    const cookieBanner = document.createElement('div')
+    cookieBanner.id = 'cookieConsentBanner'
+    cookieBanner.innerHTML = `
+      <div>
+        This website uses cookies to enhance your browsing experience, and we will only enable non-essential cookies with your consent.
+        <a href="/privacy-policy" target="_blank">More</a>
+      </div>
+      <div class="buttons">
+        <button id="acceptAllBtn">Accept all Cookie</button>
+        <button id="acceptNecessaryBtn" class="reject">Only accept necessary Cookie</button>
+      </div>
+    `
+    document.body.appendChild(cookieBanner)
+
+    const showCookieButton = document.createElement('button')
+    showCookieButton.id = 'showCookieButton'
+    showCookieButton.innerHTML = 'Cookie'
+    document.body.appendChild(showCookieButton)
+
+    // JavaScript逻辑
+    const btn = document.getElementById('floating-form-btn')
+    const popup = document.getElementById('floating-form-box')
+
+    if (btn && popup) {
+      if (sessionStorage.getItem('popupClosed')) {
+        popup.style.display = 'none'
+        btn.style.display = 'block'
+      } else {
+        popup.style.display = 'block'
+        btn.style.display = 'none'
+      }
+
+      btn.addEventListener('click', function () {
+        if (btn && popup) {
+          btn.style.display = 'none'
+          popup.style.display = 'block'
+        }
+      })
+
+      const closeButton = popup.querySelector('button')
+      if (closeButton) {
+        function handleClose() {
+          if (popup && btn) {
+            popup.style.display = 'none'
+            btn.style.display = 'block'
+            sessionStorage.setItem('popupClosed', 'true')
+          }
+        }
+        closeButton.addEventListener('click', handleClose)
+        closeButton.addEventListener('touchend', function (e) {
+          e.preventDefault()
+          handleClose()
+        }, { passive: false })
+      }
+    }
+
+    // 拖拽逻辑
+    const header = popup?.querySelector('div[style*="text-align: right"]')
+    if (header) {
+      let isDragging = false
+      let offsetX = 0
+      let offsetY = 0
+
+      function startDrag(e: any) {
+        isDragging = true
+        const rect = popup!.getBoundingClientRect()
+        offsetX = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left
+        offsetY = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+        e.preventDefault()
+      }
+
+      function dragMove(e: any) {
+        if (!isDragging) return
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - offsetX
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - offsetY
+        popup!.style.left = x + 'px'
+        popup!.style.top = y + 'px'
+        popup!.style.right = 'auto'
+        popup!.style.bottom = 'auto'
+      }
+
+      function stopDrag() {
+        isDragging = false
+      }
+
+      header.addEventListener('mousedown', startDrag)
+      document.addEventListener('mousemove', dragMove)
+      document.addEventListener('mouseup', stopDrag)
+
+      header.addEventListener('touchstart', startDrag, { passive: false })
+      document.addEventListener('touchmove', dragMove, { passive: false })
+      document.addEventListener('touchend', function (e: any) {
+        const touch = e.changedTouches[0]
+        const target = document.elementFromPoint(touch.clientX, touch.clientY)
+        const closeButton = popup!.querySelector('button')
+
+        if (target && closeButton?.contains(target)) {
+          popup!.style.display = 'none'
+          btn!.style.display = 'block'
+        }
+
+        stopDrag()
+      }, { passive: false })
+    }
+
+    // GCLID处理
+    function getGclidFromUrlOrCookie() {
+      const params = new URLSearchParams(window.location.search)
+      let gclid = params.get("gclid")
+
+      if (gclid) {
+        document.cookie = "gclid=" + gclid + "; path=/; max-age=2592000"
+      } else {
+        gclid = document.cookie
+          .split("; ")
+          .find(row => row.startsWith("gclid="))
+          ?.split("=")[1] || null
+      }
+      return gclid
+    }
+
+    const gclid = getGclidFromUrlOrCookie()
+    const baseURL = "https://customer-form-sentinel.onrender.com/"
+    const finalURL = gclid ? `${baseURL}?gclid=${encodeURIComponent(gclid)}` : baseURL
+    const leadForm = document.getElementById("leadForm") as HTMLIFrameElement
+    if (leadForm) {
+      leadForm.src = finalURL
+    }
+
+    // Cookie横幅逻辑
+    const EU_COUNTRIES = [
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT',
+      'LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','US'
+    ]
+
+    function showCookieBanner() {
+      const banner = document.getElementById('cookieConsentBanner')
+      const button = document.getElementById('showCookieButton')
+      if (banner && button) {
+        banner.style.display = 'block'
+        banner.style.transform = 'translateX(-50%)'
+        banner.style.bottom = '70px'
+        button.style.display = 'block'
+      }
+    }
+
+    function acceptCookies(all: boolean) {
+      localStorage.setItem('cookieConsent', all ? 'all' : 'necessary')
+      localStorage.setItem('cookieConsentGiven', 'true')
+      const banner = document.getElementById('cookieConsentBanner')
+      if (banner) {
+        banner.style.display = 'none'
+      }
+
+      // 在GDPR国家中，接受Cookie后仍然保留设置按钮
+      const showBtn = document.getElementById('showCookieButton')
+      if (showBtn) {
+        // 检查当前是否在GDPR国家列表中
+        const currentCountry = localStorage.getItem('userCountry')
+        const isGDPR = EU_COUNTRIES.includes(currentCountry || '')
+        
+        if (isGDPR) {
+          // 如果是GDPR国家，保留设置按钮
+          showBtn.style.display = 'block'
+        } else {
+          // 如果不是GDPR国家，隐藏设置按钮
+          showBtn.style.display = 'none'
+        }
+      }
+    }
+
+    function initCookieBanner() {
+      const banner = document.getElementById('cookieConsentBanner')
+      const showBtn = document.getElementById('showCookieButton')
+      const acceptAllBtn = document.getElementById('acceptAllBtn')
+      const acceptNecessaryBtn = document.getElementById('acceptNecessaryBtn')
+
+      if (showBtn) {
+        showBtn.addEventListener('click', showCookieBanner)
+      }
+      if (acceptAllBtn) {
+        acceptAllBtn.addEventListener('click', () => acceptCookies(true))
+      }
+      if (acceptNecessaryBtn) {
+        acceptNecessaryBtn.addEventListener('click', () => acceptCookies(false))
+      }
+
+             // 获取国家判断是否显示
+       fetch('https://ipinfo.io/json')
+         .then(res => res.json())
+         .then(data => {
+           const country = data.country
+           // 保存用户国家信息到localStorage
+           localStorage.setItem('userCountry', country)
+           const isGDPR = EU_COUNTRIES.includes(country)
+
+           if (isGDPR) {
+             // 如果用户尚未选择，才弹窗
+             const consentGiven = localStorage.getItem('cookieConsentGiven')
+             if (!consentGiven) {
+               showCookieBanner()
+             } else {
+               // 如果已经选择过，显示设置按钮
+               if (showBtn) {
+                 showBtn.style.display = 'block'
+               }
+             }
+           } else {
+             // 非 GDPR 国家直接接受，完全隐藏
+             localStorage.setItem('cookieConsent', 'all')
+             localStorage.setItem('cookieConsentGiven', 'true')
+             if (banner) {
+               banner.style.display = 'none'
+             }
+             if (showBtn) {
+               showBtn.style.display = 'none'
+             }
+           }
+         })
+        .catch(err => {
+          console.warn('IP 检测失败', err)
+          // 获取失败默认弹出
+          showCookieBanner()
+        })
+    }
+
+    // 初始化Cookie横幅
+    initCookieBanner()
+
+    // 清理函数
+    return () => {
+      document.head.removeChild(style)
+      if (floatingBtn.parentNode) {
+        document.body.removeChild(floatingBtn)
+      }
+      if (floatingBox.parentNode) {
+        document.body.removeChild(floatingBox)
+      }
+      if (cookieBanner.parentNode) {
+        document.body.removeChild(cookieBanner)
+      }
+      if (showCookieButton.parentNode) {
+        document.body.removeChild(showCookieButton)
+      }
+    }
+  }, [])
+
   return (
     <footer className="bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

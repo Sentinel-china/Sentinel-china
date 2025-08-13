@@ -4,7 +4,7 @@ In the fields of industrial automation and construction machinery, hydraulic sys
 
 How can we achieve precise, real-time, intelligent monitoring of hydraulic systems to ensure the reliable operation of critical equipment? This has long been a focal topic in industrial automation.
 
----
+
 
 ## Basic Structure and Monitoring Requirements of Hydraulic Systems
 
@@ -26,7 +26,7 @@ To ensure reliable system operation, the core physical quantities that require r
 
 Only by accurately monitoring these parameters can anomalies be detected early, enabling proactive maintenance.
 
----
+
 
 ## Complete IO-Link Smart Sensor Solution
 
@@ -48,7 +48,7 @@ We have launched four IO-Link smart sensor series for monitoring pressure, tempe
 
 All series support the IO-Link protocol, enabling remote parameter adjustment, data acquisition, real-time monitoring, and device diagnostics.
 
----
+
 
 ## Core Advantages of IO-Link Technology
 
@@ -60,13 +60,13 @@ As an internationally standardized communication protocol, IO-Link significantly
 - **Simplified wiring** – Unified interface standards reduce installation costs  
 - **High scalability** – Easy integration with PLCs, industrial networks, and smart platforms, helping enterprises transition to Industry 4.0  
 
----
+
 
 ## Conclusion: From Smart Sensing to a New Era of Intelligent Hydraulic Monitoring
 
 Hydraulic systems are the driving force of industrial production, and precise monitoring is essential. With IO-Link smart sensing technology, we can not only monitor hydraulic system conditions with high accuracy but also lay a solid foundation for intelligent manufacturing.
 
----
+
 
 ### Customer Support and Service
 

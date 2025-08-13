@@ -142,41 +142,41 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Thermal Flow Sensor Technology",
-      description: "Learn about thermal conductivity principles and flow monitoring technology",
-      image: "http://image.sentinel-china.com/202508111332828.png",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131427956.png",
       link: "/products/thermal/thermal01"
     },
     {
-      title: "Insertion Flow Measurement",
-      description: "Advanced insertion measurement techniques for reliable liquid flow monitoring",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131431026.png",
       link: "/products/thermal/thermal02"
     },
     {
-      title: "Industrial Flow Sensor Applications",
-      description: "Comprehensive applications of thermal flow sensors in factory automation",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/thermal/thermal03"
     },
     {
-      title: "Flow Sensor Installation Guide",
-      description: "Professional installation and setup guide for thermal flow sensors",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
-    },
-    {
-      title: "Flow Monitoring Solutions",
-      description: "Complete flow monitoring solutions for various industrial applications",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-      link: "/products/thermal/thermal05"
-    },
-    {
-      title: "Advanced Flow Sensor Technology",
-      description: "Latest advancements in thermal flow sensor technology and innovation",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/thermal/thermal06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+    //   link: "/products/thermal/thermal05"
+    // },
+    // {
+    //   title: "",
+    //   description: "Latest advancements in thermal flow sensor technology and innovation",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/thermal/thermal06"
+    // }
   ]
 
   // 计算可滚动的产品数量
@@ -497,8 +497,8 @@ export default function ThermalFlowSensorDetail() {
           </div>
 
           <div className="relative">
-            {/* Left Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+                        {/* Left Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollLeft}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -507,8 +507,8 @@ export default function ThermalFlowSensorDetail() {
               </button>
             )}
 
-            {/* Right Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+            {/* Right Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollRight}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -520,7 +520,7 @@ export default function ThermalFlowSensorDetail() {
             <div 
               ref={scrollContainerRef}
               className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
-                relatedProducts.length <= 3 
+                relatedProducts.length <= calculateVisibleProducts() 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
@@ -549,8 +549,8 @@ export default function ThermalFlowSensorDetail() {
               ))}
             </div>
             
-            {/* Scroll indicator - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+            {/* Scroll indicator - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <div className="flex justify-center mt-4 sm:mt-6">
                 <div className="flex space-x-1 sm:space-x-2">
                   {Array.from({ length: totalSlides }, (_, index) => (

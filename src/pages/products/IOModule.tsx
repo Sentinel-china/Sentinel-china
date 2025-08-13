@@ -164,13 +164,13 @@ export default function CloudServiceDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/io-module05"
-    },
-    {
-      title: "",
-      description: "",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-      link: "/products/io-module06"
     }
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+    //   link: "/products/io-module06"
+    // }
   ]
 
   // 计算可滚动的产品数量
