@@ -4,9 +4,203 @@
  */
 import { Link } from 'react-router'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-react'
-// ... existing code ...
+import { useEffect } from 'react'
 
 export default function Footer() {
+  useEffect(() => {
+    // 添加CSS样式
+    const style = document.createElement('style')
+    style.textContent = `
+      #floating-form-btn {
+        position: fixed;
+        bottom: 130px;
+        right: 20px;
+        background-color: #000;
+        color: #FFD700;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        transition: all 0.3s ease;
+      }
+
+      #floating-form-btn:hover {
+        background-color: #FFD700;
+        color: #000;
+      }
+    `
+    document.head.appendChild(style)
+
+    // 添加HTML结构
+    const floatingBtn = document.createElement('div')
+    floatingBtn.id = 'floating-form-btn'
+    floatingBtn.innerHTML = 'contact us'
+    document.body.appendChild(floatingBtn)
+
+    const floatingBox = document.createElement('div')
+    floatingBox.id = 'floating-form-box'
+    floatingBox.style.cssText = `
+      position: fixed;
+      bottom: 70px;
+      right: 70px;
+      width: 280px;
+      height: 520px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 9998;
+      overflow: hidden;
+    `
+    floatingBox.innerHTML = `
+      <div style="text-align: right; padding: 8px; background: #f5f5f5; border-bottom: 1px solid #ddd;">
+        <div style="float: left; font-weight: bold; font-size: 15px; color: #333;">Contact Us</div>
+        <button onclick="document.getElementById('floating-form-box').style.display='none'" style="
+          background: none;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+          color: #333;
+        ">
+          ✕
+        </button>
+      </div>
+      <iframe id="leadForm"
+        width="100%"
+        height="500px"
+        style="border:none; background:white;"
+        frameBorder="0">
+      </iframe>
+    `
+    document.body.appendChild(floatingBox)
+
+    // JavaScript逻辑
+    const btn = document.getElementById('floating-form-btn')
+    const popup = document.getElementById('floating-form-box')
+
+    if (btn && popup) {
+      if (sessionStorage.getItem('popupClosed')) {
+        popup.style.display = 'none'
+        btn.style.display = 'block'
+      } else {
+        popup.style.display = 'block'
+        btn.style.display = 'none'
+      }
+
+      btn.addEventListener('click', function () {
+        if (btn && popup) {
+          btn.style.display = 'none'
+          popup.style.display = 'block'
+        }
+      })
+
+      const closeButton = popup.querySelector('button')
+      if (closeButton) {
+        function handleClose() {
+          if (popup && btn) {
+            popup.style.display = 'none'
+            btn.style.display = 'block'
+            sessionStorage.setItem('popupClosed', 'true')
+          }
+        }
+        closeButton.addEventListener('click', handleClose)
+        closeButton.addEventListener('touchend', function (e) {
+          e.preventDefault()
+          handleClose()
+        }, { passive: false })
+      }
+    }
+
+    // 拖拽逻辑
+    const header = popup?.querySelector('div[style*="text-align: right"]')
+    if (header) {
+      let isDragging = false
+      let offsetX = 0
+      let offsetY = 0
+
+      function startDrag(e: any) {
+        isDragging = true
+        const rect = popup!.getBoundingClientRect()
+        offsetX = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left
+        offsetY = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+        e.preventDefault()
+      }
+
+      function dragMove(e: any) {
+        if (!isDragging) return
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - offsetX
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - offsetY
+        popup!.style.left = x + 'px'
+        popup!.style.top = y + 'px'
+        popup!.style.right = 'auto'
+        popup!.style.bottom = 'auto'
+      }
+
+      function stopDrag() {
+        isDragging = false
+      }
+
+      header.addEventListener('mousedown', startDrag)
+      document.addEventListener('mousemove', dragMove)
+      document.addEventListener('mouseup', stopDrag)
+
+      header.addEventListener('touchstart', startDrag, { passive: false })
+      document.addEventListener('touchmove', dragMove, { passive: false })
+      document.addEventListener('touchend', function (e: any) {
+        const touch = e.changedTouches[0]
+        const target = document.elementFromPoint(touch.clientX, touch.clientY)
+        const closeButton = popup!.querySelector('button')
+
+        if (target && closeButton?.contains(target)) {
+          popup!.style.display = 'none'
+          btn!.style.display = 'block'
+        }
+
+        stopDrag()
+      }, { passive: false })
+    }
+
+    // GCLID处理
+    function getGclidFromUrlOrCookie() {
+      const params = new URLSearchParams(window.location.search)
+      let gclid = params.get("gclid")
+
+      if (gclid) {
+        document.cookie = "gclid=" + gclid + "; path=/; max-age=2592000"
+      } else {
+        gclid = document.cookie
+          .split("; ")
+          .find(row => row.startsWith("gclid="))
+          ?.split("=")[1] || null
+      }
+      return gclid
+    }
+
+    const gclid = getGclidFromUrlOrCookie()
+    const baseURL = "https://customer-form-sentinel.onrender.com/"
+    const finalURL = gclid ? `${baseURL}?gclid=${encodeURIComponent(gclid)}` : baseURL
+    const leadForm = document.getElementById("leadForm") as HTMLIFrameElement
+    if (leadForm) {
+      leadForm.src = finalURL
+    }
+
+    // 清理函数
+    return () => {
+      document.head.removeChild(style)
+      if (floatingBtn.parentNode) {
+        document.body.removeChild(floatingBtn)
+      }
+      if (floatingBox.parentNode) {
+        document.body.removeChild(floatingBox)
+      }
+    }
+  }, [])
+
   return (
     <footer className="bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
