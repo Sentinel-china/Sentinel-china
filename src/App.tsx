@@ -24,6 +24,7 @@ import PressureDetail from './pages/markdown-config/PressureDetail'
 import VortexDetail from './pages/markdown-config/VortexDetail'
 import TemperatureDetail from './pages/markdown-config/TemperatureDetail'
 import ThermalDetail from './pages/markdown-config/ThermalDetail'
+import LiquidDetail from './pages/markdown-config/LiquidDetail'
 // 导入传感器详情页面
 import TemperatureSensor from './pages/products/Sensor/temperature-sensor'
 import ThermalFlowSensor from './pages/products/Sensor/thermal-flow-sensor'
@@ -62,6 +63,7 @@ export default function App() {
             <Route path="/products/pressure/:productId" element={<PressureDetail />} />
             <Route path="/products/vortex/:productId" element={<VortexDetail />} />
             <Route path="/products/thermal/:productId" element={<ThermalDetail />} />
+            <Route path="/markdown-config/liquid/:productId" element={<LiquidDetail />} />
             <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
