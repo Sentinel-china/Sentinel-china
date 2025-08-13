@@ -497,8 +497,8 @@ export default function ThermalFlowSensorDetail() {
           </div>
 
           <div className="relative">
-            {/* Left Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+                        {/* Left Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollLeft}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -507,8 +507,8 @@ export default function ThermalFlowSensorDetail() {
               </button>
             )}
 
-            {/* Right Arrow - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+            {/* Right Arrow - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <button
                 onClick={scrollRight}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-900/80 hover:bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group"
@@ -520,7 +520,7 @@ export default function ThermalFlowSensorDetail() {
             <div 
               ref={scrollContainerRef}
               className={`flex gap-4 sm:gap-6 pb-4 px-2 sm:px-4 ${
-                relatedProducts.length <= 3 
+                relatedProducts.length <= calculateVisibleProducts() 
                   ? 'justify-center' 
                   : 'overflow-x-auto scrollbar-hide'
               }`}
@@ -549,8 +549,8 @@ export default function ThermalFlowSensorDetail() {
               ))}
             </div>
             
-            {/* Scroll indicator - 只在有多个产品时显示 */}
-            {relatedProducts.length > 3 && (
+            {/* Scroll indicator - 只在需要滚动时显示 */}
+            {relatedProducts.length > calculateVisibleProducts() && (
               <div className="flex justify-center mt-4 sm:mt-6">
                 <div className="flex space-x-1 sm:space-x-2">
                   {Array.from({ length: totalSlides }, (_, index) => (
