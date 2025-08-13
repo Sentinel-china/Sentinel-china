@@ -56,83 +56,78 @@ export default function InductiveProximitySensorDetail() {
   const features = [
     {
       icon: Wind,
-      title: "多气体检测",
-      description: "支持CO、CO2、CH4、H2S等多种气体检测，检测精度达到ppm级别"
+      title: "Multiple specifications",
+      description: "Provide a variety of shapes and sizes to meet diverse working condition requirements."
     },
     {
       icon: Code,
-      title: "实时监测",
-      description: "支持24小时连续气体监测，实时显示气体浓度，提供报警功能"
+      title: "Economical and Affordable",
+      description: "Relatively low cost advantage, meeting the demand while reducing the overall investment."
     },
     {
       icon: Zap,
-      title: "快速响应",
-      description: "响应时间小于30秒，适合快速检测气体泄漏和浓度变化"
+      title: "Non-contact induction",
+      description: "The state of an object can be judged without direct contact."
     },
     {
       icon: Users,
-      title: "防爆设计",
-      description: "符合ATEX防爆标准，适用于易燃易爆环境，防护等级IP65"
+      title: "Stable signal output",
+      description: "When a change in the object's state is detected, a signal in a specific form can be output."
     }
   ]
 
   const productSpecs = [
-    { spec: "检测气体", value: "CO、CO2、CH4、H2S等" },
-    { spec: "检测精度", value: "±1% FS" },
-    { spec: "响应时间", value: "<30秒" },
-    { spec: "输出信号", value: "4-20mA、0-10V、RS485" },
-    { spec: "防护等级", value: "IP65" },
-    { spec: "工作电压", value: "12-24V DC" },
-    { spec: "长期稳定性", value: "±0.05%FS/年" },
-    { spec: "温度系数", value: "±0.02%/°C" },
-    { spec: "环境温度", value: "-20°C to +60°C" },
-    { spec: "认证标准", value: "CE、RoHS、ATEX" }
+    { spec: "Construction size", value: " | M12 | M18 | M30 | Rotation speed monitor | " },
+    { spec: "Mounting conditions", value: " | Flush | Non-flush | " },
+    { spec: "Rated switching distance", value: " | 2mm-20mm | " },
+    { spec: "Output function", value: " | PNP NO | NPN NO | PNP NC | NPN NC | 2-wire DC NO | 2-wire DC NC | 2-wire AC NO | 2-wire AC NC |" },
+    { spec: "Electrical connection", value: " | M12x1 connector | 2m PVC | 2m PUR | " }
   ]
 
   const downloads = [
     {
-      title: "技术手册",
-      description: "气体传感器详细技术规格和使用指南",
+      title: "Sensors Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-manual.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "安装指南",
-      description: "气体传感器安装和调试指南",
+      title: "I/O Module Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-installation.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "应用案例",
-      description: "气体传感器在不同行业的应用案例",
+      title: "IO-Link Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/gas-sensor-cases.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "某大型煤矿",
-      industry: "煤矿行业",
-      challenge: "需要监测瓦斯浓度，确保矿工安全",
-      solution: "安装瓦斯监测系统，实时监测CH4浓度",
-      result: "安全事故降低90%，监测精度提升至99.5%",
+      company: "EL series",
+      industry: "proximity Sensor",
+      challenge: "Shielded (flush) installation, the sensor can be flush-mounted on the metal plate.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "某化工企业",
-      industry: "化工行业",
-      challenge: "需要监测有毒气体，保障员工安全",
-      solution: "安装有毒气体传感器，监测H2S、CO等有害气体",
-      result: "安全事故零发生，员工安全意识提升",
+      company: "TL series",
+      industry: "proximity Sensor",
+      challenge: "For non-shielded (non-flush) installation, the space diameter must be equal to the diameter of the sensing head, and there should be no metal interference.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "某办公楼",
-      industry: "建筑行业",
-      challenge: "需要优化室内空气质量，提升员工健康",
-      solution: "提供CO2浓度监测系统，优化通风系统",
-      result: "空气质量改善40%，员工健康投诉减少",
+      company: "High-temperature resistant series",
+      industry: "proximity Sensor",
+      challenge: "The temperature can reach 100℃ - 120℃. With advantages such as non-destructive operation, temperature resistance, humidity resistance, and corrosion resistance, it is widely used in various industrial sectors.",
+      solution: "",
+      result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
     }
   ]
@@ -322,19 +317,19 @@ export default function InductiveProximitySensorDetail() {
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Wind className="text-yellow-400 mr-2" size={20} />
-                        <span>多气体检测</span>
+                        <span>Multiple specifications</span>
                       </div>
                       <div className="flex items-center">
                         <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>实时监测</span>
+                        <span>Economical and Affordabl</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>快速响应</span>
+                        <span>Non-contact induction</span>
                       </div>
                       <div className="flex items-center">
                         <Users className="text-yellow-400 mr-2" size={20} />
-                        <span>防爆设计</span>
+                        <span>Stable signal output</span>
                       </div>
                     </div>
                   </div>
@@ -343,7 +338,7 @@ export default function InductiveProximitySensorDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://www.youtube.com/embed/wPtk0ZKBtfU?si=RvgNTN1MQW6HqeJK"
                       title="Inductive Proximity Sensor Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"
@@ -433,9 +428,9 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              客户<span className="text-yellow-400">案例</span>
+              Product<span className="text-yellow-400"> type</span>
             </h2>
-            <p className="text-xl text-gray-300">真实的成功案例，见证气体传感器的价值</p>
+            <p className="text-xl text-gray-300"></p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -443,6 +438,22 @@ export default function InductiveProximitySensorDetail() {
               <div 
                 key={index} 
                 className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
+              onClick={() => {
+                  // hwc add
+                  switch(case_.company) {
+                    case 'EL series':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
+                      break;
+                    case 'TL series':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
+                      break;
+                    case 'High-temperature resistant series':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
+                      break;
+                    default:
+                      break;
+                  }
+                }}
               >
                 <div className="relative h-48">
                   <img

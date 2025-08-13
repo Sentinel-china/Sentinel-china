@@ -132,7 +132,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-full h-96 rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.youtube.com/embed/hEzBE_r62Nk?si=B1VZUDJvGGOR_YJI"
+                  src="https://www.youtube.com/embed/Kh6F_VjxRIw?si=OaIUtmyIHGipNiHb"
                   title="Company Introduction Video"
                   className="w-full h-full"
                   frameBorder="0"

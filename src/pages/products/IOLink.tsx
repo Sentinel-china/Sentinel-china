@@ -94,19 +94,19 @@ export default function MobileDevelopmentDetail() {
       title: "Sensors Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/mobile-dev-guide.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/ui-design-spec.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/sample-project.zip"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
@@ -340,7 +340,7 @@ export default function MobileDevelopmentDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/CCSmkLdDVY4?si=EDVTUGTuoRniBZfP"
+                      src="https://www.youtube.com/embed/fPdyTupm4zk?si=PBojtlzUccDN2Eh5"
                       title="IO-Link Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"
@@ -443,13 +443,13 @@ export default function MobileDevelopmentDetail() {
                 onClick={() => {
                   // hwc add
                   switch(case_.company) {
-                    case 'IO-LINK MASTER':
+                    case 'Master':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020713978.html'; 
                       break;
-                    case 'IO-LINK Hubs':
+                    case 'Hubs':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020778941.html'; 
                       break;
-                    case 'IO-LINK CONNECTIVER':
+                    case 'Converter':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020758615.html'; 
                       break;
                     default:

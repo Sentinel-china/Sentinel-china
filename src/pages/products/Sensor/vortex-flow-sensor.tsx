@@ -88,22 +88,22 @@ export default function VortexFlowSensorDetail() {
 
   const downloads = [
     {
-      title: "技术手册",
-      description: "流量传感器详细技术规格和使用指南",
+      title: "Sensors Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-manual.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "安装指南",
-      description: "流量传感器安装和调试指南",
+      title: "I/O Module Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-installation.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "应用案例",
-      description: "流量传感器在不同行业的应用案例",
+      title: "IO-Link Overview",
+      description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/flow-sensor-cases.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
@@ -340,7 +340,7 @@ export default function VortexFlowSensorDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://www.youtube.com/embed/fK7JNBXE2Ig?si=9lSnUZblAXLG63lB"
                       title="Vortex Flow Sensor Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"
@@ -440,6 +440,22 @@ export default function VortexFlowSensorDetail() {
               <div 
                 key={index} 
                 className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
+              onClick={() => {
+                  // 根据不同的协议跳转到不同的页面
+                  switch(case_.company) {
+                    case 'Mold temperature controllers (MTCs)':
+                      window.location.href = 'https://www.sentinel-china.com/eInformation/1157.html'; 
+                      break;
+                    case 'Industrial pure water monitoring':
+                      window.location.href = ''; 
+                      break;
+                    case 'Cooling systems':
+                      window.location.href = ''; 
+                      break;
+                    default:
+                      break;
+                  }
+                }}
               >
                 <div className="relative h-48">
                   <img
