@@ -137,34 +137,40 @@ export default function TemperatureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "压力传感器",
-      description: "高精度压力测量解决方案",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111332828.png",
+      link: "/markdown-config/temperature01"
     },
     {
-      title: "流量传感器",
-      description: "精确的流量监测设备",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature02"
     },
     {
-      title: "振动传感器",
-      description: "工业设备振动监测",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature03"
     },
     {
-      title: "电流传感器",
-      description: "非接触式电流测量",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature04"
     },
     {
-      title: "安全传感器",
-      description: "工业安全监测设备",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature05"
     },
     {
-      title: "IO模块",
-      description: "工业自动化IO模块",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+      title: "",
+      description: "",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+      link: "/markdown-config/temperature06"
     }
   ]
 
@@ -519,17 +525,23 @@ export default function TemperatureSensorDetail() {
             >
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
-                  <div className="relative">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 hover:border-yellow-400 transition-colors duration-300"
-                    />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-base sm:text-lg font-bold text-white mb-1">{product.title}</h4>
-                      <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                  <Link to={product.link} className="block">
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
+                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                      </div>
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="text-yellow-400" size={20} />
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
