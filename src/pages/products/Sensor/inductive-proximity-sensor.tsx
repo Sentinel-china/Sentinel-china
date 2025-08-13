@@ -2,7 +2,7 @@
  * 电感式接近传感器详情页面
  * 展示电感式接近传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Wind, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Shield, Settings, Zap, Signal, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,12 +55,12 @@ export default function InductiveProximitySensorDetail() {
 
   const features = [
     {
-      icon: Wind,
+      icon: Shield,
       title: "Multiple specifications",
       description: "Provide a variety of shapes and sizes to meet diverse working condition requirements."
     },
     {
-      icon: Code,
+      icon: Settings,
       title: "Economical and Affordable",
       description: "Relatively low cost advantage, meeting the demand while reducing the overall investment."
     },
@@ -70,7 +70,7 @@ export default function InductiveProximitySensorDetail() {
       description: "The state of an object can be judged without direct contact."
     },
     {
-      icon: Users,
+      icon: Signal,
       title: "Stable signal output",
       description: "When a change in the object's state is detected, a signal in a specific form can be output."
     }
@@ -88,47 +88,47 @@ export default function InductiveProximitySensorDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "EL series",
+      company: "M8 series",
       industry: "proximity Sensor",
       challenge: "Shielded (flush) installation, the sensor can be flush-mounted on the metal plate.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity11.jpg"
     },
     {
-      company: "TL series",
+      company: "M12 series",
       industry: "proximity Sensor",
       challenge: "For non-shielded (non-flush) installation, the space diameter must be equal to the diameter of the sensing head, and there should be no metal interference.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity12.jpg"
     },
     {
-      company: "High-temperature resistant series",
+      company: "M30 series",
       industry: "proximity Sensor",
       challenge: "The temperature can reach 100℃ - 120℃. With advantages such as non-destructive operation, temperature resistance, humidity resistance, and corrosion resistance, it is widely used in various industrial sectors.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity13.jpg"
     }
   ]
 
@@ -194,8 +194,8 @@ export default function InductiveProximitySensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="气体传感器"
+                src="https://image.sentinel-china.com/2025-08-11-inductive.png"
+                alt="inductive proximity sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -204,7 +204,7 @@ export default function InductiveProximitySensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Wind className="text-yellow-400" size={32} />
+                  <Shield className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
@@ -316,19 +316,19 @@ export default function InductiveProximitySensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Wind className="text-yellow-400 mr-2" size={20} />
+                        <Shield className="text-yellow-400 mr-2" size={20} />
                         <span>Multiple specifications</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
-                        <span>Economical and Affordabl</span>
+                        <Settings className="text-yellow-400 mr-2" size={20} />
+                        <span>Economical and Affordable</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
                         <span>Non-contact induction</span>
                       </div>
                       <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
+                        <Signal className="text-yellow-400 mr-2" size={20} />
                         <span>Stable signal output</span>
                       </div>
                     </div>
@@ -475,7 +475,7 @@ export default function InductiveProximitySensorDetail() {
                  <div className="p-6">
                    <div className="mb-4">
                      <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                     <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                    </div>
                    
                    <div className="mb-4">
@@ -539,19 +539,22 @@ export default function InductiveProximitySensorDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>

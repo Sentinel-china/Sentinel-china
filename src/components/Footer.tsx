@@ -7,6 +7,15 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-
 import { useEffect } from 'react'
 
 export default function Footer() {
+  const openCookieSettings = () => {
+    const banner = document.getElementById('cookieConsentBanner')
+    if (banner) {
+      banner.style.display = 'block'
+      banner.style.transform = 'translateX(-50%)'
+      banner.style.bottom = '70px'
+    }
+  }
+
   useEffect(() => {
     // 添加CSS样式
     const style = document.createElement('style')
@@ -15,7 +24,7 @@ export default function Footer() {
         position: fixed;
         bottom: 130px;
         right: 20px;
-        background-color: #000;
+        background-color: #374151;
         color: #FFD700;
         padding: 10px 15px;
         border-radius: 20px;
@@ -24,13 +33,16 @@ export default function Footer() {
         z-index: 9999;
         font-size: 16px;
         font-weight: bold;
-        border: none;
+        border: 2px solid #4B5563;
         transition: all 0.3s ease;
       }
 
       #floating-form-btn:hover {
         background-color: #FFD700;
         color: #000;
+        border-color: #FFD700;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
       }
 
       /* 弹窗样式 */
@@ -76,19 +88,7 @@ export default function Footer() {
         background-color: #777;
       }
 
-      #showCookieButton {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        background-color: #FFD700;
-        color: black;
-        padding: 12px 24px;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-        z-index: 9998;
-        display: none;
-      }
+
     `
     document.head.appendChild(style)
 
@@ -151,10 +151,7 @@ export default function Footer() {
     `
     document.body.appendChild(cookieBanner)
 
-    const showCookieButton = document.createElement('button')
-    showCookieButton.id = 'showCookieButton'
-    showCookieButton.innerHTML = 'Cookie'
-    document.body.appendChild(showCookieButton)
+    // 取消悬浮Cookie按钮
 
     // JavaScript逻辑
     const btn = document.getElementById('floating-form-btn')
@@ -274,12 +271,10 @@ export default function Footer() {
 
     function showCookieBanner() {
       const banner = document.getElementById('cookieConsentBanner')
-      const button = document.getElementById('showCookieButton')
-      if (banner && button) {
+      if (banner) {
         banner.style.display = 'block'
         banner.style.transform = 'translateX(-50%)'
         banner.style.bottom = '70px'
-        button.style.display = 'block'
       }
     }
 
@@ -291,32 +286,13 @@ export default function Footer() {
         banner.style.display = 'none'
       }
 
-      // 在GDPR国家中，接受Cookie后仍然保留设置按钮
-      const showBtn = document.getElementById('showCookieButton')
-      if (showBtn) {
-        // 检查当前是否在GDPR国家列表中
-        const currentCountry = localStorage.getItem('userCountry')
-        const isGDPR = EU_COUNTRIES.includes(currentCountry || '')
-        
-        if (isGDPR) {
-          // 如果是GDPR国家，保留设置按钮
-          showBtn.style.display = 'block'
-        } else {
-          // 如果不是GDPR国家，隐藏设置按钮
-          showBtn.style.display = 'none'
-        }
-      }
+
     }
 
     function initCookieBanner() {
       const banner = document.getElementById('cookieConsentBanner')
-      const showBtn = document.getElementById('showCookieButton')
       const acceptAllBtn = document.getElementById('acceptAllBtn')
       const acceptNecessaryBtn = document.getElementById('acceptNecessaryBtn')
-
-      if (showBtn) {
-        showBtn.addEventListener('click', showCookieBanner)
-      }
       if (acceptAllBtn) {
         acceptAllBtn.addEventListener('click', () => acceptCookies(true))
       }
@@ -324,38 +300,30 @@ export default function Footer() {
         acceptNecessaryBtn.addEventListener('click', () => acceptCookies(false))
       }
 
-             // 获取国家判断是否显示
-       fetch('https://ipinfo.io/json')
-         .then(res => res.json())
-         .then(data => {
-           const country = data.country
-           // 保存用户国家信息到localStorage
-           localStorage.setItem('userCountry', country)
-           const isGDPR = EU_COUNTRIES.includes(country)
+                   // 获取国家判断是否显示
+      fetch('https://ipinfo.io/json')
+        .then(res => res.json())
+        .then(data => {
+          const country = data.country
+          // 保存用户国家信息到localStorage
+          localStorage.setItem('userCountry', country)
+          const isGDPR = EU_COUNTRIES.includes(country)
 
-           if (isGDPR) {
-             // 如果用户尚未选择，才弹窗
-             const consentGiven = localStorage.getItem('cookieConsentGiven')
-             if (!consentGiven) {
-               showCookieBanner()
-             } else {
-               // 如果已经选择过，显示设置按钮
-               if (showBtn) {
-                 showBtn.style.display = 'block'
-               }
-             }
-           } else {
-             // 非 GDPR 国家直接接受，完全隐藏
-             localStorage.setItem('cookieConsent', 'all')
-             localStorage.setItem('cookieConsentGiven', 'true')
-             if (banner) {
-               banner.style.display = 'none'
-             }
-             if (showBtn) {
-               showBtn.style.display = 'none'
-             }
-           }
-         })
+          if (isGDPR) {
+            // 如果用户尚未选择，才弹窗
+            const consentGiven = localStorage.getItem('cookieConsentGiven')
+            if (!consentGiven) {
+              showCookieBanner()
+            }
+          } else {
+            // 非 GDPR 国家直接接受，完全隐藏
+            localStorage.setItem('cookieConsent', 'all')
+            localStorage.setItem('cookieConsentGiven', 'true')
+            if (banner) {
+              banner.style.display = 'none'
+            }
+          }
+        })
         .catch(err => {
           console.warn('IP 检测失败', err)
           // 获取失败默认弹出
@@ -365,6 +333,8 @@ export default function Footer() {
 
     // 初始化Cookie横幅
     initCookieBanner()
+
+
 
     // 清理函数
     return () => {
@@ -377,9 +347,6 @@ export default function Footer() {
       }
       if (cookieBanner.parentNode) {
         document.body.removeChild(cookieBanner)
-      }
-      if (showCookieButton.parentNode) {
-        document.body.removeChild(showCookieButton)
       }
     }
   }, [])
@@ -510,6 +477,13 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             © 2008 - {new Date().getFullYear()} SENTINEL. All rights reserved.
           </p>
+          <button
+            onClick={openCookieSettings}
+            className="mt-3 text-gray-400 hover:text-yellow-400 text-sm underline"
+            aria-label="Open cookie settings"
+          >
+            Cookie Settings
+          </button>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@
  * 液位传感器详情页面
  * 展示液位传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Waves, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Droplets, Link2, Settings, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,22 +55,22 @@ export default function LiquidLevelSensorDetail() {
 
   const features = [
     {
-      icon: Waves,
+      icon: Droplets,
       title: "Double parameter monitoring",
       description: "Integrated liquid level and temperature dual monitoring."
     },
     {
-      icon: Code,
+      icon: Link2,
       title: "IO-Link",
       description: "Supports the IO-Link protocol, making it easy to connect to various industrial control systems."
     },
     {
-      icon: Zap,
+      icon: Settings,
       title: "Multiple output modes",
       description: "It includes analog, digital signals, etc., and supports NPN/PNP/push - pull as well as normally open/normally closed."
     },
     {
-      icon: Users,
+      icon: Shield,
       title: "Safe and convenient",
       description: "Parameter locking function to prevent misoperation."
     }
@@ -88,19 +88,19 @@ export default function LiquidLevelSensorDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
@@ -109,10 +109,10 @@ export default function LiquidLevelSensorDetail() {
     {
       company: "In beer production",
       industry: "liquid level Sensor",
-      challenge: "liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety.With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
+      challenge: "Liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety. With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-11-level.png"
     },
     {
       company: "Emulsion production enterprise",
@@ -120,33 +120,33 @@ export default function LiquidLevelSensorDetail() {
       challenge: "Since the emulsion has a certain viscosity, and some products have hygiene requirements for the contact materials, the enterprise has selected the liquid level sensor made of SENTINEL's food - grade materials. The sensor can accurately monitor the liquid level in the tank, and can also monitor the temperature of the emulsion, which is convenient for the enterprise to control the production process.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-11-level.png"
     },
     {
       company: "Beverage production enterprises",
-      industry: "liquid level Sensor",
+      industry: "split-type liquid level Sensor",
       challenge: "Food and beverage production enterprises need to strictly control the liquid level of storage tanks during the storage of raw materials such as fruit juice and syrup. The enterprise selects SENTINEL's food - grade 304 stainless - steel liquid - level sensor. At the same time, the sensor can issue low - liquid - level warnings in a timely manner to avoid production line stoppages caused by the depletion of raw materials, and also prevent raw material spills when the liquid level is high, which can cause waste and pollution. It provides strong support for the continuity and safety of food and beverage production.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-export.sentinel-china-banner.jpg"
     }
   ]
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Ultrasonic Level Measurement",
       description: "",
       image: "http://image.sentinel-china.com/202508111338007.png",
       link: "/markdown-config/liquid/liquid01"
     },
     {
-      title: "",
+      title: "Radar Level Sensor Technology",
       description: "",
       image: "http://image.sentinel-china.com/202508131514061.png",
       link: "/markdown-config/liquid/liquid02"
     },
     {
-      title: "",
+      title: "Capacitive Level Monitoring",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
@@ -194,8 +194,8 @@ export default function LiquidLevelSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="液位传感器"
+                src="https://image.sentinel-china.com/2025-08-11-level.png"
+                alt="Liquid Level Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -204,7 +204,7 @@ export default function LiquidLevelSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Waves className="text-yellow-400" size={32} />
+                  <Droplets className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
@@ -316,19 +316,19 @@ export default function LiquidLevelSensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Waves className="text-yellow-400 mr-2" size={20} />
+                        <Droplets className="text-yellow-400 mr-2" size={20} />
                         <span>Double parameter monitoring</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Link2 className="text-yellow-400 mr-2" size={20} />
                         <span>IO-Link</span>
                       </div>
                       <div className="flex items-center">
-                        <Zap className="text-yellow-400 mr-2" size={20} />
+                        <Settings className="text-yellow-400 mr-2" size={20} />
                         <span>Multiple output modes</span>
                       </div>
                       <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
+                        <Shield className="text-yellow-400 mr-2" size={20} />
                         <span>Safe and convenient</span>
                       </div>
                     </div>
@@ -475,7 +475,7 @@ export default function LiquidLevelSensorDetail() {
                  <div className="p-6">
                    <div className="mb-4">
                      <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                     <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                     <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                    </div>
                    
                    <div className="mb-4">
@@ -536,27 +536,30 @@ export default function LiquidLevelSensorDetail() {
               }`}
               onScroll={handleScroll}
             >
-                             {relatedProducts.map((product, index) => (
-                 <div key={index} className="flex-shrink-0">
-                   <Link to={product.link} className="block">
-                     <div className="relative group cursor-pointer">
-                       <img
-                         src={product.image}
-                         alt={product.title}
-                         className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                       />
-                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                       <div className="absolute bottom-4 left-4 right-4">
-                         <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                         <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
-                       </div>
-                       <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                         <ArrowRight className="text-yellow-400" size={20} />
-                       </div>
-                     </div>
-                   </Link>
-                 </div>
-               ))}
+                                           {relatedProducts.map((product, index) => (
+                <div key={index} className="flex-shrink-0">
+                  <Link to={product.link} className="block">
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
+                      </div>
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
             </div>
             
             {/* Scroll indicator - 只在需要滚动时显示 */}

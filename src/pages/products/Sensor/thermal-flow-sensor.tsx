@@ -2,7 +2,7 @@
  * 热式流量传感器详情页面
  * 展示热式流量传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Activity, Thermometer, Settings, Shield, Layers, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Activity, Link2, Settings, Layers, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Thermometer, Shield, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,17 +55,17 @@ export default function ThermalFlowSensorDetail() {
 
   const features = [
     {
-      icon: Thermometer,
+      icon: Activity,
       title: "Thermal conductivity principle",
       description: "Precisely monitor liquids such as water in the pipeline"
     },
     {
-      icon: Settings,
+      icon: Link2,
       title: "Insertion measurement",
       description: "The switch point setting is simple and the installation is quick."
     },
     {
-      icon: Shield,
+      icon: Settings,
       title: "Solid and durable",
       description: "High-strength plastic or stainless steel housing"
     },
@@ -93,19 +93,19 @@ export default function ThermalFlowSensorDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
@@ -114,7 +114,7 @@ export default function ThermalFlowSensorDetail() {
     {
       company: "PLSX",
       industry: "flow sensor",
-      challenge: "Monitor the flow of liquid medium, based on the principle of thermal conductivity.PBT shell, 304 stainless steel probe.Flexible selection of switch points.Potentiometer adjustment.M12x1 connector.LED strip instructions.",
+      challenge: "Monitor the flow of liquid medium, based on the principle of thermal conductivity. PBT shell, 304 stainless steel probe. Flexible selection of switch points. Potentiometer adjustment. M12x1 connector. LED strip instructions.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-12-plsx.png",
@@ -123,7 +123,7 @@ export default function ThermalFlowSensorDetail() {
     {
       company: "PLSU",
       industry: "flow sensor",
-      challenge: "Based on the thermal conductivity principle.All stainless steel shell.The measuring medium is liquid.M18x1.5 internal thread.3-wire PNP normally open output.Switching point adjustable via potentiometer.M12 Connector outlet.",
+      challenge: "Based on the thermal conductivity principle. All stainless steel shell. The measuring medium is liquid. M18x1.5 internal thread. 3-wire PNP normally open output. Switching point adjustable via potentiometer. M12 Connector outlet.",
       solution: "",
       result: "",
       image: "https://image.harryrou.wiki/2025-08-12-plsu.png",
@@ -132,7 +132,7 @@ export default function ThermalFlowSensorDetail() {
     {
       company: "PLSN",
       industry: "flow sensor",
-      challenge: "Flow monitoring of liquid.Built-in temperature alarm.304 stainless steel shell and probe.The value is displayed by digital tube.Protection class IP67.Optional bluetooth function.",
+      challenge: "Flow monitoring of liquid. Built-in temperature alarm. 304 stainless steel shell and probe. The value is displayed by digital tube. Protection class IP67. Optional bluetooth function.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-12-plsn.png",
@@ -142,25 +142,25 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Advanced Thermal Flow Measurement",
       description: "",
       image: "http://image.sentinel-china.com/202508131427956.png",
       link: "/products/thermal/thermal01"
     },
     {
-      title: "",
+      title: "Industrial Flow Monitoring Solutions",
       description: "",
       image: "http://image.sentinel-china.com/202508131431026.png",
       link: "/products/thermal/thermal02"
     },
     {
-      title: "",
+      title: "Smart Flow Sensor Technology",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/thermal/thermal03"
     },
     {
-      title: "",
+      title: "Precision Flow Control Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
@@ -324,15 +324,15 @@ export default function ThermalFlowSensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Thermometer className="text-yellow-400 mr-2" size={20} />
+                        <Activity className="text-yellow-400 mr-2" size={20} />
                         <span>Thermal conductivity principle</span>
                       </div>
                       <div className="flex items-center">
-                        <Settings className="text-yellow-400 mr-2" size={20} />
+                        <Link2 className="text-yellow-400 mr-2" size={20} />
                         <span>Insertion measurement</span>
                       </div>
                       <div className="flex items-center">
-                        <Shield className="text-yellow-400 mr-2" size={20} />
+                        <Settings className="text-yellow-400 mr-2" size={20} />
                         <span>Solid and durable</span>
                       </div>
                       <div className="flex items-center">
@@ -470,7 +470,7 @@ export default function ThermalFlowSensorDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Product Features</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="flex items-center justify-between mt-4">
@@ -529,19 +529,22 @@ export default function ThermalFlowSensorDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>

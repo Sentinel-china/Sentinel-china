@@ -2,7 +2,7 @@
  * 温度传感器详情页面
  * 展示温度传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Thermometer, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Thermometer, Link2, Settings, Split, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Zap, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -60,17 +60,17 @@ export default function TemperatureSensorDetail() {
       description: "Based on Pt1000 technology, the accuracy can reach ±1℃."
     },
     {
-      icon: Code,
+      icon: Link2,
       title: "IO-Link",
       description: "Implement remote configuration and real - time monitoring through the IO - Link interface"
     },
     {
-      icon: Zap,
+      icon: Settings,
       title: "Customization",
       description: "The length of the probe rod can be customized according to customer requirements."
     },
     {
-      icon: Users,
+      icon: Split,
       title: "Multiple output methods",
       description: "It has two independent digital outputs and one analog output."
     }
@@ -91,19 +91,19 @@ export default function TemperatureSensorDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
@@ -111,19 +111,19 @@ export default function TemperatureSensorDetail() {
   const cases = [
     {
       company: "Sensor",
-      industry: "Temperature",
+      industry: "Temperature Sensor",
       challenge: "SENTINEL's temperature sensor is a device used to measure liquid temperature, widely applied in industries such as industrial automation, food and beverage, machine tools, and metallurgy.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-15.png"
     },
     {
       company: "Transmitter",
-      industry: "Temperature",
+      industry: "Temperature Sensor",
       challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-16.png"
     },
     {
       company: "Split-type",
@@ -131,25 +131,25 @@ export default function TemperatureSensorDetail() {
       challenge: "The detection probe can be flexibly installed in positions with a narrow space and harsh environment.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-14.png"
     }
   ]
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Industrial Temperature Monitoring Solutions",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/temperature01"
     },
     {
-      title: "",
+      title: "High-Precision Temperature Sensors",
       description: "",
       image: "http://image.sentinel-china.com/202508131023283.png",
       link: "/markdown-config/temperature02"
     },
     {
-      title: "",
+      title: "Wireless Temperature Monitoring Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/markdown-config/temperature03"
@@ -323,7 +323,7 @@ export default function TemperatureSensorDetail() {
                         <span>High precision & stability</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Clock className="text-yellow-400 mr-2" size={20} />
                         <span>Quick response</span>
                       </div>
                       <div className="flex items-center">
@@ -331,7 +331,7 @@ export default function TemperatureSensorDetail() {
                         <span>Wide temperature range</span>
                       </div>
                       <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
+                        <TrendingUp className="text-yellow-400 mr-2" size={20} />
                         <span>Long-term stability</span>
                       </div>
                     </div>
@@ -478,7 +478,7 @@ export default function TemperatureSensorDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
@@ -542,19 +542,22 @@ export default function TemperatureSensorDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>

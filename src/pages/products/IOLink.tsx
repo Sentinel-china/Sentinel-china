@@ -2,7 +2,7 @@
  * 移动应用开发详情页面
  * 展示移动应用开发的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Smartphone, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Smartphone as Mobile } from 'lucide-react'
+import { ArrowLeft, Link2, Settings, Network, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Smartphone, Code, Zap, Users } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,22 +55,22 @@ export default function MobileDevelopmentDetail() {
 
   const features = [
     {
-      icon: Smartphone,
+      icon: Link2,
       title: "Standardized & compatible",
       description: "No special cables needed, works with existing setups"
     },
     {
-      icon: Code,
+      icon: Settings,
       title: "Cost-effective upgrade",
       description: "Evolves existing tech, no system replacement, cuts complexity"
     },
     {
-      icon: Zap,
+      icon: Network,
       title: "Comprehensive ecosystem",
       description: "Multi-protocol masters + diverse slaves, full-link coverage"
     },
     {
-      icon: Users,
+      icon: Shield,
       title: "Efficient & reliable",
       description: "Low-cost transmission, boosting efficiency while reducing costs"
     }
@@ -93,19 +93,19 @@ export default function MobileDevelopmentDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
@@ -117,7 +117,7 @@ export default function MobileDevelopmentDetail() {
       challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-iolinkmaster.jpg"
     },
     {
       company: "Hubs",
@@ -139,37 +139,37 @@ export default function MobileDevelopmentDetail() {
 
   const relatedProducts = [
     {
-      title: "",
+      title: "IO-Link Master Module Technology",
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/io-link/io-link01"
     },
     {
-      title: "",
+      title: "Multi-Protocol IO-Link Solutions",
       description: "",
       image: "http://image.sentinel-china.com/202508111615434.png",
       link: "/products/io-link/io-link02"
     },
     {
-      title: "",
+      title: "IO-Link Hub Communication Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111618966.png",
       link: "/products/io-link/io-link03"
     },
     {
-      title: "",
+      title: "Smart IO-Link Device Integration",
       description: "",
       image: "http://image.sentinel-china.com/202508111624189.png",
       link: "/products/io-link/io-link04"
     },
     {
-      title: "",
+      title: "IO-Link Converter Applications",
       description: "",
       image: "http://image.sentinel-china.com/202508111629411.png",
       link: "/products/io-link/io-link05"
     },
     {
-      title: "",
+      title: "Advanced IO-Link Protocol Support",
       description: "",
       image: "http://image.sentinel-china.com/202508111633019.png",
       link: "/products/io-link/io-link06"
@@ -321,15 +321,15 @@ export default function MobileDevelopmentDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Smartphone className="text-yellow-400 mr-2" size={20} />
+                        <Link2 className="text-yellow-400 mr-2" size={20} />
                         <span>IO-Link Master</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Network className="text-yellow-400 mr-2" size={20} />
                         <span>IO-Link Hubs</span>
                       </div>
                       <div className="flex items-center">
-                        <Zap className="text-yellow-400 mr-2" size={20} />
+                        <Settings className="text-yellow-400 mr-2" size={20} />
                         <span>IO-Link Converter </span>
                       </div>
                       
@@ -477,7 +477,7 @@ export default function MobileDevelopmentDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
@@ -539,19 +539,22 @@ export default function MobileDevelopmentDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>
