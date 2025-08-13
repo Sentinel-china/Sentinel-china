@@ -91,19 +91,19 @@ export default function CloudServiceDetail() {
       title: "Sensors Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=300&h=200&fit=crop",
-      link: "https://example.com/whitepaper.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/manual.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/sdk.zip"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
@@ -336,7 +336,7 @@ export default function CloudServiceDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/CCSmkLdDVY4?si=EDVTUGTuoRniBZfP"
+                      src="https://www.youtube.com/embed/PzpYNerw2LE?si=LLgoarkg2jWZdN-_"
                       title="IO Module Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"

@@ -94,42 +94,42 @@ export default function BusinessIntelligenceDetail() {
       title: "Sensors Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
-      link: "https://example.com/bi-platform-whitepaper.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-      link: "https://example.com/analytics-models.pdf"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-      link: "https://example.com/visualization-templates.zip"
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "CONNECTIVITY",
-      industry: "JUNCTION BOXES",
+      company: "JUNCTION BOXES",
+      industry: "CONNECTIVITY",
       challenge: "M12 and M8 standard interfaces can be provided, as well as 4-channel and 8-channel interface channels. Each channel can be divided into single-signal output and dual-signal output.",
       solution: "",
       result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
     },
     {
-      company: "CONNECTIVITY",
-      industry: "CORDSETS",
+      company: "CORDSETS",
+      industry: "CONNECTIVITY",
       challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8” standard connection sizes.",
       solution: "",
       result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "CONNECTIVITY",
-      industry: "7/8” POWER CABLE",
+      company: "7/8” POWER CABLE",
+      industry: "CONNECTIVITY",
       challenge: "he power connector used is 7/8” standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
       solution: "",
       result: "",
@@ -343,7 +343,7 @@ export default function BusinessIntelligenceDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/CCSmkLdDVY4?si=EDVTUGTuoRniBZfP"
+                      src="https://www.youtube.com/embed/3DkxYNJJ9u4?si=L35NiEgG4ut406v0"
                       title="Connectivity Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"
@@ -446,14 +446,14 @@ export default function BusinessIntelligenceDetail() {
                 onClick={() => {
                   // 根据不同的案例跳转到不同的页面
                   switch(case_.company) {
-                    case '某零售连锁企业':
+                    case '7/8” POWER CABLE':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020734156.html'; 
                       break;
-                    case '某制造企业':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020749591.html'; 
+                    case 'JUNCTION BOXES':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020757332.html'; 
                       break;
-                    case '某金融机构':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020718250.html'; 
+                    case 'CORDSETS':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020749591.html'; 
                       break;
                     default:
                       break;
