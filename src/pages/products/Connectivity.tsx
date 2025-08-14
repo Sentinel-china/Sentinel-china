@@ -77,16 +77,7 @@ export default function BusinessIntelligenceDetail() {
   ]
 
   const productSpecs = [
-    { spec: "数据处理能力", value: "支持TB级数据实时处理和分析" },
-    { spec: "分析算法", value: "机器学习、深度学习、统计分析" },
-    { spec: "可视化组件", value: "100+图表类型，支持3D可视化" },
-    { spec: "数据源支持", value: "数据库、API、文件、流数据" },
-    { spec: "报表引擎", value: "自动报表生成，支持定时推送" },
-    { spec: "预测模型", value: "时间序列、回归、分类、聚类算法" },
-    { spec: "安全认证", value: "ISO27001、GDPR、等保三级" },
-    { spec: "部署方式", value: "私有云、公有云、混合云" },
-    { spec: "SLA保障", value: "99.9% 服务可用性" },
-    { spec: "技术支持", value: "7×24小时专业服务" }
+    { spec: "Product type", value: " | 7/8” POWER CABLE | Industrial Ethernet Cable | Field-Wireable Connectors | Cordsets | Junction Boxes |" }
   ]
 
   const downloads = [

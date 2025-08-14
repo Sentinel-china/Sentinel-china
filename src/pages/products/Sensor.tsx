@@ -14,7 +14,7 @@ export default function SensorDetail() {
       icon: Thermometer,
       title: "Temperature sensor",
       description: "High-precision temperature monitor for industrial",
-      features: ["-40°C to +125°C", "±0.1°C精度", "快速响应", "长期稳定性"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-temp.png",
       color: "from-red-500/20 to-orange-500/20"
     },
@@ -22,7 +22,7 @@ export default function SensorDetail() {
       icon: Activity,
       title: " Thermal flow sensor",
       description: "Flow and temperature detection in one device",
-      features: ["0-1000bar", "高精度测量", "防爆设计", "IP67防护"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-flow.png",
       color: "from-blue-500/20 to-cyan-500/20"
     },
@@ -30,7 +30,7 @@ export default function SensorDetail() {
       icon: Zap,
       title: "vortex flow sensor",
       description: "Reliable flow measurement for liquids and gases",
-      features: ["热式流量计", "涡街流量计", "超声波流量计", "电磁流量计"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-vortex.png",
       color: "from-green-500/20 to-emerald-500/20"
     },
@@ -38,7 +38,7 @@ export default function SensorDetail() {
       icon: Gauge,
       title: "pressure sensor",
       description: "Precise pressure sensing for automation systems",
-      features: ["加速度传感器", "速度传感器", "位移传感器", "无线传输"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-pressure.png",
       color: "from-purple-500/20 to-pink-500/20"
     },
@@ -46,7 +46,7 @@ export default function SensorDetail() {
       icon: Droplet,
       title: "liquid level sensor",
       description: "Safe and accurate fluid level detection",
-      features: ["霍尔效应", "磁通门技术", "高精度测量", "隔离设计"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-level.png",
       color: "from-yellow-500/20 to-amber-500/20"
     },
@@ -54,7 +54,7 @@ export default function SensorDetail() {
       icon: Shield,
       title: " inductive proximity sensor",
       description: "Detects metal objects without physical contact",
-      features: ["安全光栅", "急停按钮", "安全门开关", "双手控制"],
+      features: [""],
       image: "https://image.sentinel-china.com/2025-08-11-inductive.png",
       color: "from-indigo-500/20 to-blue-500/20"
     }
