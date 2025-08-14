@@ -452,7 +452,7 @@ export default function SecurityServiceDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">挑战</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">

@@ -2,7 +2,7 @@
  * 涡街流量传感器详情页面
  * 展示涡街流量传感器的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, Droplet, Code, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText } from 'lucide-react'
+import { ArrowLeft, Zap, Link2, Split, BarChart3, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,22 +55,22 @@ export default function VortexFlowSensorDetail() {
 
   const features = [
     {
-      icon: Droplet,
+      icon: Zap,
       title: "Principle and function",
       description: "Adopting the von Kármán vortex street principle, it supports the output and dual display of both flow rate and temperature signals."
     },
     {
-      icon: Code,
+      icon: Link2,
       title: "IO-Link",
       description: "There are various output methods, and it is compatible with IO-Link function."
     },
     {
-      icon: Zap,
+      icon: Split,
       title: "Flexible signals",
       description: "The switch signal supports various types such as NPN/PNP/push - pull."
     },
     {
-      icon: Users,
+      icon: BarChart3,
       title: "Data record",
       description: "The cumulative traffic recording function is convenient for statistical analysis."
     }
@@ -90,71 +90,71 @@ export default function VortexFlowSensorDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
 
   const cases = [
     {
-      company: "Mold temperature controllers (MTCs)",
+      company: "two 4-20mA outputs",
       industry: "Vortex flow sensor",
       challenge: "Real-time monitoring of medium flow rate and temperature ensures precise and stable mold temperature control, enhancing both production efficiency and product quality.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-18.jpg"
     },
     {
-      company: "Industrial pure water monitoring",
+      company: "two 0-10V outputs",
       industry: "Vortex flow sensor",
       challenge: "Its independence from fluid conductivity allows for stable and accurate flow measurement of low-conductivity industrial pure water, addressing the instability issues of electromagnetic flowmeters in such applications.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-18.jpg"
     },
     {
-      company: "Cooling systems",
+      company: "2-way switching IO-Link",
       industry: "Vortex flow sensor",
       challenge: "The sensor monitors coolant flow conditions to prevent equipment damage due to cooling failure, ensuring safe and reliable system operation.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-17.jpg"
     }
   ]
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Advanced Vortex Flow Technology",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/vortex/vortex01"
     },
     {
-      title: "",
+      title: "Industrial Vortex Flow Meters",
       description: "",
       image: "http://image.sentinel-china.com/202508111358563.png",
       link: "/products/vortex/vortex02"
     },
     {
-      title: "",
+      title: "High-Performance Flow Measurement",
       description: "",
       image: "http://image.sentinel-china.com/202508131504988.png",
       link: "/products/vortex/vortex03"
     },
     {
-      title: "",
+      title: "Smart Vortex Sensor Solutions",
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
@@ -196,8 +196,8 @@ export default function VortexFlowSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/700dcd53-460f-4b45-b035-d500787386bd.jpg"
-                alt="流量传感器"
+                src="https://image.sentinel-china.com/2025-08-11-vortex.png"
+                alt="Vortex Flow Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>
@@ -206,7 +206,7 @@ export default function VortexFlowSensorDetail() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mr-4">
-                  <Droplet className="text-yellow-400" size={32} />
+                  <Zap className="text-yellow-400" size={32} />
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
@@ -318,19 +318,19 @@ export default function VortexFlowSensorDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <Droplet className="text-yellow-400 mr-2" size={20} />
+                        <Zap className="text-yellow-400 mr-2" size={20} />
                         <span>Principle and function</span>
                       </div>
                       <div className="flex items-center">
-                        <Code className="text-yellow-400 mr-2" size={20} />
+                        <Link2 className="text-yellow-400 mr-2" size={20} />
                         <span>IO-Link</span>
                       </div>
                       <div className="flex items-center">
-                        <Zap className="text-yellow-400 mr-2" size={20} />
+                        <Split className="text-yellow-400 mr-2" size={20} />
                         <span>Flexible signals</span>
                       </div>
                       <div className="flex items-center">
-                        <Users className="text-yellow-400 mr-2" size={20} />
+                        <BarChart3 className="text-yellow-400 mr-2" size={20} />
                         <span>Data record</span>
                       </div>
                     </div>
@@ -477,7 +477,7 @@ export default function VortexFlowSensorDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
@@ -541,19 +541,22 @@ export default function VortexFlowSensorDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>

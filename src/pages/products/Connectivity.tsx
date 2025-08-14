@@ -2,7 +2,7 @@
  * 商业智能分析详情页面
  * 展示商业智能分析的详细信息、技术优势和解决方案
  */
-import { ArrowLeft, BarChart3, TrendingUp, Shield, Zap, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Brain } from 'lucide-react'
+import { ArrowLeft, Settings, Shield, Cable, Plug, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, BarChart3, TrendingUp, Brain } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
 
@@ -55,22 +55,22 @@ export default function BusinessIntelligenceDetail() {
 
   const features = [
     {
-      icon: BarChart3,
+      icon: Settings,
       title: "Custom & standard options",
       description: "Offers both to meet various needs"
     },
     {
-      icon: TrendingUp,
+      icon: Shield,
       title: "Fits harsh environments",
       description: "Works stably in tough industrial settings"
     },
     {
-      icon: Brain,
+      icon: Cable,
       title: "Diverse products",
       description: "Includes connectors, cables and more"
     },
     {
-      icon: Monitor,
+      icon: Plug,
       title: "Cost-saving & efficient",
       description: "Optimizes wiring for lower cost and higher efficiency"
     }
@@ -93,19 +93,19 @@ export default function BusinessIntelligenceDetail() {
     {
       title: "Sensors Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
       title: "I/O Module Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
       title: "IO-Link Overview",
       description: "Technical parameters",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     }
   ]
@@ -122,15 +122,15 @@ export default function BusinessIntelligenceDetail() {
     {
       company: "CORDSETS",
       industry: "CONNECTIVITY",
-      challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8” standard connection sizes.",
+      challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8\" standard connection sizes.",
       solution: "",
       result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
     },
     {
-      company: "7/8” POWER CABLE",
+      company: "7/8\" POWER CABLE",
       industry: "CONNECTIVITY",
-      challenge: "he power connector used is 7/8” standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
+      challenge: "The power connector used is 7/8\" standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
       solution: "",
       result: "",
       image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
@@ -139,7 +139,7 @@ export default function BusinessIntelligenceDetail() {
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Industrial Connectivity Solutions",
       description: "",
       image: "http://image.sentinel-china.com/202508121550233.png",
       link: "/products/connectivity/connectivity01"
@@ -321,19 +321,19 @@ export default function BusinessIntelligenceDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
-                        <BarChart3 className="text-yellow-400 mr-2" size={20} />
-                        <span>7/8” POWER CABLE</span>
+                        <Cable className="text-yellow-400 mr-2" size={20} />
+                        <span>7/8" POWER CABLE</span>
                       </div>
                       <div className="flex items-center">
-                        <TrendingUp className="text-yellow-400 mr-2" size={20} />
+                        <Cable className="text-yellow-400 mr-2" size={20} />
                         <span>INDUSTRIAL ETHERNET CABLE</span>
                       </div>
                       <div className="flex items-center">
-                        <Brain className="text-yellow-400 mr-2" size={20} />
+                        <Plug className="text-yellow-400 mr-2" size={20} />
                         <span>FIELD-WIREABLE CONNECTORS</span>
                       </div>
                       <div className="flex items-center">
-                        <Monitor className="text-yellow-400 mr-2" size={20} />
+                        <Settings className="text-yellow-400 mr-2" size={20} />
                         <span>JUNCTION BOXES</span>
                       </div>
                     </div>
@@ -480,7 +480,7 @@ export default function BusinessIntelligenceDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
-                    <p className="text-gray-300 text-sm">{case_.challenge}</p>
+                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="mb-4">
@@ -542,19 +542,22 @@ export default function BusinessIntelligenceDetail() {
               {relatedProducts.map((product, index) => (
                 <div key={index} className="flex-shrink-0">
                   <Link to={product.link} className="block">
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{product.title}</h4>
-                        <p className="text-gray-200 text-xs sm:text-sm">{product.description}</p>
+                    <div className="group cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-56 h-40 sm:w-64 sm:h-48 md:w-72 md:h-56 lg:w-80 lg:h-60 object-cover rounded-2xl border-2 border-gray-700 group-hover:border-yellow-400 transition-colors duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <ArrowRight className="text-yellow-400" size={20} />
+                        </div>
                       </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="text-yellow-400" size={20} />
+                      <div className="mt-3 px-2">
+                        <h4 className="text-sm font-normal text-gray-300 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2">
+                          {product.title}
+                        </h4>
                       </div>
                     </div>
                   </Link>
