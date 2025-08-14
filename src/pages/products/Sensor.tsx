@@ -136,9 +136,9 @@ export default function SensorDetail() {
               ]
               return (
                 <Link key={index} to={sensorRoutes[index]} className="group">
-                  <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-lg bg-gray-800 group-hover:scale-[1.02] group-hover:border-2 group-hover:border-yellow-400/50 transition-all duration-300 border border-transparent cursor-pointer">
+                                     <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800 group-hover:scale-[1.02] group-hover:border-2 group-hover:border-yellow-400/50 transition-all duration-300 border border-transparent cursor-pointer">
                     {/* Background Gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-20`}></div>
+                    <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-20 dark:opacity-20 opacity-0`}></div>
                     
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden">
@@ -156,10 +156,10 @@ export default function SensorDetail() {
                         <div className="w-12 h-12 bg-yellow-400/10 rounded-xl flex items-center justify-center">
                           <product.icon className="text-yellow-400" size={24} />
                         </div>
-                                                 <h3 className="text-xl font-bold text-white dark:text-white text-gray-800">{product.title}</h3>
+                                                 <h3 className="text-xl font-bold text-gray-800 dark:text-white">{product.title}</h3>
                        </div>
                        
-                       <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm mb-4 leading-relaxed">
+                                               <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
                          {product.description}
                        </p>
                        
@@ -167,7 +167,7 @@ export default function SensorDetail() {
                          {product.features.map((feature, featureIndex) => (
                            <div key={featureIndex} className="flex items-center text-sm">
                              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                             <span className="text-gray-300 dark:text-gray-300 text-gray-600">{feature}</span>
+                             <span className="text-gray-600 dark:text-gray-300">{feature}</span>
                            </div>
                          ))}
                        </div>

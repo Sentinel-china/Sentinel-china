@@ -448,7 +448,7 @@ export default function ThermalFlowSensorDetail() {
                 href={case_.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -459,7 +459,7 @@ export default function ThermalFlowSensorDetail() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
-                    <h3 className="text-lg font-bold">{case_.company}</h3>
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">{case_.company}</h3>
                   </div>
                   {/* 点击提示图标 */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -470,7 +470,7 @@ export default function ThermalFlowSensorDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Product Features</h4>
-                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="flex items-center justify-between mt-4">

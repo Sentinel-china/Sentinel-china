@@ -63,7 +63,7 @@ export default function ProductsPage() {
             {products.map((product, index) => (
               <div key={index} className="group">
                 <Link to={product.link} className="block">
-                  <div className="flex flex-col lg:flex-row w-full h-auto lg:h-64 rounded-xl overflow-hidden shadow-lg bg-gray-800 group-hover:scale-[1.02] group-hover:border-2 group-hover:border-yellow-400/50 transition-all duration-300 border border-transparent">
+                  <div className="flex flex-col lg:flex-row w-full h-auto lg:h-64 rounded-xl overflow-hidden shadow-lg bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800 group-hover:scale-[1.02] group-hover:border-2 group-hover:border-yellow-400/50 transition-all duration-300 border border-transparent">
                     <div className="w-full lg:w-3/5 h-48 lg:h-full overflow-hidden">
                       <img
                         src={product.image}
@@ -74,9 +74,9 @@ export default function ProductsPage() {
                     <div className="w-full lg:w-2/5 p-4 lg:p-6 flex flex-col justify-between">
                       <div className="flex items-center gap-2 mb-3">
                         <product.icon className="text-xl text-yellow-400" />
-                        <strong className="text-lg text-white">{product.title}</strong>
+                        <strong className="text-lg text-gray-800 dark:text-white">{product.title}</strong>
                       </div>
-                      <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                         {product.description}
                       </p>
                       <div className="text-sm text-yellow-400">
