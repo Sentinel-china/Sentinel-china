@@ -30,6 +30,33 @@ export default function ContactPage() {
     }
   }, [location])
 
+  // 处理gclid参数
+  useEffect(() => {
+    // GCLID处理
+    function getGclidFromUrlOrCookie() {
+      const params = new URLSearchParams(window.location.search)
+      let gclid = params.get("gclid")
+
+      if (gclid) {
+        document.cookie = "gclid=" + gclid + "; path=/; max-age=2592000"
+      } else {
+        gclid = document.cookie
+          .split("; ")
+          .find(row => row.startsWith("gclid="))
+          ?.split("=")[1] || null
+      }
+      return gclid
+    }
+
+    const gclid = getGclidFromUrlOrCookie()
+    const baseURL = "https://customer-form-sentinel.onrender.com/"
+    const finalURL = gclid ? `${baseURL}?gclid=${encodeURIComponent(gclid)}` : baseURL
+    const contactForm = document.getElementById("contact-form-iframe") as HTMLIFrameElement
+    if (contactForm) {
+      contactForm.src = finalURL
+    }
+  }, [])
+
   const contactInfo = [
     {
       icon: MessageSquare,
@@ -118,6 +145,7 @@ export default function ContactPage() {
               
               <div className="w-full h-[500px]">
                 <iframe
+                  id="contact-form-iframe"
                   src="https://customer-form-sentinel.onrender.com/"
                   className="w-full h-full border-0 rounded-lg"
                   title="Contact Form"
