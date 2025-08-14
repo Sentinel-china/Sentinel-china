@@ -140,45 +140,45 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Choose
               <span className="text-yellow-400"> SENTINEL</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 max-w-2xl mx-auto">
               Innovation makes good products, Focus makes better services
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300">
+            <div className="group p-8 rounded-2xl dark:bg-gray-800/50 bg-gradient-to-r from-yellow-400/10 to-transparent border border-gray-700 dark:border-gray-700 border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Shield className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">About US</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
                 Tianjin Sentinel Electronics Co., Ltd(here in after to be referred to as SENTINEL)is an innovative Scientific and technological enterprise integrating R&D, production, and sales.SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc.
               </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300">
+            <div className="group p-8 rounded-2xl dark:bg-gray-800/50 bg-gradient-to-r from-yellow-400/10 to-transparent border border-gray-700 dark:border-gray-700 border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Zap className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
                 SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry,the metallurgical industry, etc.            
                 </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300">
+            <div className="group p-8 rounded-2xl dark:bg-gray-800/50 bg-gradient-to-r from-yellow-400/10 to-transparent border border-gray-700 dark:border-gray-700 border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Users className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Professional Team</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
                 As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service. 
               </p>
             </div>

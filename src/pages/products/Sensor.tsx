@@ -64,7 +64,7 @@ export default function SensorDetail() {
     <div className="min-h-screen pt-16">
 
       {/* Banner Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-r from-gray-900 to-black">
+      <section className="px-4 sm:px-6 lg:px-8 py-16 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -85,11 +85,11 @@ export default function SensorDetail() {
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
                      Industrial<span className="text-yellow-400"> Sensors</span>
                   </h1>
-                  <p className="text-gray-400">industrial Sensors</p>
+                  <p className="text-gray-400 dark:text-gray-400 text-gray-600">industrial Sensors</p>
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 mb-8 leading-relaxed">
                 As a detection device, Sensors can sense the measured information, and can transform the sensed information into electrical signals or other required forms, so as to meet the requirements of information transmission, processing, storage, display, Records and controls, etc.
               </p>
               
@@ -113,13 +113,13 @@ export default function SensorDetail() {
       </section>
 
       {/* Sensor Products Grid */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Sensor <span className="text-yellow-400">Products</span>
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 ">
               Professional industrial sensor solutions for reliable data acquisition for your automation systems
             </p>
           </div>
@@ -156,21 +156,21 @@ export default function SensorDetail() {
                         <div className="w-12 h-12 bg-yellow-400/10 rounded-xl flex items-center justify-center">
                           <product.icon className="text-yellow-400" size={24} />
                         </div>
-                        <h3 className="text-xl font-bold text-white">{product.title}</h3>
-                      </div>
-                      
-                      <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-                        {product.description}
-                      </p>
-                      
-                      <div className="space-y-2">
-                        {product.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center text-sm">
-                            <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                            <span className="text-gray-300">{feature}</span>
-                          </div>
-                        ))}
-                      </div>
+                                                 <h3 className="text-xl font-bold text-white dark:text-white text-gray-800">{product.title}</h3>
+                       </div>
+                       
+                       <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm mb-4 leading-relaxed">
+                         {product.description}
+                       </p>
+                       
+                       <div className="space-y-2">
+                         {product.features.map((feature, featureIndex) => (
+                           <div key={featureIndex} className="flex items-center text-sm">
+                             <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
+                             <span className="text-gray-300 dark:text-gray-300 text-gray-600">{feature}</span>
+                           </div>
+                         ))}
+                       </div>
                     </div>
                     
                     {/* Hover Overlay */}
