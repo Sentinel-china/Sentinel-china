@@ -191,7 +191,7 @@ export default function VortexFlowSensorDetail() {
     <div className="min-h-screen pt-16">
 
       {/* Banner Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -240,7 +240,7 @@ export default function VortexFlowSensorDetail() {
       </section>
 
       {/* Features Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -264,7 +264,7 @@ export default function VortexFlowSensorDetail() {
       </section>
 
       {/* Three Tab Sections */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12">
@@ -426,7 +426,7 @@ export default function VortexFlowSensorDetail() {
       </section>
 
       {/* Customer Cases */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -497,7 +497,7 @@ export default function VortexFlowSensorDetail() {
       </section>
 
       {/* Related Products */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
 

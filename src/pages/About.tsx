@@ -146,7 +146,7 @@ export default function AboutPage() {
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8 mb-20">
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <div className="flex items-center mb-6">
                 <Target className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Mission</h3>
@@ -156,7 +156,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <div className="flex items-center mb-6">
                 <Eye className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Vision</h3>
@@ -170,7 +170,7 @@ export default function AboutPage() {
       </section>
 
       {/* Certification Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -226,22 +226,22 @@ export default function AboutPage() {
       </section>
 
       {/* Company Stats */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-gray-800/30 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Award className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">6+</div>
               <div className="text-gray-300">Years of Development</div>
             </div>
             
-            <div className="text-center p-8 bg-gray-800/30 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Users className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">80+</div>
               <div className="text-gray-300">Professional Team</div>
             </div>
             
-            <div className="text-center p-8 bg-gray-800/30 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <MapPin className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">50+</div>
               <div className="text-gray-300">Service Cities</div>
@@ -251,7 +251,7 @@ export default function AboutPage() {
       </section>
 
       {/* Development Timeline */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8] ">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50 ">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Development
