@@ -122,10 +122,10 @@ export default function AboutPage() {
                 Professional quality,
                 <span className="text-yellow-400"> Trustworthy</span>
               </h2>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 text-justify">
                 SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc. These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
               </p>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 text-justify">
                  As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <Target className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Mission</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 text-justify">
                 Pioneer industrial sensors and IO-LINK modules via relentless R&D. Deliver precise, reliable solutions to drive seamless automation, efficiency, and sustainable industrial growth.
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 <Eye className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 text-justify">
                 Become the global benchmark in industrial sensing and IO-LINK tech. Connect industrial ecosystems with innovative solutions, shaping a smarter, more interconnected manufacturing world.
               </p>
             </div>

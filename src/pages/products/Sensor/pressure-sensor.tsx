@@ -308,7 +308,7 @@ export default function PressureSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       Pressure is one of the most frequently measured parameters in industry, whether it is a press, a cooling circuit or a storage tank, there is a need to monitor and measure pressure parameters.
                     </p>
@@ -442,7 +442,7 @@ export default function PressureSensorDetail() {
               onClick={() => {
                   // 根据不同的协议跳转到不同的页面
                   switch(case_.company) {
-                    case 'sensor':
+                    case 'Food and beverage':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'; 
                       break;
                     case 'transmitter':

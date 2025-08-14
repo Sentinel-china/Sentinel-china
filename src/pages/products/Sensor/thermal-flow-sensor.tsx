@@ -315,7 +315,7 @@ export default function ThermalFlowSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       Based on the thermal conductivity principle, Sentinel’s flow sensor can reliably monitor the flow limit value, and also monitor and alarm the temperature of the medium.
                     </p>

@@ -309,7 +309,7 @@ export default function CloudServiceDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       The products are mainly divided into two categories, one is a high protection level (IP67) series that can be used for on-site installation; the other is a compact single independent product series that can be installed in the cabinet.
                     </p>
@@ -426,7 +426,7 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> type</span>
+              Product<span className="text-yellow-400"> Type</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -439,13 +439,13 @@ export default function CloudServiceDetail() {
                 onClick={() => {
                   // 根据不同的协议跳转到不同的页面
                   switch(case_.company) {
-                    case 'PROFINET':
+                    case 'IP67':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724735.html'; 
                       break;
-                    case 'CC-Link IE Field Basic':
+                    case 'IP20':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020735494.html'; 
                       break;
-                    case 'EtherCAT':
+                    case 'SAP':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020718250.html'; 
                       break;
                     default:

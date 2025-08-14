@@ -307,7 +307,7 @@ export default function InductiveProximitySensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       SENTINEL can provide inductive proximity switches with various shapes and sizes to meet the diversified needs of customers.
                     </p>
@@ -428,7 +428,7 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> type</span>
+              Product<span className="text-yellow-400"> Type</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -441,13 +441,13 @@ export default function InductiveProximitySensorDetail() {
               onClick={() => {
                   // hwc add
                   switch(case_.company) {
-                    case 'EL series':
+                    case 'M8 series':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
                       break;
-                    case 'TL series':
+                    case 'M12 series':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
                       break;
-                    case 'High-temperature resistant series':
+                    case 'M30 series':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
                       break;
                     default:
