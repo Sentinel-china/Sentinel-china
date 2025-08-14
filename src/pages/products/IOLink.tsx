@@ -77,16 +77,13 @@ export default function MobileDevelopmentDetail() {
   ]
 
   const productSpecs = [
-    { spec: "开发框架", value: "React Native、Flutter、原生iOS/Android" },
-    { spec: "支持平台", value: "iOS 12+、Android 8.0+" },
-    { spec: "UI组件库", value: "Material Design、iOS Human Interface" },
-    { spec: "后端集成", value: "RESTful API、GraphQL、WebSocket" },
-    { spec: "数据存储", value: "SQLite、Realm、Core Data" },
-    { spec: "推送服务", value: "Firebase、APNs、华为推送" },
-    { spec: "安全认证", value: "OAuth 2.0、JWT、生物识别" },
-    { spec: "性能优化", value: "内存优化、启动优化、网络优化" },
-    { spec: "测试覆盖", value: "单元测试、UI测试、性能测试" },
-    { spec: "发布支持", value: "App Store、Google Play、企业分发" }
+    { spec: "Product type", value: " | IO-Link Master | IO-Link Hubs | IO-Link converter | " },
+    { spec: "Network protocol", value: " | Profinet | CC-LINK IE Field Basic | EtherCAT | EtherNet/IP | ModbusTCP |" },
+    { spec: "Power interface", value: " | 7/8” | L-code | " },
+    { spec: "IO-Link Port type", value: " | Class A | Class B | Class A+Class B | " },
+    { spec: "IO-Link specification", value: " | V1.0 | V1.1 |" },
+    { spec: "Number of ports", value: "| 8 | 16 |" },
+    { spec: "Protection class", value: " | IP67 | IP20 | " }
   ]
 
   const downloads = [
