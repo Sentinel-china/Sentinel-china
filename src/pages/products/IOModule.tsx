@@ -191,7 +191,7 @@ export default function CloudServiceDetail() {
     <div className="min-h-screen pt-16">
 
       {/* Banner Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-16 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -240,7 +240,7 @@ export default function CloudServiceDetail() {
       </section>
 
       {/* Features Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -264,7 +264,7 @@ export default function CloudServiceDetail() {
       </section>
 
       {/* Three Tab Sections */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12">
@@ -422,7 +422,7 @@ export default function CloudServiceDetail() {
       </section>
 
       {/* Customer Cases */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -492,7 +492,7 @@ export default function CloudServiceDetail() {
       </section>
 
       {/* Related Products */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
