@@ -309,7 +309,7 @@ export default function VortexFlowSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       Von Kaman vortex principle.Flow,temperature dual switching signal output,dual display. High-resolution lPS display.Four viewing directions can be switched.Cumulative flow recording function.Analog or switch output,compatible with lO-Link protocol.
                     </p>
@@ -430,7 +430,7 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Application<span className="text-yellow-400"> Scenarios</span>
+              Product<span className="text-yellow-400"> Type</span>
             </h2>
             <p className="text-xl text-gray-300">Vortex flow sensors are widely used in industrial pure water monitoring, flow and temperature management in mold temperature machines, cooling water monitoring, the food and beverage industry, etc.</p>
           </div>
@@ -443,14 +443,14 @@ export default function VortexFlowSensorDetail() {
               onClick={() => {
                   // 根据不同的协议跳转到不同的页面
                   switch(case_.company) {
-                    case 'Mold temperature controllers (MTCs)':
-                      window.location.href = 'https://www.sentinel-china.com/eInformation/1157.html'; 
+                    case 'two 4-20mA outputs':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
                       break;
-                    case 'Industrial pure water monitoring':
-                      window.location.href = ''; 
+                    case 'two 0-10V outputs':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
                       break;
-                    case 'Cooling systems':
-                      window.location.href = ''; 
+                    case '2-way switching IO-Link':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
                       break;
                     default:
                       break;

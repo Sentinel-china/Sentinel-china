@@ -147,7 +147,7 @@ export default function SolutionsPage() {
                   </Link>
                 </div>
                 
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-lg text-gray-300 text-justify">
                   {solution.description}
                 </p>
 
@@ -193,16 +193,16 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* Implementation Process */}
+      {/* Service Process */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Implementation
-              <span className="text-yellow-400">Process</span>
+              Service
+              <span className="text-yellow-400"> Process</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Professional project implementation process ensuring successful solution delivery
+              
             </p>
           </div>
 
@@ -211,9 +211,9 @@ export default function SolutionsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-yellow-400/30 group-hover:to-yellow-400/20 transition-all duration-300">
                 <span className="text-3xl font-bold text-yellow-400">01</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Research & Analysis</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                In-depth understanding of industry characteristics and customer needs, conducting comprehensive business research and current status analysis
+              <h3 className="text-xl font-semibold mb-3">Communication</h3>
+              <p className="text-gray-300 text-sm text-justify">
+                Understand customer needs and industry characteristics through in-depth communication and research
               </p>
             </div>
 
@@ -221,9 +221,9 @@ export default function SolutionsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-yellow-400/30 group-hover:to-yellow-400/20 transition-all duration-300">
                 <span className="text-3xl font-bold text-yellow-400">02</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Solution Design</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Based on research results, design customized solutions that match industry characteristics
+              <h3 className="text-xl font-semibold mb-3">Product Selection</h3>
+              <p className="text-gray-300 text-sm text-justify">
+                Provide customized product selection and solution design based on customer needs and industry characteristics
               </p>
             </div>
 
@@ -231,9 +231,9 @@ export default function SolutionsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-yellow-400/30 group-hover:to-yellow-400/20 transition-all duration-300">
                 <span className="text-3xl font-bold text-yellow-400">03</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Implementation & Deployment</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                System development, testing and deployment implementation according to project plan
+              <h3 className="text-xl font-semibold mb-3">Deliver goods on time</h3>
+              <p className="text-gray-300 text-sm text-justify">
+                Ensure timely delivery of products and provide technical support to ensure smooth project progress
               </p>
             </div>
 
@@ -241,9 +241,9 @@ export default function SolutionsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-yellow-400/30 group-hover:to-yellow-400/20 transition-all duration-300">
                 <span className="text-3xl font-bold text-yellow-400">04</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Operation & Support</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Provide continuous operation support and system optimization to ensure stable solution operation
+              <h3 className="text-xl font-semibold mb-3">After-sales service</h3>
+              <p className="text-gray-300 text-sm text-justify">
+                Provide comprehensive after-sales service, including technical support, product maintenance, and upgrades
               </p>
             </div>
           </div>

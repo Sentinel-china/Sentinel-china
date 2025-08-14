@@ -158,7 +158,7 @@ export default function HomePage() {
                 <Shield className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">About US</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
                 Tianjin Sentinel Electronics Co., Ltd(here in after to be referred to as SENTINEL)is an innovative Scientific and technological enterprise integrating R&D, production, and sales.SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc.
               </p>
             </div>
@@ -168,7 +168,7 @@ export default function HomePage() {
                 <Zap className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
                 SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry,the metallurgical industry, etc.            
                 </p>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                 <Users className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Professional Team</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
                 As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service. 
               </p>
             </div>

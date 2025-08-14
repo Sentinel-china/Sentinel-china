@@ -310,7 +310,7 @@ export default function TemperatureSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-4 text-gray-300 text-justify">
                     <p>
                       In industrial production, temperature switch is a reliable and practical equipment temperature detection device. Sentinel’s integrated intelligent temperature switch integrates measurement and display, which can provide a simple programming solution.
                     </p>
