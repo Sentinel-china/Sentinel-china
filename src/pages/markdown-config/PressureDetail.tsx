@@ -33,18 +33,18 @@ const pressureConfig = {
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'pressure04': {
-    title: "Installation & Maintenance",
-    description: "Comprehensive guide for pressure sensor installation, debugging and maintenance.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
+    image: "http://image.sentinel-china.com/202508141557934.png"
   },
   'pressure05': {
-    title: "Application Cases",
-    description: "Real-world applications of pressure sensors in various industrial scenarios.",
+    title: "Conical Seal Food-Grade Pressure Sensor",
+    description: "Food-Grade Conical Seal Pressure Sensor | SENTINEL – Hygienic, High-Precision Pressure Measurement",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'pressure06': {
-    title: "Selection Guide & Trends",
-    description: "Pressure sensor selection guidelines and future technology trends.",
+    title: "Differences Between Digital Signals, Analog Signals, and IO-Link",
+    description: "Comprehensive comparison of signal types in industrial automation - from basic digital to intelligent IO-Link communication",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

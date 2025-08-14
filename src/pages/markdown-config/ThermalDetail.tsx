@@ -38,13 +38,13 @@ const thermalConfig = {
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'thermal05': {
-    title: "Flow Monitoring Solutions",
-    description: "Complete flow monitoring solutions for various industrial applications",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+    title: "IO-Link Temperature Transmitter",
+    description: "IO-Link smart communication, and 4-20mA output, ideal for food, pharmaceutical, and chemical industries.",
+    image: "http://image.sentinel-china.com/202508141552680.png"
   },
   'thermal06': {
-    title: "Advanced Flow Sensor Technology",
-    description: "Latest advancements in thermal flow sensor technology and innovation",
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

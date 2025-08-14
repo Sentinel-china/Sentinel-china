@@ -158,19 +158,19 @@ export default function VortexFlowSensorDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141557934.png",
+      link: "/products/vortex/vortex05"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141617155.png",
+      link: "/products/vortex/vortex06"
     }
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-    //   link: "/products/vortex/vortex05"
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/products/vortex/vortex06"
-    // }
   ]
 
   // 计算可滚动的产品数量

@@ -130,41 +130,41 @@ export default function BusinessIntelligenceDetail() {
 
   const relatedProducts = [
     {
-      title: "Industrial Connectivity Solutions",
+      title: "",
       description: "",
       image: "http://image.sentinel-china.com/202508121550233.png",
       link: "/products/connectivity/connectivity01"
+    },
+    {
+      title: "",
+      description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
+      image: "http://image.sentinel-china.com/202508141650679.png",
+      link: "/products/connectivity/connectivity02"
+    },
+    {
+      title: "",
+      description: "Standard 7/8\" power connector for SENTINEL bus module products",
+      image: "http://image.sentinel-china.com/202508111605823.png",
+      link: "/products/connectivity/connectivity03"
+    },
+    {
+      title: "",
+      description: "High-performance industrial Ethernet connectivity solutions",
+      image: "http://image.sentinel-china.com/202508141656047.png",
+      link: "/products/connectivity/connectivity04"
+    },
+    {
+      title: "",
+      description: "Flexible field installation connector solutions",
+      image: "http://image.sentinel-china.com/202508141702311.png",
+      link: "/products/connectivity/connectivity05"
+    },
+    {
+      title: "",
+      description: "Tailored connectivity solutions for specific applications",
+      image: "http://image.sentinel-china.com/202508111406692.jpg",
+      link: "/products/connectivity/connectivity06"
     }
-    // {
-    //   title: "Cordsets",
-    //   description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
-    //   image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-    //   link: "/products/connectivity/connectivity02"
-    // },
-    // {
-    //   title: "7/8\" Power Cable",
-    //   description: "Standard 7/8\" power connector for SENTINEL bus module products",
-    //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
-    //   link: "/products/connectivity/connectivity03"
-    // },
-    // {
-    //   title: "Industrial Ethernet Cable",
-    //   description: "High-performance industrial Ethernet connectivity solutions",
-    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-    //   link: "/products/connectivity/connectivity04"
-    // },
-    // {
-    //   title: "Field-Wireable Connectors",
-    //   description: "Flexible field installation connector solutions",
-    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-    //   link: "/products/connectivity/connectivity05"
-    // },
-    // {
-    //   title: "Custom Connectivity Solutions",
-    //   description: "Tailored connectivity solutions for specific applications",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/products/connectivity/connectivity06"
-    // }
   ]
 
   // 计算可滚动的产品数量

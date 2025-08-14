@@ -164,19 +164,19 @@ export default function ThermalFlowSensorDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141552680.png",
+      link: "/products/thermal/thermal05"
+    },
+    {
+      title: "",
+      description: "Latest advancements in thermal flow sensor technology and innovation",
+      image: "http://image.sentinel-china.com/202508141557934.png",
+      link: "/products/thermal/thermal06"
     }
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-    //   link: "/products/thermal/thermal05"
-    // },
-    // {
-    //   title: "",
-    //   description: "Latest advancements in thermal flow sensor technology and innovation",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/products/thermal/thermal06"
-    // }
   ]
 
   // 计算可滚动的产品数量

@@ -23,28 +23,28 @@ const connectivityConfig = {
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
   },
   'connectivity02': {
-    title: "Cordsets",
-    description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
+    title: "Output-Type IO-Link Converters",
+    description: "Discover SENTINEL’s new CIOL-1AO-SC and CIOL-2VO-SC IO-Link converters—smart solutions for integrating analog actuators into modern IO-Link systems with precision and efficiency.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'connectivity03': {
-    title: "7/8\" Power Cable",
-    description: "Standard 7/8\" power connector for SENTINEL bus module products",
+    title: "Differences Between Digital Signals, Analog Signals, and IO-Link",
+    description: "Comprehensive comparison of signal types in industrial automation - from basic digital to intelligent IO-Link communication",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'connectivity04': {
-    title: "Industrial Ethernet Cable",
-    description: "High-performance industrial Ethernet connectivity solutions",
+    title: "one-to-two on-site assembly connector",
+    description: "SENTINEL's M12 one-to-two field assembly connector offers efficient wiring, clear pin assignments, and a dual-hole waterproof design. Ideal for modern industrial needs, it ensures precision, stability, and space-saving solutions in complex environments.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'connectivity05': {
-    title: "Field-Wireable Connectors",
-    description: "Flexible field installation connector solutions",
+    title: "A Chinese Preferred Choice for Quality, Technology, and Support",
+    description: "Explore the remarkable experience of a satisfied customer using SENTINEL products. Discover the superior craftsmanship, zero-failure reliability, and impressive product range that solidify SENTINEL's status as a quality domestic brand in industrial automation solutions.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'connectivity06': {
-    title: "Custom Connectivity Solutions",
-    description: "Tailored connectivity solutions for specific applications",
+    title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
+    description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

@@ -151,25 +151,25 @@ export default function PressureSensorDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/pressure/pressure03"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141557934.png",
+      link: "/products/pressure/pressure04"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141627033.png",
+      link: "/products/pressure/pressure05"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111605823.png",
+      link: "/products/pressure/pressure06"
     }
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-    //   link: "/products/pressure/pressure04"
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-    //   link: "/products/pressure/pressure05"
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/products/pressure/pressure06"
-    // }
   ]
 
   // 计算可滚动的产品数量
