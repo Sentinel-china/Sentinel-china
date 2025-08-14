@@ -291,10 +291,10 @@ function TimelineCard({
     <article
       className={clsx(
         "group relative w-full",
-        "rounded-2xl border border-white/10 bg-white/5 backdrop-blur-[2px]",
-        "shadow-[0_8px_32px_rgba(0,0,0,0.35)]",
+        "rounded-2xl border border-white/10 dark:border-white/10 border-gray-200 bg-white/5 dark:bg-white/5 bg-white backdrop-blur-[2px]",
+        "shadow-[0_8px_32px_rgba(0,0,0,0.35)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.35)] shadow-lg",
         "p-6 sm:p-7 transition-colors",
-        "hover:border-white/20"
+        "hover:border-white/20 dark:hover:border-white/20 hover:border-gray-300"
       )}
     >
       {/* Decorative subtle corner gradient */}
@@ -321,7 +321,7 @@ function TimelineCard({
         <span
           className={clsx(
             "inline-flex items-center gap-2 rounded-full px-3 py-1 text-[13px] font-medium",
-            "bg-white/8 text-white/90 ring-1 ring-inset ring-white/10"
+            "bg-white/8 dark:bg-white/8 bg-gray-200 text-white/90 dark:text-white/90 text-gray-800 ring-1 ring-inset ring-white/10 dark:ring-white/10 ring-gray-300"
           )}
         >
           <span
@@ -333,7 +333,7 @@ function TimelineCard({
       </div>
 
       {/* Content */}
-      <p className="mt-2 text-sm sm:text-base leading-relaxed text-white/85">
+      <p className="mt-2 text-sm sm:text-base leading-relaxed text-white/85 dark:text-white/85 text-gray-700">
         {item.content}
       </p>
 

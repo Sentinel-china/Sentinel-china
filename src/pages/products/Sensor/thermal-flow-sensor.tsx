@@ -197,7 +197,7 @@ export default function ThermalFlowSensorDetail() {
     <div className="min-h-screen pt-16">
 
       {/* Banner Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-r from-gray-900 to-black">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -246,7 +246,7 @@ export default function ThermalFlowSensorDetail() {
       </section>
 
       {/* Features Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gray-900/50">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -270,7 +270,7 @@ export default function ThermalFlowSensorDetail() {
       </section>
 
       {/* Three Tab Sections */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12">
@@ -432,7 +432,7 @@ export default function ThermalFlowSensorDetail() {
       </section>
 
       {/* Customer Cases */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gray-900/50">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -448,7 +448,7 @@ export default function ThermalFlowSensorDetail() {
                 href={case_.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -459,7 +459,7 @@ export default function ThermalFlowSensorDetail() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="text-sm text-yellow-400 font-semibold">{case_.industry}</div>
-                    <h3 className="text-lg font-bold">{case_.company}</h3>
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">{case_.company}</h3>
                   </div>
                   {/* 点击提示图标 */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -470,7 +470,7 @@ export default function ThermalFlowSensorDetail() {
                 <div className="p-6">
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Product Features</h4>
-                    <p className="text-gray-300 text-sm text-justify">{case_.challenge}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="flex items-center justify-between mt-4">
@@ -485,7 +485,7 @@ export default function ThermalFlowSensorDetail() {
       </section>
 
       {/* Related Products */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
 
