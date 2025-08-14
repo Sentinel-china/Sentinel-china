@@ -194,7 +194,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* Implementation Process */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gray-900/50 dark:bg-gray-900/50 bg-[#f8f8f8]">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
