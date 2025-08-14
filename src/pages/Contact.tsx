@@ -108,7 +108,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8] text-center hover:border-yellow-400/50 transition-all duration-300 group relative">
+              <div key={index} className="bg-[#f8f8f8] p-6 rounded-2xl border border-gray-700 dark:bg-gray-900/50 text-center hover:border-yellow-400/50 transition-all duration-300 group relative">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <info.icon className="text-yellow-400" size={32} />
                 </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
           {/* Contact Form and Map */}
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-800/30 p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+            <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <div className="flex items-center mb-6">
                 <MessageSquare className="text-yellow-400 mr-3" size={28} />
                 <h2 id="send-message" className="text-2xl font-bold">Send Message</h2>
@@ -157,7 +157,7 @@ export default function ContactPage() {
 
             {/* Office Information */}
             <div className="space-y-8">
-              <div className="bg-gray-800/30 p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+              <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
                 <h3 className="text-2xl font-bold mb-6">Office Address</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -187,7 +187,7 @@ export default function ContactPage() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="bg-gray-800/30 p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 bg-[#f8f8f8]">
+              <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
                 <h3 className="text-2xl font-bold mb-6">Location Navigation</h3>
                 <div className="relative h-64 bg-gray-700/50 rounded-lg overflow-hidden">
                   <img
