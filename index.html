@@ -40,5 +40,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC975VN2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+     <!-- 表单提交监听start -->
+<script>
+  window.addEventListener('message', function(event) {
+    // 可选：验证来源
+    if (event.origin !== 'https://customer-form-sentinel.onrender.com') return;
+    if (event.data === 'formSubmitted') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'iframeFormSubmit'
+      });
+      console.log('表单提交事件已发送到 dataLayer');
+    }
+  });
+</script>
+<!-- 表单提交监听end -->
   </body>
 </html>
