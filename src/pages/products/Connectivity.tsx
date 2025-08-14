@@ -108,7 +108,7 @@ export default function BusinessIntelligenceDetail() {
       challenge: "M12 and M8 standard interfaces can be provided, as well as 4-channel and 8-channel interface channels. Each channel can be divided into single-signal output and dual-signal output.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-30.jpg"
     },
     {
       company: "CORDSETS",
@@ -116,15 +116,15 @@ export default function BusinessIntelligenceDetail() {
       challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8\" standard connection sizes.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-32.jpg"
     },
     {
-      company: "7/8\" POWER CABLE",
+      company: "CONNECTORS",
       industry: "CONNECTIVITY",
       challenge: "The power connector used is 7/8\" standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-31.jpg"
     }
   ]
 

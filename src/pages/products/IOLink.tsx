@@ -114,7 +114,7 @@ export default function MobileDevelopmentDetail() {
       challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-iolinkmaster.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-iolinkmaster.jpg"
     },
     {
       company: "Hubs",
@@ -122,7 +122,7 @@ export default function MobileDevelopmentDetail() {
       challenge: "As a communication interface independent of the field bus, the sensors, actuators and I/O supporting the IO-Link protocol are IO-Link slave devices, which greatly improves the reliability of the devices.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/58cd29dd-74ac-45e6-b4b1-0b6e67acf934.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-28.jpg"
     },
     {
       company: "Converter",
@@ -130,7 +130,7 @@ export default function MobileDevelopmentDetail() {
       challenge: "The IO-Link Converter (CIOL-2AI-SC) is designed to convert two channels of 4-20mA/0-20mA analog signals into IO-Link communication format. It supports IO-Link V1.1 protocol with an M12 A-coded 4-pin Class A interface. Compatible with 2-wire, 3-wire, and 4-wire sensor connections, it features status LED indicators and is ideal for industrial signal acquisition applications.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/f5ef549a-b4ff-4f70-b843-c738d033ebde.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-29.jpg"
     }
   ]
 
