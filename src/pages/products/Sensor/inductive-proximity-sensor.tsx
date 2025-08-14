@@ -135,38 +135,38 @@ export default function InductiveProximitySensorDetail() {
   const relatedProducts = [
     {
       title: "Inductive Proximity Sensor Technology",
-      description: "Learn about inductive proximity sensor technology, features, and applications for metal detection in industrial environments.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141650679.png",
       link: "/products/inductive-proximity/inductive-proximity01"
     },
     {
       title: "Inductive Proximity Sensor Applications",
-      description: "Explore various applications of inductive proximity sensors in automation and manufacturing",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/inductive-proximity/inductive-proximity02"
     },
     {
       title: "Inductive Proximity Sensor Installation",
-      description: "Guidelines for proper installation and setup of inductive proximity sensors",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141656047.png",
       link: "/products/inductive-proximity/inductive-proximity03"
     },
     {
       title: "Inductive Proximity Sensor Troubleshooting",
-      description: "Common issues and solutions for inductive proximity sensor problems",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141702311.png",
       link: "/products/inductive-proximity/inductive-proximity04"
     },
     {
       title: "Inductive Proximity Sensor Selection Guide",
-      description: "How to choose the right inductive proximity sensor for your application",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/products/inductive-proximity/inductive-proximity05"
     },
     {
       title: "Inductive Proximity Sensor Maintenance",
-      description: "Best practices for maintaining and calibrating inductive proximity sensors",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/inductive-proximity/inductive-proximity06"
     }
   ]

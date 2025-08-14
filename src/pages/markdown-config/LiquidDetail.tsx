@@ -33,18 +33,18 @@ const liquidConfig = {
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'liquid04': {
-    title: "Emulsion Production Case",
-    description: "Liquid level monitoring in emulsion production with temperature compensation.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+    title: "IO-Link Temperature Transmitter",
+    description: "IO-Link smart communication, and 4-20mA output, ideal for food, pharmaceutical, and chemical industries.",
+    image: "http://image.sentinel-china.com/202508141552680.png"
   },
   'liquid05': {
-    title: "Beverage Industry Solution",
-    description: "Liquid level control in beverage production for juice, syrup, and raw material storage.",
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'liquid06': {
-    title: "Water Treatment Application",
-    description: "Liquid level sensors in water treatment plants and industrial water systems.",
+    title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
+    description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

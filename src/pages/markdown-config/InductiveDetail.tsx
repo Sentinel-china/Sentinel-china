@@ -18,33 +18,33 @@ import inductiveProximity06Content from '../articles/markdown-cases/inductive-pr
 // Inductive Proximity Sensor产品案例配置映射
 const inductiveProximityConfig = {
   'inductive-proximity01': {
-    title: "Inductive Proximity Sensor Technology",
-    description: "Learn about inductive proximity sensor technology, features, and applications for metal detection in industrial environments.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+    title: "Output-Type IO-Link Converters",
+    description: "Discover SENTINEL’s new CIOL-1AO-SC and CIOL-2VO-SC IO-Link converters—smart solutions for integrating analog actuators into modern IO-Link systems with precision and efficiency.",
+    image: "http://image.sentinel-china.com/202508141650679.png"
   },
   'inductive-proximity02': {
-    title: "Inductive Proximity Sensor Applications",
-    description: "Explore various applications of inductive proximity sensors in automation and manufacturing",
+    title: "Differences Between Digital Signals, Analog Signals, and IO-Link",
+    description: "Comprehensive comparison of signal types in industrial automation - from basic digital to intelligent IO-Link communication",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
   },
   'inductive-proximity03': {
-    title: "Inductive Proximity Sensor Installation",
-    description: "Guidelines for proper installation and setup of inductive proximity sensors",
+    title: "one-to-two on-site assembly connector",
+    description: "SENTINEL's M12 one-to-two field assembly connector offers efficient wiring, clear pin assignments, and a dual-hole waterproof design. Ideal for modern industrial needs, it ensures precision, stability, and space-saving solutions in complex environments.",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop"
   },
   'inductive-proximity04': {
-    title: "Inductive Proximity Sensor Troubleshooting",
-    description: "Common issues and solutions for inductive proximity sensor problems",
+    title: "A Chinese Preferred Choice for Quality, Technology, and Support",
+    description: "Explore the remarkable experience of a satisfied customer using SENTINEL products. Discover the superior craftsmanship, zero-failure reliability, and impressive product range that solidify SENTINEL's status as a quality domestic brand in industrial automation solutions.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'inductive-proximity05': {
-    title: "Inductive Proximity Sensor Selection Guide",
-    description: "How to choose the right inductive proximity sensor for your application",
+    title: "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
+    description: "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'inductive-proximity06': {
-    title: "Inductive Proximity Sensor Maintenance",
-    description: "Best practices for maintaining and calibrating inductive proximity sensors",
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

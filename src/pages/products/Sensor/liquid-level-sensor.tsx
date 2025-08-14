@@ -150,25 +150,25 @@ export default function LiquidLevelSensorDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141552680.png",
+      link: "/markdown-config/liquid/liquid04"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508141557934.png",
+      link: "/markdown-config/liquid/liquid05"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508111406692.jpg",
+      link: "/markdown-config/liquid/liquid06"
     }
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop",
-    //   link: "/markdown-config/liquid/liquid04"
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
-    //   link: "/markdown-config/liquid/liquid05"
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/markdown-config/liquid/liquid06"
-    // }
   ]
 
   // 计算可滚动的产品数量

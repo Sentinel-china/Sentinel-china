@@ -33,18 +33,18 @@ const temperatureConfig = {
     image: "http://image.sentinel-china.com/202508111528078.png"
   },
   'temperature04': {
-    title: "Temperature Sensor Type 4",
-    description: "Compact temperature sensor with IO-Link communication capability.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+    title: "IO-Link Temperature Transmitter",
+    description: "IO-Link smart communication, and 4-20mA output, ideal for food, pharmaceutical, and chemical industries.",
+    image: "http://image.sentinel-china.com/202508141552680.png"
   },
   'temperature05': {
-    title: "Temperature Sensor Type 5",
-    description: "Split-type temperature sensor for flexible installation in narrow spaces.",
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'temperature06': {
-    title: "Temperature Sensor Type 6",
-    description: "Custom temperature sensor solutions for specific industrial applications.",
+    title: "Vortex flow sensor on mold temperature controller",
+    description: "Discover how SENTINEL vortex flow sensors enhance mold temperature controllers in plastic and die-casting industries.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }

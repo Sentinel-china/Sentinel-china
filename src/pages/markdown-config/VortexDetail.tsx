@@ -38,13 +38,13 @@ const vortexConfig = {
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
   },
   'vortex05': {
-    title: "Troubleshooting Guide",
-    description: "Common issues and solutions for vortex flow sensor operation",
+    title: "Precision Control · Efficient Production: SENTINEL IO-Link Sensors Empower the Beer Industry",
+    description: "Enhance beer brewing automation with SENTINEL IO-Link Smart Sensor Series, including temperature, pressure, and flow sensors plus IO-Link master stations.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
   },
   'vortex06': {
-    title: "Advanced Features",
-    description: "Advanced features and capabilities of modern vortex flow sensors",
+    title: "Small-Sized Vortex Flow Sensor – High Accuracy Flow & Temperature Monitoring",
+    description: "Discover SENTINEL’s new compact vortex flow sensor for precise water flow measurement. Dual output for flow & temperature, IPS display, and easy installation for industrial automation.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
   }
 }
