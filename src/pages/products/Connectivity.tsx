@@ -210,7 +210,7 @@ export default function BusinessIntelligenceDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 mb-8 leading-relaxed text-justify">
                 SENTINEL offers a wide variety of products are available, including male-female connectors, pre-cast connectors, junction boxes, as well as cables, and accessories. we can provide standard products and customized products to customer needs.
               </p>
               
@@ -303,7 +303,7 @@ export default function BusinessIntelligenceDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify">
+                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
                     <p>
                       The connectivity system is an indispensable product for connecting field devices and control devices.
                     </p>

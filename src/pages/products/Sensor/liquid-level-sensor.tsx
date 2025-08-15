@@ -214,7 +214,7 @@ export default function LiquidLevelSensorDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
                 The SENTINEL liquid level sensor is a critical device designed for detecting and measuring the height of liquids, providing real-time monitoring of level changes in containers or tanks. It is widely used in industrial automation, environmental protection, chemical energy, oil storage and transportation, food processing, and medical equipment, helping enterprises enhance safety, automation, and management efficiency.
               </p>
               
@@ -254,7 +254,7 @@ export default function LiquidLevelSensorDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -307,7 +307,7 @@ export default function LiquidLevelSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify">
+                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
                     <p>
                       IO-Link Smart liquid level/Temperature Sensor.4-digit large digital tube display, mirroring, semi-transparent design.The display panel adopts an integrated molded housing.
                     </p>
@@ -430,7 +430,7 @@ export default function LiquidLevelSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Application<span className="text-yellow-400"> Scenarios</span>
             </h2>
-            <p className="text-xl text-gray-300">SENTINEL's level sensors are widely applied in food and beverage, emulsion, pharmaceutical, chemical, and water treatment industries, enabling precise level monitoring in various liquid tanks, reactors, and pipeline systems.</p>
+            <p className="text-xl text-gray-300  dark:text-gray-300 text-gray-600 mb-8">SENTINEL's level sensors are widely applied in food and beverage, emulsion, pharmaceutical, chemical, and water treatment industries, enabling precise level monitoring in various liquid tanks, reactors, and pipeline systems.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">

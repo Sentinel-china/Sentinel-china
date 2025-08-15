@@ -62,7 +62,7 @@ export default function HomePage() {
                   <span className="text-yellow-400 block">IO-Link</span>
                   <span className="text-yellow-400 block">I/O Module</span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed">
+                <p className="text-xl text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
                   Professional technical teams and cutting-edge solutions to create greater business value
                   for your enterprise, leading new trends in industry digital development.
                 </p>
@@ -195,21 +195,21 @@ export default function HomePage() {
                 <Award className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">5YR</div>
-              <div className="text-gray-300">Warranty</div>
+              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Warranty</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Users className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">24Hrs</div>
-              <div className="text-gray-300">Customer Service</div>
+              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Customer Service</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <TrendingUp className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">98%</div>
-              <div className="text-gray-300">Customer Satisfaction</div>
+              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Customer Satisfaction</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
