@@ -125,7 +125,7 @@ export default function LiquidLevelSensorDetail() {
     {
       company: "Beverage production enterprises",
       industry: "split-type liquid level Sensor",
-      challenge: "Food and beverage production enterprises need to strictly control the liquid level of storage tanks during the storage of raw materials such as fruit juice and syrup. The enterprise selects SENTINEL's food - grade 304 stainless - steel liquid - level sensor. At the same time, the sensor can issue low - liquid - level warnings in a timely manner to avoid production line stoppages caused by the depletion of raw materials, and also prevent raw material spills when the liquid level is high, which can cause waste and pollution. It provides strong support for the continuity and safety of food and beverage production.",
+      challenge: "In the beverage production process, level sensors are used to monitor the liquid levels in storage tanks and filling machines. The split design addresses the issues of space limitations and hygiene management. Moreover, the level sensors of SENTINEL integrate a temperature monitoring function, enabling real-time monitoring of liquid temperature changes to ensure the safety and quality of beverage production.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-export.sentinel-china-banner.jpg"

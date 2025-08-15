@@ -121,7 +121,7 @@ export default function BusinessIntelligenceDetail() {
     {
       company: "CONNECTORS",
       industry: "CONNECTIVITY",
-      challenge: "The power connector used is 7/8\" standard connector, which is designed to provide power for SENTINEL bus module products, and is divided into male type and female type.",
+      challenge: "SENTINEL- field wiring connector, which covers M8, M12 and M16 standard connector sizes, and has straight-line and right-angle connections. Field connector allows customers to connect with their own cables.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-14-31.jpg"
@@ -437,8 +437,8 @@ export default function BusinessIntelligenceDetail() {
                 onClick={() => {
                   // 根据不同的案例跳转到不同的页面
                   switch(case_.company) {
-                    case '7/8” POWER CABLE':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020734156.html'; 
+                    case 'CONNECTORS':
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775492.html'; 
                       break;
                     case 'JUNCTION BOXES':
                       window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020757332.html'; 

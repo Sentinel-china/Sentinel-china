@@ -118,7 +118,7 @@ export default function ThermalFlowSensorDetail() {
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-12-plsx.png",
-      link: "https://www.sentinel-china.com/eproduct/index_100000020778958.html"
+      link: "https://www.sentinel-china.com/eproduct/index686.html"
     },
     {
       company: "PLSU",
@@ -127,7 +127,7 @@ export default function ThermalFlowSensorDetail() {
       solution: "",
       result: "",
       image: "https://image.harryrou.wiki/2025-08-12-plsu.png",
-      link: "https://www.sentinel-china.com/eproduct/index_100000020778958.html"
+      link: "https://www.sentinel-china.com/eproduct/index921.html"
     },
     {
       company: "PLSN",
