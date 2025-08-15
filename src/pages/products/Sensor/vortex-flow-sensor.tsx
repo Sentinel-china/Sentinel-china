@@ -311,10 +311,10 @@ export default function VortexFlowSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      Von Kaman vortex principle.Flow,temperature dual switching signal output,dual display. High-resolution lPS display.Four viewing directions can be switched.Cumulative flow recording function.Analog or switch output,compatible with lO-Link protocol.
+                      Von Kaman vortex principle. Flow, temperature dual switching signal output, dual display. High-resolution lPS display.Four viewing directions can be switched. Cumulative flow recording function. Analog or switch output, compatible with lO-Link protocol.
                     </p>
                     <p>
-                      Switching signal NONC,NPN/PNP/push-pull optional.Units can be selected,simple button menu operation.Various thread specifications,suitable for different installation requirements.Compact size,takes up little space.Standard 4-pin M12 electrical interface.
+                      Switching signal NONC, NPN/PNP/push-pull optional. Units can be selected, simple button menu operation. Various thread specifications, suitable for different installation requirements. Compact size, takes up little space. Standard 4-pin M12 electrical interface.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">

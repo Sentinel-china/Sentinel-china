@@ -109,7 +109,7 @@ export default function InductiveProximitySensorDetail() {
     {
       company: "M8 series",
       industry: "proximity Sensor",
-      challenge: "Design of M8 X 1 cylindrical thread. Equipped with M12 x 1 connector to ensure reliable electrical connection. It has an IP67 protection level.Built - in short - circuit protection function.",
+      challenge: "Design of M8 X 1 cylindrical thread. Equipped with M12 x 1 connector to ensure reliable electrical connection. It has an IP67 protection level. Built - in short - circuit protection function.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-proximity11.jpg"
@@ -125,7 +125,7 @@ export default function InductiveProximitySensorDetail() {
     {
       company: "M30 series",
       industry: "proximity Sensor",
-      challenge: "The design of M30 X 1.5 cylindrical thread facilitates installation and fixation. Chrome-plated copper material is used, which has good corrosion resistance and electrical conductivity.Built-in reverse polarity protection function.",
+      challenge: "The design of M30 X 1.5 cylindrical thread facilitates installation and fixation. Chrome-plated copper material is used, which has good corrosion resistance and electrical conductivity. Built-in reverse polarity protection function.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-proximity13.jpg"

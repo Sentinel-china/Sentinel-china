@@ -111,7 +111,7 @@ export default function CloudServiceDetail() {
     {
       company: "IP67",
       industry: "Communication Protocol:PROFINET,CC-Link IE Field Basic,EtherCAT",
-      challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust.It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
+      challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust. It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-25.jpg"

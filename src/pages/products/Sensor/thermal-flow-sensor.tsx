@@ -320,7 +320,7 @@ export default function ThermalFlowSensorDetail() {
                       Based on the thermal conductivity principle, Sentinel’s flow sensor can reliably monitor the flow limit value, and also monitor and alarm the temperature of the medium.
                     </p>
                     <p>
-                      Insertion measurement,reliable monitoring of liquids,such aswater and oil in pipelines
+                      Insertion measurement, reliable monitoring of liquids, such aswater and oil in pipelines.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
