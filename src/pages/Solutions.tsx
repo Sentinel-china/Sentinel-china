@@ -217,7 +217,7 @@ export default function SolutionsPage() {
                 <span className="text-3xl font-bold text-yellow-400">01</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Communication</h3>
-              <p className="text-gray-300 text-sm text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-sm ">
                 Understand customer needs and industry characteristics through in-depth communication and research
               </p>
             </div>
@@ -227,7 +227,7 @@ export default function SolutionsPage() {
                 <span className="text-3xl font-bold text-yellow-400">02</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Product Selection</h3>
-              <p className="text-gray-300 text-sm text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-sm ">
                 Provide customized product selection and solution design based on customer needs and industry characteristics
               </p>
             </div>
@@ -237,7 +237,7 @@ export default function SolutionsPage() {
                 <span className="text-3xl font-bold text-yellow-400">03</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Deliver goods on time</h3>
-              <p className="text-gray-300 text-sm text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-sm ">
                 Ensure timely delivery of products and provide technical support to ensure smooth project progress
               </p>
             </div>
@@ -247,7 +247,7 @@ export default function SolutionsPage() {
                 <span className="text-3xl font-bold text-yellow-400">04</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">After-sales service</h3>
-              <p className="text-gray-300 text-sm text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-sm ">
                 Provide comprehensive after-sales service, including technical support, product maintenance, and upgrades
               </p>
             </div>

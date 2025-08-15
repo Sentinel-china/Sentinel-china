@@ -216,7 +216,7 @@ export default function HomePage() {
                 <Globe className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">50+</div>
-              <div className="text-gray-300">Cities Covered</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Cities Covered</div>
             </div>
           </div>
         </div>
