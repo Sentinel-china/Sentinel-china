@@ -69,7 +69,7 @@ function renderMarkdown(markdown: string): string {
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="max-w-full h-auto rounded-lg shadow-lg my-4" />')
     
     // 分隔线处理
-    .replace(/^---$/gim, '<hr class="border-gray-600 my-8" />')
+    .replace(/^---$/gim, '<hr class="border-gray-600 dark:border-gray-600 light:border-gray-300 my-8" />')
     
     // 标题渲染 - 必须在列表处理之前
     .replace(/^#### (.*$)/gim, '<h4>$1</h4>')
@@ -87,13 +87,13 @@ function renderMarkdown(markdown: string): string {
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
     
     // 代码块
-    .replace(/```([\s\S]*?)```/g, '<pre class="bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>')
+    .replace(/```([\s\S]*?)```/g, '<pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-gray-800 dark:text-yellow-400">$1</code></pre>')
     
     // 行内代码
-    .replace(/`([^`]+)`/g, '<code class="bg-gray-800 px-1 py-0.5 rounded text-sm">$1</code>')
+    .replace(/`([^`]+)`/g, '<code class="bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-yellow-400 px-1 py-0.5 rounded text-sm">$1</code>')
     
     // 链接 - 改进版本，处理特殊格式
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-yellow-400 hover:text-yellow-300 underline" target="_blank" rel="noopener noreferrer">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 dark:text-yellow-400 hover:text-blue-500 dark:hover:text-yellow-300 underline" target="_blank" rel="noopener noreferrer">$1</a>')
     
     // 处理强制换行（两个空格结尾）
     .replace(/  \n/g, '<br>')
@@ -286,7 +286,7 @@ export default function InductiveDetail() {
               <p className="text-gray-300">{error}</p>
             </div>
           ) : (
-            <div className="prose prose-invert prose-yellow max-w-none">
+            <div className="prose prose-gray dark:prose-invert prose-yellow dark:prose-yellow max-w-none">
               <div 
                 className="markdown-content"
                 dangerouslySetInnerHTML={{ __html: renderMarkdown(markdownContent) }}
