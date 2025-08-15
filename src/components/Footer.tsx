@@ -142,7 +142,7 @@ export default function Footer() {
     cookieBanner.innerHTML = `
       <div>
         This website uses cookies to enhance your browsing experience, and we will only enable non-essential cookies with your consent.
-        <a href="/privacy-policy" target="_blank">More</a>
+        <a href="#/privacy-policy">privacy-policy</a>
       </div>
       <div class="buttons">
         <button id="acceptAllBtn">Accept all Cookie</button>

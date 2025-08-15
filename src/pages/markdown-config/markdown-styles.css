@@ -3,24 +3,49 @@
   @apply text-gray-300 leading-relaxed;
 }
 
+/* 白色主题下的markdown样式 */
+.light .markdown-content {
+  @apply text-gray-800 leading-relaxed;
+}
+
 .markdown-content h1 {
   @apply text-3xl font-bold text-white mt-10 mb-8 border-b border-gray-700 pb-4;
+}
+
+.light .markdown-content h1 {
+  @apply text-3xl font-bold text-gray-900 mt-10 mb-8 border-b border-gray-300 pb-4;
 }
 
 .markdown-content h2 {
   @apply text-2xl font-bold text-white mt-10 mb-6 border-b border-gray-700 pb-3;
 }
 
+.light .markdown-content h2 {
+  @apply text-2xl font-bold text-gray-900 mt-10 mb-6 border-b border-gray-300 pb-3;
+}
+
 .markdown-content h3 {
   @apply text-xl font-semibold text-yellow-400 mt-8 mb-4;
+}
+
+.light .markdown-content h3 {
+  @apply text-xl font-semibold text-blue-600 mt-8 mb-4;
 }
 
 .markdown-content h4 {
   @apply text-lg font-semibold text-yellow-400 mt-6 mb-3;
 }
 
+.light .markdown-content h4 {
+  @apply text-lg font-semibold text-blue-600 mt-6 mb-3;
+}
+
 .markdown-content p {
   @apply text-gray-300 leading-relaxed mb-6;
+}
+
+.light .markdown-content p {
+  @apply text-gray-800 leading-relaxed mb-6;
 }
 
 /* 改进的列表样式 */
@@ -37,8 +62,18 @@
   @apply text-gray-300 leading-relaxed relative;
 }
 
+.light .markdown-content li {
+  @apply text-gray-800 leading-relaxed relative;
+}
+
 .markdown-content ul li::before {
   @apply absolute left-0 w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2;
+  content: '';
+  left: -1rem;
+}
+
+.light .markdown-content ul li::before {
+  @apply absolute left-0 w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2;
   content: '';
   left: -1rem;
 }
@@ -55,10 +90,19 @@
   @apply text-yellow-400 font-semibold;
 }
 
+.light .markdown-content strong {
+  @apply text-blue-600 font-semibold;
+}
+
 /* 分隔线样式 */
 .markdown-content hr {
   @apply border-gray-600 my-8 border-t-2;
   background: linear-gradient(90deg, transparent, #4B5563, transparent);
+}
+
+.light .markdown-content hr {
+  @apply border-gray-300 my-8 border-t-2;
+  background: linear-gradient(90deg, transparent, #D1D5DB, transparent);
 }
 
 /* 引用块样式 */
@@ -66,16 +110,32 @@
   @apply border-l-4 border-yellow-400 pl-6 py-4 my-6 bg-gray-800/50 italic text-gray-200;
 }
 
+.light .markdown-content blockquote {
+  @apply border-l-4 border-blue-600 pl-6 py-4 my-6 bg-gray-100/80 italic text-gray-700;
+}
+
 .markdown-content code {
   @apply bg-gray-800 text-yellow-400 px-2 py-1 rounded text-sm;
+}
+
+.light .markdown-content code {
+  @apply bg-gray-100 text-blue-600 px-2 py-1 rounded text-sm;
 }
 
 .markdown-content pre {
   @apply bg-gray-800 p-4 rounded-lg overflow-x-auto my-6;
 }
 
+.light .markdown-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+}
+
 .markdown-content pre code {
   @apply bg-transparent p-0;
+}
+
+.light .markdown-content pre code {
+  @apply bg-transparent p-0 text-gray-800;
 }
 
 .markdown-content table {
@@ -87,16 +147,33 @@
   @apply border border-gray-600 px-4 py-2 text-left;
 }
 
+.light .markdown-content th,
+.light .markdown-content td {
+  @apply border border-gray-300 px-4 py-2 text-left;
+}
+
 .markdown-content th {
   @apply bg-gray-800 font-semibold text-yellow-400;
+}
+
+.light .markdown-content th {
+  @apply bg-gray-100 font-semibold text-blue-600;
 }
 
 .markdown-content td {
   @apply text-gray-300;
 }
 
+.light .markdown-content td {
+  @apply text-gray-800;
+}
+
 .markdown-content a {
   @apply text-yellow-400 hover:text-yellow-300 underline;
+}
+
+.light .markdown-content a {
+  @apply text-blue-600 hover:text-blue-500 underline;
 }
 
 .markdown-content img {
@@ -112,6 +189,19 @@
   max-width: 600px;
 }
 
+.light .markdown-content img {
+  @apply max-w-2xl h-auto rounded-2xl my-8 mx-auto block;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 5px 10px rgba(0, 0, 0, 0.08),
+    0 2px 5px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: perspective(1000px) rotateX(1deg);
+  transition: all 0.3s ease;
+  width: 70%;
+  max-width: 600px;
+}
+
 .markdown-content img:hover {
   transform: perspective(1000px) rotateX(0deg) translateY(-5px);
   box-shadow: 
@@ -119,6 +209,15 @@
     0 8px 15px rgba(0, 0, 0, 0.25),
     0 4px 8px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.light .markdown-content img:hover {
+  transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.15),
+    0 8px 15px rgba(0, 0, 0, 0.12),
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 /* 响应式设计 */
@@ -145,6 +244,16 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 
+  .light .markdown-content img {
+    width: 85%;
+    max-width: 400px;
+    box-shadow: 
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 4px 8px rgba(0, 0, 0, 0.08),
+      0 2px 4px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
   .markdown-content img:hover {
     transform: perspective(1000px) rotateX(0deg) translateY(-3px);
     box-shadow: 
@@ -152,6 +261,15 @@
       0 6px 12px rgba(0, 0, 0, 0.22),
       0 3px 6px rgba(0, 0, 0, 0.16),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .light .markdown-content img:hover {
+    transform: perspective(1000px) rotateX(0deg) translateY(-3px);
+    box-shadow: 
+      0 12px 24px rgba(0, 0, 0, 0.15),
+      0 6px 12px rgba(0, 0, 0, 0.12),
+      0 3px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
   }
   
   .markdown-content ul,

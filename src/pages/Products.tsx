@@ -50,7 +50,7 @@ export default function ProductsPage() {
             
             <span className="text-yellow-400">PRODUCTS</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
            We provide a full range of technical products and professional services to help factory automation transformation and upgrade, improve business efficiency and competitive advantage.
           </p>
         </div>

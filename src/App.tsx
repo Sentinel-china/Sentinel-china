@@ -34,6 +34,7 @@ import VortexFlowSensor from './pages/products/Sensor/vortex-flow-sensor'
 import PressureSensor from './pages/products/Sensor/pressure-sensor'
 import LiquidLevelSensor from './pages/products/Sensor/liquid-level-sensor'
 import InductiveProximitySensor from './pages/products/Sensor/inductive-proximity-sensor'
+import PrivacyPolicyPage from './pages/PrivacyPolicy'
 
 export default function App() {
   return (
@@ -71,6 +72,7 @@ export default function App() {
             <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>
         <Footer />

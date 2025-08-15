@@ -215,7 +215,7 @@ export default function PressureSensorDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
                 SENTINEL’s compact pressure sensors and pressure transmitters have: a variety of different connection sizes and output signals, as well as a wide pressure range, rich function settings and flexible installation methods, which can meet the various needs of actual production.
               </p>
               
@@ -255,7 +255,7 @@ export default function PressureSensorDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -308,7 +308,7 @@ export default function PressureSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify">
+                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
                     <p>
                       Pressure is one of the most frequently measured parameters in industry, whether it is a press, a cooling circuit or a storage tank, there is a need to monitor and measure pressure parameters.
                     </p>
