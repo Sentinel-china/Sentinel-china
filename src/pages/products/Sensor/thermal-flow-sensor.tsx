@@ -142,37 +142,37 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Advanced Thermal Flow Measurement",
+      title: "PLSU Series Flow Sensors",
       description: "",
       image: "http://image.sentinel-china.com/202508131427956.png",
       link: "/products/thermal/thermal01"
     },
     {
-      title: "Industrial Flow Monitoring Solutions",
+      title: "What is a Thermal Conductivity Flow Sensor",
       description: "",
       image: "http://image.sentinel-china.com/202508131431026.png",
       link: "/products/thermal/thermal02"
     },
     {
-      title: "Smart Flow Sensor Technology",
+      title: "empowering the powder metallurgy industry",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/thermal/thermal03"
     },
     {
-      title: "Precision Flow Control Systems",
+      title: "SENTINEL One-piece Temperature Flowmeter",
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
     },
     {
-      title: "",
+      title: "IO-Link Temperature Transmitter",
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/products/thermal/thermal05"
     },
     {
-      title: "",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "Latest advancements in thermal flow sensor technology and innovation",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/thermal/thermal06"

@@ -137,37 +137,37 @@ export default function TemperatureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Industrial Temperature Monitoring Solutions",
+      title: "IO-Link Smart Sensors in Hydraulic Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/temperature01"
     },
     {
-      title: "High-Precision Temperature Sensors",
+      title: "How IO-Link temperature sensors work",
       description: "",
       image: "http://image.sentinel-china.com/202508131023283.png",
       link: "/markdown-config/temperature02"
     },
     {
-      title: "Wireless Temperature Monitoring Systems",
+      title: "empowering the powder metallurgy industry",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/markdown-config/temperature03"
     },
     {
-      title: "",
+      title: "IO-Link Temperature Transmitter",
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/markdown-config/temperature04"
     },
     {
-      title: "",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/markdown-config/temperature05"
     },
     {
-      title: "",
+      title: "Vortex flow sensor on mold temperature controller",
       description: "",
       image: "http://image.sentinel-china.com/202508141613646.png",
       link: "/markdown-config/temperature06"

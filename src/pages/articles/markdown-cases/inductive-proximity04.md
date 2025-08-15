@@ -1,18 +1,16 @@
-# Customer Feedback on SENTINEL Products
-
 ## First Encounter with SENTINEL
 I first came into contact with **SENTINEL** products and was impressed by their **craftsmanship, materials, and quality**—far beyond my expectations for a domestic brand. I even mistook it for a foreign brand at first.
 
 SENTINEL’s **official website** also left a great impression: no annoying ads or pop-ups, just clear product descriptions, professional company introductions, and detailed application scenarios. The overall style reflects **pragmatism and professionalism**.
 
-![SENTINEL Website](/vancheerfile/Images/2023/7/20230713081810833.png)
+![SENTINEL Website](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230713081810833.png)
 
 ## Five Years Without Failures – Stable and Reliable
 Initially, I had some doubts about quality, since it usually requires years of market validation. However, **SENTINEL’s performance in both testing and real application was outstanding**.  
 
 Over **five years**, the **proximity switches, water flow switches, terminal boxes, distributed I/O** and other products I used had **zero failures**. Compared to **international top brands**, SENTINEL’s performance and lifespan are **on par**, but at a **more competitive price**.
 
-![SENTINEL Products in Use](/vancheerfile/Images/2023/7/20230713082221132.jpg)
+![SENTINEL Products in Use](https://www.sentinel-china.com/vancheerfile/Images/2023/7/20230713082221132.jpg)
 
 ## Issues
 In fieldbus solutions, SENTINEL’s devices significantly **reduce wiring workload** and support protocols of most mainstream PLCs, which builds trust.  

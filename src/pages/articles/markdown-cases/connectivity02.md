@@ -1,4 +1,4 @@
-# SENTINEL CIOL Series IO-Link to Analog Output Converters  
+## SENTINEL CIOL Series IO-Link to Analog Output Converters  
 
 **In the era of Industry 4.0**, IO-Link technology is transforming device connectivity with its **simple installation**, **reliable communication**, and **powerful remote diagnostics**.  
 
@@ -13,6 +13,7 @@ Both offer **smart, efficient analog data handling** for industrial applications
 ![CIOL series analog output module overview](http://image.sentinel-china.com/202505230822496.png)  
 
 ### CIOL-1AO-SC – Single-Channel Current Output  
+
 - **Output modes:** 4–20 mA or 0–20 mA  
 - **Resolution:** ≤12-bit  
 - **Accuracy:** 0.1% F.S.  
@@ -21,6 +22,7 @@ Both offer **smart, efficient analog data handling** for industrial applications
 - **Protocol:** IO-Link V1.1  
 
 ### CIOL-2VO-SC – Dual-Channel Voltage Output  
+
 - **Output range:** 0–10 V (two channels)  
 - **Resolution:** ≤12-bit  
 - **Accuracy:** 0.1% F.S.  
@@ -28,6 +30,7 @@ Both offer **smart, efficient analog data handling** for industrial applications
 - Ideal for **multi-axis control**, **fan regulation**, **lab instrumentation**  
 
 ### Shared Features  
+
 - IO-Link process data + ISDU parameter access  
 - Remote diagnostics, device identification, and parameter management  
 - Semi-transparent housing with LED indicators for clear status feedback  
@@ -39,7 +42,8 @@ In industries such as **fluid control, process regulation, temperature managemen
 
 The CIOL series bridges the gap by enabling **secure, stable, and intelligent integration** of these analog devices into **IO-Link control systems**, supporting standard **4–20 mA** and **0–10 V** signal formats.  
 
-## Benefits of the CIOL Series  
+## Benefits of the CIOL Series 
+ 
 - **Direct integration** of analog devices into IO-Link networks  
 - **Enhanced flexibility** and transparency in automation systems  
 - Suitable for both **new installations** and **digital retrofits**  

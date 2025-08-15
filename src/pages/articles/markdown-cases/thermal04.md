@@ -2,7 +2,7 @@
 
 I am a field instrument engineer. In 2022, we are undertaking an industrial silicon furnace project in Baotou, Inner Mongolia, using over 1000 integrated temperature and flow meters of SENTINEL. This is a newly developed product that combines temperature and flow measurement and features a large digital display for remote monitoring, greatly facilitating our work. Each meter has over 200 analog channels that are all connected to SENTINEL acquisition modules and communicate via Modbus and DCS, reducing a great deal of on-site signal lines and saving labor and material costs.
 
-![Integrated Temperature and Flow Meter](http://image.sentinel-china.com/20230621163720585.png)
+![Integrated Temperature and Flow Meter](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621163720585.png)
 
 # **Technical Support and Product Performance**
 
@@ -10,7 +10,7 @@ In the early stages of product debugging, I was not familiar with this newly dev
 
 During my use of SENTINEL's solution, there were two aspects that made me deeply trust them. First, their telephone support service was very effective. They often conducted follow-up calls to ensure that our needs were met. Secondly, their service was very efficient, with a good attitude and high quality. They were able to promptly resolve some unexpected situations that occurred on-site, and won unanimous praise from our users.
 
-![On-site Technical Support](http://image.sentinel-china.com/20230621163753007.png)
+![On-site Technical Support](https://www.sentinel-china.com/vancheerfile/Images/2023/6/20230621163753007.png)
 
 # **Communication Efficiency**
 

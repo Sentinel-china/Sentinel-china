@@ -1,4 +1,4 @@
-# Industrial Automation Connector Guide
+## Industrial Automation Connector Guide
 
 In modern industrial automation systems, **power, signal, and data transmission** between devices relies on robust **connection technology**.  
 Connectors are not just passive components—they are the **lifelines** of equipment reliability.

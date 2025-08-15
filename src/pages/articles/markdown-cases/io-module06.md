@@ -1,4 +1,3 @@
-# ELMT-8IOL-L001 & ELMT-8IOL-L04B  
 ## IO-Link Master Modules with Modbus-TCP for Smarter Industrial Connectivity
 
 **In today’s rapidly evolving industrial automation landscape, on-site device connectivity demands are becoming increasingly diverse.**  
@@ -30,22 +29,25 @@ The ELMT series master modules leverage this protocol for **direct Ethernet data
 | **Protection Level** | IP67, shock & vibration resistant | IP67, resin encapsulated, corrosion resistant |
 | **Typical Applications** | Standard IO-Link centralized control | Hybrid scenarios, B-class IO-Link devices |
 
-## Key Product Highlights
 
-### High-Efficiency Communication
+## High-Efficiency Communication
+
 - **Modbus-TCP protocol**
 - Dual **M12 D-coded Ethernet ports** (100 Mbps)  
 - Integrated switch for **daisy-chain topology**
 
-### Flexible Configuration
+## Flexible Configuration
+
 - **PORT_H/PORT_L DIP switches** for port status control
 - Supports **DHCP** and **static IP** (default: `192.168.0.*`)
 
-### Easy Maintenance & High Visibility
+## Easy Maintenance & High Visibility
+
 - **LED status indicators** for power, network, and per-port communication  
 - **Disconnection log** per port via Modbus register (e.g., register 30002 = C1)
 
-### Industrial-Grade Reliability
+## Industrial-Grade Reliability
+
 - High-strength **flame-retardant plastic housing**  
 - **IP67-rated** for operation in -20°C to +55°C  
 - Resistant to dust, water, and vibration

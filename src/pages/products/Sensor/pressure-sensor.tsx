@@ -135,37 +135,37 @@ export default function PressureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Industrial Pressure Monitoring",
+      title: "Pressure Sensors in Distillation Equipment",
       description: "",
       image: "http://image.sentinel-china.com/202508111633019.png",
       link: "/products/pressure/pressure01"
     },
     {
-      title: "High-Accuracy Pressure Sensors",
+      title: "IO-Link Smart Sensors in Hydraulic Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/pressure/pressure02"
     },
     {
-      title: "Smart Pressure Control Systems",
+      title: "Empower the Powder Metallurgy Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/pressure/pressure03"
     },
     {
-      title: "",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/pressure/pressure04"
     },
     {
-      title: "",
+      title: "Conical Seal Food-Grade Pressure Sensor",
       description: "",
       image: "http://image.sentinel-china.com/202508141627033.png",
       link: "/products/pressure/pressure05"
     },
     {
-      title: "",
+      title: "Differences Between Digital Signals",
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/pressure/pressure06"
