@@ -2,15 +2,22 @@
  * 网站头部导航组件
  * 包含Logo、导航菜单和响应式设计
  */
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Menu, X } from 'lucide-react'
+import { useTheme } from 'next-themes'
 import ThemeToggle from './ThemeToggle'
-// ... existing code ...
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const location = useLocation()
+  const { theme } = useTheme()
+
+  // 防止服务端渲染不匹配
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -20,13 +27,16 @@ export default function Header() {
     { path: '/contact', label: 'Contact Us' }
   ]
 
+  // 根据主题选择logo，默认使用深色主题logo
+  const logoSrc = mounted && theme === 'light' ? '/logo-light.png' : '/logo.png'
+
   return (
     <header className="bg-background/80 backdrop-blur-md border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="sentinel-logo" className="h-12 w-auto"/>
+          <img src={logoSrc} alt="sentinel-logo" className="h-12 w-auto"/>
           </Link>
 
           {/* Desktop Navigation */}
