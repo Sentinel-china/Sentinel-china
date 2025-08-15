@@ -231,20 +231,20 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Award className="text-yellow-400 mx-auto mb-4" size={48} />
-              <div className="text-3xl font-bold text-yellow-400 mb-2">6+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Years of Development</div>
+              <div className="text-3xl font-bold text-yellow-400 mb-2">17+</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Years Experiences</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Users className="text-yellow-400 mx-auto mb-4" size={48} />
-              <div className="text-3xl font-bold text-yellow-400 mb-2">80+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Professional Team</div>
+              <div className="text-3xl font-bold text-yellow-400 mb-2">1600+</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Customers</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <MapPin className="text-yellow-400 mx-auto mb-4" size={48} />
-              <div className="text-3xl font-bold text-yellow-400 mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Service Cities</div>
+              <div className="text-3xl font-bold text-yellow-400 mb-2">170+</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Solutions</div>
             </div>
           </div>
         </div>
