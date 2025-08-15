@@ -111,7 +111,7 @@ export default function CloudServiceDetail() {
     {
       company: "IP67",
       industry: "Communication Protocol:PROFINET,CC-Link IE Field Basic,EtherCAT",
-      challenge: "PROFINET is an open industrial Ethernet communication protocol, designed to collect and transmit data in industrial systems, and can realize real-time data transmission and reception. It is a real-time industrial Ethernet. Since profinet is based on Ethernet, it can have star, tree, bus and other topological structures of Ethernet.",
+      challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust.It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-25.jpg"
@@ -119,7 +119,7 @@ export default function CloudServiceDetail() {
     {
       company: "IP20",
       industry: "Communication Protocol:PROFINET,CC-Link IE Field Basic,EtherCAT",
-      challenge: "CC-Link IE Field Basic is a new member of the CC-Link IE protocol and was officially released in August 2016. This protocol is a bus network based on standard 100Mbps Ethernet, which is designed to provide a low-cost control network for small-scale systems that do not require high-speed control. SENTINEL Electronics is also the first manufacturer to independently develop the protocol’s high-protection-level remote I/O modules.",
+      challenge: "The IO modules of the IP20 series are specifically designed for high-density I/O integration environments and are suitable for relatively clean environments, such as indoor equipment cabinets. This series of modules integrates 32 I/O points and supports various flexible configurations.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-26.jpg"
@@ -127,7 +127,7 @@ export default function CloudServiceDetail() {
     {
       company: "SAP",
       industry: "Input and output adaptation",
-      challenge: "EtherCAT is an open-architecture fieldbus system based on Ethernet. EtherCAT sets a new standard for the system’s real-time performance and topology flexibility. At the same time, it also meets or even reduces the cost of fieldbus use. SENTINEL can provide users with EtherCAT protocol bus products with IP20 and IP67 protection class.",
+      challenge: "The IO Module SAP is an industrial - grade I/O module. It has an input - output adaptive mechanism, which can simplify the deployment process and enhance system consistency. It provides stable communication performance and a rigorous electrical protection strategy to ensure the reliable operation of the system.",
       solution: "",
       result: "",
       image: "https://image.sentinel-china.com/2025-08-13-25.jpg"
@@ -440,13 +440,13 @@ export default function CloudServiceDetail() {
                   // 根据不同的协议跳转到不同的页面
                   switch(case_.company) {
                     case 'IP67':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724735.html'; 
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
                       break;
                     case 'IP20':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020735494.html'; 
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
                       break;
                     case 'SAP':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020718250.html'; 
+                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
                       break;
                     default:
                       break;
