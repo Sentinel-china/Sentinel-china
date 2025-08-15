@@ -159,7 +159,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-4">About US</h3>
               <p className="text-gray-600 dark:text-gray-300 text-justify">
-                Tianjin Sentinel Electronics Co., Ltd(here in after to be referred to as SENTINEL)is an innovative Scientific and technological enterprise integrating R&D, production, and sales.SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc.
+                Tianjin Sentinel Electronics Co., Ltd ( here in after to be referred to as SENTINEL ) is an innovative Scientific and technological enterprise integrating R&D, production, and sales. SENTINEL provides industrial ethernet distributed I/O modules & IO-Link products, position sensors, process sensors, and connection accessories, etc.
               </p>
             </div>
 
@@ -169,7 +169,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
               <p className="text-gray-600 dark:text-gray-300 text-justify">
-                SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry,the metallurgical industry, etc.            
+                SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
                 </p>
             </div>
 

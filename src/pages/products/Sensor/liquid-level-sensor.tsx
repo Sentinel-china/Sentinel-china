@@ -309,10 +309,10 @@ export default function LiquidLevelSensorDetail() {
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      IO-Link Smart liquid level/Temperature Sensor.4-digit large digital tube display, mirroring, semi-transparent design.The display panel adopts an integrated molded housing.
+                      IO-Link Smart liquid level / Temperature Sensor. 4-digit large digital tube display, mirroring, semi-transparent design. The display panel adopts an integrated molded housing.
                     </p>
                     <p>
-                      Standard 4-pin A-code M12 interface.Simple key operation,with key lock funcition.The upper part of the housing can be rotated 300°.
+                      Standard 4-pin A-code M12 interface. Simple key operation, with key lock funcition. The upper part of the housing can be rotated 300°.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
