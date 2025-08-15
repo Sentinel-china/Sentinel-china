@@ -222,7 +222,7 @@ export default function ThermalFlowSensorDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 In the field of factory and process automation, it is necessary to monitor critical deviations in the flow rate of liquid media. It is commonly used to monitor the circulation of liquids such as coolant, the idling of pumps, etc.
               </p>
               
@@ -262,7 +262,7 @@ export default function ThermalFlowSensorDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -315,7 +315,7 @@ export default function ThermalFlowSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                  <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
                       Based on the thermal conductivity principle, Sentinel’s flow sensor can reliably monitor the flow limit value, and also monitor and alarm the temperature of the medium.
                     </p>

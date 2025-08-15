@@ -217,7 +217,7 @@ export default function TemperatureSensorDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 SENTINEL temperature sensors and transmitters are temperature detection devices that convert physical temperature into electrical or other types of output signals to meet the monitoring needs of industrial automation systems.
               </p>
               
@@ -257,7 +257,7 @@ export default function TemperatureSensorDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -310,7 +310,7 @@ export default function TemperatureSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                  <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
                       In industrial production, temperature switch is a reliable and practical equipment temperature detection device. Sentinel’s integrated intelligent temperature switch integrates measurement and display, which can provide a simple programming solution.
                     </p>

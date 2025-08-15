@@ -96,7 +96,7 @@ export default function ContactPage() {
             Contact
             <span className="text-yellow-400"> US</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
             We look forward to cooperating with you. Please contact us through the following methods,
             and our professional team will provide you with the highest quality products and solutions.
           </p>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                     <MapPin className="text-yellow-400 mt-1" size={20} />
                     <div>
                       <p className="font-semibold">Tianjin Headquarters</p>
-                      <p className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin</p>
+                      <p className="text-gray-600 dark:text-gray-300 mb-8">K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin</p>
                     </div>
                   </div>
                   

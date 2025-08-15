@@ -107,7 +107,7 @@ export default function AboutPage() {
             About
             <span className="text-yellow-400"> SENTINEL</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+                          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
             Tianjin Sentinel Electronics Co., Ltd is an innovative Scientific and technological enterprise integrating R&D, production, and sales.
           </p>
         </div>
@@ -122,10 +122,10 @@ export default function AboutPage() {
                 Professional quality,
                 <span className="text-yellow-400"> Trustworthy</span>
               </h2>
-              <p className="text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
                 SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc. These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
               </p>
-              <p className="text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
                  As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <Target className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Mission</h3>
               </div>
-              <p className="text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
                 Pioneer industrial sensors and IO-LINK modules via relentless R&D. Deliver precise, reliable solutions to drive seamless automation, efficiency, and sustainable industrial growth.
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 <Eye className="text-yellow-400 mr-4" size={32} />
                 <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
-              <p className="text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
                 Become the global benchmark in industrial sensing and IO-LINK tech. Connect industrial ecosystems with innovative solutions, shaping a smarter, more interconnected manufacturing world.
               </p>
             </div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
               Our
               <span className="text-yellow-400"> Certifications</span>
             </h2>
-            <p className="text-xl text-gray-300  dark:text-gray-300 text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               Professional certifications and achievements
             </p>
           </div>
@@ -232,19 +232,19 @@ export default function AboutPage() {
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Award className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">6+</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Years of Development</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Years of Development</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Users className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">80+</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Professional Team</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Professional Team</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <MapPin className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">50+</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Service Cities</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Service Cities</div>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function AboutPage() {
             Development
             <span className="text-yellow-400"> History</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto  dark:text-gray-300 text-gray-600 mb-8">
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
           Witness our growth journey
           </p>
         </div>

@@ -50,7 +50,7 @@ export default function ProductsPage() {
             
             <span className="text-yellow-400">PRODUCTS</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
            We provide a full range of technical products and professional services to help factory automation transformation and upgrade, improve business efficiency and competitive advantage.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function ProductsPage() {
               Service
               <span className="text-yellow-400"> Process</span>
             </h2>
-            <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               Standardized service processes to ensure product quality and delivery efficiency
             </p>
           </div>
@@ -116,7 +116,7 @@ export default function ProductsPage() {
                 <LaptopMinimalCheck className="text-2xl font-bold text-yellow-400" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Needs analysis</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm">Deeply understand customer needs and formulate detailed product plans</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Deeply understand customer needs and formulate detailed product plans</p>
             </div>
 
             <div className="text-center">
@@ -124,7 +124,7 @@ export default function ProductsPage() {
                 <Cog className="text-2xl font-bold text-yellow-400" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Selection&customization</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm">Match products and customize solutions</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Match products and customize solutions</p>
             </div>
 
             <div className="text-center">
@@ -132,7 +132,7 @@ export default function ProductsPage() {
               <PackageCheck className="text-2xl font-bold text-yellow-400" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Delivery</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm">Shipped on schedule</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Shipped on schedule</p>
             </div>
 
             <div className="text-center">
@@ -140,7 +140,7 @@ export default function ProductsPage() {
               <ShieldUser className="text-2xl font-bold text-yellow-400" />
               </div>
               <h3 className="text-lg font-semibold mb-2">After-sales</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-sm">Provide excellent after-sales service</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Provide excellent after-sales service</p>
             </div>
           </div>
         </div>

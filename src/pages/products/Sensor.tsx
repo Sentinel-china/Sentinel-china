@@ -85,11 +85,11 @@ export default function SensorDetail() {
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
                      Industrial<span className="text-yellow-400"> Sensors</span>
                   </h1>
-                  <p className="text-gray-400 dark:text-gray-400 text-gray-600">industrial Sensors</p>
+                  <p className="text-gray-400">industrial Sensors</p>
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 mb-8 leading-relaxed text-justify">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
                 As a detection device, Sensors can sense the measured information, and can transform the sensed information into electrical signals or other required forms, so as to meet the requirements of information transmission, processing, storage, display, Records and controls, etc.
               </p>
               
@@ -119,7 +119,7 @@ export default function SensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Sensor <span className="text-yellow-400">Products</span>
             </h2>
-            <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 ">
+            <p className="text-xl text-gray-600 dark:text-gray-300 ">
               Professional industrial sensor solutions for reliable data acquisition for your automation systems
             </p>
           </div>
