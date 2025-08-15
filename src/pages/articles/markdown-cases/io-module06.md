@@ -31,19 +31,23 @@ The ELMT series master modules leverage this protocol for **direct Ethernet data
 
 
 ## High-Efficiency Communication
+
 - **Modbus-TCP protocol**
 - Dual **M12 D-coded Ethernet ports** (100 Mbps)  
 - Integrated switch for **daisy-chain topology**
 
 ## Flexible Configuration
+
 - **PORT_H/PORT_L DIP switches** for port status control
 - Supports **DHCP** and **static IP** (default: `192.168.0.*`)
 
 ## Easy Maintenance & High Visibility
+
 - **LED status indicators** for power, network, and per-port communication  
 - **Disconnection log** per port via Modbus register (e.g., register 30002 = C1)
 
 ## Industrial-Grade Reliability
+
 - High-strength **flame-retardant plastic housing**  
 - **IP67-rated** for operation in -20°C to +55°C  
 - Resistant to dust, water, and vibration
