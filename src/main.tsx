@@ -7,7 +7,7 @@ const root = createRoot(document.getElementById('app')!)
 root.render(
   <ThemeProvider
     attribute="class"
-    defaultTheme="light"
+    defaultTheme="dark"
     enableSystem={true}
     disableTransitionOnChange={false}
   >

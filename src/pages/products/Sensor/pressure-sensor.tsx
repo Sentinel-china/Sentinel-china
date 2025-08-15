@@ -113,7 +113,7 @@ export default function PressureSensorDetail() {
       challenge: "The pressure sensors of SENTINEL are devices used to measure liquid pressure. They are widely used in fields such as industrial automation, food and beverage processing, metallurgy, machine tools, and hydraulic systems.",
       solution: "",
       result: "",
-      image: "https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/54fa4277-b18f-4eb2-8a01-f6982d338dca.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-food-1.jpg"
     },
     {
       company: "transmitter",

@@ -4,6 +4,7 @@
  */
 import { HashRouter, Route, Routes } from 'react-router'
 import Header from './components/Header'
+import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
 import HomePage from './pages/Home'
 import ProductsPage from './pages/Products'
@@ -39,6 +40,7 @@ export default function App() {
     <HashRouter>
       <div className="min-h-screen bg-background text-foreground">
         <Header />
+        <ScrollToTop />
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
