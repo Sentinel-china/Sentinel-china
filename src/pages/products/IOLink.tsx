@@ -217,7 +217,7 @@ export default function MobileDevelopmentDetail() {
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers,brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
+                As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers, brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
               </p>
               
               <div className="flex flex-wrap gap-4">
