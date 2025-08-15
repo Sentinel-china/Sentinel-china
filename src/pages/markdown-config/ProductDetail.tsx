@@ -43,9 +43,9 @@ const productConfig = {
     image: "http://image.sentinel-china.com/202508111528078.png"
   },
   'io-module06': {
-    title: "AI Machine Learning Platform",
-    description: "Enterprise-level artificial intelligence development platform",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+    title: "IO-Link Master Modules with Modbus-TCP Protocol",
+    description: "Discover SENTINEL ELMT-8IOL-L001 & L04B IO-Link master modules with Modbus-TCP, IP67 protection, fast setup, and flexible industrial connectivity.",
+    image: "http://image.sentinel-china.com/202508151007096.png"
   }
 }
 
@@ -163,7 +163,7 @@ export default function ProductDetail() {
            </Link>
            
            <div className="mb-8">
-             <h1 className="text-4xl lg:text-5xl font-bold mb-2 text-white">
+             <h1 className="text-4xl lg:text-5xl font-bold mb-2 text-gray-600 dark:text-gray-300">
                {product.title}
              </h1>
              <p className="text-xl text-gray-400">{product.description}</p>

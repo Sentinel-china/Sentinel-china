@@ -216,7 +216,7 @@ export default function MobileDevelopmentDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 mb-8 leading-relaxed text-justify">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
                 As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers,brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
               </p>
               
@@ -256,7 +256,7 @@ export default function MobileDevelopmentDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -309,7 +309,7 @@ export default function MobileDevelopmentDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                  <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
                       IO-Link is the worlds first standardized IO technology for communication with sensors and actuators.
                     </p>

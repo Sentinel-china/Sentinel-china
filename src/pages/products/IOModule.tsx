@@ -164,13 +164,13 @@ export default function CloudServiceDetail() {
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/io-module05"
+    },
+    {
+      title: "",
+      description: "",
+      image: "http://image.sentinel-china.com/202508151007096.png",
+      link: "/products/io-module06"
     }
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop",
-    //   link: "/products/io-module06"
-    // }
   ]
 
   // 计算可滚动的产品数量
@@ -216,7 +216,7 @@ export default function CloudServiceDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 mb-8 leading-relaxed text-justify">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
                As a professional Fieldbus module manufacturer, SENTINEL provides factory automation with Fieldbus modules that support various protocols such as Profibus-DP, Profinet, ModbusTCP, EtherCAT, CC-LINK, CC-LINK IE Field Basic.
               </p>
               
@@ -256,7 +256,7 @@ export default function CloudServiceDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -309,7 +309,7 @@ export default function CloudServiceDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                  <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
                       The products are mainly divided into two categories, one is a high protection level (IP67) series that can be used for on-site installation; the other is a compact single independent product series that can be installed in the cabinet.
                     </p>

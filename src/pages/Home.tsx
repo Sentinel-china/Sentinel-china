@@ -62,7 +62,7 @@ export default function HomePage() {
                   <span className="text-yellow-400 block">IO-Link</span>
                   <span className="text-yellow-400 block">I/O Module</span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+                <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                   Professional technical teams and cutting-edge solutions to create greater business value
                   for your enterprise, leading new trends in industry digital development.
                 </p>
@@ -147,7 +147,7 @@ export default function HomePage() {
               Why Choose
               <span className="text-yellow-400"> SENTINEL</span>
             </h2>
-            <p className="text-xl text-gray-300 dark:text-gray-300 text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Innovation makes good products, Focus makes better services
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
                 <Shield className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">About US</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-justify">
                 Tianjin Sentinel Electronics Co., Ltd(here in after to be referred to as SENTINEL)is an innovative Scientific and technological enterprise integrating R&D, production, and sales.SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc.
               </p>
             </div>
@@ -168,7 +168,7 @@ export default function HomePage() {
                 <Zap className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-justify">
                 SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry,the metallurgical industry, etc.            
                 </p>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                 <Users className="text-yellow-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Professional Team</h3>
-              <p className="text-gray-300 dark:text-gray-300 text-gray-600 text-justify">
+              <p className="text-gray-600 dark:text-gray-300 text-justify">
                 As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service. 
               </p>
             </div>
@@ -195,21 +195,21 @@ export default function HomePage() {
                 <Award className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">5YR</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Warranty</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Warranty</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Users className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">24Hrs</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Customer Service</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Customer Service</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <TrendingUp className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">98%</div>
-              <div className="text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Customer Satisfaction</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">Customer Satisfaction</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">

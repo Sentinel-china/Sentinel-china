@@ -216,7 +216,7 @@ export default function VortexFlowSensorDetail() {
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 In the field of modern industrial automation, accurate flow measurement is crucial for ensuring the efficiency and quality of the production process. Vortex flow sensors play an indispensable role in many application scenarios due to their high precision, stability, and reliability.
               </p>
               
@@ -256,7 +256,7 @@ export default function VortexFlowSensorDetail() {
                   <feature.icon className="text-yellow-400" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -309,7 +309,7 @@ export default function VortexFlowSensorDetail() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
-                  <div className="space-y-4 text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                  <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
                       Von Kaman vortex principle.Flow,temperature dual switching signal output,dual display. High-resolution lPS display.Four viewing directions can be switched.Cumulative flow recording function.Analog or switch output,compatible with lO-Link protocol.
                     </p>
@@ -432,7 +432,7 @@ export default function VortexFlowSensorDetail() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Product<span className="text-yellow-400"> Type</span>
             </h2>
-            <p className="text-xl text-gray-300  dark:text-gray-300 text-gray-600 mb-8">Vortex flow sensors are widely used in industrial pure water monitoring, flow and temperature management in mold temperature machines, cooling water monitoring, the food and beverage industry, etc.</p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">Vortex flow sensors are widely used in industrial pure water monitoring, flow and temperature management in mold temperature machines, cooling water monitoring, the food and beverage industry, etc.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">

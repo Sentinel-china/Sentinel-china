@@ -125,7 +125,7 @@ export default function SolutionsPage() {
             Industry
             <span className="text-yellow-400"> SOLUTIONS</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed  dark:text-gray-300 text-gray-600 mb-8">
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
             Targeting the characteristics and needs of different industries, we provide customized technology solutions
             to help various industries achieve digital transformation and business innovation.
           </p>
@@ -147,7 +147,7 @@ export default function SolutionsPage() {
                   </Link>
                 </div>
                 
-                <p className="text-lg text-gray-300 text-justify  dark:text-gray-300 text-gray-600 mb-8">
+                <p className="text-lg text-gray-600 dark:text-gray-300 text-justify mb-8">
                   {solution.description}
                 </p>
 
@@ -156,7 +156,7 @@ export default function SolutionsPage() {
                     <h3 className="text-lg font-semibold text-yellow-400 mb-3">Core Features</h3>
                     <ul className="space-y-2">
                       {solution.keyFeatures.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-gray-300  dark:text-gray-300 text-gray-600 mb-8">
+                        <li key={featureIndex} className="flex items-center text-gray-600 dark:text-gray-300 mb-8">
                           <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
                           {feature}
                         </li>
@@ -168,7 +168,7 @@ export default function SolutionsPage() {
                     <h3 className="text-lg font-semibold text-yellow-400 mb-3">Core Value</h3>
                     <ul className="space-y-2">
                       {solution.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-center text-gray-300  dark:text-gray-300 text-gray-600 mb-8">
+                        <li key={benefitIndex} className="flex items-center text-gray-600 dark:text-gray-300 mb-8">
                           <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
                           {benefit}
                         </li>

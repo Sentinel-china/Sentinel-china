@@ -9,7 +9,7 @@
 }
 
 .markdown-content h1 {
-  @apply text-3xl font-bold text-white mt-10 mb-8 border-b border-gray-700 pb-4;
+  @apply text-3xl font-bold text-black mt-10 mb-8 border-b border-gray-700 pb-4;
 }
 
 .light .markdown-content h1 {
