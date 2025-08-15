@@ -130,37 +130,37 @@ export default function BusinessIntelligenceDetail() {
 
   const relatedProducts = [
     {
-      title: "",
+      title: "Connection Technology",
       description: "",
       image: "http://image.sentinel-china.com/202508121550233.png",
       link: "/products/connectivity/connectivity01"
     },
     {
-      title: "",
+      title: "Output-Type IO-Link Converters",
       description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
       image: "http://image.sentinel-china.com/202508141650679.png",
       link: "/products/connectivity/connectivity02"
     },
     {
-      title: "",
+      title: "Differences Between Digital Signals",
       description: "Standard 7/8\" power connector for SENTINEL bus module products",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/connectivity/connectivity03"
     },
     {
-      title: "",
+      title: "one-to-two on-site assembly connector",
       description: "High-performance industrial Ethernet connectivity solutions",
       image: "http://image.sentinel-china.com/202508141656047.png",
       link: "/products/connectivity/connectivity04"
     },
     {
-      title: "",
+      title: "Chinese Preferred Choice for Quality",
       description: "Flexible field installation connector solutions",
       image: "http://image.sentinel-china.com/202508141702311.png",
       link: "/products/connectivity/connectivity05"
     },
     {
-      title: "",
+      title: "SENTINEL Distributed I/O Modules",
       description: "Tailored connectivity solutions for specific applications",
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/products/connectivity/connectivity06"

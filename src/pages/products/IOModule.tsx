@@ -136,37 +136,37 @@ export default function CloudServiceDetail() {
 
   const relatedProducts = [
     {
-      title: "PROFINET I/O Module Solutions",
+      title: "Input/Output Adaptive Bus I/O Module",
       description: "",
       image: "http://image.sentinel-china.com/202508111442770.png",
       link: "/products/io-module01"
     },
     {
-      title: "EtherCAT Remote I/O Systems",
+      title: "IO Module on TBR Tire Conveyor Lines",
       description: "",
       image: "http://image.sentinel-china.com/202508111459837.png",
       link: "/products/io-module02"
     },
     {
-      title: "CC-Link IE Field Basic Modules",
+      title: "From Fieldbus to Industrial Ethernet",
       description: "",
       image: "http://image.sentinel-china.com/202508111511234.png",
       link: "/products/io-module03"
     },
     {
-      title: "Industrial Automation I/O Interfaces",
+      title: "Pharmaceutical Packaging Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508111524012.png",
       link: "/products/io-module04"
     },
     {
-      title: "High-Protection I/O Module Systems",
+      title: "Empower the Powder Metallurgy Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/io-module05"
     },
     {
-      title: "",
+      title: "IO-Link Master Modules with Modbus-TCP Protocol",
       description: "",
       image: "http://image.sentinel-china.com/202508151007096.png",
       link: "/products/io-module06"

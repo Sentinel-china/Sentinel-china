@@ -1,11 +1,11 @@
-# SENTINEL M12 One-to-Two Field Assembly Connector  
+## SENTINEL M12 One-to-Two Field Assembly Connector  
 
 In today’s industrial environment, **wiring complexity and limited installation space** are common challenges. A **one-to-two distributor** is often the best solution to combine signals or power, reducing wiring costs and simplifying installation.  
 
 SENTINEL’s newly launched **M12 one-to-two field assembly connector** takes this concept further, combining **space efficiency, on-site flexibility, and high durability** into one compact design.  
 
 ## Product Overview  
-![M12 one-to-two connector](/vancheerfile/images/2023/9/2023091809313801.jpg)  
+![M12 one-to-two connector](https://www.sentinel-china.com/vancheerfile/images/2023/9/2023091809313801.jpg)  
 
 - **Appearance:** Similar to a standard M12 4-pin connector  
 - **Connection Method:** Screw terminal wire connection  
@@ -15,7 +15,7 @@ SENTINEL’s newly launched **M12 one-to-two field assembly connector** takes th
 - **Cable Locking:** Dual-hole waterproof plug for two 5mm OD cables, ensuring **secure, stable, and waterproof connections**  
 
 ## Key Advantages  
-![Product Advantages](/vancheerfile/Images/2023/9/20230918095942146.png)  
+![Product Advantages](https://www.sentinel-china.com/vancheerfile/Images/2023/9/20230918095942146.png)  
 
 ### 1. On-Site Assembly Flexibility  
 Unlike pre-assembled connectors, the **field-assembly design** allows users to **customize wiring** based on their needs, improving adaptability in diverse applications.  

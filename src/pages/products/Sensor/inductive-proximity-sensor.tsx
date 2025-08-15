@@ -134,37 +134,37 @@ export default function InductiveProximitySensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Inductive Proximity Sensor Technology",
+      title: "Output-Type IO-Link Converters",
       description: "",
       image: "http://image.sentinel-china.com/202508141650679.png",
       link: "/products/inductive-proximity/inductive-proximity01"
     },
     {
-      title: "Inductive Proximity Sensor Applications",
+      title: "Differences Between Digital Signals",
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/inductive-proximity/inductive-proximity02"
     },
     {
-      title: "Inductive Proximity Sensor Installation",
+      title: "one-to-two on-site assembly connector",
       description: "",
       image: "http://image.sentinel-china.com/202508141656047.png",
       link: "/products/inductive-proximity/inductive-proximity03"
     },
     {
-      title: "Inductive Proximity Sensor Troubleshooting",
+      title: "Chinese Preferred Choice for Quality",
       description: "",
       image: "http://image.sentinel-china.com/202508141702311.png",
       link: "/products/inductive-proximity/inductive-proximity04"
     },
     {
-      title: "Inductive Proximity Sensor Selection Guide",
+      title: "Monocrystalline Silicon Production Lines",
       description: "",
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/products/inductive-proximity/inductive-proximity05"
     },
     {
-      title: "Inductive Proximity Sensor Maintenance",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/inductive-proximity/inductive-proximity06"

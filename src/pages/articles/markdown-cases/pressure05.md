@@ -1,4 +1,4 @@
-# SENTINEL Food-Grade Conical Seal Pressure Sensor – Hygienic, Smart, and Reliable  
+## SENTINEL Food-Grade Conical Seal Pressure Sensor – Hygienic, Smart, and Reliable  
 
 In **food and beverage manufacturing**, **pressure measurement and control** are essential for both production stability and food safety compliance. Traditional pressure sensors often struggle with **sanitary cleaning, corrosive media**, and **frequent part changes**.  
 

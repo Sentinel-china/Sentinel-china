@@ -136,37 +136,37 @@ export default function VortexFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Advanced Vortex Flow Technology",
+      title: "IO-Link Smart Sensors in Hydraulic Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/vortex/vortex01"
     },
     {
-      title: "Industrial Vortex Flow Meters",
+      title: "Dual Options of Vortex Flow Sensors",
       description: "",
       image: "http://image.sentinel-china.com/202508111358563.png",
       link: "/products/vortex/vortex02"
     },
     {
-      title: "High-Performance Flow Measurement",
+      title: "Vortex flow sensor on mold temperature controller",
       description: "",
       image: "http://image.sentinel-china.com/202508131504988.png",
       link: "/products/vortex/vortex03"
     },
     {
-      title: "Smart Vortex Sensor Solutions",
+      title: "SENTINEL One-piece Temperature Flowmeter",
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
     },
     {
-      title: "",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/vortex/vortex05"
     },
     {
-      title: "",
+      title: "High Accuracy Flow & Temperature Monitoring",
       description: "",
       image: "http://image.sentinel-china.com/202508141617155.png",
       link: "/products/vortex/vortex06"

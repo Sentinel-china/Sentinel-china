@@ -136,37 +136,37 @@ export default function MobileDevelopmentDetail() {
 
   const relatedProducts = [
     {
-      title: "IO-Link Master Module Technology",
+      title: "Differences Between Digital Signals",
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/io-link/io-link01"
     },
     {
-      title: "Multi-Protocol IO-Link Solutions",
+      title: "What is IO-Link",
       description: "",
       image: "http://image.sentinel-china.com/202508111615434.png",
       link: "/products/io-link/io-link02"
     },
     {
-      title: "IO-Link Hub Communication Systems",
+      title: "Summary of IO-Link Devices Series",
       description: "",
       image: "http://image.sentinel-china.com/202508111618966.png",
       link: "/products/io-link/io-link03"
     },
     {
-      title: "Smart IO-Link Device Integration",
+      title: "IO-Link Remote RTD Module",
       description: "",
       image: "http://image.sentinel-china.com/202508111624189.png",
       link: "/products/io-link/io-link04"
     },
     {
-      title: "IO-Link Converter Applications",
+      title: "New IO-Link Substation Modules",
       description: "",
       image: "http://image.sentinel-china.com/202508111629411.png",
       link: "/products/io-link/io-link05"
     },
     {
-      title: "Advanced IO-Link Protocol Support",
+      title: "Pressure Sensors in Distillation Equipment",
       description: "",
       image: "http://image.sentinel-china.com/202508111633019.png",
       link: "/products/io-link/io-link06"

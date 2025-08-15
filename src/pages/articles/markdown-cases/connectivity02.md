@@ -1,4 +1,4 @@
-# SENTINEL CIOL Series IO-Link to Analog Output Converters  
+## SENTINEL CIOL Series IO-Link to Analog Output Converters  
 
 **In the era of Industry 4.0**, IO-Link technology is transforming device connectivity with its **simple installation**, **reliable communication**, and **powerful remote diagnostics**.  
 

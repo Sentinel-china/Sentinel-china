@@ -134,37 +134,37 @@ export default function LiquidLevelSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Ultrasonic Level Measurement",
+      title: "Split-Type Level Sensor Solves Foam Interference",
       description: "",
       image: "http://image.sentinel-china.com/202508111338007.png",
       link: "/markdown-config/liquid/liquid01"
     },
     {
-      title: "Radar Level Sensor Technology",
+      title: "Float-Type Dual Display Sensor",
       description: "",
       image: "http://image.sentinel-china.com/202508131514061.png",
       link: "/markdown-config/liquid/liquid02"
     },
     {
-      title: "Capacitive Level Monitoring",
+      title: "  IO-Link Smart Sensors in Hydraulic Systems",
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
     },
     {
-      title: "",
+      title: "IO-Link Temperature Transmitter",
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/markdown-config/liquid/liquid04"
     },
     {
-      title: "",
+      title: "IO-Link Sensors Empower the Beer Industry",
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/markdown-config/liquid/liquid05"
     },
     {
-      title: "",
+      title: "SENTINEL Distributed I/O Modules",
       description: "",
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/markdown-config/liquid/liquid06"
