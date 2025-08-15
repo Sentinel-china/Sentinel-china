@@ -159,18 +159,11 @@ export default function SensorDetail() {
                                                  <h3 className="text-xl font-bold text-gray-800 dark:text-white">{product.title}</h3>
                        </div>
                        
-                                               <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+                                               <p className="hidden md:block text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
                          {product.description}
                        </p>
                        
-                       <div className="space-y-2">
-                         {product.features.map((feature, featureIndex) => (
-                           <div key={featureIndex} className="flex items-center text-sm">
-                             <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                             <span className="text-gray-600 dark:text-gray-300">{feature}</span>
-                           </div>
-                         ))}
-                       </div>
+                       {/* Features section removed - no content to display */}
                     </div>
                     
                     {/* Hover Overlay */}
