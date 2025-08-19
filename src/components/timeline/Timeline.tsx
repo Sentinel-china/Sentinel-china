@@ -321,7 +321,7 @@ function TimelineCard({
         <span
           className={clsx(
             "inline-flex items-center gap-2 rounded-full px-3 py-1 text-[13px] font-medium",
-            "bg-gray-200 dark:bg-white/8 text-gray-800 dark:text-white/90 ring-1 ring-inset ring-gray-300 dark:ring-white/10"
+            "bg-gray-200 dark:bg-gray-900/50 text-gray-800 dark:text-white/90 ring-1 ring-inset ring-gray-300 dark:ring-white/10"
           )}
         >
           <span
