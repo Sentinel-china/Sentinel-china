@@ -114,7 +114,8 @@ export default function MobileDevelopmentDetail() {
       challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-iolinkmaster.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-iolinkmaster.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020713978.html"
     },
     {
       company: "Hubs",
@@ -122,7 +123,8 @@ export default function MobileDevelopmentDetail() {
       challenge: "As a communication interface independent of the field bus, the sensors, actuators and I/O supporting the IO-Link protocol are IO-Link slave devices, which greatly improves the reliability of the devices.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-28.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-28.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020778941.html"
     },
     {
       company: "Converter",
@@ -130,7 +132,8 @@ export default function MobileDevelopmentDetail() {
       challenge: "The IO-Link Converter (CIOL-2AI-SC) is designed to convert two channels of 4-20mA/0-20mA analog signals into IO-Link communication format. It supports IO-Link V1.1 protocol with an M12 A-coded 4-pin Class A interface. Compatible with 2-wire, 3-wire, and 4-wire sensor connections, it features status LED indicators and is ideal for industrial signal acquisition applications.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-29.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-29.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020758615.html"
     }
   ]
 
@@ -221,12 +224,14 @@ export default function MobileDevelopmentDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020756396.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/Iproduct_100000020756396.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -434,25 +439,12 @@ export default function MobileDevelopmentDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-                onClick={() => {
-                  // hwc add
-                  switch(case_.company) {
-                    case 'Master':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020713978.html'; 
-                      break;
-                    case 'Hubs':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020778941.html'; 
-                      break;
-                    case 'Converter':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020758615.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -487,7 +479,7 @@ export default function MobileDevelopmentDetail() {
                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

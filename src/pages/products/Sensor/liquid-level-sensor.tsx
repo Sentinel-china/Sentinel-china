@@ -112,7 +112,8 @@ export default function LiquidLevelSensorDetail() {
       challenge: "Liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety. With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-11-level.png"
+      image: "https://image.sentinel-china.com/2025-08-11-level.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
       company: "Emulsion production enterprise",
@@ -120,7 +121,8 @@ export default function LiquidLevelSensorDetail() {
       challenge: "Since the emulsion has a certain viscosity, and some products have hygiene requirements for the contact materials, the enterprise has selected the liquid level sensor made of SENTINEL's food - grade materials. The sensor can accurately monitor the liquid level in the tank, and can also monitor the temperature of the emulsion, which is convenient for the enterprise to control the production process.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-11-level.png"
+      image: "https://image.sentinel-china.com/2025-08-11-level.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
       company: "Beverage production enterprises",
@@ -128,7 +130,8 @@ export default function LiquidLevelSensorDetail() {
       challenge: "In the beverage production process, level sensors are used to monitor the liquid levels in storage tanks and filling machines. The split design addresses the issues of space limitations and hygiene management. Moreover, the level sensors of SENTINEL integrate a temperature monitoring function, enabling real-time monitoring of liquid temperature changes to ensure the safety and quality of beverage production.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-export.sentinel-china-banner.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-export.sentinel-china-banner.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     }
   ]
 
@@ -219,12 +222,14 @@ export default function LiquidLevelSensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724378.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/index_100000020724378.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -435,25 +440,12 @@ export default function LiquidLevelSensorDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-              onClick={() => {
-                  // 根据不同的协议跳转到不同的页面
-                  switch(case_.company) {
-                    case 'In beer production':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724378.html'; 
-                      break;
-                    case 'Emulsion production enterprise':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724378.html'; 
-                      break;
-                    case 'Beverage production enterprises':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020724378.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -483,12 +475,12 @@ export default function LiquidLevelSensorDetail() {
                      <p className="text-gray-600 dark:text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
-                   <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
-                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
-                   </div>
+                                     <div>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

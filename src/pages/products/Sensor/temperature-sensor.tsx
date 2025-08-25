@@ -115,7 +115,8 @@ export default function TemperatureSensorDetail() {
       challenge: "SENTINEL's temperature sensor is a device used to measure liquid temperature, widely applied in industries such as industrial automation, food and beverage, machine tools, and metallurgy.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-15.png"
+      image: "https://image.sentinel-china.com/2025-08-13-15.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
       company: "Transmitter",
@@ -123,7 +124,8 @@ export default function TemperatureSensorDetail() {
       challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-16.png"
+      image: "https://image.sentinel-china.com/2025-08-13-16.png",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
       company: "Split-type",
@@ -131,7 +133,8 @@ export default function TemperatureSensorDetail() {
       challenge: "The detection probe can be flexibly installed in positions with a narrow space and harsh environment.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-14.png"
+      image: "https://image.sentinel-china.com/2025-08-13-14.png",
+      link: "https://www.sentinel-china.com/eproduct/index1021.html"
     }
   ]
 
@@ -222,12 +225,14 @@ export default function TemperatureSensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                 onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020791984.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/index_100000020791984.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                  <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -437,26 +442,13 @@ export default function TemperatureSensorDetail() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {cases.map((case_, index) => (
-              <div 
+                        {cases.map((case_, index) => (
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-              onClick={() => {
-                  // 根据不同的协议跳转到不同的页面
-                  switch(case_.company) {
-                    case 'Sensor':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020791984.html'; 
-                      break;
-                    case 'Transmitter':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020791984.html'; 
-                      break;
-                    case 'Split-type':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index1021.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -491,7 +483,7 @@ export default function TemperatureSensorDetail() {
                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

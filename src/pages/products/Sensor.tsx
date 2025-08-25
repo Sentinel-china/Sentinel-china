@@ -94,12 +94,14 @@ export default function SensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                 onClick={() =>  window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020781551.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/Iproduct_100000020781551.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                  <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"

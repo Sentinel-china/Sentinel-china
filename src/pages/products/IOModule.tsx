@@ -114,7 +114,8 @@ export default function CloudServiceDetail() {
       challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust. It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-25.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-25.jpg",
+      link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
       company: "IP20",
@@ -122,7 +123,8 @@ export default function CloudServiceDetail() {
       challenge: "The IO modules of the IP20 series are specifically designed for high-density I/O integration environments and are suitable for relatively clean environments, such as indoor equipment cabinets. This series of modules integrates 32 I/O points and supports various flexible configurations.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-26.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-26.jpg",
+      link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
       company: "SAP",
@@ -130,7 +132,8 @@ export default function CloudServiceDetail() {
       challenge: "The IO Module SAP is an industrial - grade I/O module. It has an input - output adaptive mechanism, which can simplify the deployment process and enhance system consistency. It provides stable communication performance and a rigorous electrical protection strategy to ensure the reliable operation of the system.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-25.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-25.jpg",
+      link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     }
   ]
 
@@ -221,12 +224,14 @@ export default function CloudServiceDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -433,25 +438,12 @@ export default function CloudServiceDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-                onClick={() => {
-                  // 根据不同的协议跳转到不同的页面
-                  switch(case_.company) {
-                    case 'IP67':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
-                      break;
-                    case 'IP20':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
-                      break;
-                    case 'SAP':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -485,7 +477,7 @@ export default function CloudServiceDetail() {
                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

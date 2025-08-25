@@ -112,7 +112,8 @@ export default function InductiveProximitySensorDetail() {
       challenge: "Design of M8 X 1 cylindrical thread. Equipped with M12 x 1 connector to ensure reliable electrical connection. It has an IP67 protection level. Built - in short - circuit protection function.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity11.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity11.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020776338.html"
     },
     {
       company: "M12 series",
@@ -120,7 +121,8 @@ export default function InductiveProximitySensorDetail() {
       challenge: "Design of M12 X 1 cylindrical thread. It supports two installation methods: flush and non-flush. It includes various output modes such as PNP normally open, PNP normally closed, NPN normally open, and NPN normally closed.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity12.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity12.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index616.html"
     },
     {
       company: "M30 series",
@@ -128,7 +130,8 @@ export default function InductiveProximitySensorDetail() {
       challenge: "The design of M30 X 1.5 cylindrical thread facilitates installation and fixation. Chrome-plated copper material is used, which has good corrosion resistance and electrical conductivity. Built-in reverse polarity protection function.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity13.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-proximity13.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index829.html"
     }
   ]
 
@@ -219,12 +222,14 @@ export default function InductiveProximitySensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/index_100000020776338.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -435,25 +440,12 @@ export default function InductiveProximitySensorDetail() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-              onClick={() => {
-                  // hwc add
-                  switch(case_.company) {
-                    case 'M8 series':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020776338.html'; 
-                      break;
-                    case 'M12 series':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index616.html'; 
-                      break;
-                    case 'M30 series':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index829.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -483,12 +475,12 @@ export default function InductiveProximitySensorDetail() {
                      <p className="text-gray-600 dark:text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
-                   <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
-                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
-                   </div>
+                                     <div>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

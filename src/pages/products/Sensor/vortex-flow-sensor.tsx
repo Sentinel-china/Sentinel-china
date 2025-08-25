@@ -114,7 +114,8 @@ export default function VortexFlowSensorDetail() {
       challenge: "Real-time monitoring of medium flow rate and temperature ensures precise and stable mold temperature control, enhancing both production efficiency and product quality.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-18.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-18.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
       company: "two 0-10V outputs",
@@ -122,7 +123,8 @@ export default function VortexFlowSensorDetail() {
       challenge: "Its independence from fluid conductivity allows for stable and accurate flow measurement of low-conductivity industrial pure water, addressing the instability issues of electromagnetic flowmeters in such applications.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-18.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-18.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
       company: "2-way switching IO-Link",
@@ -130,7 +132,8 @@ export default function VortexFlowSensorDetail() {
       challenge: "The sensor monitors coolant flow conditions to prevent equipment damage due to cooling failure, ensuring safe and reliable system operation.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-17.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-17.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     }
   ]
 
@@ -221,12 +224,14 @@ export default function VortexFlowSensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/index_100000020775522.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -436,26 +441,13 @@ export default function VortexFlowSensorDetail() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {cases.map((case_, index) => (
-              <div 
+                        {cases.map((case_, index) => (
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-              onClick={() => {
-                  // 根据不同的协议跳转到不同的页面
-                  switch(case_.company) {
-                    case 'two 4-20mA outputs':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
-                      break;
-                    case 'two 0-10V outputs':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
-                      break;
-                    case '2-way switching IO-Link':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020775522.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -490,7 +482,7 @@ export default function VortexFlowSensorDetail() {
                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

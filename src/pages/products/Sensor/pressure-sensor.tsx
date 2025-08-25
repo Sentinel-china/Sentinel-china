@@ -113,7 +113,8 @@ export default function PressureSensorDetail() {
       challenge: "Pressure sensors are used for pressure monitoring in the food and beverage industry to ensure the pressure stability and safety during the production process. The combination of pressure sensors and IO-Link technology enables the automated control and remote monitoring of the production process.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-food-1.jpg"
+      image: "https://image.sentinel-china.com/2025-08-14-food-1.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
       company: "transmitter",
@@ -121,7 +122,8 @@ export default function PressureSensorDetail() {
       challenge: "Digital circuit compensation. Strong anti-interference ability and high stability. Can measure gauge pressure and absolute pressure. The liquid contact diaphragm is made of 316L stainless steel.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-20.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-20.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
       company: "SEH series",
@@ -129,7 +131,8 @@ export default function PressureSensorDetail() {
       challenge: "Upper part of the housing can be rotated 300° to ensure the best installation direction. High-brightness dual-color large size digital display, support mirroring. Parameters can be set via IO-Link. The starting and ending points of the analog signal can be set.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-19.jpg"
+      image: "https://image.sentinel-china.com/2025-08-13-19.jpg",
+      link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     }
   ]
 
@@ -220,12 +223,14 @@ export default function PressureSensorDetail() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() =>window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'}
-                  className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                <a 
+                  href="https://www.sentinel-china.com/eproduct/index_100000020794439.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
                   More
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
@@ -435,26 +440,13 @@ export default function PressureSensorDetail() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {cases.map((case_, index) => (
-              <div 
+                        {cases.map((case_, index) => (
+              <a 
                 key={index} 
-                className="bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group"
-              onClick={() => {
-                  // 根据不同的协议跳转到不同的页面
-                  switch(case_.company) {
-                    case 'Food and beverage':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'; 
-                      break;
-                    case 'transmitter':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'; 
-                      break;
-                    case 'SEH series':
-                      window.location.href = 'https://www.sentinel-china.com/eproduct/index_100000020794439.html'; 
-                      break;
-                    default:
-                      break;
-                  }
-                }}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-yellow-400/10 to-transparent dark:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 cursor-pointer group hover:transform hover:scale-105"
               >
                 <div className="relative h-48">
                   <img
@@ -484,12 +476,12 @@ export default function PressureSensorDetail() {
                      <p className="text-gray-600 dark:text-gray-300 text-sm">{case_.solution}</p>
                    </div>
                    
-                   <div>
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
-                     <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
-                   </div>
+                                     <div>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2"></h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">{case_.result}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
