@@ -22,7 +22,7 @@ export default function SolutionsPage() {
         "Real-time monitoring and data tracking",
         "Simplified wiring and high scalability"
       ],
-      image: "http://image.sentinel-china.com/202508111332828.png"
+      image: "/Solutions1.png"
     },
     {
       id: "solutions02",
@@ -40,7 +40,7 @@ export default function SolutionsPage() {
         "Reduce installation complexity",
         "Improve hygiene management"
       ],
-      image: "http://image.sentinel-china.com/202508111338007.png"
+      image: "/Solutions2.png"
     },
     {
       id: "solutions03",
@@ -58,7 +58,7 @@ export default function SolutionsPage() {
         "Simplify control cabinet wiring",
         "Enable proactive maintenance"
       ],
-      image: "http://image.sentinel-china.com/202508111348744.png"
+      image: "/Solutions3.png"
     },
     {
       id: "solutions04",
@@ -76,7 +76,7 @@ export default function SolutionsPage() {
         "Improve deployment efficiency",
         "Enhance system adaptability"
       ],
-      image: "http://image.sentinel-china.com/202508111354777.png"
+      image: "/Solutions4.png"
     },
     {
       id: "solutions05",
@@ -94,7 +94,7 @@ export default function SolutionsPage() {
         "Flexible application scenarios",
         "Comprehensive flow solutions"
       ],
-      image: "http://image.sentinel-china.com/202508111358563.png"
+      image: "/Solutions5.png"
     },
     {
       id: "solutions06",
@@ -112,7 +112,7 @@ export default function SolutionsPage() {
         "Enable close signal collection",
         "Support photovoltaic industry development"
       ],
-      image: "http://image.sentinel-china.com/202508111406692.jpg"
+      image: "/Solutions6.jpg"
     }
   ]
 

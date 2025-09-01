@@ -114,7 +114,7 @@ export default function CloudServiceDetail() {
       challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust. It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-25.jpg",
+      image: "/iomodule1.jpg",
       link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
@@ -123,7 +123,7 @@ export default function CloudServiceDetail() {
       challenge: "The IO modules of the IP20 series are specifically designed for high-density I/O integration environments and are suitable for relatively clean environments, such as indoor equipment cabinets. This series of modules integrates 32 I/O points and supports various flexible configurations.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-26.jpg",
+      image: "/iomodule2.jpg",
       link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
@@ -132,7 +132,7 @@ export default function CloudServiceDetail() {
       challenge: "The IO Module SAP is an industrial - grade I/O module. It has an input - output adaptive mechanism, which can simplify the deployment process and enhance system consistency. It provides stable communication performance and a rigorous electrical protection strategy to ensure the reliable operation of the system.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-25.jpg",
+      image: "/iomodule1.jpg",
       link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     }
   ]

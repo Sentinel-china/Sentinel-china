@@ -108,7 +108,7 @@ export default function BusinessIntelligenceDetail() {
       challenge: "SENTINEL- field wiring connector, which covers M8, M12 and M16 standard connector sizes, and has straight-line and right-angle connections. Field connector allows customers to connect with their own cables.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-31.jpg",
+      image: "/connectivity.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775492.html"
     },
     {
@@ -117,7 +117,7 @@ export default function BusinessIntelligenceDetail() {
       challenge: "M12 and M8 standard interfaces can be provided, as well as 4-channel and 8-channel interface channels. Each channel can be divided into single-signal output and dual-signal output.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-30.jpg",
+      image: "/connectivity1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020757332.html"
     },
     {
@@ -126,7 +126,7 @@ export default function BusinessIntelligenceDetail() {
       challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8\" standard connection sizes.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-32.jpg",
+      image: "/connectivity2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020749591.html"
     }
   ]

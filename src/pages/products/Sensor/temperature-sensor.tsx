@@ -115,7 +115,7 @@ export default function TemperatureSensorDetail() {
       challenge: "SENTINEL's temperature sensor is a device used to measure liquid temperature, widely applied in industries such as industrial automation, food and beverage, machine tools, and metallurgy.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-15.png",
+      image: "/Temperature sensor3.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
@@ -124,7 +124,7 @@ export default function TemperatureSensorDetail() {
       challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-16.png",
+      image: "/Temperature sensor4.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
@@ -133,7 +133,7 @@ export default function TemperatureSensorDetail() {
       challenge: "The detection probe can be flexibly installed in positions with a narrow space and harsh environment.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-14.png",
+      image: "/Temperature sensor2.png",
       link: "https://www.sentinel-china.com/eproduct/index1021.html"
     }
   ]
@@ -200,7 +200,7 @@ export default function TemperatureSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-temp.png"
+                src="/Temperature sensor1.png"
                 alt="temperature sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />

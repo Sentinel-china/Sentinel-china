@@ -114,7 +114,7 @@ export default function VortexFlowSensorDetail() {
       challenge: "Real-time monitoring of medium flow rate and temperature ensures precise and stable mold temperature control, enhancing both production efficiency and product quality.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-18.jpg",
+      image: "/vortex2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
@@ -123,7 +123,7 @@ export default function VortexFlowSensorDetail() {
       challenge: "Its independence from fluid conductivity allows for stable and accurate flow measurement of low-conductivity industrial pure water, addressing the instability issues of electromagnetic flowmeters in such applications.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-18.jpg",
+      image: "/vortex2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
@@ -132,7 +132,7 @@ export default function VortexFlowSensorDetail() {
       challenge: "The sensor monitors coolant flow conditions to prevent equipment damage due to cooling failure, ensuring safe and reliable system operation.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-17.jpg",
+      image: "/vortex1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     }
   ]
@@ -199,7 +199,7 @@ export default function VortexFlowSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-vortex.png"
+                src="/vortex.png"
                 alt="Vortex Flow Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />

@@ -113,7 +113,7 @@ export default function PressureSensorDetail() {
       challenge: "Pressure sensors are used for pressure monitoring in the food and beverage industry to ensure the pressure stability and safety during the production process. The combination of pressure sensors and IO-Link technology enables the automated control and remote monitoring of the production process.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-14-food-1.jpg",
+      image: "/pressure sensor3.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
@@ -122,7 +122,7 @@ export default function PressureSensorDetail() {
       challenge: "Digital circuit compensation. Strong anti-interference ability and high stability. Can measure gauge pressure and absolute pressure. The liquid contact diaphragm is made of 316L stainless steel.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-20.jpg",
+      image: "/pressure sensor2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
@@ -131,7 +131,7 @@ export default function PressureSensorDetail() {
       challenge: "Upper part of the housing can be rotated 300° to ensure the best installation direction. High-brightness dual-color large size digital display, support mirroring. Parameters can be set via IO-Link. The starting and ending points of the analog signal can be set.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-19.jpg",
+      image: "pressure sensor1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     }
   ]
@@ -198,7 +198,7 @@ export default function PressureSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-pressure.png"
+                src="/pressure sensor.png"
                 alt="Pressure Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />

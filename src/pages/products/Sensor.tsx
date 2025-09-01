@@ -15,7 +15,7 @@ export default function SensorDetail() {
       title: "Temperature sensor",
       description: "High-precision temperature monitor for industrial",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-temp.png",
+      image: "/Temperature sensor1.png",
       color: "from-red-500/20 to-orange-500/20"
     },
     {
@@ -23,7 +23,7 @@ export default function SensorDetail() {
       title: " Thermal flow sensor",
       description: "Flow and temperature detection in one device",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-flow.png",
+      image: "/flow sensor.png",
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
@@ -31,7 +31,7 @@ export default function SensorDetail() {
       title: "vortex flow sensor",
       description: "Reliable flow measurement for liquids and gases",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-vortex.png",
+      image: "/vortex.png",
       color: "from-green-500/20 to-emerald-500/20"
     },
     {
@@ -39,7 +39,7 @@ export default function SensorDetail() {
       title: "pressure sensor",
       description: "Precise pressure sensing for automation systems",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-pressure.png",
+      image: "/pressure sensor.png",
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
@@ -47,7 +47,7 @@ export default function SensorDetail() {
       title: "liquid level sensor",
       description: "Safe and accurate fluid level detection",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-level.png",
+      image: "/level.png",
       color: "from-yellow-500/20 to-amber-500/20"
     },
     {
@@ -55,7 +55,7 @@ export default function SensorDetail() {
       title: " inductive proximity sensor",
       description: "Detects metal objects without physical contact",
       features: [""],
-      image: "https://image.sentinel-china.com/2025-08-11-inductive.png",
+      image: "/inductive.png",
       color: "from-indigo-500/20 to-blue-500/20"
     }
   ]

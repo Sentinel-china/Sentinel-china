@@ -112,7 +112,7 @@ export default function InductiveProximitySensorDetail() {
       challenge: "Design of M8 X 1 cylindrical thread. Equipped with M12 x 1 connector to ensure reliable electrical connection. It has an IP67 protection level. Built - in short - circuit protection function.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity11.jpg",
+      image: "/inductive1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020776338.html"
     },
     {
@@ -121,7 +121,7 @@ export default function InductiveProximitySensorDetail() {
       challenge: "Design of M12 X 1 cylindrical thread. It supports two installation methods: flush and non-flush. It includes various output modes such as PNP normally open, PNP normally closed, NPN normally open, and NPN normally closed.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity12.jpg",
+      image: "/inductive2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index616.html"
     },
     {
@@ -130,7 +130,7 @@ export default function InductiveProximitySensorDetail() {
       challenge: "The design of M30 X 1.5 cylindrical thread facilitates installation and fixation. Chrome-plated copper material is used, which has good corrosion resistance and electrical conductivity. Built-in reverse polarity protection function.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-proximity13.jpg",
+      image: "/inductive3.jpg",
       link: "https://www.sentinel-china.com/eproduct/index829.html"
     }
   ]
@@ -197,7 +197,7 @@ export default function InductiveProximitySensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-inductive.png"
+                src="/inductive.png"
                 alt="inductive proximity sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />

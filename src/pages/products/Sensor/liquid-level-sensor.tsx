@@ -112,7 +112,7 @@ export default function LiquidLevelSensorDetail() {
       challenge: "Liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety. With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-11-level.png",
+      image: "/level.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
@@ -121,7 +121,7 @@ export default function LiquidLevelSensorDetail() {
       challenge: "Since the emulsion has a certain viscosity, and some products have hygiene requirements for the contact materials, the enterprise has selected the liquid level sensor made of SENTINEL's food - grade materials. The sensor can accurately monitor the liquid level in the tank, and can also monitor the temperature of the emulsion, which is convenient for the enterprise to control the production process.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-11-level.png",
+      image: "/level.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
@@ -130,7 +130,7 @@ export default function LiquidLevelSensorDetail() {
       challenge: "In the beverage production process, level sensors are used to monitor the liquid levels in storage tanks and filling machines. The split design addresses the issues of space limitations and hygiene management. Moreover, the level sensors of SENTINEL integrate a temperature monitoring function, enabling real-time monitoring of liquid temperature changes to ensure the safety and quality of beverage production.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-13-export.sentinel-china-banner.jpg",
+      image: "level1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     }
   ]
@@ -197,7 +197,7 @@ export default function LiquidLevelSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-level.png"
+                src="/level.png"
                 alt="Liquid Level Sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />

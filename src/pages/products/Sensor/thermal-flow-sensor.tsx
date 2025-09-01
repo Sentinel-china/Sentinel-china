@@ -117,7 +117,7 @@ export default function ThermalFlowSensorDetail() {
       challenge: "Monitor the flow of liquid medium, based on the principle of thermal conductivity. PBT shell, 304 stainless steel probe. Flexible selection of switch points. Potentiometer adjustment. M12x1 connector. LED strip instructions.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-12-plsx.png",
+      image: "/flow sensor-plsx.png",
       link: "https://www.sentinel-china.com/eproduct/index686.html"
     },
     {
@@ -126,7 +126,7 @@ export default function ThermalFlowSensorDetail() {
       challenge: "Based on the thermal conductivity principle. All stainless steel shell. The measuring medium is liquid. M18x1.5 internal thread. 3-wire PNP normally open output. Switching point adjustable via potentiometer. M12 Connector outlet.",
       solution: "",
       result: "",
-      image: "https://image.harryrou.wiki/2025-08-12-plsu.png",
+      image: "/flow sensor-plsu.png",
       link: "https://www.sentinel-china.com/eproduct/index921.html"
     },
     {
@@ -135,7 +135,7 @@ export default function ThermalFlowSensorDetail() {
       challenge: "Flow monitoring of liquid. Built-in temperature alarm. 304 stainless steel shell and probe. The value is displayed by digital tube. Protection class IP67. Optional bluetooth function.",
       solution: "",
       result: "",
-      image: "https://image.sentinel-china.com/2025-08-12-plsn.png",
+      image: "/flow sensor-plsn.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020778958.html"
     }
   ]
@@ -202,7 +202,7 @@ export default function ThermalFlowSensorDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://image.sentinel-china.com/2025-08-11-flow.png"
+                src="/flow sensor.png"
                 alt="thermal flow sensor"
                 className="w-full h-96 object-cover rounded-2xl"
               />
