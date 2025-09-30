@@ -104,6 +104,12 @@ export default function CloudServiceDetail() {
       description: "Technical parameters",
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
+    },
+    {
+      title: "Relay Module Overview",
+      description: "Technical parameters",
+      image: "/relay module.png",
+      link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
   ]
 
@@ -391,7 +397,7 @@ export default function CloudServiceDetail() {
             {activeTab === 'downloads' && (
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
                       <div className="relative h-48">
@@ -414,7 +420,7 @@ export default function CloudServiceDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download Immediately
+                          Download
                         </a>
                       </div>
                     </div>

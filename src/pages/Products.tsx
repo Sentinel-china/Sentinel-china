@@ -38,6 +38,14 @@ export default function ProductsPage() {
       features: ["7/8\" POWER CABLE", "JUNCTION BOXES", "INDUSTRIAL ETHERNET CABLE", "CORDSETS"],
       image: "/banner4.png",
       link: "/products/connectivity"
+    },
+    {
+      icon: Network,
+      title: "IO-Link Relay Module",
+      description: "Innovative IO-Link devices",
+      features: ["IO-Link Expandable Relay Module", " Relay Module Expansion Sub-Module"],
+      image: "/relay module.png",
+      link: "/products/relay-module"
     }
   ]
 
@@ -123,7 +131,7 @@ export default function ProductsPage() {
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <Cog className="text-2xl font-bold text-yellow-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Selection&customization</h3>
+              <h3 className="text-lg font-semibold mb-2">Selection & customization</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">Match products and customize solutions</p>
             </div>
 

@@ -16,7 +16,7 @@ import Sensor from './pages/products/Sensor'
 import IOLink from './pages/products/IOLink'
 import Connectivity from './pages/products/Connectivity'
 import NewPage1 from './pages/products/NewPage1'
-import NewPage2 from './pages/products/NewPage2'
+import RelayModule from './pages/products/Relay-Module'
 import SolutionsDetail from './pages/markdown-config/SolutionsDetail'
 import ProductDetail from './pages/markdown-config/ProductDetail'
 import IOLinkDetail from './pages/markdown-config/iolinkdetail'
@@ -51,7 +51,7 @@ export default function App() {
             <Route path="/products/io-link" element={<IOLink />} />
             <Route path="/products/connectivity" element={<Connectivity />} />
             <Route path="/products/new-page1" element={<NewPage1 />} />
-            <Route path="/products/new-page2" element={<NewPage2 />} />
+            <Route path="/products/relay-module" element={<RelayModule />} />
             {/* 传感器详情页面路由 */}
             <Route path="/products/sensor/temperature-sensor" element={<TemperatureSensor />} />
             <Route path="/products/sensor/thermal-flow-sensor" element={<ThermalFlowSensor />} />

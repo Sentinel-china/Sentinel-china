@@ -56,35 +56,46 @@ export default function MobileDevelopmentDetail() {
   const features = [
     {
       icon: Link2,
-      title: "Standardized & compatible",
-      description: "No special cables needed, works with existing setups"
+      title: "Technological Innovation",
+      description: "The world's first relay module integrated with IO-Link functionality"
     },
     {
       icon: Settings,
-      title: "Cost-effective upgrade",
-      description: "Evolves existing tech, no system replacement, cuts complexity"
+      title: "High-Efficiency Expansion",
+      description: "A 4-port IO-Link master can connect 128 relays"
     },
     {
       icon: Network,
-      title: "Comprehensive ecosystem",
-      description: "Multi-protocol masters + diverse slaves, full-link coverage"
+      title: "Smart Monitoring",
+      description: "Real-time monitoring of temperature, overcurrent, and switching cycles"
     },
     {
       icon: Shield,
-      title: "Efficient & reliable",
-      description: "Low-cost transmission, boosting efficiency while reducing costs"
+      title: "Flexible Application",
+      description: "Compatible with various brand main stations and relays, and can be freely plugged and unplugged."
     }
   ]
 
   const productSpecs = [
-    { spec: "Product type", value: " | IO-Link Master | IO-Link Hubs | IO-Link converter | " },
-    { spec: "Network protocol", value: " | Profinet | CC-LINK IE Field Basic | EtherCAT | EtherNet/IP | ModbusTCP |" },
-    { spec: "Power interface", value: " | 7/8” | L-code | " },
-    { spec: "IO-Link Port type", value: " | Class A | Class B | Class A+Class B | " },
-    { spec: "IO-Link specification", value: " | V1.0 | V1.1 |" },
-    { spec: "Number of ports", value: "| 8 | 16 |" },
-    { spec: "Protection class", value: " | IP67 | IP20 | " }
-  ]
+    { spec: "Product type", value: " | IO-Link Expandable Relay Module |  Relay Module Expansion Sub-Module |  " },
+    { spec: "Output points", value: " | 16 | 8 | " },
+    { spec: "Output current", value: " | 150mA |  " },
+    { spec: "Output protection mode", value: " | Overload protection | Overheat protection |  " },
+    { spec: "Output protection response time", value: " | ≈20ms |" },
+    { spec: "Output voltage Drop", value: "| ≈0.6V |" },
+    { spec: "Isolation method", value: " | Digital isolation | " },
+    { spec: "Working/Auxiliary voltage", value: " | 24VDC±10% | " },
+    { spec: "Module operating current", value: " | <100mA | " },
+    { spec: "Current required by the load power supply", value: " | <4.8A | " },
+    { spec: "Relay contact type", value: " | One set of normally open + one set of normally closed | " },
+    { spec: "Relay contact capacity", value: " | 5A 250VAC/5A 30VDC | " },
+    { spec: "Relay coil voltage", value: " | 24V | " },
+    { spec: "IO-Link Protocol version", value: " | V1.1 | " },
+    { spec: "IO-Link Interface type", value: " | Class A | " },
+    { spec: "Installation method", value: " | DIN35 standard guide rail mounting or fixing holes | " },
+    { spec: "Protection level", value: " | IP20 | " },
+    { spec: "Operating temperature", value: " | -25...55℃ | " }
+    ]
 
   const downloads = [
     {
@@ -115,31 +126,31 @@ export default function MobileDevelopmentDetail() {
 
   const cases = [
     {
-      company: "Master",
+      company: "Expandable Relay Module",
       industry: "IO-Link",
-      challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
-      solution: "",
-      result: "",
-      image: "/iolinkmaster.jpg",
-      link: "https://www.sentinel-china.com/eproduct/index_100000020713978.html"
+      challenge: " IO-Link remote I/O device. 16 channels, single output 150 mA per channel, expandable.",
+      solution: " IO-Link V1.1 compliant.DIN35 standard rail mounting or screw fixing.",
+      result: "Communication and load power supply via pluggable push-in terminals.",
+      image: "/relay module.png",
+      link: "https://export.sentinel-china.com/#/products"
     },
     {
-      company: "Hubs",
-      industry: "IO-Link",
-      challenge: "As a communication interface independent of the field bus, the sensors, actuators and I/O supporting the IO-Link protocol are IO-Link slave devices, which greatly improves the reliability of the devices.",
-      solution: "",
-      result: "",
-      image: "/iolinkhubs.jpg",
-      link: "https://www.sentinel-china.com/eproduct/index_100000020778941.html"
+      company: "16-channel Expansion Sub-Module",
+      industry: "IO-Link  Relay Module",
+      challenge: " 16-channel. Single output 150 mA per channel.",
+      solution: " Standard base compatible with relays from various brands.",
+      result: "SPDT contacts. DIN35 standard rail mounting or screw fixing.",
+      image: "/relay sub-module 16.png",
+      link: "https://export.sentinel-china.com/#/products"
     },
     {
-      company: "Converter",
-      industry: "IO-Link",
-      challenge: "The IO-Link Converter (CIOL-2AI-SC) is designed to convert two channels of 4-20mA/0-20mA analog signals into IO-Link communication format. It supports IO-Link V1.1 protocol with an M12 A-coded 4-pin Class A interface. Compatible with 2-wire, 3-wire, and 4-wire sensor connections, it features status LED indicators and is ideal for industrial signal acquisition applications.",
-      solution: "",
-      result: "",
-      image: "/iolink converter.jpg",
-      link: "https://www.sentinel-china.com/eproduct/index_100000020758615.html"
+      company: "8-channel Expansion Sub-Module",
+      industry: "IO-Link  Relay Module",
+      challenge: "8-channel. Single output 150 mA per channel.",
+      solution: "Standard base compatible with relays from various brands.",
+      result: "SPDT contacts. DIN35 standard rail mounting or screw fixing.",
+      image: "/relay sub-module 8.png",
+      link: "https://export.sentinel-china.com/#/products"
     }
   ]
 
@@ -205,7 +216,7 @@ export default function MobileDevelopmentDetail() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/banner2.png"
+                src="/relay module.png"
                 alt="IO-Link"
                 className="w-full h-96 object-cover rounded-2xl"
               />
@@ -219,19 +230,19 @@ export default function MobileDevelopmentDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    IO-<span className="text-yellow-400">Link</span>
+                    IO-Link <span className="text-yellow-400">Relay Module</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers, brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
+                The newly launched IO-Link relay module by SENTINEL will greatly leverage this advantage of IO-Link, enabling users to reduce engineering costs and labor costs, especially for projects that use a large number of relays in electrical cabinets.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://www.sentinel-china.com/eproduct/Iproduct_100000020756396.html"
+                  href="https://export.sentinel-china.com/#/products"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
@@ -322,23 +333,23 @@ export default function MobileDevelopmentDetail() {
                   <h3 className="text-2xl font-bold mb-6">Introduction</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      IO-Link is the worlds first standardized IO technology for communication with sensors and actuators.
+                      Compared with traditional expansion output modules connected to the same number of relays, IO-Link relay modules can save 40% of the cost.
                     </p>
                     <p>
-                     IO-Link is not a fieldbus, but a further development of the existing sensor and actuator connection technology.
+                     Remote monitoring and maintenance simplify wiring and significantly reduce labor costs (up to 95% savings).
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Master</span>
+                        <span> IO-Link Expandable Relay Module</span>
                       </div>
                       <div className="flex items-center">
                         <Network className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Hubs</span>
+                        <span>8-channel Expansion Sub-Module</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Converter </span>
+                        <span>16-channel Expansion Sub-Module</span>
                       </div>
                       
                     </div>
@@ -421,7 +432,7 @@ export default function MobileDevelopmentDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          Download 
                         </a>
                       </div>
                     </div>

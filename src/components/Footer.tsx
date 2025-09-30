@@ -437,6 +437,9 @@ export default function Footer() {
               <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
                 Connectivity
               </Link>
+              <Link to="/products/relay-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
+                Relay Module
+              </Link>
             </div>
           </div>
 
