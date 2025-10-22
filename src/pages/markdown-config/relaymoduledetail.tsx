@@ -1,85 +1,71 @@
 /**
- * 产品案例详情页面组件
- * 动态加载产品案例markdown文档并应用统一样式
+ * Relay Module 产品案例详情（自包含实现）
  */
 import { useParams, Link } from 'react-router'
 import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './markdown-styles.css'
 
-// 导入产品案例markdown文件
-import ioModule01Content from '../articles/markdown-cases/io-module01.md?raw'
-import ioModule02Content from '../articles/markdown-cases/io-module02.md?raw'
-import ioModule03Content from '../articles/markdown-cases/io-module03.md?raw'
-import ioModule04Content from '../articles/markdown-cases/io-module04.md?raw'
-import ioModule05Content from '../articles/markdown-cases/io-module05.md?raw'
-import ioModule06Content from '../articles/markdown-cases/io-module06.md?raw'
+// 导入 Relay markdown 文件
+import relay01Content from '../articles/markdown-cases/relay-module01.md?raw'
+import relay02Content from '../articles/markdown-cases/relay-module02.md?raw'
+import relay03Content from '../articles/markdown-cases/relay-module03.md?raw'
+import relay04Content from '../articles/markdown-cases/relay-module04.md?raw'
+import relay05Content from '../articles/markdown-cases/relay-module05.md?raw'
+import relay06Content from '../articles/markdown-cases/relay-module06.md?raw'
 
-// 产品案例配置映射（默认）
-const productConfig = {
-  'io-module01': {
-    title: "Input/Output Adaptive Bus I/O Module",
-    description: "Input-output adaptive bus I/O module with auto-detection wiring capabilities",
-    image: "http://image.sentinel-china.com/202508111442770.png"
+const relayConfig = {
+  'relay-module01': {
+    title: 'New product launch：IO-Link relay module',
+    description: 'with one wire, saves half the manpower of the control cabinet',
+    image: 'http://image.sentinel-china.com/202510151643283.png'
   },
-  'io-module02': {
-    title: "IO Module on TBR Tire Conveyor Lines",
-    description: "IO module applications on TBR tire conveyor lines, simplifying wiring and improving efficiency",
-    image: "http://image.sentinel-china.com/202508111459837.png"
+  'relay-module02': {
+    title: 'What is IO-Link',
+    description: 'Introduction to IO-Link protocol - open communication standard for sensors and actuators with 35+ million global nodes',
+    image: 'http://image.sentinel-china.com/202508111615434.png'
   },
-  'io-module03': {
-    title: "From Fieldbus to Industrial Ethernet",
-    description: "Technical evolution from fieldbus to industrial Ethernet",
-    image: "http://image.sentinel-china.com/202508111511234.png"
+  'relay-module03': {
+    title: 'Summary of IO-Link Devices Series',
+    description: 'SENTINEL’s comprehensive IO-Link substation portfolio - IP20 and IP67 series for diverse industrial applications',
+    image: 'http://image.sentinel-china.com/202508111618966.png'
   },
-  'io-module04': {
-    title: "Distributed Remote IO: Application Experience in the Pharmaceutical Packaging Industry",
-    description: "Application experience of distributed remote IO in pharmaceutical packaging industry",
-    image: "http://image.sentinel-china.com/202508111524012.png"
+  'relay-module04': {
+    title: 'IO-Link Remote RTD Module: Smart solution for industrial temperature control',
+    description: 'High-precision temperature monitoring with IO-Link RTD modules - 8-channel Pt100/Pt1000 support with ±0.5°C accuracy',
+    image: 'http://image.sentinel-china.com/202508111624189.png'
   },
-  'io-module05': {
-    title: "SENTINEL Products Empower the Powder Metallurgy Industry",
-    description: "SENTINEL products empowering the powder metallurgy industry",
-    image: "http://image.sentinel-china.com/202508111528078.png"
+  'relay-module05': {
+    title: 'New IO-Link Substation Modules: Adaptive and Expandable',
+    description: 'Intelligent adaptive IO-Link modules with automatic I/O switching and expandable architecture for flexible automation',
+    image: 'http://image.sentinel-china.com/202508111629411.png'
   },
-  'io-module06': {
-    title: "IO-Link Master Modules with Modbus-TCP Protocol",
-    description: "Discover SENTINEL ELMT-8IOL-L001 & L04B IO-Link master modules with Modbus-TCP, IP67 protection, fast setup, and flexible industrial connectivity.",
-    image: "http://image.sentinel-china.com/202508151007096.png"
+  'relay-module06': {
+    title: 'The Use of Negative Pressure Sensors in Distillation Equipment',
+    description: 'Food and pharmaceutical-grade negative pressure sensors with IO-Link integration for precise vacuum control',
+    image: 'http://image.sentinel-china.com/202508111633019.png'
   }
 }
 
-// markdown内容映射（默认）
 const markdownContentMap = {
-  'io-module01': ioModule01Content,
-  'io-module02': ioModule02Content,
-  'io-module03': ioModule03Content,
-  'io-module04': ioModule04Content,
-  'io-module05': ioModule05Content,
-  'io-module06': ioModule06Content
+  'relay-module01': relay01Content,
+  'relay-module02': relay02Content,
+  'relay-module03': relay03Content,
+  'relay-module04': relay04Content,
+  'relay-module05': relay05Content,
+  'relay-module06': relay06Content
 }
 
-type ProductDetailProps = {
-  productConfigMap?: Record<string, any>
-  markdownMap?: Record<string, string>
-  categoryKey?: string
-}
-
-export default function ProductDetail(props?: ProductDetailProps) {
+export default function RelayModuleDetail() {
   const { productId } = useParams<{ productId: string }>()
   const [product, setProduct] = useState<any>(null)
   const [markdownContent, setMarkdownContent] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  // use provided maps or fall back to defaults
-  const localProductConfig = props?.productConfigMap || productConfig
-  const localMarkdownContentMap = props?.markdownMap || markdownContentMap
-
   useEffect(() => {
-    if (productId && localProductConfig[productId as keyof typeof localProductConfig]) {
-      setProduct(localProductConfig[productId as keyof typeof localProductConfig])
-      // 直接加载markdown内容
+    if (productId && relayConfig[productId as keyof typeof relayConfig]) {
+      setProduct(relayConfig[productId as keyof typeof relayConfig])
       loadMarkdownContent(productId)
     }
   }, [productId])
@@ -88,56 +74,25 @@ export default function ProductDetail(props?: ProductDetailProps) {
     try {
       setLoading(true)
       setError(null)
-      
-      console.log('尝试加载产品markdown文件:', id)
-      
-  // 从markdown内容映射中获取内容
-  const content = localMarkdownContentMap[id as keyof typeof localMarkdownContentMap]
-      
+
+      const content = markdownContentMap[id as keyof typeof markdownContentMap]
       if (content) {
-        console.log('加载的markdown内容长度:', content.length)
-        console.log('内容预览:', content.substring(0, 200) + '...')
         setMarkdownContent(content)
       } else {
-        console.log('未找到markdown文件:', id)
-        // 如果文件不存在，显示默认内容
-  setMarkdownContent(`# ${localProductConfig[id as keyof typeof localProductConfig]?.title || '产品详情'}
+        setMarkdownContent(`# ${relayConfig[id as keyof typeof relayConfig]?.title || '产品详情'}
 
 ## 概述
 
 该产品的详细文档正在准备中，请稍后再来查看。
 
-## 功能特点
-
-- 专业的产品设计
-- 先进的技术架构
-- 完善的实施服务
-- 持续的运维支持
-
-## 联系我们
-
-如果您对该产品感兴趣，欢迎联系我们：
-
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦
-
-我们将为您提供专业的咨询服务和定制化解决方案。`)
+`)
       }
     } catch (err) {
       console.error('加载markdown文件失败:', err)
       setError('文档加载失败，请稍后重试')
       setMarkdownContent(`# 文档加载失败
 
-抱歉，文档加载出现错误，请稍后重试。
-
-## 联系我们
-
-如果您对该产品感兴趣，欢迎联系我们：
-
-- **电话**: 400-888-8888
-- **邮箱**: info@example.com
-- **地址**: 北京市朝阳区科技园区创新大厦`)
+抱歉，文档加载出现错误，请稍后重试。`)
     } finally {
       setLoading(false)
     }
@@ -148,15 +103,13 @@ export default function ProductDetail(props?: ProductDetailProps) {
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-red-400 mb-4">产品未找到</h1>
-          <Link to="/products" className="text-yellow-400 hover:text-yellow-300">
-            返回产品页面
+          <Link to="/products/relay-module" className="text-yellow-400 hover:text-yellow-300">
+            返回 Relay Module 页面
           </Link>
         </div>
       </div>
     )
   }
-
-
 
   return (
     <div className="min-h-screen pt-16">
@@ -164,11 +117,11 @@ export default function ProductDetail(props?: ProductDetailProps) {
       <section className="px-4 sm:px-6 lg:px-8 py-8">
         <div className="max-w-7xl mx-auto">
                      <Link 
-             to="/products/io-module" 
+             to="/products/relay-module" 
              className="inline-flex items-center text-yellow-400 hover:text-yellow-300 mb-6 transition-colors"
            >
              <ArrowLeft className="w-4 h-4 mr-2" />
-             Back to Products
+             Back to Relay Products
            </Link>
            
            <div className="mb-8">
@@ -207,7 +160,7 @@ export default function ProductDetail(props?: ProductDetailProps) {
   )
 }
 
-// 简化的markdown渲染函数
+// 简化的markdown渲染函数（与 iolinkdetail 保持一致）
 function renderMarkdown(markdown: string): string {
   return markdown
     // 移除HTML注释
@@ -263,21 +216,21 @@ function renderMarkdown(markdown: string): string {
       
       // 处理列表项
       const lines = trimmedBlock.split('\n').filter(line => line.trim() !== '')
-      const listItems = lines.filter(line => line.trim().match(/^[\-\*] (.*$)/))
-      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. (.*$)/))
+      const listItems = lines.filter(line => line.trim().match(/^[\-\*] /))
+      const orderedListItems = lines.filter(line => line.trim().match(/^\d+\. /))
       
       if (listItems.length > 0) {
         // 无序列表
         const items = listItems.map(line => {
-          const match = line.trim().match(/^[\-\*] (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
+          const content = line.trim().replace(/^[\-\*] /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
         }).join('')
         return `<ul class="space-y-2 my-4">${items}</ul>`
       } else if (orderedListItems.length > 0) {
         // 有序列表
         const items = orderedListItems.map(line => {
-          const match = line.trim().match(/^\d+\. (.*$)/)
-          return match ? `<li>${match[1]}</li>` : ''
+          const content = line.trim().replace(/^\d+\. /, '').replace(/  $/, '') // 移除末尾的两个空格
+          return `<li>${content}</li>`
         }).join('')
         return `<ol class="space-y-2 my-4">${items}</ol>`
       }

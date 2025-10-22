@@ -155,42 +155,29 @@ export default function MobileDevelopmentDetail() {
   ]
 
   const relatedProducts = [
-    {
-      title: "Differences Between Digital Signals",
+    { title: "New product launch：IO-Link relay module",
+       description: "", 
+       image: "http://image.sentinel-china.com/202510151643283.png", 
+       link: "/products/relay-module/relay-module01" },
+    { title: "What is IO-Link", 
       description: "",
-      image: "http://image.sentinel-china.com/202508111605823.png",
-      link: "/products/io-link/io-link01"
-    },
-    {
-      title: "What is IO-Link",
-      description: "",
-      image: "http://image.sentinel-china.com/202508111615434.png",
-      link: "/products/io-link/io-link02"
-    },
-    {
-      title: "Summary of IO-Link Devices Series",
-      description: "",
+       image: "http://image.sentinel-china.com/202508111615434.png", link: "/products/relay-module/relay-module02" },
+    { title: "Summary of IO-Link Devices Series",
+       description: "", 
       image: "http://image.sentinel-china.com/202508111618966.png",
-      link: "/products/io-link/io-link03"
-    },
-    {
-      title: "IO-Link Remote RTD Module",
-      description: "",
+       link: "/products/relay-module/relay-module03" },
+    { title: "IO-Link Remote RTD Module", 
+      description: "", 
       image: "http://image.sentinel-china.com/202508111624189.png",
-      link: "/products/io-link/io-link04"
-    },
-    {
-      title: "New IO-Link Substation Modules",
-      description: "",
-      image: "http://image.sentinel-china.com/202508111629411.png",
-      link: "/products/io-link/io-link05"
-    },
-    {
-      title: "Pressure Sensors in Distillation Equipment",
-      description: "",
+       link: "/products/relay-module/relay-module04" },
+    { title: "New IO-Link Substation Modules",
+       description: "", 
+       image: "http://image.sentinel-china.com/202508111629411.png", 
+       link: "/products/relay-module/relay-module05" },
+    { title: "Pressure Sensors in Distillation Equipment", 
+      description: "", 
       image: "http://image.sentinel-china.com/202508111633019.png",
-      link: "/products/io-link/io-link06"
-    }
+       link: "/products/relay-module/relay-module06" }
   ]
 
   // 计算可滚动的产品数量
@@ -217,7 +204,7 @@ export default function MobileDevelopmentDetail() {
             <div className="relative">
               <img
                 src="/relay module.png"
-                alt="IO-Link"
+                alt="relay module"
                 className="w-full h-96 object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent rounded-2xl"></div>

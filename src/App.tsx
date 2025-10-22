@@ -19,6 +19,7 @@ import NewPage1 from './pages/products/NewPage1'
 import RelayModule from './pages/products/Relay-Module'
 import SolutionsDetail from './pages/markdown-config/SolutionsDetail'
 import ProductDetail from './pages/markdown-config/ProductDetail'
+import RelayModuleDetail from './pages/markdown-config/relaymoduledetail'
 import IOLinkDetail from './pages/markdown-config/iolinkdetail'
 import ConnectivityDetail from './pages/markdown-config/ConnectivityDetail'
 import PressureDetail from './pages/markdown-config/PressureDetail'
@@ -71,6 +72,7 @@ export default function App() {
             <Route path="/markdown-config/liquid/:productId" element={<LiquidDetail />} />
             <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
+             <Route path="/products/relay-module/:productId" element={<RelayModuleDetail />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
