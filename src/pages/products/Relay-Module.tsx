@@ -346,7 +346,7 @@ export default function MobileDevelopmentDetail() {
                 <div className="relative">
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
-                      src="https://www.youtube.com/embed/fPdyTupm4zk?si=PBojtlzUccDN2Eh5"
+                      src="https://www.youtube.com/embed/egQQwpaGkQ8?si=wsO6besp3SXK0b7m"
                       title="IO-Link Technology Demonstration"
                       className="w-full h-full"
                       frameBorder="0"
