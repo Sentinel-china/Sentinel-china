@@ -5,8 +5,10 @@
 import { ArrowRight, Shield, Zap, Users, Award, TrendingUp, Globe, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function HomePage() {
+  const { t } = useLanguage()
   // Banner轮播图数据
   const bannerImages = [
     {
@@ -58,13 +60,12 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Industral Sensors
-                  <span className="text-yellow-400 block">IO-Link</span>
-                  <span className="text-yellow-400 block">I/O Module</span>
+                  {t('pages.home.heroTitleLine1')}
+                  <span className="text-yellow-400 block">{t('pages.home.heroTitleLine2')}</span>
+                  <span className="text-yellow-400 block">{t('pages.home.heroTitleLine3')}</span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                  Professional technical teams and cutting-edge solutions to create greater business value
-                  for your enterprise, leading new trends in industry digital development.
+                  {t('pages.home.heroSubtitle')}
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -72,14 +73,14 @@ export default function HomePage() {
                   to="/contact#send-message"
                   className="inline-flex items-center px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-300 transition-colors duration-200 group"
                 >
-                  Contact Now
+                  {t('pages.home.contactNow')}
                   <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   to="/products"
                   className="inline-flex items-center px-6 py-3 border border-gray-600 text-yellow font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-colors duration-200"
                 >
-                  More Products
+                  {t('pages.home.moreProducts')}
                 </Link>
               </div>
             </div>
@@ -144,11 +145,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Why Choose
-              <span className="text-yellow-400"> SENTINEL</span>
+              {t('pages.home.whyChooseTitle')}
+              <span className="text-yellow-400"> {t('pages.home.whyChooseBrand')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Innovation makes good products, Focus makes better services
+              {t('pages.home.whyChooseSubtitle')}
             </p>
           </div>
           
@@ -157,9 +158,9 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Shield className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">About US</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('pages.home.featureAbout')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-justify">
-                Tianjin Sentinel Electronics Co., Ltd ( here in after to be referred to as SENTINEL ) is an innovative Scientific and technological enterprise integrating R&D, production, and sales. SENTINEL provides industrial ethernet distributed I/O modules & IO-Link products, position sensors, process sensors, and connection accessories, etc.
+                {t('pages.home.featureAboutContent')}
               </p>
             </div>
 
@@ -167,19 +168,19 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Zap className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Industrial Applications</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('pages.home.featureApplications')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-justify">
-                SENTINEL has a wide range of products and a professional R & D team. It guarantees SENTINEL can provide our customers with quality products and services.  These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
-                </p>
+                {t('pages.home.featureApplicationsContent')}
+              </p>
             </div>
 
             <div className="group p-8 rounded-2xl dark:bg-gray-800/50 bg-gradient-to-r from-yellow-400/10 to-transparent border border-gray-700 dark:border-gray-700 border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/20 transition-colors">
                 <Users className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Professional Team</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('pages.home.featureTeam')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-justify">
-                As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service. 
+                {t('pages.home.featureTeamContent')}
               </p>
             </div>
           </div>
@@ -195,28 +196,28 @@ export default function HomePage() {
                 <Award className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">5YR</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Warranty</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.home.statsWarranty')}</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Users className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">24Hrs</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Customer Service</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.home.statsService')}</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <TrendingUp className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">98%</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Customer Satisfaction</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.home.statsSatisfaction')}</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center mb-4">
                 <Globe className="text-yellow-400 mr-2" size={32} />
               </div>
               <div className="text-4xl font-bold text-yellow-400">50+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Cities Covered</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.home.statsCities')}</div>
             </div>
           </div>
         </div>
@@ -226,16 +227,16 @@ export default function HomePage() {
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold mb-6">
-            Contact our professional team<span className="text-yellow-400"> for customized solutions</span>
+            {t('pages.home.ctaTitle')}<span className="text-yellow-400"> {t('pages.home.ctaHighlight')}</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-          We are committed to providing you with the best service and support.
+            {t('pages.home.ctaText')}
           </p>
           <Link
             to="/contact#send-message"
             className="inline-flex items-center px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg text-lg hover:bg-yellow-300 transition-colors duration-200 group"
           >
-            Free Consultation
+            {t('pages.home.ctaButton')}
             <ArrowRight size={24} className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

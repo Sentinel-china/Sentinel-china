@@ -5,8 +5,10 @@
 import { ArrowLeft, Link2, Settings, Network, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Smartphone, Code, Zap, Users } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function MobileDevelopmentDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,69 +58,69 @@ export default function MobileDevelopmentDetail() {
   const features = [
     {
       icon: Link2,
-      title: "Technological Innovation",
-      description: "The world's first relay module integrated with IO-Link functionality"
+      title: t('pages.relayModule.features.technologicalInnovation.title'),
+      description: t('pages.relayModule.features.technologicalInnovation.description')
     },
     {
       icon: Settings,
-      title: "High-Efficiency Expansion",
-      description: "A 4-port IO-Link master can connect 128 relays"
+      title: t('pages.relayModule.features.highEfficiencyExpansion.title'),
+      description: t('pages.relayModule.features.highEfficiencyExpansion.description')
     },
     {
       icon: Network,
-      title: "Smart Monitoring",
-      description: "Real-time monitoring of temperature, overcurrent, and switching cycles"
+      title: t('pages.relayModule.features.smartMonitoring.title'),
+      description: t('pages.relayModule.features.smartMonitoring.description')
     },
     {
       icon: Shield,
-      title: "Flexible Application",
-      description: "Compatible with various brand main stations and relays, and can be freely plugged and unplugged."
+      title: t('pages.relayModule.features.flexibleApplication.title'),
+      description: t('pages.relayModule.features.flexibleApplication.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Product type", value: " | IO-Link Expandable Relay Module |  Relay Module Expansion Sub-Module |  " },
-    { spec: "Output points", value: " | 16 | 8 | " },
-    { spec: "Output current", value: " | 150mA |  " },
-    { spec: "Output protection mode", value: " | Overload protection | Overheat protection |  " },
-    { spec: "Output protection response time", value: " | ≈20ms |" },
-    { spec: "Output voltage Drop", value: "| ≈0.6V |" },
-    { spec: "Isolation method", value: " | Digital isolation | " },
-    { spec: "Working/Auxiliary voltage", value: " | 24VDC±10% | " },
-    { spec: "Module operating current", value: " | <100mA | " },
-    { spec: "Current required by the load power supply", value: " | <4.8A | " },
-    { spec: "Relay contact type", value: " | One set of normally open + one set of normally closed | " },
-    { spec: "Relay contact capacity", value: " | 5A 250VAC/5A 30VDC | " },
-    { spec: "Relay coil voltage", value: " | 24V | " },
-    { spec: "IO-Link Protocol version", value: " | V1.1 | " },
-    { spec: "IO-Link Interface type", value: " | Class A | " },
-    { spec: "Installation method", value: " | DIN35 standard guide rail mounting or fixing holes | " },
-    { spec: "Protection level", value: " | IP20 | " },
-    { spec: "Operating temperature", value: " | -25...55℃ | " }
-    ]
+    { spec: t('pages.relayModule.specs.productType'), value: t('pages.relayModule.specs.productTypeValue') },
+    { spec: t('pages.relayModule.specs.outputPoints'), value: t('pages.relayModule.specs.outputPointsValue') },
+    { spec: t('pages.relayModule.specs.outputCurrent'), value: t('pages.relayModule.specs.outputCurrentValue') },
+    { spec: t('pages.relayModule.specs.outputProtectionMode'), value: t('pages.relayModule.specs.outputProtectionModeValue') },
+    { spec: t('pages.relayModule.specs.outputProtectionResponseTime'), value: t('pages.relayModule.specs.outputProtectionResponseTimeValue') },
+    { spec: t('pages.relayModule.specs.outputVoltageDrop'), value: t('pages.relayModule.specs.outputVoltageDropValue') },
+    { spec: t('pages.relayModule.specs.isolationMethod'), value: t('pages.relayModule.specs.isolationMethodValue') },
+    { spec: t('pages.relayModule.specs.workingAuxiliaryVoltage'), value: t('pages.relayModule.specs.workingAuxiliaryVoltageValue') },
+    { spec: t('pages.relayModule.specs.moduleOperatingCurrent'), value: t('pages.relayModule.specs.moduleOperatingCurrentValue') },
+    { spec: t('pages.relayModule.specs.currentRequiredByLoad'), value: t('pages.relayModule.specs.currentRequiredByLoadValue') },
+    { spec: t('pages.relayModule.specs.relayContactType'), value: t('pages.relayModule.specs.relayContactTypeValue') },
+    { spec: t('pages.relayModule.specs.relayContactCapacity'), value: t('pages.relayModule.specs.relayContactCapacityValue') },
+    { spec: t('pages.relayModule.specs.relayCoilVoltage'), value: t('pages.relayModule.specs.relayCoilVoltageValue') },
+    { spec: t('pages.relayModule.specs.ioLinkProtocolVersion'), value: t('pages.relayModule.specs.ioLinkProtocolVersionValue') },
+    { spec: t('pages.relayModule.specs.ioLinkInterfaceType'), value: t('pages.relayModule.specs.ioLinkInterfaceTypeValue') },
+    { spec: t('pages.relayModule.specs.installationMethod'), value: t('pages.relayModule.specs.installationMethodValue') },
+    { spec: t('pages.relayModule.specs.protectionLevel'), value: t('pages.relayModule.specs.protectionLevelValue') },
+    { spec: t('pages.relayModule.specs.operatingTemperature'), value: t('pages.relayModule.specs.operatingTemperatureValue') }
+  ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.relayModule.downloads.sensorsOverview.title'),
+      description: t('pages.relayModule.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.relayModule.downloads.ioModuleOverview.title'),
+      description: t('pages.relayModule.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.relayModule.downloads.ioLinkOverview.title'),
+      description: t('pages.relayModule.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.relayModule.downloads.relayModuleOverview.title'),
+      description: t('pages.relayModule.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -126,56 +128,56 @@ export default function MobileDevelopmentDetail() {
 
   const cases = [
     {
-      company: "Expandable Relay Module",
-      industry: "IO-Link",
-      challenge: " IO-Link remote I/O device. 16 channels, single output 150 mA per channel, expandable.",
-      solution: " IO-Link V1.1 compliant.DIN35 standard rail mounting or screw fixing.",
-      result: "Communication and load power supply via pluggable push-in terminals.",
+      company: t('pages.relayModule.cases.expandableRelay.company'),
+      industry: t('pages.relayModule.cases.expandableRelay.industry'),
+      challenge: t('pages.relayModule.cases.expandableRelay.challenge'),
+      solution: t('pages.relayModule.cases.expandableRelay.solution'),
+      result: t('pages.relayModule.cases.expandableRelay.result'),
       image: "/relay module.png",
       link: "https://export.sentinel-china.com/#/products"
     },
     {
-      company: "16-channel Expansion Sub-Module",
-      industry: "IO-Link  Relay Module",
-      challenge: " 16-channel. Single output 150 mA per channel.",
-      solution: " Standard base compatible with relays from various brands.",
-      result: "SPDT contacts. DIN35 standard rail mounting or screw fixing.",
+      company: t('pages.relayModule.cases.sixteenChannelSub.company'),
+      industry: t('pages.relayModule.cases.sixteenChannelSub.industry'),
+      challenge: t('pages.relayModule.cases.sixteenChannelSub.challenge'),
+      solution: t('pages.relayModule.cases.sixteenChannelSub.solution'),
+      result: t('pages.relayModule.cases.sixteenChannelSub.result'),
       image: "/relay sub-module 16.png",
       link: "https://export.sentinel-china.com/#/products"
     },
     {
-      company: "8-channel Expansion Sub-Module",
-      industry: "IO-Link  Relay Module",
-      challenge: "8-channel. Single output 150 mA per channel.",
-      solution: "Standard base compatible with relays from various brands.",
-      result: "SPDT contacts. DIN35 standard rail mounting or screw fixing.",
+      company: t('pages.relayModule.cases.eightChannelSub.company'),
+      industry: t('pages.relayModule.cases.eightChannelSub.industry'),
+      challenge: t('pages.relayModule.cases.eightChannelSub.challenge'),
+      solution: t('pages.relayModule.cases.eightChannelSub.solution'),
+      result: t('pages.relayModule.cases.eightChannelSub.result'),
       image: "/relay sub-module 8.png",
       link: "https://export.sentinel-china.com/#/products"
     }
   ]
 
   const relatedProducts = [
-    { title: "New product launch：IO-Link relay module",
-       description: "", 
-       image: "http://image.sentinel-china.com/202510151643283.png", 
+    { title: t('pages.relayModule.relatedProducts.newProductLaunch'),
+       description: "",
+       image: "http://image.sentinel-china.com/202510151643283.png",
        link: "/products/relay-module/relay-module01" },
-    { title: "What is IO-Link", 
+    { title: t('pages.relayModule.relatedProducts.whatIsIoLink'),
       description: "",
        image: "http://image.sentinel-china.com/202508111615434.png", link: "/products/relay-module/relay-module02" },
-    { title: "Summary of IO-Link Devices Series",
-       description: "", 
+    { title: t('pages.relayModule.relatedProducts.summaryIoLinkDevices'),
+       description: "",
       image: "http://image.sentinel-china.com/202508111618966.png",
        link: "/products/relay-module/relay-module03" },
-    { title: "IO-Link Remote RTD Module", 
-      description: "", 
+    { title: t('pages.relayModule.relatedProducts.ioLinkRemoteRtd'),
+      description: "",
       image: "http://image.sentinel-china.com/202508111624189.png",
        link: "/products/relay-module/relay-module04" },
-    { title: "New IO-Link Substation Modules",
-       description: "", 
-       image: "http://image.sentinel-china.com/202508111629411.png", 
+    { title: t('pages.relayModule.relatedProducts.newIoLinkSubstation'),
+       description: "",
+       image: "http://image.sentinel-china.com/202508111629411.png",
        link: "/products/relay-module/relay-module05" },
-    { title: "Pressure Sensors in Distillation Equipment", 
-      description: "", 
+    { title: t('pages.relayModule.relatedProducts.pressureSensorsDistillation'),
+      description: "",
       image: "http://image.sentinel-china.com/202508111633019.png",
        link: "/products/relay-module/relay-module06" }
   ]
@@ -217,14 +219,14 @@ export default function MobileDevelopmentDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    IO-Link <span className="text-yellow-400">Relay Module</span>
+                    {t('pages.relayModule.banner.title')} <span className="text-yellow-400">{t('pages.relayModule.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                The newly launched IO-Link relay module by SENTINEL will greatly leverage this advantage of IO-Link, enabling users to reduce engineering costs and labor costs, especially for projects that use a large number of relays in electrical cabinets.
+                {t('pages.relayModule.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -234,13 +236,13 @@ export default function MobileDevelopmentDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.relayModule.banner.moreButton')}
                 </a>
                <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.relayModule.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -253,7 +255,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core <span className="text-yellow-400">Advantages</span>
+              {t('pages.relayModule.featuresSection.title')} <span className="text-yellow-400">{t('pages.relayModule.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -286,7 +288,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Products
+                {t('pages.relayModule.tabs.products')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -296,7 +298,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.relayModule.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -306,7 +308,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.relayModule.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -317,26 +319,26 @@ export default function MobileDevelopmentDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.relayModule.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      Compared with traditional expansion output modules connected to the same number of relays, IO-Link relay modules can save 40% of the cost.
+                      {t('pages.relayModule.description.paragraph1')}
                     </p>
                     <p>
-                     Remote monitoring and maintenance simplify wiring and significantly reduce labor costs (up to 95% savings).
+                      {t('pages.relayModule.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span> IO-Link Expandable Relay Module</span>
+                        <span>{t('pages.relayModule.description.ioLinkExpandableRelay')}</span>
                       </div>
                       <div className="flex items-center">
                         <Network className="text-yellow-400 mr-2" size={20} />
-                        <span>8-channel Expansion Sub-Module</span>
+                        <span>{t('pages.relayModule.description.eightChannelSub')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>16-channel Expansion Sub-Module</span>
+                        <span>{t('pages.relayModule.description.sixteenChannelSub')}</span>
                       </div>
                       
                     </div>
@@ -354,7 +356,7 @@ export default function MobileDevelopmentDetail() {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">IO-Link Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.relayModule.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -362,16 +364,16 @@ export default function MobileDevelopmentDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.relayModule.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.relayModule.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.relayModule.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -395,7 +397,7 @@ export default function MobileDevelopmentDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.relayModule.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -419,7 +421,7 @@ export default function MobileDevelopmentDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download 
+                          {t('pages.relayModule.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -436,7 +438,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product <span className="text-yellow-400">Type</span>
+              {t('pages.relayModule.casesSection.title')} <span className="text-yellow-400">{t('pages.relayModule.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -469,7 +471,7 @@ export default function MobileDevelopmentDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.relayModule.casesSection.introduction')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
@@ -494,7 +496,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Related <span className="text-yellow-400">Articles</span>
+              {t('pages.relayModule.relatedSection.title')} <span className="text-yellow-400">{t('pages.relayModule.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300"></p>
           </div>
@@ -579,23 +581,23 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your <span className="text-yellow-400">preferential </span>price
+              {t('pages.relayModule.cta.title')}<span className="text-yellow-400"> {t('pages.relayModule.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.relayModule.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                export.sentinel@gmail.com
+                {t('pages.relayModule.cta.email')}
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.relayModule.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

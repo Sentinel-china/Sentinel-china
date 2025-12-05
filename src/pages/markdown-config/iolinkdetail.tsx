@@ -43,9 +43,9 @@ const ioLinkConfig = {
     image: "http://image.sentinel-china.com/202508111528078.png"
   },
   'io-link06': {
-    title: "The Use of Negative Pressure Sensors in Distillation Equipment",
-    description: "Food and pharmaceutical-grade negative pressure sensors with IO-Link integration for precise vacuum control",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop"
+    title: "Exhibition Preview | Centner sincerely invites you to attend the 2025 SPS Exhibition in Germany",
+    description: "",
+    image: "http://image.sentinel-china.com/20251202140243471.png"
   }
 }
 

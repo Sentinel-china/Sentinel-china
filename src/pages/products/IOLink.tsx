@@ -1,12 +1,14 @@
 /**
- * 移动应用开发详情页面
- * 展示移动应用开发的详细信息、技术优势和解决方案
+ * IO-Link 产品详情页面
+ * 展示 IO-Link 产品的详细信息、技术优势和解决方案
  */
 import { ArrowLeft, Link2, Settings, Network, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Smartphone, Code, Zap, Users } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function MobileDevelopmentDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,58 +58,58 @@ export default function MobileDevelopmentDetail() {
   const features = [
     {
       icon: Link2,
-      title: "Standardized & compatible",
-      description: "No special cables needed, works with existing setups"
+      title: t('pages.ioLink.features.standardized.title'),
+      description: t('pages.ioLink.features.standardized.description')
     },
     {
       icon: Settings,
-      title: "Cost-effective upgrade",
-      description: "Evolves existing tech, no system replacement, cuts complexity"
+      title: t('pages.ioLink.features.costEffective.title'),
+      description: t('pages.ioLink.features.costEffective.description')
     },
     {
       icon: Network,
-      title: "Comprehensive ecosystem",
-      description: "Multi-protocol masters + diverse slaves, full-link coverage"
+      title: t('pages.ioLink.features.ecosystem.title'),
+      description: t('pages.ioLink.features.ecosystem.description')
     },
     {
       icon: Shield,
-      title: "Efficient & reliable",
-      description: "Low-cost transmission, boosting efficiency while reducing costs"
+      title: t('pages.ioLink.features.efficient.title'),
+      description: t('pages.ioLink.features.efficient.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Product type", value: " | IO-Link Master | IO-Link Hubs | IO-Link converter | " },
-    { spec: "Network protocol", value: " | Profinet | CC-LINK IE Field Basic | EtherCAT | EtherNet/IP | ModbusTCP |" },
-    { spec: "Power interface", value: " | 7/8” | L-code | " },
-    { spec: "IO-Link Port type", value: " | Class A | Class B | Class A+Class B | " },
-    { spec: "IO-Link specification", value: " | V1.0 | V1.1 |" },
-    { spec: "Number of ports", value: "| 8 | 16 |" },
-    { spec: "Protection class", value: " | IP67 | IP20 | " }
+    { spec: t('pages.ioLink.specs.productType'), value: " | IO-Link Master | IO-Link Hubs | IO-Link converter | " },
+    { spec: t('pages.ioLink.specs.networkProtocol'), value: " | Profinet | CC-LINK IE Field Basic | EtherCAT | EtherNet/IP | ModbusTCP |" },
+    { spec: t('pages.ioLink.specs.powerInterface'), value: " | 7/8\" | L-code | " },
+    { spec: t('pages.ioLink.specs.portType'), value: " | Class A | Class B | Class A+Class B | " },
+    { spec: t('pages.ioLink.specs.specification'), value: " | V1.0 | V1.1 |" },
+    { spec: t('pages.ioLink.specs.numberOfPorts'), value: "| 8 | 16 |" },
+    { spec: t('pages.ioLink.specs.protectionClass'), value: " | IP67 | IP20 | " }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.ioLink.downloads.sensorsOverview.title'),
+      description: t('pages.ioLink.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.ioLink.downloads.ioModuleOverview.title'),
+      description: t('pages.ioLink.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.ioLink.downloads.ioLinkOverview.title'),
+      description: t('pages.ioLink.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.ioLink.downloads.relayModuleOverview.title'),
+      description: t('pages.ioLink.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -115,27 +117,27 @@ export default function MobileDevelopmentDetail() {
 
   const cases = [
     {
-      company: "Master",
-      industry: "IO-Link",
-      challenge: "IO-Link is a point-to-point communication protocol between IO system compatible with bus protocol and field devices (including sensors and actuators). Combining interface signal transmission with cable power supply technology can not only make the equipment intelligent, but also save cables, reduce interference and improve the reliability and predictability of the system.",
+      company: t('pages.ioLink.cases.master.company'),
+      industry: t('pages.ioLink.cases.master.industry'),
+      challenge: t('pages.ioLink.cases.master.challenge'),
       solution: "",
       result: "",
       image: "/iolinkmaster.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020713978.html"
     },
     {
-      company: "Hubs",
-      industry: "IO-Link",
-      challenge: "As a communication interface independent of the field bus, the sensors, actuators and I/O supporting the IO-Link protocol are IO-Link slave devices, which greatly improves the reliability of the devices.",
+      company: t('pages.ioLink.cases.hubs.company'),
+      industry: t('pages.ioLink.cases.hubs.industry'),
+      challenge: t('pages.ioLink.cases.hubs.challenge'),
       solution: "",
       result: "",
       image: "/iolinkhubs.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020778941.html"
     },
     {
-      company: "Converter",
-      industry: "IO-Link",
-      challenge: "The IO-Link Converter (CIOL-2AI-SC) is designed to convert two channels of 4-20mA/0-20mA analog signals into IO-Link communication format. It supports IO-Link V1.1 protocol with an M12 A-coded 4-pin Class A interface. Compatible with 2-wire, 3-wire, and 4-wire sensor connections, it features status LED indicators and is ideal for industrial signal acquisition applications.",
+      company: t('pages.ioLink.cases.converter.company'),
+      industry: t('pages.ioLink.cases.converter.industry'),
+      challenge: t('pages.ioLink.cases.converter.challenge'),
       solution: "",
       result: "",
       image: "/iolink converter.jpg",
@@ -145,39 +147,39 @@ export default function MobileDevelopmentDetail() {
 
   const relatedProducts = [
     {
-      title: "Differences Between Digital Signals",
+      title: t('pages.ioLink.relatedProducts.digitalSignals'),
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/io-link/io-link01"
     },
     {
-      title: "What is IO-Link",
+      title: t('pages.ioLink.relatedProducts.whatIsIOLink'),
       description: "",
       image: "http://image.sentinel-china.com/202508111615434.png",
       link: "/products/io-link/io-link02"
     },
     {
-      title: "Summary of IO-Link Devices Series",
+      title: t('pages.ioLink.relatedProducts.devicesSeries'),
       description: "",
       image: "http://image.sentinel-china.com/202508111618966.png",
       link: "/products/io-link/io-link03"
     },
     {
-      title: "IO-Link Remote RTD Module",
+      title: t('pages.ioLink.relatedProducts.rtdModule'),
       description: "",
       image: "http://image.sentinel-china.com/202508111624189.png",
       link: "/products/io-link/io-link04"
     },
     {
-      title: "New IO-Link Substation Modules",
+      title: t('pages.ioLink.relatedProducts.substationModules'),
       description: "",
       image: "http://image.sentinel-china.com/202508111629411.png",
       link: "/products/io-link/io-link05"
     },
     {
-      title: "Pressure Sensors in Distillation Equipment",
+      title: t('pages.ioLink.relatedProducts.pressureSensors'),
       description: "",
-      image: "http://image.sentinel-china.com/202508111633019.png",
+      image: "http://image.sentinel-china.com/20251202140243471.png",
       link: "/products/io-link/io-link06"
     }
   ]
@@ -219,14 +221,14 @@ export default function MobileDevelopmentDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    IO-<span className="text-yellow-400">Link</span>
+                    {t('pages.ioLink.banner.title')}<span className="text-yellow-400">{t('pages.ioLink.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                As an automation manufacturer that actively promotes IO-LINK, SENTINEL provides IO-LINK master modules that support multiple protocols, as well as a variety of IO-LINK slave devices. From sensors to controllers, brings customers a reliable and low-cost transmission method and easily achieves lower costs and higher efficiency.
+                {t('pages.ioLink.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -236,13 +238,13 @@ export default function MobileDevelopmentDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.ioLink.banner.moreButton')}
                 </a>
                <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.ioLink.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -255,7 +257,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core <span className="text-yellow-400">Advantages</span>
+              {t('pages.ioLink.featuresSection.title')} <span className="text-yellow-400">{t('pages.ioLink.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -288,7 +290,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Products
+                {t('pages.ioLink.tabs.products')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -298,7 +300,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.ioLink.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -308,7 +310,7 @@ export default function MobileDevelopmentDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.ioLink.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -319,26 +321,26 @@ export default function MobileDevelopmentDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.ioLink.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      IO-Link is the worlds first standardized IO technology for communication with sensors and actuators.
+                      {t('pages.ioLink.description.paragraph1')}
                     </p>
                     <p>
-                     IO-Link is not a fieldbus, but a further development of the existing sensor and actuator connection technology.
+                     {t('pages.ioLink.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Master</span>
+                        <span>{t('pages.ioLink.description.master')}</span>
                       </div>
                       <div className="flex items-center">
                         <Network className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Hubs</span>
+                        <span>{t('pages.ioLink.description.hubs')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link Converter </span>
+                        <span>{t('pages.ioLink.description.converter')}</span>
                       </div>
                       
                     </div>
@@ -349,14 +351,14 @@ export default function MobileDevelopmentDetail() {
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
                       src="https://www.youtube.com/embed/fPdyTupm4zk?si=PBojtlzUccDN2Eh5"
-                      title="IO-Link Technology Demonstration"
+                      title={t('pages.ioLink.description.videoTitle')}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">IO-Link Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.ioLink.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -364,16 +366,16 @@ export default function MobileDevelopmentDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.ioLink.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.ioLink.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.ioLink.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -397,7 +399,7 @@ export default function MobileDevelopmentDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.ioLink.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -421,7 +423,7 @@ export default function MobileDevelopmentDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.ioLink.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -438,7 +440,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product <span className="text-yellow-400">Type</span>
+              {t('pages.ioLink.casesSection.title')} <span className="text-yellow-400">{t('pages.ioLink.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -471,7 +473,7 @@ export default function MobileDevelopmentDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.ioLink.casesSection.introduction')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
@@ -496,7 +498,7 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Related <span className="text-yellow-400">Articles</span>
+              {t('pages.ioLink.relatedSection.title')} <span className="text-yellow-400">{t('pages.ioLink.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300"></p>
           </div>
@@ -581,10 +583,10 @@ export default function MobileDevelopmentDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your <span className="text-yellow-400">preferential </span>price
+              {t('pages.ioLink.cta.title')} <span className="text-yellow-400">{t('pages.ioLink.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.ioLink.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -597,7 +599,7 @@ export default function MobileDevelopmentDetail() {
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.ioLink.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

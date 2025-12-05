@@ -5,8 +5,18 @@
 import { Link } from 'react-router'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-react'
 import { useEffect } from 'react'
+import { useLanguage } from '../context/LanguageContext'
+
+// 扩展 Window 接口
+declare global {
+  interface Window {
+    cookieAcceptAll: () => void;
+    cookieAcceptNecessary: () => void;
+  }
+}
 
 export default function Footer() {
+  const { t } = useLanguage()
   const openCookieSettings = () => {
     const banner = document.getElementById('cookieConsentBanner')
     if (banner) {
@@ -17,6 +27,12 @@ export default function Footer() {
   }
 
   useEffect(() => {
+    // 清理之前的浮动元素
+    const existingBtn = document.getElementById('floating-form-btn')
+    const existingBox = document.getElementById('floating-form-box')
+    if (existingBtn) existingBtn.remove()
+    if (existingBox) existingBox.remove()
+
     // 添加CSS样式
     const style = document.createElement('style')
     style.textContent = `
@@ -95,7 +111,7 @@ export default function Footer() {
     // 添加HTML结构
     const floatingBtn = document.createElement('div')
     floatingBtn.id = 'floating-form-btn'
-    floatingBtn.innerHTML = 'contact us'
+    floatingBtn.innerHTML = t('footer.floatingContact')
     document.body.appendChild(floatingBtn)
 
     const floatingBox = document.createElement('div')
@@ -116,7 +132,7 @@ export default function Footer() {
     `
     floatingBox.innerHTML = `
       <div style="text-align: right; padding: 8px; background: #f5f5f5; border-bottom: 1px solid #ddd;">
-        <div style="float: left; font-weight: bold; font-size: 15px; color: #333;">Contact Us</div>
+        <div style="float: left; font-weight: bold; font-size: 15px; color: #333;">${t('footer.floatingTitle')}</div>
         <button onclick="document.getElementById('floating-form-box').style.display='none'" style="
           background: none;
           border: none;
@@ -141,15 +157,21 @@ export default function Footer() {
     cookieBanner.id = 'cookieConsentBanner'
     cookieBanner.innerHTML = `
       <div>
-        This website uses cookies to enhance your browsing experience, and we will only enable non-essential cookies with your consent.
-        <a href="#/privacy-policy">privacy-policy</a>
+        ${t('footer.cookie.bannerText')} <a href="#/privacy-policy">${t('footer.cookie.privacyLinkText')}</a>
       </div>
       <div class="buttons">
-        <button id="acceptAllBtn">Accept all Cookie</button>
-        <button id="acceptNecessaryBtn" class="reject">Only accept necessary Cookie</button>
+        <button id="acceptAllBtn" onclick="window.cookieAcceptAll()">${t('footer.cookie.acceptAll')}</button>
+        <button id="acceptNecessaryBtn" onclick="window.cookieAcceptNecessary()" class="reject">${t('footer.cookie.acceptNecessary')}</button>
       </div>
     `
     document.body.appendChild(cookieBanner)
+
+    // 添加全局函数到 window 对象
+    window.cookieAcceptAll = () => acceptCookies(true)
+    window.cookieAcceptNecessary = () => acceptCookies(false)
+
+    // 全局函数已在上面定义，现在按钮通过 onclick 属性调用
+
 
     // 取消悬浮Cookie按钮
 
@@ -278,6 +300,7 @@ export default function Footer() {
       }
     }
 
+
     function acceptCookies(all: boolean) {
       localStorage.setItem('cookieConsent', all ? 'all' : 'necessary')
       localStorage.setItem('cookieConsentGiven', 'true')
@@ -286,21 +309,32 @@ export default function Footer() {
         banner.style.display = 'none'
       }
 
-
+      // Google Consent Mode v2
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('consent', 'update', {
+          'analytics_storage': all ? 'granted' : 'denied',
+          'ad_storage': all ? 'granted' : 'denied',
+          'functionality_storage': all ? 'granted' : 'denied',
+          'personalization_storage': all ? 'granted' : 'denied',
+          'security_storage': 'granted'
+        })
+      }
     }
 
     function initCookieBanner() {
-      const banner = document.getElementById('cookieConsentBanner')
-      const acceptAllBtn = document.getElementById('acceptAllBtn')
-      const acceptNecessaryBtn = document.getElementById('acceptNecessaryBtn')
-      if (acceptAllBtn) {
-        acceptAllBtn.addEventListener('click', () => acceptCookies(true))
-      }
-      if (acceptNecessaryBtn) {
-        acceptNecessaryBtn.addEventListener('click', () => acceptCookies(false))
+      // Set default consent state (denied) for Google Consent Mode v2
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('consent', 'default', {
+          'analytics_storage': 'denied',
+          'ad_storage': 'denied',
+          'functionality_storage': 'denied',
+          'personalization_storage': 'denied',
+          'security_storage': 'granted'
+        })
       }
 
-                   // 获取国家判断是否显示
+
+      // 获取国家判断是否显示
       fetch('https://ipinfo.io/json')
         .then(res => res.json())
         .then(data => {
@@ -314,6 +348,30 @@ export default function Footer() {
             const consentGiven = localStorage.getItem('cookieConsentGiven')
             if (!consentGiven) {
               showCookieBanner()
+            } else {
+              // 如果已经有同意记录，恢复consent状态
+              const consent = localStorage.getItem('cookieConsent')
+              if (consent === 'all' && window.gtag) {
+                window.gtag('consent', 'update', {
+                  'analytics_storage': 'granted',
+                  'ad_storage': 'granted',
+                  'functionality_storage': 'granted',
+                  'personalization_storage': 'granted',
+                  'security_storage': 'granted'
+                })
+              } else if (consent === 'custom') {
+                // 恢复自定义偏好设置
+                const preferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}')
+                if (window.gtag) {
+                  window.gtag('consent', 'update', {
+                    'analytics_storage': preferences.analytics ? 'granted' : 'denied',
+                    'ad_storage': preferences.marketing ? 'granted' : 'denied',
+                    'functionality_storage': preferences.functional ? 'granted' : 'denied',
+                    'personalization_storage': preferences.functional ? 'granted' : 'denied',
+                    'security_storage': 'granted'
+                  })
+                }
+              }
             }
           } else {
             // 非 GDPR 国家直接接受，完全隐藏
@@ -321,6 +379,16 @@ export default function Footer() {
             localStorage.setItem('cookieConsentGiven', 'true')
             if (banner) {
               banner.style.display = 'none'
+            }
+            // 设置Google Consent为granted
+            if (window.gtag) {
+              window.gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'granted',
+                'security_storage': 'granted'
+              })
             }
           }
         })
@@ -349,7 +417,7 @@ export default function Footer() {
         document.body.removeChild(cookieBanner)
       }
     }
-  }, [])
+  }, [t])
 
   return (
     <footer className="bg-black border-t border-gray-800">
@@ -365,10 +433,7 @@ export default function Footer() {
               />
               <span className="font-bold text-xl text-white"></span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Innovation makes good products, 
-              Focus makes better services
-            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">{t('footer.company.tagline')}</p>
             <div className="flex space-x-4">
               <a href="https://www.youtube.com/channel/UCShc5ytP9ZU4Ze6RBl6iDXw" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Youtube size={25} />
@@ -378,78 +443,48 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold">Quick Links</h3>
-            <div className="space-y-2">
-              <Link to="/products" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                Products
-              </Link>
-              <Link to="/solutions" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                Solutions
-              </Link>
-              <Link to="/about" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                About Us
-              </Link>
-              <Link to="/contact" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                Contact Us
-              </Link>
-            </div>
+            <h3 className="text-white font-semibold">{t('footer.quickLinks.title')}</h3>
+              <div className="space-y-2">
+                <Link to="/products" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">{t('nav.products')}</Link>
+                <Link to="/solutions" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">{t('nav.solutions')}</Link>
+                <Link to="/about" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">{t('nav.about')}</Link>
+                <Link to="/contact" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm">{t('nav.contact')}</Link>
+              </div>
           </div>
 
           {/* Products */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold">Products</h3>
+            <h3 className="text-white font-semibold">{t('footer.products.title')}</h3>
             <div className="space-y-2">
               {/* Sensors with dropdown */}
               <div className="relative group">
-                <Link to="/products/sensor" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
-                  Sensors
-                </Link>
+                <Link to="/products/sensor" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">{t('nav.sensors')}</Link>
                 {/* Dropdown menu */}
                 <div className="absolute left-0 top-full mt-1 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                   <div className="p-3 space-y-2">
-                    <Link to="/products/sensor/temperature-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Temperature Sensors
-                    </Link>
-                    <Link to="/products/sensor/thermal-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Thermal Flow Sensors
-                    </Link>
-                    <Link to="/products/sensor/vortex-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Vortex Flow Sensors
-                    </Link>
-                    <Link to="/products/sensor/pressure-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Pressure Sensors
-                    </Link>
-                    <Link to="/products/sensor/liquid-level-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Liquid Level Sensors
-                    </Link>
-                    <Link to="/products/sensor/inductive-proximity-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">
-                      Inductive Proximity Sensors
-                    </Link>
+                    <Link to="/products/sensor/temperature-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('nav.temperatureSensors')}</Link>
+                    <Link to="/products/sensor/thermal-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('footer.products.thermalFlow')}</Link>
+                    <Link to="/products/sensor/vortex-flow-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('nav.vortexFlowSensors')}</Link>
+                    <Link to="/products/sensor/pressure-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('nav.pressureSensors')}</Link>
+                    <Link to="/products/sensor/liquid-level-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('nav.levelSensors')}</Link>
+                    <Link to="/products/sensor/inductive-proximity-sensor" className="block text-gray-300 hover:text-yellow-400 transition-colors text-xs py-1">{t('nav.inductiveSensors')}</Link>
                   </div>
                 </div>
               </div>
-              <Link to="/products/io-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
-                I/O Modules
-              </Link>
-              <Link to="/products/io-link" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
-                IO-Link
-              </Link>
-              <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
-                Connectivity
-              </Link>
-              <Link to="/products/relay-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">
-                Relay Module
-              </Link>
+              <Link to="/products/io-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">{t('nav.ioModule')}</Link>
+              <Link to="/products/io-link" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">{t('nav.ioLink')}</Link>
+              <Link to="/products/connectivity" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">{t('nav.connectivity')}</Link>
+              <Link to="/products/relay-module" className="block text-gray-400 hover:text-yellow-400 transition-colors text-sm font-medium">{t('nav.relayModule')}</Link>
             </div>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold">Contact</h3>
+            <h3 className="text-white font-semibold">{t('footer.contact.title')}</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 relative group">
                 <Phone size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm cursor-pointer">WhatsApp</span>
+                <span className="text-gray-400 text-sm cursor-pointer">{t('pages.contact.contactInfo.whatsapp.title')}</span>
                 {/* QR Code Popup */}
                 <div className="absolute bottom-full left-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <div className="bg-white p-2 rounded-lg shadow-lg border border-gray-200">
@@ -459,34 +494,26 @@ export default function Footer() {
                       className="w-32 h-32 object-cover"
                     />
                     <div className="text-center mt-1">
-                      <p className="text-xs text-gray-600">Scan to contact</p>
+                      <p className="text-xs text-gray-600">{t('footer.contact.scanNote')}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">export.sentinel@gmail.com</span>
+                <span className="text-gray-400 text-sm">{t('pages.contact.contactInfo.email.content')}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-yellow-400" />
-                <span className="text-gray-400 text-sm">Tianjin Xiqing Technology Park</span>
+                <span className="text-gray-400 text-sm">{t('pages.contact.contactInfo.address.content')}</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2008 - {new Date().getFullYear()} SENTINEL. All rights reserved.
-          </p>
-          <button
-            onClick={openCookieSettings}
-            className="mt-3 text-gray-400 hover:text-yellow-400 text-sm underline"
-            aria-label="Open cookie settings"
-          >
-            Cookie Settings
-          </button>
+          <p className="text-gray-400 text-sm">{t('footer.copyright', { year: new Date().getFullYear() })}</p>
+          <button onClick={openCookieSettings} className="mt-3 text-gray-400 hover:text-yellow-400 text-sm underline" aria-label="Open cookie settings">{t('footer.cookie.settings')}</button>
         </div>
       </div>
     </footer>

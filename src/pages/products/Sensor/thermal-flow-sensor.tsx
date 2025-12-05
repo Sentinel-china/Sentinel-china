@@ -5,8 +5,10 @@
 import { ArrowLeft, Activity, Link2, Settings, Layers, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Thermometer, Shield, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function ThermalFlowSensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,61 +58,61 @@ export default function ThermalFlowSensorDetail() {
   const features = [
     {
       icon: Activity,
-      title: "Thermal conductivity principle",
-      description: "Precisely monitor liquids such as water in the pipeline"
+      title: t('pages.thermalFlowSensor.features.thermalConductivity.title'),
+      description: t('pages.thermalFlowSensor.features.thermalConductivity.description')
     },
     {
       icon: Link2,
-      title: "Insertion measurement",
-      description: "The switch point setting is simple and the installation is quick."
+      title: t('pages.thermalFlowSensor.features.insertionMeasurement.title'),
+      description: t('pages.thermalFlowSensor.features.insertionMeasurement.description')
     },
     {
       icon: Settings,
-      title: "Solid and durable",
-      description: "High-strength plastic or stainless steel housing"
+      title: t('pages.thermalFlowSensor.features.solidDurable.title'),
+      description: t('pages.thermalFlowSensor.features.solidDurable.description')
     },
     {
       icon: Layers,
-      title: "Multiple interface sizes",
-      description: "Meet the needs of liquid flow monitoring in factory and process automation"
+      title: t('pages.thermalFlowSensor.features.multipleInterfaceSizes.title'),
+      description: t('pages.thermalFlowSensor.features.multipleInterfaceSizes.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Products type", value: " | PLSX | PLSU | PLSN | " },
-    { spec: "Process connection", value: " | G1/4 external thread | G1/2 external thread | M18x1.5 internal thread | " },
-    { spec: "Output function", value: " | PNP NO | NPN NO | Relay output | 4-20MA+2XPNP | 4-20MA+2XNPN | " },
-    { spec: "Electrical connection", value: " | M12x1 connector | 2m PVC cable | " },
-    { spec: "Mounting conditions", value: " | Immersion | Inline |" },
-    { spec: "Housing material", value: " | PBT | 304Stainless steel | 316Stainless steel |  " },
-    { spec: "Probe material", value: " | 304Stainless steel | 316Stainless steel | " },
-    { spec: "Probe coating", value: " | Teflon | " },
-    { spec: "Special function", value: " | bluetooth | " },
-    { spec: "Communication Interface", value: " | IO-Link |" }
+    { spec: t('pages.thermalFlowSensor.specs.productsType'), value: " | PLSX | PLSU | PLSN | " },
+    { spec: t('pages.thermalFlowSensor.specs.processConnection'), value: " | G1/4 external thread | G1/2 external thread | M18x1.5 internal thread | " },
+    { spec: t('pages.thermalFlowSensor.specs.outputFunction'), value: " | PNP NO | NPN NO | Relay output | 4-20MA+2XPNP | 4-20MA+2XNPN | " },
+    { spec: t('pages.thermalFlowSensor.specs.electricalConnection'), value: " | M12x1 connector | 2m PVC cable | " },
+    { spec: t('pages.thermalFlowSensor.specs.mountingConditions'), value: " | Immersion | Inline |" },
+    { spec: t('pages.thermalFlowSensor.specs.housingMaterial'), value: " | PBT | 304Stainless steel | 316Stainless steel |  " },
+    { spec: t('pages.thermalFlowSensor.specs.probeMaterial'), value: " | 304Stainless steel | 316Stainless steel | " },
+    { spec: t('pages.thermalFlowSensor.specs.probeCoating'), value: " | Teflon | " },
+    { spec: t('pages.thermalFlowSensor.specs.specialFunction'), value: " | bluetooth | " },
+    { spec: t('pages.thermalFlowSensor.specs.communicationInterface'), value: " | IO-Link |" }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.thermalFlowSensor.downloads.sensorsOverview.title'),
+      description: t('pages.thermalFlowSensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.thermalFlowSensor.downloads.ioModuleOverview.title'),
+      description: t('pages.thermalFlowSensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.thermalFlowSensor.downloads.ioLinkOverview.title'),
+      description: t('pages.thermalFlowSensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.thermalFlowSensor.downloads.relayModuleOverview.title'),
+      description: t('pages.thermalFlowSensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -118,27 +120,27 @@ export default function ThermalFlowSensorDetail() {
 
   const cases = [
     {
-      company: "PLSX",
-      industry: "flow sensor",
-      challenge: "Monitor the flow of liquid medium, based on the principle of thermal conductivity. PBT shell, 304 stainless steel probe. Flexible selection of switch points. Potentiometer adjustment. M12x1 connector. LED strip instructions.",
+      company: t('pages.thermalFlowSensor.cases.plsx.company'),
+      industry: t('pages.thermalFlowSensor.cases.plsx.industry'),
+      challenge: t('pages.thermalFlowSensor.cases.plsx.challenge'),
       solution: "",
       result: "",
       image: "/flow sensor-plsx.png",
       link: "https://www.sentinel-china.com/eproduct/index686.html"
     },
     {
-      company: "PLSU",
-      industry: "flow sensor",
-      challenge: "Based on the thermal conductivity principle. All stainless steel shell. The measuring medium is liquid. M18x1.5 internal thread. 3-wire PNP normally open output. Switching point adjustable via potentiometer. M12 Connector outlet.",
+      company: t('pages.thermalFlowSensor.cases.plsu.company'),
+      industry: t('pages.thermalFlowSensor.cases.plsu.industry'),
+      challenge: t('pages.thermalFlowSensor.cases.plsu.challenge'),
       solution: "",
       result: "",
       image: "/flow sensor-plsu.png",
       link: "https://www.sentinel-china.com/eproduct/index921.html"
     },
     {
-      company: "PLSN",
-      industry: "flow sensor",
-      challenge: "Flow monitoring of liquid. Built-in temperature alarm. 304 stainless steel shell and probe. The value is displayed by digital tube. Protection class IP67. Optional bluetooth function.",
+      company: t('pages.thermalFlowSensor.cases.plsn.company'),
+      industry: t('pages.thermalFlowSensor.cases.plsn.industry'),
+      challenge: t('pages.thermalFlowSensor.cases.plsn.challenge'),
       solution: "",
       result: "",
       image: "/flow sensor-plsn.png",
@@ -148,38 +150,38 @@ export default function ThermalFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "PLSU Series Flow Sensors",
+      title: t('pages.thermalFlowSensor.relatedProducts.plsuSeries'),
       description: "",
       image: "http://image.sentinel-china.com/202508131427956.png",
       link: "/products/thermal/thermal01"
     },
     {
-      title: "What is a Thermal Conductivity Flow Sensor",
+      title: t('pages.thermalFlowSensor.relatedProducts.whatIsThermalConductivity'),
       description: "",
       image: "http://image.sentinel-china.com/202508131431026.png",
       link: "/products/thermal/thermal02"
     },
     {
-      title: "empowering the powder metallurgy industry",
+      title: t('pages.thermalFlowSensor.relatedProducts.powderMetallurgy'),
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/thermal/thermal03"
     },
     {
-      title: "SENTINEL One-piece Temperature Flowmeter",
+      title: t('pages.thermalFlowSensor.relatedProducts.onePieceTemperatureFlowmeter'),
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/thermal/thermal04"
     },
     {
-      title: "IO-Link Temperature Transmitter",
+      title: t('pages.thermalFlowSensor.relatedProducts.ioLinkTemperatureTransmitter'),
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/products/thermal/thermal05"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
-      description: "Latest advancements in thermal flow sensor technology and innovation",
+      title: t('pages.thermalFlowSensor.relatedProducts.beerIndustry'),
+      description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/thermal/thermal06"
     }
@@ -222,14 +224,14 @@ export default function ThermalFlowSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    Thermal flow<span className="text-yellow-400"> Sensor</span>
+                    {t('pages.thermalFlowSensor.banner.title')}<span className="text-yellow-400"> {t('pages.thermalFlowSensor.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                In the field of factory and process automation, it is necessary to monitor critical deviations in the flow rate of liquid media. It is commonly used to monitor the circulation of liquids such as coolant, the idling of pumps, etc.
+                {t('pages.thermalFlowSensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -239,13 +241,13 @@ export default function ThermalFlowSensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.thermalFlowSensor.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.thermalFlowSensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -258,7 +260,7 @@ export default function ThermalFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.thermalFlowSensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.thermalFlowSensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -291,7 +293,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Product
+                {t('pages.thermalFlowSensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -301,7 +303,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.thermalFlowSensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -311,7 +313,7 @@ export default function ThermalFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.thermalFlowSensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -322,30 +324,30 @@ export default function ThermalFlowSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.thermalFlowSensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      Based on the thermal conductivity principle, Sentinel’s flow sensor can reliably monitor the flow limit value, and also monitor and alarm the temperature of the medium.
+                      {t('pages.thermalFlowSensor.description.paragraph1')}
                     </p>
                     <p>
-                      Insertion measurement, reliable monitoring of liquids, such aswater and oil in pipelines.
+                      {t('pages.thermalFlowSensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Activity className="text-yellow-400 mr-2" size={20} />
-                        <span>Thermal conductivity principle</span>
+                        <span>{t('pages.thermalFlowSensor.features.thermalConductivity.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>Insertion measurement</span>
+                        <span>{t('pages.thermalFlowSensor.features.insertionMeasurement.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>Solid and durable</span>
+                        <span>{t('pages.thermalFlowSensor.features.solidDurable.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Layers className="text-yellow-400 mr-2" size={20} />
-                        <span>Multiple interface sizes</span>
+                        <span>{t('pages.thermalFlowSensor.features.multipleInterfaceSizes.title')}</span>
                       </div>
                     </div>
                   </div>
@@ -355,14 +357,14 @@ export default function ThermalFlowSensorDetail() {
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
                       src="https://www.youtube.com/embed/9zi4nKUBtwE?si=8onnYk9wGMWN8P_K"
-                      title="Thermal Flow Sensor Technology Demonstration"
+                      title={t('pages.thermalFlowSensor.description.videoTitle')}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Thermal Flow Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.thermalFlowSensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -370,16 +372,16 @@ export default function ThermalFlowSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.thermalFlowSensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.thermalFlowSensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.thermalFlowSensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -403,7 +405,7 @@ export default function ThermalFlowSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.thermalFlowSensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -427,7 +429,7 @@ export default function ThermalFlowSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.thermalFlowSensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -444,7 +446,7 @@ export default function ThermalFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.thermalFlowSensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.thermalFlowSensor.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -477,12 +479,12 @@ export default function ThermalFlowSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Product Features</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.thermalFlowSensor.casesSection.productFeatures')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
                   <div className="flex items-center justify-between mt-4">
-                    <span className="text-yellow-400 text-sm font-medium">View Details</span>
+                    <span className="text-yellow-400 text-sm font-medium">{t('pages.thermalFlowSensor.casesSection.viewDetails')}</span>
                     <ArrowRight className="text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={16} />
                   </div>
                 </div>
@@ -498,7 +500,7 @@ export default function ThermalFlowSensorDetail() {
           <div className="text-center mb-16">
 
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Related<span className="text-yellow-400"> Articles</span>
+              {t('pages.thermalFlowSensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.thermalFlowSensor.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
 
@@ -584,10 +586,10 @@ export default function ThermalFlowSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your<span className="text-yellow-400"> preferential</span> price
+              {t('pages.thermalFlowSensor.cta.title')}<span className="text-yellow-400"> {t('pages.thermalFlowSensor.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.thermalFlowSensor.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -600,7 +602,7 @@ export default function ThermalFlowSensorDetail() {
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.thermalFlowSensor.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

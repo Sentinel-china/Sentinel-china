@@ -5,8 +5,10 @@
 import { ArrowLeft, Zap, Link2, Split, BarChart3, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function VortexFlowSensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,58 +58,58 @@ export default function VortexFlowSensorDetail() {
   const features = [
     {
       icon: Zap,
-      title: "Principle and function",
-      description: "Adopting the von Kármán vortex street principle, it supports the output and dual display of both flow rate and temperature signals."
+      title: t('pages.vortexFlowSensor.features.principleFunction.title'),
+      description: t('pages.vortexFlowSensor.features.principleFunction.description')
     },
     {
       icon: Link2,
-      title: "IO-Link",
-      description: "There are various output methods, and it is compatible with IO-Link function."
+      title: t('pages.vortexFlowSensor.features.ioLink.title'),
+      description: t('pages.vortexFlowSensor.features.ioLink.description')
     },
     {
       icon: Split,
-      title: "Flexible signals",
-      description: "The switch signal supports various types such as NPN/PNP/push - pull."
+      title: t('pages.vortexFlowSensor.features.flexibleSignals.title'),
+      description: t('pages.vortexFlowSensor.features.flexibleSignals.description')
     },
     {
       icon: BarChart3,
-      title: "Data record",
-      description: "The cumulative traffic recording function is convenient for statistical analysis."
+      title: t('pages.vortexFlowSensor.features.dataRecord.title'),
+      description: t('pages.vortexFlowSensor.features.dataRecord.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Output function", value: " | Two 4-20mA outputs | Two-way switching IO-Link | Two 0-10V outputs |" },
-    { spec: "Range", value: " | 2-16L/min | 5-40L/min | 10-100L/min | " },
-    { spec: "Interface thread", value: " | RC3/4 | RC1 | G1 | G1/2 | G3/8 | NPT1 | RC1/2 | RC3/8 | NPT3/8 | NPT3/4 | NPT1/2 | G3/4 |" },
-    { spec: "Electrical connection", value: " | M12x1 connector | 2m PVC cable | " },
-    { spec: "Communication Interface", value: " | IO-Link | " },
-    { spec: "Temperature range", value: " | 0-100℃ | " },
-    { spec: "Working principle", value: " | von Kármán |" }
+    { spec: t('pages.vortexFlowSensor.specs.outputFunction'), value: t('pages.vortexFlowSensor.specs.outputFunctionValue') },
+    { spec: t('pages.vortexFlowSensor.specs.range'), value: t('pages.vortexFlowSensor.specs.rangeValue') },
+    { spec: t('pages.vortexFlowSensor.specs.interfaceThread'), value: t('pages.vortexFlowSensor.specs.interfaceThreadValue') },
+    { spec: t('pages.vortexFlowSensor.specs.electricalConnection'), value: t('pages.vortexFlowSensor.specs.electricalConnectionValue') },
+    { spec: t('pages.vortexFlowSensor.specs.communicationInterface'), value: t('pages.vortexFlowSensor.specs.communicationInterfaceValue') },
+    { spec: t('pages.vortexFlowSensor.specs.temperatureRange'), value: t('pages.vortexFlowSensor.specs.temperatureRangeValue') },
+    { spec: t('pages.vortexFlowSensor.specs.workingPrinciple'), value: t('pages.vortexFlowSensor.specs.workingPrincipleValue') }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.vortexFlowSensor.downloads.sensorsOverview.title'),
+      description: t('pages.vortexFlowSensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.vortexFlowSensor.downloads.ioModuleOverview.title'),
+      description: t('pages.vortexFlowSensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.vortexFlowSensor.downloads.ioLinkOverview.title'),
+      description: t('pages.vortexFlowSensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.vortexFlowSensor.downloads.relayModuleOverview.title'),
+      description: t('pages.vortexFlowSensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -115,27 +117,27 @@ export default function VortexFlowSensorDetail() {
 
   const cases = [
     {
-      company: "two 4-20mA outputs",
-      industry: "Vortex flow sensor",
-      challenge: "Real-time monitoring of medium flow rate and temperature ensures precise and stable mold temperature control, enhancing both production efficiency and product quality.",
+      company: t('pages.vortexFlowSensor.cases.fourToTwentyMaOutputs.company'),
+      industry: t('pages.vortexFlowSensor.cases.fourToTwentyMaOutputs.industry'),
+      challenge: t('pages.vortexFlowSensor.cases.fourToTwentyMaOutputs.challenge'),
       solution: "",
       result: "",
       image: "/vortex2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
-      company: "two 0-10V outputs",
-      industry: "Vortex flow sensor",
-      challenge: "Its independence from fluid conductivity allows for stable and accurate flow measurement of low-conductivity industrial pure water, addressing the instability issues of electromagnetic flowmeters in such applications.",
+      company: t('pages.vortexFlowSensor.cases.zeroToTenVoltOutputs.company'),
+      industry: t('pages.vortexFlowSensor.cases.zeroToTenVoltOutputs.industry'),
+      challenge: t('pages.vortexFlowSensor.cases.zeroToTenVoltOutputs.challenge'),
       solution: "",
       result: "",
       image: "/vortex2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775522.html"
     },
     {
-      company: "2-way switching IO-Link",
-      industry: "Vortex flow sensor",
-      challenge: "The sensor monitors coolant flow conditions to prevent equipment damage due to cooling failure, ensuring safe and reliable system operation.",
+      company: t('pages.vortexFlowSensor.cases.twoWaySwitchingIOLink.company'),
+      industry: t('pages.vortexFlowSensor.cases.twoWaySwitchingIOLink.industry'),
+      challenge: t('pages.vortexFlowSensor.cases.twoWaySwitchingIOLink.challenge'),
       solution: "",
       result: "",
       image: "/vortex1.jpg",
@@ -145,37 +147,37 @@ export default function VortexFlowSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "IO-Link Smart Sensors in Hydraulic Systems",
+      title: t('pages.vortexFlowSensor.relatedProducts.ioLinkHydraulic'),
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/vortex/vortex01"
     },
     {
-      title: "Dual Options of Vortex Flow Sensors",
+      title: t('pages.vortexFlowSensor.relatedProducts.dualOptionsVortex'),
       description: "",
       image: "http://image.sentinel-china.com/202508111358563.png",
       link: "/products/vortex/vortex02"
     },
     {
-      title: "Vortex flow sensor on mold temperature controller",
+      title: t('pages.vortexFlowSensor.relatedProducts.vortexMoldTemperature'),
       description: "",
       image: "http://image.sentinel-china.com/202508131504988.png",
       link: "/products/vortex/vortex03"
     },
     {
-      title: "SENTINEL One-piece Temperature Flowmeter",
+      title: t('pages.vortexFlowSensor.relatedProducts.onePieceTemperatureFlowmeter'),
       description: "",
       image: "http://image.sentinel-china.com/202508131437599.png",
       link: "/products/vortex/vortex04"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
+      title: t('pages.vortexFlowSensor.relatedProducts.ioLinkBeerIndustry'),
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/vortex/vortex05"
     },
     {
-      title: "High Accuracy Flow & Temperature Monitoring",
+      title: t('pages.vortexFlowSensor.relatedProducts.highAccuracyMonitoring'),
       description: "",
       image: "http://image.sentinel-china.com/202508141617155.png",
       link: "/products/vortex/vortex06"
@@ -219,14 +221,14 @@ export default function VortexFlowSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    vortex flow<span className="text-yellow-400"> Sensor</span>
+                    {t('pages.vortexFlowSensor.banner.title')}<span className="text-yellow-400"> {t('pages.vortexFlowSensor.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                In the field of modern industrial automation, accurate flow measurement is crucial for ensuring the efficiency and quality of the production process. Vortex flow sensors play an indispensable role in many application scenarios due to their high precision, stability, and reliability.
+                {t('pages.vortexFlowSensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -236,13 +238,13 @@ export default function VortexFlowSensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.vortexFlowSensor.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.vortexFlowSensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -255,7 +257,7 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.vortexFlowSensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.vortexFlowSensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -288,7 +290,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Product
+                {t('pages.vortexFlowSensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -298,7 +300,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.vortexFlowSensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -308,7 +310,7 @@ export default function VortexFlowSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.vortexFlowSensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -319,30 +321,30 @@ export default function VortexFlowSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.vortexFlowSensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      Von Kaman vortex principle. Flow, temperature dual switching signal output, dual display. High-resolution lPS display.Four viewing directions can be switched. Cumulative flow recording function. Analog or switch output, compatible with lO-Link protocol.
+                      {t('pages.vortexFlowSensor.description.paragraph1')}
                     </p>
                     <p>
-                      Switching signal NONC, NPN/PNP/push-pull optional. Units can be selected, simple button menu operation. Various thread specifications, suitable for different installation requirements. Compact size, takes up little space. Standard 4-pin M12 electrical interface.
+                      {t('pages.vortexFlowSensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>Principle and function</span>
+                        <span>{t('pages.vortexFlowSensor.features.principleFunction.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link</span>
+                        <span>{t('pages.vortexFlowSensor.features.ioLink.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Split className="text-yellow-400 mr-2" size={20} />
-                        <span>Flexible signals</span>
+                        <span>{t('pages.vortexFlowSensor.features.flexibleSignals.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <BarChart3 className="text-yellow-400 mr-2" size={20} />
-                        <span>Data record</span>
+                        <span>{t('pages.vortexFlowSensor.features.dataRecord.title')}</span>
                       </div>
                     </div>
                   </div>
@@ -359,7 +361,7 @@ export default function VortexFlowSensorDetail() {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Vortex Flow Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.vortexFlowSensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -367,16 +369,16 @@ export default function VortexFlowSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.vortexFlowSensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.vortexFlowSensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.vortexFlowSensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -400,7 +402,7 @@ export default function VortexFlowSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.vortexFlowSensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -424,7 +426,7 @@ export default function VortexFlowSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.vortexFlowSensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -441,9 +443,9 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.vortexFlowSensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.vortexFlowSensor.casesSection.titleHighlight')}</span>
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">Vortex flow sensors are widely used in industrial pure water monitoring, flow and temperature management in mold temperature machines, cooling water monitoring, the food and beverage industry, etc.</p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{t('pages.vortexFlowSensor.casesSection.description')}</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -474,7 +476,7 @@ export default function VortexFlowSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.vortexFlowSensor.casesSection.introduction')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
@@ -500,7 +502,7 @@ export default function VortexFlowSensorDetail() {
           <div className="text-center mb-16">
 
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Related<span className="text-yellow-400"> Articles</span>
+              {t('pages.vortexFlowSensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.vortexFlowSensor.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
 
@@ -586,23 +588,23 @@ export default function VortexFlowSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your <span className="text-yellow-400">preferential</span> price
+              {t('pages.vortexFlowSensor.cta.title')}<span className="text-yellow-400"> {t('pages.vortexFlowSensor.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.vortexFlowSensor.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                export.sentinel@gmail.com
+                {t('pages.vortexFlowSensor.cta.email')}
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.vortexFlowSensor.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

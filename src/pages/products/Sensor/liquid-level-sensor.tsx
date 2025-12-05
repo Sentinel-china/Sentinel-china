@@ -5,8 +5,10 @@
 import { ArrowLeft, Droplets, Link2, Settings, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function LiquidLevelSensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,56 +58,56 @@ export default function LiquidLevelSensorDetail() {
   const features = [
     {
       icon: Droplets,
-      title: "Double parameter monitoring",
-      description: "Integrated liquid level and temperature dual monitoring."
+      title: t('pages.liquidLevelSensor.features.doubleParameter.title'),
+      description: t('pages.liquidLevelSensor.features.doubleParameter.description')
     },
     {
       icon: Link2,
-      title: "IO-Link",
-      description: "Supports the IO-Link protocol, making it easy to connect to various industrial control systems."
+      title: t('pages.liquidLevelSensor.features.ioLink.title'),
+      description: t('pages.liquidLevelSensor.features.ioLink.description')
     },
     {
       icon: Settings,
-      title: "Multiple output modes",
-      description: "It includes analog, digital signals, etc., and supports NPN/PNP/push - pull as well as normally open/normally closed."
+      title: t('pages.liquidLevelSensor.features.multipleOutput.title'),
+      description: t('pages.liquidLevelSensor.features.multipleOutput.description')
     },
     {
       icon: Shield,
-      title: "Safe and convenient",
-      description: "Parameter locking function to prevent misoperation."
+      title: t('pages.liquidLevelSensor.features.safeConvenient.title'),
+      description: t('pages.liquidLevelSensor.features.safeConvenient.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Process connection", value: " | G1/2 external thread | G1/4 external thread | M18x1.5 internal thread | Split electronic compartment | " },
-    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) | analogue current;IO-Link | " },
-    { spec: "Probe material", value: " | 304 Stainless steel | 316 Stainless steel | " },
-    { spec: "Electrical connection", value: " | M12x1 connector | 2m cable | " },
-    { spec: "Probe length", value: " | 250mm | 500mm | (Customizable) | " }
+    { spec: t('pages.liquidLevelSensor.specs.processConnection'), value: t('pages.liquidLevelSensor.specs.processConnectionValue') },
+    { spec: t('pages.liquidLevelSensor.specs.outputFunction'), value: t('pages.liquidLevelSensor.specs.outputFunctionValue') },
+    { spec: t('pages.liquidLevelSensor.specs.probeMaterial'), value: t('pages.liquidLevelSensor.specs.probeMaterialValue') },
+    { spec: t('pages.liquidLevelSensor.specs.electricalConnection'), value: t('pages.liquidLevelSensor.specs.electricalConnectionValue') },
+    { spec: t('pages.liquidLevelSensor.specs.probeLength'), value: t('pages.liquidLevelSensor.specs.probeLengthValue') }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.liquidLevelSensor.downloads.sensorsOverview.title'),
+      description: t('pages.liquidLevelSensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.liquidLevelSensor.downloads.ioModuleOverview.title'),
+      description: t('pages.liquidLevelSensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.liquidLevelSensor.downloads.ioLinkOverview.title'),
+      description: t('pages.liquidLevelSensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.liquidLevelSensor.downloads.relayModuleOverview.title'),
+      description: t('pages.liquidLevelSensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -113,27 +115,27 @@ export default function LiquidLevelSensorDetail() {
 
   const cases = [
     {
-      company: "In beer production",
-      industry: "liquid level Sensor",
-      challenge: "Liquid level sensors are used throughout brewing, fermentation, storage, and filling stages, effectively preventing overflows or dry runs, and enhancing production efficiency and hygiene safety. With hygienic design and high protection levels, SENTINEL sensors support CTP/CIP/SIP cleaning processes, ensuring reliable and stable food-grade production operations.",
+      company: t('pages.liquidLevelSensor.cases.beerProduction.company'),
+      industry: t('pages.liquidLevelSensor.cases.beerProduction.industry'),
+      challenge: t('pages.liquidLevelSensor.cases.beerProduction.challenge'),
       solution: "",
       result: "",
       image: "/level.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
-      company: "Emulsion production enterprise",
-      industry: "liquid level Sensor",
-      challenge: "Since the emulsion has a certain viscosity, and some products have hygiene requirements for the contact materials, the enterprise has selected the liquid level sensor made of SENTINEL's food - grade materials. The sensor can accurately monitor the liquid level in the tank, and can also monitor the temperature of the emulsion, which is convenient for the enterprise to control the production process.",
+      company: t('pages.liquidLevelSensor.cases.emulsionProduction.company'),
+      industry: t('pages.liquidLevelSensor.cases.emulsionProduction.industry'),
+      challenge: t('pages.liquidLevelSensor.cases.emulsionProduction.challenge'),
       solution: "",
       result: "",
       image: "/level.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020724378.html"
     },
     {
-      company: "Beverage production enterprises",
-      industry: "split-type liquid level Sensor",
-      challenge: "In the beverage production process, level sensors are used to monitor the liquid levels in storage tanks and filling machines. The split design addresses the issues of space limitations and hygiene management. Moreover, the level sensors of SENTINEL integrate a temperature monitoring function, enabling real-time monitoring of liquid temperature changes to ensure the safety and quality of beverage production.",
+      company: t('pages.liquidLevelSensor.cases.beverageProduction.company'),
+      industry: t('pages.liquidLevelSensor.cases.beverageProduction.industry'),
+      challenge: t('pages.liquidLevelSensor.cases.beverageProduction.challenge'),
       solution: "",
       result: "",
       image: "level1.jpg",
@@ -143,37 +145,37 @@ export default function LiquidLevelSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Split-Type Level Sensor Solves Foam Interference",
+      title: t('pages.liquidLevelSensor.relatedProducts.splitTypeSensor'),
       description: "",
       image: "http://image.sentinel-china.com/202508111338007.png",
       link: "/markdown-config/liquid/liquid01"
     },
     {
-      title: "Float-Type Dual Display Sensor",
+      title: t('pages.liquidLevelSensor.relatedProducts.floatTypeSensor'),
       description: "",
       image: "http://image.sentinel-china.com/202508131514061.png",
       link: "/markdown-config/liquid/liquid02"
     },
     {
-      title: "  IO-Link Smart Sensors in Hydraulic Systems",
+      title: t('pages.liquidLevelSensor.relatedProducts.ioLinkHydraulic'),
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/liquid/liquid03"
     },
     {
-      title: "IO-Link Temperature Transmitter",
+      title: t('pages.liquidLevelSensor.relatedProducts.ioLinkTemperature'),
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/markdown-config/liquid/liquid04"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
+      title: t('pages.liquidLevelSensor.relatedProducts.ioLinkBeer'),
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/markdown-config/liquid/liquid05"
     },
     {
-      title: "SENTINEL Distributed I/O Modules",
+      title: t('pages.liquidLevelSensor.relatedProducts.distributedModules'),
       description: "",
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/markdown-config/liquid/liquid06"
@@ -217,14 +219,14 @@ export default function LiquidLevelSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    liquid level<span className="text-yellow-400"> Sensor</span>
+                    {t('pages.liquidLevelSensor.banner.title')}<span className="text-yellow-400"> {t('pages.liquidLevelSensor.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                The SENTINEL liquid level sensor is a critical device designed for detecting and measuring the height of liquids, providing real-time monitoring of level changes in containers or tanks. It is widely used in industrial automation, environmental protection, chemical energy, oil storage and transportation, food processing, and medical equipment, helping enterprises enhance safety, automation, and management efficiency.
+                {t('pages.liquidLevelSensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -234,13 +236,13 @@ export default function LiquidLevelSensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.liquidLevelSensor.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.liquidLevelSensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -253,7 +255,7 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.liquidLevelSensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.liquidLevelSensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -286,7 +288,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Product
+                {t('pages.liquidLevelSensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -296,7 +298,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.liquidLevelSensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -306,7 +308,7 @@ export default function LiquidLevelSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.liquidLevelSensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -317,30 +319,30 @@ export default function LiquidLevelSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.liquidLevelSensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      IO-Link Smart liquid level / Temperature Sensor. 4-digit large digital tube display, mirroring, semi-transparent design. The display panel adopts an integrated molded housing.
+                      {t('pages.liquidLevelSensor.description.paragraph1')}
                     </p>
                     <p>
-                      Standard 4-pin A-code M12 interface. Simple key operation, with key lock funcition. The upper part of the housing can be rotated 300°.
+                      {t('pages.liquidLevelSensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Droplets className="text-yellow-400 mr-2" size={20} />
-                        <span>Double parameter monitoring</span>
+                        <span>{t('pages.liquidLevelSensor.features.doubleParameter.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link</span>
+                        <span>{t('pages.liquidLevelSensor.features.ioLink.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>Multiple output modes</span>
+                        <span>{t('pages.liquidLevelSensor.features.multipleOutput.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Shield className="text-yellow-400 mr-2" size={20} />
-                        <span>Safe and convenient</span>
+                        <span>{t('pages.liquidLevelSensor.features.safeConvenient.title')}</span>
                       </div>
                     </div>
                   </div>
@@ -357,7 +359,7 @@ export default function LiquidLevelSensorDetail() {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Liquid Level Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.liquidLevelSensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -365,16 +367,16 @@ export default function LiquidLevelSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.liquidLevelSensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.liquidLevelSensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.liquidLevelSensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -398,7 +400,7 @@ export default function LiquidLevelSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.liquidLevelSensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -422,7 +424,7 @@ export default function LiquidLevelSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.liquidLevelSensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -439,9 +441,9 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Application<span className="text-yellow-400"> Scenarios</span>
+              {t('pages.liquidLevelSensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.liquidLevelSensor.casesSection.titleHighlight')}</span>
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">SENTINEL's level sensors are widely applied in food and beverage, emulsion, pharmaceutical, chemical, and water treatment industries, enabling precise level monitoring in various liquid tanks, reactors, and pipeline systems.</p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{t('pages.liquidLevelSensor.casesSection.description')}</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -472,7 +474,7 @@ export default function LiquidLevelSensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.liquidLevelSensor.casesSection.introduction')}</h4>
                      <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                    </div>
                    
@@ -498,7 +500,7 @@ export default function LiquidLevelSensorDetail() {
           <div className="text-center mb-16">
 
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               Related<span className="text-yellow-400"> Articles</span>
+               {t('pages.liquidLevelSensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.liquidLevelSensor.relatedSection.titleHighlight')}</span>
              </h2>
             <p className="text-xl text-gray-300"></p>
 
@@ -584,23 +586,23 @@ export default function LiquidLevelSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               Get your<span className="text-yellow-400"> preferential</span> price
+               {t('pages.liquidLevelSensor.cta.title')}<span className="text-yellow-400"> {t('pages.liquidLevelSensor.cta.titleHighlight')}</span>
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               Our professional team will provide you with personalized solutions.
+               {t('pages.liquidLevelSensor.cta.description')}
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               
                <div className="flex items-center text-gray-300">
                  <Mail size={20} className="mr-2 text-yellow-400" />
-                 export.sentinel@gmail.com
+                 {t('pages.liquidLevelSensor.cta.email')}
                </div>
              </div>
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 Contact us
+                 {t('pages.liquidLevelSensor.cta.contactButton')}
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>

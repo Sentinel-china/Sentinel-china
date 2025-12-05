@@ -5,8 +5,10 @@
 import { ArrowLeft, Shield, Settings, Zap, Signal, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function InductiveProximitySensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,56 +58,56 @@ export default function InductiveProximitySensorDetail() {
   const features = [
     {
       icon: Shield,
-      title: "Multiple specifications",
-      description: "Provide a variety of shapes and sizes to meet diverse working condition requirements."
+      title: t('pages.inductiveProximitySensor.features.multipleSpecs.title'),
+      description: t('pages.inductiveProximitySensor.features.multipleSpecs.description')
     },
     {
       icon: Settings,
-      title: "Economical and Affordable",
-      description: "Relatively low cost advantage, meeting the demand while reducing the overall investment."
+      title: t('pages.inductiveProximitySensor.features.economical.title'),
+      description: t('pages.inductiveProximitySensor.features.economical.description')
     },
     {
       icon: Zap,
-      title: "Non-contact induction",
-      description: "The state of an object can be judged without direct contact."
+      title: t('pages.inductiveProximitySensor.features.nonContact.title'),
+      description: t('pages.inductiveProximitySensor.features.nonContact.description')
     },
     {
       icon: Signal,
-      title: "Stable signal output",
-      description: "When a change in the object's state is detected, a signal in a specific form can be output."
+      title: t('pages.inductiveProximitySensor.features.stableSignal.title'),
+      description: t('pages.inductiveProximitySensor.features.stableSignal.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Construction size", value: " | M12 | M18 | M30 | Rotation speed monitor | " },
-    { spec: "Mounting conditions", value: " | Flush | Non-flush | " },
-    { spec: "Rated switching distance", value: " | 2mm-20mm | " },
-    { spec: "Output function", value: " | PNP NO | NPN NO | PNP NC | NPN NC | 2-wire DC NO | 2-wire DC NC | 2-wire AC NO | 2-wire AC NC |" },
-    { spec: "Electrical connection", value: " | M12x1 connector | 2m PVC | 2m PUR | " }
+    { spec: t('pages.inductiveProximitySensor.specs.constructionSize'), value: " | M12 | M18 | M30 | Rotation speed monitor | " },
+    { spec: t('pages.inductiveProximitySensor.specs.mountingConditions'), value: " | Flush | Non-flush | " },
+    { spec: t('pages.inductiveProximitySensor.specs.ratedSwitchingDistance'), value: " | 2mm-20mm | " },
+    { spec: t('pages.inductiveProximitySensor.specs.outputFunction'), value: " | PNP NO | NPN NO | PNP NC | NPN NC | 2-wire DC NO | 2-wire DC NC | 2-wire AC NO | 2-wire AC NC |" },
+    { spec: t('pages.inductiveProximitySensor.specs.electricalConnection'), value: " | M12x1 connector | 2m PVC | 2m PUR | " }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.inductiveProximitySensor.downloads.sensorsOverview.title'),
+      description: t('pages.inductiveProximitySensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.inductiveProximitySensor.downloads.ioModuleOverview.title'),
+      description: t('pages.inductiveProximitySensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.inductiveProximitySensor.downloads.ioLinkOverview.title'),
+      description: t('pages.inductiveProximitySensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.inductiveProximitySensor.downloads.relayModuleOverview.title'),
+      description: t('pages.inductiveProximitySensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -113,27 +115,27 @@ export default function InductiveProximitySensorDetail() {
 
   const cases = [
     {
-      company: "M8 series",
-      industry: "proximity Sensor",
-      challenge: "Design of M8 X 1 cylindrical thread. Equipped with M12 x 1 connector to ensure reliable electrical connection. It has an IP67 protection level. Built - in short - circuit protection function.",
+      company: t('pages.inductiveProximitySensor.cases.m8Series.company'),
+      industry: t('pages.inductiveProximitySensor.cases.m8Series.industry'),
+      challenge: t('pages.inductiveProximitySensor.cases.m8Series.challenge'),
       solution: "",
       result: "",
       image: "/inductive1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020776338.html"
     },
     {
-      company: "M12 series",
-      industry: "proximity Sensor",
-      challenge: "Design of M12 X 1 cylindrical thread. It supports two installation methods: flush and non-flush. It includes various output modes such as PNP normally open, PNP normally closed, NPN normally open, and NPN normally closed.",
+      company: t('pages.inductiveProximitySensor.cases.m12Series.company'),
+      industry: t('pages.inductiveProximitySensor.cases.m12Series.industry'),
+      challenge: t('pages.inductiveProximitySensor.cases.m12Series.challenge'),
       solution: "",
       result: "",
       image: "/inductive2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index616.html"
     },
     {
-      company: "M30 series",
-      industry: "proximity Sensor",
-      challenge: "The design of M30 X 1.5 cylindrical thread facilitates installation and fixation. Chrome-plated copper material is used, which has good corrosion resistance and electrical conductivity. Built-in reverse polarity protection function.",
+      company: t('pages.inductiveProximitySensor.cases.m30Series.company'),
+      industry: t('pages.inductiveProximitySensor.cases.m30Series.industry'),
+      challenge: t('pages.inductiveProximitySensor.cases.m30Series.challenge'),
       solution: "",
       result: "",
       image: "/inductive3.jpg",
@@ -143,37 +145,37 @@ export default function InductiveProximitySensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Output-Type IO-Link Converters",
+      title: t('pages.inductiveProximitySensor.relatedProducts.outputTypeConverters'),
       description: "",
       image: "http://image.sentinel-china.com/202508141650679.png",
       link: "/products/inductive-proximity/inductive-proximity01"
     },
     {
-      title: "Differences Between Digital Signals",
+      title: t('pages.inductiveProximitySensor.relatedProducts.digitalSignals'),
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/inductive-proximity/inductive-proximity02"
     },
     {
-      title: "one-to-two on-site assembly connector",
+      title: t('pages.inductiveProximitySensor.relatedProducts.oneToTwoConnector'),
       description: "",
       image: "http://image.sentinel-china.com/202508141656047.png",
       link: "/products/inductive-proximity/inductive-proximity03"
     },
     {
-      title: "Chinese Preferred Choice for Quality",
+      title: t('pages.inductiveProximitySensor.relatedProducts.chinesePreferred'),
       description: "",
       image: "http://image.sentinel-china.com/202508141702311.png",
       link: "/products/inductive-proximity/inductive-proximity04"
     },
     {
-      title: "Monocrystalline Silicon Production Lines",
+      title: t('pages.inductiveProximitySensor.relatedProducts.monocrystallineSilicon'),
       description: "",
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/products/inductive-proximity/inductive-proximity05"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
+      title: t('pages.inductiveProximitySensor.relatedProducts.beerIndustry'),
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/inductive-proximity/inductive-proximity06"
@@ -217,14 +219,14 @@ export default function InductiveProximitySensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                   inductive proximity<span className="text-yellow-400"> Sensor</span>
+                   {t('pages.inductiveProximitySensor.banner.title')}<span className="text-yellow-400"> {t('pages.inductiveProximitySensor.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Inductive proximity switch is a kind of detection element. Through different physical principles, it makes non-contact induction on ferromagnetic metal objects, so as to detect whether the detected object reaches the effective induction range of the sensor, and output a certain form of signal. 
+                {t('pages.inductiveProximitySensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -234,13 +236,13 @@ export default function InductiveProximitySensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.inductiveProximitySensor.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.inductiveProximitySensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -253,7 +255,7 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.inductiveProximitySensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.inductiveProximitySensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -286,7 +288,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Product
+                {t('pages.inductiveProximitySensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -296,7 +298,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.inductiveProximitySensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -306,7 +308,7 @@ export default function InductiveProximitySensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.inductiveProximitySensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -317,30 +319,30 @@ export default function InductiveProximitySensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.inductiveProximitySensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify">
                     <p>
-                      SENTINEL can provide inductive proximity switches with various shapes and sizes to meet the diversified needs of customers.
+                      {t('pages.inductiveProximitySensor.description.paragraph1')}
                     </p>
                     <p>
-                       This kind of sensor has relatively low cost, and common machinery and equipment are mostly made of metal materials, so it is widely used in the field of equipment manufacturing, such as detecting distance, detecting structure in place, detecting the presence of objects, etc.
+                       {t('pages.inductiveProximitySensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Shield className="text-yellow-400 mr-2" size={20} />
-                        <span>Multiple specifications</span>
+                        <span>{t('pages.inductiveProximitySensor.features.multipleSpecs.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>Economical and Affordable</span>
+                        <span>{t('pages.inductiveProximitySensor.features.economical.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>Non-contact induction</span>
+                        <span>{t('pages.inductiveProximitySensor.features.nonContact.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Signal className="text-yellow-400 mr-2" size={20} />
-                        <span>Stable signal output</span>
+                        <span>{t('pages.inductiveProximitySensor.features.stableSignal.title')}</span>
                       </div>
                     </div>
                   </div>
@@ -350,14 +352,14 @@ export default function InductiveProximitySensorDetail() {
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
                       src="https://www.youtube.com/embed/wPtk0ZKBtfU?si=RvgNTN1MQW6HqeJK"
-                      title="Inductive Proximity Sensor Technology Demonstration"
+                      title={t('pages.inductiveProximitySensor.description.videoTitle')}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Inductive Proximity Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.inductiveProximitySensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -365,16 +367,16 @@ export default function InductiveProximitySensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.inductiveProximitySensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.inductiveProximitySensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.inductiveProximitySensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -398,7 +400,7 @@ export default function InductiveProximitySensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.inductiveProximitySensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -422,7 +424,7 @@ export default function InductiveProximitySensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.inductiveProximitySensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -439,7 +441,7 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.inductiveProximitySensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.inductiveProximitySensor.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -472,7 +474,7 @@ export default function InductiveProximitySensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.inductiveProximitySensor.casesSection.introduction')}</h4>
                      <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                    </div>
                    
@@ -498,7 +500,7 @@ export default function InductiveProximitySensorDetail() {
           <div className="text-center mb-16">
 
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               Related<span className="text-yellow-400"> Articles</span>
+               {t('pages.inductiveProximitySensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.inductiveProximitySensor.relatedSection.titleHighlight')}</span>
              </h2>
             <p className="text-xl text-gray-300"></p>
 
@@ -584,10 +586,10 @@ export default function InductiveProximitySensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               Get your<span className="text-yellow-400"> preferential</span> price
+               {t('pages.inductiveProximitySensor.cta.title')}<span className="text-yellow-400"> {t('pages.inductiveProximitySensor.cta.titleHighlight')}</span>
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               Our professional team will provide you with personalized solutions.
+               {t('pages.inductiveProximitySensor.cta.description')}
              </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -600,7 +602,7 @@ export default function InductiveProximitySensorDetail() {
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 Contact us
+                 {t('pages.inductiveProximitySensor.cta.contactButton')}
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>

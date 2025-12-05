@@ -5,8 +5,10 @@
 import { Target, Eye, Award, Users, Clock, MapPin } from 'lucide-react'
 import { Timeline, TimelineItemData } from '../components/timeline/Timeline'
 import { ImageModal, useImageModal } from '../components/ui/image-modal'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function AboutPage() {
+  const { t } = useLanguage()
   const certifications = [
     {
       image: "/zhengshu1.jpg"
@@ -37,8 +39,8 @@ export default function AboutPage() {
       side: "right",
       tone: "gold",
       year: 2008,
-      title: "2008 Company Establishment",
-      content: "Tianjin Sentinel was established in Tianjin Hi-Tech Zone in 2008. The company initially focused on the research and development and manufacturing of sensors and fieldbus equipment to meet the needs of industrial applications.",
+      title: t('pages.about.timeline.2008.title'),
+      content: t('pages.about.timeline.2008.content'),
       iconSrc: "/time1.png",
       images: ["/time1.png"]
     },
@@ -46,8 +48,8 @@ export default function AboutPage() {
       side: "left",
       tone: "blue",
       year: 2010,
-      title: "2010 Product Development & Expansion",
-      content: "In 2010, the company successfully developed and mass-produced inductive proximity switches, solidifying its position in the industrial sensor field. In 2011, it expanded production facilities to support future business growth.",
+      title: t('pages.about.timeline.2010.title'),
+      content: t('pages.about.timeline.2010.content'),
       iconSrc: "/time2.png",
       images: ["/time2.png"]
     },
@@ -55,8 +57,8 @@ export default function AboutPage() {
       side: "right",
       tone: "green",
       year: 2013,
-      title: "Sensor Innovation",
-      content: "In 2013, the company developed and mass-produced flow, temperature, and pressure sensors, expanding its product line.",
+      title: t('pages.about.timeline.2013.title'),
+      content: t('pages.about.timeline.2013.content'),
       iconSrc: "/time3.png",
       images: ["/time3.png"]
     },
@@ -64,8 +66,8 @@ export default function AboutPage() {
       side: "left",
       tone: "red",
       year: 2015,
-      title: "Factory Intelligence Enhancement",
-      content: "In 2015, the company further entered the field of fieldbus and industrial Ethernet by launching remote I/O modules. The application of this technology significantly enhanced the intelligence level of factory automation.",
+      title: t('pages.about.timeline.2015.title'),
+      content: t('pages.about.timeline.2015.content'),
       iconSrc: "/time4.png",
       images: ["/time4.png"]
     },
@@ -73,8 +75,8 @@ export default function AboutPage() {
       side: "right",
       tone: "purple",
       year: 2019,
-      title: "IO-Link Technology Breakthrough",
-      content: "In 2019, the company made a significant breakthrough in IO-Link technology by successfully launching IO-Link Master and Device products, achieving standardized data transmission and digital management from field sensors to the central control system.",
+      title: t('pages.about.timeline.2019.title'),
+      content: t('pages.about.timeline.2019.content'),
       iconSrc: "/time5.png",
       images: ["/time5.png"]
     },
@@ -82,8 +84,8 @@ export default function AboutPage() {
       side: "left",
       tone: "orange",
       year: 2023,
-      title: "2023 Future Vision",
-      content: "In 2023, the company further enhanced IO-Link technology by launching sensor products with IO-Link functionality, making them more efficient in industrial automation and equipment management. In the future, the company will continue to innovate in sensor and IO technologies, driving the development of Industry 4.0 and smart manufacturing.",
+      title: t('pages.about.timeline.2023.title'),
+      content: t('pages.about.timeline.2023.content'),
       iconSrc: "/time6.png",
       images: ["/time6.png"]
     },
@@ -91,8 +93,8 @@ export default function AboutPage() {
       side: "right",
       tone: "gold",
       year: "2025 ～",
-      title: "New Era of Intelligence",
-      content: "In this rapidly changing era, industrial automation and artificial intelligence are working hand in hand, driving the manufacturing industry into a new era of intelligence. Our mission is to bring intelligent solutions to every machine and production line, transforming factories from mere mechanical operations into a smart brain that adjusts, optimizes, and innovates in real time. We believe the intelligent future has arrived, and we are standing at the heart of this transformation, moving forward with the industry towards a new, efficient, and sustainable future.",
+      title: t('pages.about.timeline.2025.title'),
+      content: t('pages.about.timeline.2025.content'),
       iconSrc: "/time7.png",
       images: ["/time7.png"]
     }
@@ -103,13 +105,13 @@ export default function AboutPage() {
       {/* Header Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            About
-            <span className="text-yellow-400"> SENTINEL</span>
-          </h1>
-                          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
-            Tianjin Sentinel Electronics Co., Ltd is an innovative Scientific and technological enterprise integrating R&D, production, and sales.
-          </p>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+                {t('pages.about.title')}
+                <span className="text-yellow-400"> {t('pages.about.brand')}</span>
+              </h1>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                {t('pages.about.intro')}
+              </p>
         </div>
       </section>
 
@@ -119,14 +121,14 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">
-                Professional quality,
-                <span className="text-yellow-400"> Trustworthy</span>
+                {t('pages.about.overviewTitle')},
+                <span className="text-yellow-400"> {t('pages.about.brand')}</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
-                SENTINEL provides industrial ethernet distributed I/O modules&IO-Link products, position sensors, process sensors, and connection accessories, etc. These productions have been widely used in a variety of industrial production sites, such as the automobile parts assembly industry, the machining industry, the metallurgical industry, etc. 
+                {t('pages.about.overviewP1')}
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
-                 As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service.
+                {t('pages.about.overviewP2')}
               </p>
             </div>
             <div className="relative">
@@ -149,20 +151,20 @@ export default function AboutPage() {
             <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <div className="flex items-center mb-6">
                 <Target className="text-yellow-400 mr-4" size={32} />
-                <h3 className="text-2xl font-bold">Our Mission</h3>
+                <h3 className="text-2xl font-bold">{t('pages.about.missionTitle')}</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
-                Pioneer industrial sensors and IO-LINK modules via relentless R&D. Deliver precise, reliable solutions to drive seamless automation, efficiency, and sustainable industrial growth.
+                {t('pages.about.missionText')}
               </p>
             </div>
 
             <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <div className="flex items-center mb-6">
                 <Eye className="text-yellow-400 mr-4" size={32} />
-                <h3 className="text-2xl font-bold">Our Vision</h3>
+                <h3 className="text-2xl font-bold">{t('pages.about.visionTitle')}</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-justify mb-8">
-                Become the global benchmark in industrial sensing and IO-LINK tech. Connect industrial ecosystems with innovative solutions, shaping a smarter, more interconnected manufacturing world.
+                {t('pages.about.visionText')}
               </p>
             </div>
           </div>
@@ -174,11 +176,11 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Our
-              <span className="text-yellow-400"> Certifications</span>
+              {t('pages.about.certTitle')}
+              <span className="text-yellow-400"> {t('pages.about.brand')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Professional certifications and achievements
+              {t('pages.about.certSubtitle')}
             </p>
           </div>
 
@@ -205,7 +207,7 @@ export default function AboutPage() {
                     {/* 悬停提示 */}
                     <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none rounded-2xl">
                       <div className="text-white text-sm font-medium bg-black/60 px-3 py-2 rounded-lg">
-                        Click to Zoom
+                        {t('pages.about.clickToZoom')}
                       </div>
                     </div>
                   </div>
@@ -232,19 +234,19 @@ export default function AboutPage() {
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Award className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">{new Date().getFullYear() - 2008}+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Years Experiences</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.about.yearsExperiences')}</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <Users className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">1600+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Customers</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.about.customers')}</div>
             </div>
             
             <div className="text-center p-8 bg-[#f8f8f8] rounded-2xl border border-gray-700 dark:bg-gray-900/50">
               <MapPin className="text-yellow-400 mx-auto mb-4" size={48} />
               <div className="text-3xl font-bold text-yellow-400 mb-2">170+</div>
-              <div className="text-gray-600 dark:text-gray-300 mb-8">Solutions</div>
+              <div className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.about.solutions')}</div>
             </div>
           </div>
         </div>
@@ -252,13 +254,13 @@ export default function AboutPage() {
 
       {/* Development Timeline */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50 ">
-        <div className="text-center mb-16">
+          <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Development
-            <span className="text-yellow-400"> History</span>
+            {t('pages.about.developmentTitle')}
+            <span className="text-yellow-400"> {t('pages.about.developmentBrand')}</span>
           </h2>
-                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-          Witness our growth journey
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+            {t('pages.about.developmentSubtitle')}
           </p>
         </div>
 

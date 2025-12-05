@@ -1,0 +1,317 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "sensors": "Sensors",
+    "levelSensors": "Level Sensors",
+    "flowSensors": "Flow Sensors",
+    "pressureSensors": "Pressure Sensors",
+    "temperatureSensors": "Temperature Sensors",
+    "inductiveSensors": "Inductive Sensors",
+    "vortexFlowSensors": "Vortex Flow Sensors",
+    "ioLink": "IO-Link",
+    "connectivity": "Connectivity",
+    "relayModule": "Relay Module",
+    "ioModule": "IO Module",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "language": "Language",
+    "theme": "Theme",
+    "privacy": "Privacy Policy"
+  },
+  "pages": {
+    "home": {
+      "heroTitleLine1": "Industrial Sensors",
+      "heroTitleLine2": "IO-Link",
+      "heroTitleLine3": "I/O Module",
+      "heroSubtitle": "Professional technical teams and cutting-edge solutions to create greater business value for your enterprise, leading new trends in industry digital development.",
+      "contactNow": "Contact Now",
+      "moreProducts": "More Products",
+      "whyChooseTitle": "Why Choose",
+      "whyChooseBrand": "SENTINEL",
+      "whyChooseSubtitle": "Innovation makes good products, Focus makes better services",
+      "featureAbout": "About US",
+      "featureApplications": "Industrial Applications",
+      "featureTeam": "Professional Team",
+      "statsWarranty": "Warranty",
+      "statsService": "Customer Service",
+      "statsSatisfaction": "Customer Satisfaction",
+      "statsCities": "Cities Covered",
+      "ctaTitle": "Contact our professional team",
+      "ctaHighlight": "for customized solutions",
+      "ctaText": "We are committed to providing you with the best service and support.",
+      "ctaButton": "Free Consultation",
+      "featureAboutContent": "Tianjin SENTINEL Electronics Co., Ltd is an innovative scientific and technological enterprise integrating R&D, production, and sales. SENTINEL provides industrial Ethernet distributed I/O modules, IO-Link products, position sensors, process sensors and connection accessories.",
+      "featureApplicationsContent": "SENTINEL has a wide range of products and a professional R&D team. Our products have been widely used in various industrial production sites such as automotive parts assembly, machining and metallurgy industries.",
+      "featureTeamContent": "As an R&D and manufacturing enterprise, SENTINEL adheres to the values of innovation and quality, with reliable market application cases, solid production capacity and efficient logistics to ensure high-quality, sustainable service."
+    },
+    "products": {
+      "title": "PRODUCTS",
+      "subtitle": "We provide a full range of technical products and professional services to help factory automation transformation and upgrade, improve business efficiency and competitive advantage.",
+      "serviceTitle": "Service",
+      "serviceHighlight": "Process",
+      "serviceSubtitle": "Standardized service processes to ensure product quality and delivery efficiency",
+      "needsAnalysis": "Needs analysis",
+      "needsAnalysisDesc": "Deeply understand customer needs and formulate detailed product plans",
+      "selectionCustomization": "Selection & customization",
+      "selectionCustomizationDesc": "Match products and customize solutions",
+      "delivery": "Delivery",
+      "deliveryDesc": "Shipped on schedule",
+      "afterSales": "After-sales",
+      "afterSalesDesc": "Provide excellent after-sales service",
+      "classification": "Classification:"
+    ,
+      "sensorDescription": "Professional liquid monitoring sensor.",
+      "ioModuleTitle": "I/O Module",
+      "ioModuleDescription": "Equipment is installed nearby to reduce wiring costs",
+      "ioLinkDescription": "IO-Link enables communication between sensors and PLCs.",
+      "connectivityTitle": "CONNECTIVITY",
+      "relayModuleTitle": "IO-Link Relay Module",
+      "relayModuleDescription": "Innovative IO-Link devices",
+      "features": {
+        "temperature": "Temperature Sensor",
+        "pressure": "Pressure Sensor",
+        "thermalFlow": "Thermal Flow Sensor",
+        "vortex": "Vortex Flow Sensor",
+        "ioLinkMaster": "IO-Link Master",
+        "ioLinkHubs": "IO-Link Hubs",
+        "ioLinkConverter": "IO-Link Converter",
+        "relayExpandable": "IO-Link Expandable Relay Module",
+        "relaySubModule": "Relay Module Expansion Sub-Module"
+      },
+      "productDetails": {
+        "coreAdvantages": "Core Advantages",
+        "productType": "Product Type",
+        "relatedArticles": "Related Articles",
+        "introduction": "Introduction",
+        "download": "Download",
+        "contact": "Contact us",
+        "more": "More",
+        "getPreferentialPrice": "Get your preferential price",
+        "professional": "professional team will provide you with personalized solutions.",
+        "sensorsOverview": "Sensors Overview",
+        "technicalParameters": "Technical parameters",
+        "ioLinkOverview": "IO-Link Overview",
+        "ioModuleOverview": "I/O Module Overview",
+        "relayModuleOverview": "Relay Module Overview",
+        "product": "Product",
+        "parameters": "Parameters",
+        "downloads": "Downloads",
+        "relatedProductsTitle": "Related Products"
+      }
+    },
+    "about": {
+      "title": "About",
+      "brand": "SENTINEL",
+      "intro": "Tianjin SENTINEL Electronics Co., Ltd is an innovative Scientific and technological enterprise integrating R&D, production, and sales.",
+      "overviewTitle": "Professional quality, Trustworthy",
+      "overviewP1": "SENTINEL provides industrial ethernet distributed I/O modules & IO-Link products, position sensors, process sensors, and connection accessories, etc.",
+      "overviewP2": "As an R & D and manufacturing enterprise, SENTINEL adheres to the value concept of R & D and innovation and has reliable market application cases, perfect production capacity, efficient logistics transportation, Our team have sincere cooperation awareness to ensure high quality, which can provide you with reliable and sustainable service.",
+      "missionTitle": "Our Mission",
+      "missionText": "Pioneer industrial sensors and IO-LINK modules via relentless R&D. Deliver precise, reliable solutions to drive seamless automation, efficiency, and sustainable industrial growth.",
+      "visionTitle": "Our Vision",
+      "visionText": "Become the global benchmark in industrial sensing and IO-LINK tech. Connect industrial ecosystems with innovative solutions, shaping a smarter, more interconnected manufacturing world.",
+      "certTitle": "Our Certifications",
+      "certSubtitle": "Professional certifications and achievements",
+      "clickToZoom": "Click to Zoom",
+      "yearsExperiences": "Years Experiences",
+      "customers": "Customers",
+      "solutions": "Solutions",
+      "developmentTitle": "Development",
+      "developmentBrand": "History",
+      "developmentSubtitle": "Witness our growth journey",
+      "timeline": {
+        "2008": {
+          "title": "2008 Company Establishment",
+          "content": "Tianjin SENTINEL was established in Tianjin Hi-Tech Zone in 2008. The company initially focused on the research and development and manufacturing of sensors and fieldbus equipment to meet the needs of industrial applications."
+        },
+        "2010": {
+          "title": "2010 Product Development & Expansion",
+          "content": "In 2010, the company successfully developed and mass-produced inductive proximity switches, solidifying its position in the industrial sensor field. In 2011, it expanded production facilities to support future business growth."
+        },
+        "2013": {
+          "title": "Sensor Innovation",
+          "content": "In 2013, the company developed and mass-produced flow, temperature, and pressure sensors, expanding its product line."
+        },
+        "2015": {
+          "title": "Factory Intelligence Enhancement",
+          "content": "In 2015, the company further entered the field of fieldbus and industrial Ethernet by launching remote I/O modules. The application of this technology significantly enhanced the intelligence level of factory automation."
+        },
+        "2019": {
+          "title": "IO-Link Technology Breakthrough",
+          "content": "In 2019, the company made a significant breakthrough in IO-Link technology by successfully launching IO-Link Master and Device products, achieving standardized data transmission and digital management from field sensors to the central control system."
+        },
+        "2023": {
+          "title": "2023 Future Vision",
+          "content": "In 2023, the company further enhanced IO-Link technology by launching sensor products with IO-Link functionality, making them more efficient in industrial automation and equipment management. In the future, the company will continue to innovate in sensor and IO technologies, driving the development of Industry 4.0 and smart manufacturing."
+        },
+        "2025": {
+          "title": "New Era of Intelligence",
+          "content": "In this rapidly changing era, industrial automation and artificial intelligence are working hand in hand, driving the manufacturing industry into a new era of intelligence. Our mission is to bring intelligent solutions to every machine and production line, transforming factories from mere mechanical operations into a smart brain that adjusts, optimizes, and innovates in real time. We believe the intelligent future has arrived, and we are standing at the heart of this transformation, moving forward with the industry towards a new, efficient, and sustainable future."
+        }
+      }
+    },
+    "solutions": {
+      "title": "Industry",
+      "subtitle": "Targeting the characteristics and needs of different industries, we provide customized technology solutions to help various industries achieve digital transformation and business innovation.",
+      "serviceProcessTitle": "Service",
+      "communication": "Communication",
+      "communicationDesc": "Understand customer needs and industry characteristics through in-depth communication and research",
+      "productSelection": "Product Selection",
+      "productSelectionDesc": "Provide customized product selection and solution design based on customer needs and industry characteristics",
+      "delivery": "Deliver goods on time",
+      "deliveryDesc": "Ensure timely delivery of products and provide technical support to ensure smooth project progress",
+      "afterSales": "After-sales service",
+      "afterSalesDesc": "Provide comprehensive after-sales service, including technical support, product maintenance, and upgrades",
+      "coreFeatures": "Core Features",
+      "coreValue": "Core Value",
+      "list": {
+        "productPages": {
+          "common": {
+            "introduction": "Introduction",
+            "product": "Product",
+            "parameters": "Parameters",
+            "downloads": "Downloads",
+            "coreAdvantages": "Core Advantages",
+            "productType": "Product Type",
+            "relatedArticles": "Related Articles",
+            "getPreferentialPrice": "Get your preferential price",
+            "professionalTeam": "Our professional team will provide you with personalized solutions.",
+            "contactUs": "Contact us",
+            "more": "More",
+            "download": "Download",
+            "sensorsOverview": "Sensors Overview",
+            "technicalParameters": "Technical parameters",
+            "ioLinkOverview": "IO-Link Overview",
+            "ioModuleOverview": "I/O Module Overview",
+            "relayModuleOverview": "Relay Module Overview",
+            "productTechnicalSpecifications": "Product Technical Specifications",
+            "project": "PROJECT",
+            "parameter": "PARAMETER"
+          },
+          "inductiveProximitySensor": {
+            "title": "inductive proximity Sensor",
+            "description": "Inductive proximity switch is a kind of detection element. Through different physical principles, it makes non-contact induction on ferromagnetic metal objects, so as to detect whether the detected object reaches the effective induction range of the sensor, and output a certain form of signal.",
+            "multiple": "Multiple specifications",
+            "multipleDesc": "Provide a variety of shapes and sizes to meet diverse working condition requirements.",
+            "economical": "Economical and Affordable",
+            "economicalDesc": "Relatively low cost advantage, meeting the demand while reducing the overall investment.",
+            "nonContact": "Non-contact induction",
+            "nonContactDesc": "The state of an object can be judged without direct contact.",
+            "stable": "Stable signal output",
+            "stableDesc": "When a change in the object's state is detected, a signal in a specific form can be output."
+          },
+          "liquidLevelSensor": {
+            "title": "liquid level Sensor",
+            "description": "SENTINEL offers precise liquid level sensors for various industrial applications with multiple configuration options."
+          },
+          "pressureSensor": {
+            "title": "pressure Sensor",
+            "description": "High-precision pressure sensing solutions for demanding industrial environments."
+          },
+          "temperatureSensor": {
+            "title": "temperature Sensor",
+            "description": "Advanced temperature monitoring sensors for process control and optimization."
+          },
+          "thermalFlowSensor": {
+            "title": "thermal flow Sensor",
+            "description": "Reliable thermal flow measurement for energy management and process monitoring."
+          },
+          "vortexFlowSensor": {
+            "title": "vortex flow Sensor",
+            "description": "Precise vortex flow measurement for accurate volume monitoring and control."
+          },
+          "connectivity": {
+            "title": "CONNECTIVITY",
+            "description": "Advanced connectivity solutions for industrial automation systems."
+          },
+          "ioLink": {
+            "title": "IO-Link",
+            "description": "Industry-standard IO-Link communication protocol for intelligent field devices."
+          },
+          "ioModule": {
+            "title": "IO Module",
+            "description": "Distributed I/O modules for flexible and scalable automation systems."
+          },
+          "relayModule": {
+            "title": "Relay Module",
+            "description": "IO-Link relay modules for advanced switching and control applications."
+          },
+          "sensor": {
+            "title": "Sensor",
+            "description": "Comprehensive sensor solutions for industrial monitoring and control."
+          }
+        },
+        "solutions01": {
+          "title": "Application of IO-Link Smart Sensors in Hydraulic Systems",
+          "description": "In the fields of industrial automation and construction machinery, hydraulic systems are widely used in key equipment such as injection molding machines, hydraulic presses, lifting equipment, and construction vehicles due to their outstanding energy conversion efficiency and powerful driving capability.",
+          "keyFeatures": ["SEH Series Pressure Sensors","TBH Series Temperature Sensors","LTH Series Liquid Level/Temperature Sensors","FMV Series Flow Sensors"],
+          "benefits": ["Remote parameter setting","Automatic device recognition","Real-time monitoring and data tracking","Simplified wiring and high scalability"]
+        },
+        "solutions02": {
+          "title": "Split-Type Level Sensor Solves Foam Interference and Space Constraints in Dairy Tank Level Measurement",
+          "description": "In the dairy processing industry, accurate monitoring of tank liquid levels is not only linked to production efficiency but also directly impacts product quality and safety.",
+          "keyFeatures": ["Bidirectional measurement capability","Split-type custom solution","Temperature monitoring integration","Easy maintenance and cleaning"],
+          "benefits": ["Avoid foam interference","Solve space constraints","Reduce installation complexity","Improve hygiene management"]
+        },
+        "solutions03": {
+          "title": "IO-Link Smart Sensors in Wind Turbine Hydraulic Systems",
+          "description": "In the context of a global shift toward a green and low-carbon energy structure, wind power—an important part of renewable energy—is experiencing continuous and rapid growth.",
+          "keyFeatures": ["Multi-dimensional sensors","IO-Link communication protocol","IP67 protection rating","Real-time health analysis"],
+          "benefits": ["Ensure wind turbine stability","Improve system response speed","Simplify control cabinet wiring","Enable proactive maintenance"]
+        },
+        "solutions04": {
+          "title": "Hot-Plug Mechanism Enables Rapid Modular Pallet Switching in Bus Welding Lines",
+          "description": "With the continuous advancement of smart manufacturing and Industry 4.0, coach welding lines are moving toward a new stage of higher automation, stronger flexibility, and deeper informatization.",
+          "keyFeatures": ["IO-Link flexible wiring","Hot-swap mechanism","Modular pallet system","Centralized diagnostics"],
+          "benefits": ["Simplify complex wiring","Enable rapid module switching","Improve deployment efficiency","Enhance system adaptability"]
+        },
+        "solutions05": {
+          "title": "Dual Options of Vortex Flow Sensors and Flow Switches to Address Flow Monitoring Challenges",
+          "description": "In the field of industrial automation, accurate flow measurement and real-time monitoring are essential for ensuring production efficiency and equipment safety.",
+          "keyFeatures": ["Vortex flow sensors","Thermal dispersion flow switches","High-precision measurement","Real-time status monitoring"],
+          "benefits": ["Accurate flow measurement","Cost-effective monitoring","Flexible application scenarios","Comprehensive flow solutions"]
+        },
+        "solutions06": {
+          "title": "SENTINEL Distributed I/O Modules in Photovoltaic Monocrystalline Silicon Production Lines",
+          "description": "With the global energy structure transforming, the photovoltaic industry, as a crucial part of clean energy, is rapidly developing.",
+          "keyFeatures": ["EL Series Remote I/O Modules","CM Series Remote I/O Modules","High installation flexibility","Cost-effective solutions"],
+          "benefits": ["Reduce installation costs","Improve system stability","Enable close signal collection","Support photovoltaic industry development"]
+        }
+      }
+  }
+  ,
+  "map": {
+    "subtitle": "High-tech Zone Metro Station"
+  }
+  ,
+  "footer": {
+    "floatingContact": "Contact Us",
+    "floatingTitle": "Contact",
+    "cookie": {
+      "bannerText": "This website uses cookies to enhance your browsing experience, and we will only enable non-essential cookies with your consent.",
+      "privacyLinkText": "Privacy Policy",
+      "acceptAll": "Accept all Cookies",
+      "acceptNecessary": "Only accept necessary Cookies",
+      "settings": "Cookie Settings"
+    },
+    "company": {
+      "tagline": "Innovation makes good products, Focus makes better services"
+    },
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "products": {
+      "title": "Products",
+      "thermalFlow": "Thermal Flow Sensors"
+    },
+    "contact": {
+      "title": "Contact",
+      "scanNote": "Scan to contact"
+    },
+    "copyright": "© 2008 - {{year}} SENTINEL. All rights reserved."
+  }
+}

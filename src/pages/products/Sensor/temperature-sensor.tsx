@@ -5,8 +5,10 @@
 import { ArrowLeft, Thermometer, Link2, Settings, Split, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, Zap, Clock, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function TemperatureSensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,59 +58,59 @@ export default function TemperatureSensorDetail() {
   const features = [
     {
       icon: Thermometer,
-      title: "High precision & stability",
-      description: "Based on Pt1000 technology, the accuracy can reach ±1℃."
+      title: t('pages.temperatureSensor.features.highPrecision.title'),
+      description: t('pages.temperatureSensor.features.highPrecision.description')
     },
     {
       icon: Link2,
-      title: "IO-Link",
-      description: "Implement remote configuration and real - time monitoring through the IO - Link interface"
+      title: t('pages.temperatureSensor.features.ioLink.title'),
+      description: t('pages.temperatureSensor.features.ioLink.description')
     },
     {
       icon: Settings,
-      title: "Customization",
-      description: "The length of the probe rod can be customized according to customer requirements."
+      title: t('pages.temperatureSensor.features.customization.title'),
+      description: t('pages.temperatureSensor.features.customization.description')
     },
     {
       icon: Split,
-      title: "Multiple output methods",
-      description: "It has two independent digital outputs and one analog output."
+      title: t('pages.temperatureSensor.features.multipleOutputMethods.title'),
+      description: t('pages.temperatureSensor.features.multipleOutputMethods.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Type", value: " | Temperature sensor | Temperature transmitter" },
-    { spec: "Process connection", value: " | G1/2 external thread | G1/4 external thread | M18x1.5 internal thread | Split electronic compartment |" },
-    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) | analogue current;IO-Link | " },
-    { spec: "Probe material", value: " | 304 Stainless steel | 316 Stainless steel |" },
-    { spec: "Electrical connection", value: " | M12x1 connector | 2m cable |" },
-    { spec: "Communication Interface", value: " | IO-Link |" },
-    { spec: "Protection Class", value: " | IP67 | " },
-    { spec: "Interface", value: " | Standard 4-pin A-code M12 interface |" }
+    { spec: t('pages.temperatureSensor.specs.type'), value: " | Temperature sensor | Temperature transmitter" },
+    { spec: t('pages.temperatureSensor.specs.processConnection'), value: " | G1/2 external thread | G1/4 external thread | M18x1.5 internal thread | Split electronic compartment |" },
+    { spec: t('pages.temperatureSensor.specs.outputFunction'), value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) | analogue current;IO-Link | " },
+    { spec: t('pages.temperatureSensor.specs.probeMaterial'), value: " | 304 Stainless steel | 316 Stainless steel |" },
+    { spec: t('pages.temperatureSensor.specs.electricalConnection'), value: " | M12x1 connector | 2m cable |" },
+    { spec: t('pages.temperatureSensor.specs.communicationInterface'), value: " | IO-Link |" },
+    { spec: t('pages.temperatureSensor.specs.protectionClass'), value: " | IP67 | " },
+    { spec: t('pages.temperatureSensor.specs.interface'), value: " | Standard 4-pin A-code M12 interface |" }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.temperatureSensor.downloads.sensorsOverview.title'),
+      description: t('pages.temperatureSensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.temperatureSensor.downloads.ioModuleOverview.title'),
+      description: t('pages.temperatureSensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.temperatureSensor.downloads.ioLinkOverview.title'),
+      description: t('pages.temperatureSensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.temperatureSensor.downloads.relayModuleOverview.title'),
+      description: t('pages.temperatureSensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -116,27 +118,27 @@ export default function TemperatureSensorDetail() {
 
   const cases = [
     {
-      company: "Sensor",
-      industry: "Temperature Sensor",
-      challenge: "SENTINEL's temperature sensor is a device used to measure liquid temperature, widely applied in industries such as industrial automation, food and beverage, machine tools, and metallurgy.",
+      company: t('pages.temperatureSensor.cases.sensor.company'),
+      industry: t('pages.temperatureSensor.cases.sensor.industry'),
+      challenge: t('pages.temperatureSensor.cases.sensor.challenge'),
       solution: "",
       result: "",
       image: "/Temperature sensor3.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
-      company: "Transmitter",
-      industry: "Temperature Sensor",
-      challenge: "A temperature transmitter is a device that converts temperature signals into standard electrical signals (such as 4 - 20mA), and is widely used in the field of industrial automation.",
+      company: t('pages.temperatureSensor.cases.transmitter.company'),
+      industry: t('pages.temperatureSensor.cases.transmitter.industry'),
+      challenge: t('pages.temperatureSensor.cases.transmitter.challenge'),
       solution: "",
       result: "",
       image: "/Temperature sensor4.png",
       link: "https://www.sentinel-china.com/eproduct/index_100000020791984.html"
     },
     {
-      company: "Split-type",
-      industry: "Temperature sensor",
-      challenge: "The detection probe can be flexibly installed in positions with a narrow space and harsh environment.",
+      company: t('pages.temperatureSensor.cases.splitType.company'),
+      industry: t('pages.temperatureSensor.cases.splitType.industry'),
+      challenge: t('pages.temperatureSensor.cases.splitType.challenge'),
       solution: "",
       result: "",
       image: "/Temperature sensor2.png",
@@ -146,37 +148,37 @@ export default function TemperatureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "IO-Link Smart Sensors in Hydraulic Systems",
+      title: t('pages.temperatureSensor.relatedProducts.hydraulicSystems'),
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/markdown-config/temperature01"
     },
     {
-      title: "How IO-Link temperature sensors work",
+      title: t('pages.temperatureSensor.relatedProducts.howIOLinkWorks'),
       description: "",
       image: "http://image.sentinel-china.com/202508131023283.png",
       link: "/markdown-config/temperature02"
     },
     {
-      title: "empowering the powder metallurgy industry",
+      title: t('pages.temperatureSensor.relatedProducts.powderMetallurgy'),
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/markdown-config/temperature03"
     },
     {
-      title: "IO-Link Temperature Transmitter",
+      title: t('pages.temperatureSensor.relatedProducts.ioLinkTemperatureTransmitter'),
       description: "",
       image: "http://image.sentinel-china.com/202508141552680.png",
       link: "/markdown-config/temperature04"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
+      title: t('pages.temperatureSensor.relatedProducts.beerIndustry'),
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/markdown-config/temperature05"
     },
     {
-      title: "Vortex flow sensor on mold temperature controller",
+      title: t('pages.temperatureSensor.relatedProducts.vortexFlowSensor'),
       description: "",
       image: "http://image.sentinel-china.com/202508141613646.png",
       link: "/markdown-config/temperature06"
@@ -220,14 +222,14 @@ export default function TemperatureSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    Temperature<span className="text-yellow-400"> Sensor</span>
+                    {t('pages.temperatureSensor.banner.title')}<span className="text-yellow-400"> {t('pages.temperatureSensor.banner.titleHighlight')}</span>
                   </h1>
-                  <p className="text-gray-400">Temperature Sensor</p>
+                  <p className="text-gray-400">{t('pages.temperatureSensor.banner.subtitle')}</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                SENTINEL temperature sensors and transmitters are temperature detection devices that convert physical temperature into electrical or other types of output signals to meet the monitoring needs of industrial automation systems.
+                {t('pages.temperatureSensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -237,13 +239,13 @@ export default function TemperatureSensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.temperatureSensor.banner.moreButton')}
                 </a>
                  <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.temperatureSensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -256,7 +258,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.temperatureSensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.temperatureSensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 "></p>
           </div>
@@ -289,7 +291,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Products
+                {t('pages.temperatureSensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -299,7 +301,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.temperatureSensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -309,7 +311,7 @@ export default function TemperatureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                 Downloads
+                {t('pages.temperatureSensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -320,30 +322,30 @@ export default function TemperatureSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.temperatureSensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      In industrial production, temperature switch is a reliable and practical equipment temperature detection device. Sentinel’s integrated intelligent temperature switch integrates measurement and display, which can provide a simple programming solution.
+                      {t('pages.temperatureSensor.description.paragraph1')}
                     </p>
                     <p>
-                      Compact temperature switch, specially designed for bearing internal temperature measurement, compact in appearance, customizable in probe length, with a temperature measurement range of 100°C, analog output, and outgoing wires and connectors.
+                      {t('pages.temperatureSensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Thermometer className="text-yellow-400 mr-2" size={20} />
-                        <span>High precision & stability</span>
+                        <span>{t('pages.temperatureSensor.description.feature1')}</span>
                       </div>
                       <div className="flex items-center">
                         <Clock className="text-yellow-400 mr-2" size={20} />
-                        <span>Quick response</span>
+                        <span>{t('pages.temperatureSensor.description.feature2')}</span>
                       </div>
                       <div className="flex items-center">
                         <Zap className="text-yellow-400 mr-2" size={20} />
-                        <span>Wide temperature range</span>
+                        <span>{t('pages.temperatureSensor.description.feature3')}</span>
                       </div>
                       <div className="flex items-center">
                         <TrendingUp className="text-yellow-400 mr-2" size={20} />
-                        <span>Long-term stability</span>
+                        <span>{t('pages.temperatureSensor.description.feature4')}</span>
                       </div>
                     </div>
                   </div>
@@ -353,14 +355,14 @@ export default function TemperatureSensorDetail() {
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
                       src="https://www.youtube.com/embed/AbmoHqfzh7g?si=ScdheP_va3I8CbzN"
-                      title="Temperature Sensor Technology Demonstration"
+                      title={t('pages.temperatureSensor.description.videoTitle')}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Temperature Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.temperatureSensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -368,16 +370,16 @@ export default function TemperatureSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.temperatureSensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.temperatureSensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.temperatureSensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -401,7 +403,7 @@ export default function TemperatureSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.temperatureSensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -425,7 +427,7 @@ export default function TemperatureSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.temperatureSensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -442,7 +444,7 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.temperatureSensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.temperatureSensor.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -475,7 +477,7 @@ export default function TemperatureSensorDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.temperatureSensor.casesSection.introduction')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
@@ -501,7 +503,7 @@ export default function TemperatureSensorDetail() {
           <div className="text-center mb-16">
 
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Related<span className="text-yellow-400"> Articles</span>
+              {t('pages.temperatureSensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.temperatureSensor.relatedSection.titleHighlight')}</span>
 
             </h2>
             <p className="text-lg sm:text-xl text-gray-300"></p>
@@ -587,10 +589,10 @@ export default function TemperatureSensorDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your<span className="text-yellow-400"> preferential</span> price
+              {t('pages.temperatureSensor.cta.title')}<span className="text-yellow-400"> {t('pages.temperatureSensor.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.temperatureSensor.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -603,7 +605,7 @@ export default function TemperatureSensorDetail() {
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.temperatureSensor.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

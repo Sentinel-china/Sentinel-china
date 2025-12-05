@@ -1,77 +1,41 @@
-## Negative Pressure Distillation Equipment in the Food and Pharmaceutical Industry
+## Entering Germany’s SPS: A Must-Visit for Automation Professionals
 
-In modern **food** and **pharmaceutical** production, **negative pressure distillation equipment** is a key tool for processing heat-sensitive, highly volatile, or high-purity materials.  
-Unlike atmospheric pressure distillation, which can degrade product quality due to high temperatures, negative pressure distillation enables **low-temperature processing**, preserving active ingredients and improving product purity.
+This November, we will be traveling from China to Nuremberg, Germany, to attend SPS – Smart Production Solutions 2025. Known as the “Home of Automation,” SPS is one of the most prominent professional platforms in the European industrial automation sector. Every year, sensor manufacturers, bus and I/O system suppliers, PLC and control system providers, and software and industrial digitalization solution vendors from around the world gather here to showcase their technologies.
 
-**Applications:**
-- **Food industry:** essential oil extraction, juice concentration, moisture removal.
-- **Pharmaceutical industry:** active ingredient extraction, impurity separation, drug solution concentration.
+For manufacturers of field-level devices, SPS serves both as a “weathervane” and an “observation room.” Here, one can observe the latest practices of local European OEMs and understand their real needs in field retrofitting, data acquisition, remote maintenance, and more. It’s also a valuable opportunity to engage in face-to-face discussions with engineers from various industries and hear firsthand feedback on topics like IO-Link, field I/O layout, and process monitoring.
 
-Example: In **natural fragrance** extraction, negative pressure distillation preserves original aroma and active compounds. In pharmaceuticals, low-temperature processing ensures **drug efficacy** and **purity**.
+SENTINEL is not attending SPS merely to “display products,” but rather to focus on learning and benchmarking: bringing our refined IO-Link solutions from domestic projects to Nuremberg. On one hand, we aim to introduce our product line to the global stage; on the other, we hope to reflect on our own shortcomings through on-site interaction, so we can better serve future domestic and international projects.
 
-![Negative Pressure Distillation Equipment](http://image.sentinel-china.com/202410242248851.png)
+## We Will Showcase Three Main Product Categories
 
-### Operating Principle of Negative Pressure Distillation
+To facilitate communication on-site, we will prepare physical samples and brochures at our booth to systematically present the three core product categories featured in this exhibition.
 
-Negative pressure distillation lowers system pressure, enabling liquids to **evaporate below their normal boiling point**.
+![](http://image.sentinel-china.com/202511201739557.png)
 
-**Process steps:**
-1. **Vacuum system setup** – Vacuum pump reduces pressure to thousands of Pascals or lower.  
-2. **Heating the material** – Liquids evaporate at a reduced temperature.  
-3. **Steam condensation** – Evaporated gas is cooled in a condenser and converted back to liquid.  
-4. **Product collection** – Condensed liquid is collected, yielding **high-purity separation**.
+The first category includes IO-Link modules: IO-Link masters, IO-Link hubs, and IO-Link converters.
+The IO-Link master is the central module connecting PLCs and IO-Link devices. It offers multiple IO-Link ports, supports parameter reading/writing and status diagnostics, and enables unified management of various IO-Link sensors and actuators within the existing control system. IO-Link hubs expand field I/O points and can connect to digital, analog, or IO-Link devices, allowing local signal aggregation and reducing wiring complexity. IO-Link converters transform traditional signals such as 4–20 mA, 0–10 V, Pt100, or thermocouples into IO-Link communication—retaining legacy wiring on one end while connecting as IO-Link devices on the other, supporting the gradual digitalization of legacy equipment.
 
-## Pressure Sensors — The Core of Negative Pressure Distillation
+![](http://image.sentinel-china.com/202511201739195.png)
 
-### Role in the System
-Pressure sensors ensure **stable vacuum conditions**, which directly affect:
-- Distillation efficiency
-- Product purity
-- Active ingredient retention
+The second category features process control sensors, mainly covering flow, pressure, and temperature measurements.
+Flow sensors measure both instantaneous and cumulative flow of liquids, with some models also integrating temperature sensing. These compact devices are ideal for direct pipe installation. Pressure sensors are available for a range of applications from low-pressure gas to medium and high-pressure hydraulic systems, with stainless steel connections and rugged housings suited for long-term operations. Temperature and combo-level/temperature sensors continuously monitor medium temperatures or tank levels. Some models support IO-Link communication, transmitting measurements, status, and parameters via a single interface—making system integration and maintenance more convenient.
 
-Even minor pressure fluctuations can compromise **food flavor** or **drug quality**.
+![](http://image.sentinel-china.com/202511201739263.png)
 
-### Real-Time Data Feedback
-By connecting to a control system, pressure sensors:
-- Adjust vacuum pump operation
-- Maintain pressure within the target range
-- Reduce maintenance costs
-- Extend equipment lifespan
+The third category is our newly launched product of the year: IO-Link relay modules.
+These modules control multiple relay outputs through a single IO-Link interface. Each output is a single-pole double-throw contact, providing both normally open and normally closed terminals for flexible logic configuration. The modules support expansion via dedicated relay add-on modules, maintaining DIN rail mounting and screw terminal wiring, while scaling output circuits in groups. Through the IO-Link channel, users can centrally control each relay and obtain status information—offering a more manageable and maintainable alternative to traditional decentralized relay arrays.
 
-## SENTINEL Food- and Pharmaceutical-Grade Negative Pressure Sensors
+At the exhibition, we will combine physical samples and graphical displays to showcase these three product categories. Attendees can directly inspect the samples and refer to simplified topology diagrams and specifications, helping visitors from different backgrounds quickly understand our products and ask relevant questions based on their applications.
 
-![SENTINEL Negative Pressure Sensor](http://image.sentinel-china.com/202410251203279.png)
+## Summary and Booth Info: Join Us in Nuremberg to Explore Field Automation
 
-### 316L Stainless Steel for Hygiene
-- High corrosion resistance  
-- Antibacterial properties  
-- Meets **strict sanitation standards** for food and pharmaceutical production
+For SENTINEL, the SPS journey is a “problem-driven and insight-focused” trip. Through our IO-Link modules, process control sensors, and IO-Link relay modules, we hope to clearly present our product layout for the field level. We also look forward to hearing real voices from various industries at the booth, which will help us make more application-driven decisions in future product planning.
 
-### Compact Design
-- Small form factor  
-- Easy integration into both **large-scale** and **lab-scale** systems
+You are warmly invited to visit our booth and explore collaboration:
 
-### Integrated IO-Link
-- **Two-way communication** for real-time data, remote configuration, and diagnostics  
-- Enables **smart monitoring** and **predictive maintenance**
-- Faster response and higher accuracy than traditional sensors
+📌 **Exhibition Name:** SPS – Smart Production Solutions 2025
+📅 **Exhibition Date:** November 25–27, 2025
+📍 **Venue:** NürnbergMesse, Nuremberg, Germany
+🎪 **SENTINEL Booth Number:** 4A-475
 
-## Conclusion
-
-Negative pressure distillation is essential in **food** and **pharmaceutical** production, and **precise pressure control** is critical.  
-SENTINEL’s negative pressure sensors combine **accuracy**, **hygienic design**, and **smart functionality**, offering a **cost-effective** and **reliable** solution to improve efficiency and maintain high product quality.
-
-### Customer Support & Services
-
-📞 **+86-22-83726972**  
-🌐 [www.sentinel-china.com](http://www.sentinel-china.com)
-
-Our website provides:
-- Product information  
-- Selection manuals  
-- CAD & Eplan files  
-- Configuration guides & tutorials  
-
-Our technical team offers **customized support** and **efficient after-sales service**.
-
-![SENTINEL QR Code](https://image.sentinel-china.com/2024-08-24-%E5%AE%98%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%88%E9%9B%86.png)
+If you're planning a trip to Nuremberg, we welcome you to visit us at booth 4A-475 for face-to-face discussions. If you're unable to attend, stay tuned for our post-show reports, where we will share more insights and observations from the SPS floor.

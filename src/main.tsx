@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'next-themes'
+import { LanguageProvider } from './context/LanguageContext'
+import './i18n/config'
 import './shadcn.css'
 import App from './App'
 
@@ -11,6 +13,8 @@ root.render(
     enableSystem={true}
     disableTransitionOnChange={false}
   >
-    <App />
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
   </ThemeProvider>
 )

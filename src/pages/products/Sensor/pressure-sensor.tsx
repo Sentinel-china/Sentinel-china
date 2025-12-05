@@ -5,8 +5,10 @@
 import { ArrowLeft, Gauge, Link2, Settings, Shield, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, TrendingUp, Clock } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../../context/LanguageContext'
 
 export default function PressureSensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,57 +58,57 @@ export default function PressureSensorDetail() {
   const features = [
     {
       icon: Gauge,
-      title: "Multiple specifications",
-      description: "Multiple connection sizes to meet the installation requirements of different industrial scenarios."
+      title: t('pages.pressureSensor.features.multipleSpecifications.title'),
+      description: t('pages.pressureSensor.features.multipleSpecifications.description')
     },
     {
       icon: Link2,
-      title: "IO-Link",
-      description: "Supports IO-Link technology, enabling high-precision data transmission with strong anti-interference capabilities."
+      title: t('pages.pressureSensor.features.ioLink.title'),
+      description: t('pages.pressureSensor.features.ioLink.description')
     },
     {
       icon: Settings,
-      title: "Rich in functions",
-      description: "Diverse function settings can meet various needs in actual production."
+      title: t('pages.pressureSensor.features.richFunctions.title'),
+      description: t('pages.pressureSensor.features.richFunctions.description')
     },
     {
       icon: Shield,
-      title: "Industrial-grade protection",
-      description: "IP67 protection level, suitable for harsh industrial environments, resistant to impact and vibration"
+      title: t('pages.pressureSensor.features.industrialProtection.title'),
+      description: t('pages.pressureSensor.features.industrialProtection.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Products type", value: " | Pressure sensor | Pressure transmitter |" },
-    { spec: "Process connection", value: " | G1/4 external thread | Tri-Clamp 50.5mm | G1/2 front flush | " },
-    { spec: "Output function", value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) |" },
-    { spec: "Pressure range", value: " | -1...600 bar | " },
-    { spec: "Special function", value: " | Bluetooth | N/A | " },
-    { spec: "Communication Interface", value: " | IO-Link | " }
+    { spec: t('pages.pressureSensor.specs.productsType'), value: " | Pressure sensor | Pressure transmitter |" },
+    { spec: t('pages.pressureSensor.specs.processConnection'), value: " | G1/4 external thread | Tri-Clamp 50.5mm | G1/2 front flush | " },
+    { spec: t('pages.pressureSensor.specs.outputFunction'), value: " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | switching;analogue current;IO-Link;(configurable) |" },
+    { spec: t('pages.pressureSensor.specs.pressureRange'), value: " | -1...600 bar | " },
+    { spec: t('pages.pressureSensor.specs.specialFunction'), value: " | Bluetooth | N/A | " },
+    { spec: t('pages.pressureSensor.specs.communicationInterface'), value: " | IO-Link | " }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.pressureSensor.downloads.sensorsOverview.title'),
+      description: t('pages.pressureSensor.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.pressureSensor.downloads.ioModuleOverview.title'),
+      description: t('pages.pressureSensor.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.pressureSensor.downloads.ioLinkOverview.title'),
+      description: t('pages.pressureSensor.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.pressureSensor.downloads.relayModuleOverview.title'),
+      description: t('pages.pressureSensor.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -114,27 +116,27 @@ export default function PressureSensorDetail() {
 
   const cases = [
     {
-      company: "Food and beverage",
-      industry: "Pressure ",
-      challenge: "Pressure sensors are used for pressure monitoring in the food and beverage industry to ensure the pressure stability and safety during the production process. The combination of pressure sensors and IO-Link technology enables the automated control and remote monitoring of the production process.",
+      company: t('pages.pressureSensor.cases.foodBeverage.company'),
+      industry: t('pages.pressureSensor.cases.foodBeverage.industry'),
+      challenge: t('pages.pressureSensor.cases.foodBeverage.challenge'),
       solution: "",
       result: "",
       image: "/pressure sensor3.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
-      company: "transmitter",
-      industry: "Pressure",
-      challenge: "Digital circuit compensation. Strong anti-interference ability and high stability. Can measure gauge pressure and absolute pressure. The liquid contact diaphragm is made of 316L stainless steel.",
+      company: t('pages.pressureSensor.cases.transmitter.company'),
+      industry: t('pages.pressureSensor.cases.transmitter.industry'),
+      challenge: t('pages.pressureSensor.cases.transmitter.challenge'),
       solution: "",
       result: "",
       image: "/pressure sensor2.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020794439.html"
     },
     {
-      company: "SEH series",
-      industry: "Pressure sensor",
-      challenge: "Upper part of the housing can be rotated 300° to ensure the best installation direction. High-brightness dual-color large size digital display, support mirroring. Parameters can be set via IO-Link. The starting and ending points of the analog signal can be set.",
+      company: t('pages.pressureSensor.cases.sehSeries.company'),
+      industry: t('pages.pressureSensor.cases.sehSeries.industry'),
+      challenge: t('pages.pressureSensor.cases.sehSeries.challenge'),
       solution: "",
       result: "",
       image: "pressure sensor1.jpg",
@@ -144,37 +146,37 @@ export default function PressureSensorDetail() {
 
   const relatedProducts = [
     {
-      title: "Pressure Sensors in Distillation Equipment",
+      title: t('pages.pressureSensor.relatedProducts.distillationEquipment'),
       description: "",
       image: "http://image.sentinel-china.com/202508111633019.png",
       link: "/products/pressure/pressure01"
     },
     {
-      title: "IO-Link Smart Sensors in Hydraulic Systems",
+      title: t('pages.pressureSensor.relatedProducts.hydraulicSystems'),
       description: "",
       image: "http://image.sentinel-china.com/202508111332828.png",
       link: "/products/pressure/pressure02"
     },
     {
-      title: "Empower the Powder Metallurgy Industry",
+      title: t('pages.pressureSensor.relatedProducts.powderMetallurgy'),
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/pressure/pressure03"
     },
     {
-      title: "IO-Link Sensors Empower the Beer Industry",
+      title: t('pages.pressureSensor.relatedProducts.beerIndustry'),
       description: "",
       image: "http://image.sentinel-china.com/202508141557934.png",
       link: "/products/pressure/pressure04"
     },
     {
-      title: "Conical Seal Food-Grade Pressure Sensor",
+      title: t('pages.pressureSensor.relatedProducts.conicalSeal'),
       description: "",
       image: "http://image.sentinel-china.com/202508141627033.png",
       link: "/products/pressure/pressure05"
     },
     {
-      title: "Differences Between Digital Signals",
+      title: t('pages.pressureSensor.relatedProducts.digitalSignals'),
       description: "",
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/pressure/pressure06"
@@ -218,14 +220,14 @@ export default function PressureSensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    Pressure<span className="text-yellow-400"> Sensor</span>
+                    {t('pages.pressureSensor.banner.title')}<span className="text-yellow-400"> {t('pages.pressureSensor.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                SENTINEL’s compact pressure sensors and pressure transmitters have: a variety of different connection sizes and output signals, as well as a wide pressure range, rich function settings and flexible installation methods, which can meet the various needs of actual production.
+                {t('pages.pressureSensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -235,13 +237,13 @@ export default function PressureSensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.pressureSensor.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.pressureSensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -254,7 +256,7 @@ export default function PressureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.pressureSensor.featuresSection.title')}<span className="text-yellow-400"> {t('pages.pressureSensor.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -287,7 +289,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Product
+                {t('pages.pressureSensor.tabs.product')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -297,7 +299,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.pressureSensor.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -307,7 +309,7 @@ export default function PressureSensorDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.pressureSensor.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -318,30 +320,30 @@ export default function PressureSensorDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.pressureSensor.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      Pressure is one of the most frequently measured parameters in industry, whether it is a press, a cooling circuit or a storage tank, there is a need to monitor and measure pressure parameters.
+                      {t('pages.pressureSensor.description.paragraph1')}
                     </p>
                     <p>
-                      The pressure sensors of SENTINEL are equipped with IO-Link function. Thanks to the IO-Link technology, these sensors can directly convert the millivolt signals of pressure into digital signals, achieving high-precision data transmission and strong anti-interference capabilities.
+                      {t('pages.pressureSensor.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Gauge className="text-yellow-400 mr-2" size={20} />
-                        <span>Multiple specifications</span>
+                        <span>{t('pages.pressureSensor.features.multipleSpecifications.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Link2 className="text-yellow-400 mr-2" size={20} />
-                        <span>IO-Link</span>
+                        <span>{t('pages.pressureSensor.features.ioLink.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>Rich in functions</span>
+                        <span>{t('pages.pressureSensor.features.richFunctions.title')}</span>
                       </div>
                       <div className="flex items-center">
                         <Shield className="text-yellow-400 mr-2" size={20} />
-                        <span>Industrial-grade protection</span>
+                        <span>{t('pages.pressureSensor.features.industrialProtection.title')}</span>
                       </div>
                     </div>
                   </div>
@@ -351,14 +353,14 @@ export default function PressureSensorDetail() {
                   <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video">
                     <iframe
                       src="https://www.youtube.com/embed/YmDK2DNVZnY?si=AfWIbxn1DEuai_hF"
-                      title="Pressure Sensor Technology Demonstration"
+                      title={t('pages.pressureSensor.description.videoTitle')}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Pressure Sensor Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.pressureSensor.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -366,16 +368,16 @@ export default function PressureSensorDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.pressureSensor.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PROJECT
+                          {t('pages.pressureSensor.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          PARAMETER
+                          {t('pages.pressureSensor.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -399,7 +401,7 @@ export default function PressureSensorDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.pressureSensor.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -423,7 +425,7 @@ export default function PressureSensorDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.pressureSensor.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -440,7 +442,7 @@ export default function PressureSensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.pressureSensor.casesSection.title')}<span className="text-yellow-400"> {t('pages.pressureSensor.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -473,7 +475,7 @@ export default function PressureSensorDetail() {
                  
                  <div className="p-6">
                    <div className="mb-4">
-                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                     <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.pressureSensor.casesSection.introduction')}</h4>
                      <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                    </div>
                    
@@ -499,7 +501,7 @@ export default function PressureSensorDetail() {
           <div className="text-center mb-16">
 
                          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-               Related<span className="text-yellow-400"> Articles</span>
+               {t('pages.pressureSensor.relatedSection.title')}<span className="text-yellow-400"> {t('pages.pressureSensor.relatedSection.titleHighlight')}</span>
              </h2>
             <p className="text-xl text-gray-300"></p>
 
@@ -585,10 +587,10 @@ export default function PressureSensorDetail() {
         <div className="max-w-4xl mx-auto">
                      <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
              <h2 className="text-3xl font-bold mb-4">
-               Get your<span className="text-yellow-400"> preferential</span> price
+               {t('pages.pressureSensor.cta.title')}<span className="text-yellow-400"> {t('pages.pressureSensor.cta.titleHighlight')}</span>
              </h2>
              <p className="text-xl text-gray-300 mb-8">
-               Our professional team will provide you with personalized solutions.
+               {t('pages.pressureSensor.cta.description')}
 
 
              </p>
@@ -603,7 +605,7 @@ export default function PressureSensorDetail() {
              
              <div className="flex flex-wrap gap-4 justify-center mt-8">
                <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                 Contact us
+                 {t('pages.pressureSensor.cta.contactButton')}
                  <ArrowRight size={20} className="ml-2" />
                </Link>
             </div>

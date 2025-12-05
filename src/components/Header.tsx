@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
+import LanguageToggle from './LanguageToggle';
 
 // Define the types for navigation items for better type safety
 interface NavItem {
@@ -18,6 +20,7 @@ export default function Header() {
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
   const location = useLocation();
   const { theme } = useTheme();
+  const { t } = useLanguage();
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,35 +47,34 @@ export default function Header() {
     setOpenDropdown(null);
     setOpenSubDropdown(null);
   }, [location.pathname]);
-
   // Nested navigation structure
   const navItems: NavItem[] = [
-    { path: '/', label: 'Home' },
+    { path: '/', label: t('nav.home') },
     {
       path: '/products',
-      label: 'Products',
+      label: t('nav.products'),
       children: [
         {
-          path: '/products/sensor', // The parent "Sensors" is also a link
-          label: 'Sensors',
+          path: '/products/sensor',
+          label: t('nav.sensors'),
           children: [
-            { path: '/products/sensor/liquid-level-sensor', label: 'Level Sensors' },
-            { path: '/products/sensor/thermal-flow-sensor', label: 'Flow Sensors' },
-            { path: '/products/sensor/pressure-sensor', label: 'Pressure Sensors' },
-            { path: '/products/sensor/temperature-sensor', label: 'Temperature Sensors' },
-            { path: '/products/sensor/inductive-proximity-sensor', label: 'Inductive Sensors' },
-            { path: '/products/sensor/vortex-flow-sensor', label: 'Vortex Flow Sensors' },
+            { path: '/products/sensor/liquid-level-sensor', label: t('nav.levelSensors') },
+            { path: '/products/sensor/thermal-flow-sensor', label: t('nav.flowSensors') },
+            { path: '/products/sensor/pressure-sensor', label: t('nav.pressureSensors') },
+            { path: '/products/sensor/temperature-sensor', label: t('nav.temperatureSensors') },
+            { path: '/products/sensor/inductive-proximity-sensor', label: t('nav.inductiveSensors') },
+            { path: '/products/sensor/vortex-flow-sensor', label: t('nav.vortexFlowSensors') },
           ],
         },
-        { path: '/products/io-link', label: 'IO-Link' },
-        { path: '/products/connectivity', label: 'Connectivity' },
-        { path: '/products/Relay-Module', label: 'Relay Module' },
-        { path: '/products/io-module', label: 'IO Module' },
+        { path: '/products/io-link', label: t('nav.ioLink') },
+        { path: '/products/connectivity', label: t('nav.connectivity') },
+        { path: '/products/Relay-Module', label: t('nav.relayModule') },
+        { path: '/products/io-module', label: t('nav.ioModule') },
       ],
     },
-    { path: '/solutions', label: 'Solutions' },
-    { path: '/about', label: 'About Us' },
-    { path: '/contact', label: 'Contact Us' },
+    { path: '/solutions', label: t('nav.solutions') },
+    { path: '/about', label: t('nav.about') },
+    { path: '/contact', label: t('nav.contact') },
   ];
 
   const logoSrc = mounted && theme === 'light' ? '/logo-light.png' : '/logo.png';
@@ -203,12 +205,13 @@ export default function Header() {
             <nav className="flex items-center space-x-1">
               {navItems.map(item => renderNavItem(item))}
             </nav>
-            <div className="ml-6">
+            <div className="ml-6 flex items-center space-x-2">
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
-
           <div className="md:hidden flex items-center space-x-2">
+            <LanguageToggle />
             <ThemeToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

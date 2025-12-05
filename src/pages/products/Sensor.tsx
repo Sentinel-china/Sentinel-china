@@ -5,55 +5,57 @@
 import { Database, Droplet, Thermometer, Gauge, Zap, Cpu, Shield, Activity } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function SensorDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
 
   const sensorProducts = [
     {
       icon: Thermometer,
-      title: "Temperature sensor",
-      description: "High-precision temperature monitor for industrial",
+      title: t('pages.sensor.products.temperature.title'),
+      description: t('pages.sensor.products.temperature.description'),
       features: [""],
       image: "/Temperature sensor1.png",
       color: "from-red-500/20 to-orange-500/20"
     },
     {
       icon: Activity,
-      title: " Thermal flow sensor",
-      description: "Flow and temperature detection in one device",
+      title: t('pages.sensor.products.thermalFlow.title'),
+      description: t('pages.sensor.products.thermalFlow.description'),
       features: [""],
       image: "/flow sensor.png",
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
       icon: Zap,
-      title: "vortex flow sensor",
-      description: "Reliable flow measurement for liquids and gases",
+      title: t('pages.sensor.products.vortex.title'),
+      description: t('pages.sensor.products.vortex.description'),
       features: [""],
       image: "/vortex.png",
       color: "from-green-500/20 to-emerald-500/20"
     },
     {
       icon: Gauge,
-      title: "pressure sensor",
-      description: "Precise pressure sensing for automation systems",
+      title: t('pages.sensor.products.pressure.title'),
+      description: t('pages.sensor.products.pressure.description'),
       features: [""],
       image: "/pressure sensor.png",
       color: "from-purple-500/20 to-pink-500/20"
     },
     {
       icon: Droplet,
-      title: "liquid level sensor",
-      description: "Safe and accurate fluid level detection",
+      title: t('pages.sensor.products.liquidLevel.title'),
+      description: t('pages.sensor.products.liquidLevel.description'),
       features: [""],
       image: "/level.png",
       color: "from-yellow-500/20 to-amber-500/20"
     },
     {
       icon: Shield,
-      title: " inductive proximity sensor",
-      description: "Detects metal objects without physical contact",
+      title: t('pages.sensor.products.inductive.title'),
+      description: t('pages.sensor.products.inductive.description'),
       features: [""],
       image: "/inductive.png",
       color: "from-indigo-500/20 to-blue-500/20"
@@ -83,14 +85,14 @@ export default function SensorDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                     Industrial<span className="text-yellow-400"> Sensors</span>
+                     {t('pages.sensor.banner.title')}<span className="text-yellow-400"> {t('pages.sensor.banner.titleHighlight')}</span>
                   </h1>
-                  <p className="text-gray-400">industrial Sensors</p>
+                  <p className="text-gray-400">{t('pages.sensor.banner.subtitle')}</p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                As a detection device, Sensors can sense the measured information, and can transform the sensed information into electrical signals or other required forms, so as to meet the requirements of information transmission, processing, storage, display, Records and controls, etc.
+                {t('pages.sensor.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -100,13 +102,13 @@ export default function SensorDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.sensor.banner.moreButton')}
                 </a>
                  <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.sensor.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -119,10 +121,10 @@ export default function SensorDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Sensor <span className="text-yellow-400">Products</span>
+              {t('pages.sensor.productsSection.title')} <span className="text-yellow-400">{t('pages.sensor.productsSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 ">
-              Professional industrial sensor solutions for reliable data acquisition for your automation systems
+              {t('pages.sensor.productsSection.subtitle')}
             </p>
           </div>
 

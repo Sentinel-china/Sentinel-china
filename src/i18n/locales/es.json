@@ -1,0 +1,1579 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "sensors": "Sensores",
+    "levelSensors": "Sensores de Nivel",
+    "flowSensors": "Sensores de Flujo",
+    "pressureSensors": "Sensores de Presión",
+    "temperatureSensors": "Sensores de Temperatura",
+    "inductiveSensors": "Sensores Inductivos",
+    "vortexFlowSensors": "Sensores de Flujo Vórtex",
+    "ioLink": "IO-Link",
+    "connectivity": "Conectividad",
+    "relayModule": "Módulo de Relé",
+    "ioModule": "Módulo IO",
+    "solutions": "Soluciones",
+    "about": "Acerca de Nosotros",
+    "contact": "Contáctenos"
+  },
+  "common": {
+    "language": "Idioma",
+    "theme": "Tema",
+    "privacy": "Política de Privacidad"
+  }
+  ,
+  "pages": {
+    "home": {
+      "heroTitleLine1": "Sensores Industriales",
+      "heroTitleLine2": "IO-Link",
+      "heroTitleLine3": "Módulo I/O",
+      "heroSubtitle": "Equipos técnicos profesionales y soluciones innovadoras para crear mayor valor empresarial y liderar nuevas tendencias en el desarrollo digital industrial.",
+      "contactNow": "Contactar Ahora",
+      "moreProducts": "Más Productos",
+      "whyChooseTitle": "Por Qué Elegir",
+      "whyChooseBrand": "SENTINEL",
+      "whyChooseSubtitle": "La innovación hace buenos productos, el enfoque hace mejores servicios",
+      "featureAbout": "Sobre Nosotros",
+      "featureApplications": "Aplicaciones Industriales",
+      "featureTeam": "Equipo Profesional",
+      "statsWarranty": "Garantía",
+      "statsService": "Atención al Cliente",
+      "statsSatisfaction": "Satisfacción del Cliente",
+      "statsCities": "Ciudades Cubiertas",
+      "ctaTitle": "Contacte a nuestro equipo profesional",
+      "ctaHighlight": "para soluciones personalizadas",
+      "ctaText": "Estamos comprometidos a brindarle el mejor servicio y soporte.",
+      "ctaButton": "Consulta Gratis",
+      "featureAboutContent": "Tianjin SENTINEL Electronics Co., Ltd es una empresa científica y tecnológica innovadora que integra I+D, producción y ventas. SENTINEL ofrece módulos I/O distribuidos Ethernet industriales, productos IO-Link, sensores de posición y sensores de proceso.",
+      "featureApplicationsContent": "SENTINEL cuenta con una amplia gama de productos y un equipo de I+D profesional. Nuestros productos se han utilizado ampliamente en sitios de producción industrial como el ensamblaje de piezas de automóviles, el mecanizado y la industria metalúrgica.",
+      "featureTeamContent": "Como empresa de I+D y fabricación, SENTINEL se adhiere al valor de la innovación y la calidad, con casos de aplicación en el mercado, capacidad de producción y logística eficientes para garantizar un servicio sostenible y de alta calidad."
+    },
+    "products": {
+      "title": "PRODUCTOS",
+      "subtitle": "Proporcionamos una amplia gama de productos técnicos y servicios profesionales para ayudar a la transformación y actualización de la automatización de fábricas, mejorando la eficiencia empresarial y la ventaja competitiva.",
+      "serviceTitle": "Servicio",
+      "serviceHighlight": "Proceso",
+      "serviceSubtitle": "Procesos de servicio estandarizados para garantizar la calidad del producto y la eficiencia de entrega",
+      "needsAnalysis": "Análisis de necesidades",
+      "needsAnalysisDesc": "Comprender profundamente las necesidades del cliente y formular planes de productos detallados",
+      "selectionCustomization": "Selección y personalización",
+      "selectionCustomizationDesc": "Coincidencia de productos y soluciones personalizadas",
+      "delivery": "Entrega",
+      "deliveryDesc": "Enviado según lo programado",
+      "afterSales": "Después de la venta",
+      "afterSalesDesc": "Proporcionar excelente servicio posventa",
+      "classification": "Clasificación:",
+      "sensorDescription": "Sensor profesional de supervisión de líquidos.",
+      "ioModuleTitle": "Módulo I/O",
+      "ioModuleDescription": "El equipo se instala cerca para reducir los costos de cableado",
+      "ioLinkDescription": "IO-Link permite la comunicación entre sensores y PLCs.",
+      "connectivityTitle": "Conectividad",
+      "relayModuleTitle": "Módulo de Relé IO-Link",
+      "relayModuleDescription": "Dispositivos IO-Link innovadores",
+      "features": {
+        "temperature": "Sensor de Temperatura",
+        "pressure": "Sensor de Presión",
+        "thermalFlow": "Sensor de Flujo Térmico",
+        "vortex": "Sensor de Flujo Vórtex",
+        "ioLinkMaster": "IO-Link Master",
+        "ioLinkHubs": "IO-Link Hubs",
+        "ioLinkConverter": "IO-Link Converter",
+        "relayExpandable": "Módulo de Relé Expandible IO-Link",
+        "relaySubModule": "Submódulo de Expansión de Módulo de Relé"
+      }
+    },
+    "about": {
+      "title": "Acerca de",
+      "brand": "SENTINEL",
+      "intro": "Tianjin SENTINEL Electronics Co., Ltd es una empresa científica y tecnológica innovadora que integra I+D, producción y ventas.",
+      "overviewTitle": "Calidad profesional, Confiable",
+      "overviewP1": "SENTINEL ofrece módulos I/O distribuidos Ethernet industriales y productos IO-Link, sensores de posición, sensores de proceso y accesorios de conexión, etc.",
+      "overviewP2": "Como empresa de I+D y fabricación, SENTINEL se adhiere al concepto de valor de I+D e innovación y cuenta con casos de aplicación en el mercado, capacidad de producción perfecta y logística eficiente.",
+      "missionTitle": "Nuestra Misión",
+      "missionText": "Liderar los sensores industriales y módulos IO-LINK mediante I+D incesante. Proporcionar soluciones precisas y fiables para impulsar la automatización y la eficiencia industrial.",
+      "visionTitle": "Nuestra Visión",
+      "visionText": "Convertirnos en un referente global en sensores industriales y tecnología IO-LINK. Conectar ecosistemas industriales con soluciones innovadoras.",
+      "certTitle": "Nuestras Certificaciones",
+      "certSubtitle": "Certificaciones y logros profesionales",
+      "clickToZoom": "Haz clic para ampliar",
+      "yearsExperiences": "Años de Experiencia",
+      "customers": "Clientes",
+      "solutions": "Soluciones",
+      "developmentTitle": "Desarrollo",
+      "developmentBrand": "Historia",
+      "developmentSubtitle": "Sea testigo de nuestro viaje de crecimiento",
+      "timeline": {
+        "2008": {
+          "title": "2008 Fundación de la Empresa",
+          "content": "Tianjin SENTINEL se estableció en la Zona de Alta Tecnología de Tianjin en 2008. La compañía inicialmente se centró en I+D y fabricación de sensores y equipos fieldbus para satisfacer las necesidades industriales."
+        },
+        "2010": {
+          "title": "2010 Desarrollo y Expansión de Productos",
+          "content": "En 2010, la empresa desarrolló y produjo con éxito interruptores de proximidad inductivos, consolidando su posición en el campo de sensores industriales. En 2011 amplió las instalaciones de producción."
+        },
+        "2013": {
+          "title": "2013 Innovación en Sensores",
+          "content": "En 2013, la empresa desarrolló y produjo sensores de flujo, temperatura y presión, ampliando su línea de productos."
+        },
+        "2015": {
+          "title": "2015 Mejora de la Inteligencia de la Fábrica",
+          "content": "En 2015, la empresa entró en el campo de fieldbus y Ethernet industrial lanzando módulos I/O remotos, mejorando significativamente la inteligencia de la automatización de la fábrica."
+        },
+        "2019": {
+          "title": "2019 Avance en IO-Link",
+          "content": "En 2019, la empresa logró un avance significativo en IO-Link lanzando con éxito productos IO-Link Master y Device, logrando transmisión de datos estandarizada y gestión digital."
+        },
+        "2023": {
+          "title": "2023 Visión de Futuro",
+          "content": "En 2023, la empresa reforzó IO-Link lanzando sensores con funcionalidad IO-Link, mejorando la eficiencia en automatización industrial y gestión de equipos."
+        },
+        "2025": {
+          "title": "Nueva Era de Inteligencia",
+          "content": "En esta era de cambios rápidos, la automatización industrial y la inteligencia artificial avanzan juntas, llevando a la manufactura a una nueva era inteligente. Nuestra misión es llevar soluciones inteligentes a cada máquina y línea de producción."
+        }
+      }
+    },
+    "solutions": {
+      "title": "Industria",
+      "subtitle": "Dirigirse a las características y necesidades de diferentes industrias, proporcionamos soluciones tecnológicas personalizadas para ayudar a varios sectores a lograr la transformación digital e innovación empresarial.",
+      "serviceProcessTitle": "Servicio",
+      "communication": "Comunicación",
+      "communicationDesc": "Comprender las necesidades del cliente y características de la industria a través de comunicación e investigación en profundidad",
+      "productSelection": "Selección de Productos",
+      "productSelectionDesc": "Proporcionar selección de productos personalizada y diseño de soluciones basado en necesidades del cliente",
+      "delivery": "Entrega Oportuna",
+      "deliveryDesc": "Garantizar entrega oportuna de productos y proporcionar soporte técnico para asegurar el progreso fluido del proyecto",
+      "afterSales": "Servicio Posventa",
+      "afterSalesDesc": "Proporcionar servicio posventa integral, incluyendo soporte técnico, mantenimiento y actualizaciones de productos",
+      "coreFeatures": "Características Principales",
+      "coreValue": "Valor Fundamental",
+      "list": {
+        "solutions01": {
+          "title": "Aplicación de Sensores Inteligentes IO-Link en Sistemas Hidráulicos",
+          "description": "En los campos de automatización industrial y maquinaria de construcción, los sistemas hidráulicos se utilizan ampliamente en equipos clave debido a su eficiencia en la conversión de energía y su poderosa capacidad de conducción.",
+          "keyFeatures": ["Sensores de Presión Serie SEH","Sensores de Temperatura Serie TBH","Sensores de Nivel/Temperatura Serie LTH","Sensores de Flujo Serie FMV"],
+          "benefits": ["Configuración de parámetros remota","Reconocimiento automático de dispositivos","Seguimiento de datos y monitoreo en tiempo real","Cableado simplificado y alta escalabilidad"]
+        },
+        "solutions02": {
+          "title": "Sensor de Nivel de Tipo Dividido Resuelve la Interferencia de Espuma y Limitaciones de Espacio en la Medición de Nivel de Tanque Lácteo",
+          "description": "En la industria de procesamiento de productos lácteos, el monitoreo preciso de niveles de líquido en tanques no solo está vinculado a la eficiencia de producción sino que también impacta directamente la calidad y seguridad del producto.",
+          "keyFeatures": ["Capacidad de medición bidireccional","Solución personalizada de tipo dividido","Integración de monitoreo de temperatura","Mantenimiento y limpieza fáciles"],
+          "benefits": ["Evitar interferencia de espuma","Resolver limitaciones de espacio","Reducir complejidad de instalación","Mejorar gestión de higiene"]
+        },
+        "solutions03": {
+          "title": "Sensores Inteligentes IO-Link en Sistemas Hidráulicos de Turbinas Eólicas",
+          "description": "En el contexto de un cambio global hacia una estructura energética verde y baja en carbono, la energía eólica, como parte importante de la energía renovable, está experimentando un crecimiento continuo y rápido.",
+          "keyFeatures": ["Sensores multidimensionales","Protocolo de comunicación IO-Link","Clasificación de protección IP67","Análisis de salud en tiempo real"],
+          "benefits": ["Garantizar estabilidad de turbina eólica","Mejorar velocidad de respuesta del sistema","Simplificar cableado del gabinete de control","Permitir mantenimiento proactivo"]
+        },
+        "solutions04": {
+          "title": "Mecanismo Hot-Plug Permite Cambio Rápido de Paletas Modulares en Líneas de Soldadura de Autobuses",
+          "description": "Con el continuo avance de la manufactura inteligente e Industria 4.0, las líneas de soldadura de carrocerías se están moviendo hacia una nueva etapa de mayor automatización, mayor flexibilidad e informatización más profunda.",
+          "keyFeatures": ["Cableado flexible IO-Link","Mecanismo de intercambio en caliente","Sistema de paleta modular","Diagnóstico centralizado"],
+          "benefits": ["Simplificar cableado complejo","Permitir cambio rápido de módulos","Mejorar eficiencia de implementación","Mejorar adaptabilidad del sistema"]
+        },
+        "solutions05": {
+          "title": "Opciones Duales de Sensores de Flujo Vórtex y Interruptores de Flujo para Abordar Desafíos de Monitoreo de Flujo",
+          "description": "En el campo de la automatización industrial, la medición precisa de flujo y el monitoreo en tiempo real son esenciales para garantizar la eficiencia de producción y la seguridad de equipos.",
+          "keyFeatures": ["Sensores de flujo vórtex","Interruptores de flujo de dispersión térmica","Medición de alta precisión","Monitoreo de estado en tiempo real"],
+          "benefits": ["Medición precisa de flujo","Monitoreo rentable","Escenarios de aplicación flexibles","Soluciones de flujo integrales"]
+        },
+        "solutions06": {
+          "title": "Módulos I/O Distribuidos SENTINEL en Líneas de Producción de Silicio Monocristalino Fotovoltaico",
+          "description": "Con la transformación global de la estructura energética, la industria fotovoltaica, como parte crucial de la energía limpia, está desarrollándose rápidamente.",
+          "keyFeatures": ["Módulos I/O Remoto Serie EL","Módulos I/O Remoto Serie CM","Alta flexibilidad de instalación","Soluciones rentables"],
+          "benefits": ["Reducir costos de instalación","Mejorar estabilidad del sistema","Permitir recopilación de señales cercanas","Apoyar desarrollo de industria fotovoltaica"]
+        }
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "brand": "NOSOTROS",
+      "intro": "Esperamos cooperar con usted. Contáctenos a través de los siguientes métodos, y nuestro equipo profesional le brindará productos y soluciones de la más alta calidad.",
+      "sendMessage": "Enviar Mensaje",
+      "officeAddressTitle": "Dirección de la Oficina",
+      "tianjinHeadquarter": "Sede de Tianjin",
+      "tianjinAddress": "K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin",
+      "locationNavTitle": "Navegación de Ubicación",
+      "contactInfo": {
+        "whatsapp": {
+          "title": "WhatsApp",
+          "content": "Escanee el código QR para agregar al servicio al cliente",
+          "description": "Escanee para agregar, soporte 24/7",
+          "qrNote": "Escanee para agregar WhatsApp"
+        },
+        "email": {
+          "title": "Correo",
+          "content": "export.sentinel@gmail.com",
+          "description": "Responder dentro de 24 horas"
+        },
+        "address": {
+          "title": "Dirección",
+          "content": "Parque Tecnológico Xiqing, Tianjin",
+          "description": "Bienvenido a visitar con cita"
+        },
+        "hours": {
+          "title": "Horario Comercial",
+          "content": "Lunes a Viernes 9:00-18:00",
+          "description": "Servicio de guardia en festivos"
+        }
+      }
+    },
+    "sensor": {
+      "banner": {
+        "title": "Sensores",
+        "titleHighlight": "Industriales",
+        "subtitle": "Sensores Industriales",
+        "description": "Como dispositivo de detección, los sensores pueden percibir la información medida y transformar la información percibida en señales eléctricas u otras formas requeridas, para satisfacer los requisitos de transmisión, procesamiento, almacenamiento, visualización, registro y control de información, etc.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "productsSection": {
+        "title": "Sensores",
+        "titleHighlight": "Productos",
+        "subtitle": "Soluciones profesionales de sensores industriales para una adquisición de datos confiable para sus sistemas de automatización"
+      },
+      "products": {
+        "temperature": {
+          "title": "Sensor de temperatura",
+          "description": "Monitor de temperatura de alta precisión para uso industrial"
+        },
+        "thermalFlow": {
+          "title": "Sensor de flujo térmico",
+          "description": "Detección de flujo y temperatura en un solo dispositivo"
+        },
+        "vortex": {
+          "title": "Sensor de flujo vórtex",
+          "description": "Medición de flujo confiable para líquidos y gases"
+        },
+        "pressure": {
+          "title": "Sensor de presión",
+          "description": "Detección de presión precisa para sistemas de automatización"
+        },
+        "liquidLevel": {
+          "title": "Sensor de nivel de líquido",
+          "description": "Detección de nivel de fluido segura y precisa"
+        },
+        "inductive": {
+          "title": "Sensor de proximidad inductivo",
+          "description": "Detecta objetos metálicos sin contacto físico"
+        }
+      }
+    },
+    "inductiveProximitySensor": {
+      "banner": {
+        "title": "Sensor de proximidad",
+        "titleHighlight": "inductivo",
+        "description": "El interruptor de proximidad inductivo es un elemento de detección. A través de diferentes principios físicos, realiza una inducción sin contacto en objetos metálicos ferromagnéticos, para detectar si el objeto detectado alcanza el rango de inducción efectivo del sensor y generar una señal en una forma específica.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "multipleSpecs": {
+          "title": "Múltiples especificaciones",
+          "description": "Proporciona una variedad de formas y tamaños para satisfacer diversos requisitos de condiciones de trabajo."
+        },
+        "economical": {
+          "title": "Económico y asequible",
+          "description": "Ventaja de costo relativamente bajo, satisfaciendo la demanda mientras reduce la inversión general."
+        },
+        "nonContact": {
+          "title": "Inducción sin contacto",
+          "description": "El estado de un objeto puede ser juzgado sin contacto directo."
+        },
+        "stableSignal": {
+          "title": "Salida de señal estable",
+          "description": "Cuando se detecta un cambio en el estado del objeto, se puede generar una señal en una forma específica."
+        }
+      },
+      "tabs": {
+        "product": "Producto",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "SENTINEL puede proporcionar interruptores de proximidad inductivos con varias formas y tamaños para satisfacer las necesidades diversificadas de los clientes.",
+        "paragraph2": "Este tipo de sensor tiene un costo relativamente bajo, y la maquinaria y equipos comunes están hechos principalmente de materiales metálicos, por lo que se usa ampliamente en el campo de la fabricación de equipos, como detectar distancia, detectar estructura en su lugar, detectar la presencia de objetos, etc.",
+        "videoTitle": "Demostración de Tecnología de Sensor de Proximidad Inductivo",
+        "videoDescription": "Resumen de Tecnología de Sensor de Proximidad Inductivo"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "constructionSize": "Tamaño de construcción",
+        "mountingConditions": "Condiciones de montaje",
+        "ratedSwitchingDistance": "Distancia de conmutación nominal",
+        "outputFunction": "Función de salida",
+        "electricalConnection": "Conexión eléctrica"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "m8Series": {
+          "company": "Serie M8",
+          "industry": "Sensor de proximidad",
+          "challenge": "Diseño de rosca cilíndrica M8 X 1. Equipado con conector M12 x 1 para asegurar una conexión eléctrica confiable. Tiene un nivel de protección IP67. Función de protección contra cortocircuitos incorporada."
+        },
+        "m12Series": {
+          "company": "Serie M12",
+          "industry": "Sensor de proximidad",
+          "challenge": "Diseño de rosca cilíndrica M12 X 1. Admite dos métodos de instalación: empotrado y no empotrado. Incluye varios modos de salida como PNP normalmente abierto, PNP normalmente cerrado, NPN normalmente abierto y NPN normalmente cerrado."
+        },
+        "m30Series": {
+          "company": "Serie M30",
+          "industry": "Sensor de proximidad",
+          "challenge": "El diseño de rosca cilíndrica M30 X 1.5 facilita la instalación y fijación. Se utiliza material de cobre cromado, que tiene buena resistencia a la corrosión y conductividad eléctrica. Función de protección contra polaridad inversa incorporada."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "outputTypeConverters": "Convertidores IO-Link de Tipo de Salida",
+        "digitalSignals": "Diferencias Entre Señales Digitales",
+        "oneToTwoConnector": "Conector de montaje in situ uno a dos",
+        "chinesePreferred": "Elección Preferida China para Calidad",
+        "monocrystallineSilicon": "Líneas de Producción de Silicio Monocristalino",
+        "beerIndustry": "Sensores IO-Link Potencian la Industria Cervecera"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos"
+      }
+    },
+    "ioLink": {
+      "banner": {
+        "title": "IO-",
+        "titleHighlight": "Link",
+        "description": "Como fabricante de automatización que promueve activamente IO-LINK, SENTINEL proporciona módulos maestros IO-LINK que admiten múltiples protocolos, así como una variedad de dispositivos esclavos IO-LINK. Desde sensores hasta controladores, brinda a los clientes un método de transmisión confiable y de bajo costo y logra fácilmente menores costos y mayor eficiencia.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "standardized": {
+          "title": "Estandarizado y compatible",
+          "description": "No se necesitan cables especiales, funciona con configuraciones existentes"
+        },
+        "costEffective": {
+          "title": "Actualización rentable",
+          "description": "Evoluciona la tecnología existente, sin reemplazo del sistema, reduce la complejidad"
+        },
+        "ecosystem": {
+          "title": "Ecosistema integral",
+          "description": "Múltiples maestros de protocolo + esclavos diversos, cobertura de enlace completo"
+        },
+        "efficient": {
+          "title": "Eficiente y confiable",
+          "description": "Transmisión de bajo costo, aumentando la eficiencia mientras reduce los costos"
+        }
+      },
+      "tabs": {
+        "products": "Productos",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "IO-Link es la primera tecnología IO estandarizada del mundo para la comunicación con sensores y actuadores.",
+        "paragraph2": "IO-Link no es un bus de campo, sino un desarrollo adicional de la tecnología de conexión existente de sensores y actuadores.",
+        "master": "IO-Link Master",
+        "hubs": "IO-Link Hubs",
+        "converter": "IO-Link Converter",
+        "videoTitle": "Demostración de Tecnología IO-Link",
+        "videoDescription": "Resumen de Tecnología IO-Link"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "productType": "Tipo de producto",
+        "networkProtocol": "Protocolo de red",
+        "powerInterface": "Interfaz de alimentación",
+        "portType": "Tipo de puerto IO-Link",
+        "specification": "Especificación IO-Link",
+        "numberOfPorts": "Número de puertos",
+        "protectionClass": "Clase de protección"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "master": {
+          "company": "Master",
+          "industry": "IO-Link",
+          "challenge": "IO-Link es un protocolo de comunicación punto a punto entre el sistema IO compatible con el protocolo de bus y los dispositivos de campo (incluidos sensores y actuadores). La combinación de la transmisión de señales de interfaz con la tecnología de suministro de energía por cable no solo puede hacer que el equipo sea inteligente, sino que también puede ahorrar cables, reducir interferencias y mejorar la confiabilidad y previsibilidad del sistema."
+        },
+        "hubs": {
+          "company": "Hubs",
+          "industry": "IO-Link",
+          "challenge": "Como interfaz de comunicación independiente del bus de campo, los sensores, actuadores e I/O que admiten el protocolo IO-Link son dispositivos esclavos IO-Link, lo que mejora enormemente la confiabilidad de los dispositivos."
+        },
+        "converter": {
+          "company": "Convertidor",
+          "industry": "IO-Link",
+          "challenge": "El Convertidor IO-Link (CIOL-2AI-SC) está diseñado para convertir dos canales de señales analógicas de 4-20mA/0-20mA al formato de comunicación IO-Link. Admite el protocolo IO-Link V1.1 con una interfaz M12 A codificada de 4 pines Clase A. Compatible con conexiones de sensores de 2, 3 y 4 hilos, cuenta con indicadores LED de estado y es ideal para aplicaciones de adquisición de señales industriales."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "digitalSignals": "Diferencias Entre Señales Digitales",
+        "whatIsIOLink": "Qué es IO-Link",
+        "devicesSeries": "Resumen de la Serie de Dispositivos IO-Link",
+        "rtdModule": "Módulo RTD Remoto IO-Link",
+        "substationModules": "Nuevos Módulos de Subestación IO-Link",
+        "pressureSensors": "Explora SENTINEL en SPS 2025"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos"
+      }
+    },
+    "thermalFlowSensor": {
+      "banner": {
+        "title": "Sensor de flujo",
+        "titleHighlight": "térmico",
+        "description": "En el campo de la automatización de fábricas y procesos, es necesario monitorear desviaciones críticas en la velocidad de flujo de los medios líquidos. Se usa comúnmente para monitorear la circulación de líquidos como refrigerante, el ralentí de bombas, etc.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "thermalConductivity": {
+          "title": "Principio de conductividad térmica",
+          "description": "Monitorear con precisión líquidos como el agua en la tubería"
+        },
+        "insertionMeasurement": {
+          "title": "Medición por inserción",
+          "description": "La configuración del punto de conmutación es simple y la instalación es rápida."
+        },
+        "solidDurable": {
+          "title": "Sólido y duradero",
+          "description": "Carcasa de plástico de alta resistencia o acero inoxidable"
+        },
+        "multipleInterfaceSizes": {
+          "title": "Múltiples tamaños de interfaz",
+          "description": "Satisfacer las necesidades de monitoreo de flujo de líquidos en la automatización de fábricas y procesos"
+        }
+      },
+      "tabs": {
+        "product": "Producto",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "Basado en el principio de conductividad térmica, el sensor de flujo de SENTINEL puede monitorear de manera confiable el valor límite de flujo y también monitorear y alertar la temperatura del medio.",
+        "paragraph2": "Medición por inserción, monitoreo confiable de líquidos, como agua y aceite en tuberías.",
+        "videoTitle": "Demostración de Tecnología de Sensor de Flujo Térmico",
+        "videoDescription": "Resumen de Tecnología de Sensor de Flujo Térmico"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "productsType": "Tipo de productos",
+        "processConnection": "Conexión de proceso",
+        "outputFunction": "Función de salida",
+        "electricalConnection": "Conexión eléctrica",
+        "mountingConditions": "Condiciones de montaje",
+        "housingMaterial": "Material de la carcasa",
+        "probeMaterial": "Material de la sonda",
+        "probeCoating": "Recubrimiento de la sonda",
+        "specialFunction": "Función especial",
+        "communicationInterface": "Interfaz de comunicación"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "productFeatures": "Características del Producto",
+        "viewDetails": "Ver Detalles"
+      },
+      "cases": {
+        "plsx": {
+          "company": "PLSX",
+          "industry": "sensor de flujo",
+          "challenge": "Monitorear el flujo de medio líquido, basado en el principio de conductividad térmica. Carcasa PBT, sonda de acero inoxidable 304. Selección flexible de puntos de conmutación. Ajuste de potenciómetro. Conector M12x1. Indicaciones de tira LED."
+        },
+        "plsu": {
+          "company": "PLSU",
+          "industry": "sensor de flujo",
+          "challenge": "Basado en el principio de conductividad térmica. Carcasa completamente de acero inoxidable. El medio de medición es líquido. Rosca interna M18x1.5. Salida normalmente abierta PNP de 3 hilos. Punto de conmutación ajustable mediante potenciómetro. Salida de conector M12."
+        },
+        "plsn": {
+          "company": "PLSN",
+          "industry": "sensor de flujo",
+          "challenge": "Monitoreo de flujo de líquido. Alarma de temperatura incorporada. Carcasa y sonda de acero inoxidable 304. El valor se muestra mediante tubo digital. Clase de protección IP67. Función bluetooth opcional."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "plsuSeries": "Sensores de Flujo Serie PLSU",
+        "whatIsThermalConductivity": "Qué es un Sensor de Flujo de Conductividad Térmica",
+        "powderMetallurgy": "potenciando la industria de la metalurgia de polvos",
+        "onePieceTemperatureFlowmeter": "Flujómetro de Temperatura de Una Pieza SENTINEL",
+        "ioLinkTemperatureTransmitter": "Transmisor de Temperatura IO-Link",
+        "beerIndustry": "Sensores IO-Link Potencian la Industria Cervecera"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos"
+      }
+    },
+    "temperatureSensor": {
+      "banner": {
+        "title": "Sensor de",
+        "titleHighlight": "Temperatura",
+        "subtitle": "Sensor de Temperatura",
+        "description": "Los sensores y transmisores de temperatura SENTINEL son dispositivos de detección de temperatura que convierten la temperatura física en señales eléctricas u otros tipos de señales de salida para satisfacer las necesidades de monitoreo de los sistemas de automatización industrial.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "highPrecision": {
+          "title": "Alta precisión y estabilidad",
+          "description": "Basado en tecnología Pt1000, la precisión puede alcanzar ±1℃."
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "Implementar configuración remota y monitoreo en tiempo real a través de la interfaz IO-Link"
+        },
+        "customization": {
+          "title": "Personalización",
+          "description": "La longitud de la varilla de la sonda se puede personalizar según los requisitos del cliente."
+        },
+        "multipleOutputMethods": {
+          "title": "Múltiples métodos de salida",
+          "description": "Tiene dos salidas digitales independientes y una salida analógica."
+        }
+      },
+      "tabs": {
+        "product": "Productos",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "En la producción industrial, el interruptor de temperatura es un dispositivo de detección de temperatura de equipos confiable y práctico. El interruptor de temperatura inteligente integrado de SENTINEL integra medición y visualización, que puede proporcionar una solución de programación simple.",
+        "paragraph2": "Interruptor de temperatura compacto, especialmente diseñado para medición de temperatura interna de rodamientos, compacto en apariencia, longitud de sonda personalizable, con un rango de medición de temperatura de 100°C, salida analógica y cables y conectores de salida.",
+        "feature1": "Alta precisión y estabilidad",
+        "feature2": "Respuesta rápida",
+        "feature3": "Amplio rango de temperatura",
+        "feature4": "Estabilidad a largo plazo",
+        "videoTitle": "Demostración de Tecnología de Sensor de Temperatura",
+        "videoDescription": "Resumen de Tecnología de Sensor de Temperatura"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "type": "Tipo",
+        "processConnection": "Conexión de proceso",
+        "outputFunction": "Función de salida",
+        "probeMaterial": "Material de la sonda",
+        "electricalConnection": "Conexión eléctrica",
+        "communicationInterface": "Interfaz de comunicación",
+        "protectionClass": "Clase de protección",
+        "interface": "Interfaz"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "sensor": {
+          "company": "Sensor",
+          "industry": "Sensor de Temperatura",
+          "challenge": "El sensor de temperatura de SENTINEL es un dispositivo utilizado para medir la temperatura del líquido, ampliamente aplicado en industrias como automatización industrial, alimentos y bebidas, máquinas herramienta y metalurgia."
+        },
+        "transmitter": {
+          "company": "Transmisor",
+          "industry": "Sensor de Temperatura",
+          "challenge": "Un transmisor de temperatura es un dispositivo que convierte las señales de temperatura en señales eléctricas estándar (como 4-20mA), y se usa ampliamente en el campo de la automatización industrial."
+        },
+        "splitType": {
+          "company": "Tipo dividido",
+          "industry": "Sensor de temperatura",
+          "challenge": "La sonda de detección se puede instalar de manera flexible en posiciones con un espacio estrecho y un ambiente hostil."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "hydraulicSystems": "Sensores Inteligentes IO-Link en Sistemas Hidráulicos",
+        "howIOLinkWorks": "Cómo funcionan los sensores de temperatura IO-Link",
+        "powderMetallurgy": "potenciando la industria de la metalurgia de polvos",
+        "ioLinkTemperatureTransmitter": "Transmisor de Temperatura IO-Link",
+        "beerIndustry": "Sensores IO-Link Potencian la Industria Cervecera",
+        "vortexFlowSensor": "Sensor de flujo vórtex en controlador de temperatura de molde"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos"
+      }
+    },
+    "pressureSensor": {
+      "banner": {
+        "title": "Sensor de",
+        "titleHighlight": "Presión",
+        "description": "Los sensores y transmisores de presión compactos de SENTINEL tienen: una variedad de diferentes tamaños de conexión y señales de salida, así como un amplio rango de presión, configuraciones de función ricas y métodos de instalación flexibles, que pueden satisfacer las diversas necesidades de la producción real.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "multipleSpecifications": {
+          "title": "Múltiples especificaciones",
+          "description": "Múltiples tamaños de conexión para satisfacer los requisitos de instalación de diferentes escenarios industriales."
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "Admite tecnología IO-Link, permitiendo transmisión de datos de alta precisión con fuertes capacidades antiinterferencia."
+        },
+        "richFunctions": {
+          "title": "Rico en funciones",
+          "description": "Configuraciones de función diversas pueden satisfacer varias necesidades en la producción real."
+        },
+        "industrialProtection": {
+          "title": "Protección de grado industrial",
+          "description": "Nivel de protección IP67, adecuado para entornos industriales hostiles, resistente a impactos y vibraciones"
+        }
+      },
+      "tabs": {
+        "product": "Producto",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "La presión es uno de los parámetros más frecuentemente medidos en la industria, ya sea una prensa, un circuito de refrigeración o un tanque de almacenamiento, existe la necesidad de monitorear y medir los parámetros de presión.",
+        "paragraph2": "Los sensores de presión de SENTINEL están equipados con función IO-Link. Gracias a la tecnología IO-Link, estos sensores pueden convertir directamente las señales de milivoltios de presión en señales digitales, logrando transmisión de datos de alta precisión y fuertes capacidades antiinterferencia.",
+        "videoTitle": "Demostración de Tecnología de Sensor de Presión",
+        "videoDescription": "Resumen de Tecnología de Sensor de Presión"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "productsType": "Tipo de productos",
+        "processConnection": "Conexión de proceso",
+        "outputFunction": "Función de salida",
+        "pressureRange": "Rango de presión",
+        "specialFunction": "Función especial",
+        "communicationInterface": "Interfaz de comunicación"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "foodBeverage": {
+          "company": "Alimentos y bebidas",
+          "industry": "Presión",
+          "challenge": "Los sensores de presión se utilizan para el monitoreo de presión en la industria de alimentos y bebidas para asegurar la estabilidad y seguridad de la presión durante el proceso de producción. La combinación de sensores de presión y tecnología IO-Link permite el control automatizado y el monitoreo remoto del proceso de producción."
+        },
+        "transmitter": {
+          "company": "Transmisor",
+          "industry": "Presión",
+          "challenge": "Compensación de circuito digital. Fuerte capacidad antiinterferencia y alta estabilidad. Puede medir presión manométrica y presión absoluta. El diafragma de contacto con líquido está hecho de acero inoxidable 316L."
+        },
+        "sehSeries": {
+          "company": "Serie SEH",
+          "industry": "Sensor de presión",
+          "challenge": "La parte superior de la carcasa se puede rotar 300° para asegurar la mejor dirección de instalación. Pantalla digital de gran tamaño de doble color de alto brillo, soporta espejo. Los parámetros se pueden configurar a través de IO-Link. Los puntos de inicio y fin de la señal analógica se pueden configurar."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "distillationEquipment": "Sensores de Presión en Equipos de Destilación",
+        "hydraulicSystems": "Sensores Inteligentes IO-Link en Sistemas Hidráulicos",
+        "powderMetallurgy": "Potenciar la Industria de la Metalurgia de Polvos",
+        "beerIndustry": "Sensores IO-Link Potencian la Industria Cervecera",
+        "conicalSeal": "Sensor de Presión de Grado Alimentario con Sello Cónico",
+        "digitalSignals": "Diferencias Entre Señales Digitales"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos"
+      }
+    },
+    "liquidLevelSensor": {
+      "banner": {
+        "title": "sensor de nivel de",
+        "titleHighlight": "líquido",
+        "description": "El sensor de nivel de líquido SENTINEL es un dispositivo crítico diseñado para detectar y medir la altura de los líquidos, proporcionando monitoreo en tiempo real de cambios de nivel en contenedores o tanques. Se utiliza ampliamente en automatización industrial, protección ambiental, energía química, almacenamiento y transporte de petróleo, procesamiento de alimentos y equipos médicos, ayudando a las empresas a mejorar la seguridad, automatización y eficiencia de gestión.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "doubleParameter": {
+          "title": "Monitoreo de doble parámetro",
+          "description": "Monitoreo dual integrado de nivel de líquido y temperatura."
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "Soporta el protocolo IO-Link, facilitando la conexión a varios sistemas de control industrial."
+        },
+        "multipleOutput": {
+          "title": "Múltiples modos de salida",
+          "description": "Incluye señales analógicas, digitales, etc., y soporta NPN/PNP/push-pull así como normalmente abierto/normalmente cerrado."
+        },
+        "safeConvenient": {
+          "title": "Seguro y conveniente",
+          "description": "Función de bloqueo de parámetros para prevenir operaciones erróneas."
+        }
+      },
+      "tabs": {
+        "product": "Producto",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "Sensor inteligente de nivel de líquido/temperatura IO-Link. Pantalla de tubo digital grande de 4 dígitos, diseño espejo, semi-transparente. El panel de visualización adopta una carcasa moldeada integrada.",
+        "paragraph2": "Interfaz M12 A-code estándar de 4 pines. Operación simple de teclas, con función de bloqueo de teclas. La parte superior de la carcasa se puede rotar 300°.",
+        "videoDescription": "Resumen de Tecnología de Sensor de Nivel de Líquido"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "processConnection": "Conexión de proceso",
+        "processConnectionValue": " | Rosca externa G1/2 | Rosca externa G1/4 | Rosca interna M18x1.5 | Compartimento electrónico dividido | ",
+        "outputFunction": "Función de salida",
+        "outputFunctionValue": " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | conmutación;corriente analógica;IO-Link;(configurable) | corriente analógica;IO-Link | ",
+        "probeMaterial": "Material de sonda",
+        "probeMaterialValue": " | Acero inoxidable 304 | Acero inoxidable 316 | ",
+        "electricalConnection": "Conexión eléctrica",
+        "electricalConnectionValue": " | Conector M12x1 | Cable de 2m | ",
+        "probeLength": "Longitud de sonda",
+        "probeLengthValue": " | 250mm | 500mm | (Personalizable) | "
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen de IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Escenarios de",
+        "titleHighlight": "Aplicación",
+        "introduction": "Introducción",
+        "description": "Los sensores de nivel de SENTINEL se aplican ampliamente en las industrias de alimentos y bebidas, emulsiones, farmacéuticas, químicas y tratamiento de agua, permitiendo monitoreo preciso de nivel en varios tanques de líquido, reactores y sistemas de tuberías."
+      },
+      "cases": {
+        "beerProduction": {
+          "company": "En producción de cerveza",
+          "industry": "sensor de nivel de líquido",
+          "challenge": "Los sensores de nivel de líquido se utilizan en todas las etapas de elaboración, fermentación, almacenamiento y llenado, previniendo efectivamente desbordamientos o corridas secas, mejorando la eficiencia de producción y la seguridad higiénica. Con diseño higiénico y altos niveles de protección, los sensores SENTINEL soportan procesos de limpieza CTP/CIP/SIP, asegurando operaciones de producción alimentaria confiables y estables."
+        },
+        "emulsionProduction": {
+          "company": "Empresa productora de emulsiones",
+          "industry": "sensor de nivel de líquido",
+          "challenge": "Dado que la emulsión tiene cierta viscosidad, y algunos productos tienen requisitos higiénicos para los materiales de contacto, la empresa ha seleccionado el sensor de nivel de líquido hecho de materiales grado alimenticio de SENTINEL. El sensor puede monitorear con precisión el nivel de líquido en el tanque, y también puede monitorear la temperatura de la emulsión, lo que facilita que la empresa controle el proceso de producción."
+        },
+        "beverageProduction": {
+          "company": "Empresas productoras de bebidas",
+          "industry": "sensor de nivel de líquido dividido",
+          "challenge": "En el proceso de producción de bebidas, los sensores de nivel se utilizan para monitorear los niveles de líquido en tanques de almacenamiento y máquinas de llenado. El diseño dividido aborda los problemas de limitaciones de espacio y gestión higiénica. Además, los sensores de nivel de SENTINEL integran una función de monitoreo de temperatura, permitiendo monitoreo en tiempo real de cambios en la temperatura del líquido para asegurar la seguridad y calidad de la producción de bebidas."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "splitTypeSensor": "Sensor de Nivel Dividido Resuelve Interferencia de Espuma",
+        "floatTypeSensor": "Sensor Dual de Visualización Flotante",
+        "ioLinkHydraulic": "Sensores Inteligentes IO-Link en Sistemas Hidráulicos",
+        "ioLinkTemperature": "Transmisor de Temperatura IO-Link",
+        "ioLinkBeer": "Sensores IO-Link Potencian la Industria Cervecera",
+        "distributedModules": "Módulos I/O Distribuidos SENTINEL"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "vortexFlowSensor": {
+      "banner": {
+        "title": "sensor de flujo",
+        "titleHighlight": "vórtice",
+        "description": "En el campo de la automatización industrial moderna, la medición precisa del flujo es crucial para garantizar la eficiencia y calidad del proceso de producción. Los sensores de flujo de vórtice desempeñan un papel indispensable en muchos escenarios de aplicación debido a su alta precisión, estabilidad y confiabilidad.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "principleFunction": {
+          "title": "Principio y función",
+          "description": "Adoptando el principio de la calle de vórtices de von Kármán, soporta la salida y doble visualización de señales de caudal y temperatura."
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "Hay varios métodos de salida y es compatible con la función IO-Link."
+        },
+        "flexibleSignals": {
+          "title": "Señales flexibles",
+          "description": "La señal de interruptor soporta varios tipos como NPN/PNP/push-pull."
+        },
+        "dataRecord": {
+          "title": "Registro de datos",
+          "description": "La función de registro acumulativo de tráfico es conveniente para análisis estadísticos."
+        }
+      },
+      "tabs": {
+        "product": "Producto",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "Principio de vórtice de von Kármán. Salida de señal de conmutación dual de caudal, temperatura, doble visualización. Pantalla IPS de alta resolución. Cuatro direcciones de visualización se pueden cambiar. Función de registro acumulativo de caudal. Salida analógica o de interruptor, compatible con protocolo IO-Link.",
+        "paragraph2": "Señal de interruptor NO/NC, opcional NPN/PNP/push-pull. Las unidades se pueden seleccionar, operación simple del menú de botones. Varias especificaciones de rosca, adecuadas para diferentes requisitos de instalación. Tamaño compacto, ocupa poco espacio. Interfaz eléctrica M12 de 4 pines estándar.",
+        "videoDescription": "Resumen de Tecnología de Sensor de Flujo de Vórtice"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "outputFunction": "Función de salida",
+        "outputFunctionValue": " | Dos salidas 4-20mA | Conmutación bidireccional IO-Link | Dos salidas 0-10V |",
+        "range": "Rango",
+        "rangeValue": " | 2-16L/min | 5-40L/min | 10-100L/min | ",
+        "interfaceThread": "Rosca de interfaz",
+        "interfaceThreadValue": " | RC3/4 | RC1 | G1 | G1/2 | G3/8 | NPT1 | RC1/2 | RC3/8 | NPT3/8 | NPT3/4 | NPT1/2 | G3/4 |",
+        "electricalConnection": "Conexión eléctrica",
+        "electricalConnectionValue": " | Conector M12x1 | Cable PVC de 2m | ",
+        "communicationInterface": "Interfaz de Comunicación",
+        "communicationInterfaceValue": " | IO-Link | ",
+        "temperatureRange": "Rango de temperatura",
+        "temperatureRangeValue": " | 0-100℃ | ",
+        "workingPrinciple": "Principio de funcionamiento",
+        "workingPrincipleValue": " | von Kármán |"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen de IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción",
+        "description": "Los sensores de flujo de vórtice se utilizan ampliamente en el monitoreo de agua pura industrial, gestión de flujo y temperatura en máquinas de control de temperatura de moldes, monitoreo de agua de enfriamiento, la industria de alimentos y bebidas, etc."
+      },
+      "cases": {
+        "fourToTwentyMaOutputs": {
+          "company": "dos salidas 4-20mA",
+          "industry": "sensor de flujo de vórtice",
+          "challenge": "El monitoreo en tiempo real del caudal y temperatura del medio asegura un control preciso y estable de la temperatura del molde, mejorando tanto la eficiencia de producción como la calidad del producto."
+        },
+        "zeroToTenVoltOutputs": {
+          "company": "dos salidas 0-10V",
+          "industry": "sensor de flujo de vórtice",
+          "challenge": "Su independencia de la conductividad del fluido permite una medición estable y precisa del flujo de agua pura industrial de baja conductividad, abordando los problemas de inestabilidad de los medidores de flujo electromagnéticos en dichas aplicaciones."
+        },
+        "twoWaySwitchingIOLink": {
+          "company": "conmutación bidireccional IO-Link",
+          "industry": "sensor de flujo de vórtice",
+          "challenge": "El sensor monitorea las condiciones de flujo del refrigerante para prevenir daños al equipo debido a fallas de enfriamiento, asegurando un funcionamiento seguro y confiable del sistema."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "ioLinkHydraulic": "Sensores Inteligentes IO-Link en Sistemas Hidráulicos",
+        "dualOptionsVortex": "Opciones Duales de Sensores de Flujo de Vórtice",
+        "vortexMoldTemperature": "Sensor de flujo de vórtice en controlador de temperatura de molde",
+        "onePieceTemperatureFlowmeter": "Medidor de Flujo de Temperatura Integral SENTINEL",
+        "ioLinkBeerIndustry": "Sensores IO-Link Potencian la Industria Cervecera",
+        "highAccuracyMonitoring": "Monitoreo de Flujo y Temperatura de Alta Precisión"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "connectivity": {
+      "banner": {
+        "title": "CONECTIVIDAD",
+        "description": "SENTINEL ofrece una amplia variedad de productos disponibles, incluyendo conectores macho-hembra, conectores preconfeccionados, cajas de conexiones, así como cables y accesorios. Podemos proporcionar productos estándar y productos personalizados según las necesidades del cliente.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "customStandard": {
+          "title": "Opciones personalizadas y estándar",
+          "description": "Ofrece ambas para satisfacer diversas necesidades"
+        },
+        "harshEnvironments": {
+          "title": "Se adapta a entornos difíciles",
+          "description": "Funciona de manera estable en configuraciones industriales duras"
+        },
+        "diverseProducts": {
+          "title": "Productos diversos",
+          "description": "Incluye conectores, cables y más"
+        },
+        "costEfficient": {
+          "title": "Ahorro de costos y eficiente",
+          "description": "Optimiza el cableado para menor costo y mayor eficiencia"
+        }
+      },
+      "tabs": {
+        "products": "Productos",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "El sistema de conectividad es un producto indispensable para conectar dispositivos de campo y dispositivos de control.",
+        "paragraph2": "Los productos de conectividad hacen que los sistemas de cableado del cliente sean de bajo costo y más eficientes.",
+        "powerCable": "CABLE DE ALIMENTACIÓN 7/8\"",
+        "ethernetCable": "CABLE ETHERNET INDUSTRIAL",
+        "wireableConnectors": "CONECTORES CON CABLEADO EN CAMPO",
+        "junctionBoxes": "CAJAS DE CONEXIÓN",
+        "videoDescription": "Resumen de Tecnología de Conectividad"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "productType": "Tipo de producto",
+        "productTypeValue": " | CABLE DE ALIMENTACIÓN 7/8\" | Cable Ethernet Industrial | Conectores con Cableado en Campo | Conjuntos de Cables | Cajas de Conexión |"
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen de IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "connectors": {
+          "company": "CONECTORES",
+          "industry": "CONECTIVIDAD",
+          "challenge": "Conector de cableado en campo SENTINEL-, que cubre los tamaños estándar de conectores M8, M12 y M16, y tiene conexiones rectas y en ángulo recto. El conector de campo permite a los clientes conectarse con sus propios cables."
+        },
+        "junctionBoxes": {
+          "company": "CAJAS DE CONEXIÓN",
+          "industry": "CONECTIVIDAD",
+          "challenge": "Se pueden proporcionar interfaces estándar M12 y M8, así como canales de interfaz de 4 canales y 8 canales. Cada canal se puede dividir en salida de señal única y salida de señal dual."
+        },
+        "cordsets": {
+          "company": "CONJUNTOS DE CABLES",
+          "industry": "CONECTIVIDAD",
+          "challenge": "El sistema de conectores sensor/actuador SENTINEL- cubre conectores preconfeccionados con tamaños de conexión estándar M8, M12, M16 y 7/8\"."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "connectionTechnology": "Tecnología de Conexión",
+        "ioLinkConverters": "Convertidores IO-Link de Tipo Salida",
+        "ioLinkConvertersDesc": "Sistema de conectores sensor/actuador SENTINEL con estándares M8, M12, M16",
+        "digitalSignals": "Diferencias Entre Señales Digitales",
+        "digitalSignalsDesc": "Conector de alimentación estándar 7/8\" para productos de módulo de bus SENTINEL",
+        "onSiteAssembly": "conector de ensamblaje en sitio uno a dos",
+        "onSiteAssemblyDesc": "Soluciones de conectividad Ethernet industrial de alto rendimiento",
+        "chinesePreferred": "Elección Preferida China para Calidad",
+        "chinesePreferredDesc": "Soluciones flexibles de conectores de instalación en campo",
+        "distributedModules": "Módulos I/O Distribuidos SENTINEL",
+        "distributedModulesDesc": "Soluciones de conectividad adaptadas para aplicaciones específicas"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "ioModule": {
+      "banner": {
+        "title": "Módulos",
+        "titleHighlight": "I/O",
+        "description": "Como fabricante profesional de módulos Fieldbus, SENTINEL proporciona módulos Fieldbus para automatización fabril que soportan varios protocolos como Profibus-DP, Profinet, ModbusTCP, EtherCAT, CC-LINK, CC-LINK IE Field Basic.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "wideProtocolSupport": {
+          "title": "Amplio soporte de protocolos",
+          "description": "Compatible con múltiples protocolos y adaptable a varios sistemas."
+        },
+        "flexibleInstallation": {
+          "title": "Instalación flexible",
+          "description": "Instalación in situ y en gabinete, adecuada para diferentes escenarios."
+        },
+        "topReliability": {
+          "title": "Máxima fiabilidad",
+          "description": "Alto rendimiento de calidad y estable para necesidades de comunicación industrial."
+        },
+        "technicalUpdate": {
+          "title": "Actualización técnica",
+          "description": "Actualiza enlaces punto a punto tradicionales, haciendo que las configuraciones industriales sean más inteligentes."
+        }
+      },
+      "tabs": {
+        "products": "Productos",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "Los productos se dividen principalmente en dos categorías, una es una serie de alto nivel de protección (IP67) que se puede usar para instalación in situ; la otra es una serie de productos independientes compactos que se pueden instalar en el gabinete.",
+        "paragraph2": "Como actualización de la conexión punto a punto tradicional, el módulo Fieldbus ahora se usa ampliamente en campos industriales.",
+        "profinet": "PROFINET",
+        "ccLink": "CC-Link IE Field Basic",
+        "ethercat": "EtherCAT",
+        "videoDescription": "Resumen de Tecnología de Módulo IO"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "protocolType": "Tipo de protocolo",
+        "protocolTypeValue": " | PROFINET | CC-Link IE Field Basic | EtherCAT | ",
+        "protectionClass": "Clase de protección",
+        "protectionClassValue": " | IP67 | IP20 | ",
+        "signalType": "Tipo de señal",
+        "signalTypeValue": " | entrada | salida | adaptativo entrada/salida | entrada+salida | Entrada analógica | ",
+        "digitalInputs": "Entradas digitales",
+        "digitalInputsValue": " | PNP/NPN | NPN | PNP | ",
+        "digitalOutputs": "Salidas digitales",
+        "digitalOutputsValue": " | PNP | NPN | ",
+        "inputChannels": "Número de canales de entrada",
+        "inputChannelsValue": " | 8 | 16 | 32 | ",
+        "outputChannels": "Número de canales de salida",
+        "outputChannelsValue": " | 4 | 8 | 16 | 32 | "
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen de IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "ip67": {
+          "company": "IP67",
+          "industry": "Protocolo de Comunicación:PROFINET,CC-Link IE Field Basic,EtherCAT",
+          "challenge": "Los módulos de la serie IP67 son particularmente adecuados para entornos industriales al aire libre o duros, como lugares con alta humedad y mucho polvo. Soporta la instalación cercana de sensores y actuadores, reduciendo costos de cableado y tiempo de instalación."
+        },
+        "ip20": {
+          "company": "IP20",
+          "industry": "Protocolo de Comunicación:PROFINET,CC-Link IE Field Basic,EtherCAT",
+          "challenge": "Los módulos IO de la serie IP20 están específicamente diseñados para entornos de integración I/O de alta densidad y son adecuados para entornos relativamente limpios, como gabinetes de equipos interiores. Esta serie de módulos integra 32 puntos I/O y soporta varias configuraciones flexibles."
+        },
+        "sap": {
+          "company": "SAP",
+          "industry": "Adaptación de entrada y salida",
+          "challenge": "El módulo IO SAP es un módulo I/O de grado industrial. Tiene un mecanismo de adaptación entrada-salida, que puede simplificar el proceso de despliegue y mejorar la consistencia del sistema. Proporciona rendimiento de comunicación estable y una estrategia de protección eléctrica rigurosa para garantizar el funcionamiento confiable del sistema."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "inputOutputAdaptive": "Módulo I/O de Bus Adaptativo Entrada/Salida",
+        "ioModuleTbr": "Módulo IO en Líneas de Transporte de Neumáticos TBR",
+        "fromFieldbusToEthernet": "De Fieldbus a Ethernet Industrial",
+        "pharmaceuticalPackaging": "Industria de Empaque Farmacéutico",
+        "powderMetallurgy": "Empodera la Industria de Metalurgia en Polvo",
+        "ioLinkModbus": "Módulos Maestros IO-Link con Protocolo Modbus-TCP"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "relayModule": {
+      "banner": {
+        "title": "Módulo de Relé",
+        "titleHighlight": "IO-Link",
+        "description": "El módulo de relé IO-Link recién lanzado por SENTINEL aprovechará enormemente esta ventaja de IO-Link, permitiendo a los usuarios reducir los costos de ingeniería y mano de obra, especialmente para proyectos que utilizan un gran número de relés en gabinetes eléctricos.",
+        "moreButton": "Más",
+        "contactButton": "Contáctenos"
+      },
+      "featuresSection": {
+        "title": "Ventajas",
+        "titleHighlight": "Principales"
+      },
+      "features": {
+        "technologicalInnovation": {
+          "title": "Innovación Tecnológica",
+          "description": "El primer módulo de relé del mundo integrado con funcionalidad IO-Link"
+        },
+        "highEfficiencyExpansion": {
+          "title": "Expansión de Alta Eficiencia",
+          "description": "Un maestro IO-Link de 4 puertos puede conectar 128 relés"
+        },
+        "smartMonitoring": {
+          "title": "Monitoreo Inteligente",
+          "description": "Monitoreo en tiempo real de temperatura, sobrecorriente y ciclos de conmutación"
+        },
+        "flexibleApplication": {
+          "title": "Aplicación Flexible",
+          "description": "Compatible con varias estaciones principales y relés de marca, y se pueden conectar y desconectar libremente."
+        }
+      },
+      "tabs": {
+        "products": "Productos",
+        "parameters": "Parámetros",
+        "downloads": "Descargas"
+      },
+      "description": {
+        "introduction": "Introducción",
+        "paragraph1": "Comparado con los módulos de salida de expansión tradicionales conectados al mismo número de relés, los módulos de relé IO-Link pueden ahorrar un 40% del costo.",
+        "paragraph2": "El monitoreo y mantenimiento remotos simplifican el cableado y reducen significativamente los costos de mano de obra (hasta un 95% de ahorro).",
+        "ioLinkExpandableRelay": "Módulo de Relé Expandible IO-Link",
+        "eightChannelSub": "Sub-Módulo de Expansión de 8 Canales",
+        "sixteenChannelSub": "Sub-Módulo de Expansión de 16 Canales",
+        "videoDescription": "Resumen de Tecnología IO-Link"
+      },
+      "specsSection": {
+        "title": "Especificaciones Técnicas del Producto",
+        "table": {
+          "project": "PROYECTO",
+          "parameter": "PARÁMETRO"
+        }
+      },
+      "specs": {
+        "productType": "Tipo de producto",
+        "productTypeValue": " | Módulo de Relé Expandible IO-Link | Sub-Módulo de Expansión del Módulo de Relé |  ",
+        "outputPoints": "Puntos de salida",
+        "outputPointsValue": " | 16 | 8 | ",
+        "outputCurrent": "Corriente de salida",
+        "outputCurrentValue": " | 150mA |  ",
+        "outputProtectionMode": "Modo de protección de salida",
+        "outputProtectionModeValue": " | Protección contra sobrecarga | Protección contra sobrecalentamiento |  ",
+        "outputProtectionResponseTime": "Tiempo de respuesta de protección de salida",
+        "outputProtectionResponseTimeValue": " | ≈20ms |",
+        "outputVoltageDrop": "Caída de voltaje de salida",
+        "outputVoltageDropValue": "| ≈0.6V |",
+        "isolationMethod": "Método de aislamiento",
+        "isolationMethodValue": " | Aislamiento digital | ",
+        "workingAuxiliaryVoltage": "Voltaje de trabajo/auxiliar",
+        "workingAuxiliaryVoltageValue": " | 24VDC±10% | ",
+        "moduleOperatingCurrent": "Corriente de funcionamiento del módulo",
+        "moduleOperatingCurrentValue": " | <100mA | ",
+        "currentRequiredByLoad": "Corriente requerida por la fuente de alimentación de carga",
+        "currentRequiredByLoadValue": " | <4.8A | ",
+        "relayContactType": "Tipo de contacto del relé",
+        "relayContactTypeValue": " | Un conjunto normalmente abierto + un conjunto normalmente cerrado | ",
+        "relayContactCapacity": "Capacidad de contacto del relé",
+        "relayContactCapacityValue": " | 5A 250VAC/5A 30VDC | ",
+        "relayCoilVoltage": "Voltaje de bobina del relé",
+        "relayCoilVoltageValue": " | 24V | ",
+        "ioLinkProtocolVersion": "Versión del protocolo IO-Link",
+        "ioLinkProtocolVersionValue": " | V1.1 | ",
+        "ioLinkInterfaceType": "Tipo de interfaz IO-Link",
+        "ioLinkInterfaceTypeValue": " | Clase A | ",
+        "installationMethod": "Método de instalación",
+        "installationMethodValue": " | Montaje en riel guía estándar DIN35 o agujeros de fijación | ",
+        "protectionLevel": "Nivel de protección",
+        "protectionLevelValue": " | IP20 | ",
+        "operatingTemperature": "Temperatura de funcionamiento",
+        "operatingTemperatureValue": " | -25...55℃ | "
+      },
+      "downloadsSection": {
+        "title": "Descarga de Recursos",
+        "downloadButton": "Descargar"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "Resumen de Sensores",
+          "description": "Parámetros técnicos"
+        },
+        "ioModuleOverview": {
+          "title": "Resumen del Módulo I/O",
+          "description": "Parámetros técnicos"
+        },
+        "ioLinkOverview": {
+          "title": "Resumen de IO-Link",
+          "description": "Parámetros técnicos"
+        },
+        "relayModuleOverview": {
+          "title": "Resumen del Módulo de Relé",
+          "description": "Parámetros técnicos"
+        }
+      },
+      "casesSection": {
+        "title": "Tipo de",
+        "titleHighlight": "Producto",
+        "introduction": "Introducción"
+      },
+      "cases": {
+        "expandableRelay": {
+          "company": "Módulo de Relé Expandible",
+          "industry": "IO-Link",
+          "challenge": "Dispositivo I/O remoto IO-Link. 16 canales, salida única de 150 mA por canal, expandible.",
+          "solution": "Compatible con IO-Link V1.1. Montaje en riel estándar DIN35 o fijación con tornillos.",
+          "result": "Comunicación y suministro de energía de carga a través de terminales push-in enchufables."
+        },
+        "sixteenChannelSub": {
+          "company": "Sub-Módulo de Expansión de 16 Canales",
+          "industry": "Módulo de Relé IO-Link",
+          "challenge": "16 canales. Salida única de 150 mA por canal.",
+          "solution": "Base estándar compatible con relés de varias marcas.",
+          "result": "Contactos SPDT. Montaje en riel estándar DIN35 o fijación con tornillos."
+        },
+        "eightChannelSub": {
+          "company": "Sub-Módulo de Expansión de 8 Canales",
+          "industry": "Módulo de Relé IO-Link",
+          "challenge": "8 canales. Salida única de 150 mA por canal.",
+          "solution": "Base estándar compatible con relés de varias marcas.",
+          "result": "Contactos SPDT. Montaje en riel estándar DIN35 o fijación con tornillos."
+        }
+      },
+      "relatedSection": {
+        "title": "Artículos",
+        "titleHighlight": "Relacionados"
+      },
+      "relatedProducts": {
+        "newProductLaunch": "Lanzamiento de nuevo producto: módulo de relé IO-Link",
+        "whatIsIoLink": "Qué es IO-Link",
+        "summaryIoLinkDevices": "Resumen de la Serie de Dispositivos IO-Link",
+        "ioLinkRemoteRtd": "Módulo RTD Remoto IO-Link",
+        "newIoLinkSubstation": "Nuevos Módulos de Subestación IO-Link",
+        "pressureSensorsDistillation": "Sensores de Presión en Equipos de Destilación"
+      },
+      "cta": {
+        "title": "Obtenga su precio",
+        "titleHighlight": "preferencial",
+        "description": "Nuestro equipo profesional le proporcionará soluciones personalizadas.",
+        "contactButton": "Contáctenos",
+        "email": "export.sentinel@gmail.com"
+      }
+    }
+  }
+  ,
+  "map": {
+    "subtitle": "Estación Metro Zona de Alta Tecnología"
+  }
+  ,
+  "footer": {
+    "floatingContact": "Contáctenos",
+    "floatingTitle": "Contacto",
+    "cookie": {
+      "bannerText": "Utilizamos cookies y tecnologías similares para mejorar su experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Algunas cookies son esenciales para que el sitio web funcione correctamente, mientras que otras nos ayudan a mejorar nuestros servicios y mostrar anuncios relevantes.",
+      "privacyLinkText": "Política de Privacidad",
+      "acceptAll": "Aceptar Todo",
+      "acceptNecessary": "Solo Necesarias",
+      "settings": "Configuración de Cookies"
+    },
+    "company": {
+      "tagline": "La innovación hace buenos productos, el enfoque hace mejores servicios"
+    },
+    "quickLinks": {
+      "title": "Enlaces Rápidos"
+    },
+    "products": {
+      "title": "Productos",
+      "thermalFlow": "Sensores de Flujo Térmico"
+    },
+    "contact": {
+      "title": "Contacto",
+      "scanNote": "Escanee para contactar"
+    },
+    "copyright": "© 2008 - {{year}} SENTINEL. Todos los derechos reservados."
+  }
+}

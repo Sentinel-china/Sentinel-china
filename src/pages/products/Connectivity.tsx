@@ -5,8 +5,10 @@
 import { ArrowLeft, Settings, Shield, Cable, Plug, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Cpu, ChevronLeft, ChevronRight, FileText, BarChart3, TrendingUp, Brain } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function BusinessIntelligenceDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,52 +58,52 @@ export default function BusinessIntelligenceDetail() {
   const features = [
     {
       icon: Settings,
-      title: "Custom & standard options",
-      description: "Offers both to meet various needs"
+      title: t('pages.connectivity.features.customStandard.title'),
+      description: t('pages.connectivity.features.customStandard.description')
     },
     {
       icon: Shield,
-      title: "Fits harsh environments",
-      description: "Works stably in tough industrial settings"
+      title: t('pages.connectivity.features.harshEnvironments.title'),
+      description: t('pages.connectivity.features.harshEnvironments.description')
     },
     {
       icon: Cable,
-      title: "Diverse products",
-      description: "Includes connectors, cables and more"
+      title: t('pages.connectivity.features.diverseProducts.title'),
+      description: t('pages.connectivity.features.diverseProducts.description')
     },
     {
       icon: Plug,
-      title: "Cost-saving & efficient",
-      description: "Optimizes wiring for lower cost and higher efficiency"
+      title: t('pages.connectivity.features.costEfficient.title'),
+      description: t('pages.connectivity.features.costEfficient.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Product type", value: " | 7/8” POWER CABLE | Industrial Ethernet Cable | Field-Wireable Connectors | Cordsets | Junction Boxes |" }
+    { spec: "t('pages.connectivity.specs.productType')", value: "t('pages.connectivity.specs.productTypeValue')" }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.connectivity.downloads.sensorsOverview.title'),
+      description: t('pages.connectivity.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.connectivity.downloads.ioModuleOverview.title'),
+      description: t('pages.connectivity.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.connectivity.downloads.ioLinkOverview.title'),
+      description: t('pages.connectivity.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.connectivity.downloads.relayModuleOverview.title'),
+      description: t('pages.connectivity.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -109,27 +111,27 @@ export default function BusinessIntelligenceDetail() {
 
   const cases = [
     {
-      company: "CONNECTORS",
-      industry: "CONNECTIVITY", 
-      challenge: "SENTINEL- field wiring connector, which covers M8, M12 and M16 standard connector sizes, and has straight-line and right-angle connections. Field connector allows customers to connect with their own cables.",
+      company: t('pages.connectivity.cases.connectors.company'),
+      industry: t('pages.connectivity.cases.connectors.industry'),
+      challenge: t('pages.connectivity.cases.connectors.challenge'),
       solution: "",
       result: "",
       image: "/connectivity.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020775492.html"
     },
     {
-      company: "JUNCTION BOXES",
-      industry: "CONNECTIVITY",
-      challenge: "M12 and M8 standard interfaces can be provided, as well as 4-channel and 8-channel interface channels. Each channel can be divided into single-signal output and dual-signal output.",
+      company: t('pages.connectivity.cases.junctionBoxes.company'),
+      industry: t('pages.connectivity.cases.junctionBoxes.industry'),
+      challenge: t('pages.connectivity.cases.junctionBoxes.challenge'),
       solution: "",
       result: "",
       image: "/connectivity1.jpg",
       link: "https://www.sentinel-china.com/eproduct/index_100000020757332.html"
     },
     {
-      company: "CORDSETS",
-      industry: "CONNECTIVITY",
-      challenge: "SENTINEL- sensor/actuator connector system covers prefabricated connectors with M8, M12, M16 and 7/8\" standard connection sizes.",
+      company: t('pages.connectivity.cases.cordsets.company'),
+      industry: t('pages.connectivity.cases.cordsets.industry'),
+      challenge: t('pages.connectivity.cases.cordsets.challenge'),
       solution: "",
       result: "",
       image: "/connectivity2.jpg",
@@ -139,38 +141,38 @@ export default function BusinessIntelligenceDetail() {
 
   const relatedProducts = [
     {
-      title: "Connection Technology",
+      title: t('pages.connectivity.relatedProducts.connectionTechnology'),
       description: "",
       image: "http://image.sentinel-china.com/202508121550233.png",
       link: "/products/connectivity/connectivity01"
     },
     {
-      title: "Output-Type IO-Link Converters",
-      description: "SENTINEL sensor/actuator connector system with M8, M12, M16 standards",
+      title: t('pages.connectivity.relatedProducts.ioLinkConverters'),
+      description: t('pages.connectivity.relatedProducts.ioLinkConvertersDesc'),
       image: "http://image.sentinel-china.com/202508141650679.png",
       link: "/products/connectivity/connectivity02"
     },
     {
-      title: "Differences Between Digital Signals",
-      description: "Standard 7/8\" power connector for SENTINEL bus module products",
+      title: t('pages.connectivity.relatedProducts.digitalSignals'),
+      description: t('pages.connectivity.relatedProducts.digitalSignalsDesc'),
       image: "http://image.sentinel-china.com/202508111605823.png",
       link: "/products/connectivity/connectivity03"
     },
     {
-      title: "one-to-two on-site assembly connector",
-      description: "High-performance industrial Ethernet connectivity solutions",
+      title: t('pages.connectivity.relatedProducts.onSiteAssembly'),
+      description: t('pages.connectivity.relatedProducts.onSiteAssemblyDesc'),
       image: "http://image.sentinel-china.com/202508141656047.png",
       link: "/products/connectivity/connectivity04"
     },
     {
-      title: "Chinese Preferred Choice for Quality",
-      description: "Flexible field installation connector solutions",
+      title: t('pages.connectivity.relatedProducts.chinesePreferred'),
+      description: t('pages.connectivity.relatedProducts.chinesePreferredDesc'),
       image: "http://image.sentinel-china.com/202508141702311.png",
       link: "/products/connectivity/connectivity05"
     },
     {
-      title: "SENTINEL Distributed I/O Modules",
-      description: "Tailored connectivity solutions for specific applications",
+      title: t('pages.connectivity.relatedProducts.distributedModules'),
+      description: t('pages.connectivity.relatedProducts.distributedModulesDesc'),
       image: "http://image.sentinel-china.com/202508111406692.jpg",
       link: "/products/connectivity/connectivity06"
     }
@@ -213,14 +215,14 @@ export default function BusinessIntelligenceDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    <span className="text-yellow-400">CONNECTIVITY</span>
+                    <span className="text-yellow-400">{t('pages.connectivity.banner.title')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-                SENTINEL offers a wide variety of products are available, including male-female connectors, pre-cast connectors, junction boxes, as well as cables, and accessories. we can provide standard products and customized products to customer needs.
+                {t('pages.connectivity.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -230,13 +232,13 @@ export default function BusinessIntelligenceDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.connectivity.banner.moreButton')}
                 </a>
                <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.connectivity.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -249,7 +251,7 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core <span className="text-yellow-400">Advantages</span>
+              {t('pages.connectivity.featuresSection.title')} <span className="text-yellow-400">{t('pages.connectivity.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -282,7 +284,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Products
+                {t('pages.connectivity.tabs.products')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -292,7 +294,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.connectivity.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -302,7 +304,7 @@ export default function BusinessIntelligenceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.connectivity.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -313,30 +315,30 @@ export default function BusinessIntelligenceDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.connectivity.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      The connectivity system is an indispensable product for connecting field devices and control devices.
+                      {t('pages.connectivity.description.paragraph1')}
                     </p>
                     <p>
-                      The connectivity products make customer wiring systems low-cost and more efficient.
+                      {t('pages.connectivity.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Cable className="text-yellow-400 mr-2" size={20} />
-                        <span>7/8" POWER CABLE</span>
+                        <span>{t('pages.connectivity.description.powerCable')}</span>
                       </div>
                       <div className="flex items-center">
                         <Cable className="text-yellow-400 mr-2" size={20} />
-                        <span>INDUSTRIAL ETHERNET CABLE</span>
+                        <span>{t('pages.connectivity.description.ethernetCable')}</span>
                       </div>
                       <div className="flex items-center">
                         <Plug className="text-yellow-400 mr-2" size={20} />
-                        <span>FIELD-WIREABLE CONNECTORS</span>
+                        <span>{t('pages.connectivity.description.wireableConnectors')}</span>
                       </div>
                       <div className="flex items-center">
                         <Settings className="text-yellow-400 mr-2" size={20} />
-                        <span>JUNCTION BOXES</span>
+                        <span>{t('pages.connectivity.description.junctionBoxes')}</span>
                       </div>
                     </div>
                   </div>
@@ -353,7 +355,7 @@ export default function BusinessIntelligenceDetail() {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">Connectivity Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.connectivity.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -361,16 +363,16 @@ export default function BusinessIntelligenceDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.connectivity.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          Project
+                          {t('pages.connectivity.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          Parameter
+                          {t('pages.connectivity.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -394,7 +396,7 @@ export default function BusinessIntelligenceDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.connectivity.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -418,7 +420,7 @@ export default function BusinessIntelligenceDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.connectivity.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -435,7 +437,7 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product <span className="text-yellow-400">Type</span>
+              {t('pages.connectivity.casesSection.title')} <span className="text-yellow-400">{t('pages.connectivity.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -468,7 +470,7 @@ export default function BusinessIntelligenceDetail() {
                 
                 <div className="p-6">
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                    <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.connectivity.casesSection.introduction')}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p>
                   </div>
                   
@@ -493,7 +495,7 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Related <span className="text-yellow-400">Articles</span>
+              {t('pages.connectivity.relatedSection.title')} <span className="text-yellow-400">{t('pages.connectivity.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300"></p>
           </div>
@@ -578,23 +580,23 @@ export default function BusinessIntelligenceDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your <span className="text-yellow-400">preferential </span>price
+              {t('pages.connectivity.cta.title')}<span className="text-yellow-400"> {t('pages.connectivity.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.connectivity.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                export.sentinel@gmail.com
+                {t('pages.connectivity.cta.email')}
               </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.connectivity.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

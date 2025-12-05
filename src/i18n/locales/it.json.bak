@@ -1,0 +1,348 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "sensors": "Sensors",
+    "sensor": {
+      "title": "Sensori",
+      "description": "Soluzioni di sensori integrate per il monitoraggio e il controllo industriale."
+    }
+  },
+  "pages": {
+    "solutions": {
+        "list": {
+          "solutions01": {
+            "title": "Sensori intelligenti IO-Link nei sistemi idraulici",
+            "description": "Nel contesto dell'automazione industriale e delle macchine ingegneristiche, i sistemi idraulici sono ampiamente utilizzati in apparecchiature critiche come presse a iniezione, presse idrauliche, attrezzature di sollevamento e veicoli da lavoro grazie alla loro eccellente efficienza di conversione dell'energia e alla potente capacità di azionamento.",
+            "keyFeatures": ["Sensore di pressione serie SEH","Sensore di temperatura serie TBH","Sensore di livello/temperatura serie LTH","Sensore di portata serie FMV"],
+            "benefits": ["Impostazione remota dei parametri","Rilevamento automatico dei dispositivi","Monitoraggio in tempo reale e tracciamento dei dati","Cablaggio semplificato e alta scalabilità"]
+          },
+          "solutions02": {
+            "title": "Sensore di livello separato per serbatoi nell'industria lattiero-casearia",
+            "description": "Nell'industria della lavorazione dei prodotti lattiero-caseari, la misurazione accurata del livello del serbatoio è fondamentale per l'efficienza produttiva, la qualità e la sicurezza del prodotto.",
+            "keyFeatures": ["Misurazione bidirezionale","Soluzione separata personalizzata","Monitoraggio della temperatura integrato","Facile manutenzione e pulizia"],
+            "benefits": ["Evita le interferenze della schiuma","Risolvi i problemi di limitazione dello spazio","Riduci la complessità dell'installazione","Migliora la gestione dell'igiene"]
+          },
+          "solutions03": {
+            "title": "Sensori IO-Link nei sistemi idraulici per l'energia eolica",
+            "description": "Nel contesto della transizione verso una struttura energetica più verde e a basse emissioni di carbonio, l'energia eolica come fonte rinnovabile sta vivendo una crescita sostenuta.",
+            "keyFeatures": ["Sensori multidimensionali","Protocollo di comunicazione IO-Link","Grado di protezione IP67","Analisi dello stato di salute in tempo reale"],
+            "benefits": ["Garantisce la stabilità della turbina eolica","Migliora la velocità di risposta del sistema","Semplifica il cablaggio dell'armadio di controllo","Consente la manutenzione proattiva"]
+          },
+          "solutions04": {
+            "title": "Cambio rapido di vassoi modulari nelle linee di saldatura degli autobus tramite meccanismo hot-swap",
+            "description": "Con l'avanzamento della produzione intelligente e dell'Industria 4.0, le linee di saldatura delle carrozzerie stanno avanzando verso una maggiore automazione, flessibilità e digitalizzazione.",
+            "keyFeatures": ["Cablaggio flessibile IO-Link","Meccanismo hot-swap","Sistema di vassoi modulari","Diagnostica centralizzata"],
+            "benefits": ["Semplifica il cablaggio complesso","Consente cambi rapidi dei moduli","Migliora l'efficienza di implementazione","Aumenta l'adattabilità del sistema"]
+          },
+          "solutions05": {
+            "title": "Scelta doppia di misuratore a vortice e interruttore di flusso termico",
+            "description": "Nel campo dell'automazione industriale, una misurazione precisa del flusso e il monitoraggio in tempo reale sono fondamentali per garantire l'efficienza produttiva e la sicurezza dell'apparecchiatura.",
+            "keyFeatures": ["Sensore di flusso a vortice","Interruttore di flusso termico a diffusione","Misurazione ad alta precisione","Monitoraggio dello stato in tempo reale"],
+            "benefits": ["Misurazione del flusso precisa","Soluzione di monitoraggio conveniente","Scenari di applicazione flessibili","Soluzione completa per il flusso"]
+          },
+          "solutions06": {
+            "title": "Applicazione di moduli I/O distribuiti SENTINEL nelle linee di produzione di wafer di silicio monocrystalline",
+            "description": "Con la transizione della struttura energetica globale, l'industria fotovoltaica sta vivendo uno sviluppo rapido come parte importante dell'energia pulita.",
+            "keyFeatures": ["Modulo remoto I/O serie EL","Modulo remoto I/O serie CM","Alta flessibilità di installazione","Soluzione conveniente"],
+            "benefits": ["Riduce i costi di installazione","Migliora la stabilità del sistema","Consente la raccolta di segnali vicino alla sorgente","Supporta lo sviluppo dell'industria fotovoltaica"]
+          }
+          }
+        },
+        "featureAboutContent": "Tianjin SENTINEL Electronics Co., Ltd è un'azienda scientifica e tecnologica innovativa che integra R&S, produzione e vendite. SENTINEL fornisce moduli I/O distribuiti Ethernet industriali, prodotti IO-Link e sensori di processo.",
+      "featureApplicationsContent": "SENTINEL dispone di una vasta gamma di prodotti e di un team di R&S professionale. I nostri prodotti sono stati ampiamente utilizzati in siti di produzione industriale come l'assemblaggio di parti per automobili, la lavorazione meccanica e l'industria metallurgica.",
+      "featureTeamContent": "Come azienda di R&S e produzione, SENTINEL aderisce ai valori dell'innovazione e della qualità, con casi applicativi, capacità produttiva e logistica efficienti per garantire un servizio sostenibile e di alta qualità."
+    },
+    "products": {
+      "title": "PRODOTTI",
+      "subtitle": "Forniamo un'ampia gamma di prodotti tecnici e servizi professionali per aiutare la trasformazione e l'aggiornamento dell'automazione di fabbrica, migliorando l'efficienza aziendale e il vantaggio competitivo.",
+      "serviceTitle": "Servizio",
+      "serviceHighlight": "Processo",
+      "serviceSubtitle": "Processi di servizio standardizzati per garantire la qualità del prodotto e l'efficienza di consegna",
+      "needsAnalysis": "Analisi delle esigenze",
+      "needsAnalysisDesc": "Comprendere profondamente le esigenze dei clienti e formulare piani di prodotto dettagliati",
+      "selectionCustomization": "Selezione e personalizzazione",
+      "selectionCustomizationDesc": "Corrispondenza dei prodotti e soluzioni personalizzate",
+      "delivery": "Consegna",
+      "deliveryDesc": "Spedito in orario",
+      "afterSales": "Post-vendita",
+      "afterSalesDesc": "Fornire un eccellente servizio post-vendita",
+      "classification": "Classificazione:",
+      "sensorDescription": "Sensore professionale per il monitoraggio dei liquidi.",
+      "ioModuleTitle": "Modulo I/O",
+      "ioModuleDescription": "L'apparecchiatura è installata nelle vicinanze per ridurre i costi di cablaggio",
+      "ioLinkDescription": "IO-Link consente la comunicazione tra sensori e PLC.",
+      "connectivityTitle": "Connettività",
+      "relayModuleTitle": "Modulo Relè IO-Link",
+      "relayModuleDescription": "Dispositivi IO-Link innovativi",
+      "features": {
+        "temperature": "Sensore di Temperatura",
+        "pressure": "Sensore di Pressione",
+        "thermalFlow": "Sensore di Flusso Termico",
+        "vortex": "Sensore di Flusso a Vortice",
+        "ioLinkMaster": "IO-Link Master",
+        "ioLinkHubs": "IO-Link Hubs",
+        "ioLinkConverter": "IO-Link Converter",
+        "relayExpandable": "Modulo Relè Espandibile IO-Link",
+        "relaySubModule": "Sottomodulo di Espansione del Modulo Relè"
+      },
+      "productDetails": {
+        "coreAdvantages": "Vantaggi Principali",
+        "productType": "Tipo di Prodotto",
+        "relatedArticles": "Articoli Correlati",
+        "introduction": "Introduzione",
+        "download": "Scarica",
+        "contact": "Contattaci",
+        "more": "Di più",
+        "getPreferentialPrice": "Ottieni il tuo prezzo preferenziale",
+        "professional": "Il nostro team professionale ti fornirà soluzioni personalizzate.",
+        "sensorsOverview": "Panoramica dei Sensori",
+        "technicalParameters": "Parametri Tecnici",
+        "ioLinkOverview": "Panoramica IO-Link",
+        "ioModuleOverview": "Panoramica del Modulo I/O",
+        "relayModuleOverview": "Panoramica del Modulo Relè",
+        "product": "Prodotto",
+        "parameters": "Parametri",
+        "downloads": "Download",
+        "relatedProductsTitle": "Prodotti Correlati"
+      }
+    },
+    "about": {
+      "title": "Informazioni",
+      "brand": "SENTINEL",
+      "intro": "Tianjin SENTINEL Electronics Co., Ltd è un'azienda scientifica e tecnologica innovativa che integra R&S, produzione e vendite.",
+      "overviewTitle": "Qualità professionale, Affidabile",
+      "overviewP1": "SENTINEL fornisce moduli I/O distribuiti Ethernet industriali e prodotti IO-Link, sensori di posizione, sensori di processo e accessori di connessione, ecc.",
+      "overviewP2": "Come azienda di R&S e produzione, SENTINEL aderisce al concetto di valore di R&S e innovazione e dispone di casi di applicazione di mercato affidabili, capacità di produzione perfetta e logistica efficiente.",
+      "missionTitle": "La nostra missione",
+      "missionText": "Guidare i sensori industriali e i moduli IO-LINK tramite R&S incessante. Fornire soluzioni precise e affidabili per promuovere l'automazione e l'efficienza industriale.",
+      "visionTitle": "La nostra visione",
+      "visionText": "Diventare il punto di riferimento globale nei sensori industriali e nella tecnologia IO-LINK. Collegare gli ecosistemi industriali con soluzioni innovative.",
+      "certTitle": "Le nostre certificazioni",
+      "certSubtitle": "Certificazioni e risultati professionali",
+      "clickToZoom": "Fai clic per ingrandire",
+      "yearsExperiences": "Anni di Esperienza",
+      "customers": "Clienti",
+      "solutions": "Soluzioni",
+      "developmentTitle": "Sviluppo",
+      "developmentBrand": "Storia",
+      "developmentSubtitle": "Assisti al nostro percorso di crescita",
+      "timeline": {
+        "2008": {
+          "title": "2008 Fondazione dell'Azienda",
+          "content": "Tianjin SENTINEL è stata fondata nella Tianjin Hi-Tech Zone nel 2008. L'azienda inizialmente si è concentrata su R&S e produzione di sensori e apparecchiature fieldbus per soddisfare le esigenze industriali."
+        },
+        "2010": {
+          "title": "2010 Sviluppo e Espansione dei Prodotti",
+          "content": "Nel 2010, l'azienda ha sviluppato e prodotto con successo interruttori di prossimità induttivi, consolidando la sua posizione nel campo dei sensori industriali. Nel 2011 ha ampliato le strutture di produzione."
+        },
+        "2013": {
+          "title": "2013 Innovazione dei Sensori",
+          "content": "Nel 2013, l'azienda ha sviluppato e prodotto sensori di flusso, temperatura e pressione, ampliando la sua linea di prodotti."
+        },
+        "2015": {
+          "title": "2015 Miglioramento dell'Intelligenza della Fabbrica",
+          "content": "Nel 2015, l'azienda è entrata ulteriormente nel campo di fieldbus e Ethernet industriale lanciando moduli I/O remoti, migliorando significativamente l'intelligenza dell'automazione di fabbrica."
+        },
+        "2019": {
+          "title": "2019 Breakthrough IO-Link",
+          "content": "Nel 2019, l'azienda ha ottenuto un importante progresso in IO-Link lanciando con successo prodotti IO-Link Master e Device, ottenendo trasmissione dati standardizzata e gestione digitale."
+        },
+        "2023": {
+          "title": "2023 Visione del Futuro",
+          "content": "Nel 2023, l'azienda ha rafforzato IO-Link lanciando sensori con funzionalità IO-Link, migliorando l'efficienza nell'automazione industriale e nella gestione degli impianti."
+        },
+        "2025": {
+          "title": "Nuova Era dell'Intelligenza",
+          "content": "In questa era di rapidi cambiamenti, l'automazione industriale e l'intelligenza artificiale procedono insieme, portando la produzione in una nuova era intelligente. La nostra missione è portare soluzioni intelligenti a ogni macchina e linea di produzione."
+        }
+      }
+    },
+    "solutions": {
+      "title": "Industriale",
+      "subtitle": "Affrontando le caratteristiche e le esigenze di diversi settori, forniamo soluzioni tecnologiche personalizzate per aiutare vari settori a raggiungere la trasformazione digitale e l'innovazione aziendale.",
+      "serviceProcessTitle": "Servizio",
+      "communication": "Comunicazione",
+      "communicationDesc": "Comprendere le esigenze dei clienti e le caratteristiche dell'industria attraverso comunicazione e ricerca approfondita",
+      "productSelection": "Selezione Prodotti",
+      "productSelectionDesc": "Fornire selezione prodotti personalizzata e progettazione di soluzioni in base alle esigenze dei clienti",
+      "delivery": "Consegna Puntuale",
+      "deliveryDesc": "Garantire consegna puntuale dei prodotti e fornire supporto tecnico per assicurare il progresso fluido del progetto",
+      "afterSales": "Servizio Post-Vendita",
+      "afterSalesDesc": "Fornire servizio post-vendita completo, incluso supporto tecnico, manutenzione e aggiornamenti dei prodotti",
+      "coreFeatures": "Caratteristiche Principali",
+      "coreValue": "Valore Fondamentale",
+      "list": {
+          "productPages": {
+            "common": {
+              "introduction": "Introduzione",
+              "product": "Prodotto",
+              "parameters": "Parametri",
+              "downloads": "Download",
+              "coreAdvantages": "Vantaggi Principali",
+              "productType": "Tipo di Prodotto",
+              "relatedArticles": "Articoli Correlati",
+              "getPreferentialPrice": "Ottieni il tuo prezzo preferenziale",
+              "professionalTeam": "Il nostro team professionale ti fornirà soluzioni personalizzate.",
+              "contactUs": "Contattaci",
+              "more": "Di più",
+              "download": "Scarica",
+              "sensorsOverview": "Panoramica dei Sensori",
+              "technicalParameters": "Parametri Tecnici",
+              "ioLinkOverview": "Panoramica IO-Link",
+              "ioModuleOverview": "Panoramica del Modulo I/O",
+              "relayModuleOverview": "Panoramica del Modulo Relè",
+              "productTechnicalSpecifications": "Specifiche Tecniche del Prodotto",
+              "project": "PROGETTO",
+              "parameter": "PARAMETRO"
+            },
+            "inductiveProximitySensor": {
+              "title": "Sensore di Prossimità Induttivo",
+              "description": "L'interruttore di prossimità induttivo è un elemento di rilevamento. Attraverso diversi principi fisici, esegue un'induzione senza contatto su oggetti metallici ferromagnetici, in modo da rilevare se l'oggetto rilevato raggiunge l'intervallo di induzione effettivo del sensore e genera un segnale di una certa forma."
+            },
+            "liquidLevelSensor": {
+              "title": "Sensore di Livello di Liquido",
+              "description": "SENTINEL fornisce sensori di livello di liquido precisi per varie applicazioni industriali con più opzioni di configurazione."
+            },
+            "pressureSensor": {
+              "title": "Sensore di Pressione",
+              "description": "Soluzioni di rilevamento della pressione ad alta precisione per ambienti industriali impegnativi."
+            },
+            "temperatureSensor": {
+              "title": "Sensore di Temperatura",
+              "description": "Sensori avanzati di monitoraggio della temperatura per il controllo e l'ottimizzazione dei processi."
+            },
+            "thermalFlowSensor": {
+              "title": "Sensore di Flusso Termico",
+              "description": "Misurazione affidabile del flusso termico per la gestione energetica e il monitoraggio dei processi."
+            },
+            "vortexFlowSensor": {
+              "title": "Sensore di Flusso a Vortice",
+              "description": "Misurazione precisa del flusso a vortice per il monitoraggio e il controllo del volume accurato."
+            },
+            "connectivity": {
+              "title": "Connettività",
+              "description": "Soluzioni di connettività avanzate per i sistemi di automazione industriale."
+            },
+            "ioLink": {
+              "title": "IO-Link",
+              "description": "Protocollo di comunicazione IO-Link standard industriale per dispositivi di campo intelligenti."
+            },
+            "ioModule": {
+              "title": "Modulo I/O",
+              "description": "Moduli I/O distribuiti per sistemi di automazione flessibili e scalabili."
+            },
+            "relayModule": {
+              "title": "Modulo Relè",
+              "description": "Moduli relè IO-Link per applicazioni avanzate di commutazione e controllo."
+            },
+            "sensor": {
+              "title": "Sensore",
+              "description": "Soluzioni di sensori complete per il monitoraggio e il controllo industriale."
+            }
+          }
+        },
+        "solutions01": {
+          "title": "Applicazione di Sensori Intelligenti IO-Link nei Sistemi Idraulici",
+          "description": "Nei campi dell'automazione industriale e dei macchinari da costruzione, i sistemi idraulici sono ampiamente utilizzati in apparecchiature critiche grazie alla loro eccezionale efficienza nella conversione di energia e alla potente capacità di guida.",
+          "keyFeatures": ["Sensori di Pressione Serie SEH","Sensori di Temperatura Serie TBH","Sensori di Livello/Temperatura Serie LTH","Sensori di Flusso Serie FMV"],
+          "benefits": ["Configurazione remota dei parametri","Riconoscimento automatico del dispositivo","Monitoraggio in tempo reale e tracciamento dei dati","Cablaggio semplificato e alta scalabilità"]
+        },
+        "solutions02": {
+          "title": "Sensore di Livello di Tipo Diviso Risolve l'Interferenza di Schiuma e i Vincoli di Spazio nella Misurazione del Livello di Serbatoi per Lattiero",
+          "description": "Nell'industria di trasformazione lattiero-casearia, il monitoraggio accurato dei livelli di liquido nei serbatoi non è solo collegato all'efficienza di produzione ma impatta direttamente sulla qualità e la sicurezza del prodotto.",
+          "keyFeatures": ["Capacità di misurazione bidirezionale","Soluzione personalizzata di tipo diviso","Integrazione monitoraggio temperatura","Facile manutenzione e pulizia"],
+          "benefits": ["Evitare interferenze da schiuma","Risolvere vincoli di spazio","Ridurre complessità di installazione","Migliorare gestione dell'igiene"]
+        },
+        "solutions03": {
+          "title": "Sensori Intelligenti IO-Link nei Sistemi Idraulici delle Turbine Eoliche",
+          "description": "Nel contesto della transizione globale verso una struttura energetica verde e a basso carbonio, l'energia eolica, come parte importante dell'energia rinnovabile, sta vivendo una crescita continua e rapida.",
+          "keyFeatures": ["Sensori multidimensionali","Protocollo di comunicazione IO-Link","Grado di protezione IP67","Analisi della salute in tempo reale"],
+          "benefits": ["Garantire stabilità della turbina eolica","Migliorare velocità di risposta del sistema","Semplificare il cablaggio dell'armadio di controllo","Consentire manutenzione proattiva"]
+        },
+        "solutions04": {
+          "title": "Meccanismo Hot-Plug Abilita Cambio Rapido di Pallet Modulari nelle Linee di Saldatura dei Bus",
+          "description": "Con l'avanzamento continuo della manifattura intelligente e dell'Industria 4.0, le linee di saldatura della carrozzeria si stanno muovendo verso una nuova fase di maggiore automazione, maggiore flessibilità e informatizzazione più profonda.",
+          "keyFeatures": ["Cablaggio flessibile IO-Link","Meccanismo hot-swap","Sistema di pallet modulare","Diagnostica centralizzata"],
+          "benefits": ["Semplificare il cablaggio complesso","Abilitare cambio rapido dei moduli","Migliorare efficienza di distribuzione","Migliorare adattabilità del sistema"]
+        },
+        "solutions05": {
+          "title": "Opzioni Dual dei Sensori di Flusso a Vortice e Interruttori di Flusso per Affrontare le Sfide di Monitoraggio del Flusso",
+          "description": "Nel campo dell'automazione industriale, la misurazione precisa del flusso e il monitoraggio in tempo reale sono essenziali per garantire l'efficienza di produzione e la sicurezza delle apparecchiature.",
+          "keyFeatures": ["Sensori di flusso a vortice","Interruttori di flusso a dispersione termica","Misurazione ad alta precisione","Monitoraggio dello stato in tempo reale"],
+          "benefits": ["Misurazione precisa del flusso","Monitoraggio economico","Scenari di applicazione flessibili","Soluzioni di flusso complete"]
+        },
+        "solutions06": {
+          "title": "Moduli I/O Distribuiti SENTINEL nelle Linee di Produzione di Silicio Monocristallino Fotovoltaico",
+          "description": "Con la trasformazione globale della struttura energetica, l'industria fotovoltaica, come parte cruciale dell'energia pulita, sta sviluppandosi rapidamente.",
+          "keyFeatures": ["Moduli I/O Remoto Serie EL","Moduli I/O Remoto Serie CM","Alta flessibilità di installazione","Soluzioni convenienti"],
+          "benefits": ["Ridurre i costi di installazione","Migliorare stabilità del sistema","Abilitare raccolta di segnali ravvicinati","Supportare sviluppo industria fotovoltaica"]
+        }
+      }
+    },
+    "contact": {
+      "title": "Contatto",
+      "brand": "NOI",
+      "intro": "Attendiamo con interesse di collaborare con voi. Contattateci tramite i seguenti metodi e il nostro team professionale vi fornirà prodotti e soluzioni della massima qualità.",
+      "sendMessage": "Invia Messaggio",
+      "officeAddressTitle": "Indirizzo dell'Ufficio",
+      "tianjinHeadquarter": "Sede di Tianjin",
+      "tianjinAddress": "K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin",
+      "locationNavTitle": "Navigazione Posizione",
+      "contactInfo": {
+        "whatsapp": {
+          "title": "WhatsApp",
+          "content": "Scansiona il codice QR per aggiungere il servizio clienti",
+          "description": "Scansiona per aggiungere, supporto 24/7",
+          "qrNote": "Scansiona per aggiungere WhatsApp"
+        },
+        "email": {
+          "title": "Email",
+          "content": "export.sentinel@gmail.com",
+          "description": "Risponderemo entro 24 ore"
+        },
+        "address": {
+          "title": "Indirizzo",
+          "content": "Parco Tecnologico Xiqing, Tianjin",
+          "description": "Benvenuti a visita su appuntamento"
+        },
+        "hours": {
+          "title": "Orario di Lavoro",
+          "content": "Lun-Ven 9:00-18:00",
+          "description": "Servizio di guardia nei giorni festivi"
+        }
+      }
+    }
+  }
+  ,
+  "map": {
+    "subtitle": "Stazione Metro Zona High-tech"
+  }
+  ,
+  "footer": {
+    "floatingContact": "Contattaci",
+    "floatingTitle": "Contatto",
+    "cookie": {
+      "bannerText": "Questo sito utilizza cookie per migliorare la tua esperienza di navigazione e abiliteremo i cookie non essenziali solo con il tuo consenso.",
+      "privacyLinkText": "Informativa sulla privacy",
+      "acceptAll": "Accetta tutti i cookie",
+      "acceptNecessary": "Accetta solo i cookie necessari",
+      "settings": "Impostazioni Cookie"
+    },
+    "company": {
+      "tagline": "L'innovazione crea buoni prodotti, la concentrazione crea servizi migliori"
+    },
+    "quickLinks": {
+      "title": "Link Rapidi"
+    },
+    "products": {
+      "title": "Prodotti",
+      "thermalFlow": "Sensori di Flusso Termico"
+    },
+    "contact": {
+      "title": "Contatto",
+      "scanNote": "Scansiona per contattare"
+    },
+    "copyright": "© 2008 - {{year}} SENTINEL. Tutti i diritti riservati."
+  }
+}

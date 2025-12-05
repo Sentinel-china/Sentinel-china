@@ -5,8 +5,10 @@
 import { ArrowLeft, Cloud, Server, Shield, Zap, BarChart3, Users, Check, Phone, Mail, ArrowRight, Download, Play, Monitor, Database, Cpu, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useRef, useEffect } from 'react'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function CloudServiceDetail() {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
   const [currentSlide, setCurrentSlide] = useState(0)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -56,58 +58,58 @@ export default function CloudServiceDetail() {
   const features = [
     {
       icon: Server,
-      title: "Wide protocol support",
-      description: "Compatible with multiple protocols and adaptable to various systems."
+      title: t('pages.ioModule.features.wideProtocolSupport.title'),
+      description: t('pages.ioModule.features.wideProtocolSupport.description')
     },
     {
       icon: Shield,
-      title: "Flexible installation",
-      description: "On-site installation & Cabinet installation, suitable for different scenarios."
+      title: t('pages.ioModule.features.flexibleInstallation.title'),
+      description: t('pages.ioModule.features.flexibleInstallation.description')
     },
     {
       icon: Zap,
-      title: "Top reliability",
-      description: "High-quality, stable performance for industrial communication needs."
+      title: t('pages.ioModule.features.topReliability.title'),
+      description: t('pages.ioModule.features.topReliability.description')
     },
     {
       icon: BarChart3,
-      title: "Technical Update",
-      description: "Upgrades traditional point-to-point links, making industrial setups smarter."
+      title: t('pages.ioModule.features.technicalUpdate.title'),
+      description: t('pages.ioModule.features.technicalUpdate.description')
     }
   ]
 
   const productSpecs = [
-    { spec: "Protocol type", value: " | PROFINET | CC-Link IE Field Basic | EtherCAT | " },
-    { spec: "Protection Class", value: " | IP67 | IP20 | " },
-    { spec: "Signal type", value: " | input | output | input/output adaptive | input+output | Analog input | " },
-    { spec: "Digital inputs", value: " | PNP/NPN | NPN | PNP | " },
-    { spec: "Digital outputs", value: " | PNP | NPN | " },
-    { spec: "Number of input channels", value: " | 8 | 16 | 32 | " },
-    { spec: "Number of output channels", value: " | 4 | 8 | 16 | 32 | " }
+    { spec: t('pages.ioModule.specs.protocolType'), value: t('pages.ioModule.specs.protocolTypeValue') },
+    { spec: t('pages.ioModule.specs.protectionClass'), value: t('pages.ioModule.specs.protectionClassValue') },
+    { spec: t('pages.ioModule.specs.signalType'), value: t('pages.ioModule.specs.signalTypeValue') },
+    { spec: t('pages.ioModule.specs.digitalInputs'), value: t('pages.ioModule.specs.digitalInputsValue') },
+    { spec: t('pages.ioModule.specs.digitalOutputs'), value: t('pages.ioModule.specs.digitalOutputsValue') },
+    { spec: t('pages.ioModule.specs.inputChannels'), value: t('pages.ioModule.specs.inputChannelsValue') },
+    { spec: t('pages.ioModule.specs.outputChannels'), value: t('pages.ioModule.specs.outputChannelsValue') }
   ]
 
   const downloads = [
     {
-      title: "Sensors Overview",
-      description: "Technical parameters",
+      title: t('pages.ioModule.downloads.sensorsOverview.title'),
+      description: t('pages.ioModule.downloads.sensorsOverview.description'),
       image: "/fluid-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816087706.pdf"
     },
     {
-      title: "I/O Module Overview",
-      description: "Technical parameters",
+      title: t('pages.ioModule.downloads.ioModuleOverview.title'),
+      description: t('pages.ioModule.downloads.ioModuleOverview.description'),
       image: "/module-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/2025052816055141.pdf"
     },
     {
-      title: "IO-Link Overview",
-      description: "Technical parameters",
+      title: t('pages.ioModule.downloads.ioLinkOverview.title'),
+      description: t('pages.ioModule.downloads.ioLinkOverview.description'),
       image: "/IO-Link-download.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/5/20250528162236984.pdf"
     },
     {
-      title: "Relay Module Overview",
-      description: "Technical parameters",
+      title: t('pages.ioModule.downloads.relayModuleOverview.title'),
+      description: t('pages.ioModule.downloads.relayModuleOverview.description'),
       image: "/relay module.png",
       link: "https://www.sentinel-china.com/vancheerfile/files/2025/9/2025092816426200.pdf"
     }
@@ -115,27 +117,27 @@ export default function CloudServiceDetail() {
 
   const cases = [
     {
-      company: "IP67",
-      industry: "Communication Protocol:PROFINET,CC-Link IE Field Basic,EtherCAT",
-      challenge: "The IP67 series modules are particularly suitable for outdoor or harsh industrial environments, such as places with high humidity and a lot of dust. It supports the near - installation of sensors and actuators, reducing wiring costs and installation time.",
+      company: t('pages.ioModule.cases.ip67.company'),
+      industry: t('pages.ioModule.cases.ip67.industry'),
+      challenge: t('pages.ioModule.cases.ip67.challenge'),
       solution: "",
       result: "",
       image: "/iomodule1.jpg",
       link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
-      company: "IP20",
-      industry: "Communication Protocol:PROFINET,CC-Link IE Field Basic,EtherCAT",
-      challenge: "The IO modules of the IP20 series are specifically designed for high-density I/O integration environments and are suitable for relatively clean environments, such as indoor equipment cabinets. This series of modules integrates 32 I/O points and supports various flexible configurations.",
+      company: t('pages.ioModule.cases.ip20.company'),
+      industry: t('pages.ioModule.cases.ip20.industry'),
+      challenge: t('pages.ioModule.cases.ip20.challenge'),
       solution: "",
       result: "",
       image: "/iomodule2.jpg",
       link: "https://www.sentinel-china.com/eproduct/Iproduct_100000020774755.html"
     },
     {
-      company: "SAP",
-      industry: "Input and output adaptation",
-      challenge: "The IO Module SAP is an industrial - grade I/O module. It has an input - output adaptive mechanism, which can simplify the deployment process and enhance system consistency. It provides stable communication performance and a rigorous electrical protection strategy to ensure the reliable operation of the system.",
+      company: t('pages.ioModule.cases.sap.company'),
+      industry: t('pages.ioModule.cases.sap.industry'),
+      challenge: t('pages.ioModule.cases.sap.challenge'),
       solution: "",
       result: "",
       image: "/iomodule1.jpg",
@@ -145,37 +147,37 @@ export default function CloudServiceDetail() {
 
   const relatedProducts = [
     {
-      title: "Input/Output Adaptive Bus I/O Module",
+      title: t('pages.ioModule.relatedProducts.inputOutputAdaptive'),
       description: "",
       image: "http://image.sentinel-china.com/202508111442770.png",
       link: "/products/io-module01"
     },
     {
-      title: "IO Module on TBR Tire Conveyor Lines",
+      title: t('pages.ioModule.relatedProducts.ioModuleTbr'),
       description: "",
       image: "http://image.sentinel-china.com/202508111459837.png",
       link: "/products/io-module02"
     },
     {
-      title: "From Fieldbus to Industrial Ethernet",
+      title: t('pages.ioModule.relatedProducts.fromFieldbusToEthernet'),
       description: "",
       image: "http://image.sentinel-china.com/202508111511234.png",
       link: "/products/io-module03"
     },
     {
-      title: "Pharmaceutical Packaging Industry",
+      title: t('pages.ioModule.relatedProducts.pharmaceuticalPackaging'),
       description: "",
       image: "http://image.sentinel-china.com/202508111524012.png",
       link: "/products/io-module04"
     },
     {
-      title: "Empower the Powder Metallurgy Industry",
+      title: t('pages.ioModule.relatedProducts.powderMetallurgy'),
       description: "",
       image: "http://image.sentinel-china.com/202508111528078.png",
       link: "/products/io-module05"
     },
     {
-      title: "IO-Link Master Modules with Modbus-TCP Protocol",
+      title: t('pages.ioModule.relatedProducts.ioLinkModbus'),
       description: "",
       image: "http://image.sentinel-china.com/202508151007096.png",
       link: "/products/io-module06"
@@ -219,14 +221,14 @@ export default function CloudServiceDetail() {
                 </div>
                 <div>
                   <h1 className="text-4xl lg:text-5xl font-bold mb-2">
-                    I/O<span className="text-yellow-400"> Modules</span>
+                    {t('pages.ioModule.banner.title')}<span className="text-yellow-400"> {t('pages.ioModule.banner.titleHighlight')}</span>
                   </h1>
                   <p className="text-gray-400"></p>
                 </div>
               </div>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
-               As a professional Fieldbus module manufacturer, SENTINEL provides factory automation with Fieldbus modules that support various protocols such as Profibus-DP, Profinet, ModbusTCP, EtherCAT, CC-LINK, CC-LINK IE Field Basic.
+                {t('pages.ioModule.banner.description')}
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -236,13 +238,13 @@ export default function CloudServiceDetail() {
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                 >
-                  More
+                  {t('pages.ioModule.banner.moreButton')}
                 </a>
                 <Link
                   to="/contact"
                   className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors"
 >
-                  Contact us
+                  {t('pages.ioModule.banner.contactButton')}
                 </Link>
               </div>
             </div>
@@ -255,7 +257,7 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Core<span className="text-yellow-400"> Advantages</span>
+              {t('pages.ioModule.featuresSection.title')}<span className="text-yellow-400"> {t('pages.ioModule.featuresSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -288,7 +290,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Products
+                {t('pages.ioModule.tabs.products')}
               </button>
               <button
                 onClick={() => setActiveTab('specs')}
@@ -298,7 +300,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Parameters
+                {t('pages.ioModule.tabs.parameters')}
               </button>
               <button
                 onClick={() => setActiveTab('downloads')}
@@ -308,7 +310,7 @@ export default function CloudServiceDetail() {
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                Downloads
+                {t('pages.ioModule.tabs.downloads')}
               </button>
             </div>
           </div>
@@ -319,26 +321,26 @@ export default function CloudServiceDetail() {
             {activeTab === 'description' && (
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+                  <h3 className="text-2xl font-bold mb-6">{t('pages.ioModule.description.introduction')}</h3>
                   <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify mb-8">
                     <p>
-                      The products are mainly divided into two categories, one is a high protection level (IP67) series that can be used for on-site installation; the other is a compact single independent product series that can be installed in the cabinet.
+                      {t('pages.ioModule.description.paragraph1')}
                     </p>
                     <p>
-                      As an upgrade to the traditional point-to-point connection, the Fieldbus module is now widely used in industrial fields. 
+                      {t('pages.ioModule.description.paragraph2')}
                     </p>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                       <div className="flex items-center">
                         <Monitor className="text-yellow-400 mr-2" size={20} />
-                        <span>PROFINET</span>
+                        <span>{t('pages.ioModule.description.profinet')}</span>
                       </div>
                       <div className="flex items-center">
                         <Database className="text-yellow-400 mr-2" size={20} />
-                        <span>CC-Link IE Field Basic</span>
+                        <span>{t('pages.ioModule.description.ccLink')}</span>
                       </div>
                       <div className="flex items-center">
                         <Cpu className="text-yellow-400 mr-2" size={20} />
-                        <span>EtherCAT</span>
+                        <span>{t('pages.ioModule.description.ethercat')}</span>
                       </div>
                     </div>
                   </div>
@@ -355,7 +357,7 @@ export default function CloudServiceDetail() {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-400 text-center mt-4">IO Module Technology Overview</p>
+                  <p className="text-gray-400 text-center mt-4">{t('pages.ioModule.description.videoDescription')}</p>
                 </div>
               </div>
             )}
@@ -363,16 +365,16 @@ export default function CloudServiceDetail() {
             {/* Product Specs Tab */}
             {activeTab === 'specs' && (
               <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-8 text-center">Product Technical Specifications</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.ioModule.specsSection.title')}</h3>
                 <div className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-800">
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          Project
+                          {t('pages.ioModule.specsSection.table.project')}
                         </th>
                         <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                          Parameter
+                          {t('pages.ioModule.specsSection.table.parameter')}
                         </th>
                       </tr>
                     </thead>
@@ -396,7 +398,7 @@ export default function CloudServiceDetail() {
             {/* Downloads Tab */}
             {activeTab === 'downloads' && (
               <div>
-                <h3 className="text-2xl font-bold mb-8 text-center">Resource Download</h3>
+                <h3 className="text-2xl font-bold mb-8 text-center">{t('pages.ioModule.downloadsSection.title')}</h3>
                 <div className="grid md:grid-cols-4 gap-8">
                   {downloads.map((item, index) => (
                     <div key={index} className="bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden hover:border-yellow-400/50 transition-all duration-300 group">
@@ -420,7 +422,7 @@ export default function CloudServiceDetail() {
                           className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors w-full justify-center group-hover:shadow-lg"
                         >
                           <Download size={20} className="mr-2" />
-                          Download
+                          {t('pages.ioModule.downloadsSection.downloadButton')}
                         </a>
                       </div>
                     </div>
@@ -437,7 +439,7 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Product<span className="text-yellow-400"> Type</span>
+              {t('pages.ioModule.casesSection.title')}<span className="text-yellow-400"> {t('pages.ioModule.casesSection.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300"></p>
           </div>
@@ -470,7 +472,7 @@ export default function CloudServiceDetail() {
                 
                 <div className="p-6">
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-yellow-400 mb-2">Introduction</h4>
+                      <h4 className="text-sm font-semibold text-yellow-400 mb-2">{t('pages.ioModule.casesSection.introduction')}</h4>
                       <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">{case_.challenge}</p> 
                     </div>
                   <div className="mb-4">
@@ -494,7 +496,7 @@ export default function CloudServiceDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Related<span className="text-yellow-400"> Articles</span>
+              {t('pages.ioModule.relatedSection.title')}<span className="text-yellow-400"> {t('pages.ioModule.relatedSection.titleHighlight')}</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300"></p>
           </div>
@@ -579,17 +581,17 @@ export default function CloudServiceDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/20 p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Get your <span className="text-yellow-400">preferential </span>price
+              {t('pages.ioModule.cta.title')}<span className="text-yellow-400"> {t('pages.ioModule.cta.titleHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Our professional team will provide you with personalized solutions.
+              {t('pages.ioModule.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
              
               <div className="flex items-center text-gray-300">
                 <Mail size={20} className="mr-2 text-yellow-400" />
-                export.sentinel@gmail.com
+                {t('pages.ioModule.cta.email')}
               </div>
             </div>
             
@@ -598,7 +600,7 @@ export default function CloudServiceDetail() {
                 立即咨询
               </button> */}
               <Link to="/contact#send-message" className="inline-flex items-center border border-yellow-400 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400/10 transition-colors">
-                Contact us
+                {t('pages.ioModule.cta.contactButton')}
                 <ArrowRight size={20} className="ml-2" />
               </Link>
             </div>

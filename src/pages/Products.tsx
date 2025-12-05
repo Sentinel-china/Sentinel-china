@@ -4,46 +4,49 @@
  */
 import { Cog,  Droplet , PlugZap , MonitorCog ,Network, PackageCheck, ShieldUser, LaptopMinimalCheck } from 'lucide-react'
 import { Link } from 'react-router'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function ProductsPage() {
+  const { t } = useLanguage()
+
   const products = [
     {
       icon: Droplet,
-      title: "SENSOR",
-      description: "Professional liquid monitoring sensor.",
-      features: ["Temperature Sensor", "Pressure Sensor", "Thermal Flow Sensor", "Vortex Flow Sensor"],
+      title: t('nav.sensors'),
+      description: t('pages.products.sensorDescription'),
+      features: [t('pages.products.features.temperature'), t('pages.products.features.pressure'), t('pages.products.features.thermalFlow'), t('pages.products.features.vortex')],
       image: "/banner1.png",
       link: "/products/sensor"
     },
     {
       icon: Network,
-      title: "I/O Module",
-      description: "Equipment is installed nearby to reduce wiring costs",
+      title: t('pages.products.ioModuleTitle'),
+      description: t('pages.products.ioModuleDescription'),
       features: ["PROFINET", "CC-Link IE Field Basic", "EtherCAT" ,"Adaptive input/output"],
       image: "/banner3.png",
       link: "/products/io-module"
     },
     {
       icon: MonitorCog ,
-      title: "IO-Link",
-      description: "IO-Link enables communication between sensors and PLCs.",
-      features: ["IO-Link Master", "IO-Link Hubs", "IO-Link Converter"],
+      title: t('nav.ioLink'),
+      description: t('pages.products.ioLinkDescription'),
+      features: [t('pages.products.features.ioLinkMaster'), t('pages.products.features.ioLinkHubs'), t('pages.products.features.ioLinkConverter')],
       image: "/banner2.png",
       link: "/products/io-link"
     },
     {
       icon: PlugZap,
-      title: "CONNECTIVITY",
-      // description: "The connectivity system is an indispensable product for connecting field devices and control devices.",
+      title: t('pages.products.connectivityTitle'),
+      // description: t('pages.products.connectivityDescription'),
       features: ["7/8\" POWER CABLE", "JUNCTION BOXES", "INDUSTRIAL ETHERNET CABLE", "CORDSETS"],
       image: "/banner4.png",
       link: "/products/connectivity"
     },
     {
       icon: Network,
-      title: "IO-Link Relay Module",
-      description: "Innovative IO-Link devices",
-      features: ["IO-Link Expandable Relay Module", " Relay Module Expansion Sub-Module"],
+      title: t('pages.products.relayModuleTitle'),
+      description: t('pages.products.relayModuleDescription'),
+      features: [t('pages.products.features.relayExpandable'), t('pages.products.features.relaySubModule')],
       image: "/relay module.png",
       link: "/products/relay-module"
     }
@@ -56,10 +59,10 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             
-            <span className="text-yellow-400">PRODUCTS</span>
+            <span className="text-yellow-400">{t('pages.products.title')}</span>
           </h1>
                       <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
-           We provide a full range of technical products and professional services to help factory automation transformation and upgrade, improve business efficiency and competitive advantage.
+           {t('pages.products.subtitle')}
           </p>
         </div>
       </section>
@@ -88,7 +91,7 @@ export default function ProductsPage() {
                         {product.description}
                       </p>
                       <div className="text-sm text-yellow-400">
-                        <span>Classification:</span>
+                        <span>{t('pages.products.classification')}</span>
                         <ul className="pl-4 mt-2 space-y-1 list-disc">
                           {product.features.map((feature, featureIndex) => (
                             <li key={featureIndex}>{feature}</li>
@@ -109,11 +112,11 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Service
-              <span className="text-yellow-400"> Process</span>
+              {t('pages.products.serviceTitle')}
+              <span className="text-yellow-400"> {t('pages.products.serviceHighlight')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Standardized service processes to ensure product quality and delivery efficiency
+              {t('pages.products.serviceSubtitle')}
             </p>
           </div>
 
@@ -123,32 +126,32 @@ export default function ProductsPage() {
               
                 <LaptopMinimalCheck className="text-2xl font-bold text-yellow-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Needs analysis</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Deeply understand customer needs and formulate detailed product plans</p>
+              <h3 className="text-lg font-semibold mb-2">{t('pages.products.needsAnalysis')}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">{t('pages.products.needsAnalysisDesc')}</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
                 <Cog className="text-2xl font-bold text-yellow-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Selection & customization</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Match products and customize solutions</p>
+              <h3 className="text-lg font-semibold mb-2">{t('pages.products.selectionCustomization')}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">{t('pages.products.selectionCustomizationDesc')}</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
               <PackageCheck className="text-2xl font-bold text-yellow-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Delivery</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Shipped on schedule</p>
+              <h3 className="text-lg font-semibold mb-2">{t('pages.products.delivery')}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">{t('pages.products.deliveryDesc')}</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-yellow-400">
               <ShieldUser className="text-2xl font-bold text-yellow-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">After-sales</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Provide excellent after-sales service</p>
+              <h3 className="text-lg font-semibold mb-2">{t('pages.products.afterSales')}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">{t('pages.products.afterSalesDesc')}</p>
             </div>
           </div>
         </div>

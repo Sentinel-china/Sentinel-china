@@ -1,0 +1,1580 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "sensors": "传感器",
+    "levelSensors": "液位传感器",
+    "flowSensors": "流量传感器",
+    "pressureSensors": "压力传感器",
+    "temperatureSensors": "温度传感器",
+    "inductiveSensors": "电感传感器",
+    "vortexFlowSensors": "涡街流量传感器",
+    "ioLink": "IO-Link",
+    "connectivity": "连接",
+    "relayModule": "继电器模块",
+    "ioModule": "IO模块",
+    "solutions": "解决方案",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "common": {
+    "language": "语言",
+    "theme": "主题",
+    "privacy": "隐私政策"
+  }
+  ,
+  "pages": {
+    "home": {
+      "heroTitleLine1": "工业传感器",
+      "heroTitleLine2": "IO-Link",
+      "heroTitleLine3": "I/O 模块",
+      "heroSubtitle": "专业技术团队与前沿解决方案，为企业创造更大商业价值，引领行业数字化发展新趋势。",
+      "contactNow": "立即联系",
+      "moreProducts": "更多产品",
+      "whyChooseTitle": "为什么选择",
+      "whyChooseBrand": "SENTINEL",
+      "whyChooseSubtitle": "创新造就好产品，专注造就更好服务",
+      "featureAbout": "关于我们",
+      "featureApplications": "工业应用",
+      "featureTeam": "专业团队",
+      "statsWarranty": "保修",
+      "statsService": "客户服务",
+      "statsSatisfaction": "客户满意度",
+      "statsCities": "覆盖城市",
+      "ctaTitle": "联系我们的专业团队",
+      "ctaHighlight": "获取定制化解决方案",
+      "ctaText": "我们致力于为您提供最优质的服务与支持。",
+      "ctaButton": "免费咨询",
+      "featureAboutContent": "SENTINEL 提供工业以太网分布式 I/O 模块与 IO-Link 产品、位置传感器、过程传感器及连接配件等。",
+      "featureApplicationsContent": "SENTINEL 拥有广泛的产品线与专业研发团队，保证为客户提供高质量的产品与服务。这些产品已广泛应用于汽车零部件装配、机械加工、冶金等多个工业现场。",
+      "featureTeamContent": "作为一家研发与制造型企业，SENTINEL 坚持研发与创新的价值理念并拥有可靠的市场应用案例、完善的生产能力和高效的物流运输，为您提供可靠且可持续的服务。"
+    },
+    "products": {
+      "title": "产品",
+      "subtitle": "我们提供全方位的技术产品和专业服务，帮助工厂自动化转型升级，提高业务效率和竞争优势。",
+      "serviceTitle": "服务",
+      "serviceHighlight": "流程",
+      "serviceSubtitle": "标准化的服务流程保证产品质量和交付效率",
+      "needsAnalysis": "需求分析",
+      "needsAnalysisDesc": "深入理解客户需求，制定详细的产品方案",
+      "selectionCustomization": "选型与定制",
+      "selectionCustomizationDesc": "产品匹配和定制解决方案",
+      "delivery": "交付",
+      "deliveryDesc": "按时发货",
+      "afterSales": "售后",
+      "afterSalesDesc": "提供优秀的售后服务",
+      "classification": "分类："
+    ,
+      "sensorDescription": "专业液位/流体监测传感器。",
+      "ioModuleTitle": "I/O 模块",
+      "ioModuleDescription": "设备就近安装以减少布线成本",
+      "ioLinkDescription": "IO-Link 实现传感器与 PLC 之间的通信。",
+      "connectivityTitle": "连接",
+      "relayModuleTitle": "IO-Link 继电器模块",
+      "relayModuleDescription": "创新的 IO-Link 设备",
+      "features": {
+        "temperature": "温度传感器",
+        "pressure": "压力传感器",
+        "thermalFlow": "热式流量传感器",
+        "vortex": "涡街流量传感器",
+        "ioLinkMaster": "IO-Link 主站",
+        "ioLinkHubs": "IO-Link 端口集线器",
+        "ioLinkConverter": "IO-Link 转换器",
+        "relayExpandable": "IO-Link 可扩展继电器模块",
+        "relaySubModule": "继电器模块扩展子模块"
+      }
+    },
+    "about": {
+      "title": "关于",
+      "brand": "SENTINEL",
+      "intro": "天津 SENTINEL 电子有限公司是一家集研发、生产、销售于一体的创新型科技企业。",
+      "overviewTitle": "专业品质，值得信赖",
+      "overviewP1": "SENTINEL 提供工业以太网分布式 I/O 模块与 IO-Link 产品、位置传感器、过程传感器及连接配件等。",
+      "overviewP2": "作为一家研发与制造型企业，SENTINEL 坚持研发与创新的价值理念，拥有可靠的市场应用案例、完善的生产能力和高效的物流运输，我们的团队具有真诚的合作意识以确保高质量，为您提供可靠且可持续的服务。",
+      "missionTitle": "我们的使命",
+      "missionText": "通过持续研发推动工业传感器与 IO-LINK 模块创新，提供精确、可靠的解决方案以促进自动化、效率与可持续工业增长。",
+      "visionTitle": "我们的愿景",
+      "visionText": "成为工业传感与 IO-LINK 技术的全球标杆。以创新解决方案连接工业生态系统，打造更智能、互联的制造世界。",
+      "certTitle": "我们的认证",
+      "certSubtitle": "专业资质与成就",
+      "clickToZoom": "点击放大",
+      "yearsExperiences": "年行业经验",
+      "customers": "客户数量",
+      "solutions": "解决方案",
+      "developmentTitle": "发展",
+      "developmentBrand": "历程",
+      "developmentSubtitle": "见证我们的成长之路",
+      "timeline": {
+        "2008": {
+          "title": "2008 公司成立",
+          "content": "天津 SENTINEL 于2008年在天津高新区成立，公司最初专注于传感器和现场总线设备的研发与制造，以满足工业应用需求。"
+        },
+        "2010": {
+          "title": "2010 产品研发与扩展",
+          "content": "2010年公司成功开发并量产电感式接近开关，巩固了在工业传感领域的地位。2011年扩建生产设施以支持未来业务增长。"
+        },
+        "2013": {
+          "title": "2013 传感器创新",
+          "content": "2013年公司开发并量产流量、温度和压力传感器，扩展了产品线。"
+        },
+        "2015": {
+          "title": "2015 工厂智能化提升",
+          "content": "2015年公司进一步进入现场总线与工业以太网领域，推出远程I/O模块，显著提升了工厂自动化的智能化水平。"
+        },
+        "2019": {
+          "title": "2019 IO-Link 技术突破",
+          "content": "2019年公司在 IO-Link 技术上取得重大突破，成功推出 IO-Link Master 与 Device 产品，实现了从现场传感器到中央控制系统的标准化数据传输与数字化管理。"
+        },
+        "2023": {
+          "title": "2023 未来愿景",
+          "content": "2023年公司继续强化 IO-Link 技术，推出具备 IO-Link 功能的传感器产品，提高工业自动化与设备管理效率。未来公司将持续在传感与 IO 技术上创新，推动工业4.0 与智能制造发展。"
+        },
+        "2025": {
+          "title": "智能新时代",
+          "content": "在这个快速变化的时代，工业自动化与人工智能携手并进，推动制造业进入新的智能时代。我们的使命是将智能解决方案带到每一台机器和生产线，将工厂从机械操作变成能够实时调整、优化与创新的智能大脑。"
+        }
+      }
+    },
+    "solutions": {
+      "title": "行业",
+      "subtitle": "针对不同行业的特性与需求，我们提供定制化技术解决方案，帮助各行业实现数字化转型与业务创新。",
+      "serviceProcessTitle": "服务",
+      "communication": "沟通交流",
+      "communicationDesc": "通过深入沟通和研究理解客户需求与行业特性",
+      "productSelection": "产品选型",
+      "productSelectionDesc": "根据客户需求和行业特性，提供定制化产品选型和解决方案设计",
+      "delivery": "按时交付",
+      "deliveryDesc": "确保产品按时交付，提供技术支持确保项目顺利进行",
+      "afterSales": "售后服务",
+      "afterSalesDesc": "提供全面的售后服务，包括技术支持、产品维护与升级",
+      "coreFeatures": "核心特性",
+      "coreValue": "核心价值",
+      "list": {
+        "solutions01": {
+          "title": "IO-Link 智能传感器在液压系统中的应用",
+          "description": "在工业自动化与工程机械领域，液压系统凭借其优异的能量转换效率与强大的驱动能力，广泛应用于注塑机、液压机、起重设备和工程车辆等关键设备中。",
+          "keyFeatures": ["SEH 系列压力传感器","TBH 系列温度传感器","LTH 系列液位/温度传感器","FMV 系列流量传感器"],
+          "benefits": ["远程参数设置","自动设备识别","实时监控与数据跟踪","布线简化且高可扩展性"]
+        },
+        "solutions02": {
+          "title": "分体式液位传感器解决乳制品罐液位测量的泡沫干扰与空间受限问题",
+          "description": "在乳制品加工行业中，罐体液位的准确监测不仅关系到生产效率，也直接影响产品质量与安全。",
+          "keyFeatures": ["双向测量能力","分体式定制方案","温度监测集成","便于维护与清洁"],
+          "benefits": ["避免泡沫干扰","解决空间受限","降低安装复杂性","提升卫生管理"]
+        },
+        "solutions03": {
+          "title": "风力发电液压系统中的 IO-Link 智能传感器",
+          "description": "在全球向绿色低碳能源结构转型的背景下，风电作为可再生能源的重要组成部分，正在持续快速增长。",
+          "keyFeatures": ["多维传感器","IO-Link 通信协议","IP67 防护等级","实时健康分析"],
+          "benefits": ["保证风机稳定性","提升系统响应速度","简化控制柜布线","实现主动维护"]
+        },
+        "solutions04": {
+          "title": "热插拔机制实现公交焊接线中模块化托盘的快速切换",
+          "description": "随着智能制造与工业4.0的不断推进，车体焊接线迈向更高的自动化、更强的柔性与更深的信息化阶段。",
+          "keyFeatures": ["IO-Link 灵活布线","热插拔机制","模块化托盘系统","集中诊断"],
+          "benefits": ["简化复杂布线","实现快速模块切换","提升部署效率","增强系统适应性"]
+        },
+        "solutions05": {
+          "title": "涡街流量计与热式流量开关双重选择以应对流量监测挑战",
+          "description": "在工业自动化领域，精确的流量测量与实时监控对于保证生产效率与设备安全至关重要。",
+          "keyFeatures": ["涡街流量传感器","热式扩散流量开关","高精度测量","实时状态监测"],
+          "benefits": ["精确流量测量","性价比高的监控方案","灵活的应用场景","全面的流量解决方案"]
+        },
+        "solutions06": {
+          "title": "SENTINEL 分布式 I/O 模块在光伏单晶硅生产线中的应用",
+          "description": "随着全球能源结构转型，光伏行业作为清洁能源的重要组成部分正在快速发展。",
+          "keyFeatures": ["EL 系列远程 I/O 模块","CM 系列远程 I/O 模块","高安装灵活性","性价比高的解决方案"],
+          "benefits": ["降低安装成本","提升系统稳定性","实现贴近信号采集","支持光伏行业发展"]
+        }
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "brand": "我们",
+      "intro": "我们期待与您合作。请通过以下方式联系我们，我们的专业团队将为您提供高品质的产品与解决方案。",
+      "sendMessage": "发送信息",
+      "officeAddressTitle": "办公地址",
+      "tianjinHeadquarter": "天津总部",
+      "tianjinAddress": "天津市海泰开发区海泰开发六路6号，海泰绿色产业基地 K2-5-303",
+      "locationNavTitle": "位置导航",
+      "contactInfo": {
+        "whatsapp": {
+          "title": "WhatsApp",
+          "content": "扫码添加客服",
+          "description": "扫码添加，24/7 在线支持",
+          "qrNote": "扫码添加 WhatsApp"
+        },
+        "email": {
+          "title": "邮箱",
+          "content": "export.sentinel@gmail.com",
+          "description": "24小时内回复"
+        },
+        "address": {
+          "title": "地址",
+          "content": "天津西青科技园",
+          "description": "欢迎预约参观"
+        },
+        "hours": {
+          "title": "工作时间",
+          "content": "周一至周五 9:00-18:00",
+          "description": "节假日值班服务"
+        }
+      }
+    },
+    "sensor": {
+      "banner": {
+        "title": "工业",
+        "titleHighlight": "传感器",
+        "subtitle": "工业传感器",
+        "description": "作为检测装置，传感器能够感受到被测量的信息，并能将感受到的信息按一定规律变换成为电信号或其他所需形式的信息输出，以满足信息的传输、处理、存储、显示、记录和控制等要求。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "productsSection": {
+        "title": "传感器",
+        "titleHighlight": "产品",
+        "subtitle": "专业的工业传感器解决方案，为您的自动化系统提供可靠的数据采集"
+      },
+      "products": {
+        "temperature": {
+          "title": "温度传感器",
+          "description": "高精度工业温度监测"
+        },
+        "thermalFlow": {
+          "title": "热式流量传感器",
+          "description": "集流量和温度检测于一体"
+        },
+        "vortex": {
+          "title": "涡街流量传感器",
+          "description": "可靠的液体和气体流量测量"
+        },
+        "pressure": {
+          "title": "压力传感器",
+          "description": "精确的压力传感，适用于自动化系统"
+        },
+        "liquidLevel": {
+          "title": "液位传感器",
+          "description": "安全准确的流体液位检测"
+        },
+        "inductive": {
+          "title": "电感式接近传感器",
+          "description": "无需物理接触即可检测金属物体"
+        }
+      }
+    },
+    "inductiveProximitySensor": {
+      "banner": {
+        "title": "电感式接近",
+        "titleHighlight": "传感器",
+        "description": "电感式接近开关是一种检测元件，通过不同的物理原理，对铁磁性金属物体进行非接触式感应，从而检测被检测物体是否到达传感器的有效感应范围，并输出某种形式的信号。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "multipleSpecs": {
+          "title": "多种规格",
+          "description": "提供多种形状和尺寸，满足多样化工况需求。"
+        },
+        "economical": {
+          "title": "经济实惠",
+          "description": "成本相对较低的优势，在满足需求的同时降低整体投资。"
+        },
+        "nonContact": {
+          "title": "非接触感应",
+          "description": "无需直接接触即可判断物体的状态。"
+        },
+        "stableSignal": {
+          "title": "稳定信号输出",
+          "description": "当检测到物体状态变化时，可以输出特定形式的信号。"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "SENTINEL 可以提供各种形状和尺寸的电感式接近开关，以满足客户的多样化需求。",
+        "paragraph2": "这种传感器成本相对较低，常见的机械设备大多由金属材料制成，因此广泛应用于设备制造领域，如检测距离、检测结构到位、检测物体存在等。",
+        "videoTitle": "电感式接近传感器技术演示",
+        "videoDescription": "电感式接近传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "constructionSize": "结构尺寸",
+        "mountingConditions": "安装条件",
+        "ratedSwitchingDistance": "额定开关距离",
+        "outputFunction": "输出功能",
+        "electricalConnection": "电气连接"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概览",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概览",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概览",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概览",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "m8Series": {
+          "company": "M8 系列",
+          "industry": "接近传感器",
+          "challenge": "M8 X 1 圆柱螺纹设计。配备 M12 x 1 连接器，确保可靠的电气连接。具有 IP67 防护等级。内置短路保护功能。"
+        },
+        "m12Series": {
+          "company": "M12 系列",
+          "industry": "接近传感器",
+          "challenge": "M12 X 1 圆柱螺纹设计。支持两种安装方式：齐平式和非齐平式。包括多种输出模式，如 PNP 常开、PNP 常闭、NPN 常开和 NPN 常闭。"
+        },
+        "m30Series": {
+          "company": "M30 系列",
+          "industry": "接近传感器",
+          "challenge": "M30 X 1.5 圆柱螺纹设计便于安装和固定。采用镀铬铜材料，具有良好的耐腐蚀性和导电性。内置反极性保护功能。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "outputTypeConverters": "输出型 IO-Link 转换器",
+        "digitalSignals": "数字信号之间的差异",
+        "oneToTwoConnector": "一对二现场组装连接器",
+        "chinesePreferred": "中国首选品质",
+        "monocrystallineSilicon": "单晶硅生产线",
+        "beerIndustry": "IO-Link 传感器赋能啤酒行业"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们"
+      }
+    },
+    "ioLink": {
+      "banner": {
+        "title": "IO-",
+        "titleHighlight": "Link",
+        "description": "作为积极推广 IO-LINK 的自动化制造商，SENTINEL 提供支持多种协议的 IO-LINK 主站模块以及各种 IO-LINK 从站设备。从传感器到控制器，为客户带来可靠且低成本的传输方式，轻松实现更低成本和更高效率。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "standardized": {
+          "title": "标准化与兼容",
+          "description": "无需特殊电缆，可与现有设置配合使用"
+        },
+        "costEffective": {
+          "title": "经济高效的升级",
+          "description": "演进现有技术，无需系统更换，降低复杂性"
+        },
+        "ecosystem": {
+          "title": "全面的生态系统",
+          "description": "多协议主站 + 多样化从站，全链路覆盖"
+        },
+        "efficient": {
+          "title": "高效可靠",
+          "description": "低成本传输，提高效率的同时降低成本"
+        }
+      },
+      "tabs": {
+        "products": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "IO-Link 是世界上第一个用于与传感器和执行器通信的标准化 IO 技术。",
+        "paragraph2": "IO-Link 不是现场总线，而是现有传感器和执行器连接技术的进一步发展。",
+        "master": "IO-Link 主站",
+        "hubs": "IO-Link 集线器",
+        "converter": "IO-Link 转换器",
+        "videoTitle": "IO-Link 技术演示",
+        "videoDescription": "IO-Link 技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "productType": "产品类型",
+        "networkProtocol": "网络协议",
+        "powerInterface": "电源接口",
+        "portType": "IO-Link 端口类型",
+        "specification": "IO-Link 规格",
+        "numberOfPorts": "端口数量",
+        "protectionClass": "防护等级"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概览",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概览",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概览",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概览",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "master": {
+          "company": "主站",
+          "industry": "IO-Link",
+          "challenge": "IO-Link 是兼容总线协议的 IO 系统与现场设备（包括传感器和执行器）之间的点对点通信协议。将接口信号传输与电缆供电技术相结合，不仅可以使设备智能化，还可以节省电缆、减少干扰并提高系统的可靠性和可预测性。"
+        },
+        "hubs": {
+          "company": "集线器",
+          "industry": "IO-Link",
+          "challenge": "作为独立于现场总线的通信接口，支持 IO-Link 协议的传感器、执行器和 I/O 是 IO-Link 从站设备，大大提高了设备的可靠性。"
+        },
+        "converter": {
+          "company": "转换器",
+          "industry": "IO-Link",
+          "challenge": "IO-Link 转换器 (CIOL-2AI-SC) 设计用于将两路 4-20mA/0-20mA 模拟信号转换为 IO-Link 通信格式。它支持 IO-Link V1.1 协议，具有 M12 A 编码 4 针 Class A 接口。兼容 2 线、3 线和 4 线传感器连接，具有状态 LED 指示灯，是工业信号采集应用的理想选择。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "digitalSignals": "数字信号之间的差异",
+        "whatIsIOLink": "什么是 IO-Link",
+        "devicesSeries": "IO-Link 设备系列总结",
+        "rtdModule": "IO-Link 远程 RTD 模块",
+        "substationModules": "新型 IO-Link 子站模块",
+        "pressureSensors": "探索 SENTINEL 在 SPS 2025"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们"
+      }
+    },
+    "thermalFlowSensor": {
+      "banner": {
+        "title": "热式流量",
+        "titleHighlight": "传感器",
+        "description": "在工厂和过程自动化领域，需要监测液体介质流量的关键偏差。常用于监测冷却液等液体的循环、泵的空转等。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "thermalConductivity": {
+          "title": "热导原理",
+          "description": "精确监测管道中的水等液体"
+        },
+        "insertionMeasurement": {
+          "title": "插入式测量",
+          "description": "开关点设置简单，安装快捷"
+        },
+        "solidDurable": {
+          "title": "坚固耐用",
+          "description": "高强度塑料或不锈钢外壳"
+        },
+        "multipleInterfaceSizes": {
+          "title": "多种接口尺寸",
+          "description": "满足工厂和过程自动化中液体流量监测的需求"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "基于热导原理，SENTINEL 的流量传感器可以可靠地监测流量限值，同时监测和报警介质的温度。",
+        "paragraph2": "插入式测量，可靠监测管道中的水和油等液体。",
+        "videoTitle": "热式流量传感器技术演示",
+        "videoDescription": "热式流量传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "productsType": "产品类型",
+        "processConnection": "过程连接",
+        "outputFunction": "输出功能",
+        "electricalConnection": "电气连接",
+        "mountingConditions": "安装条件",
+        "housingMaterial": "外壳材料",
+        "probeMaterial": "探头材料",
+        "probeCoating": "探头涂层",
+        "specialFunction": "特殊功能",
+        "communicationInterface": "通信接口"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概览",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概览",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概览",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概览",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "productFeatures": "产品特性",
+        "viewDetails": "查看详情"
+      },
+      "cases": {
+        "plsx": {
+          "company": "PLSX",
+          "industry": "流量传感器",
+          "challenge": "基于热导原理监测液体介质流量。PBT 外壳，304 不锈钢探头。灵活的开关点选择。电位器调节。M12x1 连接器。LED 条指示。"
+        },
+        "plsu": {
+          "company": "PLSU",
+          "industry": "流量传感器",
+          "challenge": "基于热导原理。全不锈钢外壳。测量介质为液体。M18x1.5 内螺纹。3 线 PNP 常开输出。通过电位器可调开关点。M12 连接器出口。"
+        },
+        "plsn": {
+          "company": "PLSN",
+          "industry": "流量传感器",
+          "challenge": "液体流量监测。内置温度报警。304 不锈钢外壳和探头。数值由数码管显示。防护等级 IP67。可选蓝牙功能。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "plsuSeries": "PLSU 系列流量传感器",
+        "whatIsThermalConductivity": "什么是热导式流量传感器",
+        "powderMetallurgy": "赋能粉末冶金行业",
+        "onePieceTemperatureFlowmeter": "SENTINEL 一体式温度流量计",
+        "ioLinkTemperatureTransmitter": "IO-Link 温度变送器",
+        "beerIndustry": "IO-Link 传感器赋能啤酒行业"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们"
+      }
+    },
+    "temperatureSensor": {
+      "banner": {
+        "title": "温度",
+        "titleHighlight": "传感器",
+        "subtitle": "温度传感器",
+        "description": "SENTINEL 温度传感器和变送器是将物理温度转换为电信号或其他类型输出信号的温度检测设备，以满足工业自动化系统的监测需求。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "highPrecision": {
+          "title": "高精度和稳定性",
+          "description": "基于 Pt1000 技术，精度可达 ±1℃。"
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "通过 IO-Link 接口实现远程配置和实时监控"
+        },
+        "customization": {
+          "title": "定制化",
+          "description": "探头杆长度可根据客户要求定制。"
+        },
+        "multipleOutputMethods": {
+          "title": "多种输出方式",
+          "description": "具有两个独立的数字输出和一个模拟输出。"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "在工业生产中，温度开关是一种可靠实用的设备温度检测装置。SENTINEL 的一体化智能温度开关集测量和显示于一体，可提供简单的编程解决方案。",
+        "paragraph2": "紧凑型温度开关，专为轴承内部温度测量而设计，外观紧凑，探头长度可定制，温度测量范围为 100°C，模拟输出，带出线和连接器。",
+        "feature1": "高精度和稳定性",
+        "feature2": "快速响应",
+        "feature3": "宽温度范围",
+        "feature4": "长期稳定性",
+        "videoTitle": "温度传感器技术演示",
+        "videoDescription": "温度传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "type": "类型",
+        "processConnection": "过程连接",
+        "outputFunction": "输出功能",
+        "probeMaterial": "探头材料",
+        "electricalConnection": "电气连接",
+        "communicationInterface": "通信接口",
+        "protectionClass": "防护等级",
+        "interface": "接口"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概览",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概览",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概览",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概览",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "sensor": {
+          "company": "传感器",
+          "industry": "温度传感器",
+          "challenge": "SENTINEL 的温度传感器是一种用于测量液体温度的设备，广泛应用于工业自动化、食品饮料、机床和冶金等行业。"
+        },
+        "transmitter": {
+          "company": "变送器",
+          "industry": "温度传感器",
+          "challenge": "温度变送器是一种将温度信号转换为标准电信号（如 4-20mA）的设备，广泛应用于工业自动化领域。"
+        },
+        "splitType": {
+          "company": "分体式",
+          "industry": "温度传感器",
+          "challenge": "检测探头可灵活安装在空间狭窄、环境恶劣的位置。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "hydraulicSystems": "液压系统中的 IO-Link 智能传感器",
+        "howIOLinkWorks": "IO-Link 温度传感器的工作原理",
+        "powderMetallurgy": "赋能粉末冶金行业",
+        "ioLinkTemperatureTransmitter": "IO-Link 温度变送器",
+        "beerIndustry": "IO-Link 传感器赋能啤酒行业",
+        "vortexFlowSensor": "模具温度控制器上的涡街流量传感器"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们"
+      }
+    },
+    "pressureSensor": {
+      "banner": {
+        "title": "压力",
+        "titleHighlight": "传感器",
+        "description": "SENTINEL 的紧凑型压力传感器和压力变送器具有：多种不同的连接尺寸和输出信号，以及宽压力范围、丰富的功能设置和灵活的安装方式，可以满足实际生产的各种需求。",
+        "moreButton": "更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "multipleSpecifications": {
+          "title": "多种规格",
+          "description": "多种连接尺寸，满足不同工业场景的安装要求。"
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "支持 IO-Link 技术，实现高精度数据传输，抗干扰能力强。"
+        },
+        "richFunctions": {
+          "title": "功能丰富",
+          "description": "多样化的功能设置可以满足实际生产中的各种需求。"
+        },
+        "industrialProtection": {
+          "title": "工业级防护",
+          "description": "IP67 防护等级，适用于恶劣的工业环境，抗冲击和振动"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "压力是工业中最常测量的参数之一，无论是压力机、冷却回路还是储罐，都需要监测和测量压力参数。",
+        "paragraph2": "SENTINEL 的压力传感器配备了 IO-Link 功能。借助 IO-Link 技术，这些传感器可以直接将压力的毫伏信号转换为数字信号，实现高精度数据传输和强大的抗干扰能力。",
+        "videoTitle": "压力传感器技术演示",
+        "videoDescription": "压力传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "productsType": "产品类型",
+        "processConnection": "过程连接",
+        "outputFunction": "输出功能",
+        "pressureRange": "压力范围",
+        "specialFunction": "特殊功能",
+        "communicationInterface": "通信接口"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概览",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概览",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概览",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概览",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "foodBeverage": {
+          "company": "食品饮料",
+          "industry": "压力",
+          "challenge": "压力传感器用于食品饮料行业的压力监测，确保生产过程中的压力稳定性和安全性。压力传感器与 IO-Link 技术的结合，实现了生产过程的自动化控制和远程监控。"
+        },
+        "transmitter": {
+          "company": "变送器",
+          "industry": "压力",
+          "challenge": "数字电路补偿。抗干扰能力强，稳定性高。可测量表压和绝对压力。液体接触隔膜采用 316L 不锈钢制成。"
+        },
+        "sehSeries": {
+          "company": "SEH 系列",
+          "industry": "压力传感器",
+          "challenge": "外壳上部可旋转 300°，确保最佳安装方向。高亮度双色大尺寸数字显示，支持镜像。可通过 IO-Link 设置参数。可设置模拟信号的起始点和结束点。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "distillationEquipment": "蒸馏设备中的压力传感器",
+        "hydraulicSystems": "液压系统中的 IO-Link 智能传感器",
+        "powderMetallurgy": "赋能粉末冶金行业",
+        "beerIndustry": "IO-Link 传感器赋能啤酒行业",
+        "conicalSeal": "锥形密封食品级压力传感器",
+        "digitalSignals": "数字信号之间的差异"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们"
+      }
+    },
+    "liquidLevelSensor": {
+      "banner": {
+        "title": "液位",
+        "titleHighlight": "传感器",
+        "description": "SENTINEL 液位传感器是一种关键设备，专为检测和测量液体的液位高度而设计，提供容器或罐体中液位变化的实时监测。广泛应用于工业自动化、环境保护、化工能源、石油储运、食品加工和医疗设备等领域，帮助企业提升安全、自动化和管理效率。",
+        "moreButton": "了解更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "doubleParameter": {
+          "title": "双参数监测",
+          "description": "集成液位和温度双重监测。"
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "支持 IO-Link 协议，方便连接各种工业控制系统。"
+        },
+        "multipleOutput": {
+          "title": "多种输出模式",
+          "description": "包括模拟、数字信号等，支持 NPN/PNP/推拉式以及常开/常闭。"
+        },
+        "safeConvenient": {
+          "title": "安全便捷",
+          "description": "参数锁定功能，防止误操作。"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "IO-Link 智能液位/温度传感器。4 位大数字管显示，镜像式，半透明设计。显示面板采用集成模塑外壳。",
+        "paragraph2": "标准 4 针 A 码 M12 接口。简单按键操作，具有按键锁定功能。外壳上部可 300°旋转。",
+        "videoDescription": "液位传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "processConnection": "工艺连接",
+        "processConnectionValue": " | G1/2 外螺纹 | G1/4 外螺纹 | M18x1.5 内螺纹 | 分体式电子舱 | ",
+        "outputFunction": "输出功能",
+        "outputFunctionValue": " | 2xPNP/NPN | 4...20mA+2xPNP/NPN | 0...10V+2xPNP/NPN | 4...20mA | 0...10V | 切换;模拟电流;IO-Link;(可配置) | 模拟电流;IO-Link | ",
+        "probeMaterial": "探头材质",
+        "probeMaterialValue": " | 304 不锈钢 | 316 不锈钢 | ",
+        "electricalConnection": "电气连接",
+        "electricalConnectionValue": " | M12x1 连接器 | 2m 电缆 | ",
+        "probeLength": "探头长度",
+        "probeLengthValue": " | 250mm | 500mm | (可定制) | "
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概述",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概述",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概述",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概述",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "应用",
+        "titleHighlight": "场景",
+        "introduction": "介绍",
+        "description": "SENTINEL 的液位传感器广泛应用于食品饮料、乳化液、制药、化工和水处理行业，实现各种液体罐体、反应器和管道系统中精确的液位监测。"
+      },
+      "cases": {
+        "beerProduction": {
+          "company": "啤酒生产",
+          "industry": "液位传感器",
+          "challenge": "液位传感器在酿造、发酵、储存和灌装等环节全程使用，有效防止溢流或干涸现象，提升生产效率和卫生安全性。具有卫生设计和高防护等级的 SENTINEL 传感器支持 CTP/CIP/SIP 清洗流程，确保可靠稳定的食品级生产运行。"
+        },
+        "emulsionProduction": {
+          "company": "乳化液生产企业",
+          "industry": "液位传感器",
+          "challenge": "由于乳化液具有一定的粘度，且部分产品对接触材质有卫生要求，企业选用了 SENTINEL 的食品级材质液位传感器。该传感器可以精确监测罐体中的液位，还可以监测乳化液的温度，便于企业控制生产过程。"
+        },
+        "beverageProduction": {
+          "company": "饮料生产企业",
+          "industry": "分体式液位传感器",
+          "challenge": "饮料生产过程中，液位传感器用于监测储罐和灌装机的液位。分体设计解决了空间局限性和卫生管理问题。此外，SENTINEL 的液位传感器集成温度监测功能，能够实时监测液体温度变化，确保饮料生产的安全性和质量。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "splitTypeSensor": "分体式液位传感器解决泡沫干扰",
+        "floatTypeSensor": "浮子式双显示传感器",
+        "ioLinkHydraulic": "IO-Link 智能传感器在液压系统中的应用",
+        "ioLinkTemperature": "IO-Link 温度变送器",
+        "ioLinkBeer": "IO-Link 传感器赋能啤酒行业",
+        "distributedModules": "SENTINEL 分布式 I/O 模块"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "vortexFlowSensor": {
+      "banner": {
+        "title": "涡街流量",
+        "titleHighlight": "传感器",
+        "description": "在现代工业自动化领域，精确的流量测量对于保证生产过程的效率和质量至关重要。涡街流量传感器凭借其高精度、稳定性和可靠性，在许多应用场景中发挥着不可替代的作用。",
+        "moreButton": "了解更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "principleFunction": {
+          "title": "原理与功能",
+          "description": "采用冯·卡门涡街原理，支持流量和温度信号的双重输出和双重显示。"
+        },
+        "ioLink": {
+          "title": "IO-Link",
+          "description": "输出方式多样，兼容 IO-Link 功能。"
+        },
+        "flexibleSignals": {
+          "title": "灵活信号",
+          "description": "开关信号支持 NPN/PNP/推拉式等多种类型。"
+        },
+        "dataRecord": {
+          "title": "数据记录",
+          "description": "累计流量记录功能，便于统计分析。"
+        }
+      },
+      "tabs": {
+        "product": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "冯·卡门涡街原理。流量、温度双重切换信号输出，双重显示。高分辨率 IPS 显示屏。四种观看方向可切换。累计流量记录功能。模拟或开关输出，兼容 IO-Link 协议。",
+        "paragraph2": "开关信号 NO/NC，NPN/PNP/推拉式可选。单位可选择，简单按键菜单操作。各种螺纹规格，适合不同安装要求。体积紧凑，占用空间小。标准 4 针 M12 电气接口。",
+        "videoDescription": "涡街流量传感器技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "outputFunction": "输出功能",
+        "outputFunctionValue": " | 两个 4-20mA 输出 | 双向切换 IO-Link | 两个 0-10V 输出 |",
+        "range": "量程",
+        "rangeValue": " | 2-16L/min | 5-40L/min | 10-100L/min | ",
+        "interfaceThread": "接口螺纹",
+        "interfaceThreadValue": " | RC3/4 | RC1 | G1 | G1/2 | G3/8 | NPT1 | RC1/2 | RC3/8 | NPT3/8 | NPT3/4 | NPT1/2 | G3/4 |",
+        "electricalConnection": "电气连接",
+        "electricalConnectionValue": " | M12x1 连接器 | 2m PVC 电缆 | ",
+        "communicationInterface": "通信接口",
+        "communicationInterfaceValue": " | IO-Link | ",
+        "temperatureRange": "温度范围",
+        "temperatureRangeValue": " | 0-100℃ | ",
+        "workingPrinciple": "工作原理",
+        "workingPrincipleValue": " | 冯·卡门涡街 |"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概述",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概述",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概述",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概述",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍",
+        "description": "涡街流量传感器广泛应用于工业纯水监测、模具温控机中的流量和温度管理、冷却水监测、食品饮料行业等。"
+      },
+      "cases": {
+        "fourToTwentyMaOutputs": {
+          "company": "两个 4-20mA 输出",
+          "industry": "涡街流量传感器",
+          "challenge": "实时监测介质流量和温度，确保模具温控的精确稳定，提高生产效率和产品质量。"
+        },
+        "zeroToTenVoltOutputs": {
+          "company": "两个 0-10V 输出",
+          "industry": "涡街流量传感器",
+          "challenge": "不受流体导电率影响，能够稳定准确地测量低导电率的工业纯水流量，解决了电磁流量计在此类应用中的不稳定问题。"
+        },
+        "twoWaySwitchingIOLink": {
+          "company": "双向切换 IO-Link",
+          "industry": "涡街流量传感器",
+          "challenge": "传感器监测冷却液流量状况，防止因冷却故障导致设备损坏，确保系统安全可靠运行。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "ioLinkHydraulic": "IO-Link 智能传感器在液压系统中的应用",
+        "dualOptionsVortex": "涡街流量传感器的双重选择",
+        "vortexMoldTemperature": "涡街流量传感器在模具温控机上",
+        "onePieceTemperatureFlowmeter": "SENTINEL 一体式温度流量计",
+        "ioLinkBeerIndustry": "IO-Link 传感器赋能啤酒行业",
+        "highAccuracyMonitoring": "高精度流量与温度监测"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "connectivity": {
+      "banner": {
+        "title": "连接",
+        "description": "SENTINEL 提供多种产品，包括公母连接器、预制连接器、接线盒以及电缆和附件。我们可以提供标准产品和根据客户需求定制的产品。",
+        "moreButton": "了解更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "customStandard": {
+          "title": "定制与标准选项",
+          "description": "提供两者以满足各种需求"
+        },
+        "harshEnvironments": {
+          "title": "适应恶劣环境",
+          "description": "在严苛的工业环境中稳定工作"
+        },
+        "diverseProducts": {
+          "title": "多样化产品",
+          "description": "包括连接器、电缆等"
+        },
+        "costEfficient": {
+          "title": "节约成本且高效",
+          "description": "优化布线以降低成本和提高效率"
+        }
+      },
+      "tabs": {
+        "products": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "连接系统是连接现场设备和控制设备的必不可少的产品。",
+        "paragraph2": "连接产品使客户的布线系统更低成本和更高效。",
+        "powerCable": "7/8\" 电源电缆",
+        "ethernetCable": "工业以太网电缆",
+        "wireableConnectors": "现场可布线连接器",
+        "junctionBoxes": "接线盒",
+        "videoDescription": "连接技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "productType": "产品类型",
+        "productTypeValue": " | 7/8\" 电源电缆 | 工业以太网电缆 | 现场可布线连接器 | 连接线组件 | 接线盒 |"
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概述",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概述",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概述",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概述",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "connectors": {
+          "company": "连接器",
+          "industry": "连接",
+          "challenge": "SENTINEL- 现场布线连接器，涵盖 M8、M12 和 M16 标准连接器尺寸，具有直线和直角连接。现场连接器允许客户使用自己的电缆进行连接。"
+        },
+        "junctionBoxes": {
+          "company": "接线盒",
+          "industry": "连接",
+          "challenge": "可以提供 M12 和 M8 标准接口，以及 4 通道和 8 通道接口通道。每个通道可以分为单信号输出和双信号输出。"
+        },
+        "cordsets": {
+          "company": "连接线组件",
+          "industry": "连接",
+          "challenge": "SENTINEL- 传感器/执行器连接器系统涵盖带有 M8、M12、M16 和 7/8\" 标准连接尺寸的预制连接器。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "connectionTechnology": "连接技术",
+        "ioLinkConverters": "输出型 IO-Link 转换器",
+        "ioLinkConvertersDesc": "具有 M8、M12、M16 标准的 SENTINEL 传感器/执行器连接器系统",
+        "digitalSignals": "数字信号之间的差异",
+        "digitalSignalsDesc": "SENTINEL 总线模块产品的标准 7/8\" 电源连接器",
+        "onSiteAssembly": "一对二现场组装连接器",
+        "onSiteAssemblyDesc": "高性能工业以太网连接解决方案",
+        "chinesePreferred": "中国人偏好的质量选择",
+        "chinesePreferredDesc": "灵活的现场安装连接器解决方案",
+        "distributedModules": "SENTINEL 分布式 I/O 模块",
+        "distributedModulesDesc": "针对特定应用定制的连接解决方案"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "ioModule": {
+      "banner": {
+        "title": "I/O",
+        "titleHighlight": "模块",
+        "description": "作为专业的现场总线模块制造商，SENTINEL 为工厂自动化提供支持各种协议的现场总线模块，如 Profibus-DP、Profinet、ModbusTCP、EtherCAT、CC-LINK、CC-LINK IE Field Basic。",
+        "moreButton": "了解更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "wideProtocolSupport": {
+          "title": "广泛的协议支持",
+          "description": "兼容多种协议，可适应各种系统。"
+        },
+        "flexibleInstallation": {
+          "title": "灵活安装",
+          "description": "现场安装和柜内安装，适用于不同场景。"
+        },
+        "topReliability": {
+          "title": "顶级可靠性",
+          "description": "高质量、稳定性能，满足工业通信需求。"
+        },
+        "technicalUpdate": {
+          "title": "技术更新",
+          "description": "升级传统点对点连接，使工业设置更智能化。"
+        }
+      },
+      "tabs": {
+        "products": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "产品主要分为两大类，一类是高防护等级（IP67）系列，可用于现场安装；另一类是紧凑型独立产品系列，可安装在柜体内。",
+        "paragraph2": "作为传统点对点连接的升级，现场总线模块现已在工业领域广泛应用。",
+        "profinet": "PROFINET",
+        "ccLink": "CC-Link IE Field Basic",
+        "ethercat": "EtherCAT",
+        "videoDescription": "IO 模块技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "protocolType": "协议类型",
+        "protocolTypeValue": " | PROFINET | CC-Link IE Field Basic | EtherCAT | ",
+        "protectionClass": "防护等级",
+        "protectionClassValue": " | IP67 | IP20 | ",
+        "signalType": "信号类型",
+        "signalTypeValue": " | 输入 | 输出 | 输入/输出自适应 | 输入+输出 | 模拟输入 | ",
+        "digitalInputs": "数字输入",
+        "digitalInputsValue": " | PNP/NPN | NPN | PNP | ",
+        "digitalOutputs": "数字输出",
+        "digitalOutputsValue": " | PNP | NPN | ",
+        "inputChannels": "输入通道数",
+        "inputChannelsValue": " | 8 | 16 | 32 | ",
+        "outputChannels": "输出通道数",
+        "outputChannelsValue": " | 4 | 8 | 16 | 32 | "
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概述",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概述",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概述",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概述",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "ip67": {
+          "company": "IP67",
+          "industry": "通信协议：PROFINET,CC-Link IE Field Basic,EtherCAT",
+          "challenge": "IP67 系列模块特别适用于户外或恶劣的工业环境，如湿度高、灰尘多的场所。它支持传感器和执行器的近距离安装，降低布线成本和安装时间。"
+        },
+        "ip20": {
+          "company": "IP20",
+          "industry": "通信协议：PROFINET,CC-Link IE Field Basic,EtherCAT",
+          "challenge": "IP20 系列的 IO 模块专门为高密度 I/O 集成环境而设计，适用于相对清洁的环境，如室内设备柜。该系列模块集成 32 个 I/O 点，并支持各种灵活配置。"
+        },
+        "sap": {
+          "company": "SAP",
+          "industry": "输入输出自适应",
+          "challenge": "IO Module SAP 是一款工业级 I/O 模块。它具有输入-输出自适应机制，可以简化部署过程并增强系统一致性。它提供稳定的通信性能和严格的电气保护策略，以确保系统的可靠运行。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "inputOutputAdaptive": "输入/输出自适应总线 I/O 模块",
+        "ioModuleTbr": "TBR 轮胎输送线上的 IO 模块",
+        "fromFieldbusToEthernet": "从现场总线到工业以太网",
+        "pharmaceuticalPackaging": "制药包装行业",
+        "powderMetallurgy": "赋能粉末冶金行业",
+        "ioLinkModbus": "带有 Modbus-TCP 协议的 IO-Link 主模块"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们",
+        "email": "export.sentinel@gmail.com"
+      }
+    },
+    "relayModule": {
+      "banner": {
+        "title": "IO-Link",
+        "titleHighlight": "继电器模块",
+        "description": "SENTINEL 新推出的 IO-Link 继电器模块将充分利用 IO-Link 的这一优势，使用户能够降低工程成本和人工成本，尤其适用于电气柜中使用大量继电器的项目。",
+        "moreButton": "了解更多",
+        "contactButton": "联系我们"
+      },
+      "featuresSection": {
+        "title": "核心",
+        "titleHighlight": "优势"
+      },
+      "features": {
+        "technologicalInnovation": {
+          "title": "技术创新",
+          "description": "全球首款集成了 IO-Link 功能的继电器模块"
+        },
+        "highEfficiencyExpansion": {
+          "title": "高效扩展",
+          "description": "一个 4 端口 IO-Link 主站可连接 128 个继电器"
+        },
+        "smartMonitoring": {
+          "title": "智能监控",
+          "description": "实时监测温度、过流和开关周期"
+        },
+        "flexibleApplication": {
+          "title": "灵活应用",
+          "description": "兼容各种品牌主站和继电器，可自由插拔。"
+        }
+      },
+      "tabs": {
+        "products": "产品",
+        "parameters": "参数",
+        "downloads": "下载"
+      },
+      "description": {
+        "introduction": "介绍",
+        "paragraph1": "与连接相同数量继电器的传统扩展输出模块相比，IO-Link 继电器模块可节省 40% 的成本。",
+        "paragraph2": "远程监控和维护简化布线，大幅降低人工成本（最多节省 95%）。",
+        "ioLinkExpandableRelay": "IO-Link 可扩展继电器模块",
+        "eightChannelSub": "8 通道扩展子模块",
+        "sixteenChannelSub": "16 通道扩展子模块",
+        "videoDescription": "IO-Link 技术概述"
+      },
+      "specsSection": {
+        "title": "产品技术规格",
+        "table": {
+          "project": "项目",
+          "parameter": "参数"
+        }
+      },
+      "specs": {
+        "productType": "产品类型",
+        "productTypeValue": " | IO-Link 可扩展继电器模块 | 继电器模块扩展子模块 |  ",
+        "outputPoints": "输出点数",
+        "outputPointsValue": " | 16 | 8 | ",
+        "outputCurrent": "输出电流",
+        "outputCurrentValue": " | 150mA |  ",
+        "outputProtectionMode": "输出保护模式",
+        "outputProtectionModeValue": " | 过载保护 | 过热保护 |  ",
+        "outputProtectionResponseTime": "输出保护响应时间",
+        "outputProtectionResponseTimeValue": " | ≈20ms |",
+        "outputVoltageDrop": "输出电压降",
+        "outputVoltageDropValue": "| ≈0.6V |",
+        "isolationMethod": "隔离方法",
+        "isolationMethodValue": " | 数字隔离 | ",
+        "workingAuxiliaryVoltage": "工作/辅助电压",
+        "workingAuxiliaryVoltageValue": " | 24VDC±10% | ",
+        "moduleOperatingCurrent": "模块工作电流",
+        "moduleOperatingCurrentValue": " | <100mA | ",
+        "currentRequiredByLoad": "负载电源所需电流",
+        "currentRequiredByLoadValue": " | <4.8A | ",
+        "relayContactType": "继电器触点类型",
+        "relayContactTypeValue": " | 一组常开 + 一组常闭 | ",
+        "relayContactCapacity": "继电器触点容量",
+        "relayContactCapacityValue": " | 5A 250VAC/5A 30VDC | ",
+        "relayCoilVoltage": "继电器线圈电压",
+        "relayCoilVoltageValue": " | 24V | ",
+        "ioLinkProtocolVersion": "IO-Link 协议版本",
+        "ioLinkProtocolVersionValue": " | V1.1 | ",
+        "ioLinkInterfaceType": "IO-Link 接口类型",
+        "ioLinkInterfaceTypeValue": " | Class A | ",
+        "installationMethod": "安装方法",
+        "installationMethodValue": " | DIN35 标准导轨安装或固定孔 | ",
+        "protectionLevel": "防护等级",
+        "protectionLevelValue": " | IP20 | ",
+        "operatingTemperature": "工作温度",
+        "operatingTemperatureValue": " | -25...55℃ | "
+      },
+      "downloadsSection": {
+        "title": "资源下载",
+        "downloadButton": "下载"
+      },
+      "downloads": {
+        "sensorsOverview": {
+          "title": "传感器概述",
+          "description": "技术参数"
+        },
+        "ioModuleOverview": {
+          "title": "I/O 模块概述",
+          "description": "技术参数"
+        },
+        "ioLinkOverview": {
+          "title": "IO-Link 概述",
+          "description": "技术参数"
+        },
+        "relayModuleOverview": {
+          "title": "继电器模块概述",
+          "description": "技术参数"
+        }
+      },
+      "casesSection": {
+        "title": "产品",
+        "titleHighlight": "类型",
+        "introduction": "介绍"
+      },
+      "cases": {
+        "expandableRelay": {
+          "company": "可扩展继电器模块",
+          "industry": "IO-Link",
+          "challenge": "IO-Link 远程 I/O 设备。16 通道，每通道单输出 150 mA，可扩展。",
+          "solution": "IO-Link V1.1 兼容。DIN35 标准导轨安装或螺丝固定。",
+          "result": "通过可插拔推入式端子进行通信和负载电源供应。"
+        },
+        "sixteenChannelSub": {
+          "company": "16 通道扩展子模块",
+          "industry": "IO-Link 继电器模块",
+          "challenge": "16 通道。每通道单输出 150 mA。",
+          "solution": "标准底座兼容各种品牌的继电器。",
+          "result": "SPDT 触点。DIN35 标准导轨安装或螺丝固定。"
+        },
+        "eightChannelSub": {
+          "company": "8 通道扩展子模块",
+          "industry": "IO-Link 继电器模块",
+          "challenge": "8 通道。每通道单输出 150 mA。",
+          "solution": "标准底座兼容各种品牌的继电器。",
+          "result": "SPDT 触点。DIN35 标准导轨安装或螺丝固定。"
+        }
+      },
+      "relatedSection": {
+        "title": "相关",
+        "titleHighlight": "文章"
+      },
+      "relatedProducts": {
+        "newProductLaunch": "新品发布：IO-Link 继电器模块",
+        "whatIsIoLink": "什么是 IO-Link",
+        "summaryIoLinkDevices": "IO-Link 设备系列总结",
+        "ioLinkRemoteRtd": "IO-Link 远程 RTD 模块",
+        "newIoLinkSubstation": "新的 IO-Link 子站模块",
+        "pressureSensorsDistillation": "蒸馏设备中的压力传感器"
+      },
+      "cta": {
+        "title": "获取您的",
+        "titleHighlight": "优惠价格",
+        "description": "我们的专业团队将为您提供个性化解决方案。",
+        "contactButton": "联系我们",
+        "email": "export.sentinel@gmail.com"
+      }
+    }
+  }
+  ,
+  "map": {
+    "subtitle": "高新区地铁站"
+  }
+  ,
+  "footer": {
+    "floatingContact": "联系我们",
+    "floatingTitle": "联系",
+    "cookie": {
+      "bannerText": "我们使用 cookie 和类似技术来提升您的浏览体验、分析网站流量并个性化内容。某些 cookie 对于网站正常运行至关重要，而其他 cookie 则帮助我们改进服务并显示相关广告。",
+      "privacyLinkText": "隐私政策",
+      "acceptAll": "全部接受",
+      "acceptNecessary": "仅接受必要",
+      "settings": "Cookie 设置"
+    },
+    "company": {
+      "tagline": "创新造就好产品，专注造就更好服务"
+    },
+    "quickLinks": {
+      "title": "快速链接"
+    },
+    "products": {
+      "title": "产品",
+      "thermalFlow": "热式流量传感器"
+    },
+    "contact": {
+      "title": "联系",
+      "scanNote": "扫码联系我们"
+    },
+    "copyright": "© 2008 - {{year}} SENTINEL。保留所有权利。"
+  }
+}
