@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, ChevronDown, Settings } from 'lucide-react';
 import { useTheme } from 'next-themes';
@@ -14,7 +14,7 @@ interface NavItem {
   children?: NavItem[];
 }
 
-export default function Header() {
+const Header = React.memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -262,5 +262,9 @@ export default function Header() {
       </div>
     </header>
   );
-}
+});
+
+Header.displayName = 'Header';
+
+export default Header;
 

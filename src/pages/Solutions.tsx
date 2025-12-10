@@ -96,7 +96,7 @@ export default function SolutionsPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-yellow-400 mb-3">{t('pages.solutions.coreFeatures')}</h3>
                     <ul className="space-y-2">
-                      {solution.keyFeatures.map((feature, featureIndex) => (
+                      {solution.keyFeatures.map((feature: string, featureIndex: number) => (
                         <li key={featureIndex} className="flex items-center text-gray-600 dark:text-gray-300 mb-8">
                           <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
                           {feature}
@@ -108,7 +108,7 @@ export default function SolutionsPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-yellow-400 mb-3">{t('pages.solutions.coreValue')}</h3>
                     <ul className="space-y-2">
-                      {solution.benefits.map((benefit, benefitIndex) => (
+                      {solution.benefits.map((benefit: string, benefitIndex: number) => (
                         <li key={benefitIndex} className="flex items-center text-gray-600 dark:text-gray-300 mb-8">
                           <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
                           {benefit}

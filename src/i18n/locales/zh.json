@@ -25,10 +25,12 @@
   "cookie": {
     "title": "Cookie 偏好设置",
     "description": "我们使用 Cookie 和类似技术来改善您的浏览体验、分析网站流量并提供个性化内容。某些 Cookie 是必要的，无法被禁用。其他 Cookie 需要您的同意才能使用。",
+    "policyChanged": "我们的cookie政策已更新，请重新查看并同意使用条款。",
+    "policyUpdate": "政策已更新",
     "buttons": {
       "acceptAll": "接受所有",
       "acceptNecessary": "仅必需 Cookie",
-      "decline": "拒绝所有"
+      "settings": "设置"
     },
     "manageSettings": "管理 Cookie 设置",
     "categories": {
@@ -60,7 +62,15 @@
       "policyLink": "隐私政策"
     },
     "quickActions": "快速操作",
-    "save": "保存设置"
+    "save": "保存设置",
+    "revoke": {
+      "title": "撤销同意",
+      "description": "撤销所有cookie同意设置，将重置为仅使用必要cookie。您可以随时重新启用其他cookie。",
+      "button": "撤销所有同意",
+      "confirmTitle": "确认撤销同意",
+      "confirmDescription": "这将撤销您对所有非必要cookie的同意。网站将仅使用必要cookie。您确定要继续吗？",
+      "confirmButton": "确认撤销"
+    }
   }
   ,
   "pages": {

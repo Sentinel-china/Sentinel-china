@@ -42,17 +42,32 @@ import InductiveProximitySensor from './pages/products/Sensor/inductive-proximit
 import PrivacyPolicyPage from './pages/PrivacyPolicy'
 
 function AppContent() {
-  const { isEUOrUS, loading } = useGeoLocation()
-  const { acceptAllCookies, acceptNecessaryOnly, declineCookies, isPending } = useCookieConsent()
+  const { isEUOrUS, loading, location } = useGeoLocation()
+  const { acceptAllCookies, acceptNecessaryOnly, isPending, policyChanged, acknowledgePolicyChange } = useCookieConsent()
 
   // 如果是欧洲或美国地区，且用户还未做出选择，显示弹窗
+  // 如果地理位置检测失败，为了合规性也显示弹窗（保守策略）
   // 如果是其他地区，默认同意（不显示弹窗）
-  const shouldShowCookieConsent = !loading && isEUOrUS && isPending
+  // 欧盟和美国用户首次打开网站必须看到弹窗
+  const shouldShowCookieConsent = !loading && isPending && (isEUOrUS || location === null)
+
+  // 调试信息（仅开发环境）
+  if (process.env.NODE_ENV === 'development') {
+    console.log('Cookie Consent Debug:', {
+      loading,
+      isEUOrUS,
+      isPending,
+      shouldShowCookieConsent,
+      location,
+      locationCountry: location?.countryCode
+    })
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <ScrollToTop />
+
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -91,9 +106,16 @@ function AppContent() {
 
       <CookieConsent
         isVisible={shouldShowCookieConsent}
-        onAcceptAll={acceptAllCookies}
-        onAcceptNecessary={acceptNecessaryOnly}
-        onDecline={declineCookies}
+        onAcceptAll={() => {
+          acceptAllCookies()
+          acknowledgePolicyChange()
+        }}
+        onAcceptNecessary={() => {
+          acceptNecessaryOnly()
+          acknowledgePolicyChange()
+        }}
+        policyChanged={policyChanged}
+        onAcknowledgePolicyChange={acknowledgePolicyChange}
       />
     </div>
   )

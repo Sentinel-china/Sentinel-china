@@ -25,6 +25,10 @@ export const useGeoLocation = () => {
       } catch (err) {
         console.error('Error fetching location:', err)
         setError('Unable to determine location')
+        // 如果API失败，为了遵守GDPR，保守处理：不假设任何地区
+        // 用户将看到cookie弹窗（因为无法确定地区），但可以选择关闭
+        console.log('Geolocation API failed, showing cookie consent for safety')
+        setLocation(null)
       } finally {
         setLoading(false)
       }
@@ -34,9 +38,7 @@ export const useGeoLocation = () => {
   }, [])
 
   // 检查是否为欧洲或美国地区
-  const isEUOrUS = () => {
-    if (!location) return false
-
+  const isEUOrUS = location ? (() => {
     // 欧洲国家代码列表
     const euCountries = [
       'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR',
@@ -48,12 +50,12 @@ export const useGeoLocation = () => {
     const usCountry = 'US'
 
     return euCountries.includes(location.countryCode) || location.countryCode === usCountry
-  }
+  })() : false
 
   return {
     location,
     loading,
     error,
-    isEUOrUS: isEUOrUS()
+    isEUOrUS
   }
 }

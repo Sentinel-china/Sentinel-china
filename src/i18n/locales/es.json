@@ -25,10 +25,12 @@
   "cookie": {
     "title": "Preferencias de Cookies",
     "description": "Utilizamos cookies y tecnologías similares para mejorar su experiencia de navegación, analizar el tráfico del sitio web y proporcionar contenido personalizado. Algunas cookies son esenciales para el funcionamiento del sitio web y no se pueden desactivar. Otras cookies requieren su consentimiento.",
+    "policyChanged": "Nuestra política de cookies ha sido actualizada. Por favor revise y acepte los términos actualizados.",
+    "policyUpdate": "Política Actualizada",
     "buttons": {
       "acceptAll": "Aceptar Todo",
       "acceptNecessary": "Solo Esenciales",
-      "decline": "Rechazar Todo"
+      "settings": "Configuración"
     },
     "manageSettings": "Administrar Configuración de Cookies",
     "categories": {
@@ -60,7 +62,15 @@
       "policyLink": "Política de Privacidad"
     },
     "quickActions": "Acciones Rápidas",
-    "save": "Guardar Configuración"
+    "save": "Guardar Configuración",
+    "revoke": {
+      "title": "Retirar Consentimiento",
+      "description": "Retirar todos los consentimientos de cookies y restablecer solo a cookies esenciales. Puede volver a habilitar otras cookies en cualquier momento.",
+      "button": "Retirar Todo el Consentimiento",
+      "confirmTitle": "Confirmar Retiro",
+      "confirmDescription": "Esto retirará su consentimiento para todas las cookies no esenciales. El sitio web solo utilizará cookies esenciales. ¿Está seguro de que desea continuar?",
+      "confirmButton": "Confirmar Retiro"
+    }
   }
   ,
   "pages": {

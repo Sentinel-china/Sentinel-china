@@ -17,11 +17,26 @@ export const useCookieConsent = () => {
     marketing: false,
     preferences: false
   })
+  const [policyChanged, setPolicyChanged] = useState(false)
 
   useEffect(() => {
+    // Cookie政策版本 - 如果更新版本，用户需要重新同意
+    const CURRENT_POLICY_VERSION = '1.0'
+
     // 从localStorage读取cookie同意状态
     const savedConsent = localStorage.getItem('cookie-consent')
     const savedDetailed = localStorage.getItem('cookie-consents-detailed')
+    const savedVersion = localStorage.getItem('cookie-policy-version')
+
+    // 如果政策版本不匹配，重置同意状态并标记政策变更
+    if (savedVersion !== CURRENT_POLICY_VERSION) {
+      localStorage.removeItem('cookie-consent')
+      localStorage.removeItem('cookie-consents-detailed')
+      localStorage.setItem('cookie-policy-version', CURRENT_POLICY_VERSION)
+      setConsentStatus('pending')
+      setPolicyChanged(true)
+      return
+    }
 
     if (savedConsent) {
       setConsentStatus(savedConsent as ConsentStatus)
@@ -110,6 +125,10 @@ export const useCookieConsent = () => {
     updateGoogleConsent(resetConsents)
   }
 
+  const acknowledgePolicyChange = () => {
+    setPolicyChanged(false)
+  }
+
   // 更新Google Consent Mode
   const updateGoogleConsent = (consents: CookieConsents) => {
     if (typeof window !== 'undefined' && window.gtag) {
@@ -131,8 +150,10 @@ export const useCookieConsent = () => {
     declineCookies,
     updateDetailedConsents,
     resetConsent,
+    acknowledgePolicyChange,
     hasConsent: consentStatus === 'accepted',
     hasDeclined: consentStatus === 'declined',
-    isPending: consentStatus === 'pending'
+    isPending: consentStatus === 'pending',
+    policyChanged
   }
 }

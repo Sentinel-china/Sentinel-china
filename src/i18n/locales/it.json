@@ -25,10 +25,12 @@
   "cookie": {
     "title": "Preferenze Cookie",
     "description": "Utilizziamo cookie e tecnologie simili per migliorare la tua esperienza di navigazione, analizzare il traffico del sito web e fornire contenuti personalizzati. Alcuni cookie sono essenziali per il funzionamento del sito web e non possono essere disabilitati. Altri cookie richiedono il tuo consenso.",
+    "policyChanged": "La nostra politica sui cookie è stata aggiornata. Si prega di rivedere e accettare i termini aggiornati.",
+    "policyUpdate": "Politica Aggiornata",
     "buttons": {
       "acceptAll": "Accetta Tutto",
       "acceptNecessary": "Solo Essenziali",
-      "decline": "Rifiuta Tutto"
+      "settings": "Impostazioni"
     },
     "manageSettings": "Gestisci Impostazioni Cookie",
     "categories": {
@@ -60,7 +62,15 @@
       "policyLink": "Politica sulla Privacy"
     },
     "quickActions": "Azioni Rapide",
-    "save": "Salva Impostazioni"
+    "save": "Salva Impostazioni",
+    "revoke": {
+      "title": "Revoca Consenso",
+      "description": "Revoca tutti i consensi dei cookie e ripristina solo i cookie essenziali. Puoi riabilitare altri cookie in qualsiasi momento.",
+      "button": "Revoca Tutto il Consenso",
+      "confirmTitle": "Conferma Revoca",
+      "confirmDescription": "Questo revokerà il tuo consenso per tutti i cookie non essenziali. Il sito web utilizzerà solo cookie essenziali. Sei sicuro di voler continuare?",
+      "confirmButton": "Conferma Revoca"
+    }
   }
   ,
   "pages": {

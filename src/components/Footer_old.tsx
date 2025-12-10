@@ -2,43 +2,22 @@
  * 网站底部组件
  * 包含公司信息、快速链接和联系方式
  */
-import React, { useEffect } from 'react'
 import { Link } from 'react-router'
-import { Mail, Phone, MapPin, Youtube } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from 'lucide-react'
+import { useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '../context/LanguageContext'
 import CookieSettingsModal from './CookieSettingsModal'
 
-const Footer = React.memo(() => {
-  const { t, language } = useLanguage()
+// Window interface extensions are now in src/types/global.d.ts
+
+export default function Footer() {
+  const { t } = useLanguage()
   const { theme } = useTheme()
 
   const isDark = theme === 'dark'
 
-  // 更新悬浮按钮文本的函数
-  const updateFloatingButtonText = React.useCallback(() => {
-    // 确保 i18next 已经初始化
-    if (typeof window !== 'undefined' && window.i18next && window.i18next.isInitialized) {
-      const floatingBtn = document.getElementById('floating-form-btn')
-      if (floatingBtn) {
-        floatingBtn.innerHTML = t('footer.floatingContact')
-      }
-
-      const floatingBox = document.getElementById('floating-form-box')
-      if (floatingBox) {
-        const titleElement = floatingBox.querySelector('div[style*="text-align: right"] div')
-        if (titleElement) {
-          titleElement.textContent = t('footer.floatingTitle')
-        }
-      }
-    } else {
-      // 如果 i18next 还没初始化，延迟执行
-      setTimeout(updateFloatingButtonText, 100)
-    }
-  }, [t])
-
-  useEffect(() => {
-    // 清理之前的浮动元素
+  return (
     const existingBtn = document.getElementById('floating-form-btn')
     const existingBox = document.getElementById('floating-form-box')
     if (existingBtn) existingBtn.remove()
@@ -72,139 +51,121 @@ const Footer = React.memo(() => {
         box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
       }
 
-      /* 移动端按钮样式调整 */
-      @media (max-width: 768px) {
-        #floating-form-btn {
-          bottom: 20px; /* 更小的底部边距 */
-          right: 20px;
-          font-size: 14px; /* 稍微小一点的字体 */
-          padding: 8px 12px; /* 稍微小一点的内边距 */
-        }
-      }
-
       /* 弹窗样式 */
-      #floating-form-box {
+      #cookieConsentBanner {
+        display: none;
         position: fixed;
         bottom: 70px;
-        right: 70px;
-        width: 280px;
-        height: 520px;
-        background: #fff;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        display: none;
-        z-index: 9998;
-        overflow: hidden;
-        cursor: grab;
-        user-select: none;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #333;
+        color: #fff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        max-width: 600px;
+        z-index: 9999;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        font-family: system-ui, sans-serif;
+        transition: transform 0.5s ease, bottom 0.5s ease;
       }
 
-      /* 移动端响应式设计 */
-      @media (max-width: 768px) {
-        #floating-form-box {
-          width: calc(100vw - 40px) !important; /* 全宽减去边距 */
-          height: calc(100vh - 120px) !important; /* 全高减去顶部和底部边距 */
-          max-width: 400px; /* 最大宽度限制 */
-          max-height: 600px; /* 最大高度限制 */
-          bottom: 20px !important;
-          right: 20px !important;
-          left: 20px !important; /* 水平居中 */
-        }
+      #cookieConsentBanner a {
+        color: #FFD700;
+        text-decoration: underline;
       }
 
-      @media (max-width: 480px) {
-        #floating-form-box {
-          width: calc(100vw - 20px) !important; /* 更小的边距 */
-          height: calc(100vh - 100px) !important; /* 更小的顶部边距 */
-          bottom: 10px !important;
-          right: 10px !important;
-          left: 10px !important;
-        }
-
-        #leadForm {
-          height: calc(100vh - 140px) !important; /* 根据弹窗高度自适应 */
-        }
+      #cookieConsentBanner .buttons {
+        margin-top: 15px;
+        text-align: right;
       }
 
-      /* 平板响应式 */
-      @media (max-width: 768px) and (min-width: 481px) {
-        #leadForm {
-          height: calc(100vh - 160px) !important;
-        }
+      #cookieConsentBanner button {
+        background-color: #FFD700;
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        margin-left: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
       }
 
-      #floating-form-box:active {
-        cursor: grabbing;
+      #cookieConsentBanner button.reject {
+        background-color: #777;
       }
 
-      /* 鼠标样式控制 */
-      #floating-form-box {
-        cursor: grab;
-      }
 
-      #floating-form-box:active {
-        cursor: grabbing;
-      }
-
-      /* 特殊区域保持原有鼠标样式 */
-      #floating-form-box button {
-        cursor: pointer !important;
-      }
-
-      /* 标题文本区域也保持pointer样式，表示不可拖拽 */
-      #floating-form-box div[style*="float: left"] {
-        cursor: default !important;
-        user-select: text; /* 允许选择文本 */
-      }
-
-      #floating-form-box iframe {
-        cursor: default !important;
-        pointer-events: auto;
-      }
-
-      #floating-form-box.dark-mode {
-        background: #1f2937;
-        border-color: #374151;
-        color: #f9fafb;
-      }
     `
     document.head.appendChild(style)
 
     // 添加HTML结构
     const floatingBtn = document.createElement('div')
     floatingBtn.id = 'floating-form-btn'
-    floatingBtn.innerHTML = t('footer.floatingContact') // 移除默认中文文本
+    floatingBtn.innerHTML = t('footer.floatingContact')
     document.body.appendChild(floatingBtn)
 
     const floatingBox = document.createElement('div')
     floatingBox.id = 'floating-form-box'
+    floatingBox.style.cssText = `
+      position: fixed;
+      bottom: 70px;
+      right: 70px;
+      width: 280px;
+      height: 520px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 9998;
+      overflow: hidden;
+    `
     floatingBox.innerHTML = `
       <div style="text-align: right; padding: 8px; background: #f5f5f5; border-bottom: 1px solid #ddd;">
         <div style="float: left; font-weight: bold; font-size: 15px; color: #333;">${t('footer.floatingTitle')}</div>
         <button onclick="document.getElementById('floating-form-box').style.display='none'" style="
           background: none;
           border: none;
-          font-size: 18px;
+          font-size: 16px;
           cursor: pointer;
-          color: #666;
-          padding: 0;
-          margin: 0;
-        ">×</button>
+          color: #333;
+        ">
+          ✕
+        </button>
       </div>
       <iframe id="leadForm"
         width="100%"
-        height="480px"
+        height="500px"
         style="border:none; background:white;"
         frameBorder="0">
       </iframe>
     `
     document.body.appendChild(floatingBox)
 
-    // 确保初始文本使用当前语言
-    updateFloatingButtonText()
+    // 添加Cookie横幅HTML结构
+    const cookieBanner = document.createElement('div')
+    cookieBanner.id = 'cookieConsentBanner'
+    cookieBanner.innerHTML = `
+      <div>
+        ${t('footer.cookie.bannerText')} <a href="#/privacy-policy">${t('footer.cookie.privacyLinkText')}</a>
+      </div>
+      <div class="buttons">
+        <button id="acceptAllBtn" onclick="window.cookieAcceptAll()">${t('footer.cookie.acceptAll')}</button>
+        <button id="acceptNecessaryBtn" onclick="window.cookieAcceptNecessary()" class="reject">${t('footer.cookie.acceptNecessary')}</button>
+      </div>
+    `
+    document.body.appendChild(cookieBanner)
 
-    // 按钮点击事件和弹窗逻辑
+    // 添加全局函数到 window 对象
+    window.cookieAcceptAll = () => acceptCookies(true)
+    window.cookieAcceptNecessary = () => acceptCookies(false)
+
+    // 全局函数已在上面定义，现在按钮通过 onclick 属性调用
+
+
+    // 取消悬浮Cookie按钮
+
+    // JavaScript逻辑
     const btn = document.getElementById('floating-form-btn')
     const popup = document.getElementById('floating-form-box')
 
@@ -239,71 +200,55 @@ const Footer = React.memo(() => {
           handleClose()
         }, { passive: false })
       }
+    }
 
-      // 拖拽逻辑 - 整个弹窗区域都可以拖拽
-      if (popup) {
-        let isDragging = false
-        let offsetX = 0
-        let offsetY = 0
+    // 拖拽逻辑
+    const header = popup?.querySelector('div[style*="text-align: right"]')
+    if (header) {
+      let isDragging = false
+      let offsetX = 0
+      let offsetY = 0
 
-        function startDrag(e: any) {
-          // 检查是否点击在关闭按钮或文本内容上，如果是则不启动拖拽
-          const target = e.target as HTMLElement
-          const closeButton = popup!.querySelector('button')
-          const titleDiv = popup!.querySelector('div[style*="float: left"]') // 标题文本div
-          const iframe = popup!.querySelector('iframe')
-
-          // 只有关闭按钮和标题文本区域不允许拖拽，其他区域都可以拖拽
-          if (closeButton?.contains(target) || titleDiv?.contains(target)) {
-            return // 不启动拖拽
-          }
-
-          // iframe区域也保持原有的交互，不启动拖拽
-          if (iframe?.contains(target)) {
-            return // 不启动拖拽
-          }
-
-          isDragging = true
-          const rect = popup!.getBoundingClientRect()
-          offsetX = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left
-          offsetY = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
-          e.preventDefault()
-        }
-
-        function dragMove(e: any) {
-          if (!isDragging) return
-          const x = (e.touches ? e.touches[0].clientX : e.clientX) - offsetX
-          const y = (e.touches ? e.touches[0].clientY : e.clientY) - offsetY
-          popup!.style.left = x + 'px'
-          popup!.style.top = y + 'px'
-          popup!.style.right = 'auto'
-          popup!.style.bottom = 'auto'
-        }
-
-        function stopDrag() {
-          isDragging = false
-        }
-
-        // 为整个弹窗添加拖拽事件
-        popup.addEventListener('mousedown', startDrag)
-        document.addEventListener('mousemove', dragMove)
-        document.addEventListener('mouseup', stopDrag)
-
-        popup.addEventListener('touchstart', startDrag, { passive: false })
-        document.addEventListener('touchmove', dragMove, { passive: false })
-        document.addEventListener('touchend', function (e: any) {
-          const touch = e.changedTouches[0]
-          const target = document.elementFromPoint(touch.clientX, touch.clientY)
-          const closeButton = popup!.querySelector('button')
-
-          if (target && closeButton?.contains(target)) {
-            popup!.style.display = 'none'
-            btn!.style.display = 'block'
-          }
-
-          stopDrag()
-        }, { passive: false })
+      function startDrag(e: any) {
+        isDragging = true
+        const rect = popup!.getBoundingClientRect()
+        offsetX = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left
+        offsetY = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+        e.preventDefault()
       }
+
+      function dragMove(e: any) {
+        if (!isDragging) return
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - offsetX
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - offsetY
+        popup!.style.left = x + 'px'
+        popup!.style.top = y + 'px'
+        popup!.style.right = 'auto'
+        popup!.style.bottom = 'auto'
+      }
+
+      function stopDrag() {
+        isDragging = false
+      }
+
+      header.addEventListener('mousedown', startDrag)
+      document.addEventListener('mousemove', dragMove)
+      document.addEventListener('mouseup', stopDrag)
+
+      header.addEventListener('touchstart', startDrag, { passive: false })
+      document.addEventListener('touchmove', dragMove, { passive: false })
+      document.addEventListener('touchend', function (e: any) {
+        const touch = e.changedTouches[0]
+        const target = document.elementFromPoint(touch.clientX, touch.clientY)
+        const closeButton = popup!.querySelector('button')
+
+        if (target && closeButton?.contains(target)) {
+          popup!.style.display = 'none'
+          btn!.style.display = 'block'
+        }
+
+        stopDrag()
+      }, { passive: false })
     }
 
     // GCLID处理
@@ -330,22 +275,125 @@ const Footer = React.memo(() => {
       leadForm.src = finalURL
     }
 
-    // 监听主题变化，更新弹窗样式
-    const observer = new MutationObserver(() => {
-      const box = document.getElementById('floating-form-box')
-      if (box) {
-        if (document.documentElement.classList.contains('dark')) {
-          box.classList.add('dark-mode')
-        } else {
-          box.classList.remove('dark-mode')
-        }
-      }
-    })
+    // Cookie横幅逻辑
+    const EU_COUNTRIES = [
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT',
+      'LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','US'
+    ]
 
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class']
-    })
+    function showCookieBanner() {
+      const banner = document.getElementById('cookieConsentBanner')
+      if (banner) {
+        banner.style.display = 'block'
+        banner.style.transform = 'translateX(-50%)'
+        banner.style.bottom = '70px'
+      }
+    }
+
+
+    function acceptCookies(all: boolean) {
+      localStorage.setItem('cookieConsent', all ? 'all' : 'necessary')
+      localStorage.setItem('cookieConsentGiven', 'true')
+      const banner = document.getElementById('cookieConsentBanner')
+      if (banner) {
+        banner.style.display = 'none'
+      }
+
+      // Google Consent Mode v2
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('consent', 'update', {
+          'analytics_storage': all ? 'granted' : 'denied',
+          'ad_storage': all ? 'granted' : 'denied',
+          'functionality_storage': all ? 'granted' : 'denied',
+          'personalization_storage': all ? 'granted' : 'denied',
+          'security_storage': 'granted'
+        })
+      }
+    }
+
+    function initCookieBanner() {
+      // Set default consent state (denied) for Google Consent Mode v2
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('consent', 'default', {
+          'analytics_storage': 'denied',
+          'ad_storage': 'denied',
+          'functionality_storage': 'denied',
+          'personalization_storage': 'denied',
+          'security_storage': 'granted'
+        })
+      }
+
+
+      // 获取国家判断是否显示
+      fetch('https://ipinfo.io/json')
+        .then(res => res.json())
+        .then(data => {
+          const country = data.country
+          // 保存用户国家信息到localStorage
+          localStorage.setItem('userCountry', country)
+          const isGDPR = EU_COUNTRIES.includes(country)
+
+          if (isGDPR) {
+            // 如果用户尚未选择，才弹窗
+            const consentGiven = localStorage.getItem('cookieConsentGiven')
+            if (!consentGiven) {
+              showCookieBanner()
+            } else {
+              // 如果已经有同意记录，恢复consent状态
+              const consent = localStorage.getItem('cookieConsent')
+              if (consent === 'all' && window.gtag) {
+                window.gtag('consent', 'update', {
+                  'analytics_storage': 'granted',
+                  'ad_storage': 'granted',
+                  'functionality_storage': 'granted',
+                  'personalization_storage': 'granted',
+                  'security_storage': 'granted'
+                })
+              } else if (consent === 'custom') {
+                // 恢复自定义偏好设置
+                const preferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}')
+                if (window.gtag) {
+                  window.gtag('consent', 'update', {
+                    'analytics_storage': preferences.analytics ? 'granted' : 'denied',
+                    'ad_storage': preferences.marketing ? 'granted' : 'denied',
+                    'functionality_storage': preferences.functional ? 'granted' : 'denied',
+                    'personalization_storage': preferences.functional ? 'granted' : 'denied',
+                    'security_storage': 'granted'
+                  })
+                }
+              }
+            }
+          } else {
+            // 非 GDPR 国家直接接受，完全隐藏
+            localStorage.setItem('cookieConsent', 'all')
+            localStorage.setItem('cookieConsentGiven', 'true')
+            const banner = document.getElementById('cookieConsentBanner')
+            if (banner) {
+              banner.style.display = 'none'
+            }
+            // 设置Google Consent为granted
+            if (window.gtag) {
+              window.gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'granted',
+                'security_storage': 'granted'
+              })
+            }
+          }
+        })
+        .catch(err => {
+          console.warn('IP 检测失败', err)
+          // 获取失败默认弹出
+          showCookieBanner()
+        })
+    }
+
+    // 初始化Cookie横幅
+    initCookieBanner()
+
+
 
     // 清理函数
     return () => {
@@ -356,23 +404,10 @@ const Footer = React.memo(() => {
       if (floatingBox.parentNode) {
         document.body.removeChild(floatingBox)
       }
-      // 清理拖拽事件监听器
-      if (popup) {
-        popup.removeEventListener('mousedown', startDrag)
-        popup.removeEventListener('touchstart', startDrag)
-        document.removeEventListener('mousemove', dragMove)
-        document.removeEventListener('mouseup', stopDrag)
-        document.removeEventListener('touchmove', dragMove)
-        document.removeEventListener('touchend', () => {})
+      if (cookieBanner.parentNode) {
+        document.body.removeChild(cookieBanner)
       }
-      observer.disconnect()
     }
-  }, [t])
-
-  // 监听语言变化，更新悬浮按钮文本
-  React.useEffect(() => {
-    updateFloatingButtonText()
-  }, [language, updateFloatingButtonText])
 
   return (
     <footer className={`border-t transition-all duration-500 ${
@@ -496,7 +531,7 @@ const Footer = React.memo(() => {
                     isDark ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'
                   }`}>
                     <img
-                      src="/whatsapp-qr.png"
+                      src="/whatsapp-qr.png" // TODO: change to the actual QR code
                       alt="WhatsApp QR Code"
                       className="w-32 h-32 object-cover"
                     />
@@ -545,8 +580,4 @@ const Footer = React.memo(() => {
       </div>
     </footer>
   )
-})
-
-Footer.displayName = 'Footer'
-
-export default Footer
+}

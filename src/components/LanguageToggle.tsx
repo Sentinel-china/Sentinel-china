@@ -1,3 +1,4 @@
+import React, { useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import {
   DropdownMenu,
@@ -15,8 +16,12 @@ const languages = [
   { code: 'it', label: 'Italiano', flagSrc: '/it-flag-hd.png' },
 ];
 
-export default function LanguageToggle() {
+const LanguageToggle = React.memo(() => {
   const { language, setLanguage } = useLanguage();
+
+  const handleLanguageChange = useCallback((langCode: string) => {
+    setLanguage(langCode);
+  }, [setLanguage]);
 
   return (
     <DropdownMenu>
@@ -35,7 +40,7 @@ export default function LanguageToggle() {
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => setLanguage(lang.code)}
+            onClick={() => handleLanguageChange(lang.code)}
             className={language === lang.code ? 'bg-accent' : ''}
           >
             <img
@@ -49,4 +54,8 @@ export default function LanguageToggle() {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-}
+});
+
+LanguageToggle.displayName = 'LanguageToggle';
+
+export default LanguageToggle;

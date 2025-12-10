@@ -25,10 +25,12 @@
   "cookie": {
     "title": "Cookie Preferences",
     "description": "We use cookies and similar technologies to improve your browsing experience, analyze website traffic, and provide personalized content. Some cookies are essential for the website to function and cannot be disabled. Other cookies require your consent.",
+    "policyChanged": "Our cookie policy has been updated. Please review and agree to the updated terms.",
+    "policyUpdate": "Policy Updated",
     "buttons": {
       "acceptAll": "Accept All",
       "acceptNecessary": "Essential Only",
-      "decline": "Decline All"
+      "settings": "Settings"
     },
     "manageSettings": "Manage Cookie Settings",
     "categories": {
@@ -60,7 +62,15 @@
       "policyLink": "Privacy Policy"
     },
     "quickActions": "Quick Actions",
-    "save": "Save Settings"
+    "save": "Save Settings",
+    "revoke": {
+      "title": "Withdraw Consent",
+      "description": "Withdraw all cookie consents and reset to essential cookies only. You can re-enable other cookies at any time.",
+      "button": "Withdraw All Consent",
+      "confirmTitle": "Confirm Withdrawal",
+      "confirmDescription": "This will withdraw your consent for all non-essential cookies. The website will only use essential cookies. Are you sure you want to continue?",
+      "confirmButton": "Confirm Withdrawal"
+    }
   },
   "pages": {
     "home": {

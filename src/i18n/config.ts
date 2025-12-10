@@ -11,20 +11,18 @@ const resources = {
   it: { translation: itTranslations },
 };
 
-// Get saved language from localStorage or use browser language
+// Get saved language from localStorage or use default
 const getSavedLanguage = () => {
   const saved = localStorage.getItem('language');
-  if (saved && ['en', 'zh', 'es', 'it'].includes(saved)) {
-    return saved;
+
+  // If no saved language or invalid language, default to English
+  if (!saved || !['en', 'zh', 'es', 'it'].includes(saved)) {
+    // Clear any invalid language settings and set to English
+    localStorage.setItem('language', 'en');
+    return 'en';
   }
-  
-  // Try to detect browser language
-  const browserLang = navigator.language.split('-')[0];
-  if (['en', 'zh', 'es', 'it'].includes(browserLang)) {
-    return browserLang;
-  }
-  
-  return 'en'; // default language
+
+  return saved;
 };
 
 i18next.init({
@@ -34,6 +32,13 @@ i18next.init({
   interpolation: {
     escapeValue: false,
   },
+  react: {
+    useSuspense: false,
+  },
+  detection: {
+    caches: ['localStorage'],
+  },
+  initImmediate: false,
 });
 
 export default i18next;

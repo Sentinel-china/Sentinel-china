@@ -92,6 +92,7 @@ export function ImageModal({
     }
   };
 
+
   if (!isOpen) return null;
 
   return (
@@ -117,7 +118,6 @@ export function ImageModal({
         <X size={24} />
       </button>
 
-      {/* 左侧导航按钮 */}
       {images.length > 1 && currentIndex > 0 && (
         <button
           onClick={goToPrevious}
@@ -133,7 +133,6 @@ export function ImageModal({
         </button>
       )}
 
-      {/* 右侧导航按钮 */}
       {images.length > 1 && currentIndex < images.length - 1 && (
         <button
           onClick={goToNext}
@@ -149,7 +148,6 @@ export function ImageModal({
         </button>
       )}
 
-      {/* 图片容器 */}
       <div className="relative max-w-[95vw] max-h-[95vh] w-full h-full flex items-center justify-center p-4">
         <img
           src={currentImage}

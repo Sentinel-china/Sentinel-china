@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router'
 import { Button } from './ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog'
 import { Switch } from './ui/switch'
@@ -6,13 +7,14 @@ import { Settings } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '../context/LanguageContext'
 import { useCookieConsent } from '../hooks/useCookieConsent'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog'
 
 interface CookieSettingsModalProps {
   trigger?: React.ReactNode
 }
 
 const CookieSettingsModal: React.FC<CookieSettingsModalProps> = ({ trigger }) => {
-  const { detailedConsents, updateDetailedConsents, acceptAllCookies, acceptNecessaryOnly } = useCookieConsent()
+  const { detailedConsents, updateDetailedConsents, acceptAllCookies, acceptNecessaryOnly, resetConsent } = useCookieConsent()
   const [tempConsents, setTempConsents] = useState(detailedConsents)
   const [isOpen, setIsOpen] = useState(false)
   const { theme } = useTheme()
@@ -184,22 +186,70 @@ const CookieSettingsModal: React.FC<CookieSettingsModalProps> = ({ trigger }) =>
           }`}>
             <p className="mb-2">
               <strong>{t('cookie.privacy.title')}</strong> {t('cookie.privacy.description')}
-              <a href="/privacy-policy" className={`hover:underline ${
+              <Link to="/privacy-policy" className={`hover:underline ${
                 isDark ? 'text-blue-400' : 'text-blue-600'
-              }`}>{t('cookie.privacy.policyLink')}</a>。
+              }`}>{t('cookie.privacy.policyLink')}</Link>。
             </p>
           </div>
         </div>
 
-        <div className={`flex gap-3 justify-end border-t pt-4 ${
+        <div className={`flex flex-col gap-4 border-t pt-4 ${
           isDark ? 'border-gray-700' : 'border-gray-200'
         }`}>
-          <Button variant="outline" onClick={handleCancel}>
-            {t('common.cancel')}
-          </Button>
-          <Button onClick={handleSave}>
-            {t('cookie.save')}
-          </Button>
+          {/* 撤销同意部分 */}
+          <div className={`p-4 border rounded-lg ${
+            isDark ? 'border-red-800 bg-red-900/20' : 'border-red-200 bg-red-50'
+          }`}>
+            <h4 className={`font-semibold mb-2 ${isDark ? 'text-red-300' : 'text-red-800'}`}>
+              {t('cookie.revoke.title', '撤销同意')}
+            </h4>
+            <p className={`text-sm mb-3 ${isDark ? 'text-red-200' : 'text-red-700'}`}>
+              {t('cookie.revoke.description', '撤销所有cookie同意设置，将重置为仅使用必要cookie。您可以随时重新启用其他cookie。')}
+            </p>
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="outline" className={`border-red-600 text-red-600 hover:bg-red-600 hover:text-white ${
+                  isDark ? 'border-red-500 text-red-400 hover:bg-red-500' : ''
+                }`}>
+                  {t('cookie.revoke.button', '撤销所有同意')}
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent className={isDark ? 'bg-gray-900 border-gray-700' : ''}>
+                <AlertDialogHeader>
+                  <AlertDialogTitle className={isDark ? 'text-gray-100' : ''}>
+                    {t('cookie.revoke.confirmTitle', '确认撤销同意')}
+                  </AlertDialogTitle>
+                  <AlertDialogDescription className={isDark ? 'text-gray-300' : ''}>
+                    {t('cookie.revoke.confirmDescription', '这将撤销您对所有非必要cookie的同意。网站将仅使用必要cookie。您确定要继续吗？')}
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel className={isDark ? 'border-gray-600 text-gray-300' : ''}>
+                    {t('common.cancel')}
+                  </AlertDialogCancel>
+                  <AlertDialogAction
+                    onClick={() => {
+                      resetConsent()
+                      setIsOpen(false)
+                    }}
+                    className="bg-red-600 hover:bg-red-700 text-white"
+                  >
+                    {t('cookie.revoke.confirmButton', '确认撤销')}
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          </div>
+
+          {/* 操作按钮 */}
+          <div className="flex gap-3 justify-end">
+            <Button variant="outline" onClick={handleCancel}>
+              {t('common.cancel')}
+            </Button>
+            <Button onClick={handleSave}>
+              {t('cookie.save')}
+            </Button>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

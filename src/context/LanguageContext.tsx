@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
 import i18next from '../i18n/config';
 
 interface LanguageContextType {
@@ -12,28 +12,44 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState(() => {
     const saved = localStorage.getItem('language');
-    return saved || 'en';
+    // Ensure valid language, default to English if invalid
+    if (saved && ['en', 'zh', 'es', 'it'].includes(saved)) {
+      return saved;
+    }
+    // Clear invalid language and set to English
+    localStorage.setItem('language', 'en');
+    return 'en';
   });
 
-  const setLanguage = (lang: string) => {
+  const setLanguage = useCallback((lang: string) => {
     if (['en', 'zh', 'es', 'it'].includes(lang)) {
       setLanguageState(lang);
       localStorage.setItem('language', lang);
-      i18next.changeLanguage(lang);
+      i18next.changeLanguage(lang).then(() => {
+        // 确保语言切换完成后再继续
+        console.log(`Language switched to: ${lang}`);
+      });
     }
-  };
+  }, []);
 
-  const t = (key: string, options?: Record<string, any>): any => {
-    let current: any = i18next.t(key, options as any);
-    return current;
-  };
+  const t = useCallback((key: string, options?: Record<string, any>): any => {
+    return i18next.t(key, options as any);
+  }, []);
 
   useEffect(() => {
-    i18next.changeLanguage(language);
+    i18next.changeLanguage(language).then(() => {
+      console.log(`Language initialized to: ${language}`);
+    });
   }, [language]);
 
+  const contextValue = useMemo(() => ({
+    language,
+    setLanguage,
+    t
+  }), [language, setLanguage, t]);
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={contextValue}>
       {children}
     </LanguageContext.Provider>
   );
