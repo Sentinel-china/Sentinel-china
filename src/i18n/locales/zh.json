@@ -21,6 +21,46 @@
     "language": "语言",
     "theme": "主题",
     "privacy": "隐私政策"
+  },
+  "cookie": {
+    "title": "Cookie 偏好设置",
+    "description": "我们使用 Cookie 和类似技术来改善您的浏览体验、分析网站流量并提供个性化内容。某些 Cookie 是必要的，无法被禁用。其他 Cookie 需要您的同意才能使用。",
+    "buttons": {
+      "acceptAll": "接受所有",
+      "acceptNecessary": "仅必需 Cookie",
+      "decline": "拒绝所有"
+    },
+    "manageSettings": "管理 Cookie 设置",
+    "categories": {
+      "necessary": {
+        "title": "必要 Cookie",
+        "description": "这些 Cookie 对于网站的基本功能是必需的，无法被禁用。",
+        "features": "• 会话管理\r\n• 安全功能\r\n• 网站性能",
+        "alwaysEnabled": "始终启用"
+      },
+      "analytics": {
+        "title": "分析 Cookie",
+        "description": "帮助我们了解网站的使用情况，用于改进用户体验。",
+        "features": "• Google Analytics\r\n• 用户行为分析\r\n• 性能监控"
+      },
+      "marketing": {
+        "title": "营销 Cookie",
+        "description": "用于投放相关广告和衡量广告效果。",
+        "features": "• Google Ads\r\n• 广告个性化\r\n• 转化跟踪"
+      },
+      "preferences": {
+        "title": "偏好 Cookie",
+        "description": "记住您的设置和偏好选择。",
+        "features": "• 语言选择\r\n• 显示偏好\r\n• 用户设置"
+      }
+    },
+    "privacy": {
+      "title": "隐私信息：",
+      "description": "我们承诺遵守 GDPR 和其他隐私法规。您可以随时在浏览器设置中管理 Cookie，或通过联系我们撤销同意。有关我们如何使用 Cookie 的详细信息，请查看我们的",
+      "policyLink": "隐私政策"
+    },
+    "quickActions": "快速操作",
+    "save": "保存设置"
   }
   ,
   "pages": {

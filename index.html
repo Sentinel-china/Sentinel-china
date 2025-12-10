@@ -26,6 +26,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N9CFFV8S');</script>
 <!-- End Google Tag Manager -->
 
+    <!-- Google Consent Mode -->
+    <script>
+      // 默认情况下，拒绝所有非必要cookie，直到用户同意
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted'
+      });
+    </script>
+
   </head>
   <script>
     new EventSource('/esbuild').addEventListener('change', () =>

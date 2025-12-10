@@ -22,6 +22,46 @@
     "theme": "Theme",
     "privacy": "Privacy Policy"
   },
+  "cookie": {
+    "title": "Cookie Preferences",
+    "description": "We use cookies and similar technologies to improve your browsing experience, analyze website traffic, and provide personalized content. Some cookies are essential for the website to function and cannot be disabled. Other cookies require your consent.",
+    "buttons": {
+      "acceptAll": "Accept All",
+      "acceptNecessary": "Essential Only",
+      "decline": "Decline All"
+    },
+    "manageSettings": "Manage Cookie Settings",
+    "categories": {
+      "necessary": {
+        "title": "Essential Cookies",
+        "description": "These cookies are essential for the basic functionality of the website and cannot be disabled.",
+        "features": "• Session management\r\n• Security features\r\n• Website performance",
+        "alwaysEnabled": "Always enabled"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how the website is used to improve user experience.",
+        "features": "• Google Analytics\r\n• User behavior analysis\r\n• Performance monitoring"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to display relevant ads and measure advertising effectiveness.",
+        "features": "• Google Ads\r\n• Ad personalization\r\n• Conversion tracking"
+      },
+      "preferences": {
+        "title": "Preference Cookies",
+        "description": "Remember your settings and preference choices.",
+        "features": "• Language selection\r\n• Display preferences\r\n• User settings"
+      }
+    },
+    "privacy": {
+      "title": "Privacy Information:",
+      "description": "We are committed to complying with GDPR and other privacy regulations. You can manage cookies at any time in your browser settings or contact us to withdraw consent. For detailed information about how we use cookies, please see our",
+      "policyLink": "Privacy Policy"
+    },
+    "quickActions": "Quick Actions",
+    "save": "Save Settings"
+  },
   "pages": {
     "home": {
       "heroTitleLine1": "Industrial Sensors",

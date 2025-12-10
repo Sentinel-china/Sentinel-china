@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Settings } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
+import CookieSettingsModal from './CookieSettingsModal';
 
 // Define the types for navigation items for better type safety
 interface NavItem {
@@ -207,11 +208,25 @@ export default function Header() {
             </nav>
             <div className="ml-6 flex items-center space-x-2">
               <LanguageToggle />
+              <CookieSettingsModal
+                trigger={
+                  <button className="p-2 text-muted-foreground hover:text-yellow-400 transition-colors" aria-label="Cookie settings">
+                    <Settings className="w-5 h-5" />
+                  </button>
+                }
+              />
               <ThemeToggle />
             </div>
           </div>
           <div className="md:hidden flex items-center space-x-2">
             <LanguageToggle />
+            <CookieSettingsModal
+              trigger={
+                <button className="p-2 text-muted-foreground hover:text-yellow-400 transition-colors" aria-label="Cookie settings">
+                  <Settings className="w-5 h-5" />
+                </button>
+              }
+            />
             <ThemeToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

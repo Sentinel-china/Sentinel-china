@@ -5,10 +5,14 @@
 import { ArrowRight, Shield, Zap, Users, Award, TrendingUp, Globe, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function HomePage() {
   const { t } = useLanguage()
+  const { theme } = useTheme()
+
+  const isDark = theme === 'dark'
   // Banner轮播图数据
   const bannerImages = [
     {
@@ -224,17 +228,29 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-gray-900 to-black">
+      <section className={`px-4 sm:px-6 lg:px-8 py-20 transition-all duration-500 ${
+        isDark
+          ? 'bg-gray-900/50'
+          : 'bg-[#f8f8f8]'
+      }`}>
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold mb-6">
+          <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-6 transition-colors ${
+            isDark ? 'text-white' : 'text-gray-900'
+          }`}>
             {t('pages.home.ctaTitle')}<span className="text-yellow-400"> {t('pages.home.ctaHighlight')}</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className={`text-xl mb-8 transition-colors ${
+            isDark ? 'text-gray-300' : 'text-gray-700'
+          }`}>
             {t('pages.home.ctaText')}
           </p>
           <Link
             to="/contact#send-message"
-            className="inline-flex items-center px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg text-lg hover:bg-yellow-300 transition-colors duration-200 group"
+            className={`inline-flex items-center px-8 py-4 font-semibold rounded-lg text-lg transition-all duration-200 group ${
+              isDark
+                ? 'bg-yellow-400 text-black hover:bg-yellow-300'
+                : 'bg-yellow-400 text-black hover:bg-yellow-300 shadow-lg'
+            }`}
           >
             {t('pages.home.ctaButton')}
             <ArrowRight size={24} className="ml-2 group-hover:translate-x-1 transition-transform" />

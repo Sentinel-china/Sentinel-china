@@ -3,9 +3,13 @@
  * 配置网站的路由结构和页面导航
  */
 import { HashRouter, Route, Routes } from 'react-router'
+import { useEffect } from 'react'
 import Header from './components/Header'
 import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
+import CookieConsent from './components/CookieConsent'
+import { useGeoLocation } from './hooks/useGeoLocation'
+import { useCookieConsent } from './hooks/useCookieConsent'
 import HomePage from './pages/Home'
 import ProductsPage from './pages/Products'
 import AboutPage from './pages/About'
@@ -37,48 +41,68 @@ import LiquidLevelSensor from './pages/products/Sensor/liquid-level-sensor'
 import InductiveProximitySensor from './pages/products/Sensor/inductive-proximity-sensor'
 import PrivacyPolicyPage from './pages/PrivacyPolicy'
 
+function AppContent() {
+  const { isEUOrUS, loading } = useGeoLocation()
+  const { acceptAllCookies, acceptNecessaryOnly, declineCookies, isPending } = useCookieConsent()
+
+  // 如果是欧洲或美国地区，且用户还未做出选择，显示弹窗
+  // 如果是其他地区，默认同意（不显示弹窗）
+  const shouldShowCookieConsent = !loading && isEUOrUS && isPending
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <ScrollToTop />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/io-module" element={<IOModule />} />
+          <Route path="/products/sensor" element={<Sensor />} />
+          <Route path="/products/io-link" element={<IOLink />} />
+          <Route path="/products/connectivity" element={<Connectivity />} />
+          <Route path="/products/new-page1" element={<NewPage1 />} />
+          <Route path="/products/relay-module" element={<RelayModule />} />
+          {/* 传感器详情页面路由 */}
+          <Route path="/products/sensor/temperature-sensor" element={<TemperatureSensor />} />
+          <Route path="/products/sensor/thermal-flow-sensor" element={<ThermalFlowSensor />} />
+          <Route path="/products/sensor/vortex-flow-sensor" element={<VortexFlowSensor />} />
+          <Route path="/products/sensor/pressure-sensor" element={<PressureSensor />} />
+          <Route path="/products/sensor/liquid-level-sensor" element={<LiquidLevelSensor />} />
+          <Route path="/products/sensor/inductive-proximity-sensor" element={<InductiveProximitySensor />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
+          <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
+          <Route path="/products/connectivity/:productId" element={<ConnectivityDetail />} />
+          <Route path="/products/inductive-proximity/:productId" element={<InductiveDetail />} />
+          <Route path="/products/pressure/:productId" element={<PressureDetail />} />
+          <Route path="/products/vortex/:productId" element={<VortexDetail />} />
+          <Route path="/products/thermal/:productId" element={<ThermalDetail />} />
+          <Route path="/markdown-config/liquid/:productId" element={<LiquidDetail />} />
+          <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
+          <Route path="/products/:productId" element={<ProductDetail />} />
+           <Route path="/products/relay-module/:productId" element={<RelayModuleDetail />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        </Routes>
+      </main>
+      <Footer />
+
+      <CookieConsent
+        isVisible={shouldShowCookieConsent}
+        onAcceptAll={acceptAllCookies}
+        onAcceptNecessary={acceptNecessaryOnly}
+        onDecline={declineCookies}
+      />
+    </div>
+  )
+}
+
 export default function App() {
   return (
     <HashRouter>
-      <div className="min-h-screen bg-background text-foreground">
-        <Header />
-        <ScrollToTop />
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/products/io-module" element={<IOModule />} />
-            <Route path="/products/sensor" element={<Sensor />} />
-            <Route path="/products/io-link" element={<IOLink />} />
-            <Route path="/products/connectivity" element={<Connectivity />} />
-            <Route path="/products/new-page1" element={<NewPage1 />} />
-            <Route path="/products/relay-module" element={<RelayModule />} />
-            {/* 传感器详情页面路由 */}
-            <Route path="/products/sensor/temperature-sensor" element={<TemperatureSensor />} />
-            <Route path="/products/sensor/thermal-flow-sensor" element={<ThermalFlowSensor />} />
-            <Route path="/products/sensor/vortex-flow-sensor" element={<VortexFlowSensor />} />
-            <Route path="/products/sensor/pressure-sensor" element={<PressureSensor />} />
-            <Route path="/products/sensor/liquid-level-sensor" element={<LiquidLevelSensor />} />
-            <Route path="/products/sensor/inductive-proximity-sensor" element={<InductiveProximitySensor />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/solutions" element={<SolutionsPage />} />
-            <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
-            <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
-            <Route path="/products/connectivity/:productId" element={<ConnectivityDetail />} />
-            <Route path="/products/inductive-proximity/:productId" element={<InductiveDetail />} />
-            <Route path="/products/pressure/:productId" element={<PressureDetail />} />
-            <Route path="/products/vortex/:productId" element={<VortexDetail />} />
-            <Route path="/products/thermal/:productId" element={<ThermalDetail />} />
-            <Route path="/markdown-config/liquid/:productId" element={<LiquidDetail />} />
-            <Route path="/markdown-config/:id" element={<TemperatureDetail />} />
-            <Route path="/products/:productId" element={<ProductDetail />} />
-             <Route path="/products/relay-module/:productId" element={<RelayModuleDetail />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </HashRouter>
   )
 }

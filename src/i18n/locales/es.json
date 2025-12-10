@@ -21,6 +21,46 @@
     "language": "Idioma",
     "theme": "Tema",
     "privacy": "Política de Privacidad"
+  },
+  "cookie": {
+    "title": "Preferencias de Cookies",
+    "description": "Utilizamos cookies y tecnologías similares para mejorar su experiencia de navegación, analizar el tráfico del sitio web y proporcionar contenido personalizado. Algunas cookies son esenciales para el funcionamiento del sitio web y no se pueden desactivar. Otras cookies requieren su consentimiento.",
+    "buttons": {
+      "acceptAll": "Aceptar Todo",
+      "acceptNecessary": "Solo Esenciales",
+      "decline": "Rechazar Todo"
+    },
+    "manageSettings": "Administrar Configuración de Cookies",
+    "categories": {
+      "necessary": {
+        "title": "Cookies Esenciales",
+        "description": "Estas cookies son esenciales para la funcionalidad básica del sitio web y no se pueden desactivar.",
+        "features": "• Gestión de sesiones\r\n• Funciones de seguridad\r\n• Rendimiento del sitio web",
+        "alwaysEnabled": "Siempre activado"
+      },
+      "analytics": {
+        "title": "Cookies de Análisis",
+        "description": "Nos ayudan a entender cómo se utiliza el sitio web para mejorar la experiencia del usuario.",
+        "features": "• Google Analytics\r\n• Análisis de comportamiento del usuario\r\n• Monitoreo de rendimiento"
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Se utilizan para mostrar anuncios relevantes y medir la efectividad de la publicidad.",
+        "features": "• Google Ads\r\n• Personalización de anuncios\r\n• Seguimiento de conversiones"
+      },
+      "preferences": {
+        "title": "Cookies de Preferencias",
+        "description": "Recuerdan sus configuraciones y elecciones de preferencias.",
+        "features": "• Selección de idioma\r\n• Preferencias de visualización\r\n• Configuraciones de usuario"
+      }
+    },
+    "privacy": {
+      "title": "Información de Privacidad:",
+      "description": "Nos comprometemos a cumplir con el RGPD y otras regulaciones de privacidad. Puede gestionar las cookies en cualquier momento en la configuración de su navegador o contactarnos para retirar el consentimiento. Para información detallada sobre cómo utilizamos las cookies, consulte nuestra",
+      "policyLink": "Política de Privacidad"
+    },
+    "quickActions": "Acciones Rápidas",
+    "save": "Guardar Configuración"
   }
   ,
   "pages": {
