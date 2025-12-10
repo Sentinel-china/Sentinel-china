@@ -17,25 +17,19 @@ const Footer = React.memo(() => {
 
   // 更新悬浮按钮文本的函数
   const updateFloatingButtonText = React.useCallback(() => {
-    // 确保 i18next 已经初始化
-    if (typeof window !== 'undefined' && window.i18next && window.i18next.isInitialized) {
-      const floatingBtn = document.getElementById('floating-form-btn')
-      if (floatingBtn) {
-        floatingBtn.innerHTML = t('footer.floatingContact')
-      }
-
-      const floatingBox = document.getElementById('floating-form-box')
-      if (floatingBox) {
-        const titleElement = floatingBox.querySelector('div[style*="text-align: right"] div')
-        if (titleElement) {
-          titleElement.textContent = t('footer.floatingTitle')
-        }
-      }
-    } else {
-      // 如果 i18next 还没初始化，延迟执行
-      setTimeout(updateFloatingButtonText, 100)
+    const floatingBtn = document.getElementById('floating-form-btn')
+    if (floatingBtn) {
+      floatingBtn.innerHTML = t('footer.floatingContact')
     }
-  }, [t])
+
+    const floatingBox = document.getElementById('floating-form-box')
+    if (floatingBox) {
+      const titleElement = floatingBox.querySelector('div[style*="text-align: right"] div')
+      if (titleElement) {
+        titleElement.textContent = t('footer.floatingTitle')
+      }
+    }
+  }, [t, language]) // 添加language依赖，确保语言改变时重新执行
 
   useEffect(() => {
     // 清理之前的浮动元素
@@ -202,7 +196,7 @@ const Footer = React.memo(() => {
     document.body.appendChild(floatingBox)
 
     // 确保初始文本使用当前语言
-    updateFloatingButtonText()
+    // 注意：这里不需要手动调用，useEffect会处理
 
     // 按钮点击事件和弹窗逻辑
     const btn = document.getElementById('floating-form-btn')
@@ -373,6 +367,11 @@ const Footer = React.memo(() => {
   React.useEffect(() => {
     updateFloatingButtonText()
   }, [language, updateFloatingButtonText])
+
+  // 组件挂载时也更新一次文本
+  React.useEffect(() => {
+    updateFloatingButtonText()
+  }, []) // 只在组件挂载时执行一次
 
   return (
     <footer className={`border-t transition-all duration-500 ${

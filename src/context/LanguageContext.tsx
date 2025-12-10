@@ -34,7 +34,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   const t = useCallback((key: string, options?: Record<string, any>): any => {
     return i18next.t(key, options as any);
-  }, []);
+  }, [language]); // 添加language依赖，确保语言改变时t函数重新创建
 
   useEffect(() => {
     i18next.changeLanguage(language).then(() => {
