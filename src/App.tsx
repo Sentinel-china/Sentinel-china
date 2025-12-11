@@ -45,11 +45,10 @@ function AppContent() {
   const { isEUOrUS, loading, location } = useGeoLocation()
   const { acceptAllCookies, acceptNecessaryOnly, isPending, policyChanged, acknowledgePolicyChange } = useCookieConsent()
 
-  // 如果是欧洲或美国地区，且用户还未做出选择，显示弹窗
-  // 如果地理位置检测失败，为了合规性也显示弹窗（保守策略）
-  // 如果是其他地区，默认同意（不显示弹窗）
-  // 欧盟和美国用户首次打开网站必须看到弹窗
-  const shouldShowCookieConsent = !loading && isPending && (isEUOrUS || location === null)
+  // 显示cookie弹窗的逻辑：用户还未做出选择时显示弹窗
+  // 为了合规性和一致的用户体验，所有用户都会看到弹窗
+  // 无论地理位置如何，只要用户还未同意过cookie就显示弹窗
+  const shouldShowCookieConsent = !loading && isPending
 
   // 调试信息（仅开发环境）
   if (process.env.NODE_ENV === 'development') {
@@ -58,8 +57,12 @@ function AppContent() {
       isEUOrUS,
       isPending,
       shouldShowCookieConsent,
-      location,
-      locationCountry: location?.countryCode
+      locationCountry: location?.countryCode,
+      localStorage: {
+        consent: typeof window !== 'undefined' ? localStorage.getItem('cookie-consent') : null,
+        detailed: typeof window !== 'undefined' ? localStorage.getItem('cookie-consents-detailed') : null,
+        version: typeof window !== 'undefined' ? localStorage.getItem('cookie-policy-version') : null
+      }
     })
   }
 
