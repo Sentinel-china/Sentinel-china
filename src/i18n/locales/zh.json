@@ -20,7 +20,9 @@
   "common": {
     "language": "语言",
     "theme": "主题",
-    "privacy": "隐私政策"
+    "privacy": "隐私政策",
+    "contactPerson": "沃尔夫冈",
+    "email": "wolfgang@kuemago.com"
   },
   "cookie": {
     "title": "Cookie 偏好设置",
@@ -243,10 +245,14 @@
       "brand": "我们",
       "intro": "我们期待与您合作。请通过以下方式联系我们，我们的专业团队将为您提供高品质的产品与解决方案。",
       "sendMessage": "发送信息",
-      "officeAddressTitle": "办公地址",
+      "headOfficeTitle": "总部地址",
       "tianjinHeadquarter": "天津总部",
       "tianjinAddress": "天津市海泰开发区海泰开发六路6号，海泰绿色产业基地 K2-5-303",
-      "locationNavTitle": "位置导航",
+      "europeanOfficeTitle": "欧洲办公室",
+      "europeanHeadquarter": "欧洲办公室",
+      "europeanAddress": "德国杜塞尔多夫布赖特大街22号，40213",
+      "europeanContact": "联系人",
+      "europeanEmail": "wolfgang@kuemago.com",
       "contactInfo": {
         "whatsapp": {
           "title": "WhatsApp",
@@ -1622,9 +1628,13 @@
       "thermalFlow": "热式流量传感器"
     },
     "contact": {
-      "title": "联系",
+      "title": "总部",
       "scanNote": "扫码联系我们"
     },
+    "emailCopied": "邮箱已复制",
+    "copyFailed": "复制失败",
+    "showCopy": "显示并复制",
+    "showFullEmail": "显示完整邮箱",
     "copyright": "© 2008 - {{year}} SENTINEL。保留所有权利。"
   }
 }

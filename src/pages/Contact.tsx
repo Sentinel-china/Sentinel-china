@@ -1,13 +1,37 @@
 /** The file was corrupted by duplicate blocks; replace whole file below with clean version */
 
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useLocation } from 'react-router'
-import { Mail, MapPin, Clock, MessageSquare } from 'lucide-react'
+import { Mail, MapPin, Clock, MessageSquare, User } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function ContactPage() {
   const location = useLocation()
   const { t } = useLanguage()
+
+  const [emailRevealed, setEmailRevealed] = React.useState(false)
+  const [euEmailRevealed, setEuEmailRevealed] = React.useState(false)
+
+  const contactEmail = t('pages.contact.contactInfo.email.content')
+  const euEmail = t('pages.contact.europeanEmail')
+
+  function maskEmail(email: string) {
+    if (!email || !email.includes('@')) return email
+    const [local, domain] = email.split('@')
+    if (local.length <= 1) return '***@' + domain
+    return local[0] + '***@' + domain
+  }
+
+  async function revealAndCopy(email: string, setReveal: (v: boolean) => void) {
+    setReveal(true)
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(email)
+      }
+    } catch (e) {
+      // silent
+    }
+  }
 
   useEffect(() => {
     if (location.hash) {
@@ -75,16 +99,75 @@ export default function ContactPage() {
 
             <div className="space-y-8">
               <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
-                <h3 className="text-2xl font-bold mb-6">{t('pages.contact.officeAddressTitle')}</h3>
-                <div className="space-y-4"><div className="flex items-start space-x-3"><MapPin className="text-yellow-400 mt-1" size={20} /><div><p className="font-semibold">{t('pages.contact.tianjinHeadquarter')}</p><p className="text-gray-600 dark:text-gray-300 mb-8">{t('pages.contact.tianjinAddress')}</p></div></div></div>
+                <h3 className="text-2xl font-bold mb-6">{t('pages.contact.headOfficeTitle')}</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.tianjinHeadquarter')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('pages.contact.tianjinAddress')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Mail className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.contactInfo.email.title')}</p>
+                      <p className="mt-1">
+                        {emailRevealed ? (
+                          <span className="text-gray-600 dark:text-gray-300">{contactEmail}</span>
+                        ) : (
+                          <button
+                            onClick={() => revealAndCopy(contactEmail, setEmailRevealed)}
+                            className="text-xs px-2 py-0.5 rounded-md bg-yellow-400 text-black hover:bg-yellow-500 transition-colors"
+                            aria-label={t('footer.showFullEmail')}
+                            title={t('footer.showFullEmail')}
+                          >
+                            {t('footer.showFullEmail')}
+                          </button>
+                        )}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50 relative">
-                <h3 className="text-2xl font-bold mb-6">{t('pages.contact.locationNavTitle')}</h3>
-                <div className="relative h-64 bg-gray-700/50 rounded-lg overflow-hidden">
-                  <img src="https://pub-cdn.sider.ai/u/U0D4XHG6Z0/web-coder/68902bc70cd2d7c5a266e9f7/resource/08a727ae-12ef-4ae2-85fd-f734f5c6e16e.jpg" alt="Company Location Map" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4"><p className="text-white font-semibold">{t('pages.contact.contactInfo.address.content')}</p><p className="text-gray-300 text-sm">{t('map.subtitle')}</p></div>
+              <div className="bg-[#f8f8f8] p-8 rounded-2xl border border-gray-700 dark:bg-gray-900/50">
+                <h3 className="text-2xl font-bold mb-6">{t('pages.contact.europeanOfficeTitle')}</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.europeanHeadquarter')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('pages.contact.europeanAddress')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <User className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.europeanContact')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('common.contactPerson')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Mail className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.contactInfo.email.title')}</p>
+                      <p className="mt-1">
+                        {euEmailRevealed ? (
+                          <span className="text-gray-600 dark:text-gray-300">{euEmail}</span>
+                        ) : (
+                          <button
+                            onClick={() => revealAndCopy(euEmail, setEuEmailRevealed)}
+                            className="text-xs px-2 py-0.5 rounded-md bg-yellow-400 text-black hover:bg-yellow-500 transition-colors"
+                            aria-label={t('footer.showFullEmail')}
+                            title={t('footer.showFullEmail')}
+                          >
+                            {t('footer.showFullEmail')}
+                          </button>
+                        )}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

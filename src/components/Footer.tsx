@@ -4,7 +4,7 @@
  */
 import React, { useEffect } from 'react'
 import { Link } from 'react-router'
-import { Mail, Phone, MapPin, Youtube } from 'lucide-react'
+import { Mail, Phone, MapPin, Youtube, User, Copy, Eye } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '../context/LanguageContext'
 import CookieSettingsModal from './CookieSettingsModal'
@@ -13,7 +13,16 @@ const Footer = React.memo(() => {
   const { t, language } = useLanguage()
   const { theme } = useTheme()
 
+  // 邮箱隐藏/显示与复制状态
+  const [emailRevealed, setEmailRevealed] = React.useState(false)
+  const [euEmailRevealed, setEuEmailRevealed] = React.useState(false)
+  // 不再使用 toast：点击只需显示邮箱（复制为静默尝试）
+
   const isDark = theme === 'dark'
+
+  // 提前获取翻译中的邮箱文本，便于标题行按钮访问
+  const contactEmail = t('pages.contact.contactInfo.email.content')
+  const euEmail = t('pages.contact.europeanEmail')
 
   // 更新悬浮按钮文本的函数
   const updateFloatingButtonText = React.useCallback(() => {
@@ -373,6 +382,27 @@ const Footer = React.memo(() => {
     updateFloatingButtonText()
   }, []) // 只在组件挂载时执行一次
 
+  // 邮箱掩码工具（简单保留首字母）
+  function maskEmail(email: string) {
+    if (!email || !email.includes('@')) return email
+    const [local, domain] = email.split('@')
+    if (local.length <= 1) return '***@' + domain
+    return local[0] + '***@' + domain
+  }
+
+  async function revealAndCopy(email: string, setReveal: (v: boolean) => void) {
+    // 先立即显示邮箱，保证用户看到变化
+    setReveal(true)
+    // 尝试静默复制到剪贴板（不弹提示）
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(email)
+      }
+    } catch (e) {
+      // 静默失败，不影响用户体验
+    }
+  }
+
   return (
     <footer className={`border-t transition-all duration-500 ${
       isDark
@@ -380,7 +410,7 @@ const Footer = React.memo(() => {
         : 'bg-[#f8f8f8] border-gray-200'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -480,12 +510,19 @@ const Footer = React.memo(() => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className={`font-semibold transition-colors ${
+            <h3 className={`font-semibold transition-colors flex items-center gap-2 ${
               isDark ? 'text-white' : 'text-gray-900'
-            }`}>{t('footer.contact.title')}</h3>
+            }`}>
+              {t('footer.contact.title')}
+              <img
+                src="/cn-flag-hd.png"
+                alt="China flag"
+                className="w-6 h-4 rounded-sm object-cover"
+              />
+            </h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 relative group">
-                <Phone size={16} className="text-yellow-400" />
+                <Phone size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
                 <span className={`text-sm cursor-pointer transition-colors ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>{t('pages.contact.contactInfo.whatsapp.title')}</span>
@@ -508,16 +545,88 @@ const Footer = React.memo(() => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-yellow-400" />
-                <span className={`text-sm transition-colors ${
-                  isDark ? 'text-gray-300' : 'text-gray-700'
-                }`}>{t('pages.contact.contactInfo.email.content')}</span>
+                <Mail size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
+                <div>
+                  <p className={`text-sm font-semibold transition-colors ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {t('pages.contact.contactInfo.email.title')}
+                  </p>
+                  <p className="mt-1">
+                    {emailRevealed ? (
+                      <span className={`text-xs transition-colors ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>{contactEmail}</span>
+                    ) : (
+                      <button
+                        onClick={() => revealAndCopy(contactEmail, setEmailRevealed)}
+                        className={`text-xs underline text-yellow-400 hover:text-yellow-500 transition-colors`}
+                        aria-label={t('footer.showFullEmail')}
+                        title={t('footer.showFullEmail')}
+                      >
+                        {t('footer.showFullEmail')}
+                      </button>
+                    )}
+                  </p>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin size={16} className="text-yellow-400" />
+                <MapPin size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
                 <span className={`text-sm transition-colors ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>{t('pages.contact.contactInfo.address.content')}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* European Office */}
+          <div className="space-y-4">
+            <h3 className={`font-semibold transition-colors flex items-center gap-2 ${
+              isDark ? 'text-white' : 'text-gray-900'
+            }`}>
+              {t('pages.contact.europeanOfficeTitle')}
+              <svg
+                width="24"
+                height="16"
+                viewBox="0 0 1000 600"
+                className="rounded-sm object-cover"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="1000" height="200" fill="#000000"/>
+                <rect y="200" width="1000" height="200" fill="#DE0000"/>
+                <rect y="400" width="1000" height="200" fill="#FFCC00"/>
+              </svg>
+            </h3>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <User size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
+                <span className={`text-sm transition-colors ${
+                  isDark ? 'text-gray-300' : 'text-gray-700'
+                }`}>Wolfgang</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
+                <div>
+                  <p className={`text-sm font-semibold transition-colors ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {t('pages.contact.contactInfo.email.title')}
+                  </p>
+                  <p className="mt-1">
+                    {euEmailRevealed ? (
+                      <span className={`text-xs transition-colors ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>{euEmail}</span>
+                    ) : (
+                      <button
+                        onClick={() => revealAndCopy(euEmail, setEuEmailRevealed)}
+                        className={`text-xs underline text-yellow-400 hover:text-yellow-500 transition-colors`}
+                        aria-label={t('footer.showFullEmail')}
+                        title={t('footer.showFullEmail')}
+                      >
+                        {t('footer.showFullEmail')}
+                      </button>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
+                <span className={`text-sm transition-colors ${
+                  isDark ? 'text-gray-300' : 'text-gray-700'
+                }`}>{t('pages.contact.europeanAddress')}</span>
               </div>
             </div>
           </div>

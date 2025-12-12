@@ -20,7 +20,9 @@
   "common": {
     "language": "Language",
     "theme": "Theme",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "contactPerson": "Wolfgang",
+    "email": "wolfgang@kuemago.com"
   },
   "cookie": {
     "title": "Cookie Preferences",
@@ -242,10 +244,14 @@
       "brand": "US",
       "intro": "We look forward to cooperating with you. Please contact us through the following methods, and our professional team will provide you with the highest quality products and solutions.",
       "sendMessage": "Send Message",
-      "officeAddressTitle": "Office Address",
+      "headOfficeTitle": "Head Office",
       "tianjinHeadquarter": "Tianjin Headquarters",
       "tianjinAddress": "K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin",
-      "locationNavTitle": "Location Navigation",
+      "europeanOfficeTitle": "European Office",
+      "europeanHeadquarter": "European Office",
+      "europeanAddress": "Breite Straße 22, 40213 Düsseldorf, Germany",
+      "europeanContact": "Contact Person",
+      "europeanEmail": "wolfgang@kuemago.com",
       "contactInfo": {
         "whatsapp": {
           "title": "WhatsApp",
@@ -1621,9 +1627,13 @@
       "thermalFlow": "Thermal Flow Sensors"
     },
     "contact": {
-      "title": "Contact",
+      "title": "Head Office",
       "scanNote": "Scan to contact"
     },
+    "emailCopied": "Email copied",
+    "copyFailed": "Copy failed",
+    "showCopy": "Show & copy",
+    "showFullEmail": "Show full email",
     "copyright": "© 2008 - {{year}} SENTINEL. All rights reserved."
   }
 }
