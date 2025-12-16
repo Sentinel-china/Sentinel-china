@@ -74,6 +74,7 @@ const Header = React.memo(() => {
       ],
     },
     { path: '/solutions', label: t('nav.solutions') },
+    { path: '/news', label: t('nav.news') },
     { path: '/about', label: t('nav.about') },
     { path: '/contact', label: t('nav.contact') },
   ];

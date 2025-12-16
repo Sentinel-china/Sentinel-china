@@ -7,6 +7,7 @@ import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '../context/LanguageContext'
+import newsItems, { getSortedNewsItems } from '../lib/news' 
 
 export default function HomePage() {
   const { t } = useLanguage()
@@ -144,6 +145,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      
+
+      
+
       {/* Features Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-[#f8f8f8] dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
@@ -192,6 +197,40 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
+      {/* News Section */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-white dark:bg-gray-900/60">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              {t('pages.home.newsTitle')}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 mt-2">{t('pages.news.description')}</p>
+            <div className="mt-4">
+              <Link to="/news" className="text-yellow-400 font-semibold hover:underline">
+                {t('pages.home.newsSeeAll')}
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {getSortedNewsItems().slice(0, 3).map((a) => (
+              <Link
+                key={a.id}
+                to={`/news/${a.id}`}
+                className="block rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800"
+              >
+                <img src={a.image} alt={t(a.titleKey)} className="w-full h-44 object-cover" />
+                <div className="p-6">
+                  <div className="text-sm text-gray-500 mb-2">{a.date}</div>
+                  <h3 className="text-xl font-semibold mb-2">{t(a.titleKey)}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">{t(a.excerptKey)}</p>
+                  <div className="text-yellow-400 font-medium">{t('pages.home.newsSeeAll')}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">

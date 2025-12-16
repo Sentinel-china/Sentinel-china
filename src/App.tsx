@@ -15,6 +15,8 @@ import ProductsPage from './pages/Products'
 import AboutPage from './pages/About'
 import SolutionsPage from './pages/Solutions'
 import ContactPage from './pages/Contact'
+import NewsPage from './pages/News'
+import NewsDetail from './pages/NewsDetail'
 import IOModule from './pages/products/IOModule'
 import Sensor from './pages/products/Sensor'
 import IOLink from './pages/products/IOLink'
@@ -90,6 +92,8 @@ function AppContent() {
           <Route path="/products/sensor/inductive-proximity-sensor" element={<InductiveProximitySensor />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/solutions/:solutionId" element={<SolutionsDetail />} />
           <Route path="/products/io-link/:productId" element={<IOLinkDetail />} />
           <Route path="/products/connectivity/:productId" element={<ConnectivityDetail />} />

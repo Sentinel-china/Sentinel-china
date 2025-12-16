@@ -14,6 +14,7 @@
     "relayModule": "继电器模块",
     "ioModule": "IO模块",
     "solutions": "解决方案",
+    "news": "新闻",
     "about": "关于我们",
     "contact": "联系我们"
   },
@@ -99,7 +100,9 @@
       "ctaButton": "免费咨询",
       "featureAboutContent": "SENTINEL 提供工业以太网分布式 I/O 模块与 IO-Link 产品、位置传感器、过程传感器及连接配件等。",
       "featureApplicationsContent": "SENTINEL 拥有广泛的产品线与专业研发团队，保证为客户提供高质量的产品与服务。这些产品已广泛应用于汽车零部件装配、机械加工、冶金等多个工业现场。",
-      "featureTeamContent": "作为一家研发与制造型企业，SENTINEL 坚持研发与创新的价值理念并拥有可靠的市场应用案例、完善的生产能力和高效的物流运输，为您提供可靠且可持续的服务。"
+      "featureTeamContent": "作为一家研发与制造型企业，SENTINEL 坚持研发与创新的价值理念并拥有可靠的市场应用案例、完善的生产能力和高效的物流运输，为您提供可靠且可持续的服务。",
+      "newsTitle": "新闻中心",
+      "newsSeeAll": "查看全部"
     },
     "products": {
       "title": "产品",
@@ -1600,7 +1603,44 @@
         "contactButton": "联系我们",
         "email": "export.sentinel@gmail.com"
       }
+    },
+    "news": {
+      "title": "新闻与动态",
+      "description": "公司最新消息与行业洞察。",
+      "notFound": "未找到文章",
+      "backToList": "返回新闻列表",
+      "articles": {
+        "article1": {
+          "title": "走进德国 SPS：自动化专业人士的必访之地",
+          "date": "",
+          "excerpt": "今年 11 月，我们将从中国前往德国纽伦堡，参加 2025 年 SPS—— 智能生产解决方案展。",
+          "content": "",
+          "image": ""
+        },
+        "article2": {
+          "title": "新产品发布：IO-Link 继电器模块",
+          "date": "",
+          "excerpt": "在自动化工业场所中，继电器模块是最常见但也最容易被忽视的组件之一。",
+          "content": "",
+          "image": ""
+        },
+        "article3": {
+          "title": "蒸馏设备中的压力传感器",
+          "date": "",
+          "excerpt": "具有 IO-Link 集成功能的食品和医药级负压传感器，可用于精确的真空控制。",
+          "content": "",
+          "image": ""
+        },
+        "article4": {
+          "title": "行业应用 | 流量、压力和温度传感器以及 IO-Link 热电偶分站在压力烧结炉冷却系统中的应用",
+          "date": "",
+          "excerpt": "",
+          "content": "",
+          "image": ""
+        }
+      }
     }
+
   }
   ,
   "map": {

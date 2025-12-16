@@ -55,13 +55,13 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
                     {t('cookie.title')}
                   </h3>
                   <p className={`text-sm md:text-base ${subTextColor} leading-relaxed`}>
-                    {policyChanged ? t('cookie.policyChanged', '我们的cookie政策已更新，请重新查看并同意使用条款。') : t('cookie.description')}
+                      {policyChanged ? t('cookie.policyChanged', { defaultValue: '我们的cookie政策已更新，请重新查看并同意使用条款。' }) : t('cookie.description')}
                   </p>
                   {policyChanged && (
                     <div className={`mt-2 inline-flex items-center px-2 py-1 text-xs font-medium rounded ${
                       isDark ? 'bg-yellow-900/50 text-yellow-300' : 'bg-yellow-100 text-yellow-800'
                     }`}>
-                      📋 {t('cookie.policyUpdate', '政策已更新')}
+                      📋 {t('cookie.policyUpdate', { defaultValue: '政策已更新' })}
                     </div>
                   )}
                 </div>

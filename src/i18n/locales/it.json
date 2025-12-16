@@ -14,6 +14,7 @@
     "relayModule": "Modulo Relè",
     "ioModule": "Modulo IO",
     "solutions": "Soluzioni",
+    "news": "Notizie",
     "about": "Chi Siamo",
     "contact": "Contattaci"
   },
@@ -1599,7 +1600,44 @@
         "contactButton": "Contattaci",
         "email": "export.sentinel@gmail.com"
       }
+    },
+    "news": {
+      "title": "Notizie e Aggiornamenti",
+      "description": "Ultime notizie aziendali e approfondimenti del settore.",
+      "notFound": "Articolo non trovato",
+      "backToList": "Torna alle notizie",
+      "articles": {
+        "article1": {
+          "title": "Entrare in SPS Germania: un luogo imperdibile per i professionisti dell'automazione",
+          "date": "",
+          "excerpt": "Quest'anno, nel novembre, partiremo dalla Cina per Norimberga, Germania, per partecipare alla fiera SPS 2025 - Soluzioni per la produzione intelligente.",
+          "content": "",
+          "image": ""
+        },
+        "article2": {
+          "title": "Nuovo prodotto in vendita: modulo relè IO-Link",
+          "date": "",
+          "excerpt": "Negli ambienti industriali automatizzati, il modulo relè è uno dei componenti più comuni ma anche più spesso trascurati.",
+          "content": "",
+          "image": ""
+        },
+        "article3": {
+          "title": "Sensore di pressione nella distillazione",
+          "date": "",
+          "excerpt": "Sensori di pressione negativa per settore alimentare e farmaceutico con integrazione IO-Link, utilizzabili per un controllo preciso del vuoto.",
+          "content": "",
+          "image": ""
+        },
+        "article4": {
+          "title": "Applicazione industriale | Applicazione di sensori di flusso, pressione e temperatura e sottostazioni termocoppia IO-Link nel sistema di raffreddamento dei forni di sinterizzazione a pressione",
+          "date": "",
+          "excerpt": "",
+          "content": "",
+          "image": ""
+        }
+      }
     }
+
   }
   ,
   "map": {

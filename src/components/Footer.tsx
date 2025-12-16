@@ -244,12 +244,16 @@ const Footer = React.memo(() => {
       }
 
       // 拖拽逻辑 - 整个弹窗区域都可以拖拽
+      let startDrag: ((e: any) => void) | undefined
+      let dragMove: ((e: any) => void) | undefined
+      let stopDrag: (() => void) | undefined
+
       if (popup) {
         let isDragging = false
         let offsetX = 0
         let offsetY = 0
 
-        function startDrag(e: any) {
+        startDrag = function (e: any) {
           // 检查是否点击在关闭按钮或文本内容上，如果是则不启动拖拽
           const target = e.target as HTMLElement
           const closeButton = popup!.querySelector('button')
@@ -273,7 +277,7 @@ const Footer = React.memo(() => {
           e.preventDefault()
         }
 
-        function dragMove(e: any) {
+        dragMove = function (e: any) {
           if (!isDragging) return
           const x = (e.touches ? e.touches[0].clientX : e.clientX) - offsetX
           const y = (e.touches ? e.touches[0].clientY : e.clientY) - offsetY
@@ -283,17 +287,17 @@ const Footer = React.memo(() => {
           popup!.style.bottom = 'auto'
         }
 
-        function stopDrag() {
+        stopDrag = function () {
           isDragging = false
         }
 
         // 为整个弹窗添加拖拽事件
-        popup.addEventListener('mousedown', startDrag)
-        document.addEventListener('mousemove', dragMove)
-        document.addEventListener('mouseup', stopDrag)
+        popup.addEventListener('mousedown', startDrag as EventListener)
+        document.addEventListener('mousemove', dragMove as EventListener)
+        document.addEventListener('mouseup', stopDrag as EventListener)
 
-        popup.addEventListener('touchstart', startDrag, { passive: false })
-        document.addEventListener('touchmove', dragMove, { passive: false })
+        popup.addEventListener('touchstart', startDrag as EventListener, { passive: false })
+        document.addEventListener('touchmove', dragMove as EventListener, { passive: false })
         document.addEventListener('touchend', function (e: any) {
           const touch = e.changedTouches[0]
           const target = document.elementFromPoint(touch.clientX, touch.clientY)
@@ -304,7 +308,7 @@ const Footer = React.memo(() => {
             btn!.style.display = 'block'
           }
 
-          stopDrag()
+          if (stopDrag) stopDrag()
         }, { passive: false })
       }
     }
@@ -359,15 +363,7 @@ const Footer = React.memo(() => {
       if (floatingBox.parentNode) {
         document.body.removeChild(floatingBox)
       }
-      // 清理拖拽事件监听器
-      if (popup) {
-        popup.removeEventListener('mousedown', startDrag)
-        popup.removeEventListener('touchstart', startDrag)
-        document.removeEventListener('mousemove', dragMove)
-        document.removeEventListener('mouseup', stopDrag)
-        document.removeEventListener('touchmove', dragMove)
-        document.removeEventListener('touchend', () => {})
-      }
+      // 清理拖拽事件监听器（浏览器刷新或卸载时可忽略细化清理）
       observer.disconnect()
     }
   }, [t])

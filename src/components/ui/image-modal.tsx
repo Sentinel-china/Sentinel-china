@@ -175,7 +175,7 @@ export function ImageModal({
       </div>
 
       {/* 缩略图导航 (当图片数量>1时显示) */}
-      {console.log('ImageModal images.length:', images.length, 'images:', images)}
+
       {images.length > 1 && (
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 max-w-[90vw] overflow-x-auto pb-2 px-4 z-20 bg-black/30 rounded-lg backdrop-blur-sm">
           {images.map((img, index) => (

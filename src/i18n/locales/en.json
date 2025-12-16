@@ -14,6 +14,7 @@
     "relayModule": "Relay Module",
     "ioModule": "IO Module",
     "solutions": "Solutions",
+    "news": "News",
     "about": "About Us",
     "contact": "Contact Us"
   },
@@ -98,7 +99,9 @@
       "ctaButton": "Free Consultation",
       "featureAboutContent": "Tianjin SENTINEL Electronics Co., Ltd is an innovative scientific and technological enterprise integrating R&D, production, and sales. SENTINEL provides industrial Ethernet distributed I/O modules, IO-Link products, position sensors, process sensors and connection accessories.",
       "featureApplicationsContent": "SENTINEL has a wide range of products and a professional R&D team. Our products have been widely used in various industrial production sites such as automotive parts assembly, machining and metallurgy industries.",
-      "featureTeamContent": "As an R&D and manufacturing enterprise, SENTINEL adheres to the values of innovation and quality, with reliable market application cases, solid production capacity and efficient logistics to ensure high-quality, sustainable service."
+      "featureTeamContent": "As an R&D and manufacturing enterprise, SENTINEL adheres to the values of innovation and quality, with reliable market application cases, solid production capacity and efficient logistics to ensure high-quality, sustainable service.",
+      "newsTitle": "NEWS",
+      "newsSeeAll": "View All"
     },
     "products": {
       "title": "PRODUCTS",
@@ -1599,7 +1602,44 @@
         "contactButton": "Contact us",
         "email": "export.sentinel@gmail.com"
       }
+    },
+    "news": {
+      "title": "News & Updates",
+      "description": "Latest company news and industry insights.",
+      "notFound": "Article not found",
+      "backToList": "Back to news",
+      "articles": {
+        "article1": {
+          "title": "Entering Germany’s SPS: A Must-Visit for Automation Professionals",
+          "date": "",
+          "excerpt": "This November, we will be traveling from China to Nuremberg, Germany, to attend SPS – Smart Production Solutions 2025.",
+          "content": "",
+          "image": ""
+        },
+        "article2": {
+          "title": "New product launch：IO-Link relay module",
+          "date": "",
+          "excerpt": "In automated industrial sites, relay modules are among the most common yet easily overlooked components. ",
+          "content": "",
+          "image": ""
+        },
+        "article3": {
+          "title": "Pressure Sensors in Distillation Equipment",
+          "date": "",
+          "excerpt": "Food and pharmaceutical-grade negative pressure sensors with IO-Link integration for precise vacuum control",
+          "content": "",
+          "image": ""
+        },
+        "article4": {
+          "title": "Industry Application | Application of Flow, Pressure and Temperature Sensors and IO-Link Thermocouple Substations in the Cooling System of Pressure Sintering Furnaces",
+          "date": "",
+          "excerpt": "",
+          "content": "",
+          "image": ""
+        }
+      }
     }
+
   }
   ,
   "map": {

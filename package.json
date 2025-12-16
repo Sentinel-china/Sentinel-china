@@ -2,8 +2,11 @@
   "name": "web-creator",
   "version": "1.0.0",
   "scripts": {
+    "predev": "node scripts/generate-news.mjs",
     "dev": "node scripts/build.mjs",
-    "build": "node scripts/build.mjs --production"
+    "prebuild": "node scripts/generate-news.mjs",
+    "build": "node scripts/build.mjs --production",
+    "generate:news": "node scripts/generate-news.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -35,10 +38,12 @@
     "@radix-ui/react-toggle-group": "^1.1.7",
     "@radix-ui/react-tooltip": "^1.2.4",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/dompurify": "^3.0.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
+    "dompurify": "^3.3.1",
     "embla-carousel-react": "^8.6.0",
     "i18next": "^25.1.2",
     "input-otp": "^1.4.2",
