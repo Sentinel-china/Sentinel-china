@@ -34,7 +34,7 @@ export const newsItems: NewsItem[] = [
   },
  {
     id: '4',
-    image: 'http://image.sentinel-china.com/1511541.png',
+    image: 'http://image.sentinel-china.com/1544149.png',
     date: '2025-12-12',
     titleKey: 'pages.news.articles.article4.title',
     excerptKey: 'pages.news.articles.article4.excerpt',
