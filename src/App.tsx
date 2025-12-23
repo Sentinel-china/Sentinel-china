@@ -47,26 +47,46 @@ function AppContent() {
   const { isEUOrUS, loading, location } = useGeoLocation()
   const { acceptAllCookies, acceptNecessaryOnly, isPending, policyChanged, acknowledgePolicyChange } = useCookieConsent()
 
-  // 显示cookie弹窗的逻辑：用户还未做出选择时显示弹窗
-  // 为了合规性和一致的用户体验，所有用户都会看到弹窗
-  // 无论地理位置如何，只要用户还未同意过cookie就显示弹窗
-  const shouldShowCookieConsent = !loading && isPending
+  // 配置选项：是否启用地理位置检测
+  const ENABLE_GEO_LOCATION = true // 设置为true时，根据IP决定是否显示弹窗
 
-  // 调试信息（仅开发环境）
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Cookie Consent Debug:', {
-      loading,
-      isEUOrUS,
-      isPending,
-      shouldShowCookieConsent,
-      locationCountry: location?.countryCode,
-      localStorage: {
-        consent: typeof window !== 'undefined' ? localStorage.getItem('cookie-consent') : null,
-        detailed: typeof window !== 'undefined' ? localStorage.getItem('cookie-consents-detailed') : null,
-        version: typeof window !== 'undefined' ? localStorage.getItem('cookie-policy-version') : null
+  // 显示cookie弹窗的逻辑：
+  // - 如果禁用地理位置检测：所有用户自动同意，不显示弹窗
+  // - 如果启用地理位置检测：
+  //   * 地理位置加载中：不显示弹窗
+  //   * 地理位置加载完成且用户还未做出选择：
+  //     * 欧洲或美国用户：显示弹窗
+  //     * 地理位置获取成功且非欧洲/美国用户：自动同意，不显示弹窗
+  //     * 地理位置获取失败：显示弹窗（保守处理，确保合规）
+  const shouldShowCookieConsent = ENABLE_GEO_LOCATION
+    ? (!loading && isPending && (isEUOrUS || location === null))
+    : false // 禁用时不显示弹窗
+
+  // 对于非欧洲/美国用户，自动同意所有cookie
+  useEffect(() => {
+    if (!ENABLE_GEO_LOCATION) {
+      // 如果禁用地理位置检测，所有用户自动同意cookie
+      if (isPending) {
+        console.log('地理位置检测已禁用，自动同意所有cookie')
+        acceptAllCookies()
+        acknowledgePolicyChange()
       }
-    })
-  }
+      return
+    }
+
+    if (!loading && !isPending && !isEUOrUS && location !== null) {
+      // 用户已同意cookie，不需要额外操作
+      return
+    }
+
+    if (!loading && isPending && !isEUOrUS && location !== null) {
+      // 非欧洲/美国用户自动同意所有cookie
+      console.log('非欧盟/美国用户，自动同意所有cookie')
+      acceptAllCookies()
+      acknowledgePolicyChange()
+    }
+  }, [loading, isPending, isEUOrUS, location, acceptAllCookies, acknowledgePolicyChange, ENABLE_GEO_LOCATION])
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -110,6 +130,7 @@ function AppContent() {
         </Routes>
       </main>
       <Footer />
+
 
       <CookieConsent
         isVisible={shouldShowCookieConsent}
