@@ -21,6 +21,10 @@ import md_5_en from '../pages/articles/markdown-news/5.en.md'
 import md_5_es from '../pages/articles/markdown-news/5.es.md'
 import md_5_it from '../pages/articles/markdown-news/5.it.md'
 import md_5_zh from '../pages/articles/markdown-news/5.zh.md'
+import md_6_en from '../pages/articles/markdown-news/6.en.md'
+import md_6_es from '../pages/articles/markdown-news/6.es.md'
+import md_6_it from '../pages/articles/markdown-news/6.it.md'
+import md_6_zh from '../pages/articles/markdown-news/6.zh.md'
 
 const contentMap: Record<string, Record<string, string>> = {
   "1": {
@@ -52,6 +56,12 @@ const contentMap: Record<string, Record<string, string>> = {
   "es": md_5_es,
   "it": md_5_it,
   "zh": md_5_zh
+  },
+  "6": {
+  "en": md_6_en,
+  "es": md_6_es,
+  "it": md_6_it,
+  "zh": md_6_zh
   }
 }
 

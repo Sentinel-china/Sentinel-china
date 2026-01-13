@@ -219,7 +219,9 @@ export default function HomePage() {
                 to={`/news/${a.id}`}
                 className="block rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800"
               >
-                <img src={a.image} alt={t(a.titleKey)} className="w-full h-44 object-cover" />
+                <div className="h-44 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                  <img src={a.image} alt={t(a.titleKey)} className="max-h-full w-full object-contain" />
+                </div>
                 <div className="p-6">
                   <div className="text-sm text-gray-500 mb-2">{a.date}</div>
                   <h3 className="text-xl font-semibold mb-2">{t(a.titleKey)}</h3>

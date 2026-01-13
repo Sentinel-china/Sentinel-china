@@ -16,7 +16,7 @@ export default function NewsPage() {
       <div className="grid md:grid-cols-3 gap-8">
         {getSortedNewsItems().map((a) => (
           <Link key={a.id} to={`/news/${a.id}`} className="block bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow">
-            <img src={a.image} alt={t(a.titleKey)} className="w-full h-56 object-cover" />
+            <img src={a.image} alt={t(a.titleKey)} className="w-full h-auto object-contain" />
             <div className="p-6">
               <div className="text-sm text-gray-500 mb-2">{a.date}</div>
               <h2 className="text-xl font-semibold mb-2">{t(a.titleKey)}</h2>

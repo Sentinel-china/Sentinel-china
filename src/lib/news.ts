@@ -47,6 +47,14 @@ export const newsItems: NewsItem[] = [
     titleKey: 'pages.news.articles.article5.title',
     excerptKey: 'pages.news.articles.article5.excerpt',
     contentKey: 'pages.news.articles.article5.content'
+  },
+  {
+    id: '6',
+    image: 'http://image.sentinel-china.com/783210.png',
+    date: '2025-12-30',
+    titleKey: 'pages.news.articles.article6.title',
+    excerptKey: 'pages.news.articles.article6.excerpt',
+    contentKey: 'pages.news.articles.article6.content'
   }
 ]
 
