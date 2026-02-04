@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router'
-import { Mail, MapPin, Clock, MessageSquare, User } from 'lucide-react'
+import { Mail, MapPin, Clock, MessageSquare, User, Phone } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function ContactPage() {
@@ -146,6 +146,13 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold">{t('pages.contact.europeanContact')}</p>
                       <p className="text-gray-600 dark:text-gray-300">{t('common.contactPerson')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Phone className="text-yellow-400 mt-1 w-5 h-5 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold">{t('pages.contact.europeanPhoneLabel')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('pages.contact.europeanPhone')}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

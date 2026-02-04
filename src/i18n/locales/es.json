@@ -249,9 +249,11 @@
       "tianjinHeadquarter": "Sede de Tianjin",
       "tianjinAddress": "K2-5-303, Haitai Green Industry Base, No.6, Haitai Development 6th Road, Huayuan Industrial Zone, Tianjin",
       "europeanOfficeTitle": "Oficina Europea",
-      "europeanHeadquarter": "Oficina Europea",
+      "europeanHeadquarter": "Kümago Nexus GmbH",
       "europeanAddress": "Breite Straße 22, 40213 Düsseldorf, Alemania",
       "europeanContact": "Persona de Contacto",
+      "europeanPhoneLabel": "Teléfono",
+      "europeanPhone": "+49 178 5369 273",
       "europeanEmail": "wolfgang@kuemago.com",
       "contactInfo": {
         "whatsapp": {

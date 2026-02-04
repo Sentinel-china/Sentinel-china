@@ -597,6 +597,12 @@ const Footer = React.memo(() => {
                 }`}>Wolfgang</span>
               </div>
               <div className="flex items-center space-x-3">
+                <Phone size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
+                <span className={`text-sm transition-colors ${
+                  isDark ? 'text-gray-300' : 'text-gray-700'
+                }`}>{t('pages.contact.europeanPhone')}</span>
+              </div>
+              <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-yellow-400 w-4 h-4 flex-shrink-0" />
                 <div>
                   <p className={`text-sm font-semibold transition-colors ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>

@@ -252,9 +252,11 @@
       "tianjinHeadquarter": "天津总部",
       "tianjinAddress": "天津市海泰开发区海泰开发六路6号，海泰绿色产业基地 K2-5-303",
       "europeanOfficeTitle": "欧洲办公室",
-      "europeanHeadquarter": "欧洲办公室",
+      "europeanHeadquarter": "Kümago Nexus 有限公司",
       "europeanAddress": "德国杜塞尔多夫布赖特大街22号，40213",
       "europeanContact": "联系人",
+      "europeanPhoneLabel": "电话",
+      "europeanPhone": "+49 178 5369 273",
       "europeanEmail": "wolfgang@kuemago.com",
       "contactInfo": {
         "whatsapp": {
