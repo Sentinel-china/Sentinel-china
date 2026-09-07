@@ -1,3 +1,11 @@
+> **仓库迁移说明（2026-09-07）**
+>
+> 本项目已迁移至 [sentinel-sensor/tjsentinel-website](https://github.com/sentinel-sensor/tjsentinel-website)。
+> 本仓库保留历史记录，停止日常维护。后续开发和问题反馈请前往新仓库。
+> 新仓库为私有仓库，访问需要相应权限。
+
+---
+
 # SENTINEL - 工业自动化解决方案
 
 ## 项目简介
